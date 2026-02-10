@@ -40,6 +40,26 @@ body {
   font-weight: bold;
 }
 
+.first-section {
+  background: #3e8c1d;   /* gris claro */
+  border: 3px solid #0523e7;
+}
+
+.second-section {
+  background: #f1c40f;   /* naranja */
+  border: 3px solid #d35400;
+} 
+.third-section {
+  background: #8e44ad;   /* morado */
+  border: 3px solid #5e38dc;
+}
+
+.fourth-section {
+  background: #f53838;   /* azul oscuro */
+  border: 3px solid #1b2838;      
+}
+
+
 /* ARTICLE */
 .article {
   background: #fff3bf;   /* amarillo */
