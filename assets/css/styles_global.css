@@ -185,3 +185,56 @@ body {
   grid-column: 1 / -1;
   grid-row: 3;
 }
+
+
+/* TABLE */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #965959;
+  border: 4px solid #7048e8; /* marco general */
+  font-weight: bold;
+}
+
+/* THEAD */
+.table thead {
+  background: #c3fae8;        /* verde claro */
+  border: 3px solid #20c997;
+}
+
+/* TR (HEADER) */
+.table thead tr {
+  background: #96f2d7;
+}
+
+/* TH */
+.table th {
+  background: #63e6be;
+  border: 3px solid #20c997;
+  padding: 16px;
+  text-align: center;
+}
+
+/* TBODY */
+.table tbody {
+  background: #fff9db;        /* amarillo claro */
+  border: 3px solid #fcc419;
+}
+
+/* TR (BODY) */
+.table tbody tr {
+  background: #ffec99;
+}
+
+/* TD */
+.table td {
+  background: #ffe066;
+  border: 3px solid #f59f00;
+  padding: 14px;
+  text-align: center;
+}
+
+/* FILAS ALTERNAS (opcional didáctico) */
+.table tbody tr:nth-child(even) td {
+  background: #ffd43b;
+}
