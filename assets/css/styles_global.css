@@ -223,18 +223,18 @@ body {
 
 /* TR (BODY) */
 .table tbody tr {
-  background: #ffec99;
+  background: #f552f5;
 }
 
 /* TD */
 .table td {
-  background: #ffe066;
-  border: 3px solid #f59f00;
+  background: #a15cd5;
+  border: 3px solid #7617a5;
   padding: 14px;
   text-align: center;
 }
 
 /* FILAS ALTERNAS (opcional didáctico) */
 .table tbody tr:nth-child(even) td {
-  background: #ffd43b;
+  background: #5e38dc;
 }
