@@ -1,0 +1,31 @@
+.article {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: flex-end; /* Pone el texto abajo */
+  overflow: hidden;      /* Para que nada se salga del cuadro */
+  position: relative;
+}
+
+/* 2. Estilo específico para el Producto 1 (La Imagen) */
+.producto-especifico {
+  background-image: url('../IMAGENES/img1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* 3. Estilo para el texto dentro del artículo */
+.article p {
+  background: rgba(0, 0, 0, 0.6); /* Fondo negro traslúcido */
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.imagen1 {
+background-color: aqua;
+size: auto;
+}
