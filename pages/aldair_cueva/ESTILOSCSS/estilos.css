@@ -22,6 +22,7 @@ body {
 }
 
 
+
 /* MAIN */
 .main {
   background: #ffffff;
@@ -43,17 +44,15 @@ body {
   background: #3e8c1d;   /* gris claro */
   border: 3px solid #0523e7;
 }
-/* Contiene todo el tamaño en mi productos*/
+
 .second-section {
-  background: #f1c40f;   
-  border: 3px solid #d35400;
-  padding: 20px;
-  height: 500px
-  
+  background: #eaebeb;   /* naranja */
+  border: 3px solid #358bb3;
+
 } 
 .third-section {
   background: #8e44ad;   /* morado */
-  border: 3px solid #5e38dc;
+  border: 5px solid #5e38dc;
 }
 
 .fourth-section {
@@ -72,24 +71,66 @@ body {
   min-height: 120px;
 }
 
-/* INICIO = SECCION DE PRODUCTOS */
-.pro_1,.pro_2,.pro_3,.pro_4 {
-  border: 3px solid #ff0000;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
- /*TAMAÑO DE MI IMAGEN*/
- width : 150px;
- height: 150px;
+/* 1 //CONTENEDOR GLOBAL DE MIS PRODUCTOS */
+.cont_products {
+  display: flex;                                /*evita que se pongan 1 de bajo del otro*/
+  flex-wrap: wrap;                              /* ajustar a los productos si ya no caben en la lista*/
+  gap: 20px;                                    /*el espacio entre mis productos*/      
+  justify-content: center;                      /*centra todos mis productos*/
+  padding: 20px;                                /*el espacio entre el borde del contenedor y mis productos*/
+  width: 100%;                                  /*que ocupe todo el ancho del contenedor second*/
 }
-/*ACOMODAR MIS PRODUCTOS*/
-.cont_pro {
-  display: flex;       /* organiza mis elementos */
-  flex-wrap: wrap;     /* Salta a la siguiente linea*/
-  gap: 40px;           /* Separacionm de los cuadros*/
-  
+
+/* 2 //EDITA MIS ARTICULOS */
+.pro {
+  border: 3px solid #45454660;                /*colocar borde a mis productos*/
+  background-color: #00040723;                /*instalar un fondo a todos mi productos*/
+  border-radius: 8px;                           /*redondear los bordes de mis articulos*/
+  display: flex;                                /*evita que se pongan 1 de bajo del otro*/
+  flex-direction: column;                       /*los ordeno en columnas */ 
+
+  /* AJUSTA AUTOMATICAMENTE MIS IMAGENES*/
+
+  flex: 1 1 250px;                              /*ajusta el tamaño de mis productos a 200px y se adapta al espacio disponible*/
+  max-width: 250px;                             /*limita el tamaño máximo de mis articulos a 300px*/
+  padding: 10px;                                /*el espacio entre el borde de mis articulos y la imagen que coloco*/
+  box-sizing: border-box;                       /*incluye el padding dentro del tamaño total del artículo para evitar que se desborde*/
+
+  /*CREAR UN PEQUEÑA TRANSICION DE */
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
-/*FINAL = SECCION DE PRODUCTOS*/
+
+.pro:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra al hacer hover */
+  border-color: #358bb3;
+}
+.pro:hover img {
+
+  filter: brightness(1.1);
+}
+
+/* 3 //CONTROL DE IMÁGENES */
+.pro img {
+  width: 100%;                                  /*ajusta el ancho de mis imagenes al tamaño del articulo*/
+  height: 200px;                                /*pongo una altura fija para todas mis imagenes y encuadren*/
+  object-fit: cover;                            /*evita la  distorsion de la imagen, recortando */
+  border-radius: 4px;                           /*redondear los bordes de mis imagenes*/
+}
+
+/* 4 //DESCRIPCIONES */
+.desc {
+  background: #000000;                       /*fondo negro para mis descripcion de texto*/
+  color: #ffffff;                            /*color del texto */
+  font-size: 14px;                             /*tamaño del texto*/
+  padding: 10px;                               /*separacion de los bordes*/
+  text-align: center;                          /*alinear mi texto al medio*/
+  margin-top: 15px;                            /*separar el margen de mi descripcion del articulo*/
+  border-radius: 4px;                          /*redondear los bordes de mi descripcion*/
+  margin-bottom: 0;                            /*margen inferior a 0 para evitar espacio innecesario*/
+}
+
 /* ASIDE */
 .aside {
   background: #e7f5ff;   /* celeste */
