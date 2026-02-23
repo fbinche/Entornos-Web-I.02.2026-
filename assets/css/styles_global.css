@@ -218,8 +218,8 @@ body {
 
 /* THEAD */
 .table thead {
-  background: #c3fae8;        /* verde claro */
-  border: 3px solid #20c997;
+  background: #0c4b36;        /* verde claro */
+  border: 3px solid #20b2c9;
 }
 
 /* TR (HEADER) */
@@ -229,8 +229,8 @@ body {
 
 /* TH */
 .table th {
-  background: #63e6be;
-  border: 3px solid #20c997;
+  background: #0597ff;
+  border: 3px solid #0b805d;
   padding: 16px;
   text-align: center;
 }
@@ -248,7 +248,7 @@ body {
 
 /* TD */
 .table td {
-  background: #a15cd5;
+  background: #9aebff;
   border: 3px solid #7617a5;
   padding: 14px;
   text-align: center;
@@ -256,5 +256,5 @@ body {
 
 /* FILAS ALTERNAS (opcional didáctico) */
 .table tbody tr:nth-child(even) td {
-  background: #5e38dc;
+  background: #d1f2f5;
 }
