@@ -129,6 +129,7 @@ body {
 .columnas_4,
 .columnas_5,
 .columnas_6,
+.columnas_8,
 .columnas_10,
 .services {
   display: grid;
@@ -166,6 +167,9 @@ body {
 }
 .columnas_6 {
   grid-template-columns: repeat(6, 1fr);
+}
+.columnas_8 {
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .columnas_10 {
