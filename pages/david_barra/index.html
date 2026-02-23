@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Maqueta Semántica</title>
+  <link rel="stylesheet" href="../../assets/css/styles_global.css">
+</head>
+
+<body>
+
+  <header class="header">SERVICIO DE INTERNET </header>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#">INICIO</a></li>
+      <li class="nav-item"><a href="#">SERVICIOS</a></li>
+      <li class="nav-item"><a href="#">CLIENTES</a></li>
+      <li class="nav-item"><a href="#">CONTACTO</a></li>
+    </ul>
+
+    <main class="main">
+
+      <!-- 23/02 Mejorar los etiquetas de cierre  -->
+      <section class="section hero first-section">
+        <header class="header">CARACTERISTICAS</header>
+        <button class="button">BOTÓN</button>
+
+        <section class="section columnas_6">
+          <article class="article">VELOCIDAD DE FIBRA</article>
+        <header class="header">CARACTERISTICAS <button class="button">BOTÓN</button></header>
+        <br>
+
+
+        <section class="section columnas_5">
+          <!-- Primer Articulo  -->
+          <article class="article">
+            <header>
+              <h1>VELOCIDAD DE FIBRA</h1>
+              <p class="precio">S/ 99 <span>/mes</span></p>
+            </header>
+            <details open>
+              <summary>Beneficios</summary>
+              <section>
+                <ul>
+                  <li>Velocidad simétrica</li>
+                  <li>Baja latencia</li>
+                  <li>Streaming 4K sin cortes</li>
+                  <li>Soporte 24/7</li>
+                </ul>
+              </section>
+            </details>
+            <picture class="picture">
+              <source media="(min-width: 1024px)" srcset="https://cdn-icons-png.flaticon.com/512/11086/11086607.png">
+              <source media="(min-width: 768px)"
+                srcset="data:image/jpeg;base64,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">
+              <img src="#" alt="Imagen responsive">
+
+              <footer>
+                <button>Contratar ahora</button>
+                <br>
+                <small>Instalación gratuita por tiempo limitado</small>
+              </footer>
+            </picture>
+
+          </article>
+              <!-- Segundo Articulo  -->
+          <article class="article">PLANES DE DATOS</article>
+          <article class="article">STAT</article>
+          <article class="article">STAT</article>
+          <article class="article">STAT</article>
+          <article class="article">STAT</article>
+        </section>
+      </section>
+
+
+      <!-- Este es un comentario -->
+      <section class="section second-section">
+        <header class="header">CLIENTES</header>
+
+        <section class="section clients">
+          <article class="article">LOGO</article>
+          <article class="article">LOGO</article>
+          <article class="article">LOGO</article>
+          <article class="article">LOGO</article>
+        </section>
+
+        <section class="columnas_4">
+          <article class="article">TESTIMONIO</article>
+          <article class="article">TESTIMONIO</article>
+          <article class="article">TESTIMONIO</article>
+        </section>
+
+        <section class="section two-columns">
+          <article class="article">TEXTO</article>
+          <aside class="aside">MAPA</aside>
+        </section>
+      </section>
+
+      <!-- Este es un comentario -->
+
+      <section class="section third-section">
+        <header class="header">SERVICIOS</header>
+
+        <section class="section services">
+          <article class="article">SERVICIO</article>
+          <article class="article">SERVICIO</article>
+          <article class="article">SERVICIO</article>
+          <article class="article">SERVICIO</article>
+          <article class="article">SERVICIO</article>
+          <article class="article">SERVICIO</article>
+          <article class="article">SERVICIO</article>
+          <article class="article">SERVICIO</article>
+          <article class="article">SERVICIO</article>
+          <article class="article">SERVICIO</article>
+        </section>
+      </section>
+      <!-- Este es un comentario -->
+      <section class="section two-columns fourth-section">
+        <section class="section">INFO1</section>
+        <section class="section">INFO2</section>
+        <section class="section">INFO3</section>
+        <form class="form">FORMULARIO</form>
+      </section>
+
+    </main>
+
+    <footer class="footer">FOOTER</footer>
+
+</body>
