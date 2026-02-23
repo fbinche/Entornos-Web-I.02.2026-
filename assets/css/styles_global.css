@@ -55,14 +55,23 @@ body {
 }
 
 .fourth-section {
-  background: #f53838;   /* azul oscuro */
+  background: #e66611;   /* azul oscuro */
   border: 3px solid #1b2838;      
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #5aa9c9;   
+  border: 3px solid #141311;
+  align-items: center;
+  justify-content: center;
+  
+}
 
 /* ARTICLE */
 .article {
-  background: #fff3bf;   /* amarillo */
+  background: #fff3bf;  
   border: 3px solid #d4b557;
   display: flex;
   align-items: center;
@@ -114,11 +123,18 @@ body {
 .stats,
 .stats2,
 .clients,
-.testimonials,
+.columnas_2,
+.columnas_3,
+.columnas_4,
+.columnas_5,
+.columnas_6,
 .services {
   display: grid;
-  gap: 15px;
+  gap: 20px;
 }
+
+
+
 
 .stats {
   grid-template-columns: repeat(2, 1fr);
@@ -132,8 +148,22 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.testimonials {
+.columnas_2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.columnas_3 {
   grid-template-columns: repeat(3, 1fr);
+}
+.columnas_4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.columnas_5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.columnas_6 {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .services {
