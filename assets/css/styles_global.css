@@ -77,6 +77,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 120px;
+  flex-direction: column;
 }
 
 /* ASIDE */
@@ -287,4 +288,16 @@ body {
 /* FILAS ALTERNAS (opcional didáctico) */
 .table tbody tr:nth-child(even) td {
   background: #d1f2f5;
+}
+
+
+.picture {
+  display: block;
+  width: 100%;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
