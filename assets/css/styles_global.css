@@ -316,3 +316,17 @@ body {
   object-fit: cover;
   display: block;
 }
+
+.card {
+  width: 100%;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
