@@ -1,89 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Maqueta Semántica</title>
-  <link rel="stylesheet" href="../../assets/css/styles_global.css">
+  <link rel="stylesheet" href="ESTILOSCSS/estilos.css">
 </head>
+
 <body>
 
-<header class="header">HEADER / NAV</header>
+  <header class="cabecera_principal"><img src="imagenes/cabecera.png" alt="Producto 1, ESCRITORIO DESK LINK"></header>
 
-<main class="main">
+  <main class="main">
+    <section class="section hero first-section">
+    
 
-  <section class="section hero first-section">
-    <header class="header">H1</header>
-    <button class="button">BOTÓN</button>
+      <section class="section stats">
+        <article class="article">STAT</article>
+      </section>
 
-    <section class="section stats">
-      <article class="article">STAT</article>
-      <article class="article">STAT</article>
-      <article class="article">STAT</article>
-      <article class="article">STAT</article>
-      <article class="article">STAT</article>
-      <article class="article">STAT</article>
-    </section>  
-    <section class="section stats2">
-      <article class="article">STAT2</article>
-      <article class="article">STAT2</article>
-      <article class="article">STAT2</article>
-      <article class="article">STAT2</article>
-      <article class="article">STAT2</article>
-      <article class="article">STAT2</article>
-    </section>
-  </section>
 
-  <section class="section second-section">
-    <header class="header">CLIENTES</header>
+      <section class="section stats">
+        <article class="article">STAT</article>
+        <article class="article">STAT</article>
+        <article class="article">STAT</article>
+        <article class="article">STAT</article>
 
-    <section class="section clients">
-      <article class="article">LOGO</article>
-      <article class="article">LOGO</article>
-      <article class="article">LOGO</article>
-      <article class="article">LOGO</article>
-    </section>
+      </section>
+     </section>
 
-    <section class="section testimonials">
-      <article class="article">TESTIMONIO</article>
-      <article class="article">TESTIMONIO</article>
-      <article class="article">TESTIMONIO</article>
-    </section>
+      <!--23/02 Utilizar Etiquetas semanticas,No usar Div -->
+      <section class="section second-section">
+        <header class="header">NUESTROS MODELOS MAS VENDIDOS</header>
+        <section class="cont_products">
+          <!--SECCION DEL PRODUCTO 1-->
+          <article class="pro">
+            <img src="imagenes/desk_link.png" alt="Producto 1, ESCRITORIO DESK LINK">
+            <p class="desc">DEKS LINK : estilo minimalista y ajustable </p>
+          </article>
+          <!--SECCION DEL PRODUCTO 2-->
+          <article class="pro">
+            <img src="imagenes/desk_dreams.png" alt="Producto 2, ESCRITORIO MODERNO">
+            <p class="desc">DESK DREAMS : moderno con estante lineal</p>
+          </article>
+          <!--SECCION DEL PRODUCTO 3-->
+          <article class="pro">
+            <img src="imagenes/desk_nova.png" alt="Producto 3, ESCRITORIO MINIMALISTA">
+            <p class="desc">DESK NOVA : gamer y versatil</p>
+          </article>
+          <!--SECCION DEL PRODUCTO 4-->
+          <article class="pro">
+            <img src="imagenes/desk_pro.png" alt="Producto 4, ESCRITORIO DE MADERA">
+            <p class="desc">DESK PRO : oficinista de estilo natural</p>
+          </article>
+        </section>
+      </section>
+
+      <section class="columnas_4">
+        <article class="article">TESTIMONIO</article>
+        <article class="article">TESTIMONIO</article>
+        <article class="article">TESTIMONIO</article>
+      </section>
 
       <section class="section two-columns">
-    <article class="article">TEXTO</article>
-    <aside class="aside">MAPA</aside>
-  </section>
-  </section>
+        <article class="article">Rango de envios a Lima</article>
+        <aside class="aside">
 
-
-
-  <section class="section third-section">
-    <header class="header">SERVICIOS</header>
-
-    <section class="section services">
-      <article class="article">SERVICIO</article>
-      <article class="article">SERVICIO</article>
-      <article class="article">SERVICIO</article>
-      <article class="article">SERVICIO</article>
-      <article class="article">SERVICIO</article>
-      <article class="article">SERVICIO</article>
-      <article class="article">SERVICIO</article>
-      <article class="article">SERVICIO</article>
-      <article class="article">SERVICIO</article>
-      <article class="article">SERVICIO</article>
+          <img id="imagen1" src="IMAGENES/img2.jpg" alt="MAPA DE LIMA">
+          <p>MAPA</p>
+        </aside>
+      </section>
     </section>
-  </section>
 
-  <section class="section two-columns fourth-section">
-    <section class="section">INFO1</section>
-    <section class="section">INFO2</section>
-    <section class="section">INFO3</section>
-    <form class="form">FORMULARIO</form>
-  </section>
 
-</main>
 
-<footer class="footer">FOOTER</footer>
+    <section class="section third-section">
+      <header class="header">SERVICIOS</header>
 
+      <section class="section services">
+        <article class="article">SERVICIO</article>
+        <article class="article">SERVICIO</article>
+        <article class="article">SERVICIO</article>
+
+      </section>
+    </section>
+
+    <section class="section two-columns fourth-section">
+      <section class="section">FORMAS DE PAGO</section>
+      <section class="section">METODOS DE ENVIO</section>
+      <section class="section">CONTACTO</section>
+      <form class="form">ENVIANOS TUS CONSULTAS</form>
+    </section>
+
+  </main>
+
+  <footer class="footer">FOOTER</footer>
+  <>
 </body>
+
 </html>
