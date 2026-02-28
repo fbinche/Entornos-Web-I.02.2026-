@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: #3a003a;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 60px 80px;
+}
+
+footer h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #2cc05d;
+  font-size: 14px;
+}
+
+.nav_amarrillo a {
+  color: #f1c40f;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.logo span {
+  color: #ff3366;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+aside p {
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+figure img {
+  width: 150px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #ff3366;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #111 0%, #1c1c1c 50%, #111 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+main {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #ff6a00;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+header h2 {
+  font-size: 26px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+article h3 {
+  letter-spacing: 6px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+article h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+address {
+  font-style: normal;
+  color: #bbb;
+}
+
+address a {
+  color: #bbb;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+
+address a:hover {
+  color: #ff6a00;
+}
