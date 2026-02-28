@@ -322,6 +322,7 @@ body {
   display: block;
 }
 
+
 .card {
   width: 100%;
 }
@@ -338,4 +339,19 @@ body {
 
 .sin_espacio {
   display: flex !important;
+}
+
+
+.productos__destacados figcaption{
+  color: #0523e7;
+}
+.productos__destacados img{
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  display: auto;
+}
+
+#id444{
+  background-color: #141311;
 }
