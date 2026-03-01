@@ -1,16 +1,208 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Maqueta Semántica</title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTIMUEBLES</title>
+    <link rel="stylesheet" href="css/stilos.css" >
 </head>
-
 <body>
+    <!--  CABEZERA DE MI PAGINA  -->
+   <header class="cabeza">
+    <img src="img/cabecera.png" alt="CABEZERA" >
+   </header>
+    <!--  CONTENIDO PRINCIPAL O INTERMEDIO  -->
+  <main style="border: 4px solid #15bff3;">MAIN CENTRAL (BANNER CON LAS FLECHAS DEL TECLADO)
+     <!--  SECCION DE BANNER -->
+     <section class="banner">
+        <!--BANNER 1-->
+         <article>
+            <img src="img/banners/bn1.png" alt="Banner 1" >
+         </article>
+         <!--BANNER 2-->
+         <article>
+            <img src="img/banners/bn2.png" alt="Banner 1" >
+         </article>
+         <!--BANNER 3-->
+         <article>
+            <img src="img/banners/bn3.png" alt="Banner 1" >
+         </article>
+        </section>
+     <!--  PRODUCTOS  -->   
+     <section  class="seccion_productos"> 
+        <header class="subtitulos"> <h2> NUESTROS MODELOS MAS VENDIDOS </h2> </header>
+        <section class="productos">  
+         <!--PRODUCTO 1 -->
+          <article class="items">  
+            <h4> DESK LINK </h4>
+            <img src="/img/productos/1.png" alt="PRODUCTO 1" >
+            <p> Estilo minimalista y ajustable</p>
+           <button type="button" style="background-color: #06c41f;">LO DESEO</button>  <!--AÑADIR SU ESTILO PROPIO Y LOGO DE WHATSAPP-->
+          </article>
+          <!--PRODUCTO 2 -->
+          <article class="items">  
+            <h4> DESK DREAMS </h4>
+            <img src="/img/productos/2.png" alt="PRODUCTO 1" >
+            <p> Moderno y con estante con puerta</p>
+           <button type="button" style="background-color: #06c41f;">LO DESEO</button>  <!--AÑADIR SU ESTILO PROPIO Y LOGO DE WHATSAPP-->
+          </article>
+          <!--PRODUCTO 3 -->
+          <article class="items">  
+            <h4> DESK NOVA </h4>
+            <img src="/img/productos/3.png" alt="PRODUCTO 1" >
+            <p> Amplio gamer versatil</p>
+           <button type="button" style="background-color: #06c41f;">LO DESEO</button>  <!--AÑADIR SU ESTILO PROPIO Y LOGO DE WHATSAPP-->
+          </article>
+          <!--PRODUCTO 4 -->
+         <article class="items">  
+            <h4> DESK PRO </h4>
+            <img src="/img/productos/4.png" alt="PRODUCTO 1" >
+            <p> Oficinista, amplio y natural</p>
+           <button type="button" style="background-color: #06c41f;">LO DESEO</button>  <!--AÑADIR SU ESTILO PROPIO Y LOGO DE WHATSAPP-->
+          </article>
+          <!--PRODUCTO 5 -->
+          <article class="items">  
+            <h4>DESK LEVEL </h4>
+            <img src="/img/productos/5.png" alt="PRODUCTO 1" >
+            <p> Para el gamer mas exigente</p>
+            <button type="button" style="background-color: #06c41f;">LO DESEO</button>  <!--AÑADIR SU ESTILO PROPIO Y LOGO DE WHATSAPP-->
+          </article>
+         </section>
+     </section>
+     <!--  TESTIMONIOS  -->
+     <section class="seccion_testimonios"> 
+         <!--TESTIMONIO 1 -->
+         <article class="testimonios">  
+            <h5> MARIA G. </h5>
+            <img src="/img/testimonios/test1.jpg" alt="PRODUCTO 1" width="200px">
+            <h6>Decoración y acabados (muebles y telas)  </h6>
+            <p> “Quedé encantada con el nuevo tapizado de mi sofá, los acabados son 
+                impecables y ahora mi sala luce renovada.” — María G.</p>
+         </article>
+         <!--TESTIMONIO 2 -->
+         <article class="testimonios">  
+            <h5> LUCIA R. </h5>
+            <img src="/img/testimonios/test2.jpg" alt="PRODUCTO 1" width="200px">
+            <h6>Cotización y planificación  </h6>
+            <p>“Me ayudaron a organizar mi proyecto con claridad, la cotización fue 
+                precisa y la planificación me dio mucha confianza.” — Lucía R.</p>
+         </article>
+         <!--TESTIMONIO 3 -->
+         <article class="testimonios">  
+            <h5> CAROLINA S. </h5>
+            <img src="/img/testimonios/test3.jpg" alt="PRODUCTO 1" width="200px">
+            <h6>Armado e instalación  </h6>
+            <p>“El equipo instaló mis muebles rápido y seguro, todo quedó perfecto 
+                en su lugar sin complicaciones.” — Carolina S.</p>
+         </article>
+    </section>
+     <!--  RANGOS DE ENVIOS  -->
+     <section class="seccion_envios"> <h2>RANGO DE ENVIOS A LIMA </h2> 
+        <!--DISTRITOS A LOS QUE SI ENTREGAMOS-->
+       <section class="lista_envios"> 
+        <h3>Distritos con entrega disponible</h3> 
+        <ul> 
+            <li>Distrito A</li> 
+            <li>Distrito B</li> 
+            <li>Distrito C</li> 
+            <li>Distrito D</li> 
+            <li>Distrito E</li> 
+            <li>Distrito F</li> 
+        </ul> 
+        </section>
+    <!--DISTRITOS CON COSTO EXTRA-->
+    <section class="lista_envios"> 
+        <h3>Distritos con costo extra</h3> 
+        <ul> 
+            <li>Distrito A</li> 
+            <li>Distrito B</li> 
+            <li>Distrito C</li> 
+        </ul> 
+        </section>
+      <!--DISTRITOS A LOS QUE NO LLEGAMOS-->
+    <section class="lista_envios"> 
+        <h3>Distritos a los que no llegamos</h3> 
+        <ul> 
+            <li>Distrito A</li> 
+            <li>Distrito B</li> 
+            <li>Distrito C</li> 
+        </ul> 
+        </section> 
+        <img src="img/ranog de envios.png" alt="MAPA" >   
+     </section>
+     <!--  SERVICIOS  -->
+     <section class="seccion_servicios"> 
+         <header class="subtitulos"><h2>NUESTROS SERVICIOS</h2></header>
+         <section class="servicios">
+         <!--SERVICIO DE DECORACION Y ACABADO 1 -->
+            <article class="servi">  
+               <h4> DECORACION Y ACABADO </h4>
+               <img src="/img/servicios/serv1.jpg" alt="PRODUCTO 1" width="200px">
+               <p> Especializados en muebles y telas: aplicamos barnices, lacados, pintura y tapicería 
+                para dar un acabado único y personalizado. </p>
+               <button type="button" style="background-color: #fd7701;">MAS INFORMACION</button>
+            </article >
+          <!--SERVICIO DE COTIZACION DE MUEBLES -->
+            <article class="servi">  
+                <h4> COTIZACION Y PLANIFICACION</h4>
+                <img src="/img/servicios/serv2.jpg" alt="PRODUCTO 1" width="200px">
+                <p> Te asesoramos en materiales, costos y tiempos de entrega, elaborando un plan a medida 
+                para tu proyecto.</p>
+                <button type="button" style="background-color: #fd7701;">MAS INFORMACION</button>
+            </article>
+             <!--SERVICIO DE ARMADO-->
+            <article class="servi">  
+                <h4> ARMADO E INSTALACION </h4>
+                <img src="/img/servicios/serv3.jpg" alt="PRODUCTO 1" width="200px">
+                <p> Nos encargamos del montaje y la instalación de tus muebles en el espacio que necesites, 
+                garantizando seguridad y funcionalidad.</p>
+             <button type="button" style="background-color: #fd7701;">MAS INFORMACION</button>
+             </article>
+         </section>
+     </section> <!--fin-->
+</main>
+<!--MUSIQUITA FINAL ES LA QUE ME AYUDA A CONCENTRAR -->
+<iframe src="mu.mp3" allow="autoplay" style="display:none" >
+</iframe>
+<audio id="miMusica" autoplay loop onplay="this.volume=0.02">
+  <source src="mu.mp3" type="audio/mpeg">
+</audio>
+<!--MUERE MUSICA-->
+      <!-- CONTENIDO FINAL DE MI PAGINA -->
+  <footer class="seccion_pie">
+    <!--FORMAS DE PAGO-->
+      <section class="pie">
+        <h4>FORMAS DE PAGO</h4>
+    <ul> 
+            <li>Trnasferencia bancaria</li> 
+            <li>Billeteras digitales</li> 
+            <li>Efectivo</li> 
+        </ul> 
+       </section>
+       <!--METODOS DE ENVIO-->
+      <section class="pie">
+        <h4>METODOS DE ENVIO</h4>
+    <ul> 
+            <li>Entrega a domicilio</li> 
+            <li>Punto de encuentro</li> 
+            <li>Entregas a Lima</li> 
+        </ul> 
+       </section>
+       <!--CONTACTO-->
+      <section class="pie">
+        <h4>CONTACTO</h4>
+    <ul> 
+            <li>Whattsapp : 927 699 659</li> 
+            <li>Facebook  : OPTIMUEBLES</li> 
+            <li>TIKTOK    : OPTIMUEBLES_PERU</li> 
+        </ul> 
+       </section>
+      
+       <!--IMAGEN DE MARCA DE AGUA-->
+      <section>
+       <img src="img/logo web.png" alt="MARCA DE AGUA" width="250px">
+       </section>
 
-LO INTENTE
-
+  </footer>
 </body>
-
 </html>
