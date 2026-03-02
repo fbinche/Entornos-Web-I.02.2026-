@@ -20,6 +20,7 @@ body {
   justify-content: center;
   font-weight: bold;
   font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -70,7 +71,7 @@ body {
   
 }
 
-/* ARTICLE */
+/* ARTICLE1 */
 .article {
   background: #fff3bf;  
   border: 3px solid #d4b557;
@@ -79,6 +80,18 @@ body {
   justify-content: center;
   min-height: 120px;
   flex-direction: column;
+}
+
+/* ARTICLE2 */
+.article2 {
+  background: #fff3bf;  
+  border: 3px solid #d4b557;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  min-height: 120px;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* ASIDE */
