@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.logo-icon img {
+  width: 60px;
+}
+
+.logo-text .site-title {
+  font-size: 28px;
+  color: #ff0066;
+}
+
+.logo-text .site-subtitle {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #ff0066, #ff66cc);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 0 20px 40px 20px;
+}
+
+.hero-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background-color: #fff;
+  color: #ff0066;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+  background-color: #ffe6f0;
+}
+
+/* Sección de jugadores y columnas */
+.columnas_3, .columnas_6 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+}
+
+.article, .card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.article:hover, .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.article img, .card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Equipos y detalles */
+.card details summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card details p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Secciones */
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  color: #ff0066;
+  font-size: 28px;
+}
+
+/* Redes Sociales */
+.social-media, .footer-content {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.social-list, .social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.social-list li a, .social-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-list li a:hover, .social-links li a:hover {
+  background-color: #ff0066;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Player cards */
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+}
+
+.player-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.player-card img.player-photo {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.player-info {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Títulos de jugadores */
+.titles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+}
+
+.player-titles {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.player-titles ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.player-titles ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+
+.footer-content .social-links li a {
+  background-color: #fff;
+  color: #ff0066;
+}
+
+.footer-content .social-links li a:hover {
+  background-color: #ff0066;
+  color: #fff;
+}
+
+/* Animaciones simples */
+.animated-social {
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
