@@ -1,0 +1,93 @@
+/* Configuración básica y tipografía */
+section {
+  background-color: #0055ff; /* El azul vibrante de la imagen */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 400px;
+}
+
+/* Columna de texto */
+article {
+  flex: 1;
+  max-width: 600px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-family: serif; /* Para imitar el estilo elegante de Maxsight */
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+article p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  opacity: 0.9; /* Suaviza un poco el blanco puro sobre azul */
+}
+
+/* Botón de acción */
+nav a {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0055ff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 50px; /* Bordes redondeados tipo píldora */
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Contenedor del Video/Imagen */
+figure {
+  flex: 1;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+figure button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  transition: filter 0.3s;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+figure button:hover {
+  filter: brightness(1.1);
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    padding: 30px;
+    text-align: left;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+}
