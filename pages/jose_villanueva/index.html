@@ -9,175 +9,924 @@
 
 <body>
 
-  <header class="header">TRANSFERMARKT</header>
+  <!-- Logo del sitio -->
+<div class="logo">
+  <!-- Imagen de fútbol -->
+  <div class="logo-icon">
+    <img src="imagenes/futbol.png" alt="Balón de fútbol">
+  </div>
 
-  <main class="main">
+  <!-- Texto del sitio -->
+  <div class="logo-text">
+    <h1 class="site-title">TRANSFERMARKT</h1>
+    <p class="site-subtitle">Mercado y estrellas del fútbol mundial</p>
+  </div>
+</div>
+
+<!-- Estilos CSS -->
+<style>
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    max-width: 450px;
+  }
+
+  .logo-icon img {
+    width: 60px;       /* tamaño del balón */
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    letter-spacing: 1px;
+  }
+
+  .site-subtitle {
+    margin: 4px 0 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
+
+  /* Opcional: responsivo */
+  @media (max-width: 480px) {
+    .logo {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo-icon img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+</style>
 
 
-    <!-- 23/02 Imagenes e Información y Secciones  -->
-    <section class="section hero first-section">
-      <header class="header">TOP 6 <button class="button">BOTÓN</button> </header>
+ <!-- Sección Hero: Top 6 Jugadores con animación -->
+<section class="section hero first-section">
+  <header class="hero-header">
+    <div class="hero-text">
+      <h1 class="hero-title animated-title">⚽ TOP 6 JUGADORES DEL MOMENTO</h1>
+      <p class="hero-subtitle">Las estrellas más influyentes del fútbol mundial</p>
+    </div>
+    <div class="hero-action">
+      <button class="hero-button">Ver Estadísticas</button>
+    </div>
+  </header>
+</section>
+
+<style>
+  .hero-header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Football_pitch.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .hero-text {
+    margin-bottom: 20px;
+  }
+
+  /* Animación del título */
+  .animated-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: slideFadeIn 1s ease-out forwards;
+  }
+
+  @keyframes slideFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+  }
+
+  .hero-button {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff4c00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .hero-button:hover {
+    transform: scale(1.05);
+    background-color: #e04300;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  }
+
+  /* Responsivo */
+  @media (max-width: 480px) {
+    .animated-title {
+      font-size: 1.5rem;
+    }
+    .hero-subtitle {
+      font-size: 0.9rem;
+    }
+    .hero-button {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
 
       <br>
-      <section class="section columnas_3">
-        <article class="article">Lionel Andres Messi Cuccittini</article>
-        <article class="article">Cristiano Ronaldo dos Santos Aveiro</article>
-        <article class="article">Neymar da Silva Santos Júnior​</article>
-        <article class="article">Kylian Mbappé Lottin</article>
-        <article class="article">Lamine Yamal Nasraoui Ebana</article>
-        <article class="article">Raphael Dias Belloli</article>
-      </section>
+      <section class="section columnas_3" style="
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+">
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Lionel_Messi_20180626.jpg" alt="Lionel Messi" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Lionel Andres Messi Cuccittini</p>
+  </article>
+
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/cristiano.jpg" alt="Cristiano Ronaldo" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Cristiano Ronaldo dos Santos Aveiro</p>
+  </article>
+
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Neymar_2018.jpg" alt="Neymar" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Neymar da Silva Santos Júnior​</p>
+  </article>
+
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Kylian_Mbapp%C3%A9_2019.jpg" alt="Kylian Mbappé" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Kylian Mbappé Lottin</p>
+  </article>
+
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Lamine_Yamal_2023.jpg" alt="Lamine Yamal" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Lamine Yamal Nasraoui Ebana</p>
+  </article>
+
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Raphinha_2022.jpg" alt="Raphael Dias Belloli" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Raphael Dias Belloli</p>
+  </article>
+</section>
       <br>
-      <section class="section columnas_6">
-        
-        <card class="card">
-          <h1>Inter Miami CF</h1>
-          <details>
-            <summary>INFORMACION DEL CLUB</summary>
-            <p>
-              El Inter de Miami (Club Internacional de Fútbol Miami) es un club de la MLS fundado en 2018 por David Beckham, que debutó en 2020. Con sede en Fort Lauderdale (Chase Stadium), destaca por la incorporación de Lionel Messi, Luis Suárez, Sergio Busquets y Jordi Alba. Ganó su primer título (Leagues Cup 2023), la Supporters' Shield 2024 y la MLS Cup 2025.
-            </p>
-          </details>
-          <picture class="picture">
-            <img src="imagenes/inter_de_miami.jpg" alt="Escudo Inter Miami">
-          </picture>
+      <section class="section equipos-section">
 
-        </card>
+  <header class="equipos-header">
+    <h2 class="equipos-title">⚽ Equipos Actuales</h2>
+    <span class="equipos-line"></span>
+  </header>
 
-        <card class="card">
-          <h1>Al-Nassr</h1>
-          <details>
-            <summary>INFORMACION DEL CLUB</summary>
-            <p>
-              Al-Nassr es uno de los clubes más exitosos del fútbol saudí: ha ganado un total de 29 trofeos competitivos, incluyendo 10 títulos de liga , 5 Copas del Rey y 3 Copas del Príncipe Heredero . Ha ganado 2 trofeos continentales: 1 Recopa de Asia y 1 Supercopa de Asia .
-            </p>
-          </details>
-          <picture class="picture">
-            <img src="imagenes/Al-Nassr.jpg" alt="Escudo Al Nassr">
-          </picture>
+  <section class="section columnas_6">
 
-        </card>
+    <!-- Inter Miami CF -->
+    <article class="card">
+      <h3 class="team-name">Inter Miami CF</h3>
+      <picture>
+        <img src="imagenes/inter_de_miami.jpg" alt="Escudo Inter Miami">
+      </picture>
+      <details>
+        <summary>INFORMACIÓN DEL CLUB</summary>
+        <p>
+          El Inter de Miami (Club Internacional de Fútbol Miami) es un club de la MLS fundado en 2018 por David Beckham, debutando en 2020. Con sede en Fort Lauderdale (Chase Stadium), destaca por la incorporación de Lionel Messi, Luis Suárez, Sergio Busquets y Jordi Alba. Ganó su primer título: Leagues Cup 2023, Supporters' Shield 2024 y MLS Cup 2025.
+        </p>
+      </details>
+    </article>
 
-        <card class="card">
-          <h1>Santos Futebol Clube</h1>
-          <details>
-            <summary>INFORMACION DEL CLUB</summary>
-            <p>
-              Santos Futebol Clube es un club de fútbol brasileño fundado en 1912. Es uno de los clubes más importantes de Brasil, con una gran base de seguidores. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Copa Libertadores y la Copa Intercontinental.
-            </p>
-          </details>
-          <picture class="picture">
-            <img src="imagenes/santos.jpg" alt="Escudo Santos Futebol Clube">
-          </picture>
+    <!-- Al-Nassr -->
+    <article class="card">
+      <h3 class="team-name">Al-Nassr</h3>
+      <picture>
+        <img src="imagenes/Al-Nassr.jpg" alt="Escudo Al Nassr">
+      </picture>
+      <details>
+        <summary>INFORMACIÓN DEL CLUB</summary>
+        <p>
+          Al-Nassr es uno de los clubes más exitosos del fútbol saudí, con 29 trofeos competitivos: 10 títulos de liga, 5 Copas del Rey y 3 Copas del Príncipe Heredero. Ha ganado 2 trofeos continentales: 1 Recopa de Asia y 1 Supercopa de Asia.
+        </p>
+      </details>
+    </article>
 
-        </card>
-        <card class="card">
-          <h1>Real Madrid Club de Fútbol</h1>
-          <details>
-            <summary>INFORMACION DEL CLUB</summary>
-            <p>
-              Real Madrid Club de Fútbol es un club de fútbol español fundado en 1902. Es uno de los clubes más importantes de España, con una gran base de seguidores. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Liga de Campeones de la UEFA y la Copa del Rey.
-            </p>
-          </details>
-          <picture class="picture">
-            <img src="imagenes/real_madrid.jpg" alt="Escudo Real Madrid Club de Fútbol">
-          </picture>
+    <!-- Santos FC -->
+    <article class="card">
+      <h3 class="team-name">Santos FC</h3>
+      <picture>
+        <img src="imagenes/santos.jpg" alt="Escudo Santos Futebol Clube">
+      </picture>
+      <details>
+        <summary>INFORMACIÓN DEL CLUB</summary>
+        <p>
+          Santos Futebol Clube es un club brasileño fundado en 1912. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Copa Libertadores y la Copa Intercontinental.
+        </p>
+      </details>
+    </article>
 
-        </card>
-        <card class="card">
-          <h1>Fútbol Club Barcelona</h1>
-          <details>
-            <summary>INFORMACION DEL CLUB</summary>
-            <p>
-              Fútbol Club Barcelona es un club de fútbol español fundado en 1899. Es uno de los clubes más importantes de España, con una gran base de seguidores. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Liga de Campeones de la UEFA y la Copa del Rey.
-            </p>
-          </details>
-          <picture class="picture">
-            <img src="imagenes/fc_barcelona.jpg" alt="Escudo Fútbol Club Barcelona">
-          </picture>
+    <!-- Real Madrid CF -->
+    <article class="card">
+      <h3 class="team-name">Real Madrid CF</h3>
+      <picture>
+        <img src="imagenes/real_madrid.jpg" alt="Escudo Real Madrid Club de Fútbol">
+      </picture>
+      <details>
+        <summary>INFORMACIÓN DEL CLUB</summary>
+        <p>
+          Real Madrid Club de Fútbol, fundado en 1902, es uno de los clubes más importantes de España. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Liga de Campeones de la UEFA y la Copa del Rey.
+        </p>
+      </details>
+    </article>
 
-        </card>
-        <card class="card">
-          <h1>Fútbol Club Barcelona</h1>
-          <details>
-            <summary>INFORMACION DEL CLUB</summary>
-            <p>
-              Fútbol Club Barcelona es un club de fútbol español fundado en 1899. Es uno de los clubes más importantes de España, con una gran base de seguidores. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Liga de Campeones de la UEFA y la Copa del Rey.
-            </p>
-          </details>
-          <picture class="picture">
-            <img src="imagenes/fc_barcelona.jpg" alt="Escudo Fútbol Club Barcelona">
-          </picture>
+    <!-- FC Barcelona -->
+    <article class="card">
+      <h3 class="team-name">FC Barcelona</h3>
+      <picture>
+        <img src="imagenes/fc_barcelona.jpg" alt="Escudo Fútbol Club Barcelona">
+      </picture>
+      <details>
+        <summary>INFORMACIÓN DEL CLUB</summary>
+        <p>
+          Fútbol Club Barcelona, fundado en 1899, es uno de los clubes más importantes de España. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Liga de Campeones de la UEFA y la Copa del Rey.
+        </p>
+      </details>
+    </article>
+    
+    <!-- FC Barcelona -->
+    <article class="card">
+      <h3 class="team-name">FC Barcelona</h3>
+      <picture>
+        <img src="imagenes/fc_barcelona.jpg" alt="Escudo Fútbol Club Barcelona">
+      </picture>
+      <details>
+        <summary>INFORMACIÓN DEL CLUB</summary>
+        <p>
+          Fútbol Club Barcelona, fundado en 1899, es uno de los clubes más importantes de España. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Liga de Campeones de la UEFA y la Copa del Rey.
+        </p>
+      </details>
+    </article>
 
-        </card>
-      </section>
-    </section>
+  </section>
+</section>
 
     <section class="section second-section">
-      <header class="header">LIGAS Y COMPETICIONES</header>
+  <header class="section-header animated-section" style="animation-delay: 0s;">
+    <h2>Ligas y Competiciones</h2>
+  </header>
 
-      <section class="section clients">
-        <article class="article">LaLiga</article>
-        <article class="article">MLS</article>
-        <article class="article">Liga Profesional Saudí</article>
-        <article class="article">Campeonato Brasileño de Serie A</article>
-      </section>
+  <!-- Ligas Nacionales -->
+  <section class="leagues national-leagues animated-section" style="animation-delay: 0.1s;">
+    <h3>Ligas Nacionales</h3>
+    <ul>
+      <li>LaLiga</li>
+      <li>MLS</li>
+      <li>Liga Profesional Saudí</li>
+      <li>Campeonato Brasileño de Serie A</li>
+    </ul>
+  </section>
 
-      <section class="columnas_4">
-        <article class="article">Liga de Campeones de la UEFA</article>
-        <article class="article">Copa del Rey</article>
-        <article class="article">LaLiga</article>
-        <article class="article">Supercopa de España</article>
-        <article class="article">MLS</article>
-        <article class="article">Liga Profesional Saudí</article>
-        <article class="article">Campeonato Brasileño de Serie A</article>
-        <article class="article">CONMEBOL Libertadores</article>
-        <article class="article">Copa Mundial de Clubes de la FIFA</article>
-        <article class="article">Copa Mundial</article>
-      </section>
+  <!-- Copas Nacionales -->
+  <section class="leagues national-cups animated-section" style="animation-delay: 0.2s;">
+    <h3>Copas Nacionales</h3>
+    <ul>
+      <li>Copa del Rey</li>
+      <li>Supercopa de España</li>
+    </ul>
+  </section>
 
-      <section class="section two-columns">
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-      </section>
-    </section>
+  <!-- Competiciones Internacionales -->
+  <section class="leagues international-competitions animated-section" style="animation-delay: 0.3s;">
+    <h3>Competiciones Internacionales</h3>
+    <ul>
+      <li>Liga de Campeones de la UEFA</li>
+      <li>CONMEBOL Libertadores</li>
+      <li>Copa Mundial de Clubes de la FIFA</li>
+      <li>Copa Mundial</li>
+    </ul>
+  </section>
+</section>
+
+<style>
+  .second-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .section-header h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #222;
+  }
+
+  .leagues {
+    margin-bottom: 25px;
+    background: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .leagues h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .leagues ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+  }
+
+  /* Animación para secciones */
+  .animated-section {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<style>
+  .second-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .section-header h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #222;
+  }
+
+  .leagues {
+    margin-bottom: 30px;
+  }
+
+  .leagues h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+  }
+
+  .leagues ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .leagues li {
+    margin-bottom: 6px;
+    font-size: 1rem;
+    color: #333;
+  }
+</style>
+
+      <section class="section player-biographies">
+  <header class="section-header">
+    <h2>Biografías de Jugadores</h2>
+  </header>
+
+  <div class="players-grid">
+    <!-- Lionel Messi -->
+    <div class="player-card animated-card" style="animation-delay: 0s;">
+      <img src="messi.jpg" alt="Lionel Messi" class="player-photo">
+      <article class="player-info">
+        <h3>Lionel Messi</h3>
+        <p>Futbolista argentino considerado uno de los mejores de la historia. Ha ganado múltiples Balones de Oro y ha jugado en el FC Barcelona y PSG.</p>
+      </article>
+    </div>
+
+    <!-- Cristiano Ronaldo -->
+    <div class="player-card animated-card" style="animation-delay: 0.1s;">
+      <img src="cristiano.jpg" alt="Cristiano Ronaldo" class="player-photo">
+      <article class="player-info">
+        <h3>Cristiano Ronaldo</h3>
+        <p>Delantero portugués conocido por su potencia y capacidad goleadora. Ha brillado en clubes como Manchester United, Real Madrid y Juventus.</p>
+      </article>
+    </div>
+
+    <!-- Neymar Jr -->
+    <div class="player-card animated-card" style="animation-delay: 0.2s;">
+      <img src="neymar.jpg" alt="Neymar Jr" class="player-photo">
+      <article class="player-info">
+        <h3>Neymar Jr</h3>
+        <p>Futbolista brasileño famoso por su técnica, regate y velocidad. Ha jugado en el FC Barcelona y PSG.</p>
+      </article>
+    </div>
+
+    <!-- Kylian Mbappé -->
+    <div class="player-card animated-card" style="animation-delay: 0.3s;">
+      <img src="mbappe.jpg" alt="Kylian Mbappé" class="player-photo">
+      <article class="player-info">
+        <h3>Kylian Mbappé</h3>
+        <p>Delantero francés, campeón mundial en 2018, conocido por su velocidad, habilidad y olfato goleador en PSG.</p>
+      </article>
+    </div>
+
+    <!-- Lamine Yamal -->
+    <div class="player-card animated-card" style="animation-delay: 0.4s;">
+      <img src="lamine.jpg" alt="Lamine Yamal" class="player-photo">
+      <article class="player-info">
+        <h3>Lamine Yamal</h3>
+        <p>Joven promesa española, talento emergente del FC Barcelona, reconocido por su técnica y visión de juego.</p>
+      </article>
+    </div>
+
+    <!-- Raphinha -->
+    <div class="player-card animated-card" style="animation-delay: 0.5s;">
+      <img src="raphinha.jpg" alt="Raphinha" class="player-photo">
+      <article class="player-info">
+        <h3>Raphinha</h3>
+        <p>Extremo brasileño que juega en Barcelona, conocido por su velocidad, regate y capacidad de asistencia.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .player-biographies {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .section-header h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #222;
+  }
+
+  .players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .player-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    opacity: 0; /* empieza invisible */
+    transform: translateY(30px); /* empieza abajo */
+  }
+
+  .player-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .player-info h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .player-info p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+  }
+
+  /* Animación de las tarjetas */
+  .animated-card {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .players-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
 
 
 
     <section class="section third-section">
-      <header class="header">REDES SOCIALES</header>
+  <header class="section-header animated-section" style="animation-delay: 0s;">
+    <h2>Redes Sociales</h2>
+  </header>
 
-      <section class="section services">
-        <article class="article">Ig</article>
-        <article class="article">Facebook</article>
-        <article class="article">Twitter</article>
-        <article class="article">Instagram</article>
-        <article class="article">TikTok</article>
-      </section>
-    </section>
+  <section class="social-media">
+    <ul class="social-list">
+      <li class="animated-social" style="animation-delay: 0s;"><a href="#" class="social-link">Instagram</a></li>
+      <li class="animated-social" style="animation-delay: 0.1s;"><a href="#" class="social-link">Facebook</a></li>
+      <li class="animated-social" style="animation-delay: 0.2s;"><a href="#" class="social-link">Twitter</a></li>
+      <li class="animated-social" style="animation-delay: 0.3s;"><a href="#" class="social-link">TikTok</a></li>
+    </ul>
+  </section>
+</section>
 
-    <section class="section two-columns fourth-section">
-      <section class="section">TITULOS DE LIONEL MESSI</section>
-      <section class="section">TITULOS DE CRISTIANO RONALDO</section>
-      <section class="section">TITULOS DE NEYMAR JR</section>
-      <section class="section">TITULOS DE KYLIAN MBBAPE</section>
-      <section class="section">TITULOS DE LAMINE YAMAL</section>
-      <section class="section">TITULOS DE RAPHAEL DIAS</section>
-    </section>
+<style>
+  .third-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #222;
+  }
+
+  .social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .social-list li {
+    margin: 0;
+  }
+
+  .social-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #eee;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .social-link:hover {
+    background-color: #ff4c00;
+    color: #fff;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+  }
+
+  /* Animación de entrada para secciones */
+  .animated-section {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  /* Animación secuencial de los links */
+  .animated-social {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsivo */
+  @media (max-width: 480px) {
+    .social-list {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+</style>
+
+    <section class="section fourth-section">
+  <header class="section-header">
+    <h2>Títulos de Jugadores</h2>
+  </header>
+
+  <div class="titles-grid">
+    <!-- Lionel Messi -->
+    <div class="player-titles">
+      <h3>Lionel Messi</h3>
+      <ul>
+        <li>10× LaLiga</li>
+        <li>7× Copa del Rey</li>
+        <li>4× Champions League</li>
+        <li>1× Copa América</li>
+      </ul>
+    </div>
+
+    <!-- Cristiano Ronaldo -->
+    <div class="player-titles">
+      <h3>Cristiano Ronaldo</h3>
+      <ul>
+        <li>3× Premier League</li>
+        <li>2× LaLiga</li>
+        <li>5× Champions League</li>
+        <li>1× Eurocopa</li>
+      </ul>
+    </div>
+
+    <!-- Neymar Jr -->
+    <div class="player-titles">
+      <h3>Neymar Jr</h3>
+      <ul>
+        <li>2× LaLiga</li>
+        <li>3× Ligue 1</li>
+        <li>1× Champions League</li>
+        <li>1× Copa América</li>
+      </ul>
+    </div>
+
+    <!-- Kylian Mbappé -->
+    <div class="player-titles">
+      <h3>Kylian Mbappé</h3>
+      <ul>
+        <li>4× Ligue 1</li>
+        <li>1× Copa del Mundo</li>
+        <li>1× Copa de Francia</li>
+      </ul>
+    </div>
+
+    <!-- Lamine Yamal -->
+    <div class="player-titles">
+      <h3>Lamine Yamal</h3>
+      <ul>
+        <li>Promesa del FC Barcelona</li>
+        <li>Participación en juveniles y debut profesional</li>
+      </ul>
+    </div>
+
+    <!-- Raphinha -->
+    <div class="player-titles">
+      <h3>Raphinha</h3>
+      <ul>
+        <li>Participación en LaLiga</li>
+        <li>Títulos de clubes anteriores</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .fourth-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .section-header h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #222;
+  }
+
+  .titles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .player-titles {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .player-titles h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .player-titles ul {
+    list-style: disc inside;
+    padding: 0;
+    margin: 0;
+  }
+
+  .player-titles li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  @media (max-width: 600px) {
+    .titles-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
 
   </main>
 
-  <footer class="footer">IG, WASAP, TIKTOK</footer>
+  <footer class="footer">
+  <div class="footer-content animated-footer" style="animation-delay: 0s;">
+    <p>Síguenos en nuestras redes:</p>
+    <ul class="social-links">
+      <li class="animated-social" style="animation-delay: 0s;"><a href="#" class="social-link">Instagram</a></li>
+      <li class="animated-social" style="animation-delay: 0.1s;"><a href="#" class="social-link">WhatsApp</a></li>
+      <li class="animated-social" style="animation-delay: 0.2s;"><a href="#" class="social-link">TikTok</a></li>
+    </ul>
+    <p class="animated-footer" style="animation-delay: 0.3s;">&copy; 2026 Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 25px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .social-links li {
+    margin: 0;
+  }
+
+  .social-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    display: inline-block;
+    transition: all 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .social-link:hover {
+    background-color: #fff;
+    color: #222;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+  }
+
+  /* Animación de entrada */
+  .animated-footer, .animated-social {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .social-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+</style>
 
 </body>
 
