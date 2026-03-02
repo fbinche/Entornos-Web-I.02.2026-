@@ -11,7 +11,7 @@ body {
 }
 
 /* HEADER */
-.header {
+.cabesera1 {
   background: #cce5ff;   /* azul */
   border: 3px solid #339af0;
   height: 80px;
@@ -93,6 +93,8 @@ body {
 .footer {
   background: #f1d176;   /* gris */
   border: 3px solid #868e96;
+  height: 150px;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
