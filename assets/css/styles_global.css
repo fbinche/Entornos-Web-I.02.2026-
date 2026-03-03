@@ -353,3 +353,7 @@ body {
 #id444{
   background-color: #141311;
 }
+
+nav {
+  display: block;
+}
