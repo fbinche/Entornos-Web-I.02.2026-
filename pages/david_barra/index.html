@@ -5,315 +5,324 @@
   <meta charset="UTF-8">
   <title>AuraNet</title>
 
-  <link rel="stylesheet" href="../../assets/css/styles_global.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../david_barra/estilos/CSS.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/styles.css">
+</head>
 
 <body>
 
+<main class="main">
 
-  <main class="main">
+<!-- ================= INICIO ================= -->
+<section id="INICIOO" class="section hero">
+<header>
+<nav class="nav-principal">
 
-    <!-- 23/02 Mejorar los etiquetas de cierre  -->
-    <section id=INICIOO class="section hero">
-      <header>
-        <nav style="display:flex; align-items:center; justify-content:space-between;">
+<img src="img/Logo_Auranet.png" class="logo">
 
-          <!-- Logo -->
-          <h1>
+<ul class="menu">
+<li><a href="#INICIOO">INICIO</a></li>
+<li><a href="#PLANESDEDATOS">PLANES</a></li>
+<li><a href="#BENEFICIOSAURANET">BENEFICIOS</a></li>
+<li><a href="#ALCANCENACIONAL">ALCANCE</a></li>
+<li><a href="#COMENTARIOSCLIENTES">COMENTARIOS</a></li>
+<li><a href="#MASINFOAURANET">MAS INFO</a></li>
+</ul>
 
-          </h1>
+</nav>
+</header>
+</section>
 
-          <!-- Menú principal -->
-          <p>
-            <img src="img/Logo_Auranet.png"
-              style="color:rgb(255, 255, 255);list-style:none;font-size: 60px;flex-wrap:wrap; display:flex;justify-content:center; gap:30px; margin: 10px;; padding:0px;">
-            <li><a style="color:rgb(255, 255, 255)" href="#INICIOO">INICIO</a></li>
-            <li><a style="color:rgb(255, 255, 255)" href="#PLANESDEDATOS">PLANES</a></li>
-            <li><a style="color:rgb(255, 255, 255)" href="#BENEFICIOSAURANET">BENEFICIOS</a></li>
-            <li><a style="color:rgb(255, 255, 255)" href="#ALCANCENACIONAL">ALCANCE</a></li>
-            <li><a style="color:rgb(255, 255, 255)" href="#COMENTARIOSCLIENTES">COMENTARIOS</a></li>
-            <li><a style="color:rgb(255, 255, 255)" href="#MASINFOAURANET">MAS INFO</a></li>
-            </ul>
-          </p>
-        </nav>
+<!-- ================= CAROUSEL ================= -->
+<section class="section first-section">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
 
-      </header>
-    </section>
+<div class="carousel-item active">
+<img src="img/banners/Banner_uno.png" class="d-block w-100" alt="">
+</div>
 
+<div class="carousel-item">
+<img src="img/banners/Banner_dos.png" class="d-block w-100" alt="">
+</div>
 
-    <section class="section first-section">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/banners/Banner_uno.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/banners/Banner_dos.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/banners/Banner_tres.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
+<div class="carousel-item">
+<img src="img/banners/Banner_tres.png" class="d-block w-100" alt="">
+</div>
 
+</div>
 
-    <section id="PLANESDEDATOS" class="section second-section">
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
 
-      <header>
-        <H1>TITULO</H1>
-      </header>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
 
-      <section class="columnas_3">
+</div>
+</section>
 
+<!-- ================= PLANES ================= -->
+<section id="PLANESDEDATOS" class="section second-section">
 
-        <!-- Primer Articulo  -->
-        <article class="article">
-          <header>
-            <img src="img/velocidades/1000-Diamante-Elite.png" style="height: auto; max-width: 100%; display: block;">
-            <h2 style="font-size: 50px;">1000<span>Mbps</span></h2>
-          </header>
-          <section class="contenido">
-            <ul>
-              <li>GO Familia</li>
-              <li>1 Max</li>
-              <li>DSPORTS</li>
-              <li>Prime Video</li>
-              <li>+33 canales</li>
-            </ul>
-            <p class="precio-regular">Precio regular: s/110.90</p>
-            <p class="precio">
-              <strong style="font-size: 50px;">S/ 104.90</strong>
-          </section>
+<header>
+<h1 class="titulo-planes">TITULO</h1>
+</header>
 
-          <footer>
-            <button class="btn-principal">QUIERO ESTE PLAN</button>
-            <button CLASS="btn-secundario">CONTRATE EN LINEA</button>
-          </footer>
-        </article>
-        <!-- Segundo Articulo  -->
-        <article class="article">
-          <header>
-            <img src="img/velocidades/500-Oro-Puro.png" style="height: auto; max-width: 100%; display: block;">
-            <h2 style="font-size: 50px;">500 <span>Mbps</span></h2>
-          </header>
+<section class="columnas_3">
 
-          <section class="contenido">
-            <ul>
-              <li>GO Familia</li>
-              <li>1 MAX</li>
-              <li>DSPORTS</li>
-              <li>Prime Video</li>
-              <li>+33 canales</li>
-            </ul>
-            <p class="precio-regular">Precio regular: S/ 95.90</p>
-            <p class="precio">
-              <strong style="font-size: 50px;">S/ 89.90</strong>
-            </p>
-          </section>
+<article class="article">
+<header>
+<img src="img/velocidades/1000-Diamante-Elite.png">
+<h2>1000 <span>Mbps</span></h2>
+</header>
+<section class="contenido">
+<ul>
+<li>GO Familia</li>
+<li>1 Max</li>
+<li>DSPORTS</li>
+<li>Prime Video</li>
+<li>+33 canales</li>
+</ul>
+<p class="precio-regular">Precio regular: S/110.90</p>
+<p class="precio"><strong>S/ 104.90</strong></p>
+</section>
+<footer>
+<button class="btn-principal">QUIERO ESTE PLAN</button>
+<button class="btn-secundario">CONTRATA EN LINEA</button>
+</footer>
+</article>
 
-          <footer>
-            <button class="btn-principal">QUIERO ESTE PLAN</button>
-            <button class="btn-secundario">CONTRATA EN LÍNEA</button>
-          </footer>
-        </article>
-        <!-- Tercer Articulo  -->
-        <article class="article">
-          <header>
-            <img src="img/velocidades/300-Plata-Premium.png" style="height: auto; max-width: 100%; display: block;">
-            <h2 style="font-size: 50px;">300<span>Mbps</span></h2>
-          </header>
-          <section class="contenido">
-            <ul>
-              <li>GO Familia</li>
-              <li>1 Max</li>
-              <li>DSPORTS</li>
-              <li>Prime Video</li>
-              <li>+30 canales</li>
-            </ul>
-            <section>
-              <p class="precio-regular">Precio regular: S/85.90</p>
-              <p class="precio">
-                <strong style="font-size: 50px;">S/ 79.90</strong>
-              </p>
-            </section>
+<article class="article">
+<header>
+<img src="img/velocidades/500-Oro-Puro.png">
+<h2>500 <span>Mbps</span></h2>
+</header>
+<section class="contenido">
+<ul>
+<li>GO Familia</li>
+<li>1 Max</li>
+<li>DSPORTS</li>
+<li>Prime Video</li>
+<li>+33 canales</li>
+</ul>
+<p class="precio-regular">Precio regular: S/95.90</p>
+<p class="precio"><strong>S/ 89.90</strong></p>
+</section>
+<footer>
+<button class="btn-principal">QUIERO ESTE PLAN</button>
+<button class="btn-secundario">CONTRATA EN LÍNEA</button>
+</footer>
+</article>
 
-            <footer>
-              <button class="btn-principal">QUIERO ESTE PLAN</button>
-              <button CLASS="btn-secundario">CONTRATE EN LINEA</button>
-            </footer>
-        </article>
-      </section>
+<article class="article">
+<header>
+<img src="img/velocidades/300-Plata-Premium.png">
+<h2>300 <span>Mbps</span></h2>
+</header>
+<section class="contenido">
+<ul>
+<li>GO Familia</li>
+<li>1 Max</li>
+<li>DSPORTS</li>
+<li>Prime Video</li>
+<li>+30 canales</li>
+</ul>
+<p class="precio-regular">Precio regular: S/85.90</p>
+<p class="precio"><strong>S/ 79.90</strong></p>
+</section>
+<footer>
+<button class="btn-principal">QUIERO ESTE PLAN</button>
+<button class="btn-secundario">CONTRATA EN LINEA</button>
+</footer>
+</article>
 
+</section>
 
-      <footer><button>TERMINOS</button></footer>
-    </section>
+<footer>
+<button class="btn-secundario">TERMINOS</button>
+</footer>
 
-    <!-- Este es un comentario -->
-    <section class="section second-section">
-      <header class="header BENEFICIOS"><strong style="font-size: 25px;">AURA NET ES 100% FIBRA OPTICA</strong></header>
+</section>
 
-      <section ID="BENEFICIOSAURANET" class="section clients">
-        <article class="article"><strong>VELOCIDAD SIMETRICA</strong>
-          <img src="img/velocidad_simetrica.png">
-          <p>Carga y descarga todo lo que quieras con la misma velocidad.</p>
-        </article>
-        <article class="article"><strong>DESCARGAS ILIMITADAS</strong>
-          <img src="img/descargas_ilimitadas.png">
-          <p>El internet de alta calidad y alta velocidad</p>
-        </article>
-        <article class="article"><strong>MULTIPLES CONEXIONES</strong>
-          <img src="img/multiples_conexiones.png">
-          <p>Toda la familia conectada a alta velocidad y en toda la casa</p>
-        </article>
-        <article class="article"><strong>MAS TIPS QUE AURANET TIENE PARA TI</strong>
-          <p><button>Descubrelo aquí</button></p>
-          <img src="img/tips_auranet.jpg">
-        </article>
-      </section>
+<!-- ================= BENEFICIOS ================= -->
+<section class="section second-section"></section>
+<header class="header-beneficios">
+<strong>AURA NET ES 100% FIBRA OPTICA</strong>
+</header>
 
-      <section class="columnas_1">
-        <article class="article"><strong style="font-size: 25px;">No te pierdas los Beneficios que AuraNet tiene para
-            tí</strong>
-          <button>WhastApp</button>
-        </article>
-      </section>
+<section id="BENEFICIOSAURANET" class="clients">
 
-      <section class="section two-columns">
-        <article class="article">
-          <p style="font-size: 50px">Nuestra conexion <br>llega a todo <br> Perú</p>
-          <img src="img/carrito_auranet.png">
-        </article>
-        <aside id="ALCANCENACIONAL" class="aside"><img style="width: 100%; height: auto;" src="img/Mapa_peru.png">
-      </section>
-    </section>
+<article class="article">
+<strong>VELOCIDAD SIMETRICA</strong>
+<img src="img/velocidad_simetrica.png">
+<p>Carga y descarga todo lo que quieras con la misma velocidad.</p>
+</article>
 
-    <!-- Este es un comentario -->
+<article class="article">
+<strong>DESCARGAS ILIMITADAS</strong>
+<img src="img/descargas_ilimitadas.png">
+<p>El internet de alta calidad y alta velocidad</p>
+</article>
 
-    <section id="COMENTARIOSCLIENTES" class="section third-section">
-      <header class="header SERVICIOS"><strong style="font-size: 25px;">Comentarios de nuestros clientes:</strong>
-      </header>
-      <section class="section services">
-        <article class="article"><strong>Rubius</strong>
-          <img src="img/clientes/rubius_cliente.jpg">
-        </article>
-        <article class="article"><strong>Ibai llanos</strong>
-          <img src="img/clientes/ibai_llanos_cliente.png">
+<article class="article">
+<strong>MULTIPLES CONEXIONES</strong>
+<img src="img/multiples_conexiones.png">
+<p>Toda la familia conectada a alta velocidad y en toda la casa</p>
+</article>
 
-        </article>
-        <article class="article"><strong>Max Anthony</strong>
-          <img src="img/clientes/glogloking_cliente.jpg">
+<article class="article">
+<strong>MAS TIPS QUE AURANET TIENE PARA TI</strong>
+<p><button class="btn-principal">Descubrelo aquí</button></p>
+<img src="img/tips_auranet.jpg">
+</article>
 
-        </article>
-        <article class="article"><strong>zully</strong>
-          <img src="img/clientes/zully_cliente.jpg">
+</section>
 
-        </article>
-        <article class="article"><strong>ishowspeed</strong>
-          <img src="img/clientes/ishowspeed_cliente.jpg">
+<section class="columnas_1">
+<article class="article">
+<strong>No te pierdas los Beneficios que AuraNet tiene para ti</strong>
+<button class="btn-principal">WhatsApp</button>
+</article>
+</section>
 
-        </article>
-        <article class="article"><strong>COMENTARIOS: </strong>
-          <p>Este internet es muy rapido para mis videojuegos</p>
-        </article>
-        <article class="article"><strong>COMENTARIOS: </strong>
-          <p>Este internet es el mejor del mundo</p>
-        </article>
-        <article class="article"><strong>COMENTARIOS: </strong>
-          <p>Es el internet perfecto para mis streams</p>
-        </article>
-        <article class="article"><strong>COMENTARIOS: </strong>
-          <p>El mejor internet para grabar mis tiktoks</p>
-        </article>
-        <article class="article"><strong>COMENTARIOS: </strong>
-          <p>Este internet es muy bueno para cuando voy de viaje</p>
-        </article>
-      </section>
+<section class="two-columns">
 
-    </section>
-    <!-- Este es un comentario -->
-    <section class="section 1-columns fourth-section">
-      <section class="section">FORMULARIO PARA COMPRA</section>
-    </section>
+<article class="article">
+<p class="texto-grande">Nuestra conexion llega a todo Perú</p>
+<img src="img/carrito_auranet.png">
+</article>
 
-  </main>
+<aside id="ALCANCENACIONAL" class="aside">
+<img src="img/Mapa_peru.png">
+</aside>
 
-  <footer class="columnas_4" style="background-color:#313131;;color:white;padding: 30px;">
-    <section id="MASINFOAURANET">
-      <h2>AuraNet</h2>
-      <p>Nuestro servicio de internet más veloz de todo el Perú</p>
-      <p>AuraNet © 2026-2026</p>
-    </section>
+</section>
 
-    <section>
-      <h4>SERVICIOS</h4>
-      <nav>
-        <ul>
-          <li><a href="#INICIOO">Inicio</a></li>
-          <li><a href="#PLANESDEDATOS">Planes de datos</a></li>
-          <li><a href="#BENEFICIOSAURANET">Beneficios</a></li>
-          <li><a href="#ALCANCENACIONAL">Alcance Nacional</a></li>
-          <li><a href="#COMENTARIOSCLIENTES">Comentarios</a></li>
-        </ul>
-      </nav>
-    </section>
+</section>
 
-    <section>
-      <h4>NOSOTROS</h4>
-      <nav>
-        <ul>
-          <li><a href="#">Nuestra empresa</a></li>
-          <li><a href="#">Convenios Con Otros Servicios</a></li>
-          <li><a href="#">Ayúdanos a crecer</a></li>
-          <li><a href="#">Política de privacidad</a></li>
-        </ul>
-      </nav>
-    </section>
+<!-- ================= COMENTARIOS ================= -->
+<section id="COMENTARIOSCLIENTES" class="section third-section">
 
-    <section>
-      <h4>AYUDA</h4>
-      <nav>
-        <ul>
-          <li><a href="#">Novedades</a></li>
-          <li><a href="#">Como Funciona la Fibra Optica</a></li>
-          <li><a href="#">Atención al cliente</a></li>
-        </ul>
-      </nav>
+<header>
+<strong>Comentarios de nuestros clientes:</strong>
+</header>
 
-      <p>
-        <a href="#">Grupo WhastApp</a> /
-        <a href="#">Facebook</a> /
-        <a href="#">Instagram</a> /
-        <a href="#">TikTOk</a>
-      </p>
-    </section>
+<section class="services">
 
-  </footer>
+<article class="article"><strong>Rubius</strong><img src="img/clientes/rubius_cliente.jpg"></article>
+<article class="article"><strong>Ibai Llanos</strong><img src="img/clientes/ibai_llanos_cliente.png"></article>
+<article class="article"><strong>Max Anthony</strong><img src="img/clientes/glogloking_cliente.jpg"></article>
+<article class="article"><strong>Zully</strong><img src="img/clientes/zully_cliente.jpg"></article>
+<article class="article"><strong>Ishowspeed</strong><img src="img/clientes/ishowspeed_cliente.jpg"></article>
 
+<article class="article"><strong>COMENTARIOS:</strong><p>Este internet es muy rapido para mis videojuegos</p></article>
+<article class="article"><strong>COMENTARIOS:</strong><p>Este internet es el mejor del mundo</p></article>
+<article class="article"><strong>COMENTARIOS:</strong><p>Es el internet perfecto para mis streams</p></article>
+<article class="article"><strong>COMENTARIOS:</strong><p>El mejor internet para grabar mis tiktoks</p></article>
+<article class="article"><strong>COMENTARIOS:</strong><p>Este internet es muy bueno para cuando voy de viaje</p></article>
 
+</section>
+</section>
 
+<!-- ================= FORMULARIO ================= -->
+<section class="section fourth-section">
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+<h2>FORMULARIO PARA CONTRATAR PLAN</h2>
+
+<form class="formulario">
+
+<label>Plan de Internet:</label>
+<select>
+<option>300 Mbps - Plata</option>
+<option>500 Mbps - Oro</option>
+<option>1000 Mbps - Diamante</option>
+</select>
+
+<label>Cuantos meses desea adquirir:</label>
+<select>
+<option>1 mes</option>
+<option>3 meses</option>
+<option>6 meses</option>
+<option>12 meses</option>
+</select>
+
+<label>Fecha de Instalación:</label>
+<input type="date">
+
+<label>Nombre Completo:</label>
+<input type="text">
+
+<label>DNI:</label>
+<input type="text">
+
+<label>Dirección:</label>
+<input type="text">
+
+<label>Teléfono:</label>
+<input type="tel">
+
+<label>
+<input type="checkbox"> Acepto los términos y condiciones
+</label>
+
+<button type="submit" class="btn-principal">Contratar Plan</button>
+
+</form>
+
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer columnas_4">
+
+<section id="MASINFOAURANET">
+<h2>AuraNet</h2>
+<p>Nuestro servicio de internet más veloz de todo el Perú</p>
+<p>AuraNet © 2026-2026</p>
+</section>
+
+<section>
+<h4>SERVICIOS</h4>
+<ul>
+<li><a href="#INICIOO">Inicio</a></li>
+<li><a href="#PLANESDEDATOS">Planes de datos</a></li>
+<li><a href="#BENEFICIOSAURANET">Beneficios</a></li>
+<li><a href="#ALCANCENACIONAL">Alcance Nacional</a></li>
+<li><a href="#COMENTARIOSCLIENTES">Comentarios</a></li>
+</ul>
+</section>
+
+<section>
+<h4>NOSOTROS</h4>
+<ul>
+<li><a href="#">Nuestra empresa</a></li>
+<li><a href="#">Convenios Con Otros Servicios</a></li>
+<li><a href="#">Ayúdanos a crecer</a></li>
+<li><a href="#">Política de privacidad</a></li>
+</ul>
+</section>
+
+<section>
+<h4>AYUDA</h4>
+<ul>
+<li><a href="#">Novedades</a></li>
+<li><a href="#">Como Funciona la Fibra Optica</a></li>
+<li><a href="#">Atención al cliente</a></li>
+</ul>
+<p>
+<a href="https://chat.whatsapp.com/">WhatsApp</a> /
+<a href="#">Facebook</a> /
+<a href="#">Instagram</a> /
+<a href="#">TikTok</a>
+</p>
+</section>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
 </html>
