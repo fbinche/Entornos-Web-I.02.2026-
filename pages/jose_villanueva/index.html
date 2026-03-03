@@ -4,125 +4,428 @@
 <head>
   <meta charset="UTF-8">
   <title>Maqueta Semántica</title>
-  <link rel="stylesheet" href="../../assets/css/styles_global.css">
+  <link rel="stylesheet" href="../jose_villanueva/CSS/Styles.css">
 </head>
 
 <body>
 
-  <header class="header">TRANSFERMARKT</header>
+  <!-- Logo del sitio -->
+<div class="logo">
+  <!-- Imagen de fútbol -->
+  <div class="logo-icon">
+    <img src="imagenes/balon.png" alt="Balón de fútbol">
+  </div>
 
-  <main class="main">
+  <!-- Texto del sitio -->
+  <div class="logo-text">
+    <h1 class="site-title">TRANSFERMARKT</h1>
+    <p class="site-subtitle">Mercado y estrellas del fútbol mundial</p>
+  </div>
+</div>
 
-
-    <!-- 23/02 Imagenes e Información y Secciones  -->
-    <section class="section hero first-section">
-      <header class="header">TOP 6 <button class="button">BOTÓN</button> </header>
+ <!-- Sección Hero: Top 6 Jugadores con animación -->
+<section class="section hero first-section">
+  <header class="hero-header">
+    <div class="hero-text">
+      <h1 class="hero-title animated-title">⚽ TOP 6 JUGADORES DEL MOMENTO</h1>
+      <p class="hero-subtitle">Las estrellas más influyentes del fútbol mundial</p>
+    </div>
+    <div class="hero-action">
+      <button class="hero-button">Ver Estadísticas</button>
+    </div>
+  </header>
+</section>
 
       <br>
-      <section class="section columnas_3">
-        <article class="article">Lionel Andres Messi Cuccittini</article>
-        <article class="article">Cristiano Ronaldo dos Santos Aveiro</article>
-        <article class="article">Neymar da Silva Santos Júnior​</article>
-        <article class="article">Kylian Mbappé Lottin</article>
-        <article class="article">Lamine Yamal Nasraoui Ebana</article>
-        <article class="article">Raphael Dias Belloli</article>
-      </section>
+      <section class="section columnas_3" style="
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+">
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="Jugadores/messi.JPEG" alt="Lionel Messi" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Lionel Andres Messi Cuccittini</p>
+  </article>
+
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="Jugadores/Cristiano.JPEG" alt="Cristiano Ronaldo" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Cristiano Ronaldo dos Santos Aveiro</p>
+  </article>
+
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="Jugadores/neymar.JPEG" alt="Neymar" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Neymar da Silva Santos Júnior​</p>
+  </article>
+
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="Jugadores/kylian.JPEG" alt="Kylian Mbappé" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Kylian Mbappé Lottin</p>
+  </article>
+
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="Jugadores/lamine.JPEG" alt="Lamine Yamal" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Lamine Yamal Nasraoui Ebana</p>
+  </article>
+
+  <article class="article" style="
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  ">
+    <img src="Jugadores/raphinha.JPEG" alt="Raphael Dias Belloli" style="width:100%; border-radius:12px 12px 0 0;">
+    <p>Raphael Dias Belloli</p>
+  </article>
+</section>
       <br>
-      <section class="section columnas_6">
-        
-        <card class="card">
-          <h1>Inter Miami CF</h1>
-          <details>
-            <summary>Info</summary>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet praesentium quia inventore asperiores quis
-              optio expedita qui adipisci reiciendis, eius modi corporis necessitatibus natus suscipit, commodi, rem
-              doloremque repellat eligendi.
-            </p>
-          </details>
-          <picture class="picture">
-            <source media="(min-width: 1024px)"
-              srcset="https://media.tycsports.com/files/2023/07/13/592793/inter-miami_w862.webp">
-            <source media="(min-width: 768px)"
-              srcset="https://media.tycsports.com/files/2018/09/05/21687/inter-miami-fc_416x234.jpg?v=1">
-            <img src="#" alt="Imagen responsive">
-          </picture>
+      <section class="section equipos-section">
 
-        </card>
+  <header class="equipos-header">
+    <h2 class="equipos-title">⚽ Equipos Actuales</h2>
+    <span class="equipos-line"></span>
+  </header>
 
-        <article class="article">Al-Nassr</article>
-        <article class="article">Santos Futebol Clube</article>
-        <article class="article">Real Madrid Club de Fútbol</article>
-        <article class="article">Fútbol Club Barcelona</article>
-        <article class="article">Fútbol Club Barcelona</article>
-      </section>
-    </section>
+  <section class="section columnas_6">
 
-    <section class="section second-section">
-      <header class="header">LIGAS Y COMPETICIONES</header>
+  <!-- Inter Miami CF -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/inter_de_miami.jpg" alt="Escudo Inter Miami">
+      <div class="card-content">
+        <h3>Inter Miami CF</h3>
+        <p>
+          Club de la MLS fundado en 2018 por David Beckham.
+          Con figuras como Lionel Messi, Luis Suárez y Sergio Busquets.
+          Campeón de Leagues Cup 2023.
+        </p>
+      </div>
+    </div>
+  </article>
 
-      <section class="section clients">
-        <article class="article">LaLiga</article>
-        <article class="article">MLS</article>
-        <article class="article">Liga Profesional Saudí</article>
-        <article class="article">Campeonato Brasileño de Serie A</article>
-      </section>
+  <!-- Al-Nassr -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/Al-Nassr.jpg" alt="Escudo Al Nassr">
+      <div class="card-content">
+        <h3>Al-Nassr</h3>
+        <p>
+          Uno de los clubes más exitosos de Arabia Saudita.
+          10 títulos de liga y múltiples copas nacionales.
+          Equipo de Cristiano Ronaldo.
+        </p>
+      </div>
+    </div>
+  </article>
 
-      <section class="columnas_4">
-        <article class="article">Liga de Campeones de la UEFA</article>
-        <article class="article">Copa del Rey</article>
-        <article class="article">LaLiga</article>
-        <article class="article">Supercopa de España</article>
-        <article class="article">MLS</article>
-        <article class="article">Liga Profesional Saudí</article>
-        <article class="article">Campeonato Brasileño de Serie A</article>
-        <article class="article">CONMEBOL Libertadores</article>
-        <article class="article">Copa Mundial de Clubes de la FIFA</article>
-        <article class="article">Copa Mundial</article>
-      </section>
+  <!-- Santos FC -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/santos.jpg" alt="Escudo Santos FC">
+      <div class="card-content">
+        <h3>Santos FC</h3>
+        <p>
+          Club brasileño fundado en 1912.
+          Campeón de Copa Libertadores y Copa Intercontinental.
+          Histórico equipo de Pelé.
+        </p>
+      </div>
+    </div>
+  </article>
 
-      <section class="section two-columns">
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-        <article class="article">BIOGRAFIA</article>
-        <aside class="aside">FOTO</aside>
-      </section>
-    </section>
+  <!-- Real Madrid CF -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/real_madrid.jpg" alt="Escudo Real Madrid">
+      <div class="card-content">
+        <h3>Real Madrid CF</h3>
+        <p>
+          Fundado en 1902.
+          Máximo ganador de la UEFA Champions League.
+          Uno de los clubes más grandes del mundo.
+        </p>
+      </div>
+    </div>
+  </article>
 
+  <!-- FC Barcelona -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/fc_barcelona.jpg" alt="Escudo FC Barcelona">
+      <div class="card-content">
+        <h3>FC Barcelona</h3>
+        <p>
+          Fundado en 1899.
+          Ganador de múltiples Champions League y LaLiga.
+          Histórico rival del Real Madrid.
+        </p>
+      </div>
+    </div>
+  </article>
 
+  <!-- FC Barcelona  -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/fc_barcelona.jpg" alt="Escudo FC Barcelona">
+      <div class="card-content">
+        <h3>FC Barcelona</h3>
+        <p>
+          Club con gran tradición en cantera.
+          Conocido por su estilo de juego ofensivo.
+          Sede en el Spotify Camp Nou.
+        </p>
+      </div>
+    </div>
+  </article>
+
+</section>
+<section class="section second-section">
+
+  <header class="section-header">
+    <h2>🏆 Ligas y Competiciones</h2>
+  </header>
+
+  <div class="competitions-grid">
+
+    <!-- Ligas Nacionales -->
+    <div class="competition-card">
+      <h3>⚽ Ligas Nacionales</h3>
+      <ul>
+        <li>LaLiga</li>
+        <li>MLS</li>
+        <li>Liga Profesional Saudí</li>
+        <li>Campeonato Brasileño Serie A</li>
+      </ul>
+    </div>
+
+    <!-- Copas Nacionales -->
+    <div class="competition-card">
+      <h3>🏆 Copas Nacionales</h3>
+      <ul>
+        <li>Copa del Rey</li>
+        <li>Supercopa de España</li>
+      </ul>
+    </div>
+
+    <!-- Competiciones Internacionales -->
+    <div class="competition-card">
+      <h3>🌍 Competiciones Internacionales</h3>
+      <ul>
+        <li>Champions League</li>
+        <li>CONMEBOL Libertadores</li>
+        <li>Mundial de Clubes</li>
+        <li>Copa del Mundo</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+</section>
+
+      <section class="section player-biographies">
+  <header class="section-header">
+    <h2>Biografías de Jugadores</h2>
+  </header>
+
+  <div class="players-grid">
+    <!-- Lionel Messi -->
+    <div class="player-card animated-card" style="animation-delay: 0s;">
+      <img src="messi.jpg" alt="Lionel Messi" class="player-photo">
+      <article class="player-info">
+        <h3>Lionel Messi</h3>
+        <p>Futbolista argentino considerado uno de los mejores de la historia. Ha ganado múltiples Balones de Oro y ha jugado en el FC Barcelona y PSG.</p>
+      </article>
+    </div>
+
+    <!-- Cristiano Ronaldo -->
+    <div class="player-card animated-card" style="animation-delay: 0.1s;">
+      <img src="cristiano.jpg" alt="Cristiano Ronaldo" class="player-photo">
+      <article class="player-info">
+        <h3>Cristiano Ronaldo</h3>
+        <p>Delantero portugués conocido por su potencia y capacidad goleadora. Ha brillado en clubes como Manchester United, Real Madrid y Juventus.</p>
+      </article>
+    </div>
+
+    <!-- Neymar Jr -->
+    <div class="player-card animated-card" style="animation-delay: 0.2s;">
+      <img src="neymar.jpg" alt="Neymar Jr" class="player-photo">
+      <article class="player-info">
+        <h3>Neymar Jr</h3>
+        <p>Futbolista brasileño famoso por su técnica, regate y velocidad. Ha jugado en el FC Barcelona y PSG.</p>
+      </article>
+    </div>
+
+    <!-- Kylian Mbappé -->
+    <div class="player-card animated-card" style="animation-delay: 0.3s;">
+      <img src="mbappe.jpg" alt="Kylian Mbappé" class="player-photo">
+      <article class="player-info">
+        <h3>Kylian Mbappé</h3>
+        <p>Delantero francés, campeón mundial en 2018, conocido por su velocidad, habilidad y olfato goleador en PSG.</p>
+      </article>
+    </div>
+
+    <!-- Lamine Yamal -->
+    <div class="player-card animated-card" style="animation-delay: 0.4s;">
+      <img src="lamine.jpg" alt="Lamine Yamal" class="player-photo">
+      <article class="player-info">
+        <h3>Lamine Yamal</h3>
+        <p>Joven promesa española, talento emergente del FC Barcelona, reconocido por su técnica y visión de juego.</p>
+      </article>
+    </div>
+
+    <!-- Raphinha -->
+    <div class="player-card animated-card" style="animation-delay: 0.5s;">
+      <img src="raphinha.jpg" alt="Raphinha" class="player-photo">
+      <article class="player-info">
+        <h3>Raphinha</h3>
+        <p>Extremo brasileño que juega en Barcelona, conocido por su velocidad, regate y capacidad de asistencia.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
     <section class="section third-section">
-      <header class="header">REDES SOCIALES</header>
+  <header class="section-header animated-section" style="animation-delay: 0s;">
+    <h2>Redes Sociales</h2>
+  </header>
 
-      <section class="section services">
-        <article class="article">Ig</article>
-        <article class="article">Facebook</article>
-        <article class="article">Twitter</article>
-        <article class="article">Instagram</article>
-        <article class="article">TikTok</article>
-      </section>
-    </section>
+  <section class="social-media">
+    <ul class="social-list">
+      <li class="animated-social" style="animation-delay: 0s;"><a href="#" class="social-link">Instagram</a></li>
+      <li class="animated-social" style="animation-delay: 0.1s;"><a href="#" class="social-link">Facebook</a></li>
+      <li class="animated-social" style="animation-delay: 0.2s;"><a href="#" class="social-link">Twitter</a></li>
+      <li class="animated-social" style="animation-delay: 0.3s;"><a href="#" class="social-link">TikTok</a></li>
+    </ul>
+  </section>
+</section>
 
-    <section class="section two-columns fourth-section">
-      <section class="section">TITULOS DE LIONEL MESSI</section>
-      <section class="section">TITULOS DE CRISTIANO RONALDO</section>
-      <section class="section">TITULOS DE NEYMAR JR</section>
-      <section class="section">TITULOS DE KYLIAN MBBAPE</section>
-      <section class="section">TITULOS DE LAMINE YAMAL</section>
-      <section class="section">TITULOS DE RAPHAEL DIAS</section>
-    </section>
+    <section class="section fourth-section">
+  <header class="section-header">
+    <h2>Títulos de Jugadores</h2>
+  </header>
+
+  <div class="titles-grid">
+    <!-- Lionel Messi -->
+    <div class="player-titles">
+      <h3>Lionel Messi</h3>
+      <ul>
+        <li>10× LaLiga</li>
+        <li>7× Copa del Rey</li>
+        <li>4× Champions League</li>
+        <li>1× Copa América</li>
+      </ul>
+    </div>
+
+    <!-- Cristiano Ronaldo -->
+    <div class="player-titles">
+      <h3>Cristiano Ronaldo</h3>
+      <ul>
+        <li>3× Premier League</li>
+        <li>2× LaLiga</li>
+        <li>5× Champions League</li>
+        <li>1× Eurocopa</li>
+      </ul>
+    </div>
+
+    <!-- Neymar Jr -->
+    <div class="player-titles">
+      <h3>Neymar Jr</h3>
+      <ul>
+        <li>2× LaLiga</li>
+        <li>3× Ligue 1</li>
+        <li>1× Champions League</li>
+        <li>1× Copa América</li>
+      </ul>
+    </div>
+
+    <!-- Kylian Mbappé -->
+    <div class="player-titles">
+      <h3>Kylian Mbappé</h3>
+      <ul>
+        <li>4× Ligue 1</li>
+        <li>1× Copa del Mundo</li>
+        <li>1× Copa de Francia</li>
+      </ul>
+    </div>
+
+    <!-- Lamine Yamal -->
+    <div class="player-titles">
+      <h3>Lamine Yamal</h3>
+      <ul>
+        <li>Promesa del FC Barcelona</li>
+        <li>Participación en juveniles y debut profesional</li>
+      </ul>
+    </div>
+
+    <!-- Raphinha -->
+    <div class="player-titles">
+      <h3>Raphinha</h3>
+      <ul>
+        <li>Participación en LaLiga</li>
+        <li>Títulos de clubes anteriores</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
   </main>
 
-  <footer class="footer">IG, WASAP, TIKTOK</footer>
+  <footer class="footer">
+  <div class="footer-content animated-footer" style="animation-delay: 0s;">
+    <p>Síguenos en nuestras redes:</p>
+    <ul class="social-links">
+      <li class="animated-social" style="animation-delay: 0s;"><a href="#" class="social-link">Instagram</a></li>
+      <li class="animated-social" style="animation-delay: 0.1s;"><a href="#" class="social-link">WhatsApp</a></li>
+      <li class="animated-social" style="animation-delay: 0.2s;"><a href="#" class="social-link">TikTok</a></li>
+    </ul>
+    <p class="animated-footer" style="animation-delay: 0.3s;">&copy; 2026 Todos los derechos reservados.</p>
+  </div>
+</footer>
 
 </body>
 
