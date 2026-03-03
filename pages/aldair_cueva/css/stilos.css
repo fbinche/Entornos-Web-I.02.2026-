@@ -1,0 +1,250 @@
+/*IMAGEN DE LA CABEZA*/
+.cabeza img{
+width: 100%;             
+  height: 100%;            
+  object-fit: cover;       
+  display: block;
+}
+
+/*SECCION DEL BANNER*/
+.banner {
+    /*------------------------Para ser sincero esta parte si la saque 100% de la IA y mas o menos lo entiendo*/
+/*------------------------Solo que lo hice para que mi web se acomode y se paresca un poco al banner para que no se vea feo*/
+/*------------------------Puede o no considerar esta seccion, mas o menos entiendo y espero entenderlo para la revision*/
+  display: flex;                     /* Pone los banners en fila */
+  overflow-x: auto;                  /* Permite deslizar horizontalmente */
+  scroll-snap-type: x mandatory;     /* Hace que se detenga justo en cada imagen */
+  scroll-behavior: smooth;           /* Desplazamiento suave */
+  
+  max-width: 1000px;                  /* Ajustar tamañi del banner*/
+  margin: 0 auto;                    /* Centra el banner en la página */
+}
+
+.banner article {
+  flex: 0 0 100%;                    /* Cada banner ocupa el 100% del ancho */
+  scroll-snap-align: start;          /* Alinea el inicio del banner al borde */
+}
+
+.banner img {
+  padding: 50px;
+  width: 100%;                       /* La imagen se ajusta al ancho total */
+  display: block;                    /*fuerza un salto de linea que me supongo es lateral*/
+}
+
+/* oculta la barra de scrol */
+.banner::-webkit-scrollbar {
+  display: none;
+}
+/*tengo entendido que falta un javascript para que funcione al 100%*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*SECCION DE PRODUCTOS*/
+.seccion_productos{
+
+     background: #b8b8b8;
+     border: 3px solid #2e2e2e;
+     border-radius: 8px;
+
+& .productos{ /*ANIDACION PRINCIPAL */
+                
+                display: flex;   
+                flex-wrap:wrap;             
+                gap: 20px;
+                justify-content: center;
+                padding-bottom: 40px;
+                width: 100%;
+
+    & .items{
+                 text-align: center;                
+                 border:2px solid #464646;
+                 background-color: #ffffff;
+                 border-radius: 6px;
+
+                 flex: 1 1 250px; 
+                 max-width: 250px; 
+
+                 /*PARA EFECTO DEL MOUSE*/
+                 transition: transform 0.3s ease;
+                 cursor: pointer;
+                 &:hover{
+
+                    transform: translateY(-10px);    /*la direccion a donde ira la sombra*/
+                    box-shadow: 0 10px 20px rgb(0,0,0,0.2);
+                    border-color: #358bb3; 
+                 }
+            }
+    & img{
+                    filter: brightness(1.1);         /*brillo a la imagen*/
+                    /*DIMENSIONES DE MI IMAGENES*/
+                    width: 100%;
+                    height: 200px;
+                }
+ }
+    & p{
+
+
+        background: #000000;                       /*fondo negro para mis descripcion de texto*/
+        color: #ffffff;                            /*color del texto */
+        font-size: 18px;                             /*tamaño del texto*/
+        padding: 10px;                               /*separacion de los bordes*/
+        text-align: center;                          /*alinear mi texto al medio*/
+        margin-top: 15px;                            /*separar el margen de mi descripcion del articulo*/
+        margin-bottom: 0;                            /*margen inferior a 0 para evitar espacio innecesario*/
+
+    }
+}
+
+/*SECCION DE TESTIMONIOS*/
+.seccion_testimonios{
+    /*ENCUADRES DE MIS TESTIMONIOS*/
+    display: flex;
+    gap: 30px;
+    padding: 20px 10px 20px 10px;
+    background-color: #a3d7f0;
+    border: 3px solid #358bb3;
+    border-radius: 6px;
+    
+    /*EDICION DE MIS SUBTITULO H5 Y H6*/
+    & h5{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color: #ffffff;
+        background-color: #383838;
+        padding: 25px ;
+    }
+    & h6{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #3313e6;
+    }
+    /*FIN DE MI EDICION DE SUBTITULOS*/
+      & .testimonios{
+        /*EDICION DEL CUADRO DE MIS TESTIMONIOS*/
+         background-color: #c2dcfa;
+         border:3px solid #000000;
+         border-radius: 20px;
+         font-size: 20px;
+         text-align: center;
+         color: #e90c0c;
+    }
+
+    & img{
+        object-fit: cover;
+        height: 270px;
+        width: auto;
+    }
+}
+
+/*SECCION DE ENVIOS*/
+.seccion_envios {
+    display: flex;
+    flex-wrap: wrap;       /*recuerda que eprmite que siempre los elementos salten a la linea de abajo cuando no caben en mi contenedor*/
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #1900a5;
+
+    & h2 {                 /*ESTOY FORZANDO A QUE MI TITULO SIEMPRE OCUPE TODO EL LARGO PARA MANTENER A MI IMAGEN ABAJO*/
+        width: 100%;      
+        text-align: center;    /**ALINEA MIS TEXTOS AL CENTRO*/
+    }
+
+
+    & .lista_envios {
+        flex: 1;                 /*es un flex grow que permite crecer y ocupar el espacio vacio*/  
+        min-width: 200px;        /*para que nunca se achique mas de 200px*/
+    }
+
+
+    /*puedo editar mis textos y ponerle colroes a mis listas asignandoles una clase, pero aun no*/
+
+
+    & img {  /*hacer las ediciones a la imagen*/
+ 
+        object-fit: cover;
+        height: 500px;
+        width: auto;
+        border-radius: 10px;
+    }
+}
+
+/*SECCION DE SERVICIOS*/
+.seccion_servicios{   /*EL CONTORNO PRINCIPAL*/
+  border:4px solid  #1900a5;
+  background-color: #858585;
+  border-radius: 8px;
+
+
+      & .servicios{   /*EL CONTORNO SECUNDARIO*/
+          display: flex;
+          gap: 20px;
+          padding: 20px;
+          border:2px solid #464646;
+          background-color: #b8b8b8;
+          border-radius: 6px;
+
+          & .servi{   /*EL CONTORNO DE MIS ARTICULOS*/
+            
+            border:3px solid #5e5e5e;
+            border-radius:10px;
+            background-color: #dfdfdf;
+            text-align: center;
+          }
+
+          & img{
+              /*LA EDICION DE MIS IMAGENES*/
+             width: 100%;
+             height: 350px;
+
+          }
+         }
+
+         & p{
+
+
+        background: #000000;                       /*fondo negro para mis descripcion de texto*/
+        color: #ffffff;                            /*color del texto */
+        font-size: 18px;                             /*tamaño del texto*/
+        padding: 10px;                               /*separacion de los bordes*/
+        text-align: center;                          /*alinear mi texto al medio*/
+        margin-top: 10px;                            /*separar el margen de mi descripcion del articulo*/
+        margin-bottom: 0;                            /*margen inferior a 0 para evitar espacio innecesario*/
+
+    }
+    
+    & h4{
+          
+        font-size: 25px;
+        background-color: #b8b8b8;
+        padding: 25px;
+
+    }
+         
+}
+
+/*SECCION PIE DE PAGINA*/
+
+.seccion_pie{
+   display: flex; 
+   justify-content: space-around;   /*el arround es para asignar un espacio igual entre cada elemento//y el justidique supongo q es ocmo un llamado*/
+   background-color: #f930f3;
+   padding: 20px;
+   
+   & .pie{
+    color: #ffffff;
+    font-size: 20px;
+   }
+   & h4{
+    text-decoration:underline;
+    font-size: 15;
+   }
+}
+
+
+
+/*SUBTITULOS*/
+.subtitulos {
+
+    font-size: 25px;
+    text-align: center;
+
+}
