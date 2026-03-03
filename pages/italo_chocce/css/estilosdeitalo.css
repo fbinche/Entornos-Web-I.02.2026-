@@ -6,14 +6,14 @@
 }
 
 body {
-  border: 4px solid purple;
-  background: #f5f5f5;
+  border: 4px solid #ff7b00;
+  background: #ff7b00;
 }
 
 /* HEADER */
 .header {
-  background: #cce5ff;   /* azul */
-  border: 3px solid #339af0;
+  background: #ff7b00;   /* azul */
+  border: 3px solid #ff7b00;
   height: 80px;
   display: flex;
   align-items: center;
@@ -30,8 +30,8 @@ body {
 
 /* SECTION */
 .section {
-  background: #df845a;   /* verde */
-  border: 3px solid #79c485;
+  background: #ffffff;   /* verde */
+  border: 3px solid #ffffff;
   min-height: 20vh;
   padding: 20px;
   display: flex;
@@ -41,38 +41,29 @@ body {
 }
 
 .first-section {
-<<<<<<< HEAD
-  background: #eb3407;   /* gris claro */
-=======
   background: #ffffff;   /* gris claro */
->>>>>>> italo_chocce
-  border: 3px solid #0523e7;
+  border: 3px solid #ffffff;
 }
 
 .second-section {
-<<<<<<< HEAD
-  background: #cd7203;   /* naranja */
-  border: 3px solid #d35400;
-} 
-.third-section {
-  background: #c1d207;   /* morado */
-=======
   background: #ffffff;   /* naranja */
-  border: 3px solid #d35400;
+  border: 3px solid #ff7b00;
+  }
+/* imagen mas tgextio */
+ .contenedor-flex{ 
+  display: flex;
+  align-items: center;
+
+
 } 
 .third-section {
   background: #ffffff;   /* morado */
->>>>>>> italo_chocce
-  border: 3px solid #5e38dc;
+  border: 3px solid #ff7b00;
 }
 
 .fourth-section {
-<<<<<<< HEAD
-  background: #0d7d13;   /* azul oscuro */
-=======
   background: #ffffff;   /* azul oscuro */
->>>>>>> italo_chocce
-  border: 3px solid #1b2838;      
+  border: 3px solid #ff7b00;      
 }
 
 .card {
@@ -80,8 +71,9 @@ body {
   flex-direction: column;
   background: #5aa9c9;   
   border: 3px solid #141311;
-  align-items: center;
   justify-content: center;
+  text-align: center;
+
   
 }
 
@@ -368,8 +360,4 @@ body {
 
 #id444{
   background-color: #141311;
-}
-
-nav {
-  display: block;
 }
