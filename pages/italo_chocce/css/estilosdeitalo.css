@@ -48,7 +48,12 @@ body {
 .second-section {
   background: #ffffff;   /* naranja */
   border: 3px solid #ff7b00;
- 
+  }
+/* imagen mas tgextio */
+ .contenedor-flex{ 
+  display: flex;
+  align-items: stretch;
+
 
 } 
 .third-section {
