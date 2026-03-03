@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Maqueta Semántica</title>
-  <link rel="stylesheet" href="../../assets/css/styles_global.css">
+  <link rel="stylesheet" href="../jose_villanueva/CSS/Styles.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 <div class="logo">
   <!-- Imagen de fútbol -->
   <div class="logo-icon">
-    <img src="imagenes/futbol.png" alt="Balón de fútbol">
+    <img src="imagenes/balon.png" alt="Balón de fútbol">
   </div>
 
   <!-- Texto del sitio -->
@@ -22,60 +22,6 @@
     <p class="site-subtitle">Mercado y estrellas del fútbol mundial</p>
   </div>
 </div>
-
-<!-- Estilos CSS -->
-<style>
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: #fff;
-    padding: 20px 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    max-width: 450px;
-  }
-
-  .logo-icon img {
-    width: 60px;       /* tamaño del balón */
-    height: 60px;
-    object-fit: contain;
-  }
-
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .site-title {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #222;
-    letter-spacing: 1px;
-  }
-
-  .site-subtitle {
-    margin: 4px 0 0;
-    font-size: 1.1rem;
-    color: #555;
-  }
-
-  /* Opcional: responsivo */
-  @media (max-width: 480px) {
-    .logo {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .logo-icon img {
-      width: 50px;
-      height: 50px;
-    }
-  }
-</style>
-
 
  <!-- Sección Hero: Top 6 Jugadores con animación -->
 <section class="section hero first-section">
@@ -89,87 +35,6 @@
     </div>
   </header>
 </section>
-
-<style>
-  .hero-header {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Football_pitch.jpg') center/cover no-repeat;
-    color: #fff;
-    padding: 80px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-
-  .hero-text {
-    margin-bottom: 20px;
-  }
-
-  /* Animación del título */
-  .animated-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-    opacity: 0;
-    transform: translateY(-30px);
-    animation: slideFadeIn 1s ease-out forwards;
-  }
-
-  @keyframes slideFadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
-  }
-
-  .hero-button {
-    padding: 10px 25px;
-    font-size: 0.95rem;
-    font-weight: bold;
-    color: #fff;
-    background-color: #ff4c00;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .hero-button:hover {
-    transform: scale(1.05);
-    background-color: #e04300;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
-  }
-
-  /* Responsivo */
-  @media (max-width: 480px) {
-    .animated-title {
-      font-size: 1.5rem;
-    }
-    .hero-subtitle {
-      font-size: 0.9rem;
-    }
-    .hero-button {
-      padding: 8px 20px;
-      font-size: 0.9rem;
-    }
-  }
-</style>
 
       <br>
       <section class="section columnas_3" style="
@@ -188,7 +53,7 @@
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
   ">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Lionel_Messi_20180626.jpg" alt="Lionel Messi" style="width:100%; border-radius:12px 12px 0 0;">
+    <img src="Jugadores/messi.JPEG" alt="Lionel Messi" style="width:100%; border-radius:12px 12px 0 0;">
     <p>Lionel Andres Messi Cuccittini</p>
   </article>
 
@@ -201,7 +66,7 @@
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
   ">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/cristiano.jpg" alt="Cristiano Ronaldo" style="width:100%; border-radius:12px 12px 0 0;">
+    <img src="Jugadores/Cristiano.JPEG" alt="Cristiano Ronaldo" style="width:100%; border-radius:12px 12px 0 0;">
     <p>Cristiano Ronaldo dos Santos Aveiro</p>
   </article>
 
@@ -214,7 +79,7 @@
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
   ">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Neymar_2018.jpg" alt="Neymar" style="width:100%; border-radius:12px 12px 0 0;">
+    <img src="Jugadores/neymar.JPEG" alt="Neymar" style="width:100%; border-radius:12px 12px 0 0;">
     <p>Neymar da Silva Santos Júnior​</p>
   </article>
 
@@ -227,7 +92,7 @@
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
   ">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Kylian_Mbapp%C3%A9_2019.jpg" alt="Kylian Mbappé" style="width:100%; border-radius:12px 12px 0 0;">
+    <img src="Jugadores/kylian.JPEG" alt="Kylian Mbappé" style="width:100%; border-radius:12px 12px 0 0;">
     <p>Kylian Mbappé Lottin</p>
   </article>
 
@@ -240,7 +105,7 @@
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
   ">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Lamine_Yamal_2023.jpg" alt="Lamine Yamal" style="width:100%; border-radius:12px 12px 0 0;">
+    <img src="Jugadores/lamine.JPEG" alt="Lamine Yamal" style="width:100%; border-radius:12px 12px 0 0;">
     <p>Lamine Yamal Nasraoui Ebana</p>
   </article>
 
@@ -253,7 +118,7 @@
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
   ">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Raphinha_2022.jpg" alt="Raphael Dias Belloli" style="width:100%; border-radius:12px 12px 0 0;">
+    <img src="Jugadores/raphinha.JPEG" alt="Raphael Dias Belloli" style="width:100%; border-radius:12px 12px 0 0;">
     <p>Raphael Dias Belloli</p>
   </article>
 </section>
@@ -267,222 +132,140 @@
 
   <section class="section columnas_6">
 
-    <!-- Inter Miami CF -->
-    <article class="card">
-      <h3 class="team-name">Inter Miami CF</h3>
-      <picture>
-        <img src="imagenes/inter_de_miami.jpg" alt="Escudo Inter Miami">
-      </picture>
-      <details>
-        <summary>INFORMACIÓN DEL CLUB</summary>
+  <!-- Inter Miami CF -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/inter_de_miami.jpg" alt="Escudo Inter Miami">
+      <div class="card-content">
+        <h3>Inter Miami CF</h3>
         <p>
-          El Inter de Miami (Club Internacional de Fútbol Miami) es un club de la MLS fundado en 2018 por David Beckham, debutando en 2020. Con sede en Fort Lauderdale (Chase Stadium), destaca por la incorporación de Lionel Messi, Luis Suárez, Sergio Busquets y Jordi Alba. Ganó su primer título: Leagues Cup 2023, Supporters' Shield 2024 y MLS Cup 2025.
+          Club de la MLS fundado en 2018 por David Beckham.
+          Con figuras como Lionel Messi, Luis Suárez y Sergio Busquets.
+          Campeón de Leagues Cup 2023.
         </p>
-      </details>
-    </article>
+      </div>
+    </div>
+  </article>
 
-    <!-- Al-Nassr -->
-    <article class="card">
-      <h3 class="team-name">Al-Nassr</h3>
-      <picture>
-        <img src="imagenes/Al-Nassr.jpg" alt="Escudo Al Nassr">
-      </picture>
-      <details>
-        <summary>INFORMACIÓN DEL CLUB</summary>
+  <!-- Al-Nassr -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/Al-Nassr.jpg" alt="Escudo Al Nassr">
+      <div class="card-content">
+        <h3>Al-Nassr</h3>
         <p>
-          Al-Nassr es uno de los clubes más exitosos del fútbol saudí, con 29 trofeos competitivos: 10 títulos de liga, 5 Copas del Rey y 3 Copas del Príncipe Heredero. Ha ganado 2 trofeos continentales: 1 Recopa de Asia y 1 Supercopa de Asia.
+          Uno de los clubes más exitosos de Arabia Saudita.
+          10 títulos de liga y múltiples copas nacionales.
+          Equipo de Cristiano Ronaldo.
         </p>
-      </details>
-    </article>
+      </div>
+    </div>
+  </article>
 
-    <!-- Santos FC -->
-    <article class="card">
-      <h3 class="team-name">Santos FC</h3>
-      <picture>
-        <img src="imagenes/santos.jpg" alt="Escudo Santos Futebol Clube">
-      </picture>
-      <details>
-        <summary>INFORMACIÓN DEL CLUB</summary>
+  <!-- Santos FC -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/santos.jpg" alt="Escudo Santos FC">
+      <div class="card-content">
+        <h3>Santos FC</h3>
         <p>
-          Santos Futebol Clube es un club brasileño fundado en 1912. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Copa Libertadores y la Copa Intercontinental.
+          Club brasileño fundado en 1912.
+          Campeón de Copa Libertadores y Copa Intercontinental.
+          Histórico equipo de Pelé.
         </p>
-      </details>
-    </article>
+      </div>
+    </div>
+  </article>
 
-    <!-- Real Madrid CF -->
-    <article class="card">
-      <h3 class="team-name">Real Madrid CF</h3>
-      <picture>
-        <img src="imagenes/real_madrid.jpg" alt="Escudo Real Madrid Club de Fútbol">
-      </picture>
-      <details>
-        <summary>INFORMACIÓN DEL CLUB</summary>
+  <!-- Real Madrid CF -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/real_madrid.jpg" alt="Escudo Real Madrid">
+      <div class="card-content">
+        <h3>Real Madrid CF</h3>
         <p>
-          Real Madrid Club de Fútbol, fundado en 1902, es uno de los clubes más importantes de España. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Liga de Campeones de la UEFA y la Copa del Rey.
+          Fundado en 1902.
+          Máximo ganador de la UEFA Champions League.
+          Uno de los clubes más grandes del mundo.
         </p>
-      </details>
-    </article>
+      </div>
+    </div>
+  </article>
 
-    <!-- FC Barcelona -->
-    <article class="card">
-      <h3 class="team-name">FC Barcelona</h3>
-      <picture>
-        <img src="imagenes/fc_barcelona.jpg" alt="Escudo Fútbol Club Barcelona">
-      </picture>
-      <details>
-        <summary>INFORMACIÓN DEL CLUB</summary>
+  <!-- FC Barcelona -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/fc_barcelona.jpg" alt="Escudo FC Barcelona">
+      <div class="card-content">
+        <h3>FC Barcelona</h3>
         <p>
-          Fútbol Club Barcelona, fundado en 1899, es uno de los clubes más importantes de España. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Liga de Campeones de la UEFA y la Copa del Rey.
+          Fundado en 1899.
+          Ganador de múltiples Champions League y LaLiga.
+          Histórico rival del Real Madrid.
         </p>
-      </details>
-    </article>
-    
-    <!-- FC Barcelona -->
-    <article class="card">
-      <h3 class="team-name">FC Barcelona</h3>
-      <picture>
-        <img src="imagenes/fc_barcelona.jpg" alt="Escudo Fútbol Club Barcelona">
-      </picture>
-      <details>
-        <summary>INFORMACIÓN DEL CLUB</summary>
-        <p>
-          Fútbol Club Barcelona, fundado en 1899, es uno de los clubes más importantes de España. Ha ganado múltiples títulos nacionales e internacionales, incluyendo la Liga de Campeones de la UEFA y la Copa del Rey.
-        </p>
-      </details>
-    </article>
+      </div>
+    </div>
+  </article>
 
-  </section>
+  <!-- FC Barcelona  -->
+  <article class="card">
+    <div class="card-inner">
+      <img src="imagenes/fc_barcelona.jpg" alt="Escudo FC Barcelona">
+      <div class="card-content">
+        <h3>FC Barcelona</h3>
+        <p>
+          Club con gran tradición en cantera.
+          Conocido por su estilo de juego ofensivo.
+          Sede en el Spotify Camp Nou.
+        </p>
+      </div>
+    </div>
+  </article>
+
 </section>
+<section class="section second-section">
 
-    <section class="section second-section">
-  <header class="section-header animated-section" style="animation-delay: 0s;">
-    <h2>Ligas y Competiciones</h2>
+  <header class="section-header">
+    <h2>🏆 Ligas y Competiciones</h2>
   </header>
 
-  <!-- Ligas Nacionales -->
-  <section class="leagues national-leagues animated-section" style="animation-delay: 0.1s;">
-    <h3>Ligas Nacionales</h3>
-    <ul>
-      <li>LaLiga</li>
-      <li>MLS</li>
-      <li>Liga Profesional Saudí</li>
-      <li>Campeonato Brasileño de Serie A</li>
-    </ul>
-  </section>
+  <div class="competitions-grid">
 
-  <!-- Copas Nacionales -->
-  <section class="leagues national-cups animated-section" style="animation-delay: 0.2s;">
-    <h3>Copas Nacionales</h3>
-    <ul>
-      <li>Copa del Rey</li>
-      <li>Supercopa de España</li>
-    </ul>
-  </section>
+    <!-- Ligas Nacionales -->
+    <div class="competition-card">
+      <h3>⚽ Ligas Nacionales</h3>
+      <ul>
+        <li>LaLiga</li>
+        <li>MLS</li>
+        <li>Liga Profesional Saudí</li>
+        <li>Campeonato Brasileño Serie A</li>
+      </ul>
+    </div>
 
-  <!-- Competiciones Internacionales -->
-  <section class="leagues international-competitions animated-section" style="animation-delay: 0.3s;">
-    <h3>Competiciones Internacionales</h3>
-    <ul>
-      <li>Liga de Campeones de la UEFA</li>
-      <li>CONMEBOL Libertadores</li>
-      <li>Copa Mundial de Clubes de la FIFA</li>
-      <li>Copa Mundial</li>
-    </ul>
-  </section>
+    <!-- Copas Nacionales -->
+    <div class="competition-card">
+      <h3>🏆 Copas Nacionales</h3>
+      <ul>
+        <li>Copa del Rey</li>
+        <li>Supercopa de España</li>
+      </ul>
+    </div>
+
+    <!-- Competiciones Internacionales -->
+    <div class="competition-card">
+      <h3>🌍 Competiciones Internacionales</h3>
+      <ul>
+        <li>Champions League</li>
+        <li>CONMEBOL Libertadores</li>
+        <li>Mundial de Clubes</li>
+        <li>Copa del Mundo</li>
+      </ul>
+    </div>
+
+  </div>
+
 </section>
-
-<style>
-  .second-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-
-  .section-header h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    color: #222;
-  }
-
-  .leagues {
-    margin-bottom: 25px;
-    background: #f9f9f9;
-    padding: 15px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-
-  .leagues h3 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-
-  .leagues ul {
-    margin: 0;
-    padding-left: 20px;
-    color: #555;
-  }
-
-  /* Animación para secciones */
-  .animated-section {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 0.6s ease-out forwards;
-  }
-
-  @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>
-
-<style>
-  .second-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-
-  .section-header h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    color: #222;
-  }
-
-  .leagues {
-    margin-bottom: 30px;
-  }
-
-  .leagues h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #444;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 5px;
-  }
-
-  .leagues ul {
-    list-style: disc inside;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  .leagues li {
-    margin-bottom: 6px;
-    font-size: 1rem;
-    color: #333;
-  }
-</style>
+</section>
 
       <section class="section player-biographies">
   <header class="section-header">
@@ -546,82 +329,6 @@
   </div>
 </section>
 
-<style>
-  .player-biographies {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-
-  .section-header h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    color: #222;
-  }
-
-  .players-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-
-  .player-card {
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    opacity: 0; /* empieza invisible */
-    transform: translateY(30px); /* empieza abajo */
-  }
-
-  .player-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-  }
-
-  .player-info h3 {
-    margin: 0 0 10px;
-    font-size: 1.2rem;
-    color: #333;
-  }
-
-  .player-info p {
-    font-size: 0.95rem;
-    color: #555;
-    margin: 0;
-  }
-
-  /* Animación de las tarjetas */
-  .animated-card {
-    animation: fadeUp 0.6s ease-out forwards;
-  }
-
-  @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @media (max-width: 600px) {
-    .players-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
-
-
-
     <section class="section third-section">
   <header class="section-header animated-section" style="animation-delay: 0s;">
     <h2>Redes Sociales</h2>
@@ -636,88 +343,6 @@
     </ul>
   </section>
 </section>
-
-<style>
-  .third-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-
-  .section-header h2 {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
-    color: #222;
-  }
-
-  .social-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .social-list li {
-    margin: 0;
-  }
-
-  .social-link {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #eee;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #333;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-
-  .social-link:hover {
-    background-color: #ff4c00;
-    color: #fff;
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
-  }
-
-  /* Animación de entrada para secciones */
-  .animated-section {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 0.6s ease-out forwards;
-  }
-
-  /* Animación secuencial de los links */
-  .animated-social {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 0.5s ease-out forwards;
-  }
-
-  @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Responsivo */
-  @media (max-width: 480px) {
-    .social-list {
-      flex-direction: column;
-      gap: 15px;
-    }
-  }
-</style>
 
     <section class="section fourth-section">
   <header class="section-header">
@@ -788,59 +413,6 @@
   </div>
 </section>
 
-<style>
-  .fourth-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-
-  .section-header h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    color: #222;
-  }
-
-  .titles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-
-  .player-titles {
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-
-  .player-titles h3 {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    color: #333;
-  }
-
-  .player-titles ul {
-    list-style: disc inside;
-    padding: 0;
-    margin: 0;
-  }
-
-  .player-titles li {
-    margin-bottom: 6px;
-    font-size: 0.95rem;
-    color: #555;
-  }
-
-  @media (max-width: 600px) {
-    .titles-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
-
   </main>
 
   <footer class="footer">
@@ -854,79 +426,6 @@
     <p class="animated-footer" style="animation-delay: 0.3s;">&copy; 2026 Todos los derechos reservados.</p>
   </div>
 </footer>
-
-<style>
-  .footer {
-    background-color: #222;
-    color: #fff;
-    padding: 25px 10px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-
-  .footer-content p {
-    margin: 5px 0;
-    font-size: 1rem;
-  }
-
-  .social-links {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-
-  .social-links li {
-    margin: 0;
-  }
-
-  .social-link {
-    text-decoration: none;
-    color: #fff;
-    padding: 8px 12px;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    display: inline-block;
-    transition: all 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .social-link:hover {
-    background-color: #fff;
-    color: #222;
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
-  }
-
-  /* Animación de entrada */
-  .animated-footer, .animated-social {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 0.6s ease-out forwards;
-  }
-
-  @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Responsivo */
-  @media (max-width: 600px) {
-    .social-links {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
-</style>
 
 </body>
 
