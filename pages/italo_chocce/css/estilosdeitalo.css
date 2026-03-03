@@ -52,7 +52,7 @@ body {
 /* imagen mas tgextio */
  .contenedor-flex{ 
   display: flex;
-  align-items: stretch;
+  align-items: center;
 
 
 } 
