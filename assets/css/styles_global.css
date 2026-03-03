@@ -41,21 +41,21 @@ body {
 }
 
 .first-section {
-  background: #3e8c1d;   /* gris claro */
+  background: #eb3407;   /* gris claro */
   border: 3px solid #0523e7;
 }
 
 .second-section {
-  background: #f1c40f;   /* naranja */
+  background: #cd7203;   /* naranja */
   border: 3px solid #d35400;
 } 
 .third-section {
-  background: #8e44ad;   /* morado */
+  background: #c1d207;   /* morado */
   border: 3px solid #5e38dc;
 }
 
 .fourth-section {
-  background: #e66611;   /* azul oscuro */
+  background: #0d7d13;   /* azul oscuro */
   border: 3px solid #1b2838;      
 }
 
