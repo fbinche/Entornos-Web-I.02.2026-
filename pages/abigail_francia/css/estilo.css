@@ -22,7 +22,10 @@ body {
   font-weight: bold;
 }
 
-
+.header ul {
+  display: flex;
+  gap: 20px;
+}
 
 /* MAIN */
 .main {
