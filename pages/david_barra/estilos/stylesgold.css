@@ -1,0 +1,222 @@
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+background:linear-gradient(135deg,#0f0f0f,#1a1a1a);
+color:#f5f5f5;
+}
+
+/* SECCIONES */
+.section{
+padding:60px 80px;
+}
+
+/* NAVBAR */
+.nav-principal{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0d0d0d;
+padding:20px 40px;
+border-bottom:2px solid #d4af37; /* dorado */
+box-shadow:0 0 15px rgba(212,175,55,0.3);
+}
+
+.logo{
+width:160px;
+}
+
+.menu{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.menu a{
+color:#f5f5f5;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#d4af37;
+text-shadow:0 0 8px #d4af37;
+}
+
+/* TARJETAS */
+.columnas_3,
+.services{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+}
+
+.article{
+background:linear-gradient(145deg,#141414,#1f1f1f);
+padding:25px;
+border-radius:12px;
+text-align:center;
+width:280px;
+border:1px solid rgba(212,175,55,0.2);
+box-shadow:0 0 20px rgba(0,0,0,0.6);
+transition:0.3s;
+}
+
+.article:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(212,175,55,0.4);
+}
+
+.article img{
+max-width:100%;
+height:auto;
+}
+
+/* PRECIOS */
+.precio-regular{
+text-decoration:line-through;
+color:#888;
+}
+
+.precio strong{
+font-size:32px;
+color:#d4af37;
+}
+
+/* BOTONES */
+.btn-principal{
+background:linear-gradient(45deg,#d4af37,#b8962e);
+color:black;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-principal:hover{
+box-shadow:0 0 15px #d4af37;
+transform:scale(1.05);
+}
+
+.btn-secundario{
+background:transparent;
+border:2px solid #d4af37;
+color:#d4af37;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn-secundario:hover{
+background:#d4af37;
+color:black;
+}
+
+/* DOS COLUMNAS */
+.two-columns{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+align-items:center;
+}
+
+.aside img{
+width:100%;
+border-radius:10px;
+box-shadow:0 0 20px rgba(212,175,55,0.3);
+}
+
+/* FORMULARIO */
+.formulario{
+display:flex;
+flex-direction:column;
+gap:12px;
+max-width:400px;
+background:#141414;
+padding:25px;
+border-radius:12px;
+border:1px solid rgba(212,175,55,0.2);
+box-shadow:0 0 15px rgba(0,0,0,0.7);
+}
+
+.formulario input,
+.formulario select{
+padding:8px;
+border-radius:5px;
+border:1px solid #333;
+background:#1f1f1f;
+color:white;
+}
+
+.formulario input:focus,
+.formulario select:focus{
+outline:none;
+border:1px solid #d4af37;
+box-shadow:0 0 8px rgba(212,175,55,0.5);
+}
+
+/* FOOTER */
+.footer{
+background:#0d0d0d;
+color:#f5f5f5;
+padding:40px;
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+border-top:2px solid #d4af37;
+}
+
+.footer h4,
+.footer h2{
+color:#d4af37;
+}
+
+.footer a{
+color:#ccc;
+text-decoration:none;
+transition:0.3s;
+}
+
+.footer a:hover{
+color:#d4af37;
+}
+
+/* TITULOS */
+h1, h2, h3, strong{
+color:#d4af37;
+}
+
+/* BENEFICIOS */
+.beneficios-extra{
+text-align:center;
+padding:40px 20px;
+}
+
+.titulo-beneficios-extra{
+font-size:32px;
+margin-bottom:25px;
+}
+
+/* CLIENTES */
+.clients{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.clients .article{
+width:250px;
+}
+
+.services .article img{
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+border:2px solid #d4af37;
+}
