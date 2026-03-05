@@ -10,7 +10,7 @@
 ========================= */
 
 body {
-  background: #000;
+  background: #000000;
   color: white;
   line-height: 1.6;
   position: relative;
@@ -21,8 +21,8 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background-color: #000; /* fondo negro */
-  color: #fff;
+  background-color: #000000; /* fondo negro */
+  color: #ffffff;
   border: 5px solid #00ff88; /* borde verde tipo LED */
   box-sizing: border-box;
 }
@@ -64,24 +64,6 @@ body::before {
 }
 
 /* =========================
-   EFECTO CÉSPED
-========================= */
-body::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-image: repeating-linear-gradient(
-    90deg,
-    rgba(255,255,255,0.03) 0px,
-    rgba(255,255,255,0.03) 2px,
-    transparent 2px,
-    transparent 100px
-  );
-  z-index: -1;
-}
-
-/* =========================
    LOGO
 ========================= */
 .logo {
@@ -90,7 +72,7 @@ body::before {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   border-bottom: 3px solid white;
 }
 
@@ -126,19 +108,22 @@ body::before {
 }
 
 .hero-button {
-  padding: 12px 30px;
-  background: white;
-  color: #0b6623;
-  border: none;
-  border-radius: 30px;
-  font-weight: bold;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00a86b;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
+  /* Evita posicionamientos que tapen otros elementos */
+  position: static;
+  z-index: auto;
 }
 
 .hero-button:hover {
-  background: #00ff00;
-  transform: scale(1.1);
+  background-color: #008f57;
 }
 
 /* =========================
@@ -162,6 +147,50 @@ body::before {
   height: 220px;
   object-fit: cover;
   border-bottom: 2px solid white;
+}
+
+.columnas_3 {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  overflow: hidden; /* Oculta el desbordamiento */
+  position: relative;
+}
+
+/* Contenedor interno que se animará */
+.columnas_3 .inner {
+  display: flex;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+}
+
+/* Animación de desplazamiento horizontal */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Ajusta los artículos para mantenerlos consistentes */
+.columnas_3 .article {
+  flex: 0 0 auto;
+  width: 200px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.columnas_3 img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
 }
 
 /* =========================
@@ -192,6 +221,46 @@ body::before {
   display: block;
 }
 
+.equipos-section {
+  background-color: #000000; /* fondo oscuro para resaltar el neón */
+  padding: 50px 20px;
+}
+
+.equipos-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.equipos-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white; /* interior blanco */
+  -webkit-text-stroke: 1.2px #7fff7f; /* borde verde pastel más suave */
+  text-shadow:
+    0 0 3px #7fff7f,
+    0 0 6px #7fff7f,
+    0 0 9px #7fff7f; /* brillo verde más sutil */
+  margin-bottom: 10px;
+}
+.equipos-line {
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #8cff8c; /* verde pastel */
+  margin: 0 auto 15px auto;
+  border-radius: 2px;
+  box-shadow: 0 0 6px #8cff8c, 0 0 12px #8cff8c;
+}
+
+.equipos-subtitle {
+  font-size: 1.1rem;
+  color: white; /* interior blanco */
+  -webkit-text-stroke: 0.8px #7fff7f; /* borde verde pastel */
+  text-shadow:
+    0 0 2px #7fff7f,
+    0 0 4px #7fff7f; /* brillo más delicado */
+}
+
 /* Contenido oculto */
 .card-content {
   position: absolute;
@@ -218,6 +287,67 @@ body::before {
 
 .card:hover .card-content {
   transform: translateY(0);
+}
+
+.competitions-section {
+  padding: 80px 8%;
+  color: #ffffff;
+  text-align: center;
+  background: transparent; /* 🔥 Respeta tu fondo */
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 60px;
+}
+
+.competitions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* 🔥 Tarjetas estilo glass para que no tapen las líneas */
+.competition-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.competition-card:hover {
+  transform: translateY(-8px);
+  border-color: #00ff88;
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.2);
+}
+
+.competition-card h3 {
+  margin-bottom: 20px;
+  color: #00ff88; /* combina con el verde de tu lateral */
+}
+
+.competition-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.competition-card li {
+  margin: 12px 0;
+  color: rgba(255, 255, 255, 0.85);
+  transition: 0.3s;
+}
+
+.competition-card li:hover {
+  color: #ffffff;
+  transform: translateX(5px);
 }
 
 /* =========================
@@ -248,74 +378,81 @@ body::before {
   height: 200px;
   object-fit: cover;
 }
-
-/* ===== SECCIÓN TITULOS ===== */
-.fourth-section {
-  padding: 80px 20px;
-  background-color: #000; /* Fondo negro */
-  color: #fff;
+.player-biographies {
+  padding: 60px 20px;
+  background-color: #000;  /* Fondo negro */
+  color: #fff;             /* Texto blanco */
 }
 
-/* Título */
+/* Encabezado de sección centrado */
+.player-biographies .section-header {
+  text-align: center; /* Centra todo el contenido del header */
+  margin-bottom: 40px;
+}
+
+.player-biographies .section-header h2 {
+  font-size: 2rem;
+  color: #ffffff; /* Verde LED opcional */
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #00ff00; /* Glow verde */
+}
+
+/* ===== SECCIÓN TITULOS ===== */
+/* Sección de títulos de jugadores */
+.fourth-section {
+  padding: 80px 20px;
+  background-color: #000;  /* Fondo negro */
+  color: #fff;             /* Texto blanco */
+}
+
+/* Encabezado de sección */
 .fourth-section .section-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .fourth-section .section-header h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #00ff88;
-  text-shadow: 0 0 10px #00ff88;
+  font-size: 2rem;
+  color: #f8faf8; /* verde LED */
+  text-shadow: 0 0 5px #fefffe, 0 0 10px #00ff00; /* Glow */
 }
 
-/* GRID */
-.titles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
+/* Grid de títulos */
+.fourth-section .titles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-/* TARJETAS */
-.player-titles {
-  background: #111;
-  border-radius: 15px;
-  padding: 25px;
-  border: 2px solid #00ff88;
-  transition: 0.3s ease;
-  box-shadow: 0 0 10px #00ff88;
+/* Tarjetas de jugadores */
+.fourth-section .player-titles {
+  background-color: #111; /* ligeramente más oscuro que el negro */
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.3s;
 }
 
-/* EFECTO LED AL PASAR EL MOUSE */
-.player-titles:hover {
-  transform: translateY(-10px);
-  box-shadow: 
-    0 0 20px #00ff88,
-    0 0 40px #00ff88,
-    0 0 60px #00ff88;
+/* Hover para tarjeta (solo movimiento) */
+.fourth-section .player-titles:hover {
+  transform: translateY(-5px);
 }
 
-/* Nombre jugador */
-.player-titles h3 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  text-align: center;
-  color: #00ff88;
-}
-
-/* Lista */
-.player-titles ul {
-  list-style: none;
-  padding: 0;
-}
-
-.player-titles ul li {
+/* Títulos de jugadores */
+.fourth-section .player-titles h3 {
   margin-bottom: 10px;
+  color: #fefffe; /* verde LED */
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+/* Lista de títulos */
+.fourth-section .player-titles ul {
   padding-left: 20px;
-  position: relative;
-  font-size: 0.95rem;
+  margin: 0;
+}
+.fourth-section .player-titles ul li {
+  margin-bottom: 5px;
+  color: #fff;
 }
 
 .player-titles li::before {
@@ -347,6 +484,46 @@ body::before {
 .social-link:hover {
   background: white;
   color: #0b6623;
+}
+
+/* Sección de redes sociales */
+.third-section {
+  padding: 60px 20px;
+  background-color: #000;  /* Fondo negro */
+  color: #fff;             /* Texto blanco */
+}
+
+/* Encabezado de sección centrado */
+.third-section .section-header {
+  text-align: center; /* Centra todo el contenido del header */
+  margin-bottom: 30px;
+}
+
+.third-section .section-header h2 {
+  font-size: 2rem;
+  color: #ffffff; /* verde LED opcional */
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #00ff00; /* Glow verde */
+}
+
+/* Lista de redes sociales */
+.third-section .social-media .social-list {
+  display: flex;
+  justify-content: center; /* Centra las redes sociales horizontalmente */
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.third-section .social-media .social-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.third-section .social-media .social-link:hover {
+  color: #00ff00; /* Glow verde al pasar el cursor */
 }
 
 /* =========================
