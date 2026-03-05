@@ -356,3 +356,15 @@ body {
 nav {
   display: block;
 }
+
+ul li img.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
