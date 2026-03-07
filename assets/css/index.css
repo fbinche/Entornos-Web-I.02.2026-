@@ -9,6 +9,20 @@ body {
     color: #333;
 }
 
+h1{
+    font-size: 46px; /* Tamaño grande */
+    font-weight: 700; /* Texto en negrita */
+    
+    /* Gradiente aplicado al texto */
+    background: linear-gradient(90deg,#ff4b4b,#ff8a00);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    border-bottom: 4px solid #ff4b4b; /* Línea inferior decorativa */
+    padding-bottom: 10px;
+    letter-spacing: 1px; /* Espacio entre letras */
+        
+}
 /* ================================
    TITULO DOCENTE
 ================================ */
