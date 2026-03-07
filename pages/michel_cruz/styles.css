@@ -31,23 +31,23 @@ body {
   font-weight: bold;
 }
 
-.first-section {
-  background: #3e8c1d;   /* gris claro */
-  border: 3px solid #0523e7;
+.first-section {       /*  fondo i borde color blok 1 */
+  background: linear-gradient(135deg, #ff4d88, #9b59b6, #3a3a3a);
+border: 3px solid #ff4d88;
 }
 
-.second-section {
-  background: #f1c40f;   /* naranja */
-  border: 3px solid #d35400;
+.second-section {     /*  fondo i borde color blok 2  */
+  background: linear-gradient(135deg, #ff4d88, #9b59b6, #3a3a3a);
+border: 3px solid #9b59b6;
 } 
-.third-section {
-  background: #8e44ad;   /* morado */
-  border: 3px solid #5e38dc;
+.third-section {     /*  fondo i borde color blok 3  */
+  background: linear-gradient(135deg, #ff4d88, #9b59b6, #3a3a3a);
+border: 3px solid #3a3a3a;
 }
 
-.fourth-section {
-  background: #e66611;   /* azul oscuro */
-  border: 3px solid #1b2838;      
+.fourth-section {     /*  fondo i borde color blok 4  */
+  background: linear-gradient(135deg, #f2a7c0, #b57edc, #2f2f2f);
+border: 3px solid #b57edc;
 }
 
 .card {
@@ -381,4 +381,25 @@ body {
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+
+
+.carrito__input{
+  display:none;
+}
+
+
+
+.carrito__img{
+  width:150px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+
+.carrito__input:checked + .carrito__label .carrito__img{
+  opacity:0.5;
+  border:3px solid #d63384;
+  border-radius:10px;
 }
