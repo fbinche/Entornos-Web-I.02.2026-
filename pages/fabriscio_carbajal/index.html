@@ -17,17 +17,17 @@
         <h1>Viva Mueble</h1>
         <nav>
             <ul>
-                <li><a href="#primera_seccion">SOBRE NOSOTROS</a></li>
-                <li><a href="#segunda_seccion">PRODUCTOS POPULARES</a></li>
-                <li><a href="#tercera_seccion">CATEGORIAS</a></li>
-                <li><a href="#cuarta_seccion">CONTACTO</a></li>
+                <li><a href="#sobre_nosotros">SOBRE NOSOTROS</a></li>
+                <li><a href="#productos_populares">PRODUCTOS POPULARES</a></li>
+                <li><a href="#categorias">CATEGORIAS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
 
-        <section id="primera_seccion" class="section first-section">
+        <section id="sobre_nosotros" class="section first-section">
             <header class="header">
                 <h2>Vendemos muebles en el Perú por más de 25 años</h2>
             </header>
@@ -97,11 +97,11 @@
         </section>
 
         <!-- productos populares tipo carrusel-->
-        <section id="segunda_seccion" class="section second-section">
-            <h3>Productos más vendidos:</h3>
+        <section id="productos_populares" class="section second-section">
+            <h3><b>Productos más vendidos:</b></h3>
             <p>Hecha un vistazo a nuestros productos más vendidos: </p>
 
-            <div class="section columnas_6">
+            <section class="section columnas_6">
                 <!-- Producto popular 1 -->
                 <article class="article">
                     <img src="img/oficina/escritorio_negro.jpg" alt="Un escritorio de madera negra">
@@ -153,23 +153,23 @@
                 <footer>
                     <button>Ver más productos</button>
                 </footer>
-            </div>
+            </section>
         </section>
 
         <!--categorias de los productos-->
-        <section id="tercera_seccion" class="section third-section">
-            <h2>Categorias:</h2>
+        <section id="categorias" class="section third-section">
+            <h2><b>Categorias:</b></h2>
             <p>Estas son nuestras categorias más populares:</p>
 
             <section class="section">
                 <!-- Categoría 1 -->
 
                 <header class="header">
-                    <h3>SALA Y COMEDOR</h3>
+                    <h3><b>SALA Y COMEDOR</b></h3>
                     <p>Productos para amoblar tu sala y comedor con estilo y calidad.</p>
                 </header>
 
-                <div class="section columnas_4">
+                <section class="section columnas_4">
                     <article class="article">
                         <img src="img/sala_comedor/silla_decorada.png" alt="Una silla decorada">
                         <h3>Silla Decorada</h3>
@@ -198,13 +198,16 @@
                         <p>Mesa de madera con aspecto simple y acabado especial.</p>
                         <button class="boton_comprar">Comprar ahora</button>
                     </article>
-                </div>
+                </section>
 
                 <!-- Categoría 2 -->
 
-                <header class="header">DORMITORIO</header>
+                <header class="header">
+                    <h3><b>DORMITORIO</b></h3>
+                    <p>Productos para tener comodidad en tu espacio de descanso.</p>
+                </header>
 
-                <div class="section columnas_4">
+                <section class="section columnas_4">
                     <article class="article">
                         <img src="img/dormitorio/cama_blanca.png" alt="Una cama de color blanco">
                         <h3>Cama Blanca</h3>
@@ -234,12 +237,15 @@
                             <p>Cómoda de madera de 2 cajones color blanco.</p>
                             <button class="boton_comprar">Comprar ahora</button>
                         </article>
-                </div>
+                </section>
 
                 <!-- Categoría 3 -->
 
-                <header class="header">OFICINA</header>
-                <div class="section columnas_4">
+                <header class="header">
+                    <h3><b>OFICINA</b></h3>
+                    <p>Productos indispensables para tu espacio de trabajo.</p>
+                </header>
+                <section class="section columnas_4">
                     <article class="article">
                         <img src="img/oficina/escritorio_negro.jpg" alt="Un escritorio de madera negra">
                         <h3>Escritorio Negro</h3>
@@ -269,7 +275,7 @@
                         <p>Escritorio de madera con detalles blancos.</p>
                         <button class="boton_comprar">Comprar ahora</button>
                     </article>
-                </div>
+                </section>
                 <footer>
                     <p>Puedes explorar más categorías en nuestro sitio web. <a href="#categorias">Ver más categorías</a>
                     </p>
@@ -278,10 +284,10 @@
             </section>
         </section>
         <!--FORMULARIO-->
-        <section id="cuarta_seccion" class="section fourth-section">
+        <section id="contacto" class="section fourth-section columnas_2">
             <!-- Información (address es para proporcionar información de contacto a los buscadores)-->
             <article>
-                <h2>Contáctanos</h2>
+                <h2><b>Contáctanos</b></h2>
 
                 <address>
 
@@ -313,6 +319,13 @@
                 </address>
 
             </article>
+            <article>
+                <h4><b>Donde encontrarnos:</b></h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.9105794367465!2d-77.053761!3d-12.0496733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8d657a9bedd%3A0x77ddaf145e3cf01f!2sAv.%20Tingo%20Mar%C3%ADa%20245%2C%20Bre%C3%B1a%2015082!5e0!3m2!1ses!2spe!4v1772829750375!5m2!1ses!2spe"
+                    width="1000" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
 
         </section>
 
@@ -322,46 +335,74 @@
     <footer class="footer">
         <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
 
-        <section class="columnas_3">
+        <section class="columnas_2">
 
             <!-- Sección Navegación -->
             <nav>
-                <h3>Viva Mueble</h3>
+                <h3><b>Viva Mueble</b></h3>
 
                 <ul>
-                    <li><a href="#primera_seccion"><i class="bi bi-building"></i>Sobre Nosotros</a></li>
-                    <li><a href="#segunda_seccion"><i class="bi bi-star-fill"></i>Productos Populares</a></li>
-                    <li><a href="#tercera_seccion"><i class="bi bi-list-stars"></i>Categorias</a></li>
-                    <li><a href="#cuarta_seccion"><i class="bi bi-telephone"></i>Contacto</a></li>
+                    <li><a href="#sobre_nosotros"><i class="bi bi-building"></i>Sobre Nosotros</a></li>
+                    <li><a href="#productos_populares"><i class="bi bi-star-fill"></i>Productos Populares</a></li>
+                    <li><a href="#categorias"><i class="bi bi-list-stars"></i>Categorias</a></li>
+                    <li><a href="#contacto"><i class="bi bi-telephone"></i>Contacto</a></li>
                 </ul>
+
+                <h4>Nuestras redes sociales</h4>
+                <ul>
+                    <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i>Instagram</a></li>
+                    <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a></li>
+                    <li><a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a></li>
+                </ul>
+
             </nav>
+            <!-- Sección mapa -->
+            <aside>
+                <h3>Reciba las últimas novedades y promociones de Viva Mueble:</h3>
+                <form method="post" class="form">
+                    <fieldset>
+                        <legend>Rellene el formulario con sus datos</legend>
+                        <label>Nombre:</label>
+                        <input type="text" name="Nombre" placeholder="Ingrese su nombre completo" required>
+                        <br>
+                        <label>DNI:</label>
+                        <input type="text" minlength="8" maxlength="8" pattern="\d{8}"
+                            title="Ingrese un DNI válido de 8 dígitos" required>
+                        <br>
+                        <label>Género:</label>
+                        <input type="radio" name="genero" value="F"> Femenino
+                        <input type="radio" name="genero" value="M"> Masculino
+                        <br>
+                        <label>País:</label>
+                        <select name="pais">
+                            <option value="pe">Perú</option>
+                            <option value="co">Chile</option>
+                            <option value="ar">Paraguay</option>
+                        </select>
+                        <br>
 
-            <!-- Parte inferior -->
-            <section>
-                <div>
-                    <h4>Viva Mueble</h4>
-                    <p>&copy; 2026 Viva Mueble. Todos los derechos reservados.</p>
-                </div>
+                        <label>Ciudad:</label>
+                        <input list="ciudades" name="ciudades">
+                        <datalist id="ciudades">
+                            <option value="Lima"></option>
+                            <option value="Cusco"></option>
+                            <option value="Arequipa"></option>
+                        </datalist>
+                        <br>
+                        <label>Teléfono:</label>
+                        <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}">
+                        <br>
+                        <label><i class="bi bi-envelope"></i>Email:</label>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <br>
 
-                <div>
-                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i>Instagram</a>
-                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a>
-                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a>
-                </div>
-            </section>
-            <!-- Sección correo electrónico -->
-            <section>
-                <h3>Para las últimas noticias de Viva Mueble, ingresa aquí tu correo electrónico.</h3>
-
-                <form method="post">
-                    <label for="email"><i class="bi bi-envelope"></i>Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-                    <button type="submit">ENVIAR</button>
+                        <button type="submit">ENVIAR</button>
+                        <button type="reset">BORRAR DATOS</button>
+                    </fieldset>
                 </form>
-            </section>
-
+            </aside>
         </section>
-
+        <p>&copy; 2026 Viva Mueble. Todos los derechos reservados.</p>
     </footer>
 </body>
 
