@@ -3,85 +3,218 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Maqueta Semántica</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Nova Market - Tienda Textil</title>
+    <link rel="stylesheet" href="/assets/css/styles_global.css">
 </head>
 
 <body>
 
-    <header class="header">HEADER / NAV</header>
+    <header class="header">
+
+        <!--RECOMENDACION: AGREGAR UNA BARRA DE NAVEGACION INTERNA-->
+
+        <figure>
+
+            <img src="/assets/img/logo_nova_market.png" alt="Logo de Nova Market" width="150">
+            <h1>Ropa de Calidad Peruana para Toda la Familia</h1>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Temporadas</a></li>
+                <li><a href="#">Carrito 🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--RECOMENDACION: VERIFICAR LA ESTRUCTURA DEL MAIN , NO SE PUEDE TENER 2 MAIN EN LA PÁGINA-->
 
     <main class="main">
 
-        <section class="section hero first-section">
-            <p>1RA SECCION</p>
+        <!-- 🔥 SECCIÓN PRINCIPAL (BLOQUE 1) -->
+        <section class="section first-section">
+
+            <h1>Bienvenidos a Nova Market</h1>
+            <p>Tu destino de moda cómoda para cada etapa de la vida</p>
+            <h2>COLECCIÓN VERANO 2026</h2>
+            <p>Descubre nuestras prendas 100% algodón premium</p>
+            <button>Ver colección</button>
         </section>
 
+        <!-- 🔥 CATEGORÍAS PRINCIPALES (BLOQUE 2) -->
+        <!--RECOMENDACION: SI SE USA IA PARA GENERAR REVISAR EL CODIGO ANTES DE COPIAR & PEGAR-->
+        <!--RECOMENDACION:A TODAS LAS SECCIONES AGREGAR 
+                 - UN HEADER QUE EXPLIQUE DE QUE SE TRATA LA SECCION
+                 - EL CONTENIDO ESTE PUEDE ESTAR DENTRO DE UNA SECCION O TODO FUERA DEPENDIENDO DE LA CANTIDAD DE ELEMENTOS QUE TENGAS
+                 - UN FOOTER CON INFORMACION ADICIONAL O UN LLAMADO A LA ACCION, SI NO TIENES NADA QUE PONER EN EL FOOTER MEJOR NO LO PONGAS
+                -->
         <section class="section second-section">
 
-                <section>
+            <header>
+                <h2>COLECCIÓN VERANO 2026</h2>
+
+                <p> descubre nuestros nuevos productos de verano, diseñados para mantenerte fresco y cómodo durante la
+                    temporada más cálida del año. Nuestra colección incluye prendas ligeras, colores vibrantes y estilos
+                    modernos que se adaptan a todas las edades y gustos. ¡Prepárate para disfrutar del verano con estilo
+                    y comodidad!
+                </p>
+            </header>
+
+            <!--RECOMENDACION: NO USAR ELEMENTOS DIV USAR SEMANTICA-->
+
+            <section class="columnas_5">
+                <!--RECOMENDACION: USAR COMENTARIOS PARA UBICAR CODIGO -->
+                <!--COLECCIÓN 1-->
+                <card class="card">
                     <header>
-                        <h2>Categorias</h2>
+                        <h3>Producto: Mujer</h3>
+                        <p><mark>Descuento 20%</mark></p>
                     </header>
 
-                    <ul class="columnas_5">
+                    <figure>
+                        <img src="img/mujer.jpg" alt="Prenda para mujer" width="300">
+                        <figcaption>Producto disponible</figcaption>
+                    </figure>
 
-                        <article class="article">
-                            <figure>
-                                <img src="img/mujer.jpg"
-                                    alt="Moda Mujer">
-                                <figcaption>Moda Mujer</figcaption>
-                            </figure>
-                        </article>
-                        <article class="article">
-                            <figure>
-                                <img src="https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blta536c334d1d6625d/6977c74b0ba5369b04de2251/filtro-cat-moda-mujer.png"
-                                    alt="Moda Mujer">
-                                <figcaption>Moda Mujer</figcaption>
-                            </figure>
-                        </article>
-                        <article class="article">
-                            <figure>
-                                <img src="https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blta536c334d1d6625d/6977c74b0ba5369b04de2251/filtro-cat-moda-mujer.png"
-                                    alt="Moda Mujer">
-                                <figcaption>Moda Mujer</figcaption>
-                            </figure>
-                        </article>
-                        <article class="article">
-                            <figure>
-                                <img src="https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blta536c334d1d6625d/6977c74b0ba5369b04de2251/filtro-cat-moda-mujer.png"
-                                    alt="Moda Mujer">
-                                <figcaption>Moda Mujer</figcaption>
-                            </figure>
-                        </article>
-                        <article class="article">
-                            <figure>
-                                <img src="https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blta536c334d1d6625d/6977c74b0ba5369b04de2251/filtro-cat-moda-mujer.png"
-                                    alt="Moda Mujer">
-                                <figcaption>Moda Mujer</figcaption>
-                            </figure>
-                        </article>
-                    </ul>
-                    <br>
+                    <section>
+                        <p><strong>Precio:</strong> S/ 89.90</p>
+                    </section>
 
                     <footer>
-                        <a href="#">Ver más Categorias</a>
+                        <button>Agregar al carrito</button>
                     </footer>
-                </section>
+                </card>
+                <!--COLECCIÓN 2-->
+                <article class="article">
+                    <header>
+                        <h3>Maternidad</h3>
+                        <p><strong>-20% Oferta</strong></p>
+                    </header>
+
+                    <figure>
+                        <img src="img/maternidad.jpg" alt="Producto de maternidad" width="125">
+                        <figcaption>Producto en descuento</figcaption>
+
+                    </figure>
+                    <br>
+                    <section>
+                        <p><strong>Precio:</strong> S/ 109.90</p>
+                    </section>
+
+                    <footer>
+                        <button>Agregar al carrito</button>
+                    </footer>
+
+                </article>
+
+                <div class="card">
+                    <img src="img/hombre.jpg" alt="Hombre" width="125">
+                    <h3>Hombre</h3>
+                    <p class="precio">S/ 79.90</p>
+                    <button class="btn-secundario">Agregar al carrito</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/bebe.jpg" alt="Bebé" width="125">
+                    <h3>Bebé</h3>
+                    <p class="precio">S/ 59.90</p>
+                    <button class="btn-secundario">Agregar al carrito</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/niños.jpg" alt="Niños" width="125">
+                    <h3>Niños</h3>
+                    <p class="precio">S/ 69.90</p>
+                    <button class="btn-secundario">Agregar al carrito</button>
+                </div>
             </section>
-            
+
+
+            <footer>
+                <p>¡Compra ahora y disfruta de la comodidad y estilo de nuestra colección de verano!</p>
+                <button>Ver más Colecciónes</button>
+            </footer>
+        </section>
+
+        <!-- 🔥 TEMPORADAS (BLOQUE 3) -->
         <section class="section third-section">
-            <p>3RA SECCION</p>
+            <h2>Comprar por Temporada</h2>
+            <div class="grid-temporadas">
+                <div>🌸 Primavera
+                    <img src="img/primavera.jpg" width="125">
+                </div>
+                <div>☀️ Verano
+                    <img src="img/verano.jpg" width="125">
+                </div>
+                <div>🍂 Otoño
+                    <img src="img/otoño.jpg" width="145">
+                </div>
+                <div>❄️ Invierno
+                    <img src="img/invierno.jpg" width="125">
+                </div>
+            </div>
         </section>
 
-        <section class="section two-columns fourth-section">
-            <p>4TA SECCION</p>
+        <!-- 🔥 ESTRUCTURA PARA FUTURO CARRUSEL -->
+        <section class="section fourth-section">
+            <h2>Productos Destacados</h2>
+            <div class="slider">
+                <!-- Aquí luego va JS -->
+
+                <ul class="columnas_5"></ul>
+
+                <div class="slide">Producto 1 para ancianos
+                    <img src="img/ancianos.jpg" width="100">
+                </div>
+                <div class="slide">Producto 2 para embarazos avanzados
+                    <img src="img/embarazada.jpg" width="100">
+                </div>
+                <div class="slide">Producto 3 para adolecentes
+                    <img src="img/adolecentes.jpg" width="100">
+                </div>
+            </div>
         </section>
 
+
+        <section class="section fourth-section">
+            <h2>Productos Destacados</h2>
+            <div class="slider">
+                <!-- Aquí luego va JS -->
+
+                <ul class="columnas_5"></ul>
+
+                <div class="slide">Producto 1 para ancianos
+                    <img src="img/ancianos.jpg" width="100">
+                </div>
+                <div class="slide">Producto 2 para embarazos avanzados
+                    <img src="img/embarazada.jpg" width="100">
+                </div>
+                <div class="slide">Producto 3 para adolecentes
+                    <img src="img/adolecentes.jpg" width="100">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="formulario">
+            <!--RECOMENDACION: AGREGAR EL FORMULARIO DE CONTACTO AQUÍ-->
+        </section>
     </main>
 
-    <footer class="footer">FOOTER</footer>
+    <footer>
+
+
+        <p>© 2026 Nova Market - Todos los derechos reservados</p>
+    </footer>
 
 </body>
 
+    <!--NOTA TENTATIVA HTML  : 14
+ +2 ADICIONAR FORMULARIO
+ +1 ADICIONAR CONTENIDO AL FOOTER
+ +1 ADICIONAR NAVEGACION DE LOS ENLACES
+ +3 MEJORAR SECCIONES , TOMAR COMO REFERENCIA LA SECCION 1
+ +1 QUITAR TODAS LAS ETIQUETAS DIV Y USAR SEMANTICA
+ +1 QUITAR TODAS LAS CLASS QUE NO ESTEN EN styles_global CSS
+ -->
 </html>

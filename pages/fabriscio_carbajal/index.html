@@ -4,26 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Maqueta Semántica</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/png">
     <link rel="stylesheet" href="/assets/css/styles_global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
-
+    <!-- Barra de navegación de la web-->
     <header class="header">
         <h1>Viva Mueble</h1>
         <nav>
             <ul>
-                <li><a href="#">SOBRE NOSOTROS</a></li>
-                <li><a href="#">PRODUCTOS POPULARES</a></li>
-                <li><a href="#">PRODUCTOS</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#sobre_nosotros">SOBRE NOSOTROS</a></li>
+                <li><a href="#productos_populares">PRODUCTOS POPULARES</a></li>
+                <li><a href="#categorias">CATEGORIAS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
 
-        <section class="section hero first-section">
+        <section id="sobre_nosotros" class="section first-section">
             <header class="header">
                 <h2>Vendemos muebles en el Perú por más de 25 años</h2>
             </header>
@@ -35,18 +39,18 @@
                 <!-- Inicio de la empresa -->
                 <card class="card">
 
+                    <figure class="article">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWPej-eCTBTSmvS1BulFvu74xEfOsKbwWzQ&s"
+                            alt="Primer local de Viva Mueble">
+                        <figcaption>Primer local comercial.</figcaption>
+                    </figure>
+
                     <article class="article">
                         <p>
                             Viva Mueble empezó como una pequeña tienda familiar dedicada a la compra
                             y venta de muebles de segunda mano en el Perú.
                         </p>
                     </article>
-
-                    <figure class="article">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWPej-eCTBTSmvS1BulFvu74xEfOsKbwWzQ&s"
-                            alt="Primer local de Viva Mueble">
-                        <figcaption>Primer local comercial.</figcaption>
-                    </figure>
 
                 </card>
 
@@ -67,71 +71,344 @@
                     </article>
 
                 </card>
-        <!-- Expansión -->
+                <!-- Actualidad -->
                 <card class="card">
 
                     <figure class="article">
-                        <img src="https://muchosnegociosrentables.com/wp-content/uploads/2015/10/C%C3%B3mo-abrir-una-f%C3%A1brica-de-muebles-de-madera.jpg"
+                        <img src="https://rrypglobal.com/wp-content/uploads/2024/10/Disenos-Imagenes-Entradas-19-930x620.png"
                             alt="Expansión y crecimiento de la empresa">
-                        <figcaption>Proceso de expansión nacional.</figcaption>
+                        <figcaption>Desafío de expansión internacional</figcaption>
                     </figure>
 
                     <article class="article">
                         <p>
-                            Con los años, la empresa reinvirtió su capital para expandirse y convertirse
-                            en una compañía líder en la venta nacional de muebles en el Perú.
+                            En la actualidad, lucha por convertirse en una empresa internacional y brindar muebles por
+                            todo el continente.
                         </p>
                     </article>
 
                 </card>
             </section>
             <br>
+            <!--Slogan de la empresa-->
             <footer class="footer">
                 <p>Más de 25 años ofreciendo calidad y confianza.</p>
             </footer>
-
-
         </section>
 
+        <!-- productos populares tipo carrusel-->
+        <section id="productos_populares" class="section second-section">
+            <h3><b>Productos más vendidos:</b></h3>
+            <p>Hecha un vistazo a nuestros productos más vendidos: </p>
 
-
-        <section class="section second-section">
-            <p>SEGUNDA SECCIÓN</p>
-
-            <section class="section columnas_4">
-                <article class="article">TESTIMONIO</article>
-                <article class="article">TESTIMONIO</article>
-                <article class="article">TESTIMONIO</article>
-                <article class="article">TESTIMONIO</article>
-                <article class="article">TESTIMONIO</article>
-                <article class="article">TESTIMONIO</article>
+            <section class="section columnas_6">
+                <!-- Producto popular 1 -->
+                <article class="article">
+                    <img src="img/oficina/escritorio_negro.jpg" alt="Un escritorio de madera negra">
+                    <h3>Escritorio Negro</h3>
+                    <p class="precio">1,400.00 <sub>/PEN</sub></p>
+                    <p>Escritorio de madera negra con matices blancas.</p>
+                    <button class="boton_comprar">Comprar ahora</button>
+                </article>
+                <!-- Producto popular 2 -->
+                <article class="article">
+                    <img src="img/oficina/escritorio_madera.jpg" alt="Un escritorio de madera">
+                    <h3>Escritorio de Madera</h3>
+                    <p class="precio">1,100.00 <sub>/PEN</sub></p>
+                    <p>Escritorio de madera con multiples cajones.</p>
+                    <button class="boton_comprar">Comprar ahora</button>
+                </article>
+                <!-- Producto popular 3 -->
+                <article class="article">
+                    <img src="img/dormitorio/comoda_simple.jpg" alt="Una cómoda simple">
+                    <h3>Cómoda Simple</h3>
+                    <p class="precio">1,200.00 <sub>/PEN</sub></p>
+                    <p>Cómoda de madera de 2 cajones color blanco.</p>
+                    <button class="boton_comprar">Comprar ahora</button>
+                </article>
+                <!-- Producto popular 4 -->
+                <article class="article">
+                    <img src="img/sala_comedor/mesa_premium.jpg" alt="Una mesa de alta calidad">
+                    <h3>Mesa Premium</h3>
+                    <p class="precio">500.00 <sub>/PEN</sub></p>
+                    <p>Mesa de madera con aspecto simple y acabado especial.</p>
+                    <button class="boton_comprar">Comprar ahora</button>
+                </article>
+                <!-- Producto popular 5 -->
+                <article class="article">
+                    <img src="img/sala_comedor/mesa_familiar.png" alt="Una mesa familiar">
+                    <h3>Mesa Familiar</h3>
+                    <p class="precio">1,800.00 <sub>/PEN</sub></p>
+                    <p>Mesa familiar de madera con 6 sillas incluidas.</p>
+                    <button class="boton_comprar">Comprar ahora</button>
+                </article>
+                <!-- Producto popular 6 -->
+                <article class="article">
+                    <img src="img/sala_comedor/silla_premium.jpg" alt="Una silla de alta calidad">
+                    <h3>Silla Premium</h3>
+                    <p class="precio">300.00 <sub>/PEN</sub></p>
+                    <p>Silla de madera con diseño elegante.</p>
+                    <button class="boton_comprar">Comprar ahora</button>
+                </article>
+                <footer>
+                    <button>Ver más productos</button>
+                </footer>
             </section>
         </section>
 
+        <!--categorias de los productos-->
+        <section id="categorias" class="section third-section">
+            <h2><b>Categorias:</b></h2>
+            <p>Estas son nuestras categorias más populares:</p>
 
+            <section class="section">
+                <!-- Categoría 1 -->
 
-        <section class="section third-section">
-            <p>TERCERA SECCIÓN</p>
-            <header class="header">SERVICIOS</header>
+                <header class="header">
+                    <h3><b>SALA Y COMEDOR</b></h3>
+                    <p>Productos para amoblar tu sala y comedor con estilo y calidad.</p>
+                </header>
 
-            <section class="section services">
-                <article class="article">SERVICIO</article>
-                <article class="article">SERVICIO</article>
-                <article class="article">SERVICIO</article>
-                <article class="article">SERVICIO</article>
-                <article class="article">SERVICIO</article>
+                <section class="section columnas_4">
+                    <article class="article">
+                        <img src="img/sala_comedor/silla_decorada.png" alt="Una silla decorada">
+                        <h3>Silla Decorada</h3>
+                        <p class="precio">350.00 <sub>/PEN</sub></p>
+                        <p>Silla decorativa de madera con acabado especial.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                    <article class="article">
+                        <img src="img/sala_comedor/silla_premium.jpg" alt="Una silla de alta calidad">
+                        <h3>Silla Premium</h3>
+                        <p class="precio">300.00 <sub>/PEN</sub></p>
+                        <p>Silla de madera con diseño elegante.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                    <article class="article">
+                        <img src="img/sala_comedor/mesa_familiar.png" alt="Una mesa familiar">
+                        <h3>Mesa Familiar</h3>
+                        <p class="precio">1,800.00 <sub>/PEN</sub></p>
+                        <p>Mesa familiar de madera con 6 sillas incluidas.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                    <article class="article">
+                        <img src="img/sala_comedor/mesa_premium.jpg" alt="Una mesa de alta calidad">
+                        <h3>Mesa Premium</h3>
+                        <p class="precio">500.00 <sub>/PEN</sub></p>
+                        <p>Mesa de madera con aspecto simple y acabado especial.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                </section>
+
+                <!-- Categoría 2 -->
+
+                <header class="header">
+                    <h3><b>DORMITORIO</b></h3>
+                    <p>Productos para tener comodidad en tu espacio de descanso.</p>
+                </header>
+
+                <section class="section columnas_4">
+                    <article class="article">
+                        <img src="img/dormitorio/cama_blanca.png" alt="Una cama de color blanco">
+                        <h3>Cama Blanca</h3>
+                        <p class="precio">1,500.00 <sub>/PEN</sub></p>
+                        <p>Cama de color blanco con colchón incluido.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                    <article class="article">
+                        <img src="img/dormitorio/cama_negra.png" alt="Una cama de color negro">
+                        <h3>Cama Negra</h3>
+                        <p class="precio">1,800.00 <sub>/PEN</sub></p>
+                        <p>Cama de color negro con colchón incluido.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                    <article class="article">
+                        <img src="img/dormitorio/comoda_madera_blanca.png" alt="Una cómoda de madera blanca">
+                        <h3>Cómoda de Madera Blanca</h3>
+                        <p class="precio">1,800.00 <sub>/PEN</sub></p>
+                        <p>Cómoda de madera blanca con 7 cajones.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                    <article class="article">
+                        <article class="article">
+                            <img src="img/dormitorio/comoda_simple.jpg" alt="Una cómoda simple">
+                            <h3>Cómoda Simple</h3>
+                            <p class="precio">1,200.00 <sub>/PEN</sub></p>
+                            <p>Cómoda de madera de 2 cajones color blanco.</p>
+                            <button class="boton_comprar">Comprar ahora</button>
+                        </article>
+                </section>
+
+                <!-- Categoría 3 -->
+
+                <header class="header">
+                    <h3><b>OFICINA</b></h3>
+                    <p>Productos indispensables para tu espacio de trabajo.</p>
+                </header>
+                <section class="section columnas_4">
+                    <article class="article">
+                        <img src="img/oficina/escritorio_negro.jpg" alt="Un escritorio de madera negra">
+                        <h3>Escritorio Negro</h3>
+                        <p class="precio">1,400.00 <sub>/PEN</sub></p>
+                        <p>Escritorio de madera negra con matices blancas.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                    <article class="article">
+                        <img src="img/oficina/escritorio_grande.png" alt="Un escritorio grande de madera">
+                        <h3>Escritorio Grande</h3>
+                        <p class="precio">1,800.00 <sub>/PEN</sub></p>
+                        <p>Escritorio grande de madera con 7 cajones.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                    <article class="article">
+                        <img src="img/oficina/escritorio_madera.jpg" alt="Un escritorio de madera">
+                        <h3>Escritorio de Madera</h3>
+                        <p class="precio">1,100.00 <sub>/PEN</sub></p>
+                        <p>Escritorio de madera con multiples cajones.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                    <article class="article">
+                        <img src="img/oficina/escritorio_negro_blanco.jpg"
+                            alt="Un escritorio de madera negra con detalles blancos">
+                        <h3>Escritorio Color Negro y Blanco</h3>
+                        <p class="precio">1,200.00 <sub>/PEN</sub></p>
+                        <p>Escritorio de madera con detalles blancos.</p>
+                        <button class="boton_comprar">Comprar ahora</button>
+                    </article>
+                </section>
+                <footer>
+                    <p>Puedes explorar más categorías en nuestro sitio web. <a href="#categorias">Ver más categorías</a>
+                    </p>
+
+                </footer>
             </section>
         </section>
+        <!--FORMULARIO-->
+        <section id="contacto" class="section fourth-section columnas_2">
+            <!-- Información (address es para proporcionar información de contacto a los buscadores)-->
+            <article>
+                <h2><b>Contáctanos</b></h2>
 
-        <section class="section two-columns fourth-section">
-            <p>CUARTA SECCIÓN</p>
+                <address>
+
+                    <p>
+                        <strong><i class="bi bi-telephone-inbound"></i>Teléfonos:</strong><br>
+                        01 433 – 8009
+                    </p>
+
+                    <p>
+                        <strong><i class="bi bi-headset"></i>Atención al cliente:</strong><br>
+                        923 440 399
+                    </p>
+
+                    <p>
+                        <strong><i class="bi bi-geo-alt"></i>Dirección:</strong><br>
+                        Av. Tingo María 245, Breña
+                    </p>
+
+                    <p>
+                        <strong><i class="bi bi-calendar2-week"></i>Horario de atención:</strong><br>
+                        Lunes a Sábados de 10am a 8pm
+                    </p>
+
+                    <p>
+                        <strong><i class="bi bi-calendar-minus"></i>Domingo y Feriados:</strong><br>
+                        De 10am a 7pm
+                    </p>
+
+                </address>
+
+            </article>
+            <article>
+                <h4><b>Donde encontrarnos:</b></h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.9105794367465!2d-77.053761!3d-12.0496733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8d657a9bedd%3A0x77ddaf145e3cf01f!2sAv.%20Tingo%20Mar%C3%ADa%20245%2C%20Bre%C3%B1a%2015082!5e0!3m2!1ses!2spe!4v1772829750375!5m2!1ses!2spe"
+                    width="1000" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
 
         </section>
 
     </main>
+    <!-- Footer -->
 
-    <footer class="footer">FOOTER</footer>
+    <footer class="footer">
+        <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
 
+        <section class="columnas_2">
+
+            <!-- Sección Navegación -->
+            <nav>
+                <h3><b>Viva Mueble</b></h3>
+
+                <ul>
+                    <li><a href="#sobre_nosotros"><i class="bi bi-building"></i>Sobre Nosotros</a></li>
+                    <li><a href="#productos_populares"><i class="bi bi-star-fill"></i>Productos Populares</a></li>
+                    <li><a href="#categorias"><i class="bi bi-list-stars"></i>Categorias</a></li>
+                    <li><a href="#contacto"><i class="bi bi-telephone"></i>Contacto</a></li>
+                </ul>
+
+                <h4>Nuestras redes sociales</h4>
+                <ul>
+                    <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i>Instagram</a></li>
+                    <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a></li>
+                    <li><a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a></li>
+                </ul>
+
+            </nav>
+            <!-- Sección mapa -->
+            <aside>
+                <h3>Reciba las últimas novedades y promociones de Viva Mueble:</h3>
+                <form method="post" class="form">
+                    <fieldset>
+                        <legend>Rellene el formulario con sus datos</legend>
+                        <label>Nombre:</label>
+                        <input type="text" name="Nombre" placeholder="Ingrese su nombre completo" required>
+                        <br>
+                        <label>DNI:</label>
+                        <input type="text" minlength="8" maxlength="8" pattern="\d{8}"
+                            title="Ingrese un DNI válido de 8 dígitos" required>
+                        <br>
+                        <label>Género:</label>
+                        <input type="radio" name="genero" value="F"> Femenino
+                        <input type="radio" name="genero" value="M"> Masculino
+                        <br>
+                        <label>País:</label>
+                        <select name="pais">
+                            <option value="pe">Perú</option>
+                            <option value="co">Chile</option>
+                            <option value="ar">Paraguay</option>
+                        </select>
+                        <br>
+
+                        <label>Ciudad:</label>
+                        <input list="ciudades" name="ciudades">
+                        <datalist id="ciudades">
+                            <option value="Lima"></option>
+                            <option value="Cusco"></option>
+                            <option value="Arequipa"></option>
+                        </datalist>
+                        <br>
+                        <label>Teléfono:</label>
+                        <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}">
+                        <br>
+                        <label><i class="bi bi-envelope"></i>Email:</label>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <br>
+
+                        <button type="submit">ENVIAR</button>
+                        <button type="reset">BORRAR DATOS</button>
+                    </fieldset>
+                </form>
+            </aside>
+        </section>
+        <p>&copy; 2026 Viva Mueble. Todos los derechos reservados.</p>
+    </footer>
 </body>
+
+<!--NOTA TENTATIVA HTML  : 20
+ +2 (OK) ADICIONAR FORMULARIO
+ +1 (OK) MEJORAR SEMANTICA DE LA PAGINA (TOMAR COMO REFERENCIA LA CATEGORIA 1 : SALA Y COMEDOR)
+ -->
 
 </html>

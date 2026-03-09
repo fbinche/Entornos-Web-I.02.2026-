@@ -2,201 +2,618 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Maqueta Semántica</title>
-    <link rel="stylesheet" href="/assets/css/styles_global.css">
+  <meta charset="UTF-8">
+  <title>Sky Airline</title>
+  <link rel="stylesheet" href="/assets/css/styles_global.css">
+  <link rel="stylesheet" href="/assets/css/formulario.css">
+
 </head>
 
 <body>
 
-    <header class="header">
-        <nav aria-label="Servicios principales">
+  <header class="header">
+    <nav aria-label="Servicios principales">
 
-            <ul class="menu-servicios">
+      <nav aria-label="Servicios principales">
+        <ul class="menu-servicios">
+          <li>
+            <a href="#seccion1">
+              <span class="icon" aria-hidden="true">🧾</span>
+              <span>Check-in</span>
+            </a>
+          </li>
+          <li>
+            <a href="#seccion2">
+              <span class="icon" aria-hidden="true">🧳</span>
+              <span>Sección 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#seccion3">
+              <span class="icon" aria-hidden="true">🧳</span>
+              <span>Sección 3</span>
+            </a>
+          </li>
+          <li>
+            <a href="#seccion4">
+              <span class="icon" aria-hidden="true">🧳</span>
+              <span>Sección 4</span>
+            </a>
+          </li>
+          <li>
+            <a href="#footer">
+              <span class="icon" aria-hidden="true">⬇️</span>
+              <span>Nuestra Info</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      </section>
+  </header>
 
-                <li>
-                    <a href="#seccion1">
-                        <span class="icon" aria-hidden="true">🧾</span>
-                        <span>Check-in</span>
-                    </a>
-                </li>
+  <main class="main">
 
-                <li>
-                    <a href="#seccion2">
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Seccion 2</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#seccion3">
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Seccion 3</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#seccion4">
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Seccion 4</span>
-                    </a>
-                </li>
+    <section id="seccion1" class="section hero first-section">
 
+      <!-- CARRUSEL -->
+      <header>
+        <h2>Explora las alturas con SKY</h2>
+        <p>Más que vuelos, experiencias que elevan tu viaje</p>
+      </header>
+      <section class="section columnas_3">
+
+        <figure>
+          <img src="img/promocion1.jpg" alt="Imagen 1 del carrusel" width="400">
+          <figcaption>Promoción 1</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/promocion2.jpg" alt="Imagen 2 del carrusel" width="400">
+          <figcaption>Promoción 2</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/promocion3.jpg" alt="Imagen 3 del carrusel" width="400">
+          <figcaption>Promoción 3</figcaption>
+        </figure>
+
+      </section>
+
+      <footer>
+        <button>VER PROMOCIONES</button>
+      </footer>
+
+    </section>
+
+    <section id="seccion2" class="section second-section ">
+
+      <header>
+
+        <h2>El Cielo a Tu Medida</h2>
+        <p>Explorando la tecnología y el confort detrás de cada una de nuestras aeronaves.</p>
+
+      </header>
+      <section class="section columnas_3">
+        <!--Avion 1-->
+        <article class="card">
+          <figure>
+            <img src="img/aviones/avion1.jpg" alt="Airbus A320">
+          </figure>
+          <header>
+            <h2>Airbus A320 <span class="badge badge-turista">Turista / Business</span></h2>
+          </header>
+          <section>
+            <p>Conecta con tu próximo destino de forma rápida y segura. El A320 combina puntualidad y confort para
+              vuelos cortos y medianos.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Ver más</a>
+          </footer>
+        </article>
+
+        <!--Avion 2-->
+        <article class="card">
+          <figure>
+            <img src="img/aviones/avion2.jpg" alt="Boeing 747">
+          </figure>
+          <header>
+            <h2>Boeing 747 <span class="badge badge-longhaul">Long Haul / Luxury</span></h2>
+          </header>
+          <section>
+            <p>El icónico Jumbo Jet: cuatro motores, doble cubierta y capacidad para largas distancias. Reconocido por
+              su confort y por conectar continentes durante décadas.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Ver más</a>
+          </footer>
+        </article>
+
+        <!--Avion 3-->
+        <article class="card">
+          <figure>
+            <img src="img/Avion3.jpg" alt="National Jet Express">
+          </figure>
+          <header>
+            <h2>National Jet Express <span class="badge badge-regional">Regional / Ejecutiva</span></h2>
+          </header>
+          <section>
+            <p>Ágil y confiable en rutas regionales: ideal para conexiones rápidas y servicios ejecutivos con comodidad
+              y eficiencia.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Ver más</a>
+          </footer>
+        </article>
+
+        <!--Avion 4-->
+        <article class="card">
+          <figure>
+            <img src="img/Avion4.jpg" alt="Gulfstream G650ER">
+          </figure>
+          <header>
+            <h2>Gulfstream G650ER <span class="badge badge-private">Private Jet / Luxury</span></h2>
+          </header>
+          <section>
+            <p>El máximo referente en aviación privada: velocidad, alcance intercontinental y lujo incomparable para
+              viajes exclusivos.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Ver más</a>
+          </footer>
+        </article>
+        <!--Avion 5-->
+        <article class="card">
+          <figure>
+            <img src="img/Avion5.jpg" alt="Airbus Beluga">
+          </figure>
+          <header>
+            <h2>Airbus Beluga <span class="badge badge-cargo">Cargo / Industrial</span></h2>
+          </header>
+          <section>
+            <p>Especializado en cargas sobredimensionadas: soluciones logísticas para piezas industriales de gran
+              tamaño.
+            </p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Ver más</a>
+          </footer>
+        </article>
+        <!--Avion 6-->
+        <article class="card">
+          <figure>
+            <img src="img/Avion5.jpg" alt="Airbus Beluga">
+          </figure>
+          <header>
+            <h2>Airbus Beluga <span class="badge badge-cargo">Cargo / Industrial</span></h2>
+          </header>
+          <section>
+            <p>Especializado en cargas sobredimensionadas: soluciones logísticas para piezas industriales de gran
+              tamaño.
+            </p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Ver más</a>
+          </footer>
+        </article>
+      </section>
+      <footer>
+
+        <a href="https://open.spotify.com/intl-es/album/6T6i4ZLAwRHVOxRaQnC5js?si=1WAf89cCQtiH9E5IwDZGuQ"
+          target="_blank">
+          <button>Escuche su música preferida en sus vuelos en spotify</button>
+        </a>
+
+
+      </footer>
+
+    </section>
+
+
+    <section class="section third-section " id="seccion3">
+
+      <header>
+        <h2>Descubre tu proximo viaje ¡No te lo pierdas!</h2>
+        <p>Vuelos desde Lima</p>
+
+      </header>
+      <section class="section columnas_4">
+        <!--VIAJE A AREQUIPA-->
+        <article class="card">
+          <figure>
+            <img src="img/destinos/Arequipa.jpg" alt="Arequipa, la ciudad blanca">
+          </figure>
+          <header>
+            <h2>Arequipa <span>/ Solo ida</span></h2>
+          </header>
+          <section>
+            <p>USD 52 PEN 175</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad blanca y maravíllate con su arquitectura colonial, volcanes imponentes y tradición
+              única. </p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+
+        </article>
+        <!--VIAJE A CHICLAYO-->
+        <article class="card">
+          <figure>
+            <img src="img/destinos/Chiclayo.jpg" alt="Chicalyo, la capital de la amistad">
+          </figure>
+          <header>
+            <h2>Chiclayo <span> / Solo ida</span></h2>
+          </header>
+          <section>
+            <p>USD 43 PEN 155</p>
+          </section>
+          <section>
+            <p>Descubre la capital de la amistad y conecta con su calidez, gastronomía norteña y legado cultural
+              ancestral.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article> <!--VIAJE A CUSCO-->
+        <article class="card">
+          <figure>
+            <img src="img/Cusco.jpg" alt="Cusco, la ciudad imperial">
+          </figure>
+          <header>
+            <h2>Cusco <span>/ Solo ida</span></h2>
+          </header>
+          <section>
+            <p>USD 60 PEN 200</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad imperial y conecta con la historia viva del Perú. Cusco te espera con cultura,
+              tradición y paisajes únicos.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article> <!--VIAJE A PIURA-->
+        <article class="card">
+          <figure>
+            <img src="img/Piura.jpg" alt="Piura, la ciudad del eterno sol">
+          </figure>
+          <header>
+            <h2>Piura <span>/ Solo ida</span></h2>
+          </header>
+          <section>
+            <p>USD 48 PEN 165</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad del eterno sol y disfruta de sus playas, su gastronomía norteña y la calidez de su
+              gente.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article> <!--VIAJE A TARAPOTO-->
+        <article class="card">
+          <figure>
+            <img src="img/Tarapoto.jpg" alt="Tarapoto, la ciudad de las palmeras">
+          </figure>
+          <header>
+            <h2>Tarapoto <span>/ Solo ida</span></h2>
+          </header>
+          <section>
+            <p>USD 50 PEN 170</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad de las palmeras y disfruta de su naturaleza amazónica, cascadas impresionantes y clima
+              cálido todo el año.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+
+          </footer>
+        </article> <!--VIAJE A TRUJILLO-->
+        <article class="card">
+          <figure>
+            <img src="img/Trujillo.jpg" alt="Trujillo, la ciudad de la eterna primavera">
+          </figure>
+          <header>
+            <h2>Trujillo <span>/ Solo ida</span></h2>
+          </header>
+          <section>
+            <p>USD 47 PEN 160</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad de la eterna primavera y disfruta de sus playas, su historia colonial y la alegría de
+              sus festivales.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article>
+        <!--VIAJE A AREQUIPA PROMO-->
+        <article class="card">
+          <figure>
+            <img src="img/Arequipa2.jpg" alt="Arequipa, la ciudad blanca">
+          </figure>
+          <header>
+            <h2>Arequipa <span>/ Ida y vuelta</span></h2>
+          </header>
+          <section>
+            <p>USD 95 PEN 320</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad blanca y disfruta de su historia, volcanes y gastronomía única.</p>
+            <dl>
+              <dt>✨ Promo especial: </dt>
+              <dd>tarifas ida y vuelta con impuestos incluidos.</dd>
+            </dl>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article>
+        <!--VIAJE A MADRID-->
+        <article class="card">
+          <figure>
+            <img src="img/Madrid.jpg" alt="Madrid, la capital de España">
+          </figure>
+          <header>
+            <h2>Madrid <span>/ Ida y vuelta</span></h2>
+          </header>
+          <section>
+            <p>USD 850 PEN 3,000</p>
+          </section>
+          <section>
+            <p>Descubre la vibrante capital española con su historia, cultura y vida nocturna. Madrid te espera con
+              experiencias únicas en cada rincón.</p>
+            <dl>
+              <dt>✨ Promo especial: </dt>
+              <dd>incluye equipaje y selección de asiento en clase turista.</dd>
+            </dl>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article>
+        <!--VIAJE A MIAMI-->
+        <article class="card">
+          <figure>
+            <img src="img/Miami.jpg" alt="Miami, la ciudad del sol">
+          </figure>
+          <header>
+            <h2>Miami <span>/ Ida y vuelta</span></h2>
+          </header>
+          <section>
+            <p>USD 720 PEN 2,550</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad del sol y disfruta de sus playas, su ambiente multicultural y la energía vibrante de
+              la vida nocturna.</p>
+
+          </section>
+          <section>
+            <p>✨ Oferta especial: incluye equipaje y traslado al hotel en paquetes seleccionados.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article>
+        <!--VIAJE A PUNTA CANA-->
+        <article class="card">
+          <figure>
+            <img src="img/Punta Cana.jpg" alt="Punta Cana, el paraíso caribeño">
+          </figure>
+          <header>
+            <h2>Punta Cana <span>/ Ida y vuelta</span></h2>
+          </header>
+          <section>
+            <p>USD 680 PEN 2,400</p>
+          </section>
+          <section>
+            <p>Descubre el paraíso caribeño y relájate en playas de arena blanca, aguas turquesa y resorts todo
+              incluido.</p>
+          </section>
+          <section>
+            <p>✨ Oferta especial: paquetes con alojamiento y traslados incluidos.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article>
+        <!--PAQUETE BUENOS AIRES-->
+        <article class="card">
+          <figure>
+            <img src="img/Buenos Aires.jpg" alt="Buenos Aires, la ciudad del tango">
+          </figure>
+          <header>
+            <h2>Buenos Aires <span>/ Paquete completo</span></h2>
+          </header>
+          <section>
+            <p>USD 950 PEN 3,350</p>
+          </section>
+          <!--LAS LISTAS MEJORADAS-->
+          <section>
+            <p>Descubre la ciudad del tango y disfruta de su arquitectura europea, gastronomía única y vida cultural
+              vibrante.</p>
+            <dl>
+              <dt>✨ Incluye </dt>
+              <dd>vuelos ida y vuelta, 4 noches de alojamiento y traslados al hotel.</dd>
+              <dt>✨ Opciones adicionales: </dt>
+              <dd>excursión a Tigre, city tour por barrios históricos y cena-show de tango</dd>
+            </dl>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article>
+        <!--PAQUETE SANTIAGO DE CHILE-->
+        <article class="card">
+          <figure>
+            <img src="img/Santiago.jpg" alt="Santiago de Chile, ciudad entre montañas">
+          </figure>
+          <header>
+            <h2>Santiago de Chile <span>/ Paquete completo</span></h2>
+          </header>
+          <section>
+            <p>USD 720 PEN 2,550</p>
+          </section>
+          <section>
+            <p>Explora la capital chilena, rodeada de la majestuosa cordillera de los Andes y con una vida cultural
+              vibrante.</p>
+          </section>
+          <section>
+            <p>✨ Promo especial: incluye vuelos ida y vuelta, 3 noches de alojamiento y desayuno diario.</p>
+          </section>
+          <section>
+            <p>Opciones adicionales: visita a Viña del Mar y Valparaíso, tour por viñedos y excursión a la cordillera.
+            </p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article>
+
+
+      </section>
+      <footer>
+
+        <p> Nuestra flota de aviones está diseñada para ofrecer una experiencia de viaje excepcional
+
+        </p>
+        <button>Terminos y condiciones generales</button>
+
+      </footer>
+
+
+    </section>
+
+
+    <section id="seccion4" class="section fourth-section">
+      <h2>Reserva tu viaje</h2>
+      <form action="#" method="post">
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="destino">Destino:</label>
+        <select id="destino" name="destino" required>
+          <option value="">Seleccione una opción</option>
+          <option value="nacional">Nacional</option>
+          <option value="internacional">Internacional</option>
+        </select>
+
+        <label for="cabina">Cabina:</label>
+        <select id="cabina" name="cabina" required>
+          <option value="">Seleccione una opción</option>
+          <option value="economy">Economy</option>
+          <option value="premium-economy">Premium Economy</option>
+          <option value="premium-business">Premium Business</option>
+        </select>
+
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+
+    <section class="card columnas_4">
+
+      <!--PRIMERA SECCION-->
+      <section>
+        <h3>SKY Airlines</h3>
+        <p>Todo sobre la aerolínea y servicios</p>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de SKY</a></li>
+          <li><a href="#">Experiencia SKY</a></li>
+          <li><a href="#">Prepara tu viaje</a></li>
+          <li><a href="#">Mis viajes</a></li>
+        </ul>
+      </section>
+      <!--PRIMERA SECCION-->
+      <section class="col" aria-labelledby="col-legal">
+        <h3 id="col-legal">Información legal</h3>
+        <p class="muted">Documentos y políticas que te protegen</p>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Contrato de transporte</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Plan de accesibilidad</a></li>
+        </ul>
+      </section>
+      <!--PRIMERA SECCION-->
+      <section class="col" aria-labelledby="col-servicios">
+        <h3 id="col-servicios">Portales y servicios</h3>
+        <p class="muted">Servicios asociados y soluciones corporativas</p>
+        <ul>
+          <li><a href="#">SKY Cargo</a></li>
+          <li><a href="#">SKY Courier</a></li>
+          <li><a href="#">Convenciones</a></li>
+          <li><a href="#">Programa corporativo</a></li>
+        </ul>
+      </section>
+      <!--PRIMERA SECCION-->
+
+      <section>
+
+        <!--PRIMERA SUB SECCION-->
+        <nav class="section" aria-label="Enlaces del pie de página">
+          <aside class="col contact" aria-labelledby="col-contacto">
+            <h3 id="col-contacto">Contacta con nosotros</h3>
+            <p class="muted">Síguenos en redes</p>
+            <ul>
+              <li><a href="#" aria-label="Facebook"><img src="img/facebook.png" alt="Facebook" class="icon"></a></li>
+              <li><a href="#" aria-label="Instagram"><img src="img/instagram.png" alt="Instagram" class="icon"></a>
+              </li>
+              <li><a href="#" aria-label="TikTok"><img src="img/Tiktok.png" alt="TikTok" class="icon"></a></li>
+              <li><a href="#" aria-label="X"><img src="img/X.png" alt="X" class="icon"></a></li>
             </ul>
-
+          </aside>
         </nav>
-    </header>
+        <!--SEGUNDA SUB SECCION-->
 
-    <main class="main">
+        <section aria-labelledby="certs-title">
+          <h4 id="certs-title">Certificaciones</h4>
 
-        <section class="section hero first-section">
-            <p>1RA SECCION</p>
-        </section>
-
-        <section id="seccion2" class="section second-section columnas_5">
-
-
-            <article class="card">
-
-                <figure>
-                    <img src="https://cdn.buttercms.com/cache=expiry:31506000/pK5IPSmSQLqrL0vaflbX"
-                        alt="Avión de SKY Airline en pista de aterrizaje">
-                </figure>
-
-                <header>
-                    <h2>Acerca de SKY Airline</h2>
-                </header>
-
-                <section>
-                    <p>
-                        Fundada en Chile en 2001, SKY busca poner el cielo al alcance
-                        de todos y todas. ¡Conócenos más!
-                    </p>
-                </section>
-
-                <footer>
-                    <a href="#">
-                        Revisar más información sobre SKY Airline
-                    </a>
-                </footer>
-
-            </article>
-
-            <article class="card">
-
-                <figure>
-                    <img src="https://cdn.buttercms.com/cache=expiry:31506000/pK5IPSmSQLqrL0vaflbX"
-                        alt="Avión de SKY Airline en pista de aterrizaje">
-                </figure>
-
-                <header>
-                    <h2>Acerca de SKY Airline</h2>
-                </header>
-
-                <section>
-                    <p>
-                        Fundada en Chile en 2001, SKY busca poner el cielo al alcance
-                        de todos y todas. ¡Conócenos más!
-                    </p>
-                </section>
-
-                <footer>
-                    <a href="#" class="btn">
-                        Revisar más información sobre SKY Airline
-                    </a>
-                </footer>
-
-            </article>
-            <article class="card">
-
-                <figure>
-                    <img src="https://cdn.buttercms.com/cache=expiry:31506000/pK5IPSmSQLqrL0vaflbX"
-                        alt="Avión de SKY Airline en pista de aterrizaje">
-                </figure>
-
-                <header>
-                    <h2>Acerca de SKY Airline</h2>
-                </header>
-
-                <section>
-                    <p>
-                        Fundada en Chile en 2001, SKY busca poner el cielo al alcance
-                        de todos y todas. ¡Conócenos más!
-                    </p>
-                </section>
-
-                <footer>
-                    <a href="#" class="btn">
-                        Revisar más información sobre SKY Airline
-                    </a>
-                </footer>
-
-            </article>
-            <article class="card">
-
-                <figure>
-                    <img src="https://cdn.buttercms.com/cache=expiry:31506000/pK5IPSmSQLqrL0vaflbX"
-                        alt="Avión de SKY Airline en pista de aterrizaje">
-                </figure>
-
-                <header>
-                    <h2>Acerca de SKY Airline</h2>
-                </header>
-
-                <section>
-                    <p>
-                        Fundada en Chile en 2001, SKY busca poner el cielo al alcance
-                        de todos y todas. ¡Conócenos más!
-                    </p>
-                </section>
-
-                <footer>
-                    <a href="#" class="btn">
-                        Revisar más información sobre SKY Airline
-                    </a>
-                </footer>
-
-            </article>
-            <article class="card">
-
-                <figure>
-                    <img src="https://cdn.buttercms.com/cache=expiry:31506000/pK5IPSmSQLqrL0vaflbX"
-                        alt="Avión de SKY Airline en pista de aterrizaje">
-                </figure>
-
-                <header>
-                    <h2>Acerca de SKY Airline</h2>
-                </header>
-
-                <section>
-                    <p>
-                        Fundada en Chile en 2001, SKY busca poner el cielo al alcance
-                        de todos y todas. ¡Conócenos más!
-                    </p>
-                </section>
-
-                <footer>
-                    <a href="#" class="btn">
-                        Revisar más información sobre SKY Airline
-                    </a>
-                </footer>
-
-            </article>
-
+          <ul role="list">
+            <li><img src="img/APEX.png" alt="APEX" class="icon"></li>
+            <li><img src="img/Onboard.png" alt="Onboard" class="icon"></li>
+            <li><img src="img/Skytrax.png" alt="Skytrax" class="icon"></li>
+          </ul>
 
         </section>
-
-
-        <section class="section third-section">
-            <p>3RA SECCION</p>
+        <!--TERCERA SUB SECCION-->
+        <section class="apps" aria-labelledby="apps-title">
+          <h4 id="apps-title">Nuestra app en tu teléfono</h4>
+          <p class="muted">Descárgala y gestiona tu viaje</p>
+          <ul class="app-list" role="list">
+            <li><a href="#"><img src="img/GooglePlay.png" alt="Google Play" class="icon"></a></li>
+            <li><a href="#"><img src="img/AppStore.png" alt="App Store" class="icon"></a></li>
+          </ul>
         </section>
+      </section>
 
-        <section class="section two-columns fourth-section">
-            <p>4TA SECCION</p>
-        </section>
 
-    </main>
+    </section>
 
-    <footer class="footer">FOOTER</footer>
+  </footer>
 
 </body>
+
+<!--NOTA TENTATIVA HTML  : 17
+ +2 ADICIONAR FORMULARIO (ADICIONAR MAS ELEMENTOS HTML +5)
+ +1(OK) ADICIONAR NAVEGACION DE LOS ENLACES
+ +2(OK) MEJORAR SECCIONE 2 SERVICIOS, TOMAR COMO REFERENCIA EL SERVICIO 1
+ +1 MEJORAR SECCION 2 AVIONES, AGREGAR UNO MAS
+ +1 ORDENAR TUS IMAGENES ,CREAR SUBCARPETAS
+ +1 MEJORAR LAS LISTAS dl(dt/dd)
+ -->
 
 </html>
