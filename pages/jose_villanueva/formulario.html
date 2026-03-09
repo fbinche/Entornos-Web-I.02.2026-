@@ -34,8 +34,8 @@
                 <input type="email" name="email" value="AT70720325@idat.pe" required>
 
                 <label>Género:</label>
-                <input type="radio" name="genero" value="F" > Femenino
-                <input type="radio" name="genero" value="M"checked> Masculino
+                <input type="radio" name="genero" value="F"> Femenino
+                <input type="radio" name="genero" value="M" checked> Masculino
 
                 <label>
                     <input type="checkbox" name="terminos" required>
@@ -76,25 +76,26 @@
                 <meter value="0.75" min="0" max="1"></meter>
 
                 <label>Experiencia (semanas):</label>
-                <input type="range" name="experiencia" min="0" max="40" value="10" oninput="this.nextElementSibling.value = this.value;">
+                <input type="range" name="experiencia" min="0" max="40" value="10"
+                    oninput="this.nextElementSibling.value = this.value;">
                 <output>6</output>
 
             </fieldset>
         </section>
 
         <!-- ARCHIVOS -->
-<section>
-    <fieldset>
-        <legend>Adjuntar Archivos</legend>
+        <section>
+            <fieldset>
+                <legend>Adjuntar Archivos</legend>
 
-        <label for="cvUpload" class="custom-file-label">Subir CV (PDF/DOC):</label>
-        <input type="file" id="cvUpload" name="cv" accept=".pdf,.doc,.docx" multiple class="custom-file-input">
+                <label for="cvUpload" class="custom-file-label">Subir CV (PDF/DOC):</label>
+                <input type="file" id="cvUpload" name="cv" accept=".pdf,.doc,.docx" multiple class="custom-file-input">
 
-        <label for="fotoUpload" class="custom-file-label">Foto perfil (cámara):</label>
-        <input type="file" id="fotoUpload" name="foto" accept="image/*" capture class="custom-file-input">
+                <label for="fotoUpload" class="custom-file-label">Foto perfil (cámara):</label>
+                <input type="file" id="fotoUpload" name="foto" accept="image/*" capture class="custom-file-input">
 
-    </fieldset>
-</section>
+            </fieldset>
+        </section>
 
         <!-- INFO ADICIONAL -->
         <section>
@@ -109,9 +110,9 @@
                     <option value="Cercado de Lima">
                     <option value="San Juan de Lurigancho">
                     <option value="San Martín de Porres">
-                    <option value="Ate">                      
-                    <option value="Miraflores">    
-                    <option value=" Santiago de Surco">        
+                    <option value="Ate">
+                    <option value="Miraflores">
+                    <option value=" Santiago de Surco">
                 </datalist>
 
                 <details>

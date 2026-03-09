@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Demo avanzado de tablas HTML</title>
-    <link rel="stylesheet" href="../css/tablas.css">
+
 </head>
 
 <body>
 
     <h1>Inventario de Productos - Tienda Gamer</h1>
     <table>
-
+        <!--Titulo de una tabla-->
         <caption>Control de Inventario 2026</caption>
 
+        <!--Encabezado de la tabla-->
         <thead>
 
             <tr>
                 <th rowspan="2">Categoría</th>
-                <th rowspan="2">Producto</th>
+                <th rowspan="1">Producto</th>
                 <th colspan="3">Información</th>
                 <th colspan="2">Stock</th>
+                <th colspan="4">Observaciones</th>
             </tr>
 
             <tr>
@@ -29,14 +31,18 @@
                 <th>Año</th>
                 <th>Stock Actual</th>
                 <th>Stock Mínimo</th>
+                <th>Item 1</th>
+                <th>Item 2</th>
+                <th>Item 3</th>
+                <th>Item 4</th>
             </tr>
 
         </thead>
-
+        <!--Cuerpo de la tabla-->
         <tbody>
 
             <tr>
-                <td rowspan="3">Tarjetas Gráficas</td>
+                <td rowspan="4">Tarjetas Gráficas</td>
                 <td>RTX 4090</td>
                 <td>$1800</td>
                 <td>NVIDIA</td>
@@ -59,11 +65,18 @@
                 <td>RX 7900 XT</td>
                 <td>$950</td>
                 <td>AMD</td>
-                <td>2024</td>
+                <td rowspan="2">2026</td>
                 <td>12</td>
                 <td>10</td>
             </tr>
 
+            <tr>
+                <td>RX 9900 XT</td>
+                <td>$1950</td>
+                <td>AMD</td>
+                <td>12</td>
+                <td>10</td>
+            </tr>
             <tr>
                 <td rowspan="2">Procesadores</td>
                 <td>Intel i9 14900K</td>
@@ -103,7 +116,7 @@
             </tr>
 
         </tbody>
-
+        <!--Pie de tabla-->
         <tfoot>
 
             <tr>
@@ -124,11 +137,11 @@
 
             <caption>Horario de Clases</caption>
             <colgroup>
-                <col style="background:#84ae11;">
-                <col span="5" width="300" style="background-color:brown;">
+                <col style="background:#1adf97;">
+                <col span="5" width="300" style="background-color:rgb(153, 238, 241);">
             </colgroup>
             <thead>
-                <tr style="background:purple; color:white;">
+                <tr style="background:rgb(243, 84, 73); color:white;">
                     <th>Hora</th>
                     <th>Lunes</th>
                     <th>Martes</th>
@@ -149,7 +162,7 @@
                     <td>Base de Datos</td>
                 </tr>
 
-                <tr style="background:#e79fff;">
+                <tr style="background:#e8d07a;">
                     <th>09:00 - 10:00</th>
                     <td>Diseño Web</td>
                     <td>Git</td>
@@ -177,6 +190,44 @@
     </section>
 
 
+    <br>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Fila 1, Columna 1</td>
+                <td>Fila 1, Columna 2</td>
+                <td>Fila 1, Columna 3</td>
+            </tr>
+
+            <tr>
+                <td>Fila 2, Columna 1</td>
+                <td>Fila 2, Columna 2</td>
+                <td>Fila 2, Columna 3</td>
+            </tr>
+             <tr>
+                <td>Fila 3, Columna 1</td>
+                <td>Fila 3, Columna 2</td>
+                <td>Fila 3, Columna 3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Pie de tabla con información adicional</td>
+            </tr>
+        </tfoot>
+    </table>
 
 
 </body>
