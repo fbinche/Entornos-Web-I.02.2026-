@@ -1,0 +1,163 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+}
+
+.section{
+padding:60px 40px;
+}
+
+.nav-principal{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111;
+padding:15px 40px;
+}
+
+.logo{
+width:150px;
+}
+
+.menu{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+}
+
+.columnas_3,
+.services{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+}
+
+.article{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+width:280px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.article img{
+max-width:100%;
+height:auto;
+}
+
+.precio-regular{
+text-decoration:line-through;
+color:gray;
+}
+
+.precio strong{
+font-size:30px;
+color:#007bff;
+}
+
+.btn-principal{
+background:#007bff;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.btn-secundario{
+background:white;
+border:2px solid #007bff;
+color:#007bff;
+padding:8px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.two-columns{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+align-items:center;
+}
+
+.aside img{
+width:100%;
+}
+
+.formulario{
+display:flex;
+flex-direction:column;
+gap:10px;
+max-width:400px;
+}
+
+.footer{
+background:#313131;
+color:white;
+padding:30px;
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Para que en celular bajen */
+}
+
+.clients .article {
+    width: 250px;
+    text-align: center;
+}
+
+.clients img {
+    width: 100%;
+    height: auto;
+}
+
+.services .article strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.services .article img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#COMENTARIOSCLIENTES header {
+    text-align: center;
+}
+
+#COMENTARIOSCLIENTES header strong {
+    font-size: 32px;
+    display: block;
+}
+
+.beneficios-extra {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titulo-beneficios-extra {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.btn-whatsapp {
+    text-decoration: none;
+    display: inline-block;
+}

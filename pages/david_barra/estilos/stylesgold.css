@@ -1,0 +1,467 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #f5f5f5;
+}
+
+/* SECCIONES */
+.section {
+    padding: 60px 80px;
+}
+
+/* NAVBAR */
+.nav-principal {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d0d0d;
+    padding: 20px 40px;
+    border-bottom: 2px solid #d4af37;
+    /* dorado */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 5);
+}
+
+.logo {
+    width: 60px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #d4af37;
+    text-shadow: 0 0 8px #d4af37;
+}
+
+/* TARJETAS */
+.columnas_3,
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.article {
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 500px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* PRECIOS */
+.precio-regular {
+    font-size: 30px;
+    text-decoration: line-through;
+    color: #888;
+}
+
+.precio strong {
+    font-size: 100px;
+    color: #d4af37;
+}
+
+/* BOTONES */
+.btn-principal {
+    background: linear-gradient(45deg, #d4af37, #b8962e);
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    box-shadow: 0 0 15px #d4af37;
+    transform: scale(1.05);
+}
+
+.btn-secundario {
+    background: transparent;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-secundario:hover {
+    background: #d4af37;
+    color: black;
+}
+
+/* DOS COLUMNAS */
+.two-columns {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.aside img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* FORMULARIO */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    background: #141414;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 0 15px rgba(211, 184, 4, 0.7);
+}
+
+/* CENTRAR SECCIÓN COMPLETA DEL FORMULARIO */
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centra horizontal */
+    justify-content: center;
+}
+
+/* FORMULARIO CENTRADO */
+.formulario {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 30px;
+}
+
+/* Opcional: mejorar inputs */
+/* SOLO inputs normales al 100% */
+.formulario input[type="text"],
+.formulario input[type="date"],
+.formulario input[type="tel"],
+.formulario select {
+    width: 100%;
+}
+
+.formulario input,
+.formulario select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: #1f1f1f;
+    color: white;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: none;
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+    font-size: 16x;
+}
+
+/* FOOTER */
+.footer {
+    background: #0d0d0d;
+    color: #f5f5f5;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    border-top: 2px solid #d4af37;
+}
+
+.footer h4,
+.footer h2 {
+    color: #d4af37;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 25px;
+}
+
+.footer a:hover {
+    color: #d4af37;
+}
+
+/* TITULOS */
+h1,
+h2,
+h3,
+strong {
+    color: #d4af37;
+    font-size: 30px;
+}
+
+/* BENEFICIOS */
+.beneficios-extra {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titulo-beneficios-extra {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+/* CLIENTES */
+.clients {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.clients .article {
+    width: 360px;
+}
+
+.services .article img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+}
+
+.listaplanes {
+    list-style: none;
+    font-size: 30px
+}
+
+.cantidadmbps {
+    font-size: 60px;
+}
+
+.columnas_1beneficios-extra {
+    justify-content: center;
+}
+
+/* SECCIÓN BENEFICIOS CENTRADA */
+.beneficios-extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
+
+/* CAJA RECTANGULAR LARGA */
+.beneficios-box {
+    width: 100%;
+    max-width: 1800px;
+    padding: 40px 60px;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    text-align: center;
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);}
+.beneficios-box:hover{
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4)
+}
+
+/* TITULO MÁS GRANDE */
+.titulo-beneficios-extra {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+    font-size: 28px;
+    padding: 12px 30px;
+}
+
+/* CENTRAR BOTÓN TERMINOS */
+.second-section footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Mejorar botón */
+.btn-secundarioterminos {
+    background: transparent;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-secundarioterminos:hover {
+    background: #d4af37;
+    color: black;
+}
+
+/* RECUADRO LARGO DORADO (como beneficios) */
+.titulo-recuadro-largo {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    text-align: center;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.titulo-recuadro-largo h2 {
+    font-size: 40px;
+    color: #d4af37;
+    margin: 0;
+}
+
+/* ================= RECUADRO DEL TITULO PLANES ================= */
+
+.recuadro-titulo {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    text-align: center;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    ;
+}
+.recuadro-titulo:hover{
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+.titulo-planes {
+    font-size: 40px;
+    color: #d4af37;
+    margin: 0;
+}
+/* ================= RECUADRO DEL TITULO COMENTARIOS/MAS LOS DEMAS ================= */
+.recuadro-comentarios,.titulo-recuadro-largo{
+    width: 100%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    text-align: center;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3)
+}
+.recuadro-comentarios:hover,.titulo-recuadro-largo:hover{
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+.titulo-comentarios {
+    font-size: 40px;
+    color: #d4af37;
+    margin: 0;
+}
+
+/* ================= COMENTARIOS CLIENTES ================= */
+
+
+
+/* TEXTO DEL COMENTARIO */
+.services .article p {
+    font-size: 21px;
+    /* TEXTO MÁS GRANDE */
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* ================= TEXTO BENEFICIOS ================= */
+
+.texto-beficioss {
+    font-size: 21px;
+    /* MÁS GRANDE */
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* ================= ALCANCE NACIONAL ================= */
+
+.two-columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  width: 100%;
+}
+
+
+/* CONTENIDO CENTRADO */
+.alcance-contenido {
+  text-align: center;
+  background: linear-gradient(135deg, #141414, #1f1f1f );
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 1100px;
+}
+
+
+
+/* TEXTO MÁS GRANDE Y AMARILLO */
+.texto-grande {
+  font-size: 32px;
+  font-weight: bold;
+  color: #d4af37; /* amarillo dorado */
+  margin-bottom: 40px;
+}
+
+
+/* IMÁGENES CENTRADAS */
+.imagenes-alcance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.img-alcance {
+  width: 450px;
+  transition: 0.3s;
+}
+
+.footer-alcance{
+    font-size: 25px;
+    color: #ccc;
+}
+
+
+

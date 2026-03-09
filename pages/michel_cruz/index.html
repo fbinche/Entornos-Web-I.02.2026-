@@ -10,21 +10,57 @@
 
 <body>
 
-    <header class="cabesera1"> Rosas y espinaz </header>
+    <header class="header">
+
+        <h1> Rosas y espinaz</h1>
+
+        <nav aria-label="Servicios principales">
+
+            <ul>
+
+                <li>
+                    <a href="#seccion1">
+                        <span class="icon" aria-hidden="true">🧾</span>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#seccion2">
+                        <span class="icon" aria-hidden="true">🧳</span>
+                        <span>Seccion 2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion3">
+                        <span class="icon" aria-hidden="true">🧳</span>
+                        <span>Seccion 3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion4">
+                        <span class="icon" aria-hidden="true">🧳</span>
+                        <span>Seccion 4</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
 
     <main class="main">
 
         <!-- BLOQUE 1 -->
-        <section class="section hero first-section">
+        <section class="section hero first-section" id="seccion1">
 
 
             <section class="columnas_3">
                 <!-- 1er Articulo  -->
-                <article  >
+                <article class="article1">
 
-                    <header>
-                        <h1>ROSAS PREMIUM</h1>
-                        <p class="precio">S/ 45 <span>/ramo</span></p>
+                    <header clases="secion_a1">
+
                     </header>
 
                     <figure>
@@ -36,27 +72,21 @@
                                 alt="Rosas frescas de alta calidad">
                         </picture>
 
-                        <figcaption>Rosas frescas seleccionadas para cada ocasión especial.</figcaption>
-                    </figure>
-
-                    <aside>
-                        <p>Promoción válida por San Valentín y fechas especiales.</p>
-                    </aside>
-
-                    <footer>
-                        <button>Comprar ahora</button>
-                        <br>
-                        <small>Delivery gratuito en compras mayores a S/ 100</small>
-                    </footer>
-
                 </article>
                 <!-- 2do Articulo  -->
-                <article class="article">
+                <article class="article2">
 
                     <header>
-                        
-                        <h1>ROSAS PREMIUM</h1>
-                        
+
+                        <h1>Rosas y Espinaz </h1>
+                        <p> Las rosas no son flores… son revelaciones.cada pétalo habita el silencio del universo.
+                            En cada espina, la lección que pocos comprenden.
+
+                            No las vendo.
+                            Las entrego a quienes están listos para sostener su verdad.
+
+                            Rosas i Espina.</p>
+
                         <p class="precio">S/ 45 <span>/ramo</span></p>
                     </header>
                     <aside>
@@ -88,24 +118,243 @@
                     <h2>Productos destacados</h2>
                 </header>
 
-                <ul class="columnas_10">
+                <section class="columnas_5">
+                    <!--PRODUCTO 1-->
+                    <article class="card">
 
-                    <article  id="id444" class="article productos__destacados">
+                        <header>
+                            <h3>Rosas Rojas Premium</h3>
+
+
+                            <del>S/120.00</del>
+                            <ins>S/89.90</ins>
+                        </header>
+
                         <figure>
-                             <img src="../michel_cruz/img/imagen_flor_1.jpeg"
-                                alt="Ramo de rosas rojas premium">
-                            <figcaption>Rosas Rojas Premium</figcaption>
+                            <img src="../michel_cruz/img/imagen_flor_1.jpeg" alt="Ramo de rosas rojas premium">
+                            <figcaption>Ramo elegante de rosas rojas frescas</figcaption>
                         </figure>
+
+                        <section>
+
+                            <p>
+                                Hermoso ramo de rosas rojas premium ideal para regalar en ocasiones
+                                especiales como aniversarios, cumpleaños o celebraciones románticas.
+                            </p>
+                            <strong>Disponibilidad:</strong> En stock
+
+                        </section>
+
+                        <footer>
+
+                            <p>
+                                <mark>Oferta especial -25%</mark>
+                            </p>
+
+                            <nav>
+                                <button href="#">Agregar al carrito</button>
+                            </nav>
+
+                        </footer>
+
+
                     </article>
 
-                    <article class="article productos__destacados">
+                    <!--PRODUCTO 2-->
+
+                    <article class="card">
+
+                        <header>
+                            <h3>Arreglo Floral Elegante</h3>
+
+                            <p>
+                                <del>S/150.00</del>
+                                <ins>S/109.90</ins>
+                            </p>
+                        </header>
+
                         <figure>
                             <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
                                 alt="Arreglo floral elegante">
                             <figcaption>Arreglo Elegante</figcaption>
                         </figure>
+
+                        <section>
+
+                            <p>
+                                Arreglo floral elegante compuesto por flores frescas seleccionadas,
+                                ideal para celebraciones especiales, aniversarios o como detalle
+                                sofisticado para sorprender.
+                            </p>
+
+                            <p>
+                                <strong>Disponibilidad:</strong> <small>En stock</small>
+                            </p>
+
+                        </section>
+
+                        <footer>
+
+                            <p>
+                                <mark>Oferta especial -27%</mark>
+                            </p>
+
+                            <nav>
+                                <button type="button">Agregar al carrito</button>
+                            </nav>
+
+                        </footer>
+
                     </article>
-                    <article class="article productos__destacados">
+
+                    <!--PRODUCTO 3-->
+                    <article class="card">
+
+                        <header>
+                            <h3>Bouquet Mixto</h3>
+
+                            <p>
+                                <del>S/130.00</del>
+                                <ins>S/94.90</ins>
+                            </p>
+                        </header>
+
+                        <figure>
+                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
+                                alt="Bouquet mixto colorido">
+                            <figcaption>Bouquet Mixto</figcaption>
+                        </figure>
+
+                        <section>
+
+                            <p>
+                                Bouquet mixto compuesto por una selección de flores frescas y coloridas,
+                                ideal para regalar en cumpleaños, celebraciones especiales o para alegrar
+                                cualquier espacio con un toque natural.
+                            </p>
+
+                            <p>
+                                <strong>Disponibilidad:</strong> <small>En stock</small>
+                            </p>
+
+                        </section>
+
+                        <footer>
+
+                            <p>
+                                <mark>Oferta especial -27%</mark>
+                            </p>
+
+                            <nav>
+                                <button type="button">Agregar al carrito</button>
+                            </nav>
+
+                        </footer>
+
+                    </article>
+
+
+                    <!--PRODUCTO 4-->
+                    <article class="card">
+
+                        <header>
+                            <h3>Rosas Rojas Premium</h3>
+
+                            <p>
+                                <del>S/120.00</del>
+                                <ins>S/89.90</ins>
+                            </p>
+                        </header>
+
+                        <figure>
+                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155614-800-800?v=638846473989200000&width=800&height=800&aspect=true"
+                                alt="Ramo de rosas rojas premium">
+                            <figcaption>Rosas Rojas Premium</figcaption>
+                        </figure>
+
+                        <section>
+
+                            <p>
+                                Ramo de rosas rojas premium cuidadosamente seleccionadas,
+                                perfecto para expresar amor, romance o sorprender en fechas
+                                especiales como aniversarios o San Valentín.
+                            </p>
+
+                            <p>
+                                <strong>Disponibilidad:</strong> <small>En stock</small>
+                            </p>
+
+                        </section>
+
+                        <footer>
+
+                            <p>
+                                <mark>Oferta especial -25%</mark>
+                            </p>
+
+                            <nav>
+                                <button type="button">Agregar al carrito</button>
+                            </nav>
+
+                        </footer>
+
+                    </article>
+                    <!--PRODUCTO 5-->
+
+
+                    <article class="card">
+
+                        <header>
+                            <h3>Arreglo Floral Elegante</h3>
+
+                            <p>
+                                <del>S/140.00</del>
+                                <ins>S/99.90</ins>
+                            </p>
+                        </header>
+
+                        <figure>
+                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
+                                alt="Arreglo floral elegante">
+                            <figcaption>Arreglo Elegante</figcaption>
+                        </figure>
+
+                        <section>
+
+                            <p>
+                                Arreglo floral elegante elaborado con flores frescas cuidadosamente
+                                seleccionadas, ideal para celebraciones especiales, aniversarios o
+                                para sorprender con un detalle sofisticado.
+                            </p>
+
+                            <p>
+                                <strong>Disponibilidad:</strong> <small>En stock</small>
+                            </p>
+
+                        </section>
+
+                        <footer>
+
+                            <p>
+                                <mark>Oferta especial -29%</mark>
+                            </p>
+
+                            <nav>
+                                <button type="button">Agregar al carrito</button>
+                            </nav>
+
+                        </footer>
+
+                    </article>
+
+                    <!--RECOMENDACION:A TODAS LAS SECCIONES AGREGAR 
+                 - UN HEADER QUE EXPLIQUE DE QUE SE TRATA LA SECCION
+                 - EL CONTENIDO ESTE PUEDE ESTAR DENTRO DE UNA SECCION O TODO FUERA DEPENDIENDO DE LA CANTIDAD DE ELEMENTOS QUE TENGAS
+                 - UN FOOTER CON INFORMACION ADICIONAL O UN LLAMADO A LA ACCION, SI NO TIENES NADA QUE PONER EN EL FOOTER MEJOR NO LO PONGAS
+                -->
+                    <!--RECOMENDACION: USAR COMENTARIOS PARA UBICAR CODIGO -->
+
+                    <article class="article">
                         <figure>
                             <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
                                 alt="Bouquet mixto colorido">
@@ -136,47 +385,144 @@
                     </article>
                     <article class="article">
                         <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155614-800-800?v=638846473989200000&width=800&height=800&aspect=true"
-                                alt="Ramo de rosas rojas premium">
-                            <figcaption>Rosas Rojas Premium</figcaption>
-                        </figure>
-                    </article>
-
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
-                                alt="Arreglo floral elegante">
-                            <figcaption>Arreglo Elegante</figcaption>
-                        </figure>
-                    </article>
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
-                                alt="Bouquet mixto colorido">
-                            <figcaption>Bouquet Mixto</figcaption>
-                        </figure>
-                    </article>
-                    <article class="article">
-                        <figure>
                             <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
                                 alt="Bouquet mixto colorido">
                             <figcaption>Bouquet Mixto</figcaption>
                         </figure>
                     </article>
 
-                </ul>
+                </section>
 
-                <footer>
-                    <a href="#">Ver más flores</a>
-                </footer>
             </section>
+
+            <footer>
+                <p> Puedes ver más productos en nuestra <a href="#">tienda online</a>
+                </p>
+            </footer>
+
+        </section>
+
+        <!-- BLOQUE 3 -->
+        <section class="section third-section ">
 
             <section>
                 <header>
                     <h2>Productos mas vendidos</h2>
+                    <p> Estos son los productos mas vendidos de nuestra tienda, si quieres ver mas productos puedes
+                        visitar nuestra tienda online haciendo click en el enlace que se encuentra al final de esta
+                        seccion.
+
+                    </p>
                 </header>
 
-                <ul class="columnas_10">
+                <section class="card columnas_4">
+                    <!--ITEM 1-->
+                    <article class="card">
+
+                        <header>
+                            <h3>Rosas Rojas Premium</h3>
+                        </header>
+
+                        <figure>
+                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155614-800-800?v=638846473989200000&width=800&height=800&aspect=true"
+                                alt="Ramo de rosas rojas premium">
+                        </figure>
+
+                        <p>
+                            <del>S/120.00</del>
+                            <ins>S/89.90</ins>
+                        </p>
+
+                        <p>
+                            <mark>Oferta -25%</mark>
+                        </p>
+
+                        <footer>
+                            <button type="button">Comprar</button>
+                        </footer>
+
+                    </article>
+
+                    <!--ITEM 2-->
+                    <article class="card">
+
+                        <header>
+                            <h3>Arreglo Floral Elegante</h3>
+                        </header>
+
+                        <figure>
+                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
+                                alt="Arreglo floral elegante">
+                        </figure>
+
+                        <p>
+                            <del>S/140.00</del>
+                            <ins>S/99.90</ins>
+                        </p>
+
+                        <p>
+                            <mark>Oferta -29%</mark>
+                        </p>
+
+                        <footer>
+                            <button type="button">Comprar</button>
+                        </footer>
+
+                    </article>
+                    <!--ITEM 3-->
+
+                    <article class="card">
+
+                        <header>
+                            <h3>Bouquet Mixto</h3>
+                        </header>
+
+                        <figure>
+                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
+                                alt="Bouquet mixto colorido">
+                        </figure>
+
+                        <p>
+                            <del>S/130.00</del>
+                            <ins>S/94.90</ins>
+                        </p>
+
+                        <p>
+                            <mark>Oferta -27%</mark>
+                        </p>
+
+                        <footer>
+                            <button type="button">Comprar</button>
+                        </footer>
+
+                    </article>
+
+                    <!--ITEM 4-->
+                    <article class="card">
+
+                        <header>
+                            <h3>Arreglo Elegante</h3>
+                        </header>
+
+                        <figure>
+                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
+                                alt="Arreglo floral elegante">
+                        </figure>
+
+                        <p>
+                            <del>S/140.00</del>
+                            <ins>S/99.90</ins>
+                        </p>
+
+                        <p>
+                            <mark>Oferta -29%</mark>
+                        </p>
+
+                        <footer>
+                            <button type="button">Comprar</button>
+                        </footer>
+
+                    </article>
 
                     <article class="article">
                         <figure>
@@ -185,7 +531,13 @@
                             <figcaption>Rosas Rojas Premium</figcaption>
                         </figure>
                     </article>
-
+                    <article class="article">
+                        <figure>
+                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155614-800-800?v=638846473989200000&width=800&height=800&aspect=true"
+                                alt="Ramo de rosas rojas premium">
+                            <figcaption>Rosas Rojas Premium</figcaption>
+                        </figure>
+                    </article>
                     <article class="article">
                         <figure>
                             <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
@@ -252,28 +604,87 @@
                         </figure>
                     </article>
 
-                </ul>
+                </section>
 
                 <footer>
-                    <a href="#">Ver más flores</a>
+                    <p> Puedes ver más productos en nuestra <a href="#">tienda online</a>
+                    </p>
                 </footer>
             </section>
-
         </section>
-        <!-- BLOQUE 3 -->
 
-        <section class="section third-section">
-            <p>3RA SECCION</p>
-        </section>
         <!-- BLOQUE 4 -->
+        <section class="section fourth-section">
+            <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
 
-        <section class="section two-columns fourth-section">
-            <p>4TA SECCION</p>
         </section>
     </main>
+    <footer class="footer"> <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
 
-    <footer class="footer">FOOTER</footer>
+        <section class="columnas_5">
+            <nav>
+                <h3>Ingresar información</h3>
+
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Productos Populares</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Ingresar información</h3>
+
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Productos Populares</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Ingresar información</h3>
+
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Productos Populares</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Ingresar información</h3>
+
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Productos Populares</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <div>
+                    <h4>Titulo</h4>
+                    <p>&copy; 2026 ROSAS.... Todos los derechos reservados.</p>
+                </div>
+
+                <div>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i>Instagram</a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a>
+                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a>
+                </div>
+            </section>
+
+    </footer>
 
 </body>
-
+<!--NOTA TENTATIVA HTML  : 10
+ +2 ADICIONAR FORMULARIO
+ +1 ADICIONAR CONTENIDO AL FOOTER
+ +1 ADICIONAR NAVEGACION DE LOS ENLACES
+ +2 MEJORAR SECCION PRODUCTOS DESTACADOS ,TENER 10 ITEMS MINIMO
+ +2 MEJORAR SECCION PRODUCTOS MAS VENDIDOS ,TENER 16 ITEMS MINIMO
+ -->
+ 
 </html>

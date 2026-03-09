@@ -8,39 +8,17 @@ width: 100%;
 
 /*SECCION DEL BANNER*/
 .banner {
-    /*------------------------Para ser sincero esta parte si la saque 100% de la IA y mas o menos lo entiendo*/
-/*------------------------Solo que lo hice para que mi web se acomode y se paresca un poco al banner para que no se vea feo*/
-/*------------------------Puede o no considerar esta seccion, mas o menos entiendo y espero entenderlo para la revision*/
-  display: flex;                     /* Pone los banners en fila */
-  overflow-x: auto;                  /* Permite deslizar horizontalmente */
-  scroll-snap-type: x mandatory;     /* Hace que se detenga justo en cada imagen */
-  scroll-behavior: smooth;           /* Desplazamiento suave */
-  
-  max-width: 1000px;                  /* Ajustar tamañi del banner*/
-  margin: 0 auto;                    /* Centra el banner en la página */
-}
+    display: flex;                   /* Pone los banners uno al aldo del otro*/
+   & img{
+ 
+    width: 430px;
+    height: 100%;
 
-.banner article {
-  flex: 0 0 100%;                    /* Cada banner ocupa el 100% del ancho */
-  scroll-snap-align: start;          /* Alinea el inicio del banner al borde */
+   }
 }
-
-.banner img {
-  padding: 50px;
-  width: 100%;                       /* La imagen se ajusta al ancho total */
-  display: block;                    /*fuerza un salto de linea que me supongo es lateral*/
-}
-
-/* oculta la barra de scrol */
-.banner::-webkit-scrollbar {
-  display: none;
-}
-/*tengo entendido que falta un javascript para que funcione al 100%*/
-/*-------------------------------------------------------------------------------------------------------------------------------------*/
-
 /*SECCION DE PRODUCTOS*/
 .seccion_productos{
-
+     
      background: #b8b8b8;
      border: 3px solid #2e2e2e;
      border-radius: 8px;
@@ -64,7 +42,7 @@ width: 100%;
                  max-width: 250px; 
 
                  /*PARA EFECTO DEL MOUSE*/
-                 transition: transform 0.3s ease;
+                 transition: transform 0.3s ease;      
                  cursor: pointer;
                  &:hover{
 
@@ -75,7 +53,7 @@ width: 100%;
             }
     & img{
                     filter: brightness(1.1);         /*brillo a la imagen*/
-                    /*DIMENSIONES DE MI IMAGENES*/
+                    /*DIMENSIONES DE MI IMAGENES establecidas */
                     width: 100%;
                     height: 200px;
                 }
@@ -92,6 +70,7 @@ width: 100%;
         margin-bottom: 0;                            /*margen inferior a 0 para evitar espacio innecesario*/
 
     }
+
 }
 
 /*SECCION DE TESTIMONIOS*/
