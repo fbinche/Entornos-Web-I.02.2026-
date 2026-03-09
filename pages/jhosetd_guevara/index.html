@@ -3,61 +3,89 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Maqueta Semántica</title>
+  <title>Sky Airline</title>
   <link rel="stylesheet" href="/assets/css/styles_global.css">
 </head>
 
 <body>
 
   <header class="header">
-    <nav aria-label="Servicios principales">
+    <section class="section hero-banner">
+      <img src="img/Cielo.jpg" alt="Cielo a tu medida" class="imagen-banner">
 
-      <ul class="menu-servicios">
-
-        <li>
-          <a href="#seccion1">
-            <span class="icon" aria-hidden="true">🧾</span>
-            <span>Check-in</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#seccion2">
-            <span class="icon" aria-hidden="true">🧳</span>
-            <span>Seccion 2</span>
-          </a>
-        </li>
-        <li>
-          <a href="#seccion3">
-            <span class="icon" aria-hidden="true">🧳</span>
-            <span>Seccion 3</span>
-          </a>
-        </li>
-        <li>
-          <a href="#SECCION4">
-            <span class="icon" aria-hidden="true">🧳</span>
-            <span>Seccion 4</span>
-          </a>
-        </li>
-
-      </ul>
-
-    </nav>
+      <nav aria-label="Servicios principales">
+        <ul class="menu-servicios">
+          <li>
+            <a href="#seccion1">
+              <span class="icon" aria-hidden="true">🧾</span>
+              <span>Check-in</span>
+            </a>
+          </li>
+          <li>
+            <a href="#seccion2">
+              <span class="icon" aria-hidden="true">🧳</span>
+              <span>Sección 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#seccion3">
+              <span class="icon" aria-hidden="true">🧳</span>
+              <span>Sección 3</span>
+            </a>
+          </li>
+          <li>
+            <a href="#seccion4">
+              <span class="icon" aria-hidden="true">🧳</span>
+              <span>Sección 4</span>
+            </a>
+          </li>
+          <li>
+            <a href="#footer">
+              <span class="icon" aria-hidden="true">⬇️</span>
+              <span>Ir al Footer</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
   </header>
 
   <main class="main">
 
-    <section class="section hero first-section">
-      <p>1RA SECCION</p>
+    <section id="seccion1" class="section hero first-section">
+      <div class="carrusel">
+        <!-- Controles -->
+        <input type="radio" id="promo1" name="carrusel" checked>
+        <input type="radio" id="promo2" name="carrusel">
+        <input type="radio" id="promo3" name="carrusel">
+
+        <!-- Slides -->
+        <div class="slides">
+          <div class="slide">
+            <img src="img/promocion1.jpg" alt="Promoción 1">
+          </div>
+          <div class="slide">
+            <img src="img/promocion2.jpg" alt="Promoción 2">
+          </div>
+          <div class="slide">
+            <img src="img/promocion3.jpg" alt="Promoción 3">
+          </div>
+        </div>
+
+        <!-- Navegación -->
+        <div class="nav">
+          <label for="promo1"></label>
+          <label for="promo2"></label>
+          <label for="promo3"></label>
+        </div>
+      </div>
     </section>
 
     <section id="seccion2" class="section second-section ">
 
       <header>
-        <h2>TITULO</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti molestiae, laborum, cupiditate nobis magni
-          a nam, exercitationem architecto illum perspiciatis molestias perferendis tempora odit natus quam vitae
-          praesentium? Deleniti, aspernatur!</p>
+        <h2>El Cielo a Tu Medida</h2>
+        <p>Explorando la tecnología y el confort detrás de cada una de nuestras aeronaves.</p>
       </header>
       <section class="section columnas_5">
         <!--AVION 1-->
@@ -146,254 +174,314 @@
 
       </section>
       <footer>
-        <button>VER MAS AVIONES </button>
+        <a href="https://open.spotify.com/intl-es/album/6T6i4ZLAwRHVOxRaQnC5js?si=1WAf89cCQtiH9E5IwDZGuQ"
+          target="_blank">
+          <button>Escuche su música preferida en sus vuelos en spotify</button>
+        </a>
 
       </footer>
 
     </section>
 
-
-    <section class="section third-section " id="SECCION4">
+    <section class="section third-section " id="seccion3">
 
       <header>
-        <h2>TITULO</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti molestiae, laborum, cupiditate nobis magni
-          a nam, exercitationem architecto illum perspiciatis molestias perferendis tempora odit natus quam vitae
-          praesentium? Deleniti, aspernatur!</p>
+        <h2>Descubre tu proximo viaje ¡No te lo pierdas!</h2>
+        <p>Vuelos desde Lima</p>
       </header>
       <section class="section columnas_4">
-        <!--AVION 1-->
+        <!--VIAJE A AREQUIPA-->
         <article class="card">
           <figure>
-            <img src="img/avion1.jpg" alt="Airbus A320">
+            <img src="img/Arequipa.jpg" alt="Arequipa, la ciudad blanca">
           </figure>
           <header>
-            <h2>Airbus A320 <span>Turista / Business</span></h2>
+            <h2>Arequipa <span>/ Solo ida</span></h2>
           </header>
           <section>
-            <p>Conecta con tu próximo destino de forma rápida y segura. El A320 combina puntualidad y confort para
-              vuelos
-              cortos y medianos.</p>
+            <p>USD 52 PEN 175</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad blanca y maravíllate con su arquitectura colonial, volcanes imponentes y tradición
+              única. </p>
           </section>
           <footer>
-            <a href="#" class="btn">Ver más</a>
+            <a href="#" class="btn">Consultar precios</a>
           </footer>
-        </article> <!--AVION 1-->
+        </article> <!--VIAJE A CHICLAYO-->
         <article class="card">
           <figure>
-            <img src="img/avion1.jpg" alt="Airbus A320">
+            <img src="img/Chiclayo.jpg" alt="Chicalyo, la capital de la amistad">
           </figure>
           <header>
-            <h2>Airbus A320 <span>Turista / Business</span></h2>
+            <h2>Chiclayo <span> / Solo ida</span></h2>
           </header>
           <section>
-            <p>Conecta con tu próximo destino de forma rápida y segura. El A320 combina puntualidad y confort para
-              vuelos
-              cortos y medianos.</p>
+            <p>USD 43 PEN 155</p>
+          </section>
+          <section>
+            <p>Descubre la capital de la amistad y conecta con su calidez, gastronomía norteña y legado cultural
+              ancestral.</p>
           </section>
           <footer>
-            <a href="#" class="btn">Ver más</a>
+            <a href="#" class="btn">Consultar precios</a>
           </footer>
-        </article> <!--AVION 1-->
+        </article> <!--VIAJE A CUSCO-->
         <article class="card">
           <figure>
-            <img src="img/avion1.jpg" alt="Airbus A320">
+            <img src="img/Cusco.jpg" alt="Cusco, la ciudad imperial">
           </figure>
           <header>
-            <h2>Airbus A320 <span>Turista / Business</span></h2>
+            <h2>Cusco <span>/ Solo ida</span></h2>
           </header>
           <section>
-            <p>Conecta con tu próximo destino de forma rápida y segura. El A320 combina puntualidad y confort para
-              vuelos
-              cortos y medianos.</p>
+            <p>USD 60 PEN 200</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad imperial y conecta con la historia viva del Perú. Cusco te espera con cultura,
+              tradición y paisajes únicos.</p>
           </section>
           <footer>
-            <a href="#" class="btn">Ver más</a>
+            <a href="#" class="btn">Consultar precios</a>
           </footer>
-        </article> <!--AVION 1-->
+        </article> <!--VIAJE A PIURA-->
         <article class="card">
           <figure>
-            <img src="img/avion1.jpg" alt="Airbus A320">
+            <img src="img/Piura.jpg" alt="Piura, la ciudad del eterno sol">
           </figure>
           <header>
-            <h2>Airbus A320 <span>Turista / Business</span></h2>
+            <h2>Piura <span>/ Solo ida</span></h2>
           </header>
           <section>
-            <p>Conecta con tu próximo destino de forma rápida y segura. El A320 combina puntualidad y confort para
-              vuelos
-              cortos y medianos.</p>
+            <p>USD 48 PEN 165</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad del eterno sol y disfruta de sus playas, su gastronomía norteña y la calidez de su
+              gente.</p>
           </section>
           <footer>
-            <a href="#" class="btn">Ver más</a>
+            <a href="#" class="btn">Consultar precios</a>
           </footer>
-        </article> <!--AVION 1-->
+        </article> <!--VIAJE A TARAPOTO-->
         <article class="card">
           <figure>
-            <img src="img/avion1.jpg" alt="Airbus A320">
+            <img src="img/Tarapoto.jpg" alt="Tarapoto, la ciudad de las palmeras">
           </figure>
           <header>
-            <h2>Airbus A320 <span>Turista / Business</span></h2>
+            <h2>Tarapoto <span>/ Solo ida</span></h2>
           </header>
           <section>
-            <p>Conecta con tu próximo destino de forma rápida y segura. El A320 combina puntualidad y confort para
-              vuelos
-              cortos y medianos.</p>
+            <p>USD 50 PEN 170</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad de las palmeras y disfruta de su naturaleza amazónica, cascadas impresionantes y clima
+              cálido todo el año.</p>
           </section>
           <footer>
-            <a href="#" class="btn">Ver más</a>
+            <a href="#" class="btn">Consultar precios</a>
           </footer>
-        </article> <!--AVION 1-->
+        </article> <!--VIAJE A TRUJILLO-->
         <article class="card">
           <figure>
-            <img src="img/avion1.jpg" alt="Airbus A320">
+            <img src="img/Trujillo.jpg" alt="Trujillo, la ciudad de la eterna primavera">
           </figure>
           <header>
-            <h2>Airbus A320 <span>Turista / Business</span></h2>
+            <h2>Trujillo <span>/ Solo ida</span></h2>
           </header>
           <section>
-            <p>Conecta con tu próximo destino de forma rápida y segura. El A320 combina puntualidad y confort para
-              vuelos
-              cortos y medianos.</p>
+            <p>USD 47 PEN 160</p>
           </section>
-          <footer>
-            <a href="#" class="btn">Ver más</a>
-          </footer>
-        </article>
-        <!--AVION 1-->
-        <article class="card">
-          <figure>
-            <img src="img/avion1.jpg" alt="Airbus A320">
-          </figure>
-          <header>
-            <h2>Airbus A320 <span>Turista / Business</span></h2>
-          </header>
           <section>
-            <p>Conecta con tu próximo destino de forma rápida y segura. El A320 combina puntualidad y confort para
-              vuelos
-              cortos y medianos.</p>
+            <p>Descubre la ciudad de la eterna primavera y disfruta de sus playas, su historia colonial y la alegría de
+              sus festivales.</p>
           </section>
           <footer>
-            <a href="#" class="btn">Ver más</a>
+            <a href="#" class="btn">Consultar precios</a>
           </footer>
         </article>
-        <!--AVION 2-->
+        <!--VIAJE A AREQUIPA PROMO-->
         <article class="card">
           <figure>
-            <img src="img/avion2.jpg" alt="Boeing 787 Dreamliner">
+            <img src="img/Arequipa2.jpg" alt="Arequipa, la ciudad blanca">
           </figure>
           <header>
-            <h2>Boeing 787 Dreamliner <span class="badge badge-luxury">Long Haul / Luxury</span></h2>
+            <h2>Arequipa <span>/ Ida y vuelta</span></h2>
           </header>
           <section>
-            <p>Redefine los vuelos largos: mayor confort, ventanas panorámicas y menor fatiga para viajes
-              transcontinentales.</p>
+            <p>USD 95 PEN 320</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad blanca y disfruta de su historia, volcanes y gastronomía única.</p>
+          </section>
+          <section>
+            <p>✨ Promo especial: tarifas ida y vuelta con impuestos incluidos.</p>
           </section>
           <footer>
-            <a href="#" class="btn">Ver más</a>
+            <a href="#" class="btn">Consultar precios</a>
           </footer>
         </article>
-
+        <!--VIAJE A MADRID-->
         <article class="card">
           <figure>
-            <img src="img/avion3.jpg" alt="Embraer E190">
+            <img src="img/Madrid.jpg" alt="Madrid, la capital de España">
           </figure>
           <header>
-            <h2>Embraer E190 <span class="badge badge-regional">Regional / Ejecutiva</span></h2>
+            <h2>Madrid <span>/ Ida y vuelta</span></h2>
           </header>
           <section>
-            <p>Ágil en rutas regionales: configuración 2-2 que favorece comodidad y rapidez en conexiones a ciudades
-              secundarias.</p>
+            <p>USD 850 PEN 3,000</p>
+          </section>
+          <section>
+            <p>Descubre la vibrante capital española con su historia, cultura y vida nocturna. Madrid te espera con
+              experiencias únicas en cada rincón.</p>
+          </section>
+          <section>
+            <p>✨ Promo especial: incluye equipaje y selección de asiento en clase turista.</p>
           </section>
           <footer>
-            <a href="#" class="btn">Ver más</a>
+            <a href="#" class="btn">Consultar precios</a>
           </footer>
         </article>
-
+        <!--VIAJE A MIAMI-->
         <article class="card">
           <figure>
-            <img src="img/avion4.jpg" alt="Gulfstream G650">
+            <img src="img/Miami.jpg" alt="Miami, la ciudad del sol">
           </figure>
           <header>
-            <h2>Gulfstream G650 <span class="badge badge-private">Private Jet</span></h2>
+            <h2>Miami <span>/ Ida y vuelta</span></h2>
           </header>
           <section>
-            <p>Privacidad y eficiencia para clientes corporativos: la oficina privada en el aire con acceso a
-              aeropuertos
-              exclusivos.</p>
+            <p>USD 720 PEN 2,550</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad del sol y disfruta de sus playas, su ambiente multicultural y la energía vibrante de
+              la vida nocturna.</p>
+          </section>
+          <section>
+            <p>✨ Oferta especial: incluye equipaje y traslado al hotel en paquetes seleccionados.</p>
           </section>
           <footer>
-            <a href="#" class="btn">Ver más</a>
+            <a href="#" class="btn">Consultar precios</a>
           </footer>
         </article>
-
+        <!--VIAJE A PUNTA CANA-->
         <article class="card">
           <figure>
-            <img src="img/avion5.jpg" alt="Airbus Beluga">
+            <img src="img/Punta Cana.jpg" alt="Punta Cana, el paraíso caribeño">
           </figure>
           <header>
-            <h2>Airbus Beluga <span class="badge badge-cargo">Cargo / Industrial</span></h2>
+            <h2>Punta Cana <span>/ Ida y vuelta</span></h2>
           </header>
           <section>
-            <p>Especializado en cargas sobredimensionadas: soluciones logísticas para piezas industriales de gran
-              tamaño.
+            <p>USD 680 PEN 2,400</p>
+          </section>
+          <section>
+            <p>Descubre el paraíso caribeño y relájate en playas de arena blanca, aguas turquesa y resorts todo
+              incluido.</p>
+          </section>
+          <section>
+            <p>✨ Oferta especial: paquetes con alojamiento y traslados incluidos.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article>
+        <!--PAQUETE BUENOS AIRES-->
+        <article class="card">
+          <figure>
+            <img src="img/Buenos Aires.jpg" alt="Buenos Aires, la ciudad del tango">
+          </figure>
+          <header>
+            <h2>Buenos Aires <span>/ Paquete completo</span></h2>
+          </header>
+          <section>
+            <p>USD 950 PEN 3,350</p>
+          </section>
+          <section>
+            <p>Descubre la ciudad del tango y disfruta de su arquitectura europea, gastronomía única y vida cultural
+              vibrante.</p>
+          </section>
+          <section>
+            <p>✨ Incluye vuelos ida y vuelta, 4 noches de alojamiento y traslados al hotel.</p>
+          </section>
+          <section>
+            <p>Opciones adicionales: excursión a Tigre, city tour por barrios históricos y cena-show de tango.</p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Consultar precios</a>
+          </footer>
+        </article>
+        <!--PAQUETE SANTIAGO DE CHILE-->
+        <article class="card">
+          <figure>
+            <img src="img/Santiago.jpg" alt="Santiago de Chile, ciudad entre montañas">
+          </figure>
+          <header>
+            <h2>Santiago de Chile <span>/ Paquete completo</span></h2>
+          </header>
+          <section>
+            <p>USD 720 PEN 2,550</p>
+          </section>
+          <section>
+            <p>Explora la capital chilena, rodeada de la majestuosa cordillera de los Andes y con una vida cultural
+              vibrante.</p>
+          </section>
+          <section>
+            <p>✨ Promo especial: incluye vuelos ida y vuelta, 3 noches de alojamiento y desayuno diario.</p>
+          </section>
+          <section>
+            <p>Opciones adicionales: visita a Viña del Mar y Valparaíso, tour por viñedos y excursión a la cordillera.
             </p>
           </section>
           <footer>
-            <a href="#" class="btn">Ver más</a>
+            <a href="#" class="btn">Consultar precios</a>
           </footer>
         </article>
 
       </section>
       <footer>
-        <button>VER MAS AVIONES </button>
+        <button>Terminos y condiciones generales</button>
 
       </footer>
 
 
     </section>
 
-    <!-- Script: genera las 12 tarjetas -->
-    <script>
-      const flights = [
-        { img: "img/Cusco.jpg", alt: "Vuelo Lima a Cusco", title: "Lima → Cusco", badge: "Turista / Business", price: "Conecta con la ciudad imperial desde S/84.", badgeClass: "badge-economy" },
-        { img: "img/Arequipa.jpg", alt: "Vuelo Lima a Arequipa", title: "Lima → Arequipa", badge: "Turista / Business", price: "Descubre la “Ciudad Blanca” desde S/91.", badgeClass: "badge-economy" },
-        { img: "img/Trujillo.jpg", alt: "Vuelo Lima a Trujillo", title: "Lima → Trujillo", badge: "Turista / Business", price: "Viaja al norte del Perú desde S/76.", badgeClass: "badge-economy" },
-        { img: "img/Piura.jpg", alt: "Vuelo Lima a Piura", title: "Lima → Piura", badge: "Turista / Business", price: "Disfruta del sol del norte desde S/88.", badgeClass: "badge-economy" },
-        { img: "img/Madrid.jpg", alt: "Vuelo Lima a Madrid", title: "Lima → Madrid", badge: "Long Haul / Luxury", price: "Confort premium en vuelos largos desde S/1850.", badgeClass: "badge-luxury" },
-        { img: "img/Miami.jpg", alt: "Vuelo Lima a Miami", title: "Lima → Miami", badge: "Long Haul / Luxury", price: "Viaja al corazón de Florida desde S/1420.", badgeClass: "badge-luxury" },
-        { img: "img/Buenos aires.jpg", alt: "Vuelo Lima a Buenos Aires", title: "Lima → Buenos Aires", badge: "Long Haul / Luxury", price: "Descubre Argentina con estilo desde S/1100.", badgeClass: "badge-luxury" },
-        { img: "img/Arequipa2.jpg", alt: "Vuelo Cusco a Arequipa", title: "Cusco → Arequipa", badge: "Regional / Ejecutiva", price: "Ruta rápida y cómoda desde S/51.", badgeClass: "badge-regional" },
-        { img: "img/Tarapoto.jpg", alt: "Vuelo Lima a Tarapoto", title: "Lima → Tarapoto", badge: "Regional / Ejecutiva", price: "Explora la selva peruana desde S/98.", badgeClass: "badge-regional" },
-        { img: "img/Chiclayo.jpg", alt: "Vuelo Lima a Chiclayo", title: "Lima → Chiclayo", badge: "Regional / Ejecutiva", price: "Conecta con la capital de la amistad desde S/84.", badgeClass: "badge-regional" },
-        { img: "img/Punta Cana.jpg", alt: "Vuelo Lima a Punta Cana", title: "Lima → Punta Cana", badge: "Private Jet", price: "Privacidad y lujo total desde S/5200.", badgeClass: "badge-private" },
-        { img: "img/Santiago.jpg", alt: "Vuelo Lima a Santiago de Chile", title: "Lima → Santiago", badge: "Cargo / Industrial", price: "Transporte de carga sobredimensionada desde S/7800.", badgeClass: "badge-cargo" }
-      ];
+    <section id="seccion4" class="section reservas fourth-section">
+      <h2>Reserva tu viaje</h2>
+      <form action="#" method="post">
 
-      const container = document.getElementById("flights");
-      const tpl = document.getElementById("card-template").content;
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-      flights.forEach(f => {
-        const node = document.importNode(tpl, true);
-        const img = node.querySelector("figure img");
-        img.src = f.img;
-        img.alt = f.alt;
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" required>
 
-        const h2 = node.querySelector("header h2");
-        h2.innerHTML = `${f.title} <span class="badge ${f.badgeClass}">${f.badge}</span>`;
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
 
-        node.querySelector("section p").textContent = f.price;
-        container.appendChild(node);
-      });
-    </script>
+        <label for="destino">Destino:</label>
+        <select id="destino" name="destino" required>
+          <option value="">Seleccione una opción</option>
+          <option value="nacional">Nacional</option>
+          <option value="internacional">Internacional</option>
+        </select>
 
+        <label for="cabina">Cabina:</label>
+        <select id="cabina" name="cabina" required>
+          <option value="">Seleccione una opción</option>
+          <option value="economy">Economy</option>
+          <option value="premium-economy">Premium Economy</option>
+          <option value="premium-business">Premium Business</option>
+        </select>
 
-    <section class="section fourth-section">
-      <p>formulario</p>
+        <button type="submit">Reservar</button>
+      </form>
     </section>
 
   </main>
 
-  <footer>
+  <footer id="footer">
 
     <section class="card columnas_4">
 
@@ -437,10 +525,6 @@
 
         <!--PRIMERA SUB SECCION-->
         <nav class="section" aria-label="Enlaces del pie de página">
-
-
-
-
           <aside class="col contact" aria-labelledby="col-contacto">
             <h3 id="col-contacto">Contacta con nosotros</h3>
             <p class="muted">Síguenos en redes</p>
