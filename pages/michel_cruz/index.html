@@ -10,9 +10,18 @@
 
 <body>
 
-    <header class="header">
 
-        <h1> Rosas y espinaz</h1>
+
+    <header class="cabecera">
+
+<h1>Rosas y Espinas</h1>   <img src="img/elegante.jpg" alt="avatar perfil" class="avatar">
+
+</header>
+
+
+
+
+    <header class="header">
 
         <nav aria-label="Servicios principales">
 
@@ -50,6 +59,53 @@
     </header>
 
     <main class="main">
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- BLOQUE 1 -->
         <section class="section hero first-section" id="seccion1">
@@ -111,7 +167,7 @@
 
         <!-- BLOQUE 2 -->
 
-        <section class="section second-section">
+        <section class="section second-section" id="seccion2">
 
             <section>
                 <header>
@@ -131,7 +187,9 @@
                         </header>
 
                         <figure>
-                            <img src="../michel_cruz/img/imagen_flor_1.jpeg" alt="Ramo de rosas rojas premium">
+                            <label   class="carrito_label"  for="ross1">
+                                <img class="carrito_img"  src="../michel_cruz/img/imagen_flor_1.jpeg" alt="Ramo de rosas rojas premium">
+                            </label>
                             <figcaption>Ramo elegante de rosas rojas frescas</figcaption>
                         </figure>
 
@@ -402,8 +460,167 @@
 
         </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="section third-section">
+      <header class="header">PRODUCTOS PREMIUN</header>
+
+      <section class="section services">
+        <article class="article">
+            <img src="img/2Acielo.webp" alt="Imagen de ejemplo">
+          <h5>Listas CIELO AZUL</h5>
+
+        </article>
+        <article class="article">
+            <img src="img/2Adorado.webp" alt="Imagen de ejemplo">
+          <h5> GOLDEN ROUS </h5>
+        </article>
+        <article class="article">
+            <img src="img/2Afranbu.webp" alt="Imagen de ejemplo">
+          <h5> ROUS FRANHBU</h5>
+        </article>
+        <article class="article">
+            <img src="img/2Arojapasiob.webp" alt="Imagen de ejemplo">
+          <h5> ROUS PASION </h5>
+        </article>
+        <article class="article">
+            <img src="img/2Arosaiblanco.webp" alt="Imagen de ejemplo">
+          <h5> ROUS WINK </h5>
+        </article>
+       
+        </sectionclass=>
+      </section>
+
+
+
+
+
+
+       <section class="section third-section">
+      <header class="header">PRODUCTOS PREMIUN</header>
+
+      <section class="section services">
+        <article class="article">
+            <img src="img/1Arosss.avif" alt="Imagen de ejemplo">
+          <h5>Listas CIELO AZUL</h5>
+
+        </article>
+        <article class="article">
+            <img src="img/1Arosasroja.avif" alt="Imagen de ejemplo">
+          <h5> GOLDEN ROUS </h5>
+        </article>
+        <article class="article">
+            <img src="img/1Arog.avif" alt="Imagen de ejemplo">
+          <h5> ROUS FRANHBU</h5>
+        </article>
+        <article class="article">
+            <img src="img/1Argf.avif" alt="Imagen de ejemplo">
+          <h5> ROUS PASION </h5>
+        </article>
+        <article class="article">
+            <img src="img/1Aramo.avif" alt="Imagen de ejemplo">
+          <h5> ROUS WINK </h5>
+        </article>
+       
+        </sectionclass=>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- BLOQUE 3 -->
-        <section class="section third-section ">
+        <section class="section third-section " id="seccion3">
 
             <section>
                 <header>
@@ -614,13 +831,179 @@
         </section>
 
         <!-- BLOQUE 4 -->
-        <section class="section fourth-section">
+        <section class="section fourth-section" id="seccion4">
             <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
+
+             <header>
+        <h1>Formulario De Registro</h1>
+        <p>todos sus datos no seran vendidos</p>
+    </header>
+
+    <!-- Barra de progreso general -->
+    <!-- Representa avance del proceso -->
+    <progress value="70" max="100"></progress>
+
+    <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
+
+        <!-- ====================== DATOS PERSONALES ====================== -->
+        <section>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <br><br>
+
+                <!-- input text con valor por defecto -->
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" name="nombre"  required minlength="3" placeholder="MICHEL ROBERT">
+                <br><br>
+
+                <!-- Maximo 8  caracteres -->
+                <label for="dni">DNI:</label>
+                <input id="dni" type="text" minlength="8" maxlength="8" pattern="\d{8}"
+                    title="Ingrese un DNI válido de 8 dígitos" required placeholder="73933331">
+
+                <br><br>
+
+                <!-- Mínimo 4 caracteres -->
+                <label for="edad">EDAD</label>
+                <input  id="edad" type="number" minlength="4" placeholder="20">
+                <br><br>
+                
+
+                <!-- email con valor inicial -->
+                <label for="email">Email:</label>
+                <input   id="email" type="email" name="email" required autocomplete="email" placeholder="at73933331@idat.pe">
+                <br><br>
+
+
+                <!-- radio con checked por defecto -->
+                <label>Género:</label>
+                <input type="radio" name="genero" value="F" checked> Femenino
+                <input type="radio" name="genero" value="M"> Masculino
+                <br><br>
+
+                <!-- Permite seleccionar varias opciones -->
+                <label> Preferncias de Rosas </label>
+                <br>
+                <input class="carrito_input"    id="ross1"   type="checkbox" name="habilidad" value="Petalos carmesis" checked> intensas
+                <br>
+                <input type="checkbox" name="habilidad" value="jazmin"> suaves
+                <br>
+                <input type="checkbox" name="habilidad" value="Sylverosa"> exoticas
+                <br>
+                <input type="checkbox" name="habilidad" value="Jisora">  otros
+                <br> <br>
+
+
+
+                <!-- Selección desde lista -->
+                <label>País:</label>
+
+                <select name="pais">
+                    <option value="pe" selected>Perú</option>
+                    <option value="co">Colombia</option>
+                    <option value="ar">Argentina</option>
+                </select>
+                <br><br>
+
+
+                <!-- Lista de sugerencias -->
+                <label for="ciudad">Ciudad:</label>
+
+                <select name="ciudad">
+                    <option value="pe" selected>tokio</option>
+                    <option value="co">berlin</option>
+                    <option value="ar">ancora</option>
+                </select>
+                <br><br>
+
+
+
+
+                
+                <!-- ====================== TIME ====================== -->
+                <!-- Permite seleccionar solo hora -->
+                <label>Hora de atención:</label>
+                <input type="time" value="09:00" min="08:00" max="18:00" step="300" required>
+                <br><br>
+
+                <!-- Selector de hora con límite mínimo -->
+                <label>Hora de entrada:</label>
+                <input type="time" name="horaInicio" value="08:15" min="08:00" max="8:30">
+                <br><br>
+
+                <label>Hora de salida :</label>
+                <input type="time" name="horaFin" value="18:10" min="18:00" max="18:45">
+                <br><br>
+                <!-- Permite seleccionar un color desde el selector del navegador -->
+
+               
+                <label>Teléfono:</label>
+                <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}">
+                <br><br>
+
+                <!-- Campo para contraseñas, oculta los caracteres -->
+                <label>Contraseña:</label>
+                <input type="password" name="clave" value="123456">
+                <br><br>
+
+                
+
+                <menu>
+                    <button type="submit">Guardar</button>
+                    <button type="reset">Cancelar</button>
+                </menu>
+
+            </fieldset>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- ====================== SELECT CON OPTGROUP ====================== -->
+        <section>
+            <fieldset>
+                <legend> IMFORMACION PARA ENVI0S </legend>
+
+                <label>Seleccione País:</label>
+                <select name="pais">
+                    <option value="">Seleccione</option>
+
+                    <!-- optgroup agrupa opciones -->
+                    <optgroup label="Sudamérica">
+                        <option value="pe" selected>Perú</option>
+                        <option value="ar">Argentina</option>
+                        <option value="co">Colombia</option>
+                    </optgroup>
+
+                    <optgroup label="Europa">
+                        <option value="de">Alemania</option>
+                        <option value="es">España</option>
+                    </optgroup>
+
+                </select>
+
+            </fieldset>
+        </section>
+
+    <!-- aside = contenido complementario -->
+    <aside>
+        <p>Formulario con todos los componentes relevantes de HTML5.</p>
+    </aside>
+
+  
 
         </section>
     </main>
     <footer class="footer"> <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
 
+
+
+        <!-- BLOQUE sin id -->
         <section class="columnas_5">
             <nav>
                 <h3>Ingresar información</h3>
