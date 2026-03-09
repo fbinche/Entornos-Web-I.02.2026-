@@ -60,6 +60,12 @@ body {
   background: #ffffff;   /* morado */
   border: 3px solid #ff7b00;
 }
+ .contenedor-flex{ 
+  display: flex;
+  align-self: stretch;
+
+
+} 
 
 .fourth-section {
   background: #ffffff;   /* azul oscuro */
@@ -70,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #ff7b00;   
-  border: 3px solid #141311;
+  border: 7px solid #ff7b00;
   justify-content: center;
   text-align: center;
 
@@ -99,7 +105,7 @@ body {
 
 /* FOOTER */
 .footer {
-  background: #f1d176;   /* gris */
+  background: #ff7b00;   /* gris */
   border: 3px solid #868e96;
   align-items: center;
   justify-content: center;
