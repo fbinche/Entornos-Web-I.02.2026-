@@ -273,7 +273,53 @@
 
         <section class="section fourth_section">
             <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
-            <h1>Agregar el fomulario aqui</h1>
+
+<form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
+
+    <!-- ====================== DATOS PERSONALES ====================== -->
+    <section>
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <!-- input text con valor por defecto -->
+            <label>Nombre:</label>
+            <input type="text" name="nombre" value="Yary Jimenez" required minlength="3">
+            <br><br>
+            <label>Apellido:</label>
+            <input type="text" name="apellido" placeholder="Ingrese su apellido completo">
+            <br><br>
+            <!-- Maximo 8  caracteres -->
+            <label>DNI:</label>
+            <input type="text" minlength="8" maxlength="8" pattern="\d{8}" title="Ingrese un DNI válido de 8 dígitos"
+                required>
+            <!-- email con valor inicial -->
+            <label>Email:</label>
+            <input type="email" name="email" required autocomplete="email">
+            <br><br>
+            <!-- radio con checked por defecto -->
+            <label>Género:</label>
+            <input type="radio" name="genero" value="F" checked> Femenino
+            <input type="radio" name="genero" value="M"> Masculino
+            <br><br>
+            <label>Ciudad:</label>
+
+            <input list="ciudades" value="Lima">
+
+            <datalist id="ciudades">
+                <option value="Lima">
+                <option value="Cusco">
+                <option value="Arequipa">
+            </datalist>
+            <label>Teléfono:</label>
+                <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}">
+                <br><br>
+        </fieldset>
+    </section>
+    <footer>
+        <!-- botón submit normal -->
+            <button type="submit">Enviar</button>
+    </footer>
+</form>
 
         </section>
 
@@ -285,7 +331,7 @@
 
             <!-- Sección Navegación -->
             <nav>
-                <h3>CAFE AROMA</h3>
+                <h3>Cafe aroma</h3>
 
                 <ul>
                     <li><a href="#">Nuestra historia</a></li>
