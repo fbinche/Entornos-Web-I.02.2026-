@@ -155,13 +155,20 @@
                 </footer>
             </div>
         </section>
+
         <!--categorias de los productos-->
         <section id="tercera_seccion" class="section third-section">
             <h2>Categorias:</h2>
             <p>Estas son nuestras categorias más populares:</p>
-            <!-- Categoría 1 -->
-            <section class="section first-section">
-                <header class="header">SALA Y COMEDOR</header>
+
+            <section class="section">
+                <!-- Categoría 1 -->
+
+                <header class="header">
+                    <h3>SALA Y COMEDOR</h3>
+                    <p>Productos para amoblar tu sala y comedor con estilo y calidad.</p>
+                </header>
+
                 <div class="section columnas_4">
                     <article class="article">
                         <img src="img/sala_comedor/silla_decorada.png" alt="Una silla decorada">
@@ -192,8 +199,11 @@
                         <button class="boton_comprar">Comprar ahora</button>
                     </article>
                 </div>
+
                 <!-- Categoría 2 -->
+
                 <header class="header">DORMITORIO</header>
+
                 <div class="section columnas_4">
                     <article class="article">
                         <img src="img/dormitorio/cama_blanca.png" alt="Una cama de color blanco">
@@ -225,7 +235,9 @@
                             <button class="boton_comprar">Comprar ahora</button>
                         </article>
                 </div>
+
                 <!-- Categoría 3 -->
+
                 <header class="header">OFICINA</header>
                 <div class="section columnas_4">
                     <article class="article">
@@ -259,10 +271,13 @@
                     </article>
                 </div>
                 <footer>
-                    <button>Ver más categorías</button>
+                    <p>Puedes explorar más categorías en nuestro sitio web. <a href="#categorias">Ver más categorías</a>
+                    </p>
+
                 </footer>
             </section>
         </section>
+        <!--FORMULARIO-->
         <section id="cuarta_seccion" class="section fourth-section">
             <!-- Información (address es para proporcionar información de contacto a los buscadores)-->
             <article>
@@ -296,7 +311,7 @@
                     </p>
 
                 </address>
-                
+
             </article>
 
         </section>
@@ -305,45 +320,54 @@
     <!-- Footer -->
 
     <footer class="footer">
+        <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
 
-        <!-- Sección correo electrónico -->
-        <section>
-            <h3>Para las últimas noticias de Viva Mueble, ingresa aquí tu correo electrónico.</h3>
+        <section class="columnas_3">
 
-            <form method="post">
-                <label for="email"><i class="bi bi-envelope"></i>Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-                <button type="submit">ENVIAR</button>
-            </form>
-        </section>
+            <!-- Sección Navegación -->
+            <nav>
+                <h3>Viva Mueble</h3>
 
-        <!-- Sección Navegación -->
-        <nav>
-            <h3>Viva Mueble</h3>
+                <ul>
+                    <li><a href="#primera_seccion"><i class="bi bi-building"></i>Sobre Nosotros</a></li>
+                    <li><a href="#segunda_seccion"><i class="bi bi-star-fill"></i>Productos Populares</a></li>
+                    <li><a href="#tercera_seccion"><i class="bi bi-list-stars"></i>Categorias</a></li>
+                    <li><a href="#cuarta_seccion"><i class="bi bi-telephone"></i>Contacto</a></li>
+                </ul>
+            </nav>
 
-            <ul>
-                <li><a href="#primera_seccion"><i class="bi bi-building"></i>Sobre Nosotros</a></li>
-                <li><a href="#segunda_seccion"><i class="bi bi-star-fill"></i>Productos Populares</a></li>
-                <li><a href="#tercera_seccion"><i class="bi bi-list-stars"></i>Categorias</a></li>
-                <li><a href="#cuarta_seccion"><i class="bi bi-telephone"></i>Contacto</a></li>
-            </ul>
-        </nav>
+            <!-- Parte inferior -->
+            <section>
+                <div>
+                    <h4>Viva Mueble</h4>
+                    <p>&copy; 2026 Viva Mueble. Todos los derechos reservados.</p>
+                </div>
 
-        <!-- Parte inferior -->
-        <section>
-            <div>
-                <h4>Viva Mueble</h4>
-                <p>&copy; 2026 Viva Mueble. Todos los derechos reservados.</p>
-            </div>
+                <div>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i>Instagram</a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a>
+                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a>
+                </div>
+            </section>
+            <!-- Sección correo electrónico -->
+            <section>
+                <h3>Para las últimas noticias de Viva Mueble, ingresa aquí tu correo electrónico.</h3>
 
-            <div>
-                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i>Instagram</a>
-                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a>
-                <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a>
-            </div>
+                <form method="post">
+                    <label for="email"><i class="bi bi-envelope"></i>Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </section>
+
         </section>
 
     </footer>
 </body>
+
+<!--NOTA TENTATIVA HTML  : 18
+ +2 ADICIONAR FORMULARIO
+ +1 MEJORAR SEMANTICA DE LA PAGINA (TOMAR COMO REFERENCIA LA CATEGORIA 1 : SALA Y COMEDOR)
+ -->
 
 </html>

@@ -9,8 +9,25 @@
 
 <body>
 
-    <header class="header">PLANES DE INTERNET</header>
+    <header class="header">
+        <h1>PLANES DE INTERNET </h1>
+        <nav>
+            <ul>
+                <li><a href="#">Seccion 1</a></li>
+                <li><a href="#beneficios">Por que elegirnos?</a></li>
+                <li><a href="#">Seccion 3</a></li>
+                <li><a href="#">Seccion 4</a></li>
+            </ul>
+        </nav>
+    </header>
 
+
+    <!--RECOMENDACION:A TODAS LAS SECCIONES AGREGAR 
+                 - UN HEADER QUE EXPLIQUE DE QUE SE TRATA LA SECCION
+                 - EL CONTENIDO ESTE PUEDE ESTAR DENTRO DE UNA SECCION O TODO FUERA DEPENDIENDO DE LA CANTIDAD DE ELEMENTOS QUE TENGAS
+                 - UN FOOTER CON INFORMACION ADICIONAL O UN LLAMADO A LA ACCION, SI NO TIENES NADA QUE PONER EN EL FOOTER MEJOR NO LO PONGAS
+                -->
+    <!--RECOMENDACION: NO USAR ELEMENTOS DIV USAR SEMANTICA-->
     <main class="main">
         <!-- 23/02 Respetar las secciones , Planes e details info -->
         <section class="section hero first-section">
@@ -20,12 +37,12 @@
 
                 <card class="card">
                     <h1>PLAN BASICO</h1>
-                        <ul>
-                            <li>100/300mbps por minuto</li>
-                            <li>Navegación y redes sociales</li>
-                            <li>Ideal para uso individual</li>
-                        </ul>
-                    
+                    <ul>
+                        <li>100/300mbps por minuto</li>
+                        <li>Navegación y redes sociales</li>
+                        <li>Ideal para uso individual</li>
+                    </ul>
+
                     <details close>
                         <p>
                             <hr>inicia tu plan basico con nosotros y disfruta de una conexión rápida y confiable para
@@ -144,62 +161,150 @@
 
         </section>
 
-<!--SECCION 2-->
-        <section class="section second-section">
-        <div class="contenedor-flex">
-        <div class="=imagen">
-        <img src="https://1.bp.blogspot.com/-hKasJnmrBSc/WDiF0PgkuWI/AAAAAAAAAAU/wwsb2Jc6wdEcZ1HEGaOkHLHCmP9XtsyrwCLcB/s1600/Importancia-de-tener-acceso-a-internet.jpg" alt="beneficios del interned">
+        <!--SECCION 2-->
+        <section class="section second-section" id="beneficios">
+            <header>
+                <h2>¿Por qué elegirnos?</h2>
+                <p>
+                    Somos la mejor opción para tu conexión a internet, ofreciendo planes adaptados a tus necesidades,
+                    velocidad confiable y un servicio al cliente excepcional. Con nosotros, disfrutarás de una
+                    experiencia en línea sin interrupciones, soporte técnico dedicado y beneficios exclusivos que te
+                    mantendrán conectado de manera eficiente y segura. ¡Elige la calidad y la confianza con nuestro
+                    servicio de internet!
 
-        </div>
-        <div class="article">
-         <h2>BENEFICIOS </h2>
-        <hr>
-        <p>    Tenemos beneficios para cada usuario que decida confiar en nuestra empresa de internet. 
-           Ofrecemos conexión estable y de alta velocidad, atención al cliente personalizada, 
-               planes adaptados a cada necesidad y precios accesibles. 
-          Además, garantizamos seguridad en la navegación, soporte técnico oportuno 
-              y una experiencia digital sin interrupciones para que disfrutes de tus actividades 
-          diarias, trabajo, estudio o entretenimiento con total confianza.
-        
-        </p>
-        
-        <dt> -PLAN BASICO- </dt>
+                </p>
+            </header>
+            <section class="card columnas_2">
 
-        <dd> paga los primeros meses 2 con un descuento del 25% </dd>
+                <section aria-labelledby="beneficios-title">
+                    <header>
+                        <h2 id="beneficios-title">Beneficios</h2>
+                        <hr>
+                    </header>
+                    <figure>
+                        <img src="https://1.bp.blogspot.com/-hKasJnmrBSc/WDiF0PgkuWI/AAAAAAAAAAU/wwsb2Jc6wdEcZ1HEGaOkHLHCmP9XtsyrwCLcB/s1600/Importancia-de-tener-acceso-a-internet.jpg"
+                            alt="Beneficios del internet">
+                    </figure>
+                </section>
 
-        <dt> -PLAN INTERMEDIO- </dt>
 
-        <dd>paga los primeros 3 meses con un descuento del 45%</dd>
+                <section class="card">
 
-        <dt> -PLAN VIP- </dt>
+                    <details open>
+                        <h3>Planes disponibles</h3>
 
-        <dd>paga los primeros 5 meses con un descuento del 50%</dd>
+                        <dl>
 
-        <dt> -PLAN EMPRESARIAL- </dt>
+                            <dt>Plan Básico</dt>
+                            <dd>Paga los primeros 2 meses con un descuento del 25%.</dd>
 
-        <dd>paga los primeros 10 meses con el descuento del 50%</dd>
-        
-         </div>
+                            <dt>Plan Intermedio</dt>
+                            <dd>Paga los primeros 3 meses con un descuento del 45%.</dd>
 
-        </div>
+                            <dt>Plan VIP</dt>
+                            <dd>Paga los primeros 5 meses con un descuento del 50%.</dd>
 
+                            <dt>Plan Empresarial</dt>
+                            <dd>Paga los primeros 10 meses con un descuento del 50%.</dd>
+
+                        </dl>
+
+                    </details>
+
+                </section>
+
+
+
+
+            </section>
+
+            <footer class="card">
+
+                <p>
+                    Tenemos beneficios para cada usuario que decida confiar en nuestra empresa de
+                    internet.
+                    Ofrecemos conexión estable y de alta velocidad, atención al cliente personalizada,
+                    planes adaptados a cada necesidad y precios accesibles.
+                </p>
+
+                <p>
+                    Además, garantizamos seguridad en la navegación, soporte técnico oportuno
+                    y una experiencia digital sin interrupciones para que disfrutes de tus actividades
+                    diarias, trabajo, estudio o entretenimiento con total confianza.
+                </p>
+            </footer>
 
         </section>
-<!--SECCION3-->
+
+        </div>
+        </section>
+        <!--SECCION3-->
         <section class="section third-section">
-          <section>
-        <card class="article"
-       
-    
+        </section>
 
         <section class="section  fourth-section">
+            <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
 
         </section>
 
     </main>
 
-    <footer class="footer">COMENTARIOS</footer>
+    <footer class="footer"> <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
+
+        <section class="columnas_4">
+
+            <!-- Sección Navegación -->
+            <nav>
+                <h3>Ingresar información</h3>
+
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Productos Populares</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Ingresar información</h3>
+
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Productos Populares</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Ingresar información</h3>
+
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Productos Populares</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <div>
+                    <h4>Titulo</h4>
+                    <p>&copy; 2026 Viva Mueble. Todos los derechos reservados.</p>
+                </div>
+
+                <div>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i>Instagram</a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a>
+                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a>
+                </div>
+            </section>
+
+    </footer>
 
 </body>
-
+<!--NOTA TENTATIVA HTML  : 13
+ +2 ADICIONAR FORMULARIO
+ +1 ADICIONAR CONTENIDO AL FOOTER
+ +1 ADICIONAR NAVEGACION DE LOS ENLACES
+ +3 AGREGAR SECCION 3 , TOMAR COMO REFERENCIA LA SECCION 1 Y 2 (NO USAR DIVS USAR SEMANTICA)
+ -->
 </html>

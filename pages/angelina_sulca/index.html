@@ -8,95 +8,137 @@
 </head>
 
 <body>
-  
-    <header class="cabesera1"> Ropa de Calidad Peruana para Toda la Familia </header>
 
-        
-    <main class="main"  >
+    <header class="header">
+
+        <!--RECOMENDACION: AGREGAR UNA BARRA DE NAVEGACION INTERNA-->
+
+        <figure>
+
+            <img src="/assets/img/logo_nova_market.png" alt="Logo de Nova Market" width="150">
+            <h1>Ropa de Calidad Peruana para Toda la Familia</h1>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Temporadas</a></li>
+                <li><a href="#">Carrito 🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--RECOMENDACION: VERIFICAR LA ESTRUCTURA DEL MAIN , NO SE PUEDE TENER 2 MAIN EN LA PÁGINA-->
+
+    <main class="main">
 
         <!-- 🔥 SECCIÓN PRINCIPAL (BLOQUE 1) -->
-        <section class="section hero first-section">
-            <article>
-                <h1>Bienvenidos a Nova Market</h1>
-                <p>Tu destino de moda cómoda para cada etapa de la vida</p>
-            </article>
-            </header>
-            <br>
-        </section>
+        <section class="section first-section">
 
-        <!-- 🔥 SECCIÓN DE NAVEGACION -->
-            <section class="hero section first.one_section">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Categorías</a></li>
-                        <li><a href="#">Temporadas</a></li>
-                        <li><a href="#">Carrito 🛒</a></li>
-                    </ul>
-                </nav>
-            </section>
-
-
-        <!-- 🔥 BANNER PRINCIPAL -->
-        <section class="banner">
+            <h1>Bienvenidos a Nova Market</h1>
+            <p>Tu destino de moda cómoda para cada etapa de la vida</p>
             <h2>COLECCIÓN VERANO 2026</h2>
             <p>Descubre nuestras prendas 100% algodón premium</p>
             <button>Ver colección</button>
         </section>
 
-        <main class="main">
-
         <!-- 🔥 CATEGORÍAS PRINCIPALES (BLOQUE 2) -->
- 
-        <section class="section hero first-section">
-            <h2>COLECCIÓN VERANO 2026</h2>
+        <!--RECOMENDACION: SI SE USA IA PARA GENERAR REVISAR EL CODIGO ANTES DE COPIAR & PEGAR-->
+        <!--RECOMENDACION:A TODAS LAS SECCIONES AGREGAR 
+                 - UN HEADER QUE EXPLIQUE DE QUE SE TRATA LA SECCION
+                 - EL CONTENIDO ESTE PUEDE ESTAR DENTRO DE UNA SECCION O TODO FUERA DEPENDIENDO DE LA CANTIDAD DE ELEMENTOS QUE TENGAS
+                 - UN FOOTER CON INFORMACION ADICIONAL O UN LLAMADO A LA ACCION, SI NO TIENES NADA QUE PONER EN EL FOOTER MEJOR NO LO PONGAS
+                -->
+        <section class="section second-section">
 
-              <ul class="columnas_3"></ul>
-    
-             <div class="grid-categorias">
-                 <div class="card">
-                     <span class="tag nuevo">Nuevo</span>
-                     <img src="img/mujer.jpg" alt="Mujer" width="125">
-                     <h3>Mujer</h3>
-                     <p class="precio">S/ 89.90</p>
-                     <button class="btn-secundario">Agregar al carrito</button>
-                 </div>
+            <header>
+                <h2>COLECCIÓN VERANO 2026</h2>
 
-                 <div class="card">
-                     <span class="tag oferta">-20%</span>
-                     <img src="img/maternidad.jpg" alt="Maternidad" width="125">
-                     <h3>Maternidad</h3>
-                     <p class="precio">S/ 109.90</p>
-                     <button class="btn-secundario">Agregar al carrito</button>
-                 </div>
+                <p> descubre nuestros nuevos productos de verano, diseñados para mantenerte fresco y cómodo durante la
+                    temporada más cálida del año. Nuestra colección incluye prendas ligeras, colores vibrantes y estilos
+                    modernos que se adaptan a todas las edades y gustos. ¡Prepárate para disfrutar del verano con estilo
+                    y comodidad!
+                </p>
+            </header>
 
-                 <div class="card">
-                     <img src="img/hombre.jpg" alt="Hombre" width="125">
-                     <h3>Hombre</h3>
-                     <p class="precio">S/ 79.90</p>
-                     <button class="btn-secundario">Agregar al carrito</button>
-                 </div>
-            
-                 <div class="card">
-                     <img src="img/bebe.jpg" alt="Bebé" width="125">
-                     <h3>Bebé</h3>
-                     <p class="precio">S/ 59.90</p>
-                     <button class="btn-secundario">Agregar al carrito</button>
-                 </div>
+            <!--RECOMENDACION: NO USAR ELEMENTOS DIV USAR SEMANTICA-->
 
-                 <div class="card">
-                     <img src="img/niños.jpg" alt="Niños" width="125">
-                     <h3>Niños</h3>
-                     <p class="precio">S/ 69.90</p>
-                     <button class="btn-secundario">Agregar al carrito</button>
-                 </div>
-             </ul>
-             </div>
+            <section class="columnas_5">
+                <!--RECOMENDACION: USAR COMENTARIOS PARA UBICAR CODIGO -->
+                <!--COLECCIÓN 1-->
+                <card class="card">
+                    <header>
+                        <h3>Producto: Mujer</h3>
+                        <p><mark>Descuento 20%</mark></p>
+                    </header>
+
+                    <figure>
+                        <img src="img/mujer.jpg" alt="Prenda para mujer" width="300">
+                        <figcaption>Producto disponible</figcaption>
+                    </figure>
+
+                    <section>
+                        <p><strong>Precio:</strong> S/ 89.90</p>
+                    </section>
+
+                    <footer>
+                        <button>Agregar al carrito</button>
+                    </footer>
+                </card>
+                <!--COLECCIÓN 2-->
+                <article class="article">
+                    <header>
+                        <h3>Maternidad</h3>
+                        <p><strong>-20% Oferta</strong></p>
+                    </header>
+
+                    <figure>
+                        <img src="img/maternidad.jpg" alt="Producto de maternidad" width="125">
+                        <figcaption>Producto en descuento</figcaption>
+
+                    </figure>
+                    <br>
+                    <section>
+                        <p><strong>Precio:</strong> S/ 109.90</p>
+                    </section>
+
+                    <footer>
+                        <button>Agregar al carrito</button>
+                    </footer>
+
+                </article>
+
+                <div class="card">
+                    <img src="img/hombre.jpg" alt="Hombre" width="125">
+                    <h3>Hombre</h3>
+                    <p class="precio">S/ 79.90</p>
+                    <button class="btn-secundario">Agregar al carrito</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/bebe.jpg" alt="Bebé" width="125">
+                    <h3>Bebé</h3>
+                    <p class="precio">S/ 59.90</p>
+                    <button class="btn-secundario">Agregar al carrito</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/niños.jpg" alt="Niños" width="125">
+                    <h3>Niños</h3>
+                    <p class="precio">S/ 69.90</p>
+                    <button class="btn-secundario">Agregar al carrito</button>
+                </div>
+            </section>
+
+
+            <footer>
+                <p>¡Compra ahora y disfruta de la comodidad y estilo de nuestra colección de verano!</p>
+                <button>Ver más Colecciónes</button>
+            </footer>
         </section>
-          
+
         <!-- 🔥 TEMPORADAS (BLOQUE 3) -->
         <section class="section third-section">
-    <       <h2>Comprar por Temporada</h2>
+            <h2>Comprar por Temporada</h2>
             <div class="grid-temporadas">
                 <div>🌸 Primavera
                     <img src="img/primavera.jpg" width="125">
@@ -114,12 +156,12 @@
         </section>
 
         <!-- 🔥 ESTRUCTURA PARA FUTURO CARRUSEL -->
-        <section class="section two-columns fourth-section">
+        <section class="section fourth-section">
             <h2>Productos Destacados</h2>
             <div class="slider">
                 <!-- Aquí luego va JS -->
 
-              <ul class="columnas_3"></ul>
+                <ul class="columnas_5"></ul>
 
                 <div class="slide">Producto 1 para ancianos
                     <img src="img/ancianos.jpg" width="100">
@@ -134,11 +176,45 @@
         </section>
 
 
-</main>
+        <section class="section fourth-section">
+            <h2>Productos Destacados</h2>
+            <div class="slider">
+                <!-- Aquí luego va JS -->
 
-<footer>
-    <p>© 2026 Nova Market - Todos los derechos reservados</p>
-</footer>
+                <ul class="columnas_5"></ul>
+
+                <div class="slide">Producto 1 para ancianos
+                    <img src="img/ancianos.jpg" width="100">
+                </div>
+                <div class="slide">Producto 2 para embarazos avanzados
+                    <img src="img/embarazada.jpg" width="100">
+                </div>
+                <div class="slide">Producto 3 para adolecentes
+                    <img src="img/adolecentes.jpg" width="100">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="formulario">
+            <!--RECOMENDACION: AGREGAR EL FORMULARIO DE CONTACTO AQUÍ-->
+        </section>
+    </main>
+
+    <footer>
+
+
+        <p>© 2026 Nova Market - Todos los derechos reservados</p>
+    </footer>
 
 </body>
+
+    <!--NOTA TENTATIVA HTML  : 14
+ +2 ADICIONAR FORMULARIO
+ +1 ADICIONAR CONTENIDO AL FOOTER
+ +1 ADICIONAR NAVEGACION DE LOS ENLACES
+ +3 MEJORAR SECCIONES , TOMAR COMO REFERENCIA LA SECCION 1
+ +1 QUITAR TODAS LAS ETIQUETAS DIV Y USAR SEMANTICA
+ +1 QUITAR TODAS LAS CLASS QUE NO ESTEN EN styles_global CSS
+ -->
 </html>

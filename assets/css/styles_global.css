@@ -10,17 +10,19 @@ body {
   background: #f5f5f5;
 }
 
-/* HEADER */
 .header {
   background: #cce5ff;   /* azul */
   border: 3px solid #339af0;
   height: 80px;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
 }
 
+.header ul {
+  display: flex;
+  gap: 20px;
+}
 
 
 /* MAIN */
@@ -41,37 +43,21 @@ body {
 }
 
 .first-section {
-<<<<<<< HEAD
-  background: #eb3407;   /* gris claro */
-=======
-  background: #ffffff;   /* gris claro */
->>>>>>> italo_chocce
+  background: #eb3407; 
   border: 3px solid #0523e7;
 }
 
 .second-section {
-<<<<<<< HEAD
-  background: #cd7203;   /* naranja */
+  background: #cd7203;   
   border: 3px solid #d35400;
 } 
 .third-section {
-  background: #c1d207;   /* morado */
-=======
-  background: #ffffff;   /* naranja */
+  background: #c1d207;   
   border: 3px solid #d35400;
 } 
-.third-section {
-  background: #ffffff;   /* morado */
->>>>>>> italo_chocce
-  border: 3px solid #5e38dc;
-}
 
 .fourth-section {
-<<<<<<< HEAD
   background: #0d7d13;   /* azul oscuro */
-=======
-  background: #ffffff;   /* azul oscuro */
->>>>>>> italo_chocce
   border: 3px solid #1b2838;      
 }
 
@@ -106,12 +92,9 @@ body {
 }
 
 /* FOOTER */
-.footer {
-  background: #f1d176;   /* gris */
+.footer{
+  background: #f1d176;
   border: 3px solid #868e96;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
 }
 
 /* FORM */
@@ -373,3 +356,15 @@ body {
 nav {
   display: block;
 }
+
+ul li img.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+

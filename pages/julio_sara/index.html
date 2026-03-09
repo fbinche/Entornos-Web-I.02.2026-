@@ -9,57 +9,326 @@
 
 <body>
 
-    <header class="header">Elite Graphics Shop</header>
+    <header class="header">
+        <h1>
+            Elite Graphics Shop
+        </h1>
+        <!--RECOMENDACION: AGREGAR UNA BARRA DE NAVEGACION INTERNA-->
+        <nav>
+            <ul>
+                <li><a>Seccion 1</a></li>
+                <li><a>Seccion 2</a></li>
+                <li><a href="#tarjetas__graficas">Tarjetas Graficas</a></li>
+                <li><a>Seccion 4</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="main">
+        <!--SECCION 1-->
 
-        <section class="section hero first-section">
-            <header class="header">
+        <section class="section first-section">
+            <header class="card">
                 <h2>Nvidia</h2>
+                <p>
+                    NVIDIA GTC es la principal conferencia global sobre inteligencia artificial, donde desarrolladores,
+                    investigadores y líderes empresariales se reúnen para explorar la próxima ola de innovación en IA.
+                    Desde la IA física y las fábricas de IA hasta la IA agéntica y la inferencia, GTC 2026 mostrará los
+                    avances que están transformando todas las industrias.
+                </p>
             </header>
-            <iframe width="560" height="315" 
-src="https://www.youtube.com/embed/SRiV0RgHWI0?autoplay=1&loop=1&playlist=SRiV0RgHWI0&mute=1"
-title="GeForce RTX 50 Series" 
-frameborder="0" 
-allow="autoplay; encrypted-media"
-allowfullscreen>
-</iframe>
-            
-                        <p>
-          
+
+            <section class="columnas_3">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/SRiV0RgHWI0?autoplay=1&loop=1&playlist=SRiV0RgHWI0&mute=1"
+                    title="GeForce RTX 50 Series" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/SRiV0RgHWI0?autoplay=1&loop=1&playlist=SRiV0RgHWI0&mute=1"
+                    title="GeForce RTX 50 Series" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/SRiV0RgHWI0?autoplay=1&loop=1&playlist=SRiV0RgHWI0&mute=1"
+                    title="GeForce RTX 50 Series" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </section>
+
+            <footer>
+                <p>
+                    Únete a nosotros en el campus de GTC, en distintos espacios del centro de San José, para disfrutar
+                    de sesiones inspiradoras, capacitaciones prácticas y oportunidades para conectarte con expertos y
+                    colegas, y así formar parte de la experiencia única de GTC.
+                </p>
+
+                <a href="#">
+                    Conoce más sobre Nvidia GTC 2026
+                </a>
+            </footer>
+        </section>
+        <!--SECCION 2-->
+
+        <section class="section second-section">
+            <header>
+                <h2 id="sesiones-title">Sesiones Destacadas</h2>
+                <p>
+                    Descubre las conferencias, talleres y presentaciones más relevantes del evento.
+                    Explora las últimas innovaciones en inteligencia artificial, desarrollo tecnológico
+                    y soluciones que están transformando diferentes industrias.
+                </p>
+            </header>
+
+            <section class="columnas_4">
+                <!-- SESIÓN 1 -->
+                <article class="card">
+
+                    <header>
+                        <p><mark>Talk</mark> <small>In-Person</small></p>
+                        <h3>Cómo los modelos de mundo abierto impulsan la IA física</h3>
+                        <time datetime="2026-03-19T09:00">Jueves 19 de marzo | 9:00 a.m. - 9:40 a.m.</time>
+                    </header>
+
+                    <figure>
+                        <img src="img/imagendemo.jpg" alt="Sesión sobre modelos de inteligencia artificial">
+                        <figcaption>Avances en modelos de IA para entornos reales.</figcaption>
+                    </figure>
+
+                    <p>
+                        Exploración de modelos capaces de comprender el mundo físico mediante datos
+                        fotorrealistas y razonamiento avanzado para nuevas aplicaciones de IA.
+                    </p>
+
+                    <footer>
+                        <a href="#">Ver detalles de la sesión</a>
+                    </footer>
+
+                </article>
+
+
+                <!-- SESIÓN 2 -->
+                <article class="card">
+
+                    <header>
+                        <p><mark>Workshop</mark> <small>In-Person</small></p>
+                        <h3>Entrenamiento práctico en desarrollo de modelos generativos</h3>
+                        <time datetime="2026-03-19T11:00">Jueves 19 de marzo | 11:00 a.m. - 11:50 a.m.</time>
+                    </header>
+
+                    <figure>
+                        <img src="img/imagendemo.jpg" alt="Taller de desarrollo de inteligencia artificial">
+                        <figcaption>Taller práctico para desarrolladores.</figcaption>
+                    </figure>
+
+                    <p>
+                        Sesión interactiva donde los asistentes aprenderán a construir modelos
+                        generativos utilizando herramientas modernas de IA.
+                    </p>
+
+                    <footer>
+                        <a href="#">Ver detalles de la sesión</a>
+                    </footer>
+
+                </article>
+
+
+                <!-- SESIÓN 3 -->
+                <article class="card">
+
+                    <header>
+                        <p><mark>Panel</mark> <small>Hybrid</small></p>
+                        <h3>El futuro de las fábricas de inteligencia artificial</h3>
+                        <time datetime="2026-03-20T10:00">Viernes 20 de marzo | 10:00 a.m. - 10:45 a.m.</time>
+                    </header>
+
+                    <figure>
+                        <img src="img/imagendemo.jpg" alt="Panel sobre infraestructura de inteligencia artificial">
+                        <figcaption>Infraestructura y escalabilidad en IA.</figcaption>
+                    </figure>
+
+                    <p>
+                        Expertos del sector analizan cómo la infraestructura especializada permitirá
+                        escalar sistemas de inteligencia artificial a nivel industrial.
+                    </p>
+
+                    <footer>
+                        <a href="#">Ver detalles de la sesión</a>
+                    </footer>
+
+                </article>
+
+
+                <!-- SESIÓN 4 -->
+                <article class="card">
+
+                    <header>
+                        <p><mark>Keynote</mark> <small>Main Stage</small></p>
+                        <h3>Innovaciones que transformarán la industria con IA</h3>
+                        <time datetime="2026-03-20T14:00">Viernes 20 de marzo | 2:00 p.m. - 3:00 p.m.</time>
+                    </header>
+
+                    <figure>
+                        <img src="img/imagendemo.jpg" alt="Conferencia principal sobre inteligencia artificial">
+                        <figcaption>Conferencia magistral sobre el futuro de la IA.</figcaption>
+                    </figure>
+
+                    <p>
+                        Presentación principal sobre los avances más recientes en inteligencia artificial
+                        y su impacto en sectores como salud, transporte y tecnología.
+                    </p>
+
+                    <footer>
+                        <a href="#">Ver detalles de la sesión</a>
+                    </footer>
+
+                </article>
+                <!-- SESIÓN 5 -->
+                <article class="card">
+
+                    <header>
+                        <p><mark>Keynote</mark> <small>Main Stage</small></p>
+                        <h3>Innovaciones que transformarán la industria con IA</h3>
+                        <time datetime="2026-03-20T14:00">Viernes 20 de marzo | 2:00 p.m. - 3:00 p.m.</time>
+                    </header>
+
+                    <figure>
+                        <img src="img/imagendemo.jpg" alt="Conferencia principal sobre inteligencia artificial">
+                        <figcaption>Conferencia magistral sobre el futuro de la IA.</figcaption>
+                    </figure>
+
+                    <p>
+                        Presentación principal sobre los avances más recientes en inteligencia artificial
+                        y su impacto en sectores como salud, transporte y tecnología.
+                    </p>
+
+                    <footer>
+                        <a href="#">Ver detalles de la sesión</a>
+                    </footer>
+
+                </article>
+                <!-- SESIÓN 4 -->
+                <article class="card">
+
+                    <header>
+                        <p><mark>Keynote</mark> <small>Main Stage</small></p>
+                        <h3>Innovaciones que transformarán la industria con IA</h3>
+                        <time datetime="2026-03-20T14:00">Viernes 20 de marzo | 2:00 p.m. - 3:00 p.m.</time>
+                    </header>
+
+                    <figure>
+                        <img src="img/imagendemo.jpg" alt="Conferencia principal sobre inteligencia artificial">
+                        <figcaption>Conferencia magistral sobre el futuro de la IA.</figcaption>
+                    </figure>
+
+                    <p>
+                        Presentación principal sobre los avances más recientes en inteligencia artificial
+                        y su impacto en sectores como salud, transporte y tecnología.
+                    </p>
+
+                    <footer>
+                        <a href="#">Ver detalles de la sesión</a>
+                    </footer>
+
+                </article>
+                <!-- SESIÓN 4 -->
+                <article class="card">
+
+                    <header>
+                        <p><mark>Keynote</mark> <small>Main Stage</small></p>
+                        <h3>Innovaciones que transformarán la industria con IA</h3>
+                        <time datetime="2026-03-20T14:00">Viernes 20 de marzo | 2:00 p.m. - 3:00 p.m.</time>
+                    </header>
+
+                    <figure>
+                        <img src="img/imagendemo.jpg" alt="Conferencia principal sobre inteligencia artificial">
+                        <figcaption>Conferencia magistral sobre el futuro de la IA.</figcaption>
+                    </figure>
+
+                    <p>
+                        Presentación principal sobre los avances más recientes en inteligencia artificial
+                        y su impacto en sectores como salud, transporte y tecnología.
+                    </p>
+
+                    <footer>
+                        <a href="#">Ver detalles de la sesión</a>
+                    </footer>
+
+                </article>
+                <!-- SESIÓN 4 -->
+                <article class="card">
+
+                    <header>
+                        <p><mark>Keynote</mark> <small>Main Stage</small></p>
+                        <h3>Innovaciones que transformarán la industria con IA</h3>
+                        <time datetime="2026-03-20T14:00">Viernes 20 de marzo | 2:00 p.m. - 3:00 p.m.</time>
+                    </header>
+
+                    <figure>
+                        <img src="img/imagendemo.jpg" alt="Conferencia principal sobre inteligencia artificial">
+                        <figcaption>Conferencia magistral sobre el futuro de la IA.</figcaption>
+                    </figure>
+
+                    <p>
+                        Presentación principal sobre los avances más recientes en inteligencia artificial
+                        y su impacto en sectores como salud, transporte y tecnología.
+                    </p>
+
+                    <footer>
+                        <a href="#">Ver detalles de la sesión</a>
+                    </footer>
 
                 </article>
 
             </section>
-        </section>
-
-        <section class="section second-section">
-            <p>2DA SECCION</p>
-        </section>
-        
-            <p>3RA SECCION</p>
-        </section>
-        <br>
-            <section class="section columnas_4">
 
 
-                <article class="card article">
-                    <p>$2,200</p>
-                    <figure>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0eDuqj7q23NNQvdN0qa_qhU4Z8zDwfDQWdA&s"
-                            alt="Tarjeta gráfica NVIDIA GeForce RTX Serie 50">
-                    </figure>
+            <!-- FOOTER PRINCIPAL -->
+            <footer>
+                <p>
+                    Estas sesiones forman parte del programa oficial del evento.
+                    Consulta la agenda completa para conocer todas las conferencias disponibles.
+                </p>
+
+                <a href="#">Ver programa completo</a>
+            </footer>
+        </section>
+
+        <!--SECCION 3-->
+        <section class="section third-section" id="tarjetas__graficas">
+
+            <header>
+                <h2 id="tarjetas graficas">Tarjetas Gráficas Destacadas</h2>
+                <p>
+                    Explora nuestra selección de tarjetas gráficas de última generación, diseñadas para ofrecer un
+                    rendimiento excepcional en juegos, diseño gráfico y aplicaciones de inteligencia artificial. Desde
+                    la serie GeForce RTX 50 hasta opciones más asequibles, encuentra la tarjeta gráfica perfecta para
+                    tus necesidades.
+                </p>
+            </header>
+            <section class="columnas_4">
+                <!--ARTICULO 1-->
+                <article class="card">
 
                     <header>
                         <p class="categoria">GeForce RTX™ Serie 50</p>
                         <h2>Tarjetas Gráficas y Desktop GeForce RTX™ Serie 50</h2>
                     </header>
 
-                    <section>
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0eDuqj7q23NNQvdN0qa_qhU4Z8zDwfDQWdA&s"
+                            alt="Tarjeta gráfica NVIDIA GeForce RTX Serie 50">
+                        <figcaption>GPU NVIDIA de alto rendimiento para gaming y creación.</figcaption>
+                    </figure>
+
+                    <details>
                         <p>
-                            
+                            Experimenta gráficos de última generación con la arquitectura más reciente
+                            de NVIDIA. Diseñada para gamers, creadores de contenido y aplicaciones de
+                            inteligencia artificial que requieren alto rendimiento.
                         </p>
-                    </section>
+                    </details>
+
+                    <p>
+                        Precio: <data value="2200">$2,200</data>
+                    </p>
 
                     <footer>
                         <a href="#" aria-label="Ver más sobre GeForce RTX Serie 50">
@@ -68,31 +337,41 @@ allowfullscreen>
                     </footer>
 
                 </article>
-                <article class="card article">
-                    <p>$2000</p>
-                    <figure>
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_756670-MLU69392432695_052023-O.webp"
-                            alt="Tarjeta gráfica NVIDIA GeForce RTX Serie 50">
-                    </figure>
-
+                <!--ARTICULO 2-->
+                <article class="card">
                     <header>
                         <p class="categoria">GeForce RTX™ Serie 40</p>
                         <h2>Tarjetas Gráficas y Desktop GeForce RTX™ Serie 40</h2>
                     </header>
 
-                    <section>
-                        <p>
-                            
-                        </p>
-                    </section>
 
+                    <figure>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_756670-MLU69392432695_052023-O.webp"
+                            alt="Tarjeta gráfica NVIDIA GeForce RTX Serie 40">
+                        <figcaption>Tarjeta gráfica NVIDIA GeForce RTX Serie 40.</figcaption>
+                    </figure>
+
+
+                    <details>
+                        <p>
+                            Las GPU GeForce RTX Serie 40 ofrecen rendimiento avanzado para gaming,
+                            creación de contenido y aplicaciones de inteligencia artificial.
+                            Basadas en la arquitectura NVIDIA Ada Lovelace, permiten gráficos
+                            más realistas y procesamiento acelerado.
+                        </p>
+                    </details>
+                    <p>
+                        Precio: <data value="2200">$2200</data>
+                    </p>
                     <footer>
-                        <a href="#" aria-label="Ver más sobre GeForce RTX Serie 50">
+                        <a href="#" aria-label="Ver más sobre GeForce RTX Serie 40">
                             Conocer más
                         </a>
                     </footer>
 
                 </article>
+
+                <!--ARTICULO 3-->
                 <article class="card article">
                     <p>$1500</p>
 
@@ -108,7 +387,7 @@ allowfullscreen>
 
                     <section>
                         <p>
-                            
+
                         </p>
                     </section>
 
@@ -134,7 +413,7 @@ allowfullscreen>
 
                     <section>
                         <p>
-                           
+
                         </p>
                     </section>
 
@@ -145,20 +424,80 @@ allowfullscreen>
                     </footer>
 
                 </article>
-
             </section>
+            <footer>
+                <a href="#" aria-label="Ver más sobre tarjetas gráficas">
+                    Ver más productos
+                </a>
+            </footer>
+
         </section>
+        <!--SECCION 4-->
 
-        <section class="section third-section">
-
-        <section class="section two-columns fourth-section">
-            <p>4TA SECCION</p>
+        <section class="section fourth-section">
+            <P>REALIZAR AQUI EL FORMULARIO </P>
         </section>
 
     </main>
 
-    <footer class="footer">FOOTER</footer>
+   <footer class="footer"> <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
 
+        <section class="columnas_4">
+
+            <!-- Sección Navegación -->
+            <nav>
+                <h3>Ingresar información</h3>
+
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Productos Populares</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Ingresar información</h3>
+
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Productos Populares</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Ingresar información</h3>
+
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Productos Populares</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <div>
+                    <h4>Titulo</h4>
+                    <p>&copy; 2026 Viva Mueble. Todos los derechos reservados.</p>
+                </div>
+
+                <div>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i>Instagram</a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a>
+                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a>
+                </div>
+            </section>
+
+    </footer>
 </body>
+
+<!--NOTA TENTATIVA HTML  : 10
+ +2 ADICIONAR FORMULARIO
+ +1 ADICIONAR CONTENIDO AL FOOTER
+ +1 ADICIONAR NAVEGACION DE LOS ENLACES
+ +2 COMPLETAR LA SECCION 2  , REPLICAR Y PONER IMAGENES DE TODAS LA SESIONES
+ +2 COMPLETAR LA SECCION 3  , REPLICAR Y PONER COMENTARIOS , IMAGENES Y PRECIOS DE TODAS LAS TARJETAS GRAFICAS SEGUN LOS PRIMEROS EJEMPLOS 
+ -->
 
 </html>
