@@ -5,52 +5,54 @@
   <meta charset="UTF-8">
   <title>Sky Airline</title>
   <link rel="stylesheet" href="/assets/css/styles_global.css">
+  <link rel="stylesheet" href="/assets/css/formulario.css">
+
 </head>
 
 <body>
 
   <header class="header">
-      <nav aria-label="Servicios principales">
+    <nav aria-label="Servicios principales">
 
-        <nav aria-label="Servicios principales">
-          <ul class="menu-servicios">
-            <li>
-              <a href="#seccion1">
-                <span class="icon" aria-hidden="true">🧾</span>
-                <span>Check-in</span>
-              </a>
-            </li>
-            <li>
-              <a href="#seccion2">
-                <span class="icon" aria-hidden="true">🧳</span>
-                <span>Sección 2</span>
-              </a>
-            </li>
-            <li>
-              <a href="#seccion3">
-                <span class="icon" aria-hidden="true">🧳</span>
-                <span>Sección 3</span>
-              </a>
-            </li>
-            <li>
-              <a href="#seccion4">
-                <span class="icon" aria-hidden="true">🧳</span>
-                <span>Sección 4</span>
-              </a>
-            </li>
-            <li>
-              <a href="#footer">
-                <span class="icon" aria-hidden="true">⬇️</span>
-                <span>Ir al Footer</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        </section>
+      <nav aria-label="Servicios principales">
+        <ul class="menu-servicios">
+          <li>
+            <a href="#seccion1">
+              <span class="icon" aria-hidden="true">🧾</span>
+              <span>Check-in</span>
+            </a>
+          </li>
+          <li>
+            <a href="#seccion2">
+              <span class="icon" aria-hidden="true">🧳</span>
+              <span>Sección 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#seccion3">
+              <span class="icon" aria-hidden="true">🧳</span>
+              <span>Sección 3</span>
+            </a>
+          </li>
+          <li>
+            <a href="#seccion4">
+              <span class="icon" aria-hidden="true">🧳</span>
+              <span>Sección 4</span>
+            </a>
+          </li>
+          <li>
+            <a href="#footer">
+              <span class="icon" aria-hidden="true">⬇️</span>
+              <span>Nuestra Info</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      </section>
   </header>
 
   <main class="main">
-    
+
     <section id="seccion1" class="section hero first-section">
 
       <!-- CARRUSEL -->
@@ -91,11 +93,11 @@
         <p>Explorando la tecnología y el confort detrás de cada una de nuestras aeronaves.</p>
 
       </header>
-      <section class="section columnas_4">
+      <section class="section columnas_3">
         <!--Avion 1-->
         <article class="card">
           <figure>
-            <img src="img/Avion1.jpg" alt="Airbus A320">
+            <img src="img/aviones/avion1.jpg" alt="Airbus A320">
           </figure>
           <header>
             <h2>Airbus A320 <span class="badge badge-turista">Turista / Business</span></h2>
@@ -112,7 +114,7 @@
         <!--Avion 2-->
         <article class="card">
           <figure>
-            <img src="img/Avion2.jpg" alt="Boeing 747">
+            <img src="img/aviones/avion2.jpg" alt="Boeing 747">
           </figure>
           <header>
             <h2>Boeing 747 <span class="badge badge-longhaul">Long Haul / Luxury</span></h2>
@@ -176,7 +178,23 @@
             <a href="#" class="btn">Ver más</a>
           </footer>
         </article>
-
+        <!--Avion 6-->
+        <article class="card">
+          <figure>
+            <img src="img/Avion5.jpg" alt="Airbus Beluga">
+          </figure>
+          <header>
+            <h2>Airbus Beluga <span class="badge badge-cargo">Cargo / Industrial</span></h2>
+          </header>
+          <section>
+            <p>Especializado en cargas sobredimensionadas: soluciones logísticas para piezas industriales de gran
+              tamaño.
+            </p>
+          </section>
+          <footer>
+            <a href="#" class="btn">Ver más</a>
+          </footer>
+        </article>
       </section>
       <footer>
 
@@ -202,7 +220,7 @@
         <!--VIAJE A AREQUIPA-->
         <article class="card">
           <figure>
-            <img src="img/Arequipa.jpg" alt="Arequipa, la ciudad blanca">
+            <img src="img/destinos/Arequipa.jpg" alt="Arequipa, la ciudad blanca">
           </figure>
           <header>
             <h2>Arequipa <span>/ Solo ida</span></h2>
@@ -218,10 +236,11 @@
             <a href="#" class="btn">Consultar precios</a>
           </footer>
 
-        </article> <!--VIAJE A CHICLAYO-->
+        </article>
+        <!--VIAJE A CHICLAYO-->
         <article class="card">
           <figure>
-            <img src="img/Chiclayo.jpg" alt="Chicalyo, la capital de la amistad">
+            <img src="img/destinos/Chiclayo.jpg" alt="Chicalyo, la capital de la amistad">
           </figure>
           <header>
             <h2>Chiclayo <span> / Solo ida</span></h2>
@@ -323,9 +342,10 @@
           </section>
           <section>
             <p>Descubre la ciudad blanca y disfruta de su historia, volcanes y gastronomía única.</p>
-          </section>
-          <section>
-            <p>✨ Promo especial: tarifas ida y vuelta con impuestos incluidos.</p>
+            <dl>
+              <dt>✨ Promo especial: </dt>
+              <dd>tarifas ida y vuelta con impuestos incluidos.</dd>
+            </dl>
           </section>
           <footer>
             <a href="#" class="btn">Consultar precios</a>
@@ -345,9 +365,10 @@
           <section>
             <p>Descubre la vibrante capital española con su historia, cultura y vida nocturna. Madrid te espera con
               experiencias únicas en cada rincón.</p>
-          </section>
-          <section>
-            <p>✨ Promo especial: incluye equipaje y selección de asiento en clase turista.</p>
+            <dl>
+              <dt>✨ Promo especial: </dt>
+              <dd>incluye equipaje y selección de asiento en clase turista.</dd>
+            </dl>
           </section>
           <footer>
             <a href="#" class="btn">Consultar precios</a>
@@ -367,6 +388,7 @@
           <section>
             <p>Descubre la ciudad del sol y disfruta de sus playas, su ambiente multicultural y la energía vibrante de
               la vida nocturna.</p>
+
           </section>
           <section>
             <p>✨ Oferta especial: incluye equipaje y traslado al hotel en paquetes seleccionados.</p>
@@ -408,15 +430,16 @@
           <section>
             <p>USD 950 PEN 3,350</p>
           </section>
+          <!--LAS LISTAS MEJORADAS-->
           <section>
             <p>Descubre la ciudad del tango y disfruta de su arquitectura europea, gastronomía única y vida cultural
               vibrante.</p>
-          </section>
-          <section>
-            <p>✨ Incluye vuelos ida y vuelta, 4 noches de alojamiento y traslados al hotel.</p>
-          </section>
-          <section>
-            <p>Opciones adicionales: excursión a Tigre, city tour por barrios históricos y cena-show de tango.</p>
+            <dl>
+              <dt>✨ Incluye </dt>
+              <dd>vuelos ida y vuelta, 4 noches de alojamiento y traslados al hotel.</dd>
+              <dt>✨ Opciones adicionales: </dt>
+              <dd>excursión a Tigre, city tour por barrios históricos y cena-show de tango</dd>
+            </dl>
           </section>
           <footer>
             <a href="#" class="btn">Consultar precios</a>
@@ -464,7 +487,7 @@
     </section>
 
 
-    <section id="seccion4" class="section reservas fourth-section">
+    <section id="seccion4" class="section fourth-section">
       <h2>Reserva tu viaje</h2>
       <form action="#" method="post">
 
@@ -584,12 +607,13 @@
 
 </body>
 
-<!--NOTA TENTATIVA HTML  : 14
- +2 ADICIONAR FORMULARIO
- +1 ADICIONAR NAVEGACION DE LOS ENLACES
- +2 MEJORAR SECCIONE 2 SERVICIOS, TOMAR COMO REFERENCIA EL SERVICIO 1
- +1 MEJORAR SECCIONE 3 AVIONES , AGREGAR EL ULTIMO AVION
+<!--NOTA TENTATIVA HTML  : 17
+ +2 ADICIONAR FORMULARIO (ADICIONAR MAS ELEMENTOS HTML +5)
+ +1(OK) ADICIONAR NAVEGACION DE LOS ENLACES
+ +2(OK) MEJORAR SECCIONE 2 SERVICIOS, TOMAR COMO REFERENCIA EL SERVICIO 1
+ +1 MEJORAR SECCION 2 AVIONES, AGREGAR UNO MAS
  +1 ORDENAR TUS IMAGENES ,CREAR SUBCARPETAS
+ +1 MEJORAR LAS LISTAS dl(dt/dd)
  -->
 
 </html>
