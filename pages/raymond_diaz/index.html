@@ -12,16 +12,15 @@
   <header class="header">
     <h1>Gerand Universal wiki</h1>
 
-    <!--RECOMENDACION: AGREGAR UNA BARRA DE NAVEGACION INTERNA-->
+  </header>
     <nav>
       <ul>
-        <li><a>Seccion 1</a></li>
-        <li><a>Seccion 2</a></li>
-        <li><a>Seccion 3</a></li>
+        <li><a href="#Trama y Datos de la serie">Trama y Datos de la serie</a></li>
         <li><a href="#acontecimientos_trama">Acontecimientos de la trama</a></li>
+        <li><a href="#seccion1">Seccion 1</a></li>
       </ul>
     </nav>
-  </header>
+  
 
   <main class="main">
 
@@ -141,7 +140,7 @@
             <img
               src="https://yt3.googleusercontent.com/iwjBA4x7PtZ8xA7SXb6D0Gf1l_DBJjv8-WlSwHnrjcGCAmvogIFXGKIn0hbEOaZZpi-KVyzw=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
               alt="Logo oficial de Gerand">
-            <figcaption>Serie animada Gerand</figcaption>
+            <figcaption></figcaption>
           </figure>
 
         </article>
@@ -194,17 +193,17 @@
 
       <section class="section services">
         <article class="article"><img
-            src="https://i.ytimg.com/an_webp/vjX0_rewGXQ/mqdefault_6s.webp?du=3000&sqp=CLjOm80G&rs=AOn4CLA2hO2fd8BwoXV7tHOiFHAPJM7qQw"
+            src="https://i.namu.wiki/i/acsZWfYcN3JWpU49cN8hvDYwiqwVjpT9Onylvgn0ZzIaCS-qLjV8ogcR9YR2xwSAshMKTCxlCQTbD8uXfFDbGw.gif"
             height="200" alt="Logo Gerand"></article>
         <article class="article">Cada acotecimiento es una historia diferente que trancurre la temporada pero que
           conecta al lore principal de la serie.</article>
         <article class="article"><img
-            src="https://i.ytimg.com/an_webp/hnKKmC9RT3I/mqdefault_6s.webp?du=3000&sqp=CMyvm80G&rs=AOn4CLAA2vktYJzMfkkOxo95vauxfLxPGg"
+            src="https://i.ytimg.com/vi/iYKA9jE5DY0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCECtDYuiCNoTQcYnM7VevpoNQ2Yw"
             height="200" alt="Logo Gerand"></article>
         <article class="article">Hay eventos tensos, llenos de accion, situaciones que desafian la voluntad de los
           protagonistas y de los demas personajes.</article>
         <article class="article"><img
-            src="https://i.ytimg.com/an_webp/yzX38ZXIqTs/mqdefault_6s.webp?du=3000&sqp=CLfKm80G&rs=AOn4CLAAFytHiMopqRG_NOYUn85CM9Hg1A"
+            src="https://i.makeagif.com/media/10-09-2023/f_B3yf.gif"
             height="200" alt="Logo Gerand"></article>
       </section>
 
@@ -245,7 +244,134 @@
     </section>
 
     <section class="section fourth-section">
-      <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
+     
+<div class="form-wrapper">
+
+  <div class="form-header">
+    <p class="label">▸ Gerand Universal Wiki ◂</p>
+    <h2>Registro de Campo</h2>
+    <p>// Completa el formulario para unirte a la base de datos //</p>
+  </div>
+
+  <div class="form-card">
+    <form action="#" method="post">
+
+      <div class="form-grid">
+
+        <!-- 1. Nombre -->
+        <div class="form-group">
+          <label for="nombre">Nombre de comandante <span class="required">*</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: KV-44" required>
+        </div>
+
+        <!-- 2. Email -->
+        <div class="form-group">
+          <label for="email">Correo de contacto <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+        </div>
+
+        <!-- 3. Temporada favorita (select) -->
+        <div class="form-group">
+          <label for="temporada">Temporada favorita</label>
+          <select id="temporada" name="temporada">
+            <option value="" disabled selected>Selecciona temporada</option>
+            <option value="1">Temporada 1</option>
+            <option value="2">Temporada 2</option>
+            <option value="3">Temporada 3</option>
+            <option value="4">Temporada 4</option>
+            <option value="5">Temporada 5</option>
+            <option value="12">Temporada 12 (actual)</option>
+          </select>
+        </div>
+
+        <!-- 4. Número de episodios vistos -->
+        <div class="form-group">
+          <label for="episodios">Episodios vistos</label>
+          <input type="number" id="episodios" name="episodios" min="0" max="999" placeholder="0">
+        </div>
+
+        <!-- 5. Bando favorito (radio) -->
+        <div class="form-group full">
+          <label>Bando preferido <span class="required">*</span></label>
+          <div class="radio-group">
+            <label class="radio-item">
+              <input type="radio" name="bando" value="sovietico"> Unión Soviética
+            </label>
+            <label class="radio-item">
+              <input type="radio" name="bando" value="alemania"> Alemania
+            </label>
+            <label class="radio-item">
+              <input type="radio" name="bando" value="eeuu"> Estados Unidos
+            </label>
+            <label class="radio-item">
+              <input type="radio" name="bando" value="neutro"> Neutral
+            </label>
+          </div>
+        </div>
+
+        <hr class="divider full" style="grid-column:1/-1"><span style="display:none"></span>
+
+      </div>
+
+      <!-- Divisor temático -->
+      <div class="divider"><span>►  datos adicionales  ◄</span></div>
+
+      <div class="form-grid">
+
+        <!-- 6. Contenido de interés (checkboxes) -->
+        <div class="form-group full">
+          <label>Contenido de interés</label>
+          <div class="checkbox-group">
+            <label class="checkbox-item">
+              <input type="checkbox" name="interes" value="historia"> Historia / Lore
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="interes" value="personajes"> Personajes
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="interes" value="tanques"> Tanques / Colosos
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="interes" value="teorias"> Teorías de fans
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="interes" value="batallas"> Batallas épicas
+            </label>
+          </div>
+        </div>
+
+        <!-- 7. Nivel de conocimiento (range) -->
+        <div class="form-group full">
+          <label for="conocimiento">Nivel de conocimiento del universo</label>
+          <input type="range" id="conocimiento" name="conocimiento" min="1" max="5" value="3">
+          <div class="range-labels">
+            <span>Recluta</span>
+            <span>Soldado</span>
+            <span>Veterano</span>
+            <span>Élite</span>
+            <span>Comandante</span>
+          </div>
+        </div>
+
+        <!-- 8. Mensaje / Aporte -->
+        <div class="form-group full">
+          <label for="aporte">Aporte o comentario para la wiki</label>
+          <textarea id="aporte" name="aporte" placeholder="Comparte datos, correcciones, teorías o curiosidades sobre el universo de Gerand…"></textarea>
+        </div>
+
+      </div>
+
+      <!-- Botón de envío -->
+      <button type="submit" class="btn-submit">
+        <span>⬡ Enviar informe de campo ⬡</span>
+      </button>
+
+      <p class="form-note">
+        ▸ Proyecto de fans · No afiliado oficialmente con Gerand ◂
+      </p>
+
+    </form>
+  </div>
 
     </section>
 
@@ -264,7 +390,9 @@
     </p>
   </footer>
 
-</body> 
+</body>
+
+
 
 <!--NOTA TENTATIVA HTML  : 17
  +1 ADICIONAR LAS IMAGENES ROTAS (ACONTECIMIENTO PRINCIPAL)
