@@ -12,9 +12,10 @@
     <header class="header">
         <h2 href="#seccion1">Go Phone</h2>
         <ul>
-            <li><a href="#seccion1">Buscar</a></li>
-            <li><a href="#seccion2">Carrito</a></li>
-            <li><a href="#accesoriosDelMes">Accesorios del Mes</a></li>
+            <!--USAR FORMATO SNAKE CASE -->
+            <li><a href="#productos_mas_vendidos">Buscar</a></li>
+            <li><a href="#formulario">Carrito</a></li>
+            <li><a href="#accesorios_del_mes">Accesorios del Mes</a></li>
         </ul>
     </header>
 
@@ -45,7 +46,7 @@
             </section>
             <section class="columnas_2">
                 <section>
-                    <!--CARD 1-->
+                    <!--CARD 2-->
                     <card class="card">
                         <header>Tenemos el Plan Perfecto para ti</header>
                         <figure>
@@ -57,7 +58,7 @@
 
 
                 <section>
-                    <!--CARD 2-->
+                    <!--CARD 3-->
                     <card class="card">
                         <header>Los mejores accesorios</header>
                         <figure>
@@ -75,7 +76,7 @@
                  - EL CONTENIDO ESTE PUEDE ESTAR DENTRO DE UNA SECCION O TODO FUERA DEPENDIENDO DE LA CANTIDAD DE ELEMENTOS QUE TENGAS
                  - UN FOOTER CON INFORMACION ADICIONAL O UN LLAMADO A LA ACCION, SI NO TIENES NADA QUE PONER EN EL FOOTER MEJOR NO LO PONGAS
                 -->
-        <section class="section second-section">
+        <section class="section second-section" id="productos_mas_vendidos">
             <section>
 
                 <section>
@@ -88,7 +89,7 @@
                         </p>
                         <p>¡Compra ahora y disfruta de la mejor tecnología al alcance de tu mano!</p>
 
-                        </head>
+                        
                         <section class="class columnas_4">
                             <!--ARTICULO 1-->
                             <article class="article">
@@ -289,7 +290,7 @@
                     </section>
 
                     <figure>
-                        <img src="imagenes/img14.png" alt="Iphone13">
+                        <img src="imagenes/img14.png" alt="Samsung A56">
                     </figure>
 
                     <br>
@@ -313,7 +314,7 @@
                     </section>
 
                     <figure>
-                        <img src="imagenes/img15.png" alt="Iphone13">
+                        <img src="imagenes/img15.png" alt="Samsung A17">
                     </figure>
 
                     <br>
@@ -337,7 +338,7 @@
                     </section>
 
                     <figure>
-                        <img src="imagenes/img13.png" alt="Iphone13">
+                        <img src="imagenes/img13.png" alt="Honor X8C">
                     </figure>
 
                     <br>
@@ -355,7 +356,7 @@
 
         </section>
 
-        <section class="section  fourth-section" id="accesoriosDelMes">
+        <section class="section  fourth-section" id="accesorios_del_mes">
 
             <header>
                 <h2>Accesorios del Mes</h2>
@@ -407,42 +408,86 @@
                     </footer>
 
                 </article>
-
-                <section>
-                    <article class="article">
+                <!--ARTICULO 3-->
+                <article class="card">
                         <figure>
-                            <img src="imagenes/img18.png">
+                            <img src="imagenes/img18.png" alt="Audifonos Honor">
+                            <figcaption>Aud. Honor Choice X7Lite</figcaption>
                         </figure>
-                        <footer>Audifonos Choice X7Lite S/89 antes S/139</footer>
-                    </article>
-                </section>
+                        <p>
+                        <del>S/139.00</del>
+                        <ins>S/99.00</ins>
+                    </p>
 
-                <section>
-                    <article class="article">
-                        <figure>
-                            <img src="imagenes/img19.png">
-                        </figure>
-                        <footer>Audifonos Redmi Active S/49 antes S/79</footer>
-                    </article>
-                </section>
-                <section>
-                    <article class="article">
-                        <figure>
-                            <img src="imagenes/img20.png">
-                        </figure>
-                        <footer>Cargador Portatil XIAOMI S/119 antes S/149</footer>
-                    </article>
-                </section>
-                <section>
-                    <article class="article">
-                        <figure>
-                            <img src="imagenes/img21.png">
-                        </figure>
-                        <footer>Parlante JBL S/139 antes S/219</footer>
-                    </article>
-                </section>
+                    <p>
+                        <mark>Oferta -29%</mark>
+                    </p>
 
+                    <footer>
+                        <button type="button">Comprar</button>
+                    </footer>
+                    </article>
+                
 
+                <!--ARTICULO 4-->
+                    <article class="card">
+                        <figure>
+                            <img src="imagenes/img19.png" alt="Audifonos Redmi">
+                            <figcaption>Aud. Redmi Active</figcaption>
+                        </figure>
+                        <p>
+                        <del>S/75.00</del>
+                        <ins>S/56.00</ins>
+                    </p>
+
+                    <p>
+                        <mark>Oferta -20%</mark>
+                    </p>
+
+                    <footer>
+                        <button type="button">Comprar</button>
+                    </footer>
+                    </article>
+                
+                <!--ARTICULO 5-->
+                    <article class="card">
+                        <figure>
+                            <img src="imagenes/img20.png" alt="Cargador Portatil Xiaomi">
+                            <figcaption>Cargador Portatil Xiaomi</figcaption>
+                        </figure>
+                        <p>
+                        <del>S/149.00</del>
+                        <ins>S/89.00</ins>
+                    </p>
+
+                    <p>
+                        <mark>Oferta -30%</mark>
+                    </p>
+
+                    <footer>
+                        <button type="button">Comprar</button>
+                    </footer>
+                    </article>
+                
+                <!--ARTICULO 6-->
+                    <article class="card">
+                        <figure>
+                            <img src="imagenes/img21.png" alt="Parlante JBL">
+                            <figcaption>Parlante JBL</figcaption>
+                        </figure>
+                        <p>
+                        <del>S/229.00</del>
+                        <ins>S/149.00</ins>
+                    </p>
+
+                    <p>
+                        <mark>Oferta -35%</mark>
+                    </p>
+
+                    <footer>
+                        <button type="button">Comprar</button>
+                    </footer>
+                    </article>
             </section>
             <footer>
                 <p>
@@ -460,7 +505,32 @@
 
         <section class="section">
             <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
-
+            <section>
+        <h2>Datos del Pedido</h2>
+        <form class="FORMULARIO" id="formulario">
+            <ul>
+                <li>
+                    <label>Nombre completo:</label>
+                    <input type="text" id="nombre" name="user_name">
+                </li>
+                <li>
+                    <label>Modelo de celular:</label>
+                    <input type="text" id="modelo" name="phone_model">
+                </li>
+                <li>
+                    <label>Correo electrónico:</label>
+                    <input type="email" id="correo" name="user_email">
+                </li>
+                <li>
+                    <label>Comentarios:</label>
+                    <textarea id="mensaje" name="user_message"></textarea>
+                </li>
+                <li>
+                    <button type="button">Enviar Pedido</button>
+                </li>
+            </ul>
+        </form>
+    </section>
         </section>
 
     </main>
@@ -503,10 +573,10 @@
     </footer>
 
 </body>
-<!--NOTA TENTATIVA HTML  : 17
- +2 ADICIONAR FORMULARIO
- +1 ADICIONAR CONTENIDO AL FOOTER
- +1 ADICIONAR NAVEGACION DE LOS ENLACES
- +1 MEJORAR LA SECCION ACCESORIOS DEL MES , REPLICA EL MISMO ESTILO DE LOS ARTICULOS 1 Y 2
+<!--NOTA TENTATIVA HTML  : 19
+ +2 ADICIONAR FORMULARIO (AGREGAR 5 ELEMENTOS HTML DIFERENTES MAS)
+ +1 ADICIONAR CONTENIDO AL FOOTER (FALTA)
+ +1(OK) ADICIONAR NAVEGACION DE LOS ENLACES
+ +1(OK) MEJORAR LA SECCION ACCESORIOS DEL MES , REPLICA EL MISMO ESTILO DE LOS ARTICULOS 1 Y 2
  -->
 </html>

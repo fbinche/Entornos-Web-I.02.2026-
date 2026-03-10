@@ -1,0 +1,181 @@
+/* ================================
+   ESTILO GLOBAL
+================================ */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(135deg, #eef2f7, #dbe6f6);
+    color: #333;
+}
+
+h1{
+    font-size: 46px; /* Tamaño grande */
+    font-weight: 700; /* Texto en negrita */
+    
+    /* Gradiente aplicado al texto */
+    background: linear-gradient(90deg,#ff4b4b,#ff8a00);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    border-bottom: 4px solid #ff4b4b; /* Línea inferior decorativa */
+    padding-bottom: 10px;
+    letter-spacing: 1px; /* Espacio entre letras */
+        
+}
+/* ================================
+   TITULO DOCENTE
+================================ */
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1f3c88;
+    position: relative;
+}
+
+/* línea decorativa animada */
+h3::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #4facfe;
+    display: block;
+    margin-top: 6px;
+    transition: 0.6s;
+}
+
+h3:hover::after {
+    width: 220px;
+}
+
+
+/* ================================
+   LISTA DE ENLACES
+================================ */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+/* botones tipo link */
+ul li a {
+    text-decoration: none;
+    background: #e9794d;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+ul li a:hover {
+    background: #7b14cf;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================
+   TABLA
+================================ */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+/* encabezado */
+.table thead {
+    background: linear-gradient(90deg, #f07443, #5c08d1);
+    color: white;
+}
+
+/* celdas */
+.table th,
+.table td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* hover filas */
+.table tbody tr {
+    transition: all .25s ease;
+}
+
+.table tbody tr:hover {
+    background: #f5f9ff;
+    transform: scale(1.01);
+}
+
+
+/* ================================
+   ICONOS
+================================ */
+.bi-check2-circle {
+    color: #27ae60;
+    margin-left: 5px;
+    font-size: 22px;/* tamaño del icono */
+
+}
+
+.bi-x-circle-fill {
+    margin-left: 5px;
+    color: #f13a26;
+    font-size: 22px;
+
+}
+
+
+/* ================================
+   LINKS DE TABLA
+================================ */
+.table a {
+    color: #051745;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+
+mark{
+    font-size: 18px;
+    color: #fdfdfd;
+    text-transform: uppercase; /* Todo en mayúsculas */
+    background: #cd330d; /* Fondo tipo etiqueta */
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+
+
+/* ================================
+   ANIMACIONES
+================================ */
+
+/* aparición suave de la tabla */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

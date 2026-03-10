@@ -2,260 +2,295 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OPTIMUEBLES</title>
-    <link rel="stylesheet" href="css/stilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <title>OPTIMUEBLES</title>
 </head>
 
+<!--CUERPO CENTRAL-->
+
 <body>
-    <!--  CABEZERA DE MI PAGINA  -->
-    <header class="cabeza">
-        <img src="img/cabecera.png" alt="CABEZERA">
 
-        <!--RECOMENDACION: AGREGAR UNA BARRA DE NAVEGACION INTERNA-->
+  <!--CABEZERA-->
+  <header class="cabezera">
+    <img src="img/logo web.png" alt="Optimuebles" width="150">
+    <nav>
+      <ul class="nav_cabezera">
+        <li>Inicio</li>
+        <li>Productos</li>
+        <li>Sobre nosotros</li>
+        <li>Contactanos</li>
+      </ul>
+    </nav>
+    <button class="icon" type="submit">🛒
+      <span>1</span>
+    </button>
 
-        <ul>
-            <li><a href="#">Seccion 1</a></li>
-            <li><a href="#">Seccion 2</a></li>
-            <li><a href="#">Seccion 3</a></li>
-            <li><a href="#">Seccion 4</a></li>
-        </ul>
+  </header>
 
-    </header>
-    <!--  CONTENIDO PRINCIPAL O INTERMEDIO  -->
-    <main style="border: 4px solid #15bff3;">
+  <main>
+    <!--IMAGEN PRINCIPAL Y MENU DE FILTRACION-->
+    <section class="seccion_1">
 
-        <!--  SECCION DE BANNER -->
-        <section class="banner">
-            <!--BANNER 1-->
-            <article>
-                <img src="img/banners/bn1.png" alt="Banner 1">
-            </article>
-            <!--BANNER 2-->
-            <article>
-                <img src="img/banners/bn2.png" alt="Banner 1">
-            </article>
-            <!--BANNER 3-->
-            <article>
-                <img src="img/banners/bn3.png" alt="Banner 1">
-            </article>
-        </section>
-        <!--  PRODUCTOS  -->
+      <article class="seccion_1_img_central">
+        <!--TITULO GENERAL-->
+        <h1>Eleva tu espacio <br> con escritorios <br> modernos</h1>
+        <!--Segundo menu de navegacion-->
+        <!--BOTON DIRECTO AL CATALOGO-->
+        <button onclick="window.location.href='catalogo.html'" class="seccion_1_buton">Catalogo de escritorios
+          <i>→</i></button>
+      </article>
+      <!--CREO QUE DBI HAER TODO ESTO EN LA MISMA SECCION PERO HAY VEREMOS QUE SUCEDE-->
+      <!--MINI BARRA DE NAVEGACION-->
+      <form class="seccion_1_nav_central">
+        <fieldset>
+          <!--Seleccionar el tipo de escritorio a filtrar-->
+          <section class="seccion_1_form_secion_textos_filtrado">
+            <label>Selecciona el tipo</label>
+            <strong>Escritorio en L</strong>
+          </section>
+          <!--Filtrar por precio -->
+          <section class="seccion_1_form_secion_textos_filtrado">
+            <label>Rango de precios ↑↓</label>
+            <strong>200 - 400</strong>
+          </section>
+        </fieldset>
+        <button type="button"><span>🔍</span>Buscar</button>
+      </form>
+    </section>
 
+    <!--UN PAR DE PRODUCTOS Y DESCRIPCIONES-->
+    <!-- SECCION PRODUCTOS -->
+    <section class="seccion_2">
+      <!--DESCRIPCION DE PRODUCTOS EN TENDENCIA-->
+      <section class="descripcion_productos">
+        <small>LA MEJOR CALIDAD</small>
+        <H2>Nuestros productos <br>en Tendencia </H2>
+        <p>Nuestros escritorios combinan diseño moderno,
+          ergonomía ajustable y materiales sostenibles.
+          Son prácticos, elegantes y pensados para mejorar
+          la productividad en espacios de trabajo y estudio,
+          adaptándose a las necesidades actuales del estilo
+          de vida híbrido.</p>
+        <a href="catalogo.html">Ver mas...</a>
+      </section>
+      <!--PRODUCTOS DESTACADO-->
+      <section class="los_productos">
+        <article class="producto">
+          <small>Nuevo</small>
+          <figure>
+            <img src="img/productos/1.png" alt="Escritorio Alpha Pro" width="250">
+          </figure>
+          <h3>Alpha Pro</h3>
+          <p>Oficinista, amplio y natural</p>
+          <data value="280">s/. 280</data>
+          <button type="button">Añadir al Carrito</button>
+        </article>
 
+        <article class="producto">
+          <small>Nuevo</small>
+          <figure>
+            <img src="img/productos/2.png" alt="Escritorio Desk Link" width="250">
+          </figure>
+          <h3>Desk Link</h3>
+          <p>Estilo minimalista y ajustable</p>
+          <data value="270">s/. 270</data>
+          <button type="button">Añadir al Carrito</button>
+        </article>
 
-        <!--RECOMENDACION : ENRIQUECER CONTENIDO SEMANTICO
-        - HEADER DEBER TENER MAS CONTENIDO
-        - FOOTER DEBE TENER MAS CONTENIDO -->
+        <article class="producto">
+          <small>Nuevo</small>
+          <figure>
+            <img src="img/productos/5.png" alt="Escritorio Level Desk" width="250">
+          </figure>
+          <h3>Level Desk</h3>
+          <p>Moderno y con estante con puerta</p>
+          <data value="250">s/. 250</data>
+          <button type="button">Añadir al Carrito</button>
+        </article>
+      </section>
+    </section>
 
-        <section class="seccion_productos">
-            <header class="subtitulos">
-                <h2> NUESTROS MODELOS MAS VENDIDOS </h2>
-                <p style="text-align: center;">Descubre nuestros modelos de escritorios mas vendidos, diseñados para
-                    combinar estilo y funcionalidad en tu espacio de trabajo o gaming.</p>
-                <br>
-            </header>
+    <!--SECCION 3-->
+    <!--FORMULARIO-->
+    <section class="seccion_3">
+      <h2>Obtén un cupón de descuento</h2>
+      <!--EMPIEZO MI FORMULARIO-->
+      <form class="form_cupon">
 
-            <section class="productos">
-                <!--PRODUCTO 1 -->
-                <article class="items">
-                    <h4> DESK LINK </h4>
-                    <img src="img/productos/1.png" alt="PRODUCTO 1">
-                    <p> Estilo minimalista y ajustable</p>
-                    <button type="button" style="background-color: #06c41f;">LO DESEO</button>
-                    <!--AÑADIR SU ESTILO PROPIO Y LOGO DE WHATSAPP-->
-                </article>
-                <!--PRODUCTO 2 -->
-                <article class="items">
-                    <h4> DESK DREAMS </h4>
-                    <img src="img/productos/2.png" alt="PRODUCTO 1">
-                    <p> Moderno y con estante con puerta</p>
-                    <button type="button" style="background-color: #06c41f;">LO DESEO</button>
-                    <!--AÑADIR SU ESTILO PROPIO Y LOGO DE WHATSAPP-->
-                </article>
-                <!--PRODUCTO 3 -->
-                <article class="items">
-                    <h4> DESK NOVA </h4>
-                    <img src="img/productos/3.png" alt="PRODUCTO 1">
-                    <p> Amplio gamer versatil</p>
-                    <button type="button" style="background-color: #06c41f;">LO DESEO</button>
-                    <!--AÑADIR SU ESTILO PROPIO Y LOGO DE WHATSAPP-->
-                </article>
-                <!--PRODUCTO 4 -->
-                <article class="items">
-                    <h4> DESK PRO </h4>
-                    <img src="img/productos/4.png" alt="PRODUCTO 1">
-                    <p> Oficinista, amplio y natural</p>
-                    <button type="button" style="background-color: #06c41f;">LO DESEO</button>
-                    <!--AÑADIR SU ESTILO PROPIO Y LOGO DE WHATSAPP-->
-                </article>
-                <!--PRODUCTO 5 -->
-                <article class="items">
-                    <h4>DESK LEVEL </h4>
-                    <img src="img/productos/5.png" alt="PRODUCTO 1">
-                    <p> Para el gamer mas exigente</p>
-                    <button type="button" style="background-color: #06c41f;">LO DESEO</button>
-                    <!--AÑADIR SU ESTILO PROPIO Y LOGO DE WHATSAPP-->
-                </article>
-            </section>
+        <!-- Datos personales -->
+        <!--NOMBRES DEL CLIENTE-->
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <!--DNI DEL USUARIO-->
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" name="dni" required>
+        <!--TELEFONO-->
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <!--EL EMAIL-->
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
 
-            <!--FOOTER-->
-            <footer>
-                <p>Tenemos mas modelos disponibles, contactanos para mas informacion y cotizaciones personalizadas.</p>
-                <h3 style="text-align: center;">Ver Mas...</h3>
-            </footer>
-        </section>
-        <!--  TESTIMONIOS  -->
-        <section class="seccion_testimonios">
-            <header class="subtitulos">
-                <h2> TESTIMONIOS</h2>
-            </header>
-            <!--TESTIMONIO 1 -->
-            <article class="testimonios">
-                <h5> MARIA G. </h5>
-                <img src="img/testimonios/test1.jpg" alt="PRODUCTO 1" width="200px">
-                <h6>Decoración y acabados (muebles y telas) </h6>
-                <p> “Quedé encantada con el nuevo tapizado de mi sofá, los acabados son
-                    impecables y ahora mi sala luce renovada.” — María G.</p>
-            </article>
-            <!--TESTIMONIO 2 -->
-            <article class="testimonios">
-                <h5> LUCIA R. </h5>
-                <img src="img/testimonios/test2.jpg" alt="PRODUCTO 1" width="200px">
-                <h6>Cotización y planificación </h6>
-                <p>“Me ayudaron a organizar mi proyecto con claridad, la cotización fue
-                    precisa y la planificación me dio mucha confianza.” — Lucía R.</p>
-            </article>
-            <!--TESTIMONIO 3 -->
-            <article class="testimonios">
-                <h5> CAROLINA S. </h5>
-                <img src="img/testimonios/test3.jpg" alt="PRODUCTO 1" width="200px">
-                <h6>Armado e instalación </h6>
-                <p>“El equipo instaló mis muebles rápido y seguro, todo quedó perfecto
-                    en su lugar sin complicaciones.” — Carolina S.</p>
-            </article>
-        </section>
-        <!--  RANGOS DE ENVIOS  -->
-        <section class="seccion_envios">
-            <h2>RANGO DE ENVIOS A LIMA </h2>
-            <!--DISTRITOS A LOS QUE SI ENTREGAMOS-->
-            <section class="lista_envios">
-                <h3>Distritos con entrega disponible</h3>
-                <ul>
-                    <li>Santa Anita</li>
-                    <li>Ate</li>
-                    <li>San Borja</li>
-                    <li>La Molina</li>
-                    <li>Lurigancho</li>
-                    <li>Chaclacayo</li>
-                    <li>Surco</li>
-                    <li>San Juan de Lurigancho</li>
-                </ul>
-            </section>
-            <!--DISTRITOS CON COSTO EXTRA-->
-            <section class="lista_envios">
-                <h3>Distritos con costo extra</h3>
-                <ul>
-                    <li>Comas</li>
-                    <li>San Martin de porres</li>
-                    <li>Villa el Salvador</li>
-                    <li>Chorrillos</li>
-                </ul>
-            </section>
-            <!--DISTRITOS A LOS QUE NO LLEGAMOS-->
-            <section class="lista_envios">
-                <h3>Distritos a los que no llegamos</h3>
-                <ul>
-                    <li>La Victoria</li>
-                    <li>El agustino</li>
-                    <li>Callao</li>
-                </ul>
-            </section>
-            <img src="img/ranog de envios.png" alt="MAPA">
-        </section>
-        <!--  SERVICIOS  -->
-        <section class="seccion_servicios">
-            <header class="subtitulos">
-                <h2>NUESTROS SERVICIOS</h2>
-            </header>
-            <section class="servicios">
-                <!--SERVICIO DE DECORACION Y ACABADO 1 -->
-                <article class="servi">
-                    <h4> DECORACION Y ACABADO </h4>
-                    <img src="img/servicios/serv1.jpg" alt="PRODUCTO 1" width="200px">
-                    <p> Especializados en muebles y telas: aplicamos barnices, lacados, pintura y tapicería
-                        para dar un acabado único y personalizado. </p>
-                    <button type="button" style="background-color: #fd7701;">MAS INFORMACION</button>
-                </article>
-                <!--SERVICIO DE COTIZACION DE MUEBLES -->
-                <article class="servi">
-                    <h4> COTIZACION Y PLANIFICACION</h4>
-                    <img src="img/servicios/serv2.jpg" alt="PRODUCTO 1" width="200px">
-                    <p> Te asesoramos en materiales, costos y tiempos de entrega, elaborando un plan a medida
-                        para tu proyecto.</p>
-                    <button type="button" style="background-color: #fd7701;">MAS INFORMACION</button>
-                </article>
-                <!--SERVICIO DE ARMADO-->
-                <article class="servi">
-                    <h4> ARMADO E INSTALACION </h4>
-                    <img src="img/servicios/serv3.jpg" alt="PRODUCTO 1" width="200px">
-                    <p> Nos encargamos del montaje y la instalación de tus muebles en el espacio que necesites,
-                        garantizando seguridad y funcionalidad.</p>
-                    <button type="button" style="background-color: #fd7701;">MAS INFORMACION</button>
-                </article>
-            </section>
-        </section> <!--fin-->
-    </main>
-    <!--MUSIQUITA FINAL ES LA QUE ME AYUDA A CONCENTRAR -->
-    <iframe src="mu.mp3" allow="autoplay" style="display:none">
-    </iframe>
-    <audio id="miMusica" autoplay loop onplay="this.volume=0.02">
-        <source src="mu.mp3" type="audio/mpeg">
-    </audio>
-    <!--MUERE MUSICA-->
-    <!-- CONTENIDO FINAL DE MI PAGINA -->
-    <footer class="seccion_pie">
-        <!--FORMAS DE PAGO-->
-        <section class="pie">
-            <h4>FORMAS DE PAGO</h4>
-            <ul>
-                <li>Trnasferencia bancaria</li>
-                <li>Billeteras digitales</li>
-                <li>Efectivo</li>
-            </ul>
-        </section>
-        <!--METODOS DE ENVIO-->
-        <section class="pie">
-            <h4>METODOS DE ENVIO</h4>
-            <ul>
-                <li>Entrega a domicilio</li>
-                <li>Punto de encuentro</li>
-                <li>Entregas a Lima</li>
-            </ul>
-        </section>
-        <!--CONTACTO-->
-        <section class="pie">
-            <h4>CONTACTO</h4>
-            <ul>
-                <li>Whattsapp : 927 699 659</li>
-                <li>Facebook : OPTIMUEBLES</li>
-                <li>TIKTOK : OPTIMUEBLES_PERU</li>
-            </ul>
+        <!-- Tiempo de compra -->
+        <label for="tiempo">¿En que tiempo desea comprar?</label>
+        <select id="tiempo" name="tiempo" required>
+          <!--Brindo mis opciones de tiempo-->
+          <option value="3meses">Esta semana (10% descuento)</option>
+          <option value="1mes">En las proximas 2 semanas(6% descuento)</option>
+          <option value="semana">En 1 mes (3% descuento)</option>
+        </select>
+
+        <!-- Que escritorio esta interesado -->
+        <label for="escritorio">¿En qué escritorio esta interesado?</label>
+        <select id="escritorio" name="escritorio" required>
+          <option value="escritorio1">Desk Link</option>
+          <option value="escritorio2">Alpha Pro</option>
+          <option value="escritorio3">Level Desk</option>
+        </select>
+
+        <!-- Aceptar terminos y condiciones -->
+        <section class="terminos">
+          <!--Mi inut lo vuelvo un chekbox-->
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto">Acepto los términos y condiciones</label>
         </section>
 
-        <!--IMAGEN DE MARCA DE AGUA-->
-        <section>
-            <img src="img/logo web.png" alt="MARCA DE AGUA" width="250px">
-        </section>
+        <!-- Botón enviar -->
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
-    </footer>
+    <!--NUESTROS SERVICIOS-->
+    <section class="seccion_4">
+      <!--CABEZERA DE MIS SERVICIONS-->
+      <header class="servicios_header">
+        <small>SOLO LO MEJOR</small>
+        <h2>NUESTROS SERVICIOS</h2>
+      </header>
+      <!--Añado mis servicios como articulos-->
+      <section class="servicios_grid">
+        <!--IMG DE REFENCIA 1-->
+        <article><img src="img/servicios/serv2.jpg" alt="Delivery"></article>
+        <!--SECCION DE DELIVERY-->
+        <article class="tarjeta_info">
+          <span>🚚</span>
+          <h3>Delivery e Instalación</h3>
+          <p>Entrega rápida y montaje profesional para que sus muebles estén listos de inmediato.</p>
+        </article>
+        <!--IMG REFERENCIA 2-->
+        <article><img src="img/servicios/serv1.jpg" alt="Diseño"></article>
+        <!--SECCION DE DISEÑO DEL ESCRIOTORIO-->
+        <article class="tarjeta_info">
+          <span>✒️</span>
+          <h3>Diseño de tu Escritorio</h3>
+          <p>Diseña tu escritorio ideal junto a nuestros expertos, adaptado a tu estilo y necesidades.</p>
+        </article>
+        <!--IMG REFERENCIA 3-->
+        <article><img src="img/servicios/serv3.jpg" alt="Fabricacion"></article>
+        <!--SECCION DE FABRICACION DE MUEBLE-->
+        <article class="tarjeta_info">
+          <span>📦</span>
+          <h3>Fabricación de tu escritorio</h3>
+          <p>Armamos tus escritorios duraderos con materiales premium y mano de obra experta.</p>
+        </article>
+      </section>
+    </section>
 
-    <!--NOTA TENTATIVA HTML  : 18
- +1 ADICIONAR NAVEGACION DE LOS ENLACES
- +2 MEJORAR SECCIONES , TOMAR COMO REFERENCIA LA SECCION 1
- +1 ADICIONAR FORMULARIO
- -->
+    <!--TESTIMONIOS-->
+    <section class="seccion_5">
+      <!--CABEZERA DE MI SECCION TESTIMONIO-->
+      <header class="header_testimonios">
+        <hgroup class="texto_cabecera">
+          <small>TESTIMONIOS REALES</small>
+          <h2>Lo Que La Gente <br> Dice Sobre Nosotros</h2>
+        </hgroup>
+        <a href="testimonios.html" class="btn_ver_todos">Mas Testimonios &gt;</a>
+      </header>
+      <!--DIVIDO MIS TESTIMOIOS EN CUADRICULAS EN 3 PARTES-->
+      <section class="cuadricula_testimonios">
+        <!--TARJETA DE TESTIMONIO 1-->
+        <article class="tarjeta_testimonio">
+          <figure class="foto_principal"><img src="img/muestras/me1.jpg" alt="Muestra 1"></figure>
+          <small class="fecha">NOVIEMBRE 15, 2025</small>
+          <p>“Mi escritorio llegó puntual y perfectamente armado. El servicio fue rápido y profesional,
+            ahora disfruto de un espacio de trabajo cómodo y funcional.”</p>
+          <footer class="perfil_usuario">
+            <img src="img/testimonios/test1.jpg" alt="Karina Rayder" class="cliente 1">
+            <h5>Karina <br> Rayder</h5>
+          </footer>
+        </article>
+        <!--TARJETA DE TESTIMONIO 2-->
+        <article class="tarjeta_testimonio">
+          <figure class="foto_principal"><img src="img/muestras/me2.jpg" alt="Muestra 2"></figure>
+          <small class="fecha">DICIEMBRE 21, 2025</small>
+          <p>“Me encantó la atención: diseñaron un escritorio adaptado a mis necesidades
+            y lo entregaron listo para usar. Todo el proceso fue sencillo.”</p>
+          <footer class="perfil_usuario">
+            <img src="img/testimonios/test2.jpg" alt="Sarah Morgan" class="cliente 2">
+            <h5>Sarah <br> Morgan</h5>
+          </footer>
+        </article>
+        <!--TARJETA DE TESTIMONIO 3-->
+        <article class="tarjeta_testimonio">
+          <figure class="foto_principal"><img src="img/muestras/me3.jpg" alt="Muestra 3"></figure>
+          <small class="fecha">ENERO 18, 2026</small>
+          <p>“Excelente calidad y montaje impecable. El escritorio quedó sólido y elegante,
+            justo como lo imaginaba. Recomiendo totalmente sus servicios.”</p>
+          <footer class="perfil_usuario">
+            <img src="img/testimonios/test3.jpg" alt="Jessica Lutter" class="cliente 3">
+            <h5>Jessica <br> Lutter</h5>
+          </footer>
+        </article>
+      </section>
+    </section>
 
+    <!--CERRAR BIEN LAS ETIQUETAS-->
+  </main>
+
+  <!-- CONTENIDO FINAL DE MI PAGINA -->
+  <footer class="seccion_pie">
+    <!--FORMAS DE PAGO-->
+    <section class="pie">
+      <h4>FORMAS DE PAGO</h4>
+      <ul>
+        <li>Trnasferencia bancaria</li>
+        <li>Billeteras digitales</li>
+        <li>Efectivo</li>
+      </ul>
+    </section>
+    <!--METODOS DE ENVIO-->
+    <section class="pie">
+      <h4>METODOS DE ENVIO</h4>
+      <ul>
+        <li>Entrega a domicilio</li>
+        <li>Punto de encuentro</li>
+        <li>Entregas a Lima</li>
+      </ul>
+    </section>
+    <!--CONTACTO-->
+    <section class="pie">
+      <h4>CONTACTO</h4>
+      <ul>
+        <li>Whattsapp : 927 699 659</li>
+        <li>Facebook : OPTIMUEBLES</li>
+        <li>TIKTOK : OPTIMUEBLES_PERU</li>
+      </ul>
+    </section>
+
+    <!--IMAGEN DE MARCA DE AGUA-->
+    <section>
+      <img src="img/logo web.png" alt="MARCA DE AGUA" width="250px">
+    </section>
+
+  </footer>
+  <script src="script.js"></script>
 </body>
+
+<!--NOTA TENTAIVA HTML : 19
++1 AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)
+-->
+
 </html>

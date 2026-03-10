@@ -13,27 +13,30 @@
 
   <main class="main">
 
-    <!-- ================= INICIO ================= -->
-    <section id="INICIOO" class="section hero">
-      <header>
-        <nav class="nav-principal">
+    <!-- ================= HEADER ================= -->
+    <header id="INICIOO" class="hero">
 
-          <img src="img/Logo_Auranet.png" class="logo">
+      <nav class="lista_menu" aria-label="Menú principal">
 
-          <ul class="menu">
-            <li><a href="#INICIOO">INICIO</a></li>
-            <li><a href="#PLANESDEDATOS">PLANES</a></li>
-            <li><a href="#BENEFICIOSAURANET">BENEFICIOS</a></li>
-            <li><a href="#ALCANCENACIONAL">ALCANCE</a></li>
-            <li><a href="#COMENTARIOSCLIENTES">COMENTARIOS</a></li>
-            <li><a href="#MASINFOAURANET">MAS INFO</a></li>
-          </ul>
+        <a href="#INICIOO" class="logo-link">
+          <img src="img/Logo_Auranet.png" class="logo" alt="Logo de AuraNet">
+        </a>
 
-        </nav>
-      </header>
+        <ul class="menu">
+          <li><a href="#INICIOO">Inicio</a></li>
+          <li><a href="#PLANESDEDATOS">Planes</a></li>
+          <li><a href="#BENEFICIOSAURANET">Beneficios</a></li>
+          <li><a href="#ALCANCENACIONAL">Alcance</a></li>
+          <li><a href="#COMENTARIOSCLIENTES">Comentarios</a></li>
+          <li><a href="#MASINFOAURANET">Más info</a></li>
+        </ul>
+
+      </nav>
+
+    </header>
     </section>
 
-    <!-- ================= CAROUSEL ================= -->
+    <!-- ================= BANNER(CARRUSEL) ================= -->
     <section class="section first-section">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -65,15 +68,15 @@
       </div>
     </section>
 
-    <!-- ================= PLANES ================= -->
+    <!-- ================= PLANES TITULO ================= -->
     <section id="PLANESDEDATOS" class="section second-section">
 
       <header class="recuadro-titulo">
         <h1 class="titulo-planes">NUESTROS PLANES OFRECEN</h1>
       </header>
-
+      <!-- ================= PLANES RECUADROS ================= -->
       <section class="columnas_3">
-
+        <!-- ================= PLAN 1 ================= -->
         <article class="article">
           <header>
             <img src="img/velocidades/1000-Diamante-Elite.png">
@@ -98,7 +101,7 @@
             </a>
           </footer>
         </article>
-
+        <!-- ================= PLAN 2 ================= -->
         <article class="article">
           <header>
             <img src="img/velocidades/500-Oro-Puro.png">
@@ -123,7 +126,7 @@
             </a>
           </footer>
         </article>
-
+        <!-- ================= PLAN 3 ================= -->
         <article class="article">
           <header>
             <img src="img/velocidades/300-Plata-Premium.png">
@@ -148,211 +151,231 @@
             </a>
           </footer>
         </article>
+        <!-- ================= PLANES TERMINOS ================= -->
+      </section>
+      <section>
+        <footer>
+          <button class="btn-secundarioterminos">TERMINOS</button>
+        </footer>
 
       </section>
 
-      <footer>
-        <a href="#" class="btn-secundarioterminos">TERMINOS Y CONDICIONES</a>
-      </footer>
-    </section>
-
-
-    <!-- ================= BENEFICIOS ================= -->
-    <section class="beneficios-extra">
-      <article class="beneficios-box">
-        <header>
-          <h2 class="titulo-beneficios-extra">
-            No te pierdas estas PROMOS <br> que AuraNet tiene para ti!
+      <!-- ================= PROMOS ================= -->
+      <section class="promos-extra">
+        <article class="promos-box">
+          <h2 class="titulo-promos-extra">
+            No te pierdas estas PROMOS que AuraNet tiene para ti!
           </h2>
-        </header>
 
-        <footer>
           <a href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji?mode=gi_t" target="_blank"
             class="btn-principal btn-whatsapp">
             WhatsApp
           </a>
-        </footer>
-      </article>
-    </section>
-    <!-- FIBRA ÓPTICA -->
+        </article>
+      </section>
+      <!-- ================= VIDEO-EXPLICACION ================= -->
+      <section class="video-seccion">
 
-    <section class="clients">
+        <h2 class="titulo-video">Función de la Fibra Óptica</h2>
 
-      <!--RECOMENDACION: SECCION DEBERAS CAMBIARLO SEMANTICAMENTE POR FOOTER O HEADER SEGUN CORRESPONDA-->
+        <iframe class="video" src="https://www.youtube.com/embed/LaKZ5DDRPS8" allowfullscreen>
+        </iframe>
 
-      <footer class="titulo-recuadro-largo">
-        <h2>BENEFICIOS GRACIAS A QUE AURA NET ES 100% FIBRA OPTICA :)</h2>
-      </footer>
+      </section>
+      <!-- ================= BENEFICIOS ================= -->
+      <section id="BENEFICIOSAURANET" class="titulo-recuadro-largo">
+        <h2>BENEFICIOS GRACIAS A QUE AURA NET ES 100% FIBRA OPTICA </h2>
+      </section>
 
-      <article class="article">
-        <strong>VELOCIDAD SIMETRICA</strong>
-        <img src="img/velocidad_simetrica.png">
-        <p class="texto-beficioss">Carga y descarga todo lo que quieras con la misma velocidad.</p>
-      </article>
+      <section class="beneficios">
+        <!-- ================= BENEFICIOS RECUADROS ================= -->
+        <article class="article">
+          <strong>VELOCIDAD SIMETRICA</strong>
+          <img src="img/beneficios/velocidad_simetricagold.png">
+          <p class="texto-beficioss">Carga y descarga todo lo que quieras con la misma velocidad.</p>
+        </article>
 
-      <article class="article">
-        <strong>DESCARGAS ILIMITADAS</strong>
-        <img src="img/descargas_ilimitadas.png">
-        <p class="texto-beficioss">El internet de alta calidad y alta velocidad</p>
-      </article>
+        <article class="article">
+          <strong>DESCARGAS ILIMITADAS</strong>
+          <img src="img/beneficios/descargas_ilimitadasgold.png">
+          <p class="texto-beficioss">El internet de alta calidad y alta velocidad</p>
+        </article>
 
-      <article class="article">
-        <strong>MULTIPLES CONEXIONES</strong>
-        <img src="img/multiples_conexiones.png">
-        <p class="texto-beficioss">Toda la familia conectada a alta velocidad y en toda la casa</p>
-      </article>
+        <article class="article">
+          <strong>MULTIPLES CONEXIONES</strong>
+          <img src="img/beneficios/multiples_conexionesgold.png">
+          <p class="texto-beficioss">Toda la familia conectada a alta velocidad y en toda la casa</p>
+        </article>
 
-    </section>
+      </section>
 
-    <!-- ALCANCE -->
+      <!-- ================= ALCANCE TITULO ================= -->
+      <section id="ALCANCENACIONAL" class="titulo-recuadro-largo">
+        <h2>NUESTRO ALCANCE ES NACIONAL</h2>
+      </section>
 
+      <section class="two-columns">
+        <!-- ================= ALCANCE RECUADRO ================= -->
+        <article class="article alcance-contenido">
+          <p class="texto-grande">Nuestra conexión llega a todo Perú</p>
 
-    <section class="two-columns">
-      <!--RECOMENDACION:A TODAS LAS ARTICULOS AGREGAR 
-                 - UN HEADER QUE EXPLIQUE DE QUE SE TRATA LA SECCION
-                 - EL CONTENIDO ESTE PUEDE ESTAR DENTRO DE UNA SECCION O TODO FUERA DEPENDIENDO DE LA CANTIDAD DE ELEMENTOS QUE TENGAS
-                 - UN FOOTER CON INFORMACION ADICIONAL O UN LLAMADO A LA ACCION, SI NO TIENES NADA QUE PONER EN EL FOOTER MEJOR NO LO PONGAS
-                -->
-      <article class="article alcance-contenido">
-        <footer>
-          <section id="ALCANCENACIONAL" class="titulo-recuadro-largo">
-            <h2>NUESTRO ALCANCE ES NACIONAL</h2>
-            <p class="texto-alcance">Desde Lima hasta el último rincón del país, AuraNet te conecta con el mundo.</p>
+          <section class="imagenes-alcance">
+            <img src="img/alcance/carrito_auranet.png" class="img-alcance">
+            <img src="img/alcance/mapa_peru.png" class="img-alcance">
           </section>
-        </footer>
+          <!-- ================= ALCANCE fOOTER ================= -->
+          <footer>
+            <strong class="footer-alcance">Donde estés, AuraNet llega contigo </strong>
+          </footer>
 
-        <figure class="imagenes-alcance">
-          <img src="img/carrito_auranet.png" alt="Carrito de AuraNet recorriendo el país" class="img-alcance">
-          <img src="img/Mapa_peru.png" alt="Mapa del Perú con cobertura de AuraNet" class="img-alcance">
-        </figure>
-
-        <footer>
-          <strong class="footer-alcance">Donde estés, AuraNet llega contigo </strong>
-        </footer>
-
-      </article>
-
-    </section>
-
-    <!-- ================= COMENTARIOS ================= -->
-    <section id="COMENTARIOSCLIENTES" class="section third-section">
-
-      <header class="recuadro-comentarios">
-        <h1 class="titulo-comentarios">Comentarios de nuestros clientes:</h1>
-      </header>
-
-      <section class="services">
-
-        <article class="article">
-          <footer><strong>Rubius</strong></footer>
-          <img src="img/clientes/rubius_cliente.jpg">
-          <p>¡El ping es bajísimo para jugar! De locos tío, AuraNet es otro nivel.</p>
-        </article>
-
-        <article class="article">
-          <footer><strong>Ibai Llanos</strong></footer>
-          <img src="img/clientes/ibai_llanos_cliente.png">
-          <p>La mejor fibra que he probado. Puedo hacer directos sin una sola caída.</p>
-        </article>
-
-        <article class="article">
-          <footer><strong>Max Anthony</strong></footer>
-          <img src="img/clientes/glogloking_cliente.jpg">
-          <p>Ideal para mis streams diarios. La estabilidad es simplemente perfecta.</p>
-        </article>
-
-        <article class="article">
-          <footer><strong>Zully</strong></footer>
-          <img src="img/clientes/zully_cliente.jpg">
-          <p>Subo mis TikToks en segundos y los lives me van súper fluidos.</p>
-        </article>
-
-        <article class="article">
-          <footer><strong>Daarick</strong></footer>
-          <img src="img/clientes/daarick_cliente.jpg">
-          <p>Ya puedo jugar y subir videos al mismo tiempo sin que se laguee nada.</p>
-        </article>
-
-        <article class="article">
-          <footer><strong>AndyZein</strong></footer>
-          <img src="img/clientes/zein_cliente.jpg">
-          <p>La latencia es clave para ganar y con AuraNet voy bajísimo. ¡Un MVP!</p>
-        </article>
-
-        <article class="article">
-          <footer><strong>Carlos</strong></footer>
-          <img src="img/clientes/sacha_cliente.jpg">
-          <p>Un servicio muy eficiente y rápido para trabajar. Justo lo que buscaba.</p>
-        </article>
-
-        <article class="article">
-          <footer><strong>Juan Alejandro</strong></footer>
-          <img src="img/clientes/padre_domingo_cliente.png">
-          <p>Una conexión muy estable para estar en contacto con mi comunidad.</p>
         </article>
 
       </section>
 
-      <!-- ================= FORMULARIO ================= -->
-      <section id="FORMULARIOCLIENTES" class="section fourth-section">
+      <!-- ================= COMENTARIOS ================= -->
+      <section id="COMENTARIOSCLIENTES" class="section third-section">
+        <!-- ================= COMENTARIOS TITULO ================= -->
+        <header class="recuadro-comentarios">
+          <h1 class="titulo-comentarios">Comentarios de nuestros clientes:</h1>
+        </header>
 
-        <h2>FORMULARIO PARA CONTRATAR PLAN</h2>
+        <section class="services">
+          <!-- ================= COMENTARIOS RECUADROS ================= -->
+          <!-- ================= COMENTARIOS DE CLIENTE 1 ================= -->
+          <article class="article">
+            <footer><strong>Rubius</strong></footer>
+            <img src="img/clientes/rubius_cliente.jpg">
+            <p>¡El ping es bajísimo para jugar! De locos tío, AuraNet es otro nivel.</p>
+          </article>
+          <!-- ================= COMENTARIOS DE CLIENTE  2 ================= -->
+          <article class="article">
+            <footer><strong>Ibai Llanos</strong></footer>
+            <img src="img/clientes/ibai_llanos_cliente.png">
+            <p>La mejor fibra que he probado. Puedo hacer directos sin una sola caída.</p>
+          </article>
+          <!-- ================= COMENTARIOS DE CLIENTE  3 ================= -->
+          <article class="article">
+            <footer><strong>Max Anthony</strong></footer>
+            <img src="img/clientes/glogloking_cliente.jpg">
+            <p>Ideal para mis streams diarios. La estabilidad es simplemente perfecta.</p>
+          </article>
+          <!-- ================= COMENTARIOS DE CLIENTE  4 ================= -->
+          <article class="article">
+            <footer><strong>Zully</strong></footer>
+            <img src="img/clientes/zully_cliente.jpg">
+            <p>Subo mis TikToks en segundos y los lives me van súper fluidos.</p>
+          </article>
+          <!-- ================= COMENTARIOS DE CLIENTE  5 ================= -->
+          <article class="article">
+            <footer><strong>Daarick</strong></footer>
+            <img src="img/clientes/daarick_cliente.jpg">
+            <p>Ya puedo jugar y subir videos al mismo tiempo sin que se laguee nada.</p>
+          </article>
+          <!-- ================= COMENTARIOS DE CLIENTE  6 ================= -->
+          <article class="article">
+            <footer><strong>AndyZein</strong></footer>
+            <img src="img/clientes/zein_cliente.jpg">
+            <p>La latencia es clave para ganar y con AuraNet voy bajísimo. ¡Un MVP!</p>
+          </article>
+          <!-- ================= COMENTARIOS DE CLIENTE  7 ================= -->
+          <article class="article">
+            <footer><strong>Carlos</strong></footer>
+            <img src="img/clientes/sacha_cliente.jpg">
+            <p>Un servicio muy eficiente y rápido para trabajar. Justo lo que buscaba.</p>
+          </article>
+          <!-- ================= COMENTARIOS DE CLIENTE  8 ================= -->
+          <article class="article">
+            <footer><strong>Juan Alejandro</strong></footer>
+            <img src="img/clientes/padre_domingo_cliente.png">
+            <p>Una conexión muy estable para estar en contacto con mi comunidad.</p>
+          </article>
 
-        <form class="formulario">
+        </section>
+        <br>
+        <br>
+        <!-- ================= FORMULARIO ================= -->
+        <section id="FORMULARIOCLIENTES" class="formulario_auranet">
+          <!-- ================= FORMULARIO TITULO================= -->
+          <h2 class="formulario_titulo">FORMULARIO PARA CONTRATAR PLAN</h2>
+          <!-- ================= FORMULARIO RECUADRO ================= -->
+          <form class="formulario">
 
-          <label>Plan de Internet:</label>
-          <select>
-            <option>300 Mbps - Plata</option>
-            <option>500 Mbps - Oro</option>
-            <option>1000 Mbps - Diamante</option>
-          </select>
+            <label>Plan de Internet:</label>
+            <select>
+              <option>300 Mbps - Plata</option>
+              <option>500 Mbps - Oro</option>
+              <option>1000 Mbps - Diamante</option>
+            </select>
 
-          <label>Cuantos meses desea adquirir:</label>
-          <select>
-            <option>1 mes</option>
-            <option>3 meses</option>
-            <option>6 meses</option>
-            <option>12 meses</option>
-          </select>
+            <label>Cuantos meses desea adquirir:</label>
+            <select>
+              <option>1 mes</option>
+              <option>3 meses</option>
+              <option>6 meses</option>
+              <option>12 meses</option>
+            </select>
 
-          <label>Fecha de Instalación:</label>
-          <input type="date">
+            <label>Fecha de Instalación:</label>
+            <input type="date">
 
-          <label>Nombre Completo:</label>
-          <input type="text">
+            <label>Nombre Completo:</label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre completo">
 
-          <label>DNI:</label>
-          <input type="text">
+            <label>Email:</label>
+            <input type="email" name="email" required autocomplete="email">
 
-          <label>Dirección:</label>
-          <input type="text">
+            <label>Género:</label>
 
-          <label>Teléfono:</label>
-          <input type="tel">
+            <label>
+              <input type="radio" name="genero" value="F" checked> Femenino
+            </label>
+            <label>
+              <input type="radio" name="genero" value="M"> Masculino
+            </label>
 
-          <label>
-            <input type="checkbox"> Acepto los términos y condiciones
-          </label>
+            <label>DNI:</label>
+            <input type="text" minlength="8" maxlength="8" pattern="\d{8}" title="Ingrese un DNI válido de 8 dígitos"
+              required>
 
-          <button type="submit" class="btn-principal">Contratar Plan</button>
 
-        </form>
+            <label>Dirección:</label>
+            <input type="text">
 
-      </section>
+            <label>Teléfono:</label>
+            <input type="tel">
+
+            <label>
+              <input type="checkbox"> Acepto los términos y condiciones
+            </label>
+
+            <button type="submit" class="btn-principal">Contratar Plan</button>
+
+          </form>
+
+        </section>
 
   </main>
 
   <!-- ================= FOOTER ================= -->
   <footer class="footer columnas_4">
 
-    <section id="MASINFOAURANET">
+    <!-- ================= EMPRESA ================= -->
+    <section class="footer-empresa">
       <h2>AuraNet</h2>
+
       <p>Nuestro servicio de internet más veloz de todo el Perú</p>
-      <p>AuraNet © 2026-2026</p>
+
+      <address>
+        Atención al cliente online
+      </address>
+
+      <small>AuraNet © 2026</small>
     </section>
 
-    <section>
-      <h4>SERVICIOS</h4>
+    <!-- ================= NAVEGACION SERVICIOS ================= -->
+    <nav class="footer-servicios">
+      <h4>Servicios</h4>
+
       <ul>
         <li><a href="#INICIOO">Inicio</a></li>
         <li><a href="#PLANESDEDATOS">Planes de datos</a></li>
@@ -360,31 +383,43 @@
         <li><a href="#ALCANCENACIONAL">Alcance Nacional</a></li>
         <li><a href="#COMENTARIOSCLIENTES">Comentarios</a></li>
       </ul>
-    </section>
 
-    <section>
-      <h4>NOSOTROS</h4>
+    </nav>
+
+    <!-- ================= NOSOTROS ================= -->
+    <nav class="footer-nosotros">
+
+      <h4>Nosotros</h4>
+
       <ul>
         <li><a href="#">Nuestra empresa</a></li>
-        <li><a href="#">Convenios Con Otros Servicios</a></li>
+        <li><a href="#">Convenios con otros servicios</a></li>
         <li><a href="#">Ayúdanos a crecer</a></li>
         <li><a href="#">Política de privacidad</a></li>
       </ul>
-    </section>
 
-    <section>
-      <h4>AYUDA</h4>
+    </nav>
+
+    <!-- ================= AYUDA Y REDES ================= -->
+    <section class="footer-ayuda">
+
+      <h4>Ayuda</h4>
+
       <ul>
         <li><a href="#">Novedades</a></li>
-        <li><a href="#">Como Funciona la Fibra Optica</a></li>
+        <li><a href="#">Cómo funciona la fibra óptica</a></li>
         <li><a href="#">Atención al cliente</a></li>
       </ul>
-      <p>
-        <a href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji?mode=gi_t">WhatsApp</a> /
-        <a href="#">Facebook</a> /
-        <a href="#">Instagram</a> /
-        <a href="#">TikTok</a>
-      </p>
+
+      <h4>Redes sociales</h4>
+
+      <ul class="redes-sociales">
+        <li><a href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji?mode=gi_t">WhatsApp</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+      </ul>
+
     </section>
 
   </footer>
@@ -392,8 +427,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-<!--NOTA TENTATIVA HTML  : 19
- +1 ADICIONAR FORMULARIO (ADICIONAR 3 ELEMENTOS HTML NUEVOS COMO MINIMO)
+<!--NOTA TENTATIVA HTML  : 20
+ +1(OK) ADICIONAR FORMULARIO (ADICIONAR 3 ELEMENTOS HTML NUEVOS COMO MINIMO)
  +1 MEJORAR SEMANTICA DE LA PAGINA (FOOTER HEADER)
  -->
+
 </html>

@@ -14,9 +14,9 @@ body {
   background: #cce5ff;   /* azul */
   border: 3px solid #339af0;
   height: 80px;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   font-weight: bold;
+  justify-content: center;
 }
 
 .header ul {
