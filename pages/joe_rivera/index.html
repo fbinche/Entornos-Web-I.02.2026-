@@ -16,8 +16,8 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Promociones</a></li>
+                <li><a href="#Noticias_destacadas">Noticias destacadas</a></li>
+                <li><a href="#Ver_próximos_partidos">Ver próximos partidos</a></li>
                 <li><a href="#momentos__destacados">Momentos Destacados</a></li>
             </ul>
         </nav>
@@ -115,7 +115,10 @@
                 </article>
 
                 <footer>
-                    <a href="#">Ver todos los partidos</a>
+                    <a href="#">Ver próximos partidos</a>
+                </footer>
+                <footer id="Ver próximos partidos">
+                    
                 </footer>
 
             </section>
@@ -429,7 +432,7 @@
 
             <section class="section">
 
-                <header>    
+                <header>
                     <h1><b>Noticias destacadas</b></h1>
                     <b>Últimas novedades de la UEFA Champions League</b>
                 </header>
@@ -456,6 +459,10 @@
 
                         <footer>
                             <a href="#">Ver calendario completo</a>
+                        </footer>
+
+                        <footer id="Noticias_destacadas">
+
                         </footer>
                     </section>
 
@@ -503,18 +510,18 @@
 
                     <section class="card">
 
-                    <header>
-                        <h2>Equipos que clasificaron a los octavos de final</h2>
-                    </header>
+                        <header>
+                            <h2>Equipos que clasificaron a los octavos de final</h2>
+                        </header>
 
-                    <p>
-                        Conoce los clubes que lograron avanzar a la siguiente fase de la UEFA Champions League.
-                    </p>
+                        <p>
+                            Conoce los clubes que lograron avanzar a la siguiente fase de la UEFA Champions League.
+                        </p>
 
 
-                    <footer>
-                        <a href="#">Ver equipos clasificados</a>
-                    </footer>
+                        <footer>
+                            <a href="#">Ver equipos clasificados</a>
+                        </footer>
 
                     </section>
 
@@ -528,23 +535,23 @@
                             <source src="video.mp4/videoplayback (13).mp4" type="video/mp4">
                         </video>
 
-                        </figure>
+                    </figure>
                     <section class="card">
 
-                    <header>
-                        <h2>Jugadores destacados del torneo</h2>
-                    </header>
+                        <header>
+                            <h2>Jugadores destacados del torneo</h2>
+                        </header>
 
-                    <p>
-                        Conoce a los jugadores que han destacado en la UEFA Champions League.
-                    </p>
+                        <p>
+                            Conoce a los jugadores que han destacado en la UEFA Champions League.
+                        </p>
 
 
-                    <footer>
-                        <a href="#">Ver jugadores destacados</a>
-                    </footer>
+                        <footer>
+                            <a href="#">Ver jugadores destacados</a>
+                        </footer>
 
-                    <section>
+                        <section>
 
                 </article>
 
@@ -555,21 +562,21 @@
                         <video autoplay muted loop controls width="280">
                             <source src="video.mp4/videoplayback (14).mp4" type="video/mp4">
                         </video>
-                    
+
                     </figure>
                     <section class="card">
 
-                    <header>
-                        <h2>Mejores goles de la Champions League 2026</h2>
-                    </header>
+                        <header>
+                            <h2>Mejores goles de la Champions League 2026</h2>
+                        </header>
 
                         <p>
                             Recopilación de los goles más espectaculares del torneo.
                         </p>
 
-                    <footer>
-                        <a href="#">Ver todos los goles</a>
-                    </footer>
+                        <footer>
+                            <a href="#">Ver todos los goles</a>
+                        </footer>
 
                 </article>
 
@@ -699,7 +706,7 @@
                 </article>
 
                 <!--MOMENTO 5-->
-                    
+
                 <article class="card">
 
                     <header>
@@ -724,8 +731,8 @@
                     </footer>
 
                 </article>
-                            
-                    
+
+
                 <!--MOMENTO 6-->
 
                 <article class="card">
@@ -752,7 +759,7 @@
                     </footer>
 
                 </article>
-                
+
 
                 <!--MOMENTO 7-->
 
@@ -781,7 +788,7 @@
 
                 </article>
 
-                
+
 
                 <!--MOMENTO 8-->
 
@@ -811,255 +818,258 @@
 
                 </article>
 
-                    </section>
-
-                </section>
-
-
             </section>
+
         </section>
+
+
+    </section>
+    </section>
     </section>
 
     <section class="card">
         <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
 
 
-    <!---------------------------------formulario------------------------------------------------->
+        <!---------------------------------formulario------------------------------------------------->
 
-    <section class="card">
-        <header>
-    <h1><b>SUSCRÍBETE PARA NO PERDERTE NOVEDADES</b></h1>
-    <b>Edición Champions League</b>
-</header>
-    
+        <section class="card">
+            <header>
+                <h1><b>SUSCRÍBETE PARA NO PERDERTE NOVEDADES</b></h1>
+                <b>Edición Champions League</b>
+            </header>
 
-<progress value="70" max="100"></progress>   <!-- Barra de progreso general -->
-                                            <!-- Representa avance del proceso -->
 
-<form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
+            <progress value="70" max="100"></progress> <!-- Barra de progreso general -->
+            <!-- Representa avance del proceso -->
 
-    <!-- ====================== DATOS PERSONALES ====================== -->
+            <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
 
-    <section>
-        <fieldset>
-            <legend>Datos del Hincha</legend>
-                <!-- input text con valor por defecto -->
-                 
+                <!-- ====================== DATOS PERSONALES ====================== -->
 
-            <label>Nombre:</label>
-            <input type="text" name="nombre" placeholder="Tu nombre" required minlength="3">
-            <br><br>
+                <section>
+                    <fieldset>
+                        <legend>Datos del Hincha</legend>
+                        <!-- input text con valor por defecto -->
 
-                            <!-- readonly -->
 
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Tu nombre" required minlength="3">
+                        <br><br>
 
-            <label>Tipo de Suscripción:</label>
-            <input type="text" name="tipo" value="Premium Fan" readonly>
-            <br><br>
+                        <!-- readonly -->
 
-                <!-- email con valor inicial -->
 
+                        <label>Tipo de Suscripción:</label>
+                        <input type="text" name="tipo" value="Premium Fan" readonly>
+                        <br><br>
 
-            <label>Email:</label>
-            <input type="email" name="email" placeholder="tu@correo.com" required>
-            <br><br>
+                        <!-- email con valor inicial -->
 
-            <!--Género-->
 
-            <label>Género del Suscriptor:</label>
-            <input type="radio" name="genero" value="F"> Femenino
-            <input type="radio" name="genero" value="M" checked> Masculino
-            <br><br>
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="tu@correo.com" required>
+                        <br><br>
 
-          <!-- checkbox marcado por defecto -->
+                        <!--Género-->
 
+                        <label>Género del Suscriptor:</label>
+                        <input type="radio" name="genero" value="F"> Femenino
+                        <input type="radio" name="genero" value="M" checked> Masculino
+                        <br><br>
 
-            <label>
-                <input type="checkbox" name="terminos" required>
-                Acepto recibir alertas de goles y noticias
-            </label>
+                        <!-- checkbox marcado por defecto -->
 
-        </fieldset>
-    </section>
 
-     <!-- ====================== SELECT CON OPTGROUP ====================== -->
+                        <label>
+                            <input type="checkbox" name="terminos" required>
+                            Acepto recibir alertas de goles y noticias
+                        </label>
 
+                    </fieldset>
+                </section>
 
-    <section>
-        <fieldset>
-            <legend>Ubicación y Equipo</legend>
+                <!-- ====================== SELECT CON OPTGROUP ====================== -->
 
-            <label>Seleccione su Equipo Favorito:</label>
-            <select name="equipo">
-                <option value="">Seleccione</option>
 
-                    <!-- optgroup agrupa opciones -->
+                <section>
+                    <fieldset>
+                        <legend>Ubicación y Equipo</legend>
 
+                        <label>Seleccione su Equipo Favorito:</label>
+                        <select name="equipo">
+                            <option value="">Seleccione</option>
 
-                <optgroup label="España">
-                    <option value="rm">Real Madrid</option>
-                    <option value="fcb">FC Barcelona</option>
-                    <option value="atm">Atlético de Madrid</option>
-                </optgroup>
+                            <!-- optgroup agrupa opciones -->
 
-                <optgroup label="Inglaterra">
-                    <option value="mc">Manchester City</option>
-                    <option value="liv">Liverpool</option>
-                    <option value="ars">Arsenal</option>
-                </optgroup>
 
-            </select>
+                            <optgroup label="España">
+                                <option value="rm">Real Madrid</option>
+                                <option value="fcb">FC Barcelona</option>
+                                <option value="atm">Atlético de Madrid</option>
+                            </optgroup>
 
-        </fieldset>
-    </section>
+                            <optgroup label="Inglaterra">
+                                <option value="mc">Manchester City</option>
+                                <option value="liv">Liverpool</option>
+                                <option value="ars">Arsenal</option>
+                            </optgroup>
 
-        <!-- ====================== MEDICIONES ====================== -->
+                        </select>
 
+                    </fieldset>
+                </section>
 
-    <section>
-        <fieldset>
-            <legend>Nivel de Fanatismo</legend>
+                <!-- ====================== MEDICIONES ====================== -->
 
-            <label>Pasión por la Champions:</label>
-            <meter value="0.90" min="0" max="1"></meter>
-            <br><br>
 
-            <label>¿Cuántas finales has visto?:</label>
-            <input type="range" name="finales" min="0" max="20" value="10">
-            <output>20</output> <output>finales</output>
+                <section>
+                    <fieldset>
+                        <legend>Nivel de Fanatismo</legend>
 
-        </fieldset>
-    </section>
+                        <label>Pasión por la Champions:</label>
+                        <meter value="0.90" min="0" max="1"></meter>
+                        <br><br>
 
-     <!-- ====================== ARCHIVOS Y MULTIMEDIA ====================== -->
+                        <label>¿Cuántas finales has visto?:</label>
+                        <input type="range" name="finales" min="0" max="20" value="10">
+                        <output>20</output> <output>finales</output>
 
+                    </fieldset>
+                </section>
 
-    <section>
-        <fieldset>
-            <legend>Tu Galería de Hincha</legend>
+                <!-- ====================== ARCHIVOS Y MULTIMEDIA ====================== -->
 
-             <!-- file múltiple -->
 
+                <section>
+                    <fieldset>
+                        <legend>Tu Galería de Hincha</legend>
 
-            <label>Sube tus fotos en el estadio:</label>
-            <input type="file" name="fotos_estadio" accept="image/*" multiple>
-            <br><br>
+                        <!-- file múltiple -->
 
-          <!-- captura desde cámara -->
 
+                        <label>Sube tus fotos en el estadio:</label>
+                        <input type="file" name="fotos_estadio" accept="image/*" multiple>
+                        <br><br>
 
-            <label>Foto con tu camiseta (cámara):</label>
-            <input type="file" name="foto_perfil" accept="image/*" capture>
-            <br><br>
+                        <!-- captura desde cámara -->
 
-        </fieldset>
-    </section>
 
+                        <label>Foto con tu camiseta (cámara):</label>
+                        <input type="file" name="foto_perfil" accept="image/*" capture>
+                        <br><br>
 
- <!-- ====================== ELEMENTOS INTERACTIVOS ====================== -->
+                    </fieldset>
+                </section>
 
-    <section>
-        <fieldset>
-            <legend>Más Detalles</legend>
 
-         <!-- datalist para sugerencias -->
+                <!-- ====================== ELEMENTOS INTERACTIVOS ====================== -->
 
+                <section>
+                    <fieldset>
+                        <legend>Más Detalles</legend>
 
-            <label>Ciudad donde verás la final:</label>
-            <input list="ciudades" name="ciudad">
-            <datalist id="ciudades">
-                <option value="Londres">
-                <option value="Madrid">
-                <option value="París">
-                <option value="Múnich">
-            </datalist>
-            <br><br>
+                        <!-- datalist para sugerencias -->
 
-             <!-- details desplegable -->
 
+                        <label>Ciudad donde verás la final:</label>
+                        <input list="ciudades" name="ciudad">
+                        <datalist id="ciudades">
+                            <option value="Londres">
+                            <option value="Madrid">
+                            <option value="París">
+                            <option value="Múnich">
+                        </datalist>
+                        <br><br>
 
-            <details>
-                <summary>Ver beneficios de suscripción</summary>
-                <p>1.- Recibirás videos exclusivos de los goles 1 minuto después de anotados.</p>
-                <p>2.- Acceso a entrevistas con jugadores y entrenadores.</p>
-                <p>3.- Descuentos en merchandising oficial de la UEFA.</p>
-                <p>4.- Participación en sorteos para asistir a la final en vivo.</p>
-                <p>5.- Acceso a contenido exclusivo detrás de cámaras.</p>
-                <p>6.- Alertas personalizadas de tus equipos favoritos.</p>
-                <p>7.- Acceso a análisis tácticos y resúmenes de partidos.</p>
-            </details>
+                        <!-- details desplegable -->
 
-        </fieldset>
-    </section>
 
-    <!-- ====================== BOTONES ====================== -->
+                        <details>
+                            <summary>Ver beneficios de suscripción</summary>
+                            <p>1.- Recibirás videos exclusivos de los goles 1 minuto después de anotados.</p>
+                            <p>2.- Acceso a entrevistas con jugadores y entrenadores.</p>
+                            <p>3.- Descuentos en merchandising oficial de la UEFA.</p>
+                            <p>4.- Participación en sorteos para asistir a la final en vivo.</p>
+                            <p>5.- Acceso a contenido exclusivo detrás de cámaras.</p>
+                            <p>6.- Alertas personalizadas de tus equipos favoritos.</p>
+                            <p>7.- Acceso a análisis tácticos y resúmenes de partidos.</p>
+                        </details>
 
-    <footer>
+                    </fieldset>
+                </section>
 
-      <!-- botón submit normal -->
+                <!-- ====================== BOTONES ====================== -->
 
-        <button type="submit">Suscribirme Ahora</button>
+                <footer>
 
-         <!-- botón submit con override -->
-        <button type="submit" formaction="/urgente" formmethod="get">Noticias Urgentes</button>
-        
-         <!-- botón reset -->
-        <button type="reset">Limpiar Formulario</button>
+                    <!-- botón submit normal -->
 
-            <!-- botón normal -->
+                    <button type="submit">Suscribirme Ahora</button>
 
-        <button type="button">Ver Tabla de Posiciones</button>
-    </footer>
+                    <!-- botón submit con override -->
+                    <button type="submit" formaction="/urgente" formmethod="get">Noticias Urgentes</button>
 
-</form>
+                    <!-- botón reset -->
+                    <button type="reset">Limpiar Formulario</button>
 
-    <!-- aside = contenido complementario -->
+                    <!-- botón normal -->
 
-<aside>
-    <b>Formulario oficial para fans de la UEFA Champions League.</b>
-</aside>
+                    <button type="button">Ver Tabla de Posiciones</button>
+                </footer>
 
+            </form>
 
-    </section>
+            <!-- aside = contenido complementario -->
 
+            <aside>
+                <b>Formulario oficial para fans de la UEFA Champions League.</b>
+            </aside>
 
 
-    <!--PIE DE PAGINA-->
-
-    <footer class="footer">
-    <section class="columnas_3">
-        <section>
-            <h2>Enlaces oficiales</h2>
-            <nav>
-                <ul>
-                    <li><a href="https://www.uefa.com">UEFA.com</a></li>
-                    <li><a href="#">Fundación de la UEFA</a></li>
-                </ul>
-            </nav>
-            <figure>
-                <img src="img/UEFA_Champions_League_logo.png" width="120" alt="Logo UEFA Champions League">
-            </figure>
-        </section>
-        
-        <section>
-            <h2>Elegir idioma</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">Français</a></li>
-                    <li><a href="#">Deutsch</a></li>
-                    <li><a href="#">Русский</a></li>
-                    <li><a href="#">Español</a></li>
-                    <li><a href="#">Italiano</a></li>
-                    <li><a href="#">Português</a></li>
-                </ul>
-            </nav>
         </section>
 
-    </section>
 
-    <small>© UEFA Champions League</small>
-</footer>
+
+        <!--PIE DE PAGINA-->
+
+        <footer class="footer">
+
+            <section class="columnas_6">
+
+
+                <section>
+                    <h2>Enlaces oficiales</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="https://www.uefa.com">UEFA.com</a></li>
+                            <li><a href="#">Fundación de la UEFA</a></li>
+                        </ul>
+                    </nav>
+                    <figure>
+                        <img src="img/UEFA_Champions_League_logo.png" width="20" alt="Logo UEFA Champions League">
+                    </figure>
+                </section>
+
+                <section>
+                    <h2>Elegir idioma</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Français</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Español</a></li>
+                            <li><a href="#">Italiano</a></li>
+                            <li><a href="#">Português</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+            </section>
+
+            <small>© UEFA Champions League</small>
+        </footer>
 
 </body>
 <!--NOTA TENTATIVA HTML  : 19
