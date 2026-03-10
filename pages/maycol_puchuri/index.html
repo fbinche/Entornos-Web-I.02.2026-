@@ -296,7 +296,7 @@
                     </article>
                     <!--ARTICULO 6-->
                     <article class="article">
-                         <header>
+                        <header>
                             <h2>Zona de Expedición</h2>
                         </header>
 
@@ -307,7 +307,8 @@
                         <details open>
                             <summary>Información</summary>
                             <p>
-                                Un área dedicada a la preparación final de pedidos para su envío, con espacio para empaquetado, etiquetado y organización de cargas según rutas de distribución.
+                                Un área dedicada a la preparación final de pedidos para su envío, con espacio para
+                                empaquetado, etiquetado y organización de cargas según rutas de distribución.
                             </p>
                         </details>
 
@@ -316,7 +317,7 @@
                         </footer>
                     </article>
                     <!--ARTICULO 7-->
-                   <article class="article">
+                    <article class="article">
                         <header>
                             <h2>Zona de Cross-Docking</h2>
                         </header>
@@ -328,7 +329,8 @@
                         <details open>
                             <summary>Información</summary>
                             <p>
-                                Un área dedicada a la recepción de mercancía que se prepara para ser enviada rápidamente sin pasar por almacenamiento, ideal para productos de alta rotación.
+                                Un área dedicada a la recepción de mercancía que se prepara para ser enviada rápidamente
+                                sin pasar por almacenamiento, ideal para productos de alta rotación.
                             </p>
                         </details>
 
@@ -337,7 +339,7 @@
                         </footer>
                     </article>
                     <!--ARTICULO 8-->
-                   <article class="article">
+                    <article class="article">
                         <header>
                             <h2>Zona de Devoluciones</h2>
                         </header>
@@ -450,10 +452,10 @@
                             <h3>Aceite Vegetal 1L</h3>
                         </header>
 
-                            <figure>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Olive_oil_bottle.jpg"
-                                    alt="Aceite vegetal">
-                            </figure>
+                        <figure>
+                            <img src="https://vegaperu.vtexassets.com/arquivos/ids/163340/021203.jpg?v=638168209204070000S"
+                                alt="Aceite vegetal">
+                        </figure>
 
                         <p>
                             <del>S/14.00</del>
@@ -531,10 +533,10 @@
                             <h3>Lentejas 1kg</h3>
                         </header>
 
-                            <figure>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Lentils.jpg"
-                                    alt="Lentejas">
-                            </figure>
+                        <figure>
+                            <img src="https://plazavea.vteximg.com.br/arquivos/ids/30213008-512-512/20355792.jpg"
+                                alt="Lentejas">
+                        </figure>
 
                         <p>
                             <del>S/9.00</del>
@@ -715,11 +717,9 @@
                             <button type="button">Comprar</button>
                         </footer>
 
-                        </article>
-                        <!-- ITEM 13 -->
-                        <article class="card">
-                            <p>Item 13</p>
-                        </article>
+                    </article>
+
+                    <article class="card">
 
                         <!-- ITEM 14 -->
                         <article class="card">
@@ -744,312 +744,557 @@
 
         </section>
 
-        <section class="section fourth-section">
-            <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
-            <h2>Formulario ....</h2>
-        </section>
+        <section class="section fourth-section" id="formulario">
+            <h2>Formulario para realizar la compra</h2>
 
-      <!-- ═══════════════════════════════
+            <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
+
+                <!-- ═══════════════════════════════
+           SECCIÓN 1 — DATOS PERSONALES
+      ═══════════════════════════════ -->
+                <section>
+                    <fieldset>
+                        <legend>👤 Datos Personales</legend>
+                        <div class="g2">
+
+                            <!-- input text con valor por defecto -->
+                            <div class="campo">
+                                <label>Nombre <span class="req">*</span></label>
+                                <input type="text" name="nombre" value="Bernabe Inche" required minlength="3"
+                                    placeholder="Tu nombre completo">
+                            </div>
+
+                            <!-- DNI máximo 8 caracteres -->
+                            <div class="campo">
+                                <label>DNI <span class="req">*</span></label>
+                                <input type="text" name="dni" minlength="8" maxlength="8" pattern="\d{8}"
+                                    title="Ingrese un DNI válido de 8 dígitos" required placeholder="12345678">
+                            </div>
+
+                            <!-- Campo solo lectura -->
+                            <div class="campo">
+                                <label>Solo lectura</label>
+                                <input type="text" value="VALOR NO EDITABLE" readonly>
+                            </div>
+
+                            <!-- Campo deshabilitado -->
+                            <div class="campo">
+                                <label>Campo deshabilitado</label>
+                                <input type="text" value="No disponible" disabled>
+                            </div>
+
+                            <!-- Mínimo 4 caracteres -->
+                            <div class="campo">
+                                <label>Valor mínimo (4 caracteres)</label>
+                                <input type="text" minlength="4" placeholder="Mínimo 4 caracteres">
+                            </div>
+
+                            <!-- readonly -->
+                            <div class="campo">
+                                <label>Código de usuario</label>
+                                <input type="text" name="codigo" value="fbinche" readonly required>
+                            </div>
+
+                            <!-- email -->
+                            <div class="campo">
+                                <label>Email <span class="req">*</span></label>
+                                <input type="email" name="email" required autocomplete="email"
+                                    placeholder="correo@ejemplo.com">
+                            </div>
+
+                            <!-- tel -->
+                            <div class="campo">
+                                <label>Teléfono <span class="req">*</span></label>
+                                <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}"
+                                    placeholder="987000000">
+                            </div>
+
+                            <!-- password -->
+                            <div class="campo">
+                                <label>Contraseña <span class="req">*</span></label>
+                                <input type="password" name="clave" placeholder="••••••" value="123456">
+                            </div>
+
+                            <!-- url -->
+                            <div class="campo">
+                                <label>Sitio web</label>
+                                <input type="url" name="web" value="https://www.idat.edu.pe">
+                            </div>
+
+                            <!-- number -->
+                            <div class="campo">
+                                <label>Número de hijos</label>
+                                <input type="number" name="hijos" min="0" max="10" value="1">
+                            </div>
+
+                            <!-- color -->
+                            <div class="campo">
+                                <label>Color favorito de bolsa</label>
+                                <div style="display:flex;align-items:center;gap:.75rem;margin-top:.2rem;">
+                                    <input type="color" name="colorFavorito" value="#2d6a2f"
+                                        style="width:48px;height:38px;padding:2px;border-radius:8px;border:1.5px solid var(--borde);cursor:pointer;">
+                                    <span style="font-size:.82rem;color:var(--gris);">Elige el color de tu bolsa
+                                        ecológica</span>
+                                </div>
+                            </div>
+
+                            <!-- radio -->
+                            <div class="campo">
+                                <label>Género</label>
+                                <div class="check-group">
+                                    <label class="check-item">
+                                        <input type="radio" name="genero" value="F" checked> Femenino
+                                    </label>
+                                    <label class="check-item">
+                                        <input type="radio" name="genero" value="M"> Masculino
+                                    </label>
+                                    <label class="check-item">
+                                        <input type="radio" name="genero" value="O"> Otro
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- checkbox -->
+                            <div class="campo">
+                                <label>¿Cómo nos conociste?</label>
+                                <div class="check-group">
+                                    <label class="check-item">
+                                        <input type="checkbox" name="canal" value="html" checked> Facebook
+                                    </label>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="canal" value="css"> Referido
+                                    </label>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="canal" value="js"> Mercado
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- select -->
+                            <div class="campo">
+                                <label>País</label>
+                                <select name="pais">
+                                    <option value="">Seleccione País</option>
+                                    <option value="co">Colombia</option>
+                                    <option value="pe">Perú</option>
+                                    <option value="ar">Argentina</option>
+                                </select>
+                            </div>
+
+                            <!-- datalist -->
+                            <div class="campo">
+                                <label>Ciudad</label>
+                                <input list="ciudades" name="ciudad" value="Lima">
+                                <datalist id="ciudades">
+                                    <option value="Lima">
+                                    <option value="Cusco">
+                                    <option value="Arequipa">
+                                    <option value="Trujillo">
+                                    <option value="Piura">
+                                </datalist>
+                            </div>
+
+                            <!-- select multiple -->
+                            <div class="campo s2">
+                                <label>Productos de interés <mark>Ctrl + clic para varios</mark></label>
+                                <select name="tech" multiple style="height:100px;">
+                                    <option selected>Menestras</option>
+                                    <option>Verduras y Tubérculos</option>
+                                    <option>Granos y Cereales</option>
+                                    <option selected>Aceites y Condimentos</option>
+                                    <option>Lácteos</option>
+                                </select>
+                            </div>
+
+                            <!-- textarea -->
+                            <div class="campo s2">
+                                <label>Comentarios del pedido</label>
+                                <textarea name="comentarios" rows="4"
+                                    placeholder="Ej: Sin picante, preferir papa amarilla, entregar en portería...">Escribe aquí tu comentario...</textarea>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </section>
+
+                <!-- ═══════════════════════════════
+           SECCIÓN 2 — FECHAS Y HORARIOS
+      ═══════════════════════════════ -->
+                <section>
+                    <fieldset>
+                        <legend>📅 Fechas y Horarios</legend>
+                        <div class="g3">
+
+                            <!-- date -->
+                            <div class="campo">
+                                <label>Fecha de registro</label>
+                                <input type="date" name="fechaRegistro" value="1995-08-15">
+                            </div>
+
+                            <!-- date con rango -->
+                            <div class="campo">
+                                <label>Fecha de nacimiento</label>
+                                <input type="date" name="fechaNacimiento" value="2000-01-01" min="1960-01-01"
+                                    max="2010-12-31">
+                            </div>
+
+                            <!-- month -->
+                            <div class="campo">
+                                <label>Mes inicio de suscripción <span class="req">*</span></label>
+                                <input type="month" name="mesSuscripcion" value="2026-03" min="2026-01" max="2030-12"
+                                    required>
+                            </div>
+
+                            <!-- week -->
+                            <div class="campo">
+                                <label>Semana de entrega</label>
+                                <input type="week" name="semanaEntrega" value="2026-W10" min="2025-W01" max="2026-W52">
+                            </div>
+
+                            <!-- datetime-local -->
+                            <div class="campo">
+                                <label>Fecha y hora de reunión</label>
+                                <input type="datetime-local" name="reunion" value="2026-03-04T10:30"
+                                    min="2026-01-01T08:00" max="2026-12-31T18:00" step="900">
+                            </div>
+
+                            <!-- datetime-local readonly -->
+                            <div class="campo">
+                                <label>Límite de oferta actual</label>
+                                <input type="datetime-local" name="limiteOferta" value="2026-03-20T23:59" readonly>
+                            </div>
+
+                            <!-- time atención -->
+                            <div class="campo">
+                                <label>Hora de atención <span class="req">*</span></label>
+                                <input type="time" name="horaAtencion" value="09:00" min="08:00" max="18:00" step="300"
+                                    required>
+                            </div>
+
+                            <!-- time entrada -->
+                            <div class="campo">
+                                <label>Hora de entrada repartidor</label>
+                                <input type="time" name="horaInicio" value="08:15" min="08:00" max="08:30">
+                            </div>
+
+                            <!-- time salida -->
+                            <div class="campo">
+                                <label>Hora de salida repartidor</label>
+                                <input type="time" name="horaFin" value="18:10" min="18:00" max="18:45">
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </section>
+
+                <!-- ═══════════════════════════════
            SECCIÓN 3 — UBICACIÓN
       ═══════════════════════════════ -->
-      <section>
-        <fieldset>
-          <legend>📍 Ubicación y Envío</legend>
-          <div class="g2">
+                <section>
+                    <fieldset>
+                        <legend>📍 Ubicación y Envío</legend>
+                        <div class="g2">
 
-            <!-- select con optgroup -->
-            <div class="campo">
-              <label>Seleccione País <span class="req">*</span></label>
-              <select name="paisEnvio" required>
-                <option value="">Seleccione</option>
-                <optgroup label="Sudamérica">
-                  <option value="pe" selected>Perú</option>
-                  <option value="ar">Argentina</option>
-                  <option value="co">Colombia</option>
-                  <option value="ec">Ecuador</option>
-                </optgroup>
-                <optgroup label="Europa">
-                  <option value="de">Alemania</option>
-                  <option value="es">España</option>
-                </optgroup>
-              </select>
-            </div>
+                            <!-- select con optgroup -->
+                            <div class="campo">
+                                <label>Seleccione País <span class="req">*</span></label>
+                                <select name="paisEnvio" required>
+                                    <option value="">Seleccione</option>
+                                    <optgroup label="Sudamérica">
+                                        <option value="pe" selected>Perú</option>
+                                        <option value="ar">Argentina</option>
+                                        <option value="co">Colombia</option>
+                                        <option value="ec">Ecuador</option>
+                                    </optgroup>
+                                    <optgroup label="Europa">
+                                        <option value="de">Alemania</option>
+                                        <option value="es">España</option>
+                                    </optgroup>
+                                </select>
+                            </div>
 
-            <!-- datalist distritos -->
-            <div class="campo">
-              <label>Distrito <span class="req">*</span></label>
-              <input list="distritos" name="distrito" placeholder="Escribe tu distrito">
-              <datalist id="distritos">
-                <option value="Miraflores">
-                <option value="San Isidro">
-                <option value="Surco">
-                <option value="La Molina">
-                <option value="Ate">
-                <option value="Chorrillos">
-                <option value="San Juan de Lurigancho">
-              </datalist>
-            </div>
+                            <!-- datalist distritos -->
+                            <div class="campo">
+                                <label>Distrito <span class="req">*</span></label>
+                                <input list="distritos" name="distrito" placeholder="Escribe tu distrito">
+                                <datalist id="distritos">
+                                    <option value="Miraflores">
+                                    <option value="San Isidro">
+                                    <option value="Surco">
+                                    <option value="La Molina">
+                                    <option value="Ate">
+                                    <option value="Chorrillos">
+                                    <option value="San Juan de Lurigancho">
+                                </datalist>
+                            </div>
 
-            <fieldset style="grid-column:span 2;border:1.5px dashed var(--borde);background:#fdfaf4;">
-              <legend>Mi información de entrega</legend>
-              <div class="g2">
-                <div class="campo">
-                  <label>Nombre receptor <span class="req">*</span></label>
-                  <input type="text" name="nombreReceptor"
-                         placeholder="Ingrese su nombre" required minlength="3">
-                </div>
-                <div class="campo">
-                  <label>Dirección completa <span class="req">*</span></label>
-                  <input type="text" name="direccion" required minlength="10"
-                         placeholder="Av. Grau 456, Piso 2">
-                </div>
-              </div>
-            </fieldset>
+                            <fieldset style="grid-column:span 2;border:1.5px dashed var(--borde);background:#fdfaf4;">
+                                <legend>Mi información de entrega</legend>
+                                <div class="g2">
+                                    <div class="campo">
+                                        <label>Nombre receptor <span class="req">*</span></label>
+                                        <input type="text" name="nombreReceptor" placeholder="Ingrese su nombre"
+                                            required minlength="3">
+                                    </div>
+                                    <div class="campo">
+                                        <label>Dirección completa <span class="req">*</span></label>
+                                        <input type="text" name="direccion" required minlength="10"
+                                            placeholder="Av. Grau 456, Piso 2">
+                                    </div>
+                                </div>
+                            </fieldset>
 
-          </div>
-        </fieldset>
-      </section>
+                        </div>
+                    </fieldset>
+                </section>
 
-      <!-- ═══════════════════════════════
+                <!-- ═══════════════════════════════
            SECCIÓN 4 — INDICADORES
       ═══════════════════════════════ -->
-      <section>
+                <section>
 
-        <!-- Medición con meter -->
-        <fieldset>
-          <legend>📊 Indicadores de Calidad</legend>
+                    <!-- Medición con meter -->
+                    <fieldset>
+                        <legend>📊 Indicadores de Calidad</legend>
 
-          <div class="meter-fila">
-            <label><mark>Frescura del producto</mark></label>
-            <meter value="0.95" min="0" max="1"></meter>
-            <span>95%</span>
-          </div>
-          <div class="meter-fila">
-            <label><mark>Nivel Orgánico</mark></label>
-            <meter value="0.80" min="0" max="1"></meter>
-            <span>80%</span>
-          </div>
-          <div class="meter-fila">
-            <label><mark>Stock disponible</mark></label>
-            <meter value="0.60" min="0" max="1"></meter>
-            <span style="color:var(--naranja);">60%</span>
-          </div>
-          <div class="meter-fila">
-            <label><mark>Satisfacción clientes</mark></label>
-            <meter value="1" min="0" max="1"></meter>
-            <span>100%</span>
-          </div>
+                        <div class="meter-fila">
+                            <label><mark>Frescura del producto</mark></label>
+                            <meter value="0.95" min="0" max="1"></meter>
+                            <span>95%</span>
+                        </div>
+                        <div class="meter-fila">
+                            <label><mark>Nivel Orgánico</mark></label>
+                            <meter value="0.80" min="0" max="1"></meter>
+                            <span>80%</span>
+                        </div>
+                        <div class="meter-fila">
+                            <label><mark>Stock disponible</mark></label>
+                            <meter value="0.60" min="0" max="1"></meter>
+                            <span style="color:var(--naranja);">60%</span>
+                        </div>
+                        <div class="meter-fila">
+                            <label><mark>Satisfacción clientes</mark></label>
+                            <meter value="1" min="0" max="1"></meter>
+                            <span>100%</span>
+                        </div>
 
-          <br>
+                        <br>
 
-          <!-- range -->
-          <div class="campo" style="margin-bottom:1rem;">
-            <label>¿Cuánto valoras la frescura? (0–10)</label>
-            <div class="range-fila">
-              <input type="range" name="valorFrescura" id="rFrescura"
-                     min="0" max="10" value="9">
-              <span class="range-val" id="vFrescura">9</span>
-            </div>
-          </div>
+                        <!-- range -->
+                        <div class="campo" style="margin-bottom:1rem;">
+                            <label>¿Cuánto valoras la frescura? (0–10)</label>
+                            <div class="range-fila">
+                                <input type="range" name="valorFrescura" id="rFrescura" min="0" max="10" value="9">
+                                <span class="range-val" id="vFrescura">9</span>
+                            </div>
+                        </div>
 
-          <div class="campo">
-            <label>Kilos totales estimados del pedido (0–100 kg)</label>
-            <div class="range-fila">
-              <input type="range" name="kgTotal" id="rKg"
-                     min="0" max="100" value="20">
-              <span class="range-val" id="vKg">20 kg</span>
-            </div>
-          </div>
-        </fieldset>
+                        <div class="campo">
+                            <label>Kilos totales estimados del pedido (0–100 kg)</label>
+                            <div class="range-fila">
+                                <input type="range" name="kgTotal" id="rKg" min="0" max="100" value="20">
+                                <span class="range-val" id="vKg">20 kg</span>
+                            </div>
+                        </div>
+                    </fieldset>
 
-      </section>
+                </section>
 
-      <!-- ═══════════════════════════════
+                <!-- ═══════════════════════════════
            SECCIÓN 5 — ARCHIVOS Y MULTIMEDIA
       ═══════════════════════════════ -->
-      <section>
-        <fieldset>
-          <legend>📎 Adjuntar Archivos y Multimedia</legend>
-          <div class="g2">
+                <section>
+                    <fieldset>
+                        <legend>📎 Adjuntar Archivos y Multimedia</legend>
+                        <div class="g2">
 
-            <!-- file múltiple PDF -->
-            <div class="campo">
-              <label>Subir voucher de pago (PDF/DOC)</label>
-              <input type="file" name="voucher"
-                     accept=".pdf,.doc,.docx" multiple>
-            </div>
+                            <!-- file múltiple PDF -->
+                            <div class="campo">
+                                <label>Subir voucher de pago (PDF/DOC)</label>
+                                <input type="file" name="voucher" accept=".pdf,.doc,.docx" multiple>
+                            </div>
 
-            <!-- file múltiple imágenes -->
-            <div class="campo">
-              <label>Subir imágenes del pedido</label>
-              <input type="file" name="imagenes"
-                     multiple accept="image/*">
-            </div>
+                            <!-- file múltiple imágenes -->
+                            <div class="campo">
+                                <label>Subir imágenes del pedido</label>
+                                <input type="file" name="imagenes" multiple accept="image/*">
+                            </div>
 
-            <!-- file captura cámara -->
-            <div class="campo s2">
-              <label>Foto de referencia del lugar de entrega (cámara)</label>
-              <input type="file" name="fotoLugar"
-                     accept="image/*" capture>
-            </div>
+                            <!-- file captura cámara -->
+                            <div class="campo s2">
+                                <label>Foto de referencia del lugar de entrega (cámara)</label>
+                                <input type="file" name="fotoLugar" accept="image/*" capture>
+                            </div>
 
-            <!-- iframe video -->
-            <div class="campo s2">
-              <label>Video tutorial: cómo preparar tus menestras</label>
-              <div class="media-wrap">
-                <iframe
-                  src="https://www.youtube.com/embed/dD2EISBDjWM"
-                  title="Tutorial menestras"
-                  allowfullscreen>
-                </iframe>
-                <!-- audio -->
-                <audio controls>
-                  <source src="instrucciones.mp3" type="audio/mpeg">
-                  Tu navegador no soporta el elemento audio.
-                </audio>
-              </div>
-            </div>
+                            <!-- iframe video -->
+                            <div class="campo s2">
+                                <label>Video tutorial: cómo preparar tus menestras</label>
+                                <div class="media-wrap">
+                                    <iframe src="https://www.youtube.com/embed/dD2EISBDjWM" title="Tutorial menestras"
+                                        allowfullscreen>
+                                    </iframe>
+                                    <!-- audio -->
+                                    <audio controls>
+                                        <source src="instrucciones.mp3" type="audio/mpeg">
+                                        Tu navegador no soporta el elemento audio.
+                                    </audio>
+                                </div>
+                            </div>
 
-          </div>
-        </fieldset>
-      </section>
+                        </div>
+                    </fieldset>
+                </section>
 
-      <!-- ═══════════════════════════════
+                <!-- ═══════════════════════════════
            SECCIÓN 6 — INFORMACIÓN ADICIONAL
       ═══════════════════════════════ -->
-      <section>
-        <fieldset>
-          <legend>ℹ️ Información Adicional</legend>
+                <section>
+                    <fieldset>
+                        <legend>ℹ️ Información Adicional</legend>
 
-          <!-- details cerrado -->
-          <details>
-            <summary>🌿 Política de devoluciones</summary>
-            <p>Tienes 24 horas para reportar cualquier problema con tu pedido.
-               Reembolsamos o reponemos el producto sin costo adicional si
-               el error es nuestro.</p>
-          </details>
+                        <!-- details cerrado -->
+                        <details>
+                            <summary>🌿 Política de devoluciones</summary>
+                            <p>Tienes 24 horas para reportar cualquier problema con tu pedido.
+                                Reembolsamos o reponemos el producto sin costo adicional si
+                                el error es nuestro.</p>
+                        </details>
 
-          <!-- details abierto -->
-          <details open>
-            <summary>🚚 Zonas y horarios de reparto</summary>
-            <ul>
-              <li>Lima Centro: Cercado, Breña, La Victoria — Envío S/ 5</li>
-              <li>Lima Moderna: Miraflores, San Isidro, Surco — Envío S/ 8</li>
-              <li>Lima Este: Ate, Santa Anita, SJL — Envío S/ 10</li>
-              <li>Lima Sur: Villa El Salvador, Chorrillos — Envío S/ 10</li>
-            </ul>
-          </details>
+                        <!-- details abierto -->
+                        <details open>
+                            <summary>🚚 Zonas y horarios de reparto</summary>
+                            <ul>
+                                <li>Lima Centro: Cercado, Breña, La Victoria — Envío S/ 5</li>
+                                <li>Lima Moderna: Miraflores, San Isidro, Surco — Envío S/ 8</li>
+                                <li>Lima Este: Ate, Santa Anita, SJL — Envío S/ 10</li>
+                                <li>Lima Sur: Villa El Salvador, Chorrillos — Envío S/ 10</li>
+                            </ul>
+                        </details>
 
-          <details>
-            <summary>♻️ Empaque ecológico</summary>
-            <p>Usamos bolsas biodegradables reutilizables.
-               Devuelve tu bolsa en el próximo pedido y obtén S/ 0.50 de descuento.</p>
-          </details>
+                        <details>
+                            <summary>♻️ Empaque ecológico</summary>
+                            <p>Usamos bolsas biodegradables reutilizables.
+                                Devuelve tu bolsa en el próximo pedido y obtén S/ 0.50 de descuento.</p>
+                        </details>
 
-        </fieldset>
-      </section>
+                    </fieldset>
+                </section>
 
-      <!-- ═══════════════════════════════
+                <!-- ═══════════════════════════════
            TÉRMINOS Y BOTONES
       ═══════════════════════════════ -->
-      <section>
+                <section>
 
-        <!-- checkbox términos -->
-        <label class="check-item" style="font-size:.9rem;margin-bottom:1rem;display:flex;">
-          <input type="checkbox" name="terminos" required
-                 style="width:16px;height:16px;accent-color:var(--verde);">
-          Acepto los <a href="#" style="color:var(--verde);margin:0 .3rem;">Términos y Condiciones</a>
-          y la <a href="#" style="color:var(--verde);margin-left:.3rem;">Política de Privacidad</a>
-        </label>
+                    <!-- checkbox términos -->
+                    <label class="check-item" style="font-size:.9rem;margin-bottom:1rem;display:flex;">
+                        <input type="checkbox" name="terminos" required
+                            style="width:16px;height:16px;accent-color:var(--verde);">
+                        Acepto los <a href="#" style="color:var(--verde);margin:0 .3rem;">Términos y Condiciones</a>
+                        y la <a href="#" style="color:var(--verde);margin-left:.3rem;">Política de Privacidad</a>
+                    </label>
 
-        <!-- botones en menu -->
-        <menu>
-          <!-- submit normal -->
-          <button type="submit" class="btn-submit">
-            🛒 Confirmar Pedido
-          </button>
+                    <!-- botones en menu -->
+                    <menu>
+                        <!-- submit normal -->
+                        <button type="submit" class="btn-submit">
+                            🛒 Confirmar Pedido
+                        </button>
 
-          <!-- submit con override (formaction + formmethod) -->
-          <button type="submit" formaction="/pedido-rapido"
-                  formmethod="get" class="btn-get">
-            ⚡ Enviar vía GET
-          </button>
+                        <!-- submit con override (formaction + formmethod) -->
+                        <button type="submit" formaction="/pedido-rapido" formmethod="get" class="btn-get">
+                            ⚡ Enviar vía GET
+                        </button>
 
-          <!-- reset -->
-          <button type="reset" class="btn-reset">
-            🗑️ Limpiar
-          </button>
+                        <!-- reset -->
+                        <button type="reset" class="btn-reset">
+                            🗑️ Limpiar
+                        </button>
 
-          <!-- button type=button -->
-          <button type="button" class="btn-extra"
-                  onclick="alert('💾 Pedido guardado como borrador')">
-            💾 Guardar borrador
-          </button>
-        </menu>
+                        <!-- button type=button -->
+                        <button type="button" class="btn-extra" onclick="alert('💾 Pedido guardado como borrador')">
+                            💾 Guardar borrador
+                        </button>
+                    </menu>
 
-      </section>
+                </section>
 
-    </form>
-  </section>
-</main>
+            </form>
+        </section>
+    </main>
 
-<!-- ══════════════════════════════════════
+    <!-- ══════════════════════════════════════
      FOOTER
 ══════════════════════════════════════ -->
-<footer class="footer">
-  <section class="columnas_5">
+    <footer class="footer">
+        <section class="columnas_5">
 
-                <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Productos Populares</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
             <nav>
-                <h3>Ingresar información</h3>
-
+                <h3>Mercado Don Cholo</h3>
                 <ul>
                     <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Productos Populares</a></li>
-                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Nuestros Agricultores</a></li>
+                    <li><a href="#">Blog de Recetas</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
+
             <nav>
-                <h3>Ingresar información</h3>
-
+                <h3>Productos Populares</h3>
                 <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Productos Populares</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Menestras Frescas</a></li>
+                    <li><a href="#">Verduras y Tubérculos</a></li>
+                    <li><a href="#">Granos y Cereales</a></li>
+                    <li><a href="#">Ofertas del día</a></li>
                 </ul>
             </nav>
+
             <nav>
-                <h3>Ingresar información</h3>
-
+                <h3>Nos Hacemos Cargo</h3>
                 <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Productos Populares</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Atención de reclamos Lima</a></li>
+                    <li><a href="#">Consulta de reclamos Lima</a></li>
+                    <li><a href="#">Atención de reclamos Provincia</a></li>
+                    <li><a href="#">Consulta de reclamos Provincia</a></li>
                 </ul>
             </nav>
 
-    <section>
-      <div>
-        <h4>🌿 Don Cholo</h4>
-        <p>&copy; 2026 Mercado Don Cholo.<br>Todos los derechos reservados.</p>
-      </div>
-      <br>
-      <div class="social-links">
-        <a href="#" aria-label="Instagram">📸 Instagram</a>
-        <a href="#" aria-label="Facebook">👤 Facebook</a>
-        <a href="#" aria-label="TikTok">🎵 TikTok</a>
-        <a href="#" aria-label="YouTube">▶️ YouTube</a>
-      </div>
-    </section>
+            <nav>
+                <h3>Más Información</h3>
+                <ul>
+                    <li><a href="#">Seguir mi pedido</a></li>
+                    <li><a href="#">Zonas de cobertura</a></li>
+                    <li><a href="#">Suscripción semanal</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </nav>
 
-  </section>
-</footer>
+            <section>
+                <div>
+                    <h4>🌿 Don Cholo</h4>
+                    <p>&copy; 2026 Mercado Don Cholo.<br>Todos los derechos reservados.</p>
+                </div>
+                <br>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">📸 Instagram</a>
+                    <a href="#" aria-label="Facebook">👤 Facebook</a>
+                    <a href="#" aria-label="TikTok">🎵 TikTok</a>
+                    <a href="#" aria-label="YouTube">▶️ YouTube</a>
+                </div>
+            </section>
+
+        </section>
+
+
+    </footer>
+
+
+    <!--NOTA TENTATIVA HTML  : 16
+ +2 ADICIONAR FORMULARIO ok
+ +1 ADICIONAR CONTENIDO AL FOOTER & ADICIONAR NAVEGACION DE LOS ENLACES ok
+ +2 MEJORAR SECCION 2 CENTRO LOGISTICO , COMPLETAR LOS 8 ARTICULOS ok 
+ +3 MEJORAR SECCION 3 PRODUCTOS DEL MERCADO ,TENER 15 ITEMS MINIMO ok
+ -2 LA SEMANTICA DE LA PAGINA NO EXISTE
+ -->
+</body>
+
+
