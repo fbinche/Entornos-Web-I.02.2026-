@@ -1,229 +1,572 @@
-/*IMAGEN DE LA CABEZA*/
-.cabeza img{
-width: 100%;             
-  height: 100%;            
-  object-fit: cover;       
-  display: block;
+
+/************************************************************************************************************************************************/
+/*========================================================= CABEZERA ==========================================================================*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+.cabezera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 75%;
+  padding: 10px 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000                                                       /*POSICIONARLO AL FRENTE SIEMPRE*/
 }
 
-/*SECCION DEL BANNER*/
-.banner {
-    display: flex;                   /* Pone los banners uno al aldo del otro*/
-   & img{
- 
-    width: 430px;
-    height: 100%;
-
-   }
-}
-/*SECCION DE PRODUCTOS*/
-.seccion_productos{
-     
-     background: #b8b8b8;
-     border: 3px solid #2e2e2e;
-     border-radius: 8px;
-
-& .productos{ /*ANIDACION PRINCIPAL */
-                
-                display: flex;   
-                flex-wrap:wrap;             
-                gap: 20px;
-                justify-content: center;
-                padding-bottom: 40px;
-                width: 100%;
-
-    & .items{
-                 text-align: center;                
-                 border:2px solid #464646;
-                 background-color: #ffffff;
-                 border-radius: 6px;
-
-                 flex: 1 1 250px; 
-                 max-width: 250px; 
-
-                 /*PARA EFECTO DEL MOUSE*/
-                 transition: transform 0.3s ease;      
-                 cursor: pointer;
-                 &:hover{
-
-                    transform: translateY(-10px);    /*la direccion a donde ira la sombra*/
-                    box-shadow: 0 10px 20px rgb(0,0,0,0.2);
-                    border-color: #358bb3; 
-                 }
-            }
-    & img{
-                    filter: brightness(1.1);         /*brillo a la imagen*/
-                    /*DIMENSIONES DE MI IMAGENES establecidas */
-                    width: 100%;
-                    height: 200px;
-                }
- }
-    & p{
-
-
-        background: #000000;                       /*fondo negro para mis descripcion de texto*/
-        color: #ffffff;                            /*color del texto */
-        font-size: 18px;                             /*tamaño del texto*/
-        padding: 10px;                               /*separacion de los bordes*/
-        text-align: center;                          /*alinear mi texto al medio*/
-        margin-top: 15px;                            /*separar el margen de mi descripcion del articulo*/
-        margin-bottom: 0;                            /*margen inferior a 0 para evitar espacio innecesario*/
-
-    }
-
+.cabezera .nav_cabezera {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  margin: 0;
+  padding: 0;
 }
 
-/*SECCION DE TESTIMONIOS*/
-.seccion_testimonios{
-    /*ENCUADRES DE MIS TESTIMONIOS*/
-    display: flex;
-    gap: 30px;
-    padding: 20px 10px 20px 10px;
-    background-color: #a3d7f0;
-    border: 3px solid #358bb3;
-    border-radius: 6px;
-    
-    /*EDICION DE MIS SUBTITULO H5 Y H6*/
-    & h5{
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        color: #ffffff;
-        background-color: #383838;
-        padding: 25px ;
-    }
-    & h6{
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        color: #3313e6;
-    }
-    /*FIN DE MI EDICION DE SUBTITULOS*/
-      & .testimonios{
-        /*EDICION DEL CUADRO DE MIS TESTIMONIOS*/
-         background-color: #c2dcfa;
-         border:3px solid #000000;
-         border-radius: 20px;
-         font-size: 20px;
-         text-align: center;
-         color: #e90c0c;
-    }
-
-    & img{
-        object-fit: cover;
-        height: 270px;
-        width: auto;
-    }
+.cabezera .nav_cabezera li {
+  cursor: pointer;
+  color: #333;
 }
 
-/*SECCION DE ENVIOS*/
-.seccion_envios {
-    display: flex;
-    flex-wrap: wrap;       /*recuerda que eprmite que siempre los elementos salten a la linea de abajo cuando no caben en mi contenedor*/
+.cabezera .nav_cabezera li:hover {
+  color: #2aa6c5;
+}
+
+.cabezera .icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.cabezera .icon span {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #2aa6c5;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+
+/************************************************************************************************************************************************/
+/*========================================================= IMAGEN CENTRAL ==========================================================================*/
+/*--------------------------------------------------------- SECCION 1 --------------------------------------------------------------------------*/
+.seccion_1_img_central {
+  min-height: 600px;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banners/bn.gif');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.seccion_1_img_central h1 {
+  font-size: 60px;
+  margin: 0;
+  color: white;
+}
+
+.seccion_1_img_central .seccion_1_buton {
+  background: transparent;
+  border: 1px solid #2aa6c5;
+  color: #2aa6c5;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.seccion_1_img_central .seccion_1_buton:hover {
+  transform: scale(1.1);
+  color: white;
+  border: 1.4px solid white;
+}
+
+/* SECCION PARA BARRA DE BUSQUEDA Y FILTROS */
+.seccion_1_nav_central {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  margin: -50px auto;
+  width: 75%;
+  padding: 10px 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+}
+
+.seccion_1_nav_central fieldset {
+  border: none;
+  display: flex;
+  gap: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.seccion_1_nav_central .seccion_1_form_secion_textos_filtrado {
+  height: auto;
+  background: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.seccion_1_nav_central .seccion_1_form_secion_textos_filtrado label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #706f6f;
+}
+
+.seccion_1_nav_central .seccion_1_form_secion_textos_filtrado strong {
+  text-align: center;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+
+.seccion_1_nav_central .seccion_1_form_secion_textos_filtrado strong:hover {
+  transform: scale(1.1);
+}
+
+.seccion_1_nav_central button {
+  background-color: #2aa6c5;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.seccion_1_nav_central button:hover {
+  transform: scale(1.1);
+  background-color: #1a7a91;
+}
+
+
+/************************************************************************************************************************************************/
+/*========================================================= PRODUCTOS ==========================================================================*/
+/*--------------------------------------------------------- SECCION 2 --------------------------------------------------------------------------*/
+.seccion_2 {
+  display: grid;
+  grid-template-columns: 0.8fr 2.2fr;
+  gap: 40px;
+  padding: 60px 5%;
+  align-items: start;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 80px;
+}
+
+.seccion_2 .descripcion_productos {
+  display: flex;
+  flex-direction: column;
+}
+
+.seccion_2 .descripcion_productos small {
+  color: #2aa6c5;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.seccion_2 .descripcion_productos h2 {
+  line-height: 1.2;
+  font-size: 35px;
+  color: #2aa6c5;
+}
+
+.seccion_2 .descripcion_productos p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.seccion_2 .descripcion_productos a {
+  align-self: flex-start;
+  padding: 12px 35px;
+  border: 2px solid #2aa6c5;
+  border-radius: 50px;
+  color: #2aa6c5;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.seccion_2 .descripcion_productos a:hover {
+  background-color: #2aa6c5;
+  color: #fff;
+}
+
+.los_productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);                    /* Tres columnas*/
+  gap: 25px;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  transition:0.3s ease; 
+  border-radius: 25px;                                     
+  padding: 10px;                                        
+}
+.producto:hover { 
+  transform: scale(1.03);                                  /* Ligero agrandamiento  */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);               /* Sombra suave para darle profundidad */
+}
+
+.producto figure {
+  position: relative;
+  background-color: #f5f5f5; 
+  border-radius: 25px;
+  margin: 0 0 15px 0;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.producto figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.producto small {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #000;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  z-index: 1;                                             /*Lo sobreposiciona*/
+}
+
+ /* DETALLES DEL PRODUCTOS //TEXTOS Y PRECIOS */
+.producto h3 {
+  font-size: 25px;
+}
+
+.producto p {
+  font-size: 15px;
+  color: #888;
+}
+
+.producto data {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*EDICION DE MI BOTON DE CARRITO*/
+.producto button {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  padding: 10px;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 700;
+
+  /* AÑADO EFECTOS DE INVISIBILIDAD DIRECTA PARA RELEVAR CUANDOPASE EL MOUSE */
+  opacity: 0;                                                                      /* Totalmente transparente */
+  visibility: hidden;                                                              /* No interactuable y oculto para lectores */
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;        /* Transición para que aparezca suavemente */
+  transform: translateY(-220px);                                                   /* Un pequeño desplazamiento hacia abajo al ocultar */
+}
+
+/* MUESTRA EL BOTON AL PASAR EL MOUSE*/
+.producto:hover button {
+  opacity: 1;                                                                       /* Totalmente visible */
+  visibility: visible;                                                              /* Interactuable */
+}
+
+/************************************************************************************************************************************************/
+/*========================================================= FORMULARIO  ========================================================================*/
+/*--------------------------------------------------------- SECCION 3 --------------------------------------------------------------------------*/
+.seccion_3 {
+  background-color: #f5f5f5;
+  padding: 60px 5%;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.seccion_3 h2 {
+  color: #2aa6c5;
+  margin-bottom: 30px;
+}
+
+.form_cupon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form_cupon label {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.form_cupon input,
+.form_cupon select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.form_cupon .terminos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form_cupon button {
+  background-color: #2aa6c5;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.form_cupon button:hover {
+  transform: scale(1.05);
+  background-color: #1a7a91;
+}
+/*************************************************************************************************************************************************/
+/*===================================================================== SERVICIOS ===============================================================*/
+/*--------------------------------------------------------------------- SECCION 4 ---------------------------------------------------------------*/
+/* Estilos generales de la sección */
+.seccion_4 {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.servicios_header small {
+    color: #2aa6c5; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.servicios_header h2 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* Configuración del Grid */
+.servicios_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
     gap: 20px;
-    padding: 20px;
-    border: 2px solid #1900a5;
-
-    & h2 {                 /*ESTOY FORZANDO A QUE MI TITULO SIEMPRE OCUPE TODO EL LARGO PARA MANTENER A MI IMAGEN ABAJO*/
-        width: 100%;      
-        text-align: center;    /**ALINEA MIS TEXTOS AL CENTRO*/
-    }
-
-
-    & .lista_envios {
-        flex: 1;                 /*es un flex grow que permite crecer y ocupar el espacio vacio*/  
-        min-width: 200px;        /*para que nunca se achique mas de 200px*/
-    }
-
-
-    /*puedo editar mis textos y ponerle colroes a mis listas asignandoles una clase, pero aun no*/
-
-
-    & img {  /*hacer las ediciones a la imagen*/
- 
-        object-fit: cover;
-        height: 500px;
-        width: auto;
-        border-radius: 10px;
-    }
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/*SECCION DE SERVICIOS*/
-.seccion_servicios{   /*EL CONTORNO PRINCIPAL*/
-  border:4px solid  #1900a5;
-  background-color: #858585;
-  border-radius: 8px;
-
-
-      & .servicios{   /*EL CONTORNO SECUNDARIO*/
-          display: flex;
-          gap: 20px;
-          padding: 20px;
-          border:2px solid #464646;
-          background-color: #b8b8b8;
-          border-radius: 6px;
-
-          & .servi{   /*EL CONTORNO DE MIS ARTICULOS*/
-            
-            border:3px solid #5e5e5e;
-            border-radius:10px;
-            background-color: #dfdfdf;
-            text-align: center;
-          }
-
-          & img{
-              /*LA EDICION DE MIS IMAGENES*/
-             width: 100%;
-             height: 350px;
-
-          }
-         }
-
-         & p{
-
-
-        background: #000000;                       /*fondo negro para mis descripcion de texto*/
-        color: #ffffff;                            /*color del texto */
-        font-size: 18px;                             /*tamaño del texto*/
-        padding: 10px;                               /*separacion de los bordes*/
-        text-align: center;                          /*alinear mi texto al medio*/
-        margin-top: 10px;                            /*separar el margen de mi descripcion del articulo*/
-        margin-bottom: 0;                            /*margen inferior a 0 para evitar espacio innecesario*/
-
-    }
-    
-    & h4{
-          
-        font-size: 25px;
-        background-color: #b8b8b8;
-        padding: 25px;
-
-    }
-         
+/* Estilo de las tarjetas (artículos) */
+.servicios_grid article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px; /* Altura fija para que sean cuadrados */
+    border-radius: 25px; /* Bordes muy redondeados como en la foto */
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-/*SECCION PIE DE PAGINA*/
+/* Estilo específico para las tarjetas de texto */
+.tarjeta_info {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #f0f0f0; /* Un borde suave */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
 
+.tarjeta_info span {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta_info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.tarjeta_info p {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.5;
+}
+
+/* Estilo para las imágenes */
+.servicios_grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                                                             /* Para que la imagen llene el espacio sin deformarse */
+}
+/************************************************************************************************************************************************/
+/*========================================================= TESTIMONIOS ========================================================================*/
+/*--------------------------------------------------------- SECCION 5 --------------------------------------------------------------------------*/
+/* --- CONTENEDOR GENERAL --- */
+.seccion_5 {
+    max-width: 1200px;                                             /*MAXIMO ESPACIO DE CRECIMIENTO*/
+    margin: 0 auto;                                                /*POSICIONARLO EN EL MEDIO*/
+    padding: 60px 20px;                                            /*SEPARACION DE ESPACIO ALREDEDOR*/
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* --- SECCION DE MI CABEZERA --- */
+.header_testimonios {
+    display: flex;
+    justify-content: space-between;                                /*ALINEAR Y SEPARAR LOS ITEMS*/
+    align-items: flex-end;                                         /*ES PARA APOYAR MI TEXTO EN LA LINEA INFERIOR Y NO QUEDE FLOTANTO*/
+    margin-bottom: 50px;                                           /*LUEGO LO ELEVO*/
+}
+/*EDICION BASICA PARA MI SMALL*/
+.texto_cabecera small {
+    color: #2aa6c5;                                              /* COLOR DE MI TEXTO SMALL */
+    font-weight: 700;                                              /*GROSOR*/
+    letter-spacing: 1px;                                           /*SEPARACION DE LAS LETRAS DEL TEXTO*/
+}
+/*EDICION DE MI SUBTITULO*/
+.texto_cabecera h2 {
+    font-size: 45px;
+    margin: 10px 0 0 0;
+    line-height: 1.2;                                              /*SALTO DE LINEA INVISIBLE*/
+}
+/*boton de ver todos*/
+.btn_ver_todos {
+    text-decoration: none;                                         /*QUITO EL DISEÑO ORIGINAL*/
+    color: #2aa6c5;
+    border: 2px solid #2aa6c5;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;                                     /*PEQUEÑA TRANSICION*/
+}
+/*EFECTO DE BOTON CUANDO PASE EL MOUSE*/
+.btn_ver_todos:hover {
+    background-color: #2aa6c5;
+    color: #ffffff;
+}
+
+/* --- CUADRÍCULA DE TESTIMONIOS --- */
+.cuadricula_testimonios {
+    display: flex;
+    gap: 40px;         
+}
+
+.tarjeta_testimonio {
+    min-width: 300px;                                                /*MINIMO DE ENCOGECIMIENTO */
+}
+
+/* --- IMAGENES DEL MUEBLE --- */
+.foto_principal {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 20px;                                             /* REDONDEAR BORDES*/
+}
+
+.foto_principal img {
+    width: 100%;
+    height: 280px;                                                   /*AJUSTE MAXIMO DEL ANCHO*/
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;                                 /*EFECTO PEQUEÑO DE TRANSICION*/
+}
+
+/* EFECTO ZOOM SUAVE */
+.tarjeta_testimonio:hover .foto_principal img {
+    transform: scale(1.05);
+}
+
+/* --- CONTENIDO DE TEXTO --- */
+.fecha {
+    display: block;
+    margin: 25px 0 10px 0;
+    color: #999;
+    font-weight: 600;
+    font-size: 14px;
+}
+/*COMENTARIOS DE LOS CLIENTES*/
+.tarjeta_testimonio p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444444;
+    margin-bottom: 30px;
+    min-height: 80px;                                                  /* manteminimiento de mis textos alineados*/
+}
+
+/* --- PERFIL DEL USUARIO (FOOTER) --- */
+.perfil_usuario {
+    display: flex;
+    gap: 15px;
+}
+
+/* Imagen circular del cliente */
+.perfil_usuario img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil_usuario h5 {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+/************************************************************************************************************************************************/
+/*========================================================= PIE DE PAGINA ========================================================================*/
+/*--------------------------------------------------------- FOOTER   --------------------------------------------------------------------------*/
 .seccion_pie{
    display: flex; 
    justify-content: space-around;   /*el arround es para asignar un espacio igual entre cada elemento//y el justidique supongo q es ocmo un llamado*/
-   background-color: #f930f3;
+   background-color: #33badb;
    padding: 20px;
    
-   & .pie{
+ 
+}
+.pie{
     color: #ffffff;
     font-size: 20px;
    }
-   & h4{
+h4{
     text-decoration:underline;
     font-size: 15;
    }
+/*SECCION EXTRAS */
+* {
+     /*Aplicamos esta fuente a todos(menos a los que indique)*/
+      font-family:'Bree Serif', serif;
 }
 
-
-
-/*SUBTITULOS*/
-.subtitulos {
-
-    font-size: 25px;
-    text-align: center;
-
-}
