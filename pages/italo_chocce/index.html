@@ -10,7 +10,7 @@
 <body>
 
     <header class="header">
-        <h1>PLANES DE INTERNET </h1>
+        <h1>INTERLUX </h1>
     </header>
     <section class="article">
         <nav>
@@ -21,7 +21,21 @@
                 <li><a href="#unetenos">Unetenos</a></li>
                 <li><a href="#soporte">soporte</a></li>
             </ul>
-        </nav>
+        <section class="article">
+        <img src="https://th.bing.com/th/id/OIP.3RKGptYk4uYO6z6lLOr7GQHaFW?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="clave de wifi">
+        </section>
+
+        <section    class="article">
+        <h3>¿Quienes Somos?</h3>
+        <p>
+        Interlux es una empresa dedicada a brindar servicios de internet de alta calidad, enfocada en ofrecer conexiones rápidas, estables y 
+        confiables para hogares y negocios. Nuestro objetivo es mejorar la experiencia digital de nuestros clientes mediante tecnología moderna, atención personalizada y planes adaptados a cada necesidad. 
+        Trabajamos constantemente para garantizar un servicio eficiente, 
+        permitiendo que nuestros usuarios se mantengan siempre conectados. Además, buscamos innovar continuamente para ofrecer mejores soluciones 
+        tecnológicas y mantenernos a la vanguardia en el sector de las telecomunicaciones. Nuestro compromiso es brindar un servicio seguro, accesible y de calidad que contribuya al desarrollo digital de nuestros clientes.
+        </p>
+
+        </section >   
     </section>
 
 
@@ -64,7 +78,7 @@
                         </p>
                     </details>
                     <img src="https://static.vecteezy.com/system/resources/previews/042/584/698/non_2x/70-mbps-internet-speed-download-speed-meter-clock-vector.jpg"
-                        alt="velocidad de internet" width="400" height="300">
+                        alt="velocidad de internet" width="300" height="300">
                 </card>
 
                 <card class="card">
@@ -95,7 +109,7 @@
                         </p>
                     </details>
                     <img src=https://redondocuevas.com/cdn/shop/files/Artboard9.png?v=1699390461&width=1100
-                        alt="velocidad de internet" width="400" height="300">
+                        alt="velocidad de internet" width="300" height="300">
                 </card>
 
                 <card class="card">
@@ -125,7 +139,7 @@
 
                     </details>
                     <img src=https://tse3.mm.bing.net/th/id/OIP.qJq5U2lq0cV3K-6zlN97YgHaEK?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3
-                        alt="velocidad de internet" width="400" height="300">
+                        alt="velocidad de internet" width="300" height="300">
                 </card>
 
                 <card class="card">
@@ -139,7 +153,7 @@
                     </section>
                     <details close>
                         <p>
-                            <hr4>nuestro plan empresarial está diseñado para satisfacer las necesidades de las empresas
+                            <hr>nuestro plan empresarial está diseñado para satisfacer las necesidades de las empresas
                                 que
                                 requieren una conexión a internet confiable y de alta velocidad. Con nuestro plan
                                 empresarial,
@@ -344,7 +358,148 @@
 
         <section class="section  fourth-section">
             <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
-            <H1>Agregar aqui el formulario</H1>
+            <header>
+        <h1>UNETENOS</h1>
+        <p>Ingresanos tus datos para ser Parte de nuestra Familia</p>
+    </header>
+    <!-- Barra de progreso general -->
+    <!-- Representa avance del proceso -->
+    <progress value="70" max="100"></progress>
+
+    <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
+
+        <!-- ====================== DATOS PERSONALES ====================== -->
+        <section>
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <!-- input text con valor por defecto -->
+                <label>Nombres:</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre completo">
+                <br><br>
+
+                <label>Apellidos:</label>
+                <input type="text" name="apellido" placeholder="Ingrese su apellido completo">
+                <br><br>
+                
+                <!-- Maximo 8  caracteres -->
+                <label>DNI:</label>
+                <input type="text" minlength="8" maxlength="8" pattern="\d{8}"
+                    title="Ingrese un DNI válido de 8 dígitos" required>
+
+                <br><br>
+
+                <!-- email con valor inicial -->
+                <label>Email:</label>
+                <input type="email" name="email" required autocomplete="email">
+                <br><br>
+
+                <!-- radio con checked por defecto -->
+                <label>Género:</label>
+                <input type="radio" name="genero" value="F" checked> Femenino
+                <input type="radio" name="genero" value="M"> Masculino
+                <br><br>
+
+                <!-- Selección desde lista -->
+                <label>Pais:</label>
+
+                <select name="pais">
+                    <option value="pe" selected>Perú</option>
+                    <option value="co">Colombia</option>
+                    <option value="ar">Argentina</option>
+                </select>
+                <br><br>
+                <!-- Lista de sugerencias -->
+                <label>Ciudad:</label>
+
+                <input list="ciudades" value="Lima">
+
+                <datalist id="ciudades">
+                    <option value="Lima">
+                    <option value="Cusco">
+                    <option value="Arequipa">
+                </datalist>
+                <br><br>
+                <!-- Permite seleccionar una fecha desde un calendario -->
+                <label>Fecha Registro:</label>
+                <input type="date" name="fechaRegistro" value="1995-08-15">
+                <br><br>
+
+                <label>Fecha de nacimiento:</label>
+                <input type="date" name="fechaNacimiento" value="2000-01-01" min="1960-01-01" max="2010-12-31">
+                <br><br>
+
+
+              
+                <!-- Campo para ingresar números telefónicos -->
+                <label>Teléfono:</label>
+                <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}">
+                <br><br>
+
+                <!-- Campo para contraseñas, oculta los caracteres -->
+                <label>Contraseña:</label>
+                <input type="password" name="clave" value="123456">
+                <br><br>
+
+                <!-- Campo para escribir textos largos -->
+                <label>Comentarios:</label>
+                <br>
+                <textarea name="comentarios" rows="4" cols="40">    </textarea>
+                <br><br>
+
+
+                <!-- checkbox marcado por defecto -->
+                <label>
+                    <input type="checkbox" name="terminos" unchecked required>
+                    Acepto términos y condiciones
+                </label>
+
+                <menu>
+                    <button type="submit">Guardar</button>
+                    <button type="reset">Cancelar</button>
+                </menu>
+
+            </fieldset>
+        </section>
+        <!-- ====================== ELEMENTOS INTERACTIVOS ====================== -->
+        <section>
+            <fieldset>
+                <legend>Información Adicional</legend>
+
+                <!-- datalist para sugerencias -->
+                <label>Ciudad:</label>
+                <input list="ciudades" name="ciudad">
+                <datalist id="ciudades">
+                    <option value="Lima">
+                    <option value="Cusco">
+                    <option value="Bogotá">
+                </datalist>
+                <br><br>
+
+
+            </fieldset>
+        </section>
+
+        <!-- ====================== BOTONES ====================== -->
+        <footer>
+
+            <!-- botón submit normal -->
+            <button type="submit">Enviar</button>
+
+            <!-- botón submit con override -->
+            <button type="submit" formaction="/otraRuta" formmethod="get">
+                Enviar vía GET
+            </button>
+
+            <!-- botón reset -->
+            <button type="reset">Limpiar</button>
+
+            <!-- botón normal -->
+            <button type="button">Acción Extra</button>
+
+        </footer>
+
+    </form>
 
         </section>
 
@@ -354,6 +509,9 @@
         <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
 
         <section class="columnas_4">
+
+
+            
 
             <!-- Sección Navegación -->
             <nav>

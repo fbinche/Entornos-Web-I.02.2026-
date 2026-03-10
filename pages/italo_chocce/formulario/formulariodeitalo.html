@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>UNETENOS</h1>
+        <p>Ingresanos tus datos para ser Parte de nuestra Familia</p>
+    </header>
+
+    <!-- Barra de progreso general -->
+    <!-- Representa avance del proceso -->
+    <progress value="70" max="100"></progress>
+
+    <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
+
+        <!-- ====================== DATOS PERSONALES ====================== -->
+        <section>
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <!-- input text con valor por defecto -->
+                <label>Nombres:</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre completo">
+                <br><br>
+
+                <label>Apellidos:</label>
+                <input type="text" name="apellido" placeholder="Ingrese su apellido completo">
+                <br><br>
+                
+                <!-- Maximo 8  caracteres -->
+                <label>DNI:</label>
+                <input type="text" minlength="8" maxlength="8" pattern="\d{8}"
+                    title="Ingrese un DNI válido de 8 dígitos" required>
+
+                <br><br>
+
+                <!-- email con valor inicial -->
+                <label>Email:</label>
+                <input type="email" name="email" required autocomplete="email">
+                <br><br>
+
+                <!-- radio con checked por defecto -->
+                <label>Género:</label>
+                <input type="radio" name="genero" value="F" checked> Femenino
+                <input type="radio" name="genero" value="M"> Masculino
+                <br><br>
+
+                <!-- Selección desde lista -->
+                <label>Pais:</label>
+
+                <select name="pais">
+                    <option value="pe" selected>Perú</option>
+                    <option value="co">Colombia</option>
+                    <option value="ar">Argentina</option>
+                </select>
+                <br><br>
+                <!-- Lista de sugerencias -->
+                <label>Ciudad:</label>
+
+                <input list="ciudades" value="Lima">
+
+                <datalist id="ciudades">
+                    <option value="Lima">
+                    <option value="Cusco">
+                    <option value="Arequipa">
+                </datalist>
+                <br><br>
+                <!-- Permite seleccionar una fecha desde un calendario -->
+                <label>Fecha Registro:</label>
+                <input type="date" name="fechaRegistro" value="1995-08-15">
+                <br><br>
+
+                <label>Fecha de nacimiento:</label>
+                <input type="date" name="fechaNacimiento" value="2000-01-01" min="1960-01-01" max="2010-12-31">
+                <br><br>
+
+
+              
+                <!-- Campo para ingresar números telefónicos -->
+                <label>Teléfono:</label>
+                <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}">
+                <br><br>
+
+                <!-- Campo para contraseñas, oculta los caracteres -->
+                <label>Contraseña:</label>
+                <input type="password" name="clave" value="123456">
+                <br><br>
+
+                <!-- Campo para escribir textos largos -->
+                <label>Comentarios:</label>
+                <br>
+                <textarea name="comentarios" rows="4" cols="40">Escribe aquí tu comentario...</textarea>
+                <br><br>
+
+
+                <!-- checkbox marcado por defecto -->
+                <label>
+                    <input type="checkbox" name="terminos" unchecked required>
+                    Acepto términos y condiciones
+                </label>
+
+                <menu>
+                    <button type="submit">Guardar</button>
+                    <button type="reset">Cancelar</button>
+                </menu>
+
+            </fieldset>
+        </section>
+
+        
+        <!-- ====================== ELEMENTOS INTERACTIVOS ====================== -->
+        <section>
+            <fieldset>
+                <legend>Información Adicional</legend>
+
+                <!-- datalist para sugerencias -->
+                <label>Ciudad:</label>
+                <input list="ciudades" name="ciudad">
+                <datalist id="ciudades">
+                    <option value="Lima">
+                    <option value="Cusco">
+                    <option value="Bogotá">
+                </datalist>
+                <br><br>
+
+                <!-- details desplegable -->
+                <details>
+                    <summary>Más información</summary>
+                    <p>Este bloque se puede expandir o contraer sin JS.</p>
+                </details>
+
+            </fieldset>
+        </section>
+
+        <!-- ====================== BOTONES ====================== -->
+        <footer>
+
+            <!-- botón submit normal -->
+            <button type="submit">Enviar</button>
+
+            <!-- botón submit con override -->
+            <button type="submit" formaction="/otraRuta" formmethod="get">
+                Enviar vía GET
+            </button>
+
+            <!-- botón reset -->
+            <button type="reset">Limpiar</button>
+
+            <!-- botón normal -->
+            <button type="button">Acción Extra</button>
+
+        </footer>
+
+    </form>
+   
+
+</body>
+
+</html>
