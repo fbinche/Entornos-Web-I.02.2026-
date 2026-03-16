@@ -30,8 +30,8 @@ body {
 
 /* SECTION */
 .section {
-  background: #df845a;   /* verde */
-  border: 3px solid #79c485;
+  background: #f68514;   /* naranja */
+  border: 3px solid #2d7138;
   min-height: 20vh;
   padding: 20px;
   display: flex;
@@ -41,13 +41,13 @@ body {
 }
 
 .first-section {
-  background: #3e8c1d;   /* gris claro */
-  border: 3px solid #0523e7;
+  background: #1e7603;   /* verde */
+  border: 3px solid #0d3b0b;
 }
 
 .second-section {
-  background: #f1c40f;   /* naranja */
-  border: 3px solid #d35400;
+  background: #43a108;   /* verde */
+  border: 3px solid #1e8115;
 } 
 .third-section {
   background: #db2424;   /*  */
@@ -55,8 +55,8 @@ body {
 }
 
 .fourth-section {
-  background: #e66611;   /* azul oscuro */
-  border: 3px solid #1b2838;      
+  background: #af612c;   /* azul oscuro */
+  border: 3px solid #3f5c80;      
 }
 
 .card {

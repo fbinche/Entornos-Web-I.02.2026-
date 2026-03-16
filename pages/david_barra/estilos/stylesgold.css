@@ -1,0 +1,496 @@
+/* ================= CUERPO ================= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #f5f5f5;
+}
+
+/* ================= SECCIONES ================= */
+.section {
+    padding: 60px 80px;
+}
+
+/* ================= INICIO LISTA DE MENU ================= */
+.lista_menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d0d0d;
+    padding: 20px 40px;
+    border-bottom: 2px solid #d4af37;
+    /* dorado */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 5);
+}
+/* ================= INICIO LISTA DE MENU ================= */
+.logo {
+    width: 60px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #d4af37;
+    text-shadow: 0 0 8px #d4af37;
+}
+
+/* =================PLANES DE INTERNET================= */
+/* ================= RECUADRO DEL TITULO PLANES ================= */
+
+.recuadro-titulo {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    text-align: center;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    ;
+}
+.recuadro-titulo:hover{
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+.titulo-planes {
+    font-size: 40px;
+    color: #d4af37;
+    margin: 0;
+}
+.columnas_3,.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+/* =================PLANES RECUADROS================= */
+.article {
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 500px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+/* =================PLANES-lista================= */
+.listaplanes {
+    list-style: none;
+    font-size: 30px
+}
+
+.cantidadmbps {
+    font-size: 60px;
+}
+
+/* =================PLANES-SOMBRA AL PASAR EL MOUSE================= */
+.article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+/* =================PLANES-IMAGENES================= */
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =================PLANES-PRECIO REGULAR================= */
+.precio-regular {
+    font-size: 30px;
+    text-decoration: line-through;
+    color: #888;
+}
+/* =================PLANES-PRECIO OFEERTA================= */
+.precio strong {
+    font-size: 100px;
+    color: #d4af37;
+}
+
+/* =================PLANES-BOTONES PRINCIPALES================= */
+.btn-principal {
+    background: linear-gradient(45deg, #d4af37, #b8962e);
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* =================PLANES-BOTONES PRINCIPALES MOUSE================= */
+.btn-principal:hover {
+    box-shadow: 0 0 15px #d4af37;
+    transform: scale(1.05);
+}
+/* =================PLANES-BOTONES SECUNDARIOS================= */
+.btn-secundario {
+    background: transparent;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* =================PLANES-BOTONES SECUNDARIOS MOUSE================= */
+.btn-secundario:hover {
+    background: #d4af37;
+    color: black;
+}
+/* =================CENTRAR BOTÓN TERMINOS========== */
+.second-section footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Mejorar botón */
+.btn-secundarioterminos {
+    background: transparent;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/*al pasar el mouse boton terminos*/
+.btn-secundarioterminos:hover {
+    background: #d4af37;
+    color: black;
+}
+/* ================= FOOTER titulos ================= */
+h1,h2,h3,strong {
+    color: #d4af37;
+    font-size: 30px;
+}
+/* ================= PROMOS ================= */
+.promos-extra {
+    text-align: center;
+    padding: 40px 20px;
+}
+/* ================= PROMOS recuadro ================= */
+.titulo-beneficios-extra {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.columnas_1promos-extra {
+    justify-content: center;
+}
+
+/* SECCIÓN PROMOS CENTRADA */
+.promos-extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
+
+/* CAJA RECTANGULAR LARGA */
+.promos-box {
+    width: 100%;
+    max-width: 1800px;
+    padding: 40px 60px;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    text-align: center;
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.promos-box:hover{
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4)
+}
+
+/* TITULO MÁS GRANDE */
+.titulo-promos-extra {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+    font-size: 28px;
+    padding: 12px 30px;
+}
+/*-- ================= VIDEO-EXPLICACION ================= */
+.video-seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra todo */
+    margin-top: 40px;
+}
+
+/* titulo del video */
+.titulo-video{
+    color: #d4af37;
+    margin-bottom: 20px;
+    font-size: 43px;
+}
+
+/* video */
+.video{
+    width: 760px;
+    height: 415px;
+
+    border: 4px solid #d4af37; /* borde dorado */
+    border-radius: 12px;
+
+    box-shadow: 0 0 15px rgba(212,175,55,0.6); /* brillo dorado */
+}
+/* ================= BENEFICIOS ================= */
+.beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.beneficioss .article {
+    width: 360px;
+}
+/* RECUADRO LARGO BENEFICIOS */
+.titulo-recuadro-largo {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    text-align: center;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.titulo-recuadro-largo h2 {
+    font-size: 40px;
+    color: #d4af37;
+    margin: 0;
+}
+
+/* ================= TEXTO BENEFICIOS ================= */
+
+.texto-beficioss {
+    font-size: 21px;
+    /* MÁS GRANDE */
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* ================= ALCANCE NACIONAL ================= */
+
+.two-columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  width: 100%;
+}
+
+
+/* CONTENIDO CENTRADO */
+.alcance-contenido {
+  text-align: center;
+  background: linear-gradient(135deg, #141414, #1f1f1f );
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 1100px;
+}
+
+
+
+/* TEXTO MÁS GRANDE Y AMARILLO */
+.texto-grande {
+  font-size: 32px;
+  font-weight: bold;
+  color: #d4af37; /* amarillo dorado */
+  margin-bottom: 40px;
+}
+
+
+/* IMÁGENES CENTRADAS */
+.imagenes-alcance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.img-alcance {
+  width: 450px;
+  transition: 0.3s;
+}
+
+.footer-alcance{
+    font-size: 25px;
+    color: #ccc;
+}
+
+
+
+/* ================= 
+AQUI HICE QUE EL RECUADRO DE COMENTARIOS Y BENEFICIOS SEAN IGUALES USANDO EL MISMO CSS PARA AMBOS ================= */
+
+/* ================= RECUADRO DEL TITULO COMENTARIOS/BENEFICIOS ================= */
+/* ================= comentarios borde ================= */
+.services .article img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+}
+
+
+/* ================= comentarios/beneficios recuadro ================= */
+.recuadro-comentarios,.titulo-recuadro-largo{
+    width: 100%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    text-align: center;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3)
+}/* ================= comentarios/beneficios recuadro al pasar mouse ================= */
+.recuadro-comentarios:hover,.titulo-recuadro-largo:hover{
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+.titulo-comentarios {
+    font-size: 40px;
+    color: #d4af37;
+    margin: 0;
+}
+
+/* ================= COMENTARIOS CLIENTES ================= */
+
+
+
+/* TEXTO DEL COMENTARIO */
+.services .article p {
+    font-size: 21px;
+    /* TEXTO MÁS GRANDE */
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+
+/* =================FORMULARIO================= */
+.formulario {
+    display: flex;                 
+    flex-direction: column;        
+    gap: 12px;                     
+    max-width: 400px;              
+    background: #141414;           
+    padding: 25px;                 
+    border-radius: 12px;           
+    border: 1px solid rgba(212, 175, 55, 0.2); 
+    box-shadow: 0 0 15px rgba(211, 184, 4, 0.7); 
+}
+.formulario_titulo{
+    width: 100%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    text-align: center;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #141414, #1f1f1f);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3)}
+
+/* ================= CENTRAR SECCIÓN COMPLETA ================= */
+.formulario_auranet {
+    display: flex;            /* Activa Flexbox */
+    flex-direction: column;   /* Organiza en columna */
+    align-items: center;      /* Centra horizontalmente */
+    justify-content: center;  /* Centra verticalmente si hay altura */
+}
+
+/* ================= AJUSTE DEL FORMULARIO ================= */
+/* Ajusta el tamaño final del formulario */
+.formulario {
+    width: 100%;          /* Ocupa todo el ancho disponible */
+    max-width: 450px;     /* no pasa de 450px */
+    margin-top: 30px;     /* Espacio arriba del formulario */
+}
+
+/* ================= INPUTS Y SELECTS ================= */
+/* Hace que los inputs normales y los select ocupen todo el ancho */
+.formulario input[type="text"],
+.formulario input[type="date"],
+.formulario input[type="tel"],
+.formulario select {
+    width: 100%;
+}
+
+/*=========== Estilo general de todos los inputs y selects============= */
+.formulario input,
+.formulario select {
+    padding: 8px;              /* Espacio interno */
+    border-radius: 5px;        
+    border: 1px solid #333;    
+    background: #1f1f1f;       
+    color: white;              
+}
+
+/* ================= EFECTO CUANDO HACES CLICK ================= */
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: none;  /* Quita el borde azul por defecto del navegador */
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5); 
+    font-size: 16px; 
+}
+/* ================= FOOTER ================= */
+.footer {
+    background: #0d0d0d;
+    color: #f5f5f5;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    border-top: 2px solid #d4af37;
+}
+/* ================= FOOTER-TITULOS h4 y h2 ================= */
+.footer h4,
+.footer h2 {
+    color: #d4af37;
+}
+/* ================= FOOTER links ================= */
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 25px;
+}
+/* ================= FOOTER al pasar el mouse ================= */
+.footer a:hover {
+    color: #d4af37;
+}
+
+
+
+
+
+
