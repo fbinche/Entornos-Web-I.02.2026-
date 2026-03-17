@@ -1,3 +1,10 @@
-p {
-    color: green !important;
+* {
+    color: yellow;
+    background: blue;
 }
+
+p {
+    color: green;
+
+}
+
