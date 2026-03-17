@@ -1,0 +1,209 @@
+/* ====== ESTILO GENERAL ====== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #000000, #111111, #222222);
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #ffffff; /* rojo más suave */
+    text-shadow: 0 0 3px #ff0000;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #ff9999;
+}
+
+/* ====== FORMULARIO ====== */
+form {
+    background-color: #000; /* negro sólido */
+    padding: 25px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+fieldset {
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #000; /* negro sólido */
+}
+
+legend {
+    font-weight: bold;
+    color: #ff6666;
+    text-shadow: 0 0 2px #ff0000;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff9999;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[list],
+input[type="range"] {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ff0000;
+    border-radius: 6px;
+    background-color: #000; /* negro sólido */
+    color: #fff;
+    transition: all 0.3s;
+}
+
+/* Aplicar a todos los inputs y select para que no se salgan del contenedor */
+input[type="text"],
+input[type="email"],
+select,
+input[list],
+input[type="range"] {
+    width: 100%;
+    max-width: 100%;     /* asegura que no se salga */
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ff0000;
+    border-radius: 6px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s;
+    box-sizing: border-box;  /* ← clave para que encaje */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+progress,
+meter {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    accent-color: #ff0000;
+}
+
+/* ====== BOTONES ====== */
+button {
+    padding: 10px 20px;
+    margin: 5px 5px 0 0;
+    border: 2px solid #ff0000;
+    border-radius: 6px;
+    background-color: #000; /* negro sólido */
+    color: #ff6666;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 2px #ff0000;
+    transition: all 0.3s;
+}
+
+/* ====== BOTONES PERSONALIZADOS FILE ====== */
+.custom-file-input {
+    display: none; /* ocultamos el botón real */
+}
+
+.custom-file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ff0000;
+    border-radius: 6px;
+    background-color: #000; /* negro sólido */
+    color: #ff6666;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 2px #ff0000;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.custom-file-label:hover {
+    background-color: #ff0000;
+    color: #000;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+button:hover {
+    background-color: #ff0000;
+    color: #000;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+/* ====== ASIDE ====== */
+aside {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #000; /* negro sólido */
+    border-left: 3px solid #ff0000;
+    border-radius: 6px;
+    color: #ff9999;
+    font-style: italic;
+}
+
+/* ====== DIALOGO ====== */
+dialog {
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ff0000;
+    background-color: #000; /* negro sólido */
+    color: #fff;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+/* ====== DETALLES ====== */
+details {
+    background-color: #000; /* negro sólido */
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+summary {
+    cursor: pointer;
+    color: #ff9999;
+    font-weight: bold;
+}
+
+/* ====== OUTPUT RANGE ====== */
+output {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #ff6666;
+    text-shadow: 0 0 2px #ff0000;
+}
+
+meter,
+input[type="range"] {
+    width: 90%;        /* Ocupa el 80% del contenedor */
+    max-width: 900px;  /* Límite máximo para pantallas grandes */
+    display: block;
+    margin-bottom: 10px;
+}
+
+output {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin-left: 10px;
+}

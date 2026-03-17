@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <h1>Formulario HTML5 Máximo</h1>
+        <p>Demostración completa de componentes HTML5</p>
+    </header>
+
+    <!-- Barra de progreso general -->
+    <!-- Representa avance del proceso -->
+    <progress value="70" max="100"></progress>
+
+    <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
+
+        <!-- ====================== DATOS PERSONALES ====================== -->
+        <section>
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <!-- input text con valor por defecto -->
+                <label>Nombre:</label>
+                <input type="text" name="nombre" value="Bernabe Inche" required minlength="3">
+                <br><br>
+
+                <!-- readonly -->
+                <label>Código Usuario:</label>
+                <input type="text" name="codigo" value="fbinche" readonly>
+                <br><br>
+
+                <!-- email con valor inicial -->
+                <label>Email:</label>
+                <input type="email" name="email" value="fbinche@idat.pe" required>
+                <br><br>
+
+                <!-- radio con checked por defecto -->
+                <label>Género:</label>
+                <input type="radio" name="genero" value="F" checked> Femenino
+                <input type="radio" name="genero" value="M"> Masculino
+                <br><br>
+
+                <!-- checkbox marcado por defecto -->
+                <label>
+                    <input type="checkbox" name="terminos" unchecked required>
+                    Acepto términos y condiciones
+                </label>
+
+            </fieldset>
+        </section>
+
+        <!-- ====================== SELECT CON OPTGROUP ====================== -->
+        <section>
+            <fieldset>
+                <legend>Ubicación</legend>
+
+                <label>Seleccione País:</label>
+                <select name="pais">
+                    <option value="">Seleccione</option>
+
+                    <!-- optgroup agrupa opciones -->
+                    <optgroup label="Sudamérica">
+                        <option value="pe" selected>Perú</option>
+                        <option value="ar">Argentina</option>
+                        <option value="co">Colombia</option>
+                    </optgroup>
+
+                    <optgroup label="Europa">
+                        <option value="de">Alemania</option>
+                        <option value="es">España</option>
+                    </optgroup>
+
+                </select>
+
+            </fieldset>
+        </section>
+
+        <!-- ====================== MEDICIONES ====================== -->
+        <section>
+            <fieldset>
+                <legend>Indicadores</legend>
+
+                <!-- meter indica nivel dentro de rango -->
+                <label>Nivel técnico:</label>
+                <meter value="0.75" min="0" max="1"></meter>
+                <br><br>
+
+                <!-- range con valor inicial -->
+                <label>Experiencia (años):</label>
+                <input type="range" name="experiencia" min="0" max="40" value="10">
+                <output>10</output>
+
+            </fieldset>
+        </section>
+
+        <!-- ====================== ARCHIVOS Y MULTIMEDIA ====================== -->
+        <section>
+            <fieldset>
+                <legend>Adjuntar Archivos</legend>
+
+                <!-- file múltiple -->
+                <label>Subir CV (PDF/DOC):</label>
+                <input type="file" name="cv" accept=".pdf,.doc,.docx" multiple>
+                <br><br>
+
+                <!-- captura desde cámara -->
+                <label>Foto perfil (cámara):</label>
+                <input type="file" name="foto" accept="image/*" capture>
+                <br><br>
+
+            </fieldset>
+        </section>
+
+        <!-- ====================== ELEMENTOS INTERACTIVOS ====================== -->
+        <section>
+            <fieldset>
+                <legend>Información Adicional</legend>
+
+                <!-- datalist para sugerencias -->
+                <label>Ciudad:</label>
+                <input list="ciudades" name="ciudad">
+                <datalist id="ciudades">
+                    <option value="Lima">
+                    <option value="Cusco">
+                    <option value="Bogotá">
+                </datalist>
+                <br><br>
+
+                <!-- details desplegable -->
+                <details>
+                    <summary>Más información</summary>
+                    <p>Este bloque se puede expandir o contraer sin JS.</p>
+                </details>
+
+            </fieldset>
+        </section>
+
+        <!-- ====================== BOTONES ====================== -->
+        <footer>
+
+            <!-- botón submit normal -->
+            <button type="submit">Enviar</button>
+
+            <!-- botón submit con override -->
+            <button type="submit" formaction="/otraRuta" formmethod="get">
+                Enviar vía GET
+            </button>
+
+            <!-- botón reset -->
+            <button type="reset">Limpiar</button>
+
+            <!-- botón normal -->
+            <button type="button">Acción Extra</button>
+
+        </footer>
+
+    </form>
+
+    <!-- aside = contenido complementario -->
+    <aside>
+        <p>Formulario con todos los componentes relevantes de HTML5.</p>
+    </aside>
+
+    <!-- dialog modal HTML5 -->
+    <dialog open>
+        <p>Este es un diálogo HTML5 nativo.</p>
+    </dialog>
+
+    </main>
+
+</body>
+
+</html>
