@@ -1,10 +1,52 @@
 * {
-    color: yellow;
-    background: blue;
+    color: whitesmoke;
+    background-color: red;
+    font-family: 'Times New Roman';
 }
 
 p {
-    color: green;
+    color: rgb(221, 221, 221);
+    font-size: 20px;
+    font-family: Arial;
+}
+
+header {
+    background-color: rgb(241, 177, 92);
+    color: gray;
+    text-align: center;
+}
+
+h3,h4 {
+    font-family: Verdana;
+    background-color: rgb(238, 49, 49);
+    font-size: 30px;
+}
+
+.section {
+    background-color: rgb(241, 134, 92);
+}
+
+.article {
+    text-align: center;
+}
+
+.boton_comprar {
+    font-style: oblique;
+    background-color: rgb(224, 42, 42);
 
 }
 
+.precio {
+    font-weight: bold;
+    font-family: 'Gill Sans';
+    font-size: 15px;
+}
+
+
+
+
+
+/* PROPIEDADES
+font-size
+background-color
+text-align
