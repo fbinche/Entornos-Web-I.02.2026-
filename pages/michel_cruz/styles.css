@@ -225,7 +225,7 @@ border: 3px solid #b57edc;
 }
 
 /* H1 */
-.hero > .header {
+.hero > .vinculo_lleva {
   grid-column: 1;
   grid-row: 1;
   background-color: #79c485;
@@ -269,7 +269,7 @@ border: 3px solid #b57edc;
   border: 3px solid #20b2c9;
 }
 
-/* TR (HEADER) */
+/* TR (vinculo_lleva) */
 .table thead tr {
   background: #96f2d7;
 }
