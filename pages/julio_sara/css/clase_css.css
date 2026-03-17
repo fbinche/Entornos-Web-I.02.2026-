@@ -1,3 +1,8 @@
 p{
-    color:green !important
+    color:green
+}
+
+*{
+    background:gray;
+    color:blue
 }
