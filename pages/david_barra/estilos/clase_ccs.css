@@ -1,0 +1,51 @@
+.tituloheader{
+    background-color: blueviolet;
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contenido{
+    background-color: blueviolet;
+}
+.lista{
+    list-style: none;
+    background-color: blueviolet;
+    font-size:20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.precio{
+font-size: 40px;
+background-color: rgb(47, 3, 74);
+}
+
+#linkwsp{
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estoy practicando aparte profe*/
+
+/*PRPIEDADES 
+font-size
+background-color
+text-align
+*/
+
+ /*5ETIQUETAS HTML 
+ 5clases
+ 3identifacadores*/
