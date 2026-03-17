@@ -1,11 +1,54 @@
 p{
-    color: violet
+    color: rgb(112, 70, 112)
 }
 
 *{
-    color: blue
+    color: blue;
+
+    background-color:rgb(245, 248, 201);
+
+    font-size: large;
+
+    text-align: justify;
 }
 
-*{
-    background-color: rgb(245, 245, 224)
+/**#5 etiquetas html*/
+
+p{
+    color: rgb(112, 70, 112);
+
+    font-family: Arial;
+
+    text-align: justify;
 }
+
+h1,h2,h3{
+    color: darkblue;
+
+    font-family: Georgia;
+
+    text-align: justify;
+}
+
+header{
+    background-color: rgb(180, 220, 255);
+
+    font-style: unset;
+
+    text-align: justify;
+}
+
+/*#5 clases/*
+
+
+/*#3 identificadores/*
+
+
+/*propiedades
+font-family
+font-size
+font_style
+background-color
+text-align
+color
+*/
