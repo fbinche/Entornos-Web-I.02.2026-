@@ -1,0 +1,28 @@
+/**externa**/
+p{
+    color:green
+}
+
+*{
+    background-color: rgb(0, 255, 255);
+}
+
+/**etiquetas html**/
+
+h1, h2, h3  {
+font-style: italic; 
+color: black;
+background-color: white;
+font-size: small;
+text-align: center;
+}
+
+#soporte {
+color: black;
+background-color: rgb(0, 255, 13);
+font-size: small;
+text-align: center;
+font-style: italic;
+
+}
+
