@@ -4,8 +4,12 @@ p{
     color: green !important
 }
 
-/**INTERNA**/
+
 
 *{
-    color:blueviolet
+    color:aliceblue
+}
+
+*{
+    background-color:black
 }
