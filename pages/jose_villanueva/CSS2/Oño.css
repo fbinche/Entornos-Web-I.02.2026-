@@ -1,29 +1,40 @@
-p{
-    color: rgb(153, 0, 255);
-    background-color: rgb(0, 0, 0);
-}
-
-.tulio{
-    color: blueviolet;
+*{ 
     background-color: black;
 }
 
-body {
-    /* Ruta de la imagen */
-    background-image: url("imagenes/futbol.jpg");
-    
-    /* Asegura que la imagen cubra todo el fondo */
-    background-size: cover;
-    
-    /* Centra la imagen */
-    background-position: center;
-    
-    /* Evita que la imagen se repita */
-    background-repeat: no-repeat;
-    
-    /* Mantiene la imagen fija al hacer scroll */
-    background-attachment: fixed;
-    
-    /* Color de respaldo si la imagen no carga */
-    background-color: #ea09ff; 
+/*PROPIEDADES*/
+/*font-size*/
+/*font-style*/
+
+.Ig_sistemas{
+    color: rgb(255, 0, 0);
+    font-size: 60px;
+    font-style: italic;
+    text-align  : center;
 }
+
+/*ETIQUETAS*/
+h1{
+    color: rgb(255, 30, 0);
+    font-size: 40px;
+    font-style: italic;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-style: italic;
+    background-color: aquamarine;
+    text-align  : center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+
