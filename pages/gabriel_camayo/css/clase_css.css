@@ -4,5 +4,26 @@ p{
 }
 
 *{
-    background-color: royalblue;
+    background-color: cadetblue;
+}
+/**Etiqueta HTML**/
+h2{
+    background-color: black;
+    font-style: oblique;
+    color: beige;
+} 
+
+/**CLASES**/
+.servicio{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/**ID**/
+#titulo{
+    background-color: black;
+    color: white;
+    font-style: normal;
 }
