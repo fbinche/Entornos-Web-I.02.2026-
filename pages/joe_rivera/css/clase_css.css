@@ -1,10 +1,13 @@
-/***HTML***/
+                        /************* ETIQUETAS HTML***************/
 
+
+/***1RA ETIQUETA***/
 
 *{
     background-color:black
 }
 
+/**2DA ETIQUETA**/
 h1{
     background-color: aliceblue;
     font-size:xx-large;
@@ -14,6 +17,7 @@ h1{
     text-align: center;
 }
 
+/**3RA ETIQUETA**/
 h2{
     background-color: rgb(205, 219, 231);
     color:black;
@@ -22,6 +26,8 @@ h2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
+
+/**4TA ETIQUETA**/
 
 h3{
     background-color: rgb(206, 228, 246);
@@ -32,6 +38,8 @@ h3{
     text-align:justify;
 }
 
+/**5TA ETIQUETA**/
+
 time{
     color:rgb(225, 236, 245);
     font-style: oblique;
@@ -39,6 +47,8 @@ time{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
 }
+
+/**6TA ETIQUETA**/
 
 p{
     background-color: aliceblue;
@@ -49,6 +59,8 @@ p{
 
 }
 
+/**7TIMA ETIQUETA**/
+
 figcaption{
     color: rgb(220, 230, 239);
     font-style: italic;
@@ -57,6 +69,7 @@ figcaption{
     text-align: justify;
 }
 
+/**8TAVA ETIQUETA**/
 
 span{
     color:aliceblue;
@@ -66,7 +79,7 @@ span{
     text-align: justify;
 }
 
-/***CLASES***/
+                /************CLASES****************/
 
 /* 1. Encabezado */
 .encabezado {
@@ -100,7 +113,7 @@ span{
   color: blue;
   font-style: normal;
   font-size: 20px;
-  font-family: Tahoma, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   text-align: left;
 }
 
@@ -109,6 +122,6 @@ span{
   color: rgb(134, 121, 121);
   font-style: oblique;
   font-size: 14px;
-  font-family: Courier New, monospace;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   text-align: right;
 }
