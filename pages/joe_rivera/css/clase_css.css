@@ -9,10 +9,10 @@
 
 /**2DA ETIQUETA**/
 h1{
-    background-color: aliceblue;
+    background-color: rgb(79, 112, 140);
     font-size:xx-large;
     color:rgb(201, 225, 247);
-    font-style: oblique;
+    font-style:initial;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
@@ -83,7 +83,7 @@ span{
 
 /* 1. Encabezado */
 .encabezado {
-  color: white;
+  color: rgb(84, 7, 7);
   font-style: normal;
   font-size: 20px;
   font-family: Arial, sans-serif;
@@ -92,7 +92,7 @@ span{
 
 /* 2. Título */
 .titulo {
-  color: yellow;
+  color:rgb(158, 3, 3);
   font-style: italic;
   font-size: 28px;
   font-family: Georgia, serif;
@@ -113,7 +113,7 @@ span{
   color: blue;
   font-style: normal;
   font-size: 20px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: left;
 }
 
@@ -122,6 +122,24 @@ span{
   color: rgb(134, 121, 121);
   font-style: oblique;
   font-size: 14px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-  text-align: right;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif right;
+}
+
+                    /*******IDENTIFICADORES***/
+
+
+ #logoChampions img {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+
+#menuPrincipal {
+  background:fixed
+}
+
+.nav {
+  text-align:justify
 }
