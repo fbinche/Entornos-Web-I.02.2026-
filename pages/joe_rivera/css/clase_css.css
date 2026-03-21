@@ -79,6 +79,62 @@ span{
     text-align: justify;
 }
 
+label{
+    color:aliceblue;
+    font-style: oblique;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+legend{
+    color:aliceblue;
+    font-style: oblique;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+option{
+    color:aliceblue;
+    font-style: arial;
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+
+output{
+    color:aliceblue;
+    font-style: oblique;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+
+summary{
+    color:aliceblue;
+    font-style: oblique;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+button{
+    color:aliceblue;
+    font-style: oblique;
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    text-align: justify;
+}
+
+aside{
+    color:aliceblue;
+    font-style: oblique;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
                 /************CLASES****************/
 
 /* 1. Encabezado */
