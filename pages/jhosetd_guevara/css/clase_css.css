@@ -13,3 +13,27 @@ a {
 h2 {
     color: red;
 }
+
+/* Selector universal */
+* {
+  background-color: rgb(183, 233, 4);
+}
+
+/* Etiqueta HTML */
+h2 {
+  background-color: aqua;
+  font-style: oblique;
+  color: red;
+}
+
+/* Clase */
+.servicio {
+  background-color: aquamarine;
+  color: azure;
+  font-size: small;
+}
+
+/* Identificador */
+#servicio_promocion {
+  background-color: rgb(223, 223, 16);
+}
