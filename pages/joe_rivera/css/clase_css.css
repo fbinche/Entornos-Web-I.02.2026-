@@ -5,11 +5,18 @@ p{
 }
 
 
+/*PROPIEDADES
+font-family -----Especifica la fuente de texto para un elemento
+font-size   -----El tamaño de una fuente.
+background - color -----
+text-align
+*/
+
 
 *{
-    color:aliceblue
+    color:black
 }
 
 *{
-    background-color:rgb(19, 18, 18)
+    background-color:aliceblue
 }
