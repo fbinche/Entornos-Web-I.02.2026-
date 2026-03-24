@@ -112,23 +112,6 @@ output{
 }
 
 
-<<<<<<< HEAD
-/*PROPIEDADES
-font-family -----Especifica la fuente de texto para un elemento
-font-size   -----El tamaño de una fuente.
-background - color -----
-text-align
-*/
-
-
-*{
-    color:black
-}
-
-*{
-    background-color:aliceblue
-}
-=======
 summary{
     color:aliceblue;
     font-style: oblique;
@@ -216,4 +199,3 @@ aside{
 .nav {
   text-align:justify
 }
->>>>>>> 28c8074838d740b087cef5f6d1f55d6c3b3c30cc
