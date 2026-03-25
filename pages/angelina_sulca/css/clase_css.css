@@ -1,3 +1,113 @@
 p{
-    color: violet
+    color: rgb(112, 70, 112)
 }
+
+*{
+    color: blue;
+
+    background-color:rgb(245, 248, 201);
+
+    font-size: large;
+
+    text-align: justify;
+
+    font-family: Arial;
+}
+
+
+/**#5 etiquetas html*/
+
+p{
+    color: rgb(112, 70, 112);
+
+    font-family: Arial;
+
+    text-align: justify;
+}
+
+h1,h2,h3{
+    color: darkblue;
+
+    font-family: Georgia;
+
+    text-align: justify;
+}
+
+header{
+    background-color: rgb(180, 220, 255);
+
+    font-style: unset;
+
+    text-align: justify;
+}
+
+section{
+    background-color: rgb(240, 240, 255);
+
+    font-style: normal;
+
+    text-align: justify;
+}
+
+footer{
+    background-color: rgb(200, 230, 255);
+
+    font-style: italic;
+
+    text-align: justify;
+}
+
+/*#5 clases*/
+
+.header{
+    background-color: rgb(180, 220, 255);
+    color: black;
+    font-size: large;
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+    font-size: large;
+    text-align: justify;
+}
+
+.section{
+    background-color: rgb(240, 255, 240);
+    font-size: large;
+    text-align: justify;
+}
+
+.footer{
+    background-color: rgb(220, 220, 255);
+    font-size: medium;
+    font-style: italic;
+}
+
+
+/*#3 identificadores*/
+
+#compra{
+    background-color: rgb(255, 255, 220);
+    font-size: large;
+    text-align: justify;
+}
+
+#principal{
+    background-color: rgb(230, 255, 255);
+    font-size: large;
+    font-style: normal;
+}
+
+#destacado{
+    background-color: rgb(255, 230, 255);
+    font-size: large;
+    color: darkblue;
+}
+/*propiedades
+font-family
+font-size
+font_style
+background-color
+text-align
+color
+*/
