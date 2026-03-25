@@ -1,4 +1,98 @@
 /**EXTERNA**/
-p{
-    color: green !important
+
+p {
+    color: white !important
 }
+
+
+/**INTERNAL**/
+
+* {
+    background-color: darkcyan;
+}
+
+
+/*ESTILOS DE LOS TITULOS*/
+
+h1 {
+    color: rgb(44, 85, 84);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(117, 195, 33);
+    text-align: center;
+}
+
+h3 {
+    color: rgb(156, 192, 28);
+    text-align: center;
+}
+
+h4 {
+    color: rgb(185, 203, 23);
+    text-align: center;
+}
+
+h5 {
+    color: rgb(230, 193, 8);
+    text-align: center;
+}
+
+
+/*ESTILOS DE LOS PARRAFOS*/
+
+class .clase1 {
+    color: rgb(11, 199, 174);
+    text-align: center;
+}
+
+class .clase2 {
+    color: rgb(171, 220, 11);
+    text-align: center;
+}
+
+class .clase3 {
+    color: rgb(16, 1, 1);
+    text-align: center;
+}
+
+class .clase4 {
+    color: rgb(135, 17, 17);
+    text-align: center;
+}
+
+class .clase5 {
+    color: rgb(9, 162, 98);
+    text-align: center;
+}
+
+
+/*ESTILOS DE LOS DIVS*/
+
+p {
+    color: rgb(14, 157, 98);
+    text-align: center;
+}
+
+p {
+    color: rgb(23, 234, 146);
+    text-align: center;
+}
+
+p {
+    color: rgb(9, 162, 98);
+    text-align: center;
+}
+
+p {
+    color: rgb(6, 229, 136);
+    text-align: center;
+}
+
+
+/*propiedades{
+  font-size: 
+  background-color
+  tect-align
+*/
