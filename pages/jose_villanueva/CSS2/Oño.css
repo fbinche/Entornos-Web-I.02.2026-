@@ -1,29 +1,98 @@
-p{
-    color: rgb(153, 0, 255);
+*{ 
     background-color: rgb(0, 0, 0);
 }
 
-.tulio{
-    color: blueviolet;
-    background-color: black;
-}
+/*#5 ETIQUETAS HTML
+/*#5 CLASES
+/*#3 IDENTIFICADORES
+PROPIEDADES
+font-family  --Especifica la fuente de texto para un elemento
+font-size    -- el tamaño de una fuente.
+font-style   -- el estilo de fuente para un texto..
+background-color --Color de fondo
+text-align   --Indica la alineación horizontal del texto
+color        --Establece el color del texto.
+
+/* ===== ETIQUETAS ===== */
 
 body {
-    /* Ruta de la imagen */
-    background-image: url("imagenes/futbol.jpg");
-    
-    /* Asegura que la imagen cubra todo el fondo */
-    background-size: cover;
-    
-    /* Centra la imagen */
-    background-position: center;
-    
-    /* Evita que la imagen se repita */
-    background-repeat: no-repeat;
-    
-    /* Mantiene la imagen fija al hacer scroll */
-    background-attachment: fixed;
-    
-    /* Color de respaldo si la imagen no carga */
-    background-color: #ea09ff; 
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    color: #333;
 }
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+h2 {
+    font-family: Verdana, sans-serif;
+    font-size: 22px;
+    text-align: left;
+    color: #34495e;
+}
+
+p {
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+article {
+    background-color: #ffffff;
+    text-align: left;
+}
+
+/* ===== CLASES ===== */
+
+.ig_sistemas {
+    font-size: 18px;
+    color: #e74c3c;
+    text-align: center;
+}
+
+.presentacion {
+    font-style: italic;
+    font-size: 16px;
+    color: #8e44ad;
+}
+
+.gustos {
+    font-family: "Courier New", monospace;
+    color: #27ae60;
+}
+
+.notas {
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.texto-extra {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+/* ===== IDS ===== */
+
+#notas-finales {
+    background-color: #dfe6e9;
+    color: #34495e;
+}
+
+#header {
+    text-align: center;
+    font-size: 20px;
+}
+
+#footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
