@@ -1,3 +1,118 @@
-p {
-    color: green !important;
+* {
+    color: rgb(0, 0, 0);
 }
+
+body {
+    background-color: rgb(255, 0, 0);
+}
+
+.class_header { 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.class_header h1 {
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h1, h2, h3, h4{
+    background-color: snow;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+.card {
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    font-style: oblique;
+}
+
+figure {
+    background-color:rgb(248, 25, 25);
+}
+
+figcaption {
+    font-size: 15px;
+    font-style: italic;
+    color: snow;
+}
+
+#mas_vendidos {
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h4 {
+    font-family: Verdana;
+    font-size: 30px;
+}
+
+footer p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color:rgb(255, 225, 225);
+}
+
+.section {
+    background-color: rgb(255, 0, 0);
+}
+
+.article {
+    text-align: center;
+    background-color: snow;
+}
+
+.boton_comprar {
+    font-style: oblique;
+    background-color: rgb(224, 42, 42);
+    color:snow;
+    font-family: 'zapf chancery, cursive';
+}
+
+.precio {
+    font-weight: bold;
+    font-family: 'Gill Sans';
+    font-size: 15px;
+}
+
+#contacto {
+    background-color: rgba(232, 29, 29, 0.923);
+}
+#contacto strong {
+    color:snow;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+#categorias_populares {
+    color:rgb(248, 235, 218);
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+/* #5 ETIQUETAS HTML
+#5 CLASES
+#3 IDENTIFICADORES
+PROPIEDADES
+font-family  --Especifica la fuente de texto para un elemento
+font-size    -- el tamaño de una fuente.
+font-style   -- el estilo de fuente para un texto..
+background-color --Color de fondo
+text-align   --Indica la alineación horizontal del texto
+color        --Establece el color del texto. */ 
