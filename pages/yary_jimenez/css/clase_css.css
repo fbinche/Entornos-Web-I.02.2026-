@@ -1,5 +1,20 @@
 /**EXTERNA**/ 
 
-p{
-  color:green !important
+*{
+  color:rgb(42, 134, 73);
+    background-color: rgb(187, 169, 178)
 }
+p{
+
+  font-size: 21px;
+}
+
+
+
+
+/*PROPIEDADES
+font-family----Especifica la fuente de texto para un elemento
+font-size  ----El tamaño de una fuente.
+background - color ----
+*/
+
