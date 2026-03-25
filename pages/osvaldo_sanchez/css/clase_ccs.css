@@ -1,3 +1,6 @@
+*{
+
+}
 /*====== ESTILO GENERAL ====== */
 body {
     margin: 8px;
@@ -9,8 +12,8 @@ body {
 
 /*======HEADER======*/
 header {
-    text_align: center;
-    margin-bottom: 30´x;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 header h1 {
@@ -172,3 +175,20 @@ input[type="range"] {
     display: block;
     margin-bottom: 14px;
 }
+
+/** NOTA ACTUAL : 5.5
+15 puntos SELECTORES
+  #1 SELECTOR UNIVERSAL
+  #5 SELECTORES DE ETIQUETAS HTML
+  #5 SELECTORES DE CLASES
+  #3 SELECTORES DE IDENTIFICADORES
+  #2 SELECTORES COMBINADORES
+  #2 SELECTORES LOGICOS MODERNOS
+  #2 SELECTORES PSEUDO CLASES
+  #2 SELECTORES PSEUDO ELEMENTOS
+  #2 SELECTORES ATRIBUTOS AVANZADOS
+  #6 SELECTORES COMBINADOS
+3 puntos ANIMACIONES
+2 puntos SUSTENTACION/PARTICIPACION EN CLASE
+NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+**/

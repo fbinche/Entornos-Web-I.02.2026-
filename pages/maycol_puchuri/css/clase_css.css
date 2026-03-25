@@ -1,16 +1,13 @@
-/**EXTERNA**/
-
-p {
-    color: white !important
-}
-
-
 /**INTERNAL**/
 
 * {
     background-color: darkcyan;
 }
+/**EXTERNA**/
 
+p {
+    color: white !important
+}
 
 /*ESTILOS DE LOS TITULOS*/
 
@@ -42,27 +39,27 @@ h5 {
 
 /*ESTILOS DE LOS PARRAFOS*/
 
-class .clase1 {
+.clase1 {
     color: rgb(11, 199, 174);
     text-align: center;
 }
 
-class .clase2 {
+.clase2 {
     color: rgb(171, 220, 11);
     text-align: center;
 }
 
-class .clase3 {
+.clase3 {
     color: rgb(16, 1, 1);
     text-align: center;
 }
 
-class .clase4 {
+.clase4 {
     color: rgb(135, 17, 17);
     text-align: center;
 }
 
-class .clase5 {
+.clase5 {
     color: rgb(9, 162, 98);
     text-align: center;
 }
@@ -91,8 +88,19 @@ p {
 }
 
 
-/*propiedades{
-  font-size: 
-  background-color
-  tect-align
-*/
+/** NOTA ACTUAL : 0.0
+15 puntos SELECTORES
+  #1 SELECTOR UNIVERSAL
+  #5 SELECTORES DE ETIQUETAS HTML
+  #5 SELECTORES DE CLASES
+  #3 SELECTORES DE IDENTIFICADORES
+  #2 SELECTORES COMBINADORES
+  #2 SELECTORES LOGICOS MODERNOS
+  #2 SELECTORES PSEUDO CLASES
+  #2 SELECTORES PSEUDO ELEMENTOS
+  #2 SELECTORES ATRIBUTOS AVANZADOS
+  #6 SELECTORES COMBINADOS
+3 puntos ANIMACIONES
+2 puntos SUSTENTACION/PARTICIPACION EN CLASE
+NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+**/
