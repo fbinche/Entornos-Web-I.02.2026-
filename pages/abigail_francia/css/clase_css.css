@@ -2,3 +2,33 @@
 p{
   color:green !important
 }
+
+*{
+  background:rgb(136, 217, 249)
+}
+/*ETIQUETA HTML*/
+h1,h2{
+  background-color:rgb(255, 255, 255)
+  font-style: oblique;
+  color:palevioletred;
+}
+
+#5 ETIQUETAS html
+#5 CLASES
+#3 IDENTIFICADORES
+
+/*PROPIEDADES
+font-size
+background-color
+text-align
+*/
+/**CLASE**/
+.servicio{
+  background-color: aquamarine;
+  color: cornflowerblue;
+  font-size: small;
+}
+/**SERVICIO EN PROMOCIÓN**/
+#servico-promoción{
+  background-color: palevioletred;
+}
