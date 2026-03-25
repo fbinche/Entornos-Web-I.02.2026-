@@ -1,0 +1,82 @@
+/**externa**/
+
+
+*{
+  
+}
+
+/**etiquetas  html**/
+
+h1, h2, h3  {
+font-style: italic; 
+color: black;
+background-color: white;
+font-size: small;
+text-align: center;
+}
+
+p{
+    color: #4fa5f0;
+    font-size: small;
+    font-style: italic;
+}
+
+li{
+    color: #000000;
+    font-size: small;
+    font-style: italic;
+}
+
+dt{
+    color: #000000;
+    font-size: small;
+    font-style: italic;
+}
+
+dd{
+    color: rgb(0, 0, 0);
+    font-size: small;
+    font-style: italic;
+}
+
+/**CLASES HTML**/
+
+.card{
+background-color: #4fa5f0;
+font-size: small;
+text-align: center;
+}
+
+.footer{
+    background-color: #0c86f0;
+    font-size: medium;
+    text-align: center;
+}
+
+.article{
+    background-color: #4fa5f0;
+    font-size: medium;
+    text-align: center;
+}
+
+.main{
+    background-color: #0c86f0;
+    font-size: small;
+    text-align: center;
+}
+
+.panchito{
+background-color: #4fa5f0;
+ font-size: small;
+}
+
+/**IDENTIFICADORES**/
+
+#formatoCompletoxd {
+    color: rgb(255, 255, 255);
+}
+#ciudades {
+    color: rgb(255, 255, 255);
+}
+
+ 
