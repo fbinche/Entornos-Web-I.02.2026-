@@ -1,0 +1,35 @@
+*{
+    font-family: cursive;
+}
+
+/*PROPIEDADES*/
+/*ETIQUETAS HTML*/
+h1,h2{
+
+    background-color: aqua;
+    font-style: oblique;
+    color: rgb(8, 8, 8);
+}
+
+/*CLASES*/
+.parte1 {
+    background-color: rgb(130, 240, 4);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+
+}
+/*IDENTIFICADORES*/
+a{
+font-family: inherit;
+font-size: 30px;
+background-color: chocolate;
+text-decoration: none;
+}
+
+#ART {
+
+    font-size: 40px;
+    color: blueviolet;
+
+}
+
