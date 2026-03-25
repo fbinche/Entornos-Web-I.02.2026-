@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: green;
+    font-family: Georgia, serif;
+}
+
+h2 {
+    background-color: darkslategray;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+h4 {
+    background-color: darkslategray;
+    color: greenyellow;
+    font-size: 20px;
+    font-style: italic;
+}
+
+h6 {
+    background-color: darkslategray;
+    color: lightgray;
+    font-size: 14px;
+}
+
+p {
+    background-color: rgb(208, 255, 0);
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+.articulo {
+    background-color: rgb(208, 255, 0);
+    color: black;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.titulo-principal {
+    background-color: olive;
+    color: white;
+    font-size: 32px;
+    font-style: italic;
+    text-align: center;
+}
+
+.subtitulo {
+    background-color: darkslategray;
+    color: greenyellow;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 22px;
+    text-align: left;
+}
+
+.texto-destacado {
+    background-color: greenyellow;
+    color: black;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.pie-pagina {
+    background-color: olive;
+    color: white;
+    font-family: Courier New, monospace;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+#encabezado {
+    background-color: darkslategray;
+    color: white;
+    font-family: Impact, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+#contenido {
+    background-color: white;
+    color: black;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#pie-de-pagina {
+    background-color: olive;
+    color: greenyellow;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    font-style: normal;
+}
