@@ -1,24 +1,25 @@
-*{}
+*{
+    font-family: 'Courier New', Courier, monospace; /* tipo de letra */
+}
 
 /* ===== ETIQUETAS HTML  ===== */
 
 
 body {
     background-color: rgb(117, 0, 0); /* color de fondo */
-    font-family: Arial; /* tipo de letra */
 }
 
 
-h1,h2 {  /* usando dos etiquetas  al mismo tiempo */
+h1 {  /* usando dos etiquetas  al mismo tiempo */
     font-size: 40px; /* tamaño de letra */
     text-align: center; /* centrar texto */
-    color: white; /* color */
+    color: rgb(0, 0, 0); /* color */
 }
 
 
 p {
     font-size: 16px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -37,18 +38,19 @@ footer {
 /* ===== IDs ===== */
 
 
-#titulo {
-    color: yellow; /* cambia color del título */
+#descripcion {
+    border: 2px solid rgb(132, 117, 117);
+}
+
+#button {
+    background-color: rgba(0, 137, 39, 0.19);
+    border: 2px solid rgb(0, 137, 39);
 }
 
 
-#seccion1 {
-    background-color: lightpink;
-}
-
-
-#footer {
-    font-size: 14px;
+#vinculo {
+    background-color: rgb(107, 107, 212);
+    border: 2px solid rgb(64, 0, 133);
 }
 /* ===== CLASES  ===== */
 .cabecera {
@@ -79,13 +81,35 @@ footer {
     color: yellow;
 }
 
-/** NOTA ACTUAL : 1.0
-15 puntos SELECTORES
-  #1 SELECTOR UNIVERSAL
-  #5 SELECTORES DE ETIQUETAS HTML
-  #5 SELECTORES DE CLASES
-  #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES
+
+
+
+
+/**  #2 SELECTORES COMBINADORES  **/
+
+
+.v option {
+    color: rgb(0, 246, 102);
+}
+    
+.article2 p {
+    color: rgb(194, 253, 0);
+}
+
+
+/** #2 SELECTORES LOGICOS MODERNOS **/
+
+
+
+
+/** NOTA ACTUAL : 1.0 por no entiendo
+15
+ puntos SELECTORES
+  #1 SELECTOR UNIVERSAL                x
+  #5 SELECTORES DE ETIQUETAS HTML      x
+  #5 SELECTORES DE CLASES              x
+  #3 SELECTORES DE IDENTIFICADORES     x
+  #2 SELECTORES COMBINADORES           x
   #2 SELECTORES LOGICOS MODERNOS
   #2 SELECTORES PSEUDO CLASES
   #2 SELECTORES PSEUDO ELEMENTOS
