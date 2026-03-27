@@ -1,126 +1,327 @@
+/* =====================================
+   SELECTOR UNIVERSAL
+===================================== */
 *{
-    color: blue;
+    margin: 0;
 
-    background-color:rgb(245, 248, 201);
+    padding: 0;
 
-    font-size: large;
-
-    text-align: justify;
-
-    font-family: Arial;
+    box-sizing: border-box;
+    
+    font-family: Arial, sans-serif;
 }
 
+/* =====================================
+   SELECTORES DE ETIQUETA (5)
+===================================== */
+body{
+    background: #f4f4f4;
 
-/**#5 etiquetas html*/
+    color: #222;
+
+    line-height: 1.6;
+
+    padding: 10px;
+}
+
+h1{
+    color: #0b4f8a;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 1px;
+}
 
 p{
-    color: rgb(112, 70, 112);
+    font-size: 14px;
 
-    font-family: Arial;
+    margin-bottom: 10px;
 
-    text-align: justify;
-}
-
-h1,h2,h3{
-    color: darkblue;
-
-    font-family: Georgia;
-
-    text-align: justify;
-}
-
-header{
-    background-color: rgb(180, 220, 255);
-
-    font-style: unset;
-
-    text-align: justify;
+    color: #333;
 }
 
 section{
-    background-color: rgb(240, 240, 255);
+    margin: 20px 0;
 
-    font-style: normal;
+    padding: 15px;
 
-    text-align: justify;
+    border: 1px solid #ddd;
+
+    background: white;
 }
 
-footer{
-    background-color: rgb(200, 230, 255);
+button{
+    background: #0b4f8a;
 
-    font-style: italic;
+    color: white;
 
-    text-align: justify;
+    padding: 8px 12px;
+
+    border: none;
+
+    cursor: pointer;
 }
 
-/*#5 clases*/
-
+/* =====================================
+   SELECTORES DE CLASE (5)
+===================================== */
 .header{
-    background-color: rgb(180, 220, 255);
-    color: black;
-    font-size: large;
+    background: #0b4f8a;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
 }
 
 .main{
-    background-color: rgb(255, 255, 255);
-    font-size: large;
-    text-align: justify;
+    max-width: 2200px;
+
+    margin: auto;
+
+    padding: 10px;
 }
 
-.section{
-    background-color: rgb(240, 255, 240);
-    font-size: large;
-    text-align: justify;
+.card{
+    border: 1px solid #ccc;
+
+    padding: 10px;
+
+    background: #fff;
+
+    transition: 0.3s;
+}
+
+.productos{
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    justify-content: center;
 }
 
 .footer{
-    background-color: rgb(220, 220, 255);
-    font-size: medium;
-    font-style: italic;
+    background: #222;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
 }
 
+/* =====================================
+   SELECTORES ID (3)
+===================================== */
+#inicio{
+    background: #eaf6ff;
 
-/*#3 identificadores*/
+    border-radius: 10px;
 
-#compra{
-    background-color: rgb(255, 255, 220);
-    font-size: large;
-    text-align: justify;
+    padding: 20px;
 }
 
-#principal{
-    background-color: rgb(230, 255, 255);
-    font-size: large;
-    font-style: normal;
+#coleccion{
+    background: #fff3e6;
+
+    border-radius: 10px;
+
+    padding: 20px;
 }
 
-#destacado{
-    background-color: rgb(255, 230, 255);
-    font-size: large;
-    color: darkblue;
-}
-/*propiedades
-font-family
-font-size
-font_style
-background-color
-text-align
-color
-*/
+#destacados{
+    background: #f0fff0;
 
-/** NOTA ACTUAL : 6.5
-15 puntos SELECTORES
-  #1 SELECTOR UNIVERSAL
-  #5 SELECTORES DE ETIQUETAS HTML
-  #5 SELECTORES DE CLASES
-  #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES
-  #2 SELECTORES LOGICOS MODERNOS
-  #2 SELECTORES PSEUDO CLASES
-  #2 SELECTORES PSEUDO ELEMENTOS
-  #2 SELECTORES ATRIBUTOS AVANZADOS
-  #6 SELECTORES COMBINADOS
-3 puntos ANIMACIONES
-2 puntos SUSTENTACION/PARTICIPACION EN CLASE
-NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
-**/
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+/* =====================================
+   SELECTORES COMBINADORES (2)
+===================================== */
+header h1{
+    font-size: 28px;
+
+    text-transform: uppercase;
+
+    margin-top: 10px;
+}
+
+nav ul li{
+    list-style: none;
+
+    display: inline-block;
+    
+    margin: 0 10px;
+}
+
+/* =====================================
+   SELECTORES LÓGICOS MODERNOS (2)
+===================================== */
+:is(h2,h3){
+    color: #0b4f8a;
+
+    font-weight: bold;
+}
+
+p:not(.especial){
+    color: #444;
+
+    padding-left: 5px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* =====================================
+   PSEUDO CLASES (2)
+===================================== */
+button:hover{
+    background: orange;
+
+    transform: scale(1.05);
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:active{
+    color: red;
+
+    font-weight: bold;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* =====================================
+   PSEUDO ELEMENTOS (2)
+===================================== */
+p::first-letter{
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #0b4f8a;
+}
+
+p::after{
+    content: " ✔";
+
+    color: green;
+
+    background-color: #444;
+}
+
+/* =====================================
+   ATRIBUTOS AVANZADOS (2)
+===================================== */
+input[type="text"]{
+    border: 2px solid blue;
+
+    padding: 5px;
+
+    background: #eef;
+}
+
+img[src$=".jpg"]{
+    border: 3px solid purple;
+
+    border-radius: 10px;
+
+    padding: 3px;
+}
+
+/* =====================================
+   SELECTORES COMBINADOS (6)
+===================================== */
+section.productos article.card{
+    width: 200px;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+
+    transition: 0.3s;
+
+    font-style: oblique;
+}
+
+.header nav ul li a{
+    color: white;
+    
+    text-decoration: none;
+
+    font-style: oblique;
+}
+
+.header nav ul li a:hover{
+    color: yellow;
+
+    background-color: rgb(128, 255, 255);
+}
+
+.productos .card footer button{
+    background: green;
+
+    color: rgb(205, 87, 255);
+}
+
+section#destacados .card h3{
+    color: darkred;
+
+}
+
+/* =====================================
+   ANIMACIONES (3)
+===================================== */
+@keyframes aparecer{
+    from{
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+    to{
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+.card{
+    animation: aparecer 0.8s ease-in-out;
+}
+
+@keyframes zoom{
+    from{transform: scale(1);}
+
+    to{transform: scale(1.05);}
+}
+
+.card:hover{
+    animation: zoom 0.3s forwards;
+
+    color: coral;
+
+    background-color: cyan;
+}
+
+@keyframes colorCambio{
+    0%{background: #0b4f8a;}
+
+    50%{background: purple;}
+
+    100%{background: #0b4f8a;}
+}
+
+button:hover{
+    animation: colorCambio 1s infinite;
+}
