@@ -1,38 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>AuraNet</title>
   <link rel="stylesheet" href="estilos/clase_ccs.css">
 </head>
 
 <body>
-  <header id="#inicio">
-    <h1 class="tituloheader">
-      el mejor internet del mundo
-    </h1>
-  </header>
+
   <main>
-    <section class="contenido">
-      <ul class="lista">
-        <li>El más veloz</li>
-        <li>Sin fallas</li>
-        <li>Sin lag</li>
-        <li>Sin cortes</li>
-        <li>Fibra optica</li>
-      </ul>
-      <p class="precio">Precio: S/110.90</p>
+
+    <!-- ===== HEADER ===== -->
+    <header class="hero" id="INICIO">
+
+      <nav class="lista_menu">
+        <ul class="menu">
+          <li><a href="#PLANES">Planes</a></li>
+          <li><a href="#BENEFICIOS">Beneficios</a></li>
+          <li><a href="#FORMULARIO">Contratar</a></li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <!-- ===== PLANES ===== -->
+    <section id="PLANES">
+
+      <h1 class="titulo">NUESTROS PLANES</h1>
+
+      <section class="columnas_3">
+
+        <!-- PLAN 1 -->
+        <article class="article">
+          <img src="img/velocidades/1000-Diamante-Elite.png" class="img-plan">
+          <h2>1000 Mbps</h2>
+
+          <ul>
+            <li>GO Familia</li>
+            <li>Prime Video</li>
+            <li>+33 canales</li>
+          </ul>
+
+          <p class="precio"><strong>S/104.90</strong></p>
+
+          <a href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji" class="btn-principal" target="_blank">
+            QUIERO ESTE PLAN
+          </a>
+
+        </article>
+
+        <!-- PLAN 2 -->
+        <article class="article">
+          <img src="img/velocidades/500-Oro-Puro.png" class="img-plan">
+          <h2>500 Mbps</h2>
+
+          <ul>
+            <li>GO Familia</li>
+            <li>Prime Video</li>
+            <li>+33 canales</li>
+          </ul>
+
+          <p class="precio"><strong>S/89.90</strong></p>
+
+          <a href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji" class="btn-principal" target="_blank">
+            QUIERO ESTE PLAN
+          </a>
+
+        </article>
+
+        <!-- PLAN 3 -->
+        <article class="article">
+          <img src="img/velocidades/300-Plata-Premium.png" class="img-plan">
+          <h2>300 Mbps</h2>
+
+          <ul>
+            <li>GO Familia</li>
+            <li>Prime Video</li>
+            <li>+30 canales</li>
+          </ul>
+
+          <p class="precio"><strong>S/79.90</strong></p>
+
+          <a href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji" class="btn-principal" target="_blank">
+            QUIERO ESTE PLAN
+          </a>
+
+        </article>
+
+      </section>
+
     </section>
+
+    <!-- ===== BENEFICIOS ===== -->
+    <section id="BENEFICIOS">
+
+      <h2 class="titulo">BENEFICIOS</h2>
+
+      <section class="columnas_3">
+
+        <article class="article">
+          <img src="img/beneficios/velocidad_simetricagold.png" class="img-beneficio">
+          <strong>Velocidad simétrica</strong>
+          <p>Misma velocidad de subida y bajada</p>
+        </article>
+
+        <article class="article">
+          <img src="img/beneficios/descargas_ilimitadasgold.png" class="img-beneficio">
+          <strong>Descargas ilimitadas</strong>
+          <p>Sin límites ni cortes</p>
+        </article>
+
+        <article class="article">
+          <img src="img/beneficios/multiples_conexionesgold.png" class="img-beneficio">
+          <strong>Múltiples dispositivos</strong>
+          <p>Conecta todo en casa</p>
+        </article>
+
+      </section>
+
+      <!-- BOTÓN WHATSAPP -->
+      <div class="centrar">
+        <a href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji" class="btn-principal" target="_blank">
+          Contáctanos por WhatsApp
+        </a>
+      </div>
+
+    </section>
+
+    <!-- ===== FORMULARIO ===== -->
+    <section id="FORMULARIO">
+
+      <h2 class="titulo">CONTRATAR PLAN</h2>
+
+      <form class="formulario">
+
+        <label>Plan:</label>
+        <select>
+          <option>300 Mbps</option>
+          <option>500 Mbps</option>
+          <option>1000 Mbps</option>
+        </select>
+
+        <label>Nombre:</label>
+        <input type="text" placeholder="Tu nombre">
+
+        <label>Email:</label>
+        <input type="email">
+
+        <label>DNI:</label>
+        <input type="text" maxlength="8">
+
+        <label>
+            <input type="checkbox"> Acepto los términos y condiciones
+          </label>
+
+        <button type="submit" class="btn-principal">Contratar</button>
+
+      </form>
+
+    </section>
+
   </main>
-  <footer>
-    <a id="#linkwsp" href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji?mode=gi_t" class="btn-principal" target="_blank">QUIERO
-      ESTE PLAN
-    </a>
-    <a href="#contenido" class="btn-secundario">Vuelve al inicio
-    </a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <!-- ================= EMPRESA ================= -->
+    <section class="footer-empresa">
+      <h2>AuraNet</h2>
+      <small>AuraNet © 2026</small>
+    </section>
+
+    <!-- ================= NAVEGACION SERVICIOS ================= -->
+    <nav class="footer-servicios">
+      <h4>Servicios</h4>
+
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Planes de datos</a></li>
+        <li><a href="#">Beneficios</a></li>
+      </ul>
+
+    </nav>
+
+    <!-- ================= NOSOTROS ================= -->
+    <nav class="footer-nosotros">
+
+      <h4>Nosotros</h4>
+
+      <ul>
+        <li><a href="#">Nuestra empresa</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+      </ul>
+
+    </nav>
+
+    <!-- ================= AYUDA Y REDES ================= -->
+    <section class="footer-ayuda">
+
+      <h4>Ayuda</h4>
+
+      <ul>
+        <li><a href="#">Cómo funciona la fibra óptica</a></li>
+        <li><a href="#">Atención al cliente</a></li>
+      </ul>
+
+      <h4>Redes sociales</h4>
+
+      <ul class="redes-sociales">
+        <li><a href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji?mode=gi_t">WhatsApp</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+      </ul>
+
+    </section>
+
   </footer>
+
 </body>
 
 </html>
