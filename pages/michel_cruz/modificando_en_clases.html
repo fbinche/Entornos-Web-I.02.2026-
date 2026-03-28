@@ -16,21 +16,79 @@
         <p id="descripcion"> usando css ----- </p>
     </header>
 
+   
+
+
     <section>
-        <h2>Sección 1</h2>
-        <p>Primer párrafo</p>
-        <p>Segundo párrafo</p>
-        <button id="button">Botón</button>
+        <img class="img" src="img/AZULFACE.png" alt="csscszc">
+        <img class="img" src="img/imagen_flor_1.jpeg" alt="csscszc">
+        <img class="img" src="img/0Aaños25.webp" alt="csscszc">
+    </section>
+
+
+
+
+    <section>
+        <hr>
+        <dialog class="modal">
+  <p>Hola, soy un diálogo</p>
+  <button onclick="this.parentElement.close()">Cerrar</button>
+</dialog>
+
+<button onclick="document.querySelector('.modal').showModal()">
+  Abrir diálogo
+</button>
+        <hr>  
+    </section>
+
+
+
+    <section>
+        <hr>
+        <input class="input" type="text" placeholder="Haz clic aquí">
+        <hr>
+    </section>
+
+    <section>
+        <hr>
+        <button class="btn">Pasa el mouse</button>
         <hr>
     </section>
 
 
-    <section>
-        <h2 >Elemento con clase</h2>
-        <p >Texto único</p>
+    <section class="combinadores">
+        <h2>combinadores</h2>
+
+        <p>primer plano </p>
+        <p>primer plano</p>
+            <section>
+                <h2>combinadores</h2>
+                <p>segundo plano</p>
+                <p>segundo plano</p>
+                         <section>
+                            <h2 class="siguiente">siguiente</h2>
+                            <p>tercer plano</p>
+                            <p>tercer plano</p>
+                         </section>
+                <p>segundo plano</p>
+                <p>segundo plano</p>
+            </section>
+        <p>primer plano</p>
+        <p>primer plano</p>
+        <button id="button">Botón</button>
+        <hr>
+    </sectionc>
+
+
+    <section" class="verdadero_falso">
+        <h2 > verdadero o falso</h2>
+        <p id="verdadero1">Texto verdadero</p>
+        <p id="falso1">Texto falso</p>
+        <p id="verdadero2">texto verdadero</p>
+        <p id="falso2">texto falso</p>
     </section>
 
-    
+   
     <section >
         <h2>Combinadores</h2>
         <p>Hijo directo</p>
