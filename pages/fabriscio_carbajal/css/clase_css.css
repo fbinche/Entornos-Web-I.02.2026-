@@ -166,13 +166,6 @@ footer:has(.ver_productos) {
     font-style: oblique;
 }
 
-
-
-where
-
-hover
-
-
 .article h3 ~ p::selection {
     background-color: rgb(51, 255, 0);
     color: snow;
