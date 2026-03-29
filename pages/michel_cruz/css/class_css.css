@@ -1,3 +1,55 @@
+
+/* Tabla general */
+.tabla {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Encabezado */
+.encabezado th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+/* Filas */
+.fila {
+    background-color: #f2f2f2;
+    text-align: center;
+    height: 40px;
+}
+
+/* Celdas */
+.tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Efecto hover */
+.fila:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+
+/** eso de arriva estodo de tabla solo  estilo **/
+
+
+
+
+
+
+
+
 *{
     font-family: 'Courier New', Courier, monospace; /* tipo de letra */
     font-weight: bold; /* negrita */
@@ -179,7 +231,12 @@ section  img {
   opacity: 0.8;
 }
 
+
+
+
 /** #2 SELECTORES ATRIBUTOS AVANZADOS **/
+
+
 .img[src$=".png"] {
  width: 300px;
  height: auto;
@@ -187,25 +244,56 @@ section  img {
  border-radius: 15px;
 }
 
+.img[src$=".webp"] {
+ width: 300px;
+ height: auto;
+ border: 10px solid #bfff00; 
+ border-radius: 15px;
+
+}
 
 
 
 
 
-/** NOTA ACTUAL : 1.0 por no entiendo
+.bloque1 p {
+    color: red;
+    font-size: 18px;
+    background: lightgray;
+}
+
+
+.lista > .item {
+    color: blue;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.item + .end {
+    color: orange;
+    margin-top: 10px;
+    background: yellow;
+}
+
+
+
+
+
+
+/** NOTA ACTUAL : 1.0 
 15
  puntos SELECTORES
-  #1 SELECTOR UNIVERSAL                x
-  #5 SELECTORES DE ETIQUETAS HTML      x
-  #5 SELECTORES DE CLASES              x
-  #3 SELECTORES DE IDENTIFICADORES     x
-  #2 SELECTORES COMBINADORES           x
-  #2 SELECTORES LOGICOS MODERNOS       x
-  #2 SELECTORES PSEUDO CLASES          x
-  #2 SELECTORES PSEUDO ELEMENTOS       x
-  #2 SELECTORES ATRIBUTOS AVANZADOS    x
-  #6 SELECTORES COMBINADOS             x
+  # 1 SELECTOR UNIVERSAL                x
+  # 5 SELECTORES DE ETIQUETAS HTML      x
+  # 5 SELECTORES DE CLASES              x
+  # 3 SELECTORES DE IDENTIFICADORES     x
+  # 2 SELECTORES COMBINADORES           x
+  # 2 SELECTORES LOGICOS MODERNOS       x
+  # 2 SELECTORES PSEUDO CLASES          x
+  # 2 SELECTORES PSEUDO ELEMENTOS       x
+  # 2 SELECTORES ATRIBUTOS AVANZADOS    x
+  # 6 SELECTORES COMBINADOS             x 
 3 puntos ANIMACIONES
-2 puntos SUSTENTACION/PARTICIPACION EN CLASE   
+2 puntos SUSTENTACION/PARTICIPACION EN CLASE   x
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por select or
 **/
