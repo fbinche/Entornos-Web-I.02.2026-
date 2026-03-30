@@ -124,21 +124,32 @@ nav h2{
 /* ================================
    LISTA
 ================================ */
+/* ================================
+   JERARQUÍA DE LISTA
+================================ */
 
 nav ol{
-
-    list-style:none;
-
+    list-style: none;
+    padding-left: 0;
 }
 
-
-
-nav li{
-
-    margin:12px 0;
-
+nav ol > li{
+    color: var(--cian);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
 }
 
+nav ol > li > ul{
+    list-style: none;
+    margin-top: 15px;
+    padding-left: 18px;
+    border-left: 3px solid var(--fucsia);
+}
+
+nav ol > li > ul > li{
+    margin: 10px 0;
+}
 
 
 /* ================================
