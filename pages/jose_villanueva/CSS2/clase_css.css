@@ -8,7 +8,7 @@
 /* 2. Selectores de etiquetas */
 body {
   background: #f0f0f0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   color: black;
 }
 
@@ -36,7 +36,7 @@ a {
   color: green;
 }
 
-/* 3. Clases */
+/* 3. Selectores de clases (5) */
 .contenedor {
   background: white;
   padding: 20px;
@@ -55,11 +55,35 @@ a {
   padding: 5px;
 }
 
-/* 4. ID */
+.destacado {
+  background: yellow;
+  color: black;
+  padding: 10px;
+}
+
+.caja {
+  border: 2px solid blue;
+  margin: 15px;
+  padding: 10px;
+}
+
+/* 4. Selectores ID (3) */
 #titulo {
   font-size: 30px;
   background: black;
   color: white;
+}
+
+#menu {
+  background: gray;
+  padding: 10px;
+  color: white;
+}
+
+#footer {
+  background: black;
+  color: white;
+  text-align: center;
 }
 
 /* 5. Combinadores */
@@ -77,7 +101,7 @@ div > p {
 
 /* 6. Lógicos modernos */
 :is(h1, h2) {
-  font-family: Georgia;
+  font-family: Georgia, serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -113,7 +137,7 @@ p::after {
   color: green;
 }
 
-/* 9. Atributos */
+/* 9. Atributos avanzados */
 input[type="text"] {
   border: 2px solid blue;
   padding: 5px;
@@ -126,7 +150,7 @@ a[target="_blank"] {
   text-decoration: none;
 }
 
-/* 10. Combinados */
+/* 10. Selectores combinados (6) */
 div.contenedor {
   border: 2px solid black;
   margin: 20px;
@@ -163,7 +187,9 @@ div.animacion {
   border: 2px solid black;
 }
 
-/* Animación */
+/* 11. Animaciones (3) */
+
+/* Animación 1 */
 @keyframes mover {
   0% { transform: translateX(0); }
   50% { transform: translateX(100px); }
@@ -175,6 +201,32 @@ div.animacion {
   height: 100px;
   background: red;
   animation: mover 2s infinite;
+}
+
+/* Animación 2 */
+@keyframes rotar {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+.caja-rotar {
+  width: 80px;
+  height: 80px;
+  background: blue;
+  animation: rotar 3s infinite linear;
+}
+
+/* Animación 3 */
+@keyframes cambiarColor {
+  0% { background: red; }
+  50% { background: yellow; }
+  100% { background: green; }
+}
+
+.color-animado {
+  width: 100px;
+  height: 100px;
+  animation: cambiarColor 4s infinite;
 }
 
 
