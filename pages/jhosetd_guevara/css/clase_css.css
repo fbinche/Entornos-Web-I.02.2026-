@@ -4,22 +4,15 @@
 * {
   background-color: rgb(183, 233, 4);
 }
-pf {
-    color: green;
-}
 
 p {
-    color: aqua;
+  color: aqua;
 }
 
 a {
-    color: green;
+  color: green;
 }
 
-h2 {
-    color: red;
-}
-/* Etiqueta HTML */
 h2 {
   background-color: aqua;
   font-style: oblique;
@@ -37,6 +30,81 @@ h2 {
 #servicio_promocion {
   background-color: rgb(223, 223, 16);
 }
+
+
+/* Selectores lógicos modernos */
+
+
+:is(h1, h2, h3) {
+  text-transform: uppercase;
+}
+
+
+:where(article p) {
+  line-height: 1.5;
+}
+
+
+a:not(.externo) {
+  text-decoration: underline;
+}
+
+/* Pseudo‑clases */
+a:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+
+p:first-child {
+  font-style: italic;
+}
+
+.servicio:hover {
+  background-color: lightblue;
+}
+
+/* Pseudo‑elementos */
+p::first-letter {
+  font-size: 2em;
+  color: crimson;
+}
+
+h2::before {
+  content: "👉 ";
+  color: darkblue;
+}
+
+h2::after {
+  content: " 👈";
+  color: darkblue;
+}
+
+a::after {
+  content: " 🔗";
+}
+
+/* Selectores de atributos avanzados */
+
+/* Todos los enlaces externos */
+a[href^="http"] {
+  color: orange;
+}
+
+/* Imágenes en formato JPG */
+img[src$=".jpg"] {
+  border: 3px solid red;
+}
+
+/* Inputs obligatorios */
+input[required] {
+  border: 2px solid crimson;
+}
+
+/* Elementos con atributo data-promocion */
+div[data-promocion] {
+  background-color: lightyellow;
+}
+
 
 /** NOTA ACTUAL : 1.0
 15 puntos SELECTORES
