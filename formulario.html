@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/formulario.css">
 </head>
 
 <body>
@@ -16,7 +17,9 @@
 
     <!-- Barra de progreso general -->
     <!-- Representa avance del proceso -->
-    <progress value="70" max="100"></progress>
+    <progress value="50" max="100"></progress>
+    <progress value="20" max="100"></progress>
+    <progress value="100" max="100"></progress>
 
     <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
 
@@ -84,8 +87,9 @@
                 <label>País:</label>
 
                 <select name="pais">
-                    <option value="pe" selected>Perú</option>
+                    <option value="">Seleccione País</option>
                     <option value="co">Colombia</option>
+                    <option value="pe">Perú</option>
                     <option value="ar">Argentina</option>
                 </select>
                 <br><br>
@@ -173,6 +177,9 @@
                 <label>Comentarios:</label>
                 <br>
                 <textarea name="comentarios" rows="4" cols="40">Escribe aquí tu comentario...</textarea>
+
+
+                <textarea name="comentarios" rows="10" cols="400">Escribe aquí tu comentario...</textarea>
                 <br><br>
                 <!-- Permite ingresar enlaces web -->
                 <label>Sitio web:</label>
@@ -218,6 +225,12 @@
                 </select>
 
             </fieldset>
+
+            <fieldset>
+                <legend>Mi informacion</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" required minlength="3">
+            </fieldset>
         </section>
 
         <!-- ====================== MEDICIONES ====================== -->
@@ -227,7 +240,15 @@
 
             <!-- meter indica nivel dentro de rango -->
             <label>Nivel técnico:</label>
+
+            <mark>Nivel CSS</mark>
+            <meter value="0.25" min="0" max="1"></meter>
+            <mark>Nivel HTML</mark>
+            <meter value="0.50" min="0" max="1"></meter>
             <meter value="0.75" min="0" max="1"></meter>
+            <meter value="1" min="0" max="1"></meter>
+
+
             <br><br>
 
             <!-- range con valor inicial -->
@@ -299,6 +320,10 @@
                     <p>Este bloque se puede expandir o contraer sin JS.</p>
                 </details>
 
+                <details open>
+
+                    <p>Este bloque YA EXPANDIDO o contraer sin JS.</p>
+                </details>
             </fieldset>
         </section>
 

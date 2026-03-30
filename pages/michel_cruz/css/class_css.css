@@ -1,0 +1,97 @@
+*{}
+
+/* ===== ETIQUETAS HTML  ===== */
+
+
+body {
+    background-color: rgb(117, 0, 0); /* color de fondo */
+    font-family: Arial; /* tipo de letra */
+}
+
+
+h1,h2 {  /* usando dos etiquetas  al mismo tiempo */
+    font-size: 40px; /* tamaño de letra */
+    text-align: center; /* centrar texto */
+    color: white; /* color */
+}
+
+
+p {
+    font-size: 16px;
+    color: black;
+}
+
+
+section {
+    background-color: lightcoral;
+    text-align: center;
+}
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+/* ===== IDs ===== */
+
+
+#titulo {
+    color: yellow; /* cambia color del título */
+}
+
+
+#seccion1 {
+    background-color: lightpink;
+}
+
+
+#footer {
+    font-size: 14px;
+}
+/* ===== CLASES  ===== */
+.cabecera {
+    background-color: darkred;
+    text-align: center;
+}
+
+
+.vinculo_lleva {
+    background-color: crimson;
+    text-align: center;
+}
+
+
+.section {
+    text-align: center;
+}
+
+
+.card {
+    background-color: white;
+    font-style: italic; /* estilo cursiva */
+}
+
+
+.precio {
+    font-size: 18px;
+    color: yellow;
+}
+
+/** NOTA ACTUAL : 1.0
+15 puntos SELECTORES
+  #1 SELECTOR UNIVERSAL
+  #5 SELECTORES DE ETIQUETAS HTML
+  #5 SELECTORES DE CLASES
+  #3 SELECTORES DE IDENTIFICADORES
+  #2 SELECTORES COMBINADORES
+  #2 SELECTORES LOGICOS MODERNOS
+  #2 SELECTORES PSEUDO CLASES
+  #2 SELECTORES PSEUDO ELEMENTOS
+  #2 SELECTORES ATRIBUTOS AVANZADOS
+  #6 SELECTORES COMBINADOS
+3 puntos ANIMACIONES
+2 puntos SUSTENTACION/PARTICIPACION EN CLASE
+NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+**/
