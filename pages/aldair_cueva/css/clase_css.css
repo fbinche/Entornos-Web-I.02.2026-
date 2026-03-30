@@ -1,37 +1,97 @@
-*{
+/* 1. SELECTOR UNIVERSAL */
+* {
     font-family: cursive;
+    margin: 0;
+    padding: 0;
 }
 
-/*PROPIEDADES*/
-/*ETIQUETAS HTML*/
-h1,h2{
-
+/* 2. SELECTORES DE ETIQUETAS HTML */
+h1, h2 {
     background-color: aqua;
     font-style: oblique;
     color: rgb(8, 8, 8);
 }
 
-/*CLASES*/
+/* 3. SELECTORES DE CLASES */
 .parte1 {
     background-color: rgb(130, 240, 4);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: oblique;
-
-}
-/*IDENTIFICADORES*/
-a{
-font-family: inherit;
-font-size: 30px;
-background-color: chocolate;
-text-decoration: none;
+    padding: 10px;
 }
 
+/* 4. SELECTORES DE IDENTIFICADORES */
 #ART {
-
     font-size: 40px;
     color: blueviolet;
-
+    text-align: center;
 }
+
+/* 5. SELECTORES DE ATRIBUTOS AVANZADOS */
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 5px;
+    background-color: #f0f0f0;
+}
+
+a[href$=".pdf"] {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 6. SELECTORES COMBINADORES */
+div p {
+    color: green;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 + p {
+    font-weight: bold;
+    background-color: #eee;
+    padding: 5px;
+}
+
+/* 7. SELECTORES LÓGICOS MODERNOS */
+:is(h1, h2) {
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: 2px solid black;
+}
+
+a:not(.especial) {
+    color: darkblue;
+    background-color: lightyellow;
+    font-size: 20px;
+}
+
+/* 8. SELECTORES PSEUDO-CLASES */
+a:hover {
+    background-color: yellow;
+    color: black;
+    font-size: 22px;
+}
+
+input:focus {
+    border: 2px solid red;
+    outline: none;
+    background-color: #fff3f3;
+}
+
+/* 9. SELECTORES PSEUDO-ELEMENTOS */
+p::first-letter {
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+}
+
+h2::before {
+    content: "★ ";
+    color: orange;
+    font-size: 24px;
+}
+
 
 /** NOTA ACTUAL : 1.5
 15 puntos SELECTORES
