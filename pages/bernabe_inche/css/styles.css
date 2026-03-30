@@ -1,3 +1,14 @@
 #servicio1 {
   background: url("https://workcapit.com/images/outsourcing_fondo.png") center / cover no-repeat;
 }
+/*
+ul #servicio1 {
+  
+  border: 1rem solid #3105f5;
+  border-radius: 0.4rem;
+}
+*/
+article[class~="columnas_2"] {
+     border: 1rem solid #3105f5;
+     border-radius: 0.4rem;
+}
