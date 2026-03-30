@@ -1,13 +1,14 @@
+/* selector universal*/
 * {
     padding: 0;
     margin: 0;
     color: rgb(0, 0, 0);
 }
-
+/* color de fondo al body*/
 body {
     background-color: rgb(255, 0, 0);
 }
-
+/* header y navegación*/
 .class_header { 
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -18,7 +19,7 @@ body {
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+/* modificacion a todos los enlaces descentientes de un nav */
 nav a {
     color: white;
     font-size: 18px;
@@ -26,6 +27,7 @@ nav a {
 
 }
 
+/* agrupacion del color de fondo de los títulos*/
 :is(h1, h2, h3, h4) {
     background-color: snow;
 }
