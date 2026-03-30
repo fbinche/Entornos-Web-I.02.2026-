@@ -1,3 +1,6 @@
-#servicio1 {
-  background: url("https://workcapit.com/images/outsourcing_fondo.png") center / cover no-repeat;
+/* etiqueta section en el id #seccion4 +clase especifica, nth a los q son el mismo tipo*/
+ #seccion4 section > ul > article[id^="servicio"]{
+    border: 2px solid #1202eb;
 }
+
+/*etiqueta,id,clase,pseudoclase
