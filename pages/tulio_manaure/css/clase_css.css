@@ -1,12 +1,41 @@
-<<<<<<< HEAD
+
 .video-header {
     position: relative;
     height: 400px;
     overflow: hidden;
-=======
-*{
 
 }
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.contenido {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+audio {
+    width: 100%;
+    margin: 10px;
+}
+body {
+    font-family: Arial;
+    background-color: #0d8009;
+    border: #070000;
+}
+*
+
+
 head {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(92, 4, 65);
@@ -15,7 +44,6 @@ head {
 }
 p{
     color: rgba(252, 169, 252, 0.699);
->>>>>>> 4f8c88b69e4a93d3c4032c4e2814aa0a00b46c4f
 }
 
 
@@ -108,9 +136,8 @@ footer {
     padding: 10px;
 }
 
-<<<<<<< HEAD
-=======
-}
+
+
 /** NOTA ACTUAL : 2.0
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL
@@ -127,4 +154,3 @@ footer {
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
 **/
->>>>>>> 4f8c88b69e4a93d3c4032c4e2814aa0a00b46c4f
