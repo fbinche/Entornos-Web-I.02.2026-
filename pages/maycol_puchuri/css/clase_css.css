@@ -1,105 +1,303 @@
-/**INTERNAL**/
+/*SELECTOR UNIVERSAL*/
 
 * {
     background-color: darkcyan;
 }
-/**EXTERNA**/
+
+
+/*ETIQUETA HTML*/
 
 p {
-    color: white !important
+    color: white !important;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
-
-/*ESTILOS DE LOS TITULOS*/
 
 h1 {
     color: rgb(44, 85, 84);
     text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h2 {
     color: rgb(117, 195, 33);
     text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h3 {
     color: rgb(156, 192, 28);
     text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h4 {
     color: rgb(185, 203, 23);
     text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h5 {
     color: rgb(230, 193, 8);
     text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 
-/*ESTILOS DE LOS PARRAFOS*/
+/*SELECTOR DE CLASES*/
 
 .clase1 {
     color: rgb(11, 199, 174);
     text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .clase2 {
     color: rgb(171, 220, 11);
     text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .clase3 {
     color: rgb(16, 1, 1);
     text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .clase4 {
     color: rgb(135, 17, 17);
     text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .clase5 {
     color: rgb(9, 162, 98);
     text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 
-/*ESTILOS DE LOS DIVS*/
+/**  SELECTORES DE IDENTIFICADORES **/
 
-p {
-    color: rgb(14, 157, 98);
+#id1 {
+    color: aqua;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#id2 {
+    color: yellowgreen;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#id3 {
+    color: chocolate;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#id4 {
+    color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#id5 {
+    color: cadetblue;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/** #2SELECTORES COMBINADORES **/
+
+header>h2 {
+    color: #0bc7ae;
+    text-transform: uppercase;
+}
+
+h2:first-of-type {
+    font-size: 2rem;
+    border-bottom: 2px solid #871111;
+}
+
+
+/** #2 SELECTORES LOGICOS MODERNOS **/
+
+:is(header, section, article) h2 {
+    color: rgb(11, 199, 174);
+    text-transform: uppercase;
+}
+
+h2:not(.excluido) {
+    color: rgb(135, 17, 17);
     text-align: center;
 }
 
-p {
-    color: rgb(23, 234, 146);
-    text-align: center;
+
+/** #2 SELECTORES PSEUDO CLASES **/
+
+h2:hover {
+    color: rgb(11, 199, 174);
+    cursor: pointer;
+    letter-spacing: 4px;
+    transition: 0.3s;
 }
 
-p {
-    color: rgb(9, 162, 98);
-    text-align: center;
+h2:first-of-type {
+    border-bottom: 3px solid rgb(171, 220, 11);
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
-p {
-    color: rgb(6, 229, 136);
+
+/**   #2 SELECTORES PSEUDO ELEMENTOS **/
+
+h2::first-letter {
+    font-size: 150%;
+    color: rgb(171, 220, 11);
+    font-weight: 900;
+}
+
+li::marker {
+    color: rgb(11, 199, 174);
+    font-size: 1.2rem;
+}
+
+
+/**  #2 SELECTORES ATRIBUTOS AVANZADOS **/
+
+h2[class*="venta"] {
+    color: rgb(11, 199, 174);
+    text-transform: uppercase;
+    border-left: 5px solid rgb(171, 220, 11);
+    padding-left: 10px;
+}
+
+h2[data-categoria^="minorista"] {
+    background-color: rgba(135, 17, 17, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/**  #6 SELECTORES COMBINADOS **/
+
+main h2 {
+    color: rgb(11, 199, 174);
+}
+
+section>h2 {
+    text-transform: uppercase;
+}
+
+img+h2 {
+    margin-top: 0;
+    color: rgb(135, 17, 17);
+}
+
+h1~h2 {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+h2.venta.minorista {
+    background-color: rgb(171, 220, 11);
+    padding: 5px;
+}
+
+h2,
+.clase1,
+.clase2 {
     text-align: center;
+    font-family: sans-serif;
+}
+
+
+/** ANIMACIONES **/
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h2 {
+    animation: aparecer 1s ease-out;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    /* Para que la línea mida lo mismo que el texto */
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(11, 199, 174);
+    transition: width 0.4s ease;
+}
+
+h2:hover::after {
+    width: 100%;
 }
 
 
 /** NOTA ACTUAL : 0.0
 15 puntos SELECTORES
-  #1 SELECTOR UNIVERSAL
-  #5 SELECTORES DE ETIQUETAS HTML
-  #5 SELECTORES DE CLASES
-  #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES
-  #2 SELECTORES LOGICOS MODERNOS
-  #2 SELECTORES PSEUDO CLASES
-  #2 SELECTORES PSEUDO ELEMENTOS
-  #2 SELECTORES ATRIBUTOS AVANZADOS
-  #6 SELECTORES COMBINADOS
+  #1 SELECTOR UNIVERSAL X
+  #5 SELECTORES DE ETIQUETAS HTML X
+  #5 SELECTORES DE CLASES     X
+  #3 SELECTORES DE IDENTIFICADORES X
+  #2 SELECTORES COMBINADORES  x
+  #2 SELECTORES LOGICOS MODERNOS X
+  #2 SELECTORES PSEUDO CLASES  X
+  #2 SELECTORES PSEUDO ELEMENTOS  X
+  #2 SELECTORES ATRIBUTOS AVANZADOS X
+  #6 SELECTORES COMBINADOS X 
 3 puntos ANIMACIONES
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
