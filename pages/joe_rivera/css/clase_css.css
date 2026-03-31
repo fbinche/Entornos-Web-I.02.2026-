@@ -1,11 +1,8 @@
-*{
-    background-color:rgb(40, 35, 35);
-    
-}
+
 
 /**2DA ETIQUETA**/
 h1{
-    background-color: rgb(79, 112, 140);
+    background-color: rgb(90, 98, 169);
     font-size:xx-large;
     color:rgb(201, 225, 247);
     font-style:initial;
@@ -144,7 +141,7 @@ aside{
 
 /* 2. Título */
 .titulo {
-  color:rgb(158, 3, 3);
+  color:rgb(255, 255, 255);
   font-style: italic;
   font-size: 28px;
   font-family: Georgia, serif;
@@ -178,7 +175,7 @@ aside{
   text-align:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif right;
 }
 
-                    /*******IDENTIFICADORES***/
+                                /*******IDENTIFICADORES***/
 
 
  #logoChampions img {
@@ -197,24 +194,24 @@ aside{
 }
 
 
-/** SELECTORES COMBINADORES**/
+                                        /** SELECTORES COMBINADORES**/
 
 h2 + p {
-  background-color: rgb(97, 97, 49);
-  color: rgb(255, 253, 253);
+  background-color: rgb(255, 255, 255);
+  color: rgb(11, 11, 11);
   font-size: 25px;
   font-family:'Times New Roman', Times, serif;
 }
 
 h2 ~ p {
   border: 2px solid rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 18px;
   font-family: Arial, sans-serif;
 }
 
 
-/*** SELECTORES LOGICOS MODERNOS***/
+                                        /*** SELECTORES LOGICOS MODERNOS***/
 
 section {
     margin-bottom: 25px;
@@ -234,7 +231,7 @@ section {
 }
 
 
-/*** SELECTORES PSEUDO CLASES***/
+                                        /*** SELECTORES PSEUDO CLASES***/
 
 a {
     color: rgb(13, 0, 255);
@@ -256,7 +253,7 @@ input:valid {
 }
 
 
-/***PSEUDO ELEMENTOS***/
+                                            /***PSEUDO ELEMENTOS***/
 
 p::first-letter {
     color: rgb(109, 4, 4);
@@ -271,7 +268,7 @@ p::first-line {
 }
 
 
-/*** SELECTORES ATRIBUTOS AVANZADOS***/
+                                        /*** SELECTORES ATRIBUTOS AVANZADOS***/
 
 a[href^="https"] {
     color: rgb(250, 0, 0);
@@ -286,7 +283,7 @@ img[src$=".png"] {
 }
 
 
-/*** SELECTORES COMBINADOS***/
+                                            /*** SELECTORES COMBINADOS***/
 
 nav ul li a {
     color: blue;
@@ -313,7 +310,7 @@ h2 ~ nav {
 }
 
 
-/******** INTENTO DE MEJORAS DE JOE******/
+                        /******** INTENTO DE MEJORAS DE JOE******/
 
 img {
     transition: transform 0.6s ease;
@@ -338,7 +335,7 @@ video:hover {
     padding: 10px;
 }
 
-/*** SECCIÓN DE CALENDARIOS DE PARTIDOS DE LA CHAMPIONS***/
+                                /*** SECCIÓN DE CALENDARIOS DE PARTIDOS DE LA CHAMPIONS***/
 
 .partido {
     min-width: 200px;
@@ -371,7 +368,230 @@ video:hover {
 
 
 
+                                                    /** INICIO **/
 
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #0b1d3a, #1e3c72);
+    padding: 15px;
+    color: white;
+}
+
+/* TÍTULO */
+h1 {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    color: #090976;
+}
+
+/*** TODOS LOS H2**/
+
+h2 {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+    transform: scale(1.1);
+    color: #090976;
+}
+
+/** TODOS LOS P**/
+
+
+p {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+p:hover {
+    transform: scale(1.1);
+    color: #090976;
+}
+
+
+/** MENÚ **/
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}
+
+/* EFECTO UNDERLINE PRO */
+.nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #00d4ff;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+                                /*** SECCIÓN DE LOS PARTIDOS EN CURSO Y TERMINADOS**/
+
+/* CONTENEDOR MÁS COMPACTO */
+.columnas_3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+/* TARJETAS MÁS PEQUEÑAS */
+.card {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* LOGOS MÁS PEQUEÑOS */
+.card img {
+    width: 80px;
+    height: 80px;
+}
+
+/* TEXTO MÁS PROPORCIONAL */
+.card span {
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 10px;
+    padding: 2px 6px;
+}
+
+/* CENTRAR BIEN */
+.resultado {
+    text-align: center;
+}
+
+
+                                /***SECCIÓN DE LA TABLA DE GOLEADORES***/
+
+/* CONTENEDOR */
+.third-section ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+/* TARJETAS */
+.third-section li {
+    background: linear-gradient(135deg, #0a1f5c, #162b8a);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER */
+.third-section li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* IMAGEN */
+.third-section img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+.third-section figcaption {
+    font-size: 13px;
+}
+
+/* NOMBRE */
+.third-section strong {
+    display: block;
+    font-size: 14px;
+}
+
+/* POSICIÓN (1°, 2°, 3°...) */
+.third-section li::before {
+    content: counter(item);
+    counter-increment: item;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background: rgb(255, 0, 0);
+    color: black;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* RESET CONTADOR */
+.third-section ol {
+    counter-reset: item;
+}                               
+
+                    /**** FONDO NUEVO ****/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #0a1f5c, #162b8a, #09143c);
+    overflow-x: hidden;
+}
+
+/* CAPA DE ESTRELLAS */
+body::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.08;
+    animation: moverFondo 40s linear infinite;
+    pointer-events: none;
+}
+
+/* ANIMACIÓN */
+@keyframes moverFondo {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(100px, 100px);
+    }
+}
+
+                                        /******* NOTICIAS DESTACADAS********/
+
+
+
+
+
+                                        
 
 /** NOTA ACTUAL : 5.5
 15 puntos SELECTORES
