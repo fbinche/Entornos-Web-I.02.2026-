@@ -585,8 +585,73 @@ body::before {
     }
 }
 
-                                        /******* NOTICIAS DESTACADAS********/
+/******* NOTICIAS DESTACADAS (SIN ROMPER DISEÑO) *******/
 
+/* TARJETAS */
+.columnas_2 .card {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER SOLO A LA TARJETA */
+.columnas_2 .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+}
+
+/* VIDEO MÁS LIMPIO (sin cambiar tamaño) */
+.columnas_2 video {
+    border-radius: 10px;
+}
+
+/* TEXTO (quita fondo blanco feo SIN cambiar tamaño) */
+.columnas_2 p {
+    background: transparent;
+}
+
+/* TÍTULO MÁS PRO */
+.columnas_2 h2 {
+    background: none;
+    color: #00d4ff;
+    transition: color 0.3s ease;
+}
+
+/* HOVER TÍTULO */
+.columnas_2 h2:hover {
+    color: white;
+}
+
+/* BOTÓN */
+.columnas_2 footer a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+/* HOVER BOTÓN */
+.columnas_2 footer a:hover {
+    transform: scale(1.05);
+}
+
+/* EFECTO LUZ SUAVE */
+.columnas_2 .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* ACTIVACIÓN */
+.columnas_2 .card:hover::after {
+    opacity: 1;
+}
 
 
 
