@@ -1,0 +1,241 @@
+/* =========================================
+   1. (1) SELECTOR UNIVERSAL (1 punto)
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================
+   2. (5) SELECTORES DE ETIQUETAS HTML
+   ========================================= */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #dfdfdf;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+main {
+    max-width: 1100px;                        /*MAXIMO DE ANCHO DE MI CUERPO DE WEB*/
+    margin: auto;                             /*MARGEN AUTOMATICO*/
+    overflow: hidden;                         /*OCULTA MI CONTENIDO QUE SOBRESALGA*/
+}
+
+h3 {
+    color: #007bff;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 30px 0;
+}
+
+/* =========================================
+   3. (5) SELECTORES DE CLASES 
+   ========================================= */
+.navegador {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.list_enlaces {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.banners {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contenedorp {
+    display: flex; 
+    gap: 30px;
+}
+
+.producto {
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* =========================================
+   4. (3) SELECTORES DE IDENTIFICADORES VALGASE ID
+   ========================================= */
+#logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+#section {
+    background: #2c3e50;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#pie_pagina {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* =========================================
+   5. COMBINADORES, LOGICOS Y ETC
+   ========================================= */
+
+/* 2 Combinadores  */
+/*Decendiente*/
+.list_enlaces a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+}
+/*Adyacente*/
+h1 + p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* 2 Logicos Modernos  */
+:is(h1, .titulod) {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+article :where(p) {
+    color: #666;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* 2 Pseudo clases */
+.btn:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.list_enlaces li:last-child {
+    background: #e9ecef;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* 2 Pseudo elementos */
+.titulo-destacado::after {
+    content: " | Premium";
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+#pie_pagina p::selection {
+    background: #ffd700;
+    color: #000;
+}
+
+/* 2 Atributos Avanzados */
+a[data-link="home"] {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 3px;
+}
+
+img[src*="productos"] {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================================
+   6. (6) SELECTORES COMBINADOS 
+   ========================================= */
+header nav.navegador ul.list_enlaces li a:hover {
+    color: #007bff;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+main section.banners .btn{
+    padding: 15px 40px;
+    border: none;
+    background: #007bff;
+}
+
+section.contenedorp article.producto img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#section h1.titulo-destacado {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: #fff;
+    margin: 0;
+}
+
+.producto:hover > h3 {
+    color: #28a745;
+    transform: scale(1.02);
+    display: block;
+}
+
+footer#pie_pagina p:first-of-type {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+/* =========================================
+   7. (3) ANIMACIONES 
+   ========================================= */
+@keyframes slideIn {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.producto {
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes pulse-white {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.btn {
+    animation: pulse-white 2s infinite ease-in-out;
+    color: white;
+    font-weight: bold;
+}
+
+/** NOTA ACTUAL : 1.0
+15 puntos SELECTORES
+  #1 SELECTOR UNIVERSAL
+  #5 SELECTORES DE ETIQUETAS HTML
+  #5 SELECTORES DE CLASES
+  #3 SELECTORES DE IDENTIFICADORES
+  
+  #2 SELECTORES COMBINADORES
+  #2 SELECTORES LOGICOS MODERNOS
+  #2 SELECTORES PSEUDO CLASES
+  #2 SELECTORES PSEUDO ELEMENTOS
+  #2 SELECTORES ATRIBUTOS AVANZADOS
+  #6 SELECTORES COMBINADOS
+3 puntos ANIMACIONES
+2 puntos SUSTENTACION/PARTICIPACION EN CLASE
+NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+**/
