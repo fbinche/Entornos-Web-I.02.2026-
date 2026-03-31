@@ -1,5 +1,5 @@
 *{
-    background-color:black;
+    background-color:rgb(40, 35, 35);
     
 }
 
@@ -195,6 +195,183 @@ aside{
 .nav {
   text-align:justify
 }
+
+
+/** SELECTORES COMBINADORES**/
+
+h2 + p {
+  background-color: rgb(97, 97, 49);
+  color: rgb(255, 253, 253);
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+h2 ~ p {
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+
+/*** SELECTORES LOGICOS MODERNOS***/
+
+section {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #050505;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+:is(h3, h4, h5) {
+    color: rgb(156, 26, 28);
+    background-color: rgb(211, 229, 229);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+
+/*** SELECTORES PSEUDO CLASES***/
+
+a {
+    color: rgb(13, 0, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(109, 4, 4);
+    text-decoration: underline;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+input:valid {
+    border: 2px solid rgb(144, 162, 144);
+}
+
+
+/***PSEUDO ELEMENTOS***/
+
+p::first-letter {
+    color: rgb(109, 4, 4);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p::first-line {
+    color: rgb(22, 22, 23);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*** SELECTORES ATRIBUTOS AVANZADOS***/
+
+a[href^="https"] {
+    color: rgb(250, 0, 0);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+img[src$=".png"] {
+    border: 2px solid rgb(254, 254, 254);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+/*** SELECTORES COMBINADOS***/
+
+nav ul li a {
+    color: blue;
+}
+
+nav > ul {
+    background-color: #ffffff;
+}
+
+h2 + p {
+    color: green;
+}
+
+h2 ~ nav {
+    background-color: #c1bcbc;
+}
+
+.section .card {
+    border-radius: 10px;
+}
+
+.card h2 {
+    color: rgb(255, 5, 5);
+}
+
+
+/******** INTENTO DE MEJORAS DE JOE******/
+
+img {
+    transition: transform 0.6s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+video {
+    transition: transform 0.6s ease;
+}
+
+video:hover {
+    transform: scale(1.03);
+}
+
+.partidos {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+/*** SECCIÓN DE CALENDARIOS DE PARTIDOS DE LA CHAMPIONS***/
+
+.partido {
+    min-width: 200px;
+    background: linear-gradient(135deg, #0b1d3a, #222121);
+    padding: 15px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover efecto */
+.partido:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Equipos */
+.equipos {
+    font-size: 16px;
+    margin: 10px 0;
+    color:#080808
+}
+
+/* Hora */
+.hora {
+    font-size: 14px;
+    opacity: 0.8;
+    color:#fefefe
+}
+
+
+
+
 
 /** NOTA ACTUAL : 5.5
 15 puntos SELECTORES
