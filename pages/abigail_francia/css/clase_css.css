@@ -6,22 +6,109 @@ p{
 *{
   background:rgb(136, 217, 249)
 }
-/*ETIQUETA HTML*/
+/**UNIVERSAL**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**ETIQUETAS HTML**/
+body {
+    font-family: Arial;
+    background-color: #fff8f5;
+    color: #333;
+}
 h1,h2{
-  background-color:rgb(255, 255, 255);
+  background-color:#e9dbd9;
   font-style: oblique;
-  color:palevioletred;
+  color:#e8a060;
 }
-/**CLASE**/
-.servicio{
-  background-color: aquamarine;
-  color: cornflowerblue;
-  font-size: small;
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
 }
-/**SERVICIO EN PROMOCIÓN**/
-#servico-promoción{
-  background-color: palevioletred;
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
 }
+
+/**CLASES**/
+.header{
+  background-color: rgb(255, 255, 255);
+  color: palevioletred;
+  padding: 12px;
+  text-align: center;
+}
+
+.section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.article {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.precio {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/**IDENTIFICADORES**/
+#inicio {
+    background-color: #fdebd0;
+    padding: 20px;
+    text-align: center;
+}
+
+#productos {
+    border: 2px solid #f39c12;
+    padding: 10px;
+}
+
+#contacto {
+    background-color: #fef5e7;
+    padding: 20px;
+}
+
+/**COMBINADORES**/
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+}
+
+article > header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/**MODERNOS**/
+article:is(.article) {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+section:has(img) {
+    border: 2px dashed #f5b041;
+    padding: 10px;
+}
+
 
 
 /** NOTA ACTUAL : 1.0
@@ -40,3 +127,4 @@ h1,h2{
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
 **/
+
