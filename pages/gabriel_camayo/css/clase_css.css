@@ -1,31 +1,490 @@
-/** forma externa **/
-p{
-    color: rgb(12, 12, 12) !important;
+/* =========================================================
+   ESTILOS NUEVOS PARA GO PHONE
+   Cumple con:
+   - selector universal
+   - etiquetas html
+   - clases
+   - ids
+   - combinadores
+   - lógicos modernos
+   - pseudo clases
+   - pseudo elementos
+   - atributos avanzados
+   - selectores combinados
+   - animaciones
+   ========================================================= */
+
+
+/* =========================================================
+   1) SELECTOR UNIVERSAL
+   Aplica a todos los elementos
+   ========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-*{
-    background-color: cadetblue;
-}
-/**Etiqueta HTML**/
-h2{
-    background-color: black;
-    font-style: oblique;
-    color: beige;
-} 
 
-/**CLASES**/
-.servicio{
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    font-style: italic;
+/* =========================================================
+   2) SELECTORES DE ETIQUETAS HTML
+   Aquí usamos más de 5
+   ========================================================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef3fb;
+  color: #1b2440;
+  line-height: 1.5;
 }
 
-/**ID**/
-#titulo{
-    background-color: black;
-    color: white;
-    font-style: normal;
+h2 {
+  color: #14213d;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+p {
+  color: #44506b;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+button {
+  background: linear-gradient(90deg, #345dff, #6b4eff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+section {
+  padding: 16px;
+  position: relative;
+}
+
+footer {
+  padding: 18px;
+  background-color: #11192d;
+  color: white;
+}
+
+article {
+  background-color: white;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+
+/* =========================================================
+   3) SELECTORES DE CLASES
+   Aquí usamos 5 o más
+   ========================================================= */
+.header {
+  background: linear-gradient(90deg, #14213d, #263b73);
+  color: white;
+  padding: 20px;
+}
+
+.bi {
+  font-size: 1rem;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.bi-instagram {
+  color: #e1306c;
+  transition: 0.3s ease;
+}
+
+.bi-facebook {
+  color: #1877f2;
+  transition: 0.3s ease;
+}
+
+.bi-tiktok {
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   4) SELECTORES DE IDENTIFICADORES
+   Aquí usamos 3
+   ========================================================= */
+#productos_mas_vendidos {
+  background: linear-gradient(180deg, #f7f9ff, #edf2ff);
+  border-top: 4px solid #4d6bff;
+  border-bottom: 4px solid #4d6bff;
+}
+
+#accesorios_del_mes {
+  background: linear-gradient(180deg, #f9faff, #f0f4ff);
+  border-top: 4px solid #6b4eff;
+  border-bottom: 4px solid #6b4eff;
+}
+
+#formulario {
+  background-color: white;
+  border: 2px solid #dbe4ff;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+
+/* =========================================================
+   5) SELECTORES COMBINADORES
+   ========================================================= */
+
+/* Descendiente */
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+/* Hijo directo */
+.header > h2 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* Otro descendiente */
+article footer button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+/* Otro hijo directo */
+form > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+/* =========================================================
+   6) SELECTORES LÓGICOS MODERNOS
+   ========================================================= */
+:is(h2, h3, h4) {
+  color: #172447;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+:where(article, card, form) {
+  box-shadow: 0 10px 25px rgba(20, 33, 61, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+a:not(.sin-estilo) {
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: inherit;
+}
+
+
+/* =========================================================
+   7) PSEUDO CLASES
+   ========================================================= */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(52, 93, 255, 0.25);
+  opacity: 0.95;
+}
+
+a:hover {
+  color: #6b4eff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid rgba(107, 78, 255, 0.2);
+  border-color: #6b4eff;
+  background-color: #f8f7ff;
+}
+
+article:first-child {
+  border: 2px solid rgba(52, 93, 255, 0.15);
+  transform: scale(1);
+}
+
+article:last-child {
+  border: 2px solid rgba(107, 78, 255, 0.15);
+  transform: scale(1);
+}
+
+
+/* =========================================================
+   8) PSEUDO ELEMENTOS
+   ========================================================= */
+.header h2::before {
+  content: "📱 ";
+  font-size: 1.5rem;
+}
+
+h3::after {
+  content: " ✨";
+  color: #6b4eff;
+}
+
+p::first-line {
+  font-weight: 500;
+  color: #33415c;
+}
+
+h2::first-letter {
+  font-size: 115%;
+  color: #345dff;
+}
+
+
+/* =========================================================
+   9) ATRIBUTOS AVANZADOS
+   ========================================================= */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cfd8f0;
+  border-radius: 10px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cfd8f0;
+  border-radius: 10px;
+}
+
+button[type="button"] {
+  padding: 12px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a[href^="#"] {
+  scroll-behavior: smooth;
+  font-weight: 600;
+  padding: 4px 0;
+}
+
+a[aria-label] {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 12px;
+}
+
+
+/* =========================================================
+   10) SELECTORES COMBINADOS
+   Aquí van 6 o más
+   ========================================================= */
+
+/* etiqueta + clase */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* clase + descendiente + etiqueta */
+.header ul li {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 4px;
+}
+
+/* id + etiqueta */
+#productos_mas_vendidos article {
+  transition: 0.3s ease;
+  border: 1px solid #e2e8ff;
+}
+
+/* id + etiqueta */
+#accesorios_del_mes article {
+  background: white;
+  transition: 0.3s ease;
+  border: 1px solid #e6e9ff;
+}
+
+/* etiqueta + id */
+form#formulario {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* etiqueta + atributo + pseudo clase */
+button[type="button"]:hover {
+  background: linear-gradient(90deg, #2648d8, #5a40e6);
+  transform: scale(1.03);
+}
+
+/* clase + pseudoelemento */
+.bi-instagram::before {
+  content: "•";
+  margin-right: 4px;
+}
+
+.bi-facebook::before {
+  content: "•";
+  margin-right: 4px;
+}
+
+.bi-tiktok::before {
+  content: "•";
+  margin-right: 4px;
+}
+
+/* id + descendiente + etiqueta */
+#formulario li label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* etiqueta + descendiente + etiqueta */
+footer nav a {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #dbe4ff;
+}
+
+
+/* =========================================================
+   11) ESTILOS DE ESTRUCTURA GENERAL
+   ========================================================= */
+main {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.header h2 {
+  color: white;
+}
+
+.header a {
+  color: #e8eeff;
+}
+
+.header a:hover {
+  color: #ffffff;
+}
+
+card {
+  display: block;
+  background-color: white;
+  border-radius: 18px;
+  padding: 18px;
+  border: 1px solid #e1e8ff;
+}
+
+figure {
+  margin: 12px 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #29375b;
+}
+
+mark {
+  background-color: #e8dcff;
+  color: #4d2dbb;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+del {
+  color: #8b93a7;
+  margin-right: 8px;
+}
+
+ins {
+  color: #2c50d3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+strong {
+  color: #172447;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd6f2;
+  border-radius: 10px;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+footer section {
+  background-color: transparent;
+  color: white;
+}
+
+footer p,
+footer h3,
+footer h4,
+footer a {
+  color: white;
+}
+
+
+/* =========================================================
+   13) DETALLE EXTRA PARA QUE SE VEA MÁS ORDENADO
+   ========================================================= */
+section > section {
+  margin-bottom: 24px;
+}
+
+article,
+card {
+  margin-bottom: 18px;
+}
+
+#productos_mas_vendidos article:hover,
+#accesorios_del_mes article:hover,
+card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 26px rgba(30, 50, 120, 0.12);
+}
+
+#productos_mas_vendidos > section > section > header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#accesorios_del_mes > section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+form ul li {
+  margin-bottom: 12px;
 }
 
 /** NOTA ACTUAL : 1.5
