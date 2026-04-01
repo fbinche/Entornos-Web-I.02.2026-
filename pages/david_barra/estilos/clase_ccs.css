@@ -257,7 +257,79 @@ select {
     color: #00eaff;;
 }
 
-/* ME FALTA AVANZAR MAS PROFEE, COMO VOY HASTA AHORA? */
+/* ===================== ATRIBUTOS ===================== */
+input[type="text"] { /* texto */
+  background: #0f1a4d; /* fondo */
+  color: white; /* texto */
+  border: 1px solid #00eaff; /* borde */
+}
+
+input[type="email"] { /* email */
+  background: #0f1a4d; /* fondo */
+  color: white; /* texto */
+  border: 1px solid #00eaff; /* borde */
+}
+
+/* ===================== PSEUDO CLASE ===================== */
+input:focus { /* cuando escribes */
+  outline: none; /* sin borde */
+  box-shadow: 0 0 10px #00eaff; /* brillo */
+}
+
+/* ===================== PSEUDO ELEMENTO ===================== */
+h1::after { /* después del título */
+  content: " ⚡"; /* símbolo */
+  color: #00eaff; /* color */
+}
+
+/* ===================== SELECTORES LOGICOS ===================== */
+:is(h1, h2) { /* agrupa */
+  letter-spacing: 1px; /* espacio letras */
+  text-transform: uppercase; /* mayúsculas */
+  font-weight: bold; /* negrita */
+}
+
+:where(.article, .formulario) { /* baja prioridad */
+  margin: 150px; /* espacio */
+  padding: 15px; /* relleno */
+  box-shadow: 0 0 8px #00eaff; /* sombra */
+}
+
+/* ===================== COMBINADORES ===================== */
+nav ul { /* ul dentro de nav */
+  display: flex; /* fila */
+  justify-content: center; /* centrado */
+  gap: 20px; /* espacio */
+}
+
+section.columnas_3 article { /* article dentro */
+  flex: 1; /* ocupa */
+}
+
+/* ===================== COMBINADOS ===================== */
+.menu li:hover a { /* hover menú */
+  color: #00eaff; /* cambia color */
+}
+
+footer a.btn-principal { /* botón footer */
+  margin-top: 10px; /* espacio */
+  display: inline-block; /* bloque */
+}
+
+form input, form select { /* form */
+  display: block; /* uno abajo */
+}
+
+/* ===================== ANIMACIONES ===================== */
+@keyframes glow { /* animación */
+  0% { box-shadow: 0 0 5px #00eaff; } /* inicio */
+  50% { box-shadow: 0 0 20px #00eaff; } /* medio */
+  100% { box-shadow: 0 0 5px #00eaff; } /* fin */
+}
+
+.btn-principal { /* botón animado */
+  animation: glow 2s infinite; /* efecto */
+}
 
 
 /** NOTA ACTUAL : 2.5
