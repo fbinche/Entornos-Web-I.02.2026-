@@ -653,6 +653,15 @@ body::before {
     opacity: 1;
 }
 
+                                    /**********NOTICIAS DESTACADAS****/
+
+columnas_4 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 10px;
+}
+
 
 
 
