@@ -22,9 +22,12 @@ nav {
 }
 
 main {
-    max-width: 1100px;                        /*MAXIMO DE ANCHO DE MI CUERPO DE WEB*/
-    margin: auto;                             /*MARGEN AUTOMATICO*/
-    overflow: hidden;                         /*OCULTA MI CONTENIDO QUE SOBRESALGA*/
+    max-width: 1100px;
+    /*MAXIMO DE ANCHO DE MI CUERPO DE WEB*/
+    margin: auto;
+    /*MARGEN AUTOMATICO*/
+    overflow: hidden;
+    /*OCULTA MI CONTENIDO QUE SOBRESALGA*/
 }
 
 h3 {
@@ -60,7 +63,7 @@ footer {
 }
 
 .contenedorp {
-    display: flex; 
+    display: flex;
     gap: 30px;
 }
 
@@ -68,6 +71,12 @@ footer {
     border: 1px solid #eee;
     padding: 20px;
     border-radius: 12px;
+}
+.producto img{
+     transition: transform 0.3s ease;
+}
+.producto img:hover{
+    transform: scale(1.02);
 }
 
 /* =========================================
@@ -96,20 +105,21 @@ footer {
    ========================================= */
 
 /* 2 Combinadores  */
-/*Decendiente*/
+/*decendientes*/
 .list_enlaces a {
     text-decoration: none;
     color: #555555;
     font-weight: 600;
 }
-/*Adyacente*/
-h1 + p {
+
+/*hermanos*/
+h1+p {
     font-size: 1.1rem;
     margin-top: 10px;
     opacity: 0.8;
 }
 
-/* 2 Logicos Modernos  */
+/* 2 Llogicos  */
 :is(h1, .titulod) {
     font-size: 3.5rem;
     line-height: 1.2;
@@ -122,7 +132,7 @@ article :where(p) {
     font-style: italic;
 }
 
-/* 2 Pseudo clases */
+/* 2 psudo clases */
 .btn:hover {
     background: #0056b3;
     transform: translateY(-3px);
@@ -135,7 +145,7 @@ article :where(p) {
     border-radius: 5px;
 }
 
-/* 2 Pseudo elementos */
+/* 2 pseudo elementos */
 .titulo-destacado::after {
     content: " | Premium";
     font-size: 1rem;
@@ -146,8 +156,8 @@ article :where(p) {
     background: #ffd700;
     color: #000;
 }
-
-/* 2 Atributos Avanzados */
+/*este si esta bien yuca, aun no lo comprendo del todo*/
+/* 2 atributos avanzados */
 a[data-link="home"] {
     border-bottom: 2px solid #007bff;
     padding-bottom: 3px;
@@ -168,7 +178,7 @@ header nav.navegador ul.list_enlaces li a:hover {
     text-decoration: underline;
 }
 
-main section.banners .btn{
+main section.banners .btn {
     padding: 15px 40px;
     border: none;
     background: #007bff;
@@ -177,16 +187,16 @@ main section.banners .btn{
 section.contenedorp article.producto img {
     border-radius: 8px;
     margin-bottom: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #section h1.titulo-destacado {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     color: #fff;
     margin: 0;
 }
 
-.producto:hover > h3 {
+.producto:hover>h3 {
     color: #28a745;
     transform: scale(1.02);
     display: block;
@@ -195,29 +205,45 @@ section.contenedorp article.producto img {
 footer#pie_pagina p:first-of-type {
     border-top: 1px solid #444;
     padding-top: 20px;
-    display: inline-block;
 }
 
 /* =========================================
    7. (3) ANIMACIONES 
    ========================================= */
-@keyframes slideIn {
-    from { transform: translateX(-50px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+/*   ANIMACION DE EFECTO LATERAL*/
+@keyframes slide {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .producto {
-    animation: slideIn 0.8s ease-out forwards;
+    animation: slide 0.8s ease-out forwards;
 }
 
-@keyframes pulse-white {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+/*ANIMACION DE PULSO EN EL BOTON*/
+@keyframes pulse{
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .btn {
-    animation: pulse-white 2s infinite ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
     color: white;
     font-weight: bold;
 }
