@@ -172,3 +172,119 @@ img {
 }
 
 
+/* #2 PSEUDO CLASES */
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.05);
+}
+
+
+/* #2 PSEUDO ELEMENTOS */
+
+h2::before {
+    content: "☕ ";
+    color: brown;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b2e2e;
+}
+
+
+/* #2 SELECTORES ATRIBUTOS AVANZADOS */
+
+input[type="text"] {
+    border: 2px solid #ccc;
+    padding: 5px;
+    width: 200px;
+}
+
+input[required] {
+    border-color: red;
+    background-color: #fff0f0;
+}
+
+
+/* #6 SELECTORES COMBINADOS */
+
+.section.second-section .article h3 {
+    color: #6b3e2e;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header .navegador a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer nav ul li a {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.section .article img {
+    border: 3px solid #eee;
+    transition: transform 0.3s;
+}
+
+.section .article:hover img {
+    transform: scale(1.05);
+}
+
+#formCompleto input:focus {
+    outline: none;
+    border-color: #4b2e2e;
+    background: #fff;
+}
+
+
+
+/* ANIMACIÓN 1 */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ANIMACIÓN 2 */
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* ANIMACIÓN 3 */
+@keyframes colorCambio {
+    0% { background-color: #4b2e2e; }
+    50% { background-color: #6b3e2e; }
+    100% { background-color: #4b2e2e; }
+}
+
+/* APLICACIÓN DE ANIMACIONES */
+.article {
+    animation: aparecer 0.8s ease-in-out;
+}
+
+button {
+    animation: latido 2s infinite;
+}
+
+.header {
+    animation: colorCambio 5s infinite;
+}
