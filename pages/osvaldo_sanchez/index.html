@@ -876,3 +876,59 @@
  -->
 
 </html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1 id="titulo">Formulario de Registro</h1>
+    <p class="texto">Complete sus datos</p>
+</header>
+
+<form id="formulario">
+
+    <fieldset class="caja">
+        <legend>Datos Personales</legend>
+
+        <label>Nombre</label>
+        <input type="text" required>
+
+        <label>Correo</label>
+        <input type="email" required>
+
+        <label>Edad</label>
+        <input type="number">
+    </fieldset>
+
+    <fieldset class="tarjeta">
+        <legend>Opciones</legend>
+
+        <label>Curso</label>
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </select>
+
+        <button class="boton">Enviar</button>
+    </fieldset>
+
+</form>
+
+<aside class="alerta">
+    <p>Todos los campos son obligatorios</p>
+</aside>
+
+<footer id="footer">
+    <p>Derechos reservados 2026</p>
+</footer>
+
+</body>
+</html>

@@ -192,3 +192,226 @@ input[type="range"] {
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
 **/
+
+/* =============================== */
+/* 1 SELECTOR UNIVERSAL */
+/* =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =============================== */
+/* 5 SELECTORES DE ETIQUETAS */
+/* =============================== */
+body {
+    font-family: Arial;
+    background-color: #111;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid red;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+label {
+    color: pink;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* =============================== */
+/* 5 SELECTORES DE CLASE */
+/* =============================== */
+.texto {
+    color: gray;
+    font-size: 18px;
+    text-align: center;
+}
+
+.caja {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tarjeta {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.boton {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.alerta {
+    color: yellow;
+    background-color: black;
+    padding: 10px;
+}
+
+/* =============================== */
+/* 3 SELECTORES DE ID */
+/* =============================== */
+#titulo {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+}
+
+#formulario {
+    border: 3px solid red;
+    padding: 20px;
+    background-color: #000;
+}
+
+#footer {
+    text-align: center;
+    color: gray;
+    margin-top: 20px;
+}
+
+/* =============================== */
+/* 2 COMBINADORES */
+/* =============================== */
+header h1 {
+    text-shadow: 0 0 5px red;
+    font-size: 28px;
+    color: red;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: pink;
+}
+
+/* =============================== */
+/* 2 SELECTORES LOGICOS */
+/* =============================== */
+:is(input, select, button) {
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+:where(fieldset, aside) {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* =============================== */
+/* 2 PSEUDO CLASES */
+/* =============================== */
+button:hover {
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+input:focus {
+    border: 2px solid yellow;
+    background-color: #333;
+    outline: none;
+}
+
+/* =============================== */
+/* 2 PSEUDO ELEMENTOS */
+/* =============================== */
+h1::first-letter {
+    color: yellow;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p::after {
+    content: " *";
+    color: red;
+    margin-left: 5px;
+}
+
+/* =============================== */
+/* 2 ATRIBUTOS */
+/* =============================== */
+input[type="email"] {
+    border: 2px solid cyan;
+    background-color: black;
+    color: cyan;
+}
+
+input[required] {
+    border: 2px solid yellow;
+    background-color: #222;
+}
+
+/* =============================== */
+/* 6 SELECTORES COMBINADOS */
+/* =============================== */
+form input[type="text"] {
+    border: 2px solid red;
+    padding: 8px;
+    color: white;
+}
+
+fieldset label:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+aside p {
+    font-size: 16px;
+    color: pink;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+header h1::after {
+    content: " 🔥";
+    color: red;
+}
+
+.caja input:focus {
+    background-color: #444;
+    border: 2px solid red;
+}
+
+/* =============================== */
+/* ANIMACION */
+/* =============================== */
+@keyframes brillo {
+    0% {
+        box-shadow: 0 0 5px red;
+    }
+    50% {
+        box-shadow: 0 0 20px red;
+    }
+    100% {
+        box-shadow: 0 0 5px red;
+    }
+}
+
+form {
+    animation: brillo 3s infinite;
+}
