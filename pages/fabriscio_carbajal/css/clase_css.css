@@ -1,11 +1,14 @@
+/* selector universal*/
 * {
+    padding: 0;
+    margin: 0;
     color: rgb(0, 0, 0);
 }
-
+/* color de fondo al body*/
 body {
     background-color: rgb(255, 0, 0);
 }
-
+/* header y navegación*/
 .class_header { 
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -16,7 +19,7 @@ body {
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+/* modificacion a todos los enlaces descentientes de un nav */
 nav a {
     color: white;
     font-size: 18px;
@@ -24,7 +27,8 @@ nav a {
 
 }
 
-h1, h2, h3, h4{
+/* agrupacion del color de fondo de los títulos*/
+:is(h1, h2, h3, h4) {
     background-color: snow;
 }
 
@@ -33,6 +37,11 @@ p {
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
+}
+
+.columnas_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
@@ -51,9 +60,20 @@ figcaption {
     color: snow;
 }
 
+section:nth-of-type(2) {
+    background-color: rgba(255, 1, 162, 0.332);
+}
+
 #mas_vendidos {
     font-size: 35px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#mas_vendidos + p {
+    color: seashell;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+
 }
 
 h4 {
@@ -72,16 +92,58 @@ footer p{
     background-color: rgb(255, 0, 0);
 }
 
+.header h3 + p {
+    color:rgb(211, 235, 255);
+    font-size: 18px;
+}
+
 .article {
     text-align: center;
     background-color: snow;
 }
 
-.boton_comprar {
+:is(.boton_comprar, .ver_productos) {
     font-style: oblique;
     background-color: rgb(224, 42, 42);
     color:snow;
     font-family: 'zapf chancery, cursive';
+    border-radius: 6px;
+}
+
+.boton_comprar:hover {
+    background-color: rgb(183, 14, 124);
+    color:rgb(255, 250, 250);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.boton_comprar:active {
+    background-color: rgb(139, 17, 96);
+    border-radius: 20px;
+}
+
+.ver_productos {
+    background-color: royalblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.ver_productos:hover {
+    background-color: rgb(12, 64, 221);
+    color:rgb(255, 250, 250);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.ver_productos:active {
+    background-color: rgba(11, 48, 158, 0.884);
+    border-radius: 20px;
+}
+
+footer:has(.ver_productos) {
+    background-color: rgba(255, 1, 162, 0.332);
+    padding: 20px;
+    text-align: center;
 }
 
 .precio {
@@ -106,16 +168,29 @@ footer p{
     font-style: oblique;
 }
 
+.article h3 ~ p::selection {
+    background-color: rgb(51, 255, 0);
+    color: snow;
+    
+}
+
+.class_header > h2::first-letter {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0.865);
+}
+
+
 /** NOTA ACTUAL : 5.0
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL
   #5 SELECTORES DE ETIQUETAS HTML
   #5 SELECTORES DE CLASES
   #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES
-  #2 SELECTORES LOGICOS MODERNOS
-  #2 SELECTORES PSEUDO CLASES
-  #2 SELECTORES PSEUDO ELEMENTOS
+  #2 SELECTORES COMBINADORES x
+  #2 SELECTORES LOGICOS MODERNOS 
+  #2 SELECTORES PSEUDO CLASES x
+  #2 SELECTORES PSEUDO ELEMENTOS x
   #2 SELECTORES ATRIBUTOS AVANZADOS
   #6 SELECTORES COMBINADOS
 3 puntos ANIMACIONES
