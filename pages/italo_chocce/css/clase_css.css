@@ -145,7 +145,27 @@ input[type="text"]::spelling-error {
     border: 1px solid #000000;
 }
 /**SELECTORES ATRIBUTOS AVANZADOS**/
+a[href^="https"] {
+    color: rgb(221, 147, 147);
+    font-weight: 600; 
+    letter-spacing: 0.5px; 
+}
 
+p[lang|="textito"] {
+    border-left: 3px solid #eb0800; 
+    padding-left: 15px;
+    background-color: #f88686; 
+}
+
+/*animacion*/
+ul:hover > li {
+    animation: aparecer 0.5s forwards;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
 /** NOTA ACTUAL : 4.5
 15 puntos SELECTORES
