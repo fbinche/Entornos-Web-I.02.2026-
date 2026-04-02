@@ -1,26 +1,336 @@
-.tituloheader{
-    background-color: blueviolet;
-    font-size: 55px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-.contenido{
-    background-color: blueviolet;
-}
-.lista{
-    list-style: none;
-    background-color: blueviolet;
-    font-size:20px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.precio{
-font-size: 40px;
-background-color: rgb(47, 3, 74);
+/* =====================  GENERAL ===================== */
+* {
+    /* selecciona todo */
+    margin: 0;
+    /* quita márgenes */
+    padding: 1px;
+    /* quita relleno */
 }
 
-#linkwsp{
-    background-color: blueviolet;
+/* ===================== BODY ===================== */
+body {
+    /* cuerpo de la página */
+    font-family: Arial, sans-serif;
+    /* fuente */
+    background: #050816;
+    /* negro azulado */
+    color: #ffffff;
+    /* texto blanco */
 }
+
+/* ===================== HEADER ===================== */
+header {
+    /* encabezado */
+    background: #0a0f2c;
+    /* fondo oscuro */
+    border-bottom: 2px solid #00eaff;
+    /* línea azul */
+}
+
+/* ===================== MENU ===================== */
+.menu {
+    /* lista menú */
+    display: flex;
+    /* horizontal */
+    justify-content: center;
+    /* centrado */
+    gap: 30px;
+    /* espacio */
+    list-style: none;
+    /* sin puntos */
+    font-size: 100px;
+}
+
+.menu li a {
+    /* enlaces */
+    color: white;
+    /* color */
+    font-weight: bold;
+    /* negrita */
+    padding: 100px;
+    /* espacio */
+    position: relative;
+    /* para efecto */
+}
+
+.menu li a:hover::after {
+    /* hover línea */
+    width: 100%;
+    /* aparece */
+}
+
+/* ===================== TITULOS ===================== */
+h1,
+h2 {
+    /* títulos */
+    text-align: center;
+    /* centrado */
+    margin: 20px 0;
+    /* espacio */
+    color: #00eaff;
+    /* azul eléctrico */
+    font-size: 5rem;
+}
+
+/* ===================== PLANES ===================== */
+#PLANES {
+    /* sección */
+    padding: 40px;
+    /* espacio */
+    background: linear-gradient(#050816, #0b1c4d);
+    /* degradado */
+}
+
+.columnas_3 {
+    /* contenedor */
+    display: flex;
+    /* flex */
+    justify-content: center;
+    /* centra */
+    gap: 25px;
+    /* espacio */
+}
+
+/* ===================== TARJETAS ===================== */
+.article {
+    /* tarjetas */
+    background: #0f1a4d;
+    /* fondo */
+    padding: 20px;
+    /* espacio */
+    border-radius: 12px;
+    /* bordes */
+    text-align: center;
+    /* centra */
+    transition: 0.3s;
+    /* animación */
+    border: 1px solid transparent;
+    /* borde invisible */
+}
+
+.article:hover {
+    /* hover tarjeta */
+    transform: translateY(-10px);
+    /* sube */
+    border: 1px solid #00eaff;
+    /* borde azul */
+    box-shadow: 0 0 15px #00eaff;
+    /* brillo */
+}
+
+.article img {
+    /* imagen plan */
+    width: 100%;
+    /* ocupa todo */
+    border-radius: 10px;
+    /* bordes */
+    margin-bottom: 10px;
+    /* espacio */
+}
+
+/* ===================== LISTAS ===================== */
+ul {
+    /* listas */
+    list-style: none;
+    /* sin puntos */
+    margin: 10px 0;
+    /* espacio */
+    font-size: 30px;
+}
+
+.precio {
+    font-size: 50px;
+}
+
+/* ===================== BOTONES ===================== */
+.btn-principal {
+    /* botón */
+    display: inline-block;
+    /* bloque */
+    background: #00eaff;
+    /* azul */
+    color: black;
+    /* texto */
+    padding: 10px 20px;
+    /* tamaño */
+    border-radius: 8px;
+    /* bordes */
+    font-weight: bold;
+    /* negrita */
+    transition: 0.3s;
+    /* animación */
+}
+
+.btn-principal:hover {
+    /* hover */
+    background: #00c3ff;
+    /* cambia */
+    transform: scale(1.05);
+    /* agranda */
+    box-shadow: 0 0 10px #00eaff;
+    /* brillo */
+}
+
+/* ===================== BENEFICIOS ===================== */
+#BENEFICIOS {
+    /* sección */
+    padding: 40px;
+    /* espacio */
+    background: #081233;
+    /* fondo */
+    font-size: 30px;
+}
+
+.img-beneficio {
+    /* imagen */
+    width: 80px;
+    /* tamaño */
+    margin-bottom: 10px;
+    /* espacio */
+}
+
+/* ===================== FORMULARIO ===================== */
+#FORMULARIO {
+    /* sección */
+    padding: 40px;
+    /* espacio */
+    background: #050816;
+    /* fondo */
+}
+
+.formulario {
+    /* form */
+    max-width: 400px;
+    /* ancho */
+    margin: auto;
+    /* centrado */
+    display: flex;                 
+    flex-direction: column;        
+    gap: 12px;                                 
+    background: #081233;           
+    padding: 25px;                 
+    border-radius: 12px;           
+    border: 1px solid #00c3ff; 
+    box-shadow:#00eaff; 
+}
+
+input,
+select {
+    /* inputs */
+    width: 100%;
+    /* ancho */
+    padding: 10px;
+    /* espacio */
+    margin: 10px 0;
+    /* separación */
+    border-radius: 6px;
+    /* bordes */
+    border: none;
+    /* sin borde */
+}
+
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #081233;
+    color: #00c3ff;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    border-top: 2px solid #00c3ff;
+}
+/* ================= FOOTER-TITULOS h4 y h2 ================= */
+.footer h4,
+.footer h2 {
+    color: #00c3ff;
+}
+/* ================= FOOTER links ================= */
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 25px;
+}
+/* ================= FOOTER al pasar el mouse ================= */
+.footer a:hover {
+    color: #00eaff;;
+}
+
+/* ===================== ATRIBUTOS ===================== */
+input[type="text"] { /* texto */
+  background: #0f1a4d; /* fondo */
+  color: white; /* texto */
+  border: 1px solid #00eaff; /* borde */
+}
+
+input[type="email"] { /* email */
+  background: #0f1a4d; /* fondo */
+  color: white; /* texto */
+  border: 1px solid #00eaff; /* borde */
+}
+
+/* ===================== PSEUDO CLASE ===================== */
+input:focus { /* cuando escribes */
+  outline: none; /* sin borde */
+  box-shadow: 0 0 10px #00eaff; /* brillo */
+}
+
+/* ===================== PSEUDO ELEMENTO ===================== */
+h1::after { /* después del título */
+  content: " ⚡"; /* símbolo */
+  color: #00eaff; /* color */
+}
+
+/* ===================== SELECTORES LOGICOS ===================== */
+:is(h1, h2) { /* agrupa */
+  letter-spacing: 1px; /* espacio letras */
+  text-transform: uppercase; /* mayúsculas */
+  font-weight: bold; /* negrita */
+}
+
+:where(.article, .formulario) { /* baja prioridad */
+  margin: 150px; /* espacio */
+  padding: 15px; /* relleno */
+  box-shadow: 0 0 8px #00eaff; /* sombra */
+}
+
+/* ===================== COMBINADORES ===================== */
+nav ul { /* ul dentro de nav */
+  display: flex; /* fila */
+  justify-content: center; /* centrado */
+  gap: 20px; /* espacio */
+}
+
+section.columnas_3 article { /* article dentro */
+  flex: 1; /* ocupa */
+}
+
+/* ===================== COMBINADOS ===================== */
+.menu li:hover a { /* hover menú */
+  color: #00eaff; /* cambia color */
+}
+
+footer a.btn-principal { /* botón footer */
+  margin-top: 10px; /* espacio */
+  display: inline-block; /* bloque */
+}
+
+form input, form select { /* form */
+  display: block; /* uno abajo */
+}
+
+/* ===================== ANIMACIONES ===================== */
+@keyframes glow { /* animación */
+  0% { box-shadow: 0 0 5px #00eaff; } /* inicio */
+  50% { box-shadow: 0 0 20px #00eaff; } /* medio */
+  100% { box-shadow: 0 0 5px #00eaff; } /* fin */
+}
+
+.btn-principal { /* botón animado */
+  animation: glow 2s infinite; /* efecto */
+}
+
 
 /** NOTA ACTUAL : 2.5
 15 puntos SELECTORES
