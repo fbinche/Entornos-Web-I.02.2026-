@@ -105,6 +105,40 @@ div[data-promocion] {
   background-color: lightyellow;
 }
 
+/* Imagen normal */
+img {
+  transition: transform 0.5s ease; /* transición suave */
+}
+
+/* Al pasar el mouse */
+img:hover {
+  transform: scale(1.2); /* zoom */
+}
+
+article.card header h2 span.badge {
+  background-color: gold;
+  padding: 2px 5px;
+}
+
+article.card section details dl dt:first-child {
+  text-decoration: underline;
+}
+
+article.card section p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+article.card section details summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+article.card section dl dt + dd {
+  color: darkred;
+  font-weight: bold;
+}
 
 /** NOTA ACTUAL : 1.0
 15 puntos SELECTORES
