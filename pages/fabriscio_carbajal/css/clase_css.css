@@ -7,6 +7,8 @@
 /* color de fondo al body*/
 body {
     background-color: rgb(255, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 }
 /* header y navegación*/
 .class_header { 
@@ -18,17 +20,31 @@ body {
 .class_header h1 {
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
 }
+
+.class_header > h2::first-letter {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0.865);
+}
+
 /* modificacion a todos los enlaces descentientes de un nav */
-nav a {
-    color: white;
-    font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+nav ul:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
 }
 
-/* agrupacion del color de fondo de los títulos*/
-:is(h1, h2, h3, h4) {
+nav a{
+    color: white;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* agrupacion del color de fondo de los títulos y el footer final*/
+:is(h1, h2, h3, h4, .footer) {
     background-color: snow;
 }
 
@@ -42,64 +58,94 @@ p {
 .columnas_3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+
+}
+
+.columnas_6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    padding: 20px;
 }
 
 .card {
     background-color: rgb(255, 0, 0);
-    text-align: center;
     font-style: oblique;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+figure {
+    margin: 0;
+    border-style:solid;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
 }
 
-figure {
-    background-color:rgb(248, 25, 25);
+figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 figcaption {
-    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
     font-style: italic;
     color: snow;
+    text-align: center;
 }
 
-section:nth-of-type(2) {
+.card .article {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+}
+
+.article img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.columnas_6 .article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.section:nth-of-type(2):not(.columnas_4) {
     background-color: rgba(255, 1, 162, 0.332);
 }
 
+#categorias h2 b{
+    font-size: 50px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+h3 b {
+    font-size: 30px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
 #mas_vendidos {
-    font-size: 35px;
+    font-size: 55px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 3px 3px 1px rgba(255, 130, 130, 0.603);
 }
 
 #mas_vendidos + p {
     color: seashell;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-
-}
-
-h4 {
-    font-family: Verdana;
-    font-size: 30px;
-}
-
-footer p{
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-    color:rgb(255, 225, 225);
-}
-
-.section {
-    background-color: rgb(255, 0, 0);
-}
-
-.header h3 + p {
-    color:rgb(211, 235, 255);
-    font-size: 18px;
-}
-
-.article {
-    text-align: center;
-    background-color: snow;
 }
 
 :is(.boton_comprar, .ver_productos) {
@@ -141,10 +187,56 @@ footer p{
 }
 
 footer:has(.ver_productos) {
-    background-color: rgba(255, 1, 162, 0.332);
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
+h4 {
+    font-family: Verdana;
+    font-size: 30px;
+    word-spacing: 3px;
+}
+
+footer p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color:rgb(255, 225, 225);
+}
+
+.header h3 + p {
+    color:rgb(211, 235, 255);
+    font-size: 24px;
+    word-spacing: 2px;
+}
+
+.article {
+    text-align: center;
+    background-color: snow;
+    padding: 2px;
+}
+
+.columnas_4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.columnas_4 .article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+#categorias_populares {
+    color:rgb(248, 235, 218);
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-style: oblique;
+}
+
 
 .precio {
     font-weight: bold;
@@ -153,33 +245,89 @@ footer:has(.ver_productos) {
 }
 
 #contacto {
-    background-color: rgba(232, 29, 29, 0.923);
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
 }
 #contacto strong {
-    color:snow;
+    color:rgb(0, 0, 0);
     font-size: 20px;
     font-style: oblique;
 }
+/* centra "Donde encontrarnos" y "Reciba las ultimas novedades"*/
+:is(#contacto article:last-child, .footer aside h3) {
+    text-align: center;
+}
+/* estilos para el nav de la sección contacto*/
+.section nav a{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-#categorias_populares {
-    color:rgb(248, 235, 218);
+/* estilos para la sección del footer*/
+.footer > .section{
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* estilos para bajar el nav del footer*/
+
+.footer > .section nav{
+    margin-top: auto;
+}
+
+/*estilos para el formulario del footer*/
+.footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(18, 39, 227);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(149, 0, 255, 0.785);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+legend {
+    font-size: 30px;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    font-style: oblique;
+    color: snow;
+    margin-bottom: 25px;
 }
 
+.footer form label {
+    font-size: 20px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: snow;
+    margin-bottom: 10px;
+}
+
+.footer .campo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* estilos para el footer final*/
+.footer p {
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.486);
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+/* estilos para el texto seleccionado cambie a verde*/
 .article h3 ~ p::selection {
     background-color: rgb(51, 255, 0);
     color: snow;
-    
 }
-
-.class_header > h2::first-letter {
-    font-size: 60px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgba(0, 0, 0, 0.865);
-}
-
 
 /** NOTA ACTUAL : 5.0
 15 puntos SELECTORES
