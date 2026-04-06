@@ -1,3 +1,7 @@
+/*SELECTOR UNIVERSAL*/
+*{
+    
+}
 
 .video-header {
     position: relative;
@@ -33,8 +37,6 @@ body {
     background-color: #0d8009;
     border: #070000;
 }
-*
-
 
 head {
     font-family: 'Montserrat', sans-serif;
@@ -137,20 +139,20 @@ footer {
 }
 
 
-
-/** NOTA ACTUAL : 2.0
+ /** NOTA ACTUAL : 7.5
 15 puntos SELECTORES
-  #1 SELECTOR UNIVERSAL
-  #5 SELECTORES DE ETIQUETAS HTML
-  #5 SELECTORES DE CLASES
-  #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES
-  #2 SELECTORES LOGICOS MODERNOS
-  #2 SELECTORES PSEUDO CLASES
-  #2 SELECTORES PSEUDO ELEMENTOS
-  #2 SELECTORES ATRIBUTOS AVANZADOS
-  #6 SELECTORES COMBINADOS
+  #1 SELECTOR UNIVERSAL 0.0
+  #5 SELECTORES DE ETIQUETAS HTML 2.5
+  #5 SELECTORES DE CLASES 2.5
+  #3 SELECTORES DE IDENTIFICADORES 0
+  #2 SELECTORES COMBINADORES 1
+  #2 SELECTORES LOGICOS MODERNOS 0
+  #2 SELECTORES PSEUDO CLASES 0
+  #2 SELECTORES PSEUDO ELEMENTOS 0
+  #2 SELECTORES ATRIBUTOS AVANZADOS 0
+  #6 SELECTORES COMBINADOS 1.5
 3 puntos ANIMACIONES
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
-NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+NOTA : Pueden usar cualquier propiedad un mínimo de 3 por selector
+RECOMENDACION: Seria bueno comentar cada punto y tomar en cuenta la 3 propiedades por cada selector
 **/

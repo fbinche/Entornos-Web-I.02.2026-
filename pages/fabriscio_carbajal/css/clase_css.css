@@ -7,6 +7,8 @@
 /* color de fondo al body*/
 body {
     background-color: rgb(255, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 }
 /* header y navegación*/
 .class_header { 
@@ -14,24 +16,40 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
-
+/* estilos para el título principal */
 .class_header h1 {
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
 }
-/* modificacion a todos los enlaces descentientes de un nav */
-nav a {
+
+/* Estilos para la primera letra del subtitulo */
+.class_header > h2::first-letter {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0.865);
+}
+
+/* modificacion el primer nav*/
+
+nav ul:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav a{
     color: white;
-    font-size: 18px;
+    font-size: 28px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
-/* agrupacion del color de fondo de los títulos*/
-:is(h1, h2, h3, h4) {
+/* agrupacion del color de fondo de los títulos y el footer final*/
+:is(h1, h2, h3, h4, .footer) {
     background-color: snow;
 }
 
+/* estilos para los parrafos generales*/
 p {
     color: rgb(0, 0, 0);
     font-size: 20px;
@@ -39,69 +57,107 @@ p {
     font-style: normal;
 }
 
+/* estilos para las secciones de 3 y 6 columnas*/
 .columnas_3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+
 }
 
+.columnas_6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+/* estilos para las tarjetas de productos*/
 .card {
     background-color: rgb(255, 0, 0);
-    text-align: center;
     font-style: oblique;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* estilos para las imagenes de las figuras y el tamaño de sus imagenes*/
+figure {
+    margin: 0;
+    border-style:solid;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
 }
 
-figure {
-    background-color:rgb(248, 25, 25);
+figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 figcaption {
-    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
     font-style: italic;
     color: snow;
+    text-align: center;
 }
 
-section:nth-of-type(2) {
+/* estilos para los articulos de las cartas*/
+.card .article {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+}
+
+/* estilos para las imagenes de los articulos en general*/
+.article img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* estilos de los costados para los ariculos que tengan 6 columnas*/
+
+.columnas_6 .article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* color de fondo para la segunda sección sin contar otras*/
+.section:nth-of-type(2):not(.columnas_4) {
     background-color: rgba(255, 1, 162, 0.332);
 }
 
+#categorias h2 b{
+    font-size: 50px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+h3 b {
+    font-size: 30px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+/* estilos para la sección de los mas vendidos*/
 #mas_vendidos {
-    font-size: 35px;
+    font-size: 55px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 3px 3px 1px rgba(255, 130, 130, 0.603);
 }
 
 #mas_vendidos + p {
     color: seashell;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-
 }
 
-h4 {
-    font-family: Verdana;
-    font-size: 30px;
-}
-
-footer p{
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-    color:rgb(255, 225, 225);
-}
-
-.section {
-    background-color: rgb(255, 0, 0);
-}
-
-.header h3 + p {
-    color:rgb(211, 235, 255);
-    font-size: 18px;
-}
-
-.article {
-    text-align: center;
-    background-color: snow;
-}
-
+/* efectos al poner el mouse sobre los botones de comprar y ver productos*/
 :is(.boton_comprar, .ver_productos) {
     font-style: oblique;
     background-color: rgb(224, 42, 42);
@@ -140,60 +196,164 @@ footer p{
     border-radius: 20px;
 }
 
+/* color y alineacion del footer de ver productos*/
 footer:has(.ver_productos) {
-    background-color: rgba(255, 1, 162, 0.332);
     padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* h4 general*/
+h4 {
+    font-family: Verdana;
+    font-size: 30px;
+    word-spacing: 3px;
+}
+/* estilos para las p del footer*/
+footer p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color:rgb(255, 225, 225);
+}
+/* estilos para el subtitulo debajo del título principal de las categorias */
+.header h3 + p {
+    color:rgb(211, 235, 255);
+    font-size: 24px;
+    word-spacing: 2px;
+}
+/* estilos para los artículos generales*/
+.article {
     text-align: center;
+    background-color: snow;
+    padding: 2px;
+}
+/* estilos para la sección de 4 columnas*/
+.columnas_4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+/* estilos para los artículos de la sección de 4 columnas*/
+.columnas_4 .article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+/* estilos para el título de la sección de categorías populares*/
+#categorias_populares {
+    color:rgb(248, 235, 218);
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-style: oblique;
 }
 
+/* estilos para el precio de los productos*/
 .precio {
     font-weight: bold;
     font-family: 'Gill Sans';
     font-size: 15px;
 }
-
+/* estilos para la sección de contacto mas borde*/
 #contacto {
-    background-color: rgba(232, 29, 29, 0.923);
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+/* estilos para el texto de los simbolos de la sección de contacto*/
 }
 #contacto strong {
-    color:snow;
+    color:rgb(0, 0, 0);
     font-size: 20px;
     font-style: oblique;
 }
+/* centra "Donde encontrarnos" y "Reciba las ultimas novedades"*/
+:is(#contacto article:last-child, .footer aside h3) {
+    text-align: center;
+}
+/* estilos para el nav de la sección contacto*/
+.section nav a{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-#categorias_populares {
-    color:rgb(248, 235, 218);
+/* estilos para la sección del footer*/
+.footer > .section{
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* estilos para bajar el nav del footer*/
+
+.footer > .section nav{
+    margin-top: auto;
+}
+
+/*estilos para el formulario del footer*/
+.footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(18, 39, 227);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(149, 0, 255, 0.785);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* estilos para el legend del formulario del footer*/
+legend {
+    font-size: 30px;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: snow;
+    margin-bottom: 25px;
+}
+/* estilos para las etiquetas del formulario del footer*/
+.footer form label {
     font-size: 20px;
-    font-style: oblique;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: snow;
+    margin-bottom: 10px;
+}
+/*  estilos provisionales para los campos del formulario hasta encontrar un mejor diseño :(*/
+.footer .campo {
+    display: flex;
+    flex-direction: column;
 }
 
+/* estilos para el footer final*/
+.footer p {
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.486);
+    font-size: 26px;
+    margin-bottom: 0;
+}
+/* estilos para el texto seleccionado cambie a verde*/
 .article h3 ~ p::selection {
     background-color: rgb(51, 255, 0);
     color: snow;
-    
 }
 
-.class_header > h2::first-letter {
-    font-size: 60px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgba(0, 0, 0, 0.865);
-}
-
-
-/** NOTA ACTUAL : 5.0
+ /** NOTA ACTUAL : 14
 15 puntos SELECTORES
-  #1 SELECTOR UNIVERSAL
-  #5 SELECTORES DE ETIQUETAS HTML
-  #5 SELECTORES DE CLASES
-  #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES x
-  #2 SELECTORES LOGICOS MODERNOS 
-  #2 SELECTORES PSEUDO CLASES x
-  #2 SELECTORES PSEUDO ELEMENTOS x
-  #2 SELECTORES ATRIBUTOS AVANZADOS
-  #6 SELECTORES COMBINADOS
+  #1 SELECTOR UNIVERSAL 0.5
+  #5 SELECTORES DE ETIQUETAS HTML 2.5
+  #5 SELECTORES DE CLASES 2.5
+  #3 SELECTORES DE IDENTIFICADORES 1.5
+  #2 SELECTORES COMBINADORES 1
+  #2 SELECTORES LOGICOS MODERNOS 1
+  #2 SELECTORES PSEUDO CLASES 1
+  #2 SELECTORES PSEUDO ELEMENTOS 0.5
+  #2 SELECTORES ATRIBUTOS AVANZADOS 0.0
+  #6 SELECTORES COMBINADOS 3
 3 puntos ANIMACIONES
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+RECOMENDACION: Seria bueno comentar cada punto y tomar en cuenta la 3 propiedades por cada selector
 **/
