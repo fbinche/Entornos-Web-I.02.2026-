@@ -275,25 +275,21 @@ section  img {
     background: yellow;
 }
 
-
-
-
-
-
-/** NOTA ACTUAL : 1.0 
-15
- puntos SELECTORES
-  # 1 SELECTOR UNIVERSAL                x
-  # 5 SELECTORES DE ETIQUETAS HTML      x
-  # 5 SELECTORES DE CLASES              x
-  # 3 SELECTORES DE IDENTIFICADORES     x
-  # 2 SELECTORES COMBINADORES           x
-  # 2 SELECTORES LOGICOS MODERNOS       x
-  # 2 SELECTORES PSEUDO CLASES          x
-  # 2 SELECTORES PSEUDO ELEMENTOS       x
-  # 2 SELECTORES ATRIBUTOS AVANZADOS    x
-  # 6 SELECTORES COMBINADOS             x 
+ /** NOTA ACTUAL : 13.5  - 5 (Usar pagina)
+15 puntos SELECTORES
+  #1 SELECTOR UNIVERSAL 0.5
+  #5 SELECTORES DE ETIQUETAS HTML 2.5
+  #5 SELECTORES DE CLASES 2.5
+  #3 SELECTORES DE IDENTIFICADORES 1.5
+  #2 SELECTORES COMBINADORES 1
+  #2 SELECTORES LOGICOS MODERNOS 1
+  #2 SELECTORES PSEUDO CLASES 1
+  #2 SELECTORES PSEUDO ELEMENTOS 1
+  #2 SELECTORES ATRIBUTOS AVANZADOS 1
+  #6 SELECTORES COMBINADOS 1.5
 3 puntos ANIMACIONES
-2 puntos SUSTENTACION/PARTICIPACION EN CLASE   x
-NOTA : Pueden usar cualquier propiedad un minimo de 3 por select or
+2 puntos SUSTENTACION/PARTICIPACION EN CLASE
+NOTA : Pueden usar cualquier propiedad un mínimo de 3 por selector
+RECOMENDACION: Seria bueno comentar cada punto y tomar en cuenta la 3 propiedades por cada selector
+RECOMENDACION: Verificar su codigo
 **/
