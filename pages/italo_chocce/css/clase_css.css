@@ -1,13 +1,23 @@
 /**externa**/
 
-
+/**SELECTOR UNIVERSAL**/
 *{
-  
+    text-align: center;
+   margin: auto;
+   padding: auto;
+
 }
 
 /**etiquetas  html**/
+h1 {
+font-style: italic;
+color: black;
+font-size: large;
+text-align: center;
+background-color: white;
+}
 
-h1, h2, h3  {
+h4, h2, h3  {
 font-style: italic; 
 color: black;
 background-color: white;
@@ -16,7 +26,7 @@ text-align: center;
 }
 
 p{
-    color: #4fa5f0;
+    color: #000000;
     font-size: small;
     font-style: italic;
 }
@@ -68,18 +78,95 @@ text-align: center;
 .panchito{
 background-color: #4fa5f0;
  font-size: small;
+    text-align: center;
 }
 
 /**IDENTIFICADORES**/
 
 #formatoCompletoxd {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: small;
+    text-align: center;
 }
 #ciudades {
     color: rgb(255, 255, 255);
+    font-size: small;
+    text-align: center;
+}
+/**COMBINADORES**/
+
+h2 ~ p 
+    {
+     background-color: rgb(232, 245, 58);
+        font-size: small;
+        text-align: center;
+        text-decoration: rgb(0, 0, 0);
+    }
+h4 + p 
+    {
+     background-color: rgb(4, 0, 255);
+        font-size: small;
+        text-align: center;
+        text-decoration: rgb(0, 0, 0);
+    }
+/** SELECTORES LOGICOS MODERNOS/**/
+button[type="reset"] {
+    background-color: #d9ff00;
+   border: rgb(255, 255, 255);
+    text-decoration: #000000;
+
+}
+button[type="submit"] {
+    background-color: #d9ff00;
+   border: #ffffff;
+    text-decoration: #000000;}
+
+/* SELECTORES PSEUDO CLASES*/
+a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+    transition: 0s.3s;
+}
+button:active {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    transition: 0s.3s;
+}
+/* SELECTORES PSEUDO ELEMENTOS*/
+li::marker  {
+    color: #ff0000;
+    font-size: medium;
+    text-align: center;
+}
+input[type="text"]::spelling-error {
+    background-color: #ffffff;
+    color: #ff0000;
+    border: 1px solid #000000;
+}
+/**SELECTORES ATRIBUTOS AVANZADOS**/
+a[href^="https"] {
+    color: rgb(221, 147, 147);
+    font-weight: 600; 
+    letter-spacing: 0.5px; 
 }
 
- 
+p[lang|="textito"] {
+    border-left: 3px solid #eb0800; 
+    padding-left: 15px;
+    background-color: #f88686; 
+}
+
+/*animacion*/
+ul:hover > li {
+    animation: aparecer 0.5s forwards;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /** NOTA ACTUAL : 4.5
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL
@@ -91,6 +178,7 @@ background-color: #4fa5f0;
   #2 SELECTORES PSEUDO CLASES
   #2 SELECTORES PSEUDO ELEMENTOS
   #2 SELECTORES ATRIBUTOS AVANZADOS
+
   #6 SELECTORES COMBINADOS
 3 puntos ANIMACIONES
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE

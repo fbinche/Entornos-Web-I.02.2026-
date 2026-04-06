@@ -1,6 +1,41 @@
-*{
+
+.video-header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
 
 }
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.contenido {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+audio {
+    width: 100%;
+    margin: 10px;
+}
+body {
+    font-family: Arial;
+    background-color: #0d8009;
+    border: #070000;
+}
+*
+
+
 head {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(92, 4, 65);
@@ -11,31 +46,98 @@ p{
     color: rgba(252, 169, 252, 0.699);
 }
 
-body{
-    background-color: rgb(0, 0, 0) ;
-    font-family: 'Montserrat', sans-serif;
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.contenido {
+    position: relative;
+    text-align: center;
     color: white;
-    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-}  
-h1{
-    color: rgba(235, 183, 235, 0.699);
-    font-size: 50px;
-   
+audio {
+    width: 100%;
+    margin: 10px;
+}
+body {
+    font-family: Arial;
+    background-color: #0d8009;
+    border: #070000;
+}
+
+
+header {
+    background-color: rgb(8, 8, 8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style: none;
     text-align: center;
 }
 
-h2{
-    color: rgba(219, 172, 219, 0.699);
-
-
+nav ul li {
+    display: inline;
+    margin: 10px;
 }
-h3{
-    color: rgba(219, 172, 219, 0.699);
-    font-size: 30px;
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+section {
+    background-color: rgb(179, 223, 171);
+    margin: 20px;
+    padding: 15px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+table {
+    background-color: #070000;
+    color: white;
+    width: 100%;
     text-align: center;
-
+    border: #0a7506;
 }
+
+button {
+    background-color: rgb(6, 46, 3);
+    color: rgb(240, 236, 236);
+}
+
+input, select, textarea {
+
+    background-color: rgb(223, 240, 223);
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
 /** NOTA ACTUAL : 2.0
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL

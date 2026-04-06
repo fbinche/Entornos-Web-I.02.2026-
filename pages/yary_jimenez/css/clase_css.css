@@ -9,6 +9,27 @@ p{
   font-size: 21px;
 }
 
+.navegador ul li a {
+
+  color: blueviolet;
+  font-size: 30px;
+
+}
+
+/*HEADER*/
+.header {
+  background-color: rgb(66, 10, 15);
+  color: rgb(149, 149, 21);
+  padding: 5px;
+  text-align: center;
+}
+.header h1 a{
+  color:rgb(65, 8, 46);
+  text-decoration: none;
+}
+
+
+
 
 
 /** NOTA ACTUAL : 0.0
@@ -28,3 +49,242 @@ p{
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
 **/
 
+
+/* #1 SELECTOR UNIVERSAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* #5 SELECTORES DE ETIQUETAS */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #4b2e2e;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* #5 SELECTORES DE CLASES */
+
+.header {
+    background-color: #4b2e2e;
+    padding: 20px;
+    text-align: center;
+}
+
+.section {
+    padding: 20px;
+    margin: 10px;
+}
+
+.article {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.columnas_6 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+
+/* #3 SELECTORES DE ID */
+
+#seccion_encuentranos {
+    background-color: #fff3e0;
+    padding: 25px;
+    border-top: 5px solid #4b2e2e;
+}
+
+#formCompleto {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#ciudades {
+    color: #444;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+
+/* #2 SELECTORES COMBINADORES */
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section > header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* #2 SELECTORES LÓGICOS MODERNOS */
+
+:is(h1, h2, h3) {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 10px;
+}
+
+:where(.article, .section) {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+
+/* #2 PSEUDO CLASES */
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.05);
+}
+
+
+/* #2 PSEUDO ELEMENTOS */
+
+h2::before {
+    content: "☕ ";
+    color: brown;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b2e2e;
+}
+
+
+/* #2 SELECTORES ATRIBUTOS AVANZADOS */
+
+input[type="text"] {
+    border: 2px solid #ccc;
+    padding: 5px;
+    width: 200px;
+}
+
+input[required] {
+    border-color: red;
+    background-color: #fff0f0;
+}
+
+
+/* #6 SELECTORES COMBINADOS */
+
+.section.second-section .article h3 {
+    color: #6b3e2e;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header .navegador a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer nav ul li a {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.section .article img {
+    border: 3px solid #eee;
+    transition: transform 0.3s;
+}
+
+.section .article:hover img {
+    transform: scale(1.05);
+}
+
+#formCompleto input:focus {
+    outline: none;
+    border-color: #4b2e2e;
+    background: #fff;
+}
+
+
+
+/* ANIMACIÓN 1 */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ANIMACIÓN 2 */
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* ANIMACIÓN 3 */
+@keyframes colorCambio {
+    0% { background-color: #4b2e2e; }
+    50% { background-color: #6b3e2e; }
+    100% { background-color: #4b2e2e; }
+}
+
+/* APLICACIÓN DE ANIMACIONES */
+.article {
+    animation: aparecer 0.8s ease-in-out;
+}
+
+button {
+    animation: latido 2s infinite;
+}
+
+.header {
+    animation: colorCambio 5s infinite;
+}

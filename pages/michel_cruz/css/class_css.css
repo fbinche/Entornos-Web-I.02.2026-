@@ -1,97 +1,299 @@
-*{}
+
+/* Tabla general */
+.tabla {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Encabezado */
+.encabezado th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+/* Filas */
+.fila {
+    background-color: #f2f2f2;
+    text-align: center;
+    height: 40px;
+}
+
+/* Celdas */
+.tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Efecto hover */
+.fila:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+
+/** eso de arriva estodo de tabla solo  estilo **/
+
+
+
+
+
+
+
+
+*{
+    font-family: 'Courier New', Courier, monospace; /* tipo de letra */
+    font-weight: bold; /* negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+}
 
 /* ===== ETIQUETAS HTML  ===== */
 
 
 body {
     background-color: rgb(117, 0, 0); /* color de fondo */
-    font-family: Arial; /* tipo de letra */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
 }
 
 
-h1,h2 {  /* usando dos etiquetas  al mismo tiempo */
+h1 { 
     font-size: 40px; /* tamaño de letra */
     text-align: center; /* centrar texto */
-    color: white; /* color */
+    color: rgb(0, 0, 0); /* color */
 }
 
 
 p {
     font-size: 16px;
-    color: black;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
 }
 
 
 section {
     background-color: lightcoral;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
 }
 
 
 footer {
     background-color: black;
     text-align: center;
-    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */    
+ 
 }
 
 /* ===== IDs ===== */
 
 
-#titulo {
-    color: yellow; /* cambia color del título */
+#descripcion {
+    border: 2px solid rgb(132, 117, 117);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
+}
+
+#button {
+    background-color: rgba(0, 137, 39, 0.19);
+    border: 2px solid rgb(0, 137, 39);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
+    
 }
 
 
-#seccion1 {
-    background-color: lightpink;
-}
-
-
-#footer {
-    font-size: 14px;
-}
+#vinculo {
+    background-color: rgb(107, 107, 212);
+    border: 2px solid rgb(64, 0, 133);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
+    }
 /* ===== CLASES  ===== */
-.cabecera {
+.bo {
     background-color: darkred;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
 }
 
 
-.vinculo_lleva {
+.h2clas {
     background-color: crimson;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
 }
 
 
-.section {
+.pclas {
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
 }
 
 
-.card {
+.preciocoles {
     background-color: white;
-    font-style: italic; /* estilo cursiva */
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
 }
 
 
 .precio {
-    font-size: 18px;
-    color: yellow;
+    background-color: white;
+    font-size: 20px;
+    color: rgb(0, 191, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
 }
 
-/** NOTA ACTUAL : 1.0
-15 puntos SELECTORES
-  #1 SELECTOR UNIVERSAL
-  #5 SELECTORES DE ETIQUETAS HTML
-  #5 SELECTORES DE CLASES
-  #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES
-  #2 SELECTORES LOGICOS MODERNOS
-  #2 SELECTORES PSEUDO CLASES
-  #2 SELECTORES PSEUDO ELEMENTOS
-  #2 SELECTORES ATRIBUTOS AVANZADOS
-  #6 SELECTORES COMBINADOS
+
+
+
+
+/**  #2 SELECTORES COMBINADORES  **/
+
+
+section  img {
+    width: 300px;
+    height: auto;
+    border: 4px solid #3498db; 
+    border-radius: 15px;       
+
+}
+    
+.combinadores > p {
+    color: rgb(140, 102, 228);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
+}
+
+.siguiente + p {
+    color: rgb(239, 63, 175);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
+}
+/** #2 SELECTORES LOGICOS MODERNOS **/
+
+.verdadero_falso :is(#verdadero1, #verdadero2) {
+    color: rgb(0, 245, 139);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
+}
+
+.verdadero_falso :is(#falso1, #falso2) {
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra del texto */ 
+    font-weight: bold; /* negrita */
+}
+
+/**  #2 SELECTORES PSEUDO CLASES **/
+
+.btn:hover {
+  background-color: blue;
+  color: white;
+  transform: scale(1.1);
+}
+
+
+.input:focus {
+  border: 2px solid rgba(177, 11, 27, 0);
+  background-color: rgb(147, 12, 131);
+  outline: none;
+}
+
+
+ /**  2 SELECTORES PSEUDO ELEMENTOS **/
+
+.texto::first-letter {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  opacity: 0.8;
+}
+
+
+
+
+/** #2 SELECTORES ATRIBUTOS AVANZADOS **/
+
+
+.img[src$=".png"] {
+ width: 300px;
+ height: auto;
+ border: 10px solid #b715e9; 
+ border-radius: 15px;
+}
+
+.img[src$=".webp"] {
+ width: 300px;
+ height: auto;
+ border: 10px solid #bfff00; 
+ border-radius: 15px;
+
+}
+
+
+
+
+
+.bloque1 p {
+    color: red;
+    font-size: 18px;
+    background: lightgray;
+}
+
+
+.lista > .item {
+    color: blue;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.item + .end {
+    color: orange;
+    margin-top: 10px;
+    background: yellow;
+}
+
+
+
+
+
+
+/** NOTA ACTUAL : 1.0 
+15
+ puntos SELECTORES
+  # 1 SELECTOR UNIVERSAL                x
+  # 5 SELECTORES DE ETIQUETAS HTML      x
+  # 5 SELECTORES DE CLASES              x
+  # 3 SELECTORES DE IDENTIFICADORES     x
+  # 2 SELECTORES COMBINADORES           x
+  # 2 SELECTORES LOGICOS MODERNOS       x
+  # 2 SELECTORES PSEUDO CLASES          x
+  # 2 SELECTORES PSEUDO ELEMENTOS       x
+  # 2 SELECTORES ATRIBUTOS AVANZADOS    x
+  # 6 SELECTORES COMBINADOS             x 
 3 puntos ANIMACIONES
-2 puntos SUSTENTACION/PARTICIPACION EN CLASE
-NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+2 puntos SUSTENTACION/PARTICIPACION EN CLASE   x
+NOTA : Pueden usar cualquier propiedad un minimo de 3 por select or
 **/
