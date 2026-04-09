@@ -1,22 +1,28 @@
-/* selector universal*/
+/* ---SELECTOR UNIVERSAL--- */
+
+/* selector universal para que el espacio y el margen sean 0, color de las letras en negro*/
 * {
     padding: 0;
     margin: 0;
     color: rgb(0, 0, 0);
 }
-/* color de fondo al body*/
+
+/* color de fondo al body y fuente generica*/
 body {
     background-color: rgb(255, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
-/* header y navegación*/
+
+/* ---HEADER--- */
+
+/* centrado del header y color de las letras*/
 .class_header { 
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: rgba(0, 0, 0, 0.794);
 }
-/* estilos para el título principal */
+/* estilos para el título principal con espacio entre letras */
 .class_header h1 {
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -29,20 +35,21 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: rgba(0, 0, 0, 0.865);
 }
-
-/* modificacion el primer nav*/
+/* ---BARRA DE NAVEGACIÓN--- */
+/* modificacion el primer nav para ser flexible*/
 
 nav ul:first-child{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
 }
-
+/* color y fuente de los enlaces del nac*/
 nav a{
     color: white;
     font-size: 28px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* --- SECCION 1 --- */
 
 /* agrupacion del color de fondo de los títulos y el footer final*/
 :is(h1, h2, h3, h4, .footer) {
@@ -57,7 +64,7 @@ p {
     font-style: normal;
 }
 
-/* estilos para las secciones de 3 y 6 columnas*/
+/* division para las secciones de 3 y 6 columnas con espacio entre ellas*/
 .columnas_3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,7 +79,7 @@ p {
     gap: 30px;
     padding: 20px;
 }
-/* estilos para las tarjetas de productos*/
+/* color de fondo, flexibilidad y espacio entre tarjetas de productos*/
 .card {
     background-color: rgb(255, 0, 0);
     font-style: oblique;
@@ -102,7 +109,7 @@ figcaption {
     text-align: center;
 }
 
-/* estilos para los articulos de las cartas*/
+/* estilos para centrar los articulos de las cartas*/
 .card .article {
     flex: 1;
     display: flex;
@@ -113,11 +120,58 @@ figcaption {
     border-color: rgb(0, 0, 0);
 }
 
-/* estilos para las imagenes de los articulos en general*/
+/* estilos para las imagenes de los articulos en general, con unancho del 100%*/
 .article img{
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+/* ---SECCION 2 --- */
+
+/* estilos para los artículos generales*/
+.article {
+    text-align: center;
+    background-color: snow;
+    padding: 2px;
+}
+/* estilos para la sección de 4 columnas*/
+.columnas_4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+/* estilos para los artículos de la sección de 4 columnas*/
+.columnas_4 .article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+/* estilos para el título de la sección de categorías populares*/
+#categorias_populares {
+    color:rgb(248, 235, 218);
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+/* color de fondo para la segunda sección sin contar otras*/
+.section:nth-of-type(2):not(.columnas_4) {
+    background-color: rgba(255, 1, 162, 0.332);
+}
+/* estilos para el título de la sección de categorías populares*/
+#categorias h2 b{
+    font-size: 50px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+/* ---SECCION 3 --- */
+/* estilos para el subtitulo de la sección de categorías populares*/
+h3 b {
+    font-size: 30px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 /* estilos de los costados para los ariculos que tengan 6 columnas*/
@@ -128,29 +182,13 @@ figcaption {
     border-radius: 10px;
 }
 
-/* color de fondo para la segunda sección sin contar otras*/
-.section:nth-of-type(2):not(.columnas_4) {
-    background-color: rgba(255, 1, 162, 0.332);
-}
-
-#categorias h2 b{
-    font-size: 50px;
-    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(0, 0, 0);
-}
-
-h3 b {
-    font-size: 30px;
-    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-}
-/* estilos para la sección de los mas vendidos*/
+/* estilos para la sección de los mas vendidos para tener sombra en el texto*/
 #mas_vendidos {
     font-size: 55px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: 3px 3px 1px rgba(255, 130, 130, 0.603);
 }
-
+/* color yformato para el texto debajo del título de los mas vendidos*/
 #mas_vendidos + p {
     color: seashell;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -164,6 +202,7 @@ h3 b {
     color:snow;
     font-family: 'zapf chancery, cursive';
     border-radius: 6px;
+    font-size: 20px;
 }
 
 .boton_comprar:hover {
@@ -196,7 +235,7 @@ h3 b {
     border-radius: 20px;
 }
 
-/* color y alineacion del footer de ver productos*/
+/* color y alineacion del footer de ver productos para centrarlo*/
 footer:has(.ver_productos) {
     padding: 20px;
     display: flex;
@@ -215,37 +254,11 @@ footer p{
     font-weight: bold;
     color:rgb(255, 225, 225);
 }
-/* estilos para el subtitulo debajo del título principal de las categorias */
+/* estilos para el texto debajo del título principal de cda categoría */
 .header h3 + p {
     color:rgb(211, 235, 255);
     font-size: 24px;
     word-spacing: 2px;
-}
-/* estilos para los artículos generales*/
-.article {
-    text-align: center;
-    background-color: snow;
-    padding: 2px;
-}
-/* estilos para la sección de 4 columnas*/
-.columnas_4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-/* estilos para los artículos de la sección de 4 columnas*/
-.columnas_4 .article {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
-}
-/* estilos para el título de la sección de categorías populares*/
-#categorias_populares {
-    color:rgb(248, 235, 218);
-    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    font-style: oblique;
 }
 
 /* estilos para el precio de los productos*/
@@ -254,7 +267,10 @@ footer p{
     font-family: 'Gill Sans';
     font-size: 15px;
 }
-/* estilos para la sección de contacto mas borde*/
+
+/* ---SECCION 4--- */
+
+/* estilos para la sección de contacto dividido en 2, mas borde*/
 #contacto {
     background-color: rgb(255, 255, 255);
     display: grid;
@@ -273,14 +289,16 @@ footer p{
 :is(#contacto article:last-child, .footer aside h3) {
     text-align: center;
 }
-/* estilos para el nav de la sección contacto*/
+/* estilos de fuente para los enlaces del nav de la sección contacto*/
 .section nav a{
     color: rgb(0, 0, 0);
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* estilos para la sección del footer*/
+/* --- FOOTER --- */
+
+/* estilos para la sección del footer que divide en dos columnas*/
 .footer > .section{
     padding-top: 60px;
     display: grid;
@@ -293,7 +311,7 @@ footer p{
     margin-top: auto;
 }
 
-/*estilos para el formulario del footer*/
+/*estilos para el formulario del footer, centrado los elementos, con color azul, y haciendolo flexible*/
 .footer form {
     display: flex;
     flex-direction: column;
@@ -307,14 +325,14 @@ footer p{
     margin: 0 auto;
     padding: 20px;
 }
-/* estilos para el legend del formulario del footer*/
+/* estilos de fuente para el legend del formulario del footer*/
 legend {
     font-size: 30px;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: snow;
     margin-bottom: 25px;
 }
-/* estilos para las etiquetas del formulario del footer*/
+/* estilos de fuente para las etiquetas del formulario del footer*/
 .footer form label {
     font-size: 20px;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -327,7 +345,7 @@ legend {
     flex-direction: column;
 }
 
-/* estilos para el footer final*/
+/* estilos para el footer final con texto de sombra*/
 .footer p {
     color: rgb(0, 0, 0);
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.486);
@@ -339,6 +357,9 @@ legend {
     background-color: rgb(51, 255, 0);
     color: snow;
 }
+
+
+
 
  /** NOTA ACTUAL : 14
 15 puntos SELECTORES
