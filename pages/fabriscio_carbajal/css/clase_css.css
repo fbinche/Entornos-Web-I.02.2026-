@@ -42,12 +42,13 @@ nav ul:first-child{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    background-color: rgb(255, 0, 0);
 }
 /* color y fuente de los enlaces del nac*/
 nav a{
     color: white;
     font-size: 28px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
 }
 /* --- SECCION 1 --- */
 
@@ -358,8 +359,110 @@ legend {
     color: snow;
 }
 
+/* ---------- PSEUDO ELEMENTO ----------- */
+/* Aumenta la primera letra del título de los mas vendidos, con un tipo de letra diferente y un color negro rojizo*/
+#mas_vendidos::first-letter {
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(50, 2, 2);
+}
 
+/* ----------- ATRIBUTOS AVANZADOS ----------- */
+/* efecto con sombra y remarque de los enlaces del nav */
+a[href] {
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+/* efecto de sombra y blanco diferente*/
+footer a[href="#categorias"] {
+    color: rgba(231, 254, 254, 0.905);
+    font-size: 26px;
+    text-shadow: 6px 6px 10px rgb(0, 0, 0);
+}
 
+/* efecto dd sombra al nav del footer con color gris */
+.footer .section a[href] {
+    color: rgba(0, 0, 0, 0.937);
+    font-size: 24px;
+    text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.591);
+}
+
+/*--------------- ANIMACIONES ----------------*/
+/* animacion que hace desaparecer la sombra del texto y doble linea al llegar arriba */
+@keyframes aparecer_arriba {
+    0% {
+        top: 30px;
+        text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+        color: rgb(53, 49, 49);
+    }
+    100% {
+        top: 0px;
+        text-shadow: none;
+        color: rgb(0, 0, 0);
+    }
+}
+/* llamando a la animacion, dura 2 segundos y con una transicion suave de princio, rapido al medio, y lento al fin*/
+.card {
+    animation: aparecer_arriba 2s ease-in-out;
+}
+
+/* animacion dezplazando texto de dercha a izquierda*/
+@keyframes desplazar_texto_izquierda {
+    0% {
+        left: 100%;
+        color: rgb(255, 0, 0);
+    }
+
+    100% {
+        left: 0%;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* llamando a la animacion, dura 3 segundos y con una transicion rapida*/
+#sobre_nosotros footer p {
+    position: relative;  /* necesario para que pueda moverse respecto a su posicion */
+    animation-name: desplazar_texto_izquierda;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+/* -------- TRANSICIONES ----------- */
+/* cambio de borde, con corto tiempo y constante de los productos más vendidos*/
+.columnas_6 .article {
+    transition-property: border-style, border-width, border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+/* aplicacion de la transicion al ponerel mouse, cambio de color en el borde */
+.columnas_6 .article:hover {
+    border-style: outset;
+    border-width: 10px;
+    border-color: rgba(229, 19, 61, 0.945);
+}
+/* cambio de borde, con corto tiempo y constante de los productos de la sección de categorías*/
+.columnas_4 .article {
+    transition-property: border-radius, border-style, border-color, border-width;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+/* aplicacion de la transicion al poner el mouse, cambio de color y forma del borde */
+.columnas_4 .article:hover {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgba(255, 34, 0, 0.812);
+    border-width: 10px;
+}
+
+/* mantiene el nav y el header a pesar de seguir bajando */
+.class_header:has(h1) {
+    background-color: red;
+    position: sticky;
+    top:0;
+    z-index: 1; /* lo posiciona por encima de otros elementos */
+}
 
  /** NOTA ACTUAL : 14
 15 puntos SELECTORES
