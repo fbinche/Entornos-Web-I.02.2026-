@@ -96,7 +96,10 @@ header nav ul { /* selecciona ul hijo directo de nav */
   background: #081233; /* fondo oscuro */
   text-align: center; /* centra */
 }
-
+/*====================== ALERTA DE BOOSTRAP =====================*/
+.alert alert-info-text center{
+  font: size 30px;
+}
 /* ===================== FORMULARIO ===================== */
 #FORMULARIO { /* sección formulario */
   padding: 40px; /* espacio */
@@ -147,7 +150,7 @@ input[type="checkbox"] { /* checkbox */
 
 /* ===================== PSEUDO CLASES ===================== */
 a:hover { /* al pasar mouse */
-  color: #00eaff; /* cambia color */
+  color: #110546; /* cambia color */
   transform: scale(1.05); /* agranda */
   transition: 0.3s; /* animación */
 }
