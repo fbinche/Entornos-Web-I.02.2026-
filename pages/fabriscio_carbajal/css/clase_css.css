@@ -1,22 +1,28 @@
-/* selector universal*/
+/* ---SELECTOR UNIVERSAL--- */
+
+/* selector universal para que el espacio y el margen sean 0, color de las letras en negro*/
 * {
     padding: 0;
     margin: 0;
     color: rgb(0, 0, 0);
 }
-/* color de fondo al body*/
+
+/* color de fondo al body y fuente generica*/
 body {
     background-color: rgb(255, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
-/* header y navegación*/
+
+/* ---HEADER--- */
+
+/* centrado del header y color de las letras*/
 .class_header { 
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: rgba(0, 0, 0, 0.794);
 }
-/* estilos para el título principal */
+/* estilos para el título principal con espacio entre letras */
 .class_header h1 {
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -29,20 +35,22 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: rgba(0, 0, 0, 0.865);
 }
-
-/* modificacion el primer nav*/
+/* ---BARRA DE NAVEGACIÓN--- */
+/* modificacion el primer nav para ser flexible*/
 
 nav ul:first-child{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    background-color: rgb(255, 0, 0);
 }
-
+/* color y fuente de los enlaces del nac*/
 nav a{
     color: white;
     font-size: 28px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
 }
+/* --- SECCION 1 --- */
 
 /* agrupacion del color de fondo de los títulos y el footer final*/
 :is(h1, h2, h3, h4, .footer) {
@@ -57,7 +65,7 @@ p {
     font-style: normal;
 }
 
-/* estilos para las secciones de 3 y 6 columnas*/
+/* division para las secciones de 3 y 6 columnas con espacio entre ellas*/
 .columnas_3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,7 +80,7 @@ p {
     gap: 30px;
     padding: 20px;
 }
-/* estilos para las tarjetas de productos*/
+/* color de fondo, flexibilidad y espacio entre tarjetas de productos*/
 .card {
     background-color: rgb(255, 0, 0);
     font-style: oblique;
@@ -102,7 +110,7 @@ figcaption {
     text-align: center;
 }
 
-/* estilos para los articulos de las cartas*/
+/* estilos para centrar los articulos de las cartas*/
 .card .article {
     flex: 1;
     display: flex;
@@ -113,11 +121,58 @@ figcaption {
     border-color: rgb(0, 0, 0);
 }
 
-/* estilos para las imagenes de los articulos en general*/
+/* estilos para las imagenes de los articulos en general, con unancho del 100%*/
 .article img{
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+/* ---SECCION 2 --- */
+
+/* estilos para los artículos generales*/
+.article {
+    text-align: center;
+    background-color: snow;
+    padding: 2px;
+}
+/* estilos para la sección de 4 columnas*/
+.columnas_4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+/* estilos para los artículos de la sección de 4 columnas*/
+.columnas_4 .article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+/* estilos para el título de la sección de categorías populares*/
+#categorias_populares {
+    color:rgb(248, 235, 218);
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+/* color de fondo para la segunda sección sin contar otras*/
+.section:nth-of-type(2):not(.columnas_4) {
+    background-color: rgba(255, 1, 162, 0.332);
+}
+/* estilos para el título de la sección de categorías populares*/
+#categorias h2 b{
+    font-size: 50px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+/* ---SECCION 3 --- */
+/* estilos para el subtitulo de la sección de categorías populares*/
+h3 b {
+    font-size: 30px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 /* estilos de los costados para los ariculos que tengan 6 columnas*/
@@ -128,29 +183,13 @@ figcaption {
     border-radius: 10px;
 }
 
-/* color de fondo para la segunda sección sin contar otras*/
-.section:nth-of-type(2):not(.columnas_4) {
-    background-color: rgba(255, 1, 162, 0.332);
-}
-
-#categorias h2 b{
-    font-size: 50px;
-    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(0, 0, 0);
-}
-
-h3 b {
-    font-size: 30px;
-    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-}
-/* estilos para la sección de los mas vendidos*/
+/* estilos para la sección de los mas vendidos para tener sombra en el texto*/
 #mas_vendidos {
     font-size: 55px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: 3px 3px 1px rgba(255, 130, 130, 0.603);
 }
-
+/* color yformato para el texto debajo del título de los mas vendidos*/
 #mas_vendidos + p {
     color: seashell;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -164,6 +203,7 @@ h3 b {
     color:snow;
     font-family: 'zapf chancery, cursive';
     border-radius: 6px;
+    font-size: 20px;
 }
 
 .boton_comprar:hover {
@@ -196,7 +236,7 @@ h3 b {
     border-radius: 20px;
 }
 
-/* color y alineacion del footer de ver productos*/
+/* color y alineacion del footer de ver productos para centrarlo*/
 footer:has(.ver_productos) {
     padding: 20px;
     display: flex;
@@ -215,37 +255,11 @@ footer p{
     font-weight: bold;
     color:rgb(255, 225, 225);
 }
-/* estilos para el subtitulo debajo del título principal de las categorias */
+/* estilos para el texto debajo del título principal de cda categoría */
 .header h3 + p {
     color:rgb(211, 235, 255);
     font-size: 24px;
     word-spacing: 2px;
-}
-/* estilos para los artículos generales*/
-.article {
-    text-align: center;
-    background-color: snow;
-    padding: 2px;
-}
-/* estilos para la sección de 4 columnas*/
-.columnas_4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-/* estilos para los artículos de la sección de 4 columnas*/
-.columnas_4 .article {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
-}
-/* estilos para el título de la sección de categorías populares*/
-#categorias_populares {
-    color:rgb(248, 235, 218);
-    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    font-style: oblique;
 }
 
 /* estilos para el precio de los productos*/
@@ -254,7 +268,10 @@ footer p{
     font-family: 'Gill Sans';
     font-size: 15px;
 }
-/* estilos para la sección de contacto mas borde*/
+
+/* ---SECCION 4--- */
+
+/* estilos para la sección de contacto dividido en 2, mas borde*/
 #contacto {
     background-color: rgb(255, 255, 255);
     display: grid;
@@ -273,14 +290,16 @@ footer p{
 :is(#contacto article:last-child, .footer aside h3) {
     text-align: center;
 }
-/* estilos para el nav de la sección contacto*/
+/* estilos de fuente para los enlaces del nav de la sección contacto*/
 .section nav a{
     color: rgb(0, 0, 0);
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* estilos para la sección del footer*/
+/* --- FOOTER --- */
+
+/* estilos para la sección del footer que divide en dos columnas*/
 .footer > .section{
     padding-top: 60px;
     display: grid;
@@ -293,7 +312,7 @@ footer p{
     margin-top: auto;
 }
 
-/*estilos para el formulario del footer*/
+/*estilos para el formulario del footer, centrado los elementos, con color azul, y haciendolo flexible*/
 .footer form {
     display: flex;
     flex-direction: column;
@@ -307,14 +326,14 @@ footer p{
     margin: 0 auto;
     padding: 20px;
 }
-/* estilos para el legend del formulario del footer*/
+/* estilos de fuente para el legend del formulario del footer*/
 legend {
     font-size: 30px;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: snow;
     margin-bottom: 25px;
 }
-/* estilos para las etiquetas del formulario del footer*/
+/* estilos de fuente para las etiquetas del formulario del footer*/
 .footer form label {
     font-size: 20px;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -327,7 +346,7 @@ legend {
     flex-direction: column;
 }
 
-/* estilos para el footer final*/
+/* estilos para el footer final con texto de sombra*/
 .footer p {
     color: rgb(0, 0, 0);
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.486);
@@ -338,6 +357,111 @@ legend {
 .article h3 ~ p::selection {
     background-color: rgb(51, 255, 0);
     color: snow;
+}
+
+/* ---------- PSEUDO ELEMENTO ----------- */
+/* Aumenta la primera letra del título de los mas vendidos, con un tipo de letra diferente y un color negro rojizo*/
+#mas_vendidos::first-letter {
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(50, 2, 2);
+}
+
+/* ----------- ATRIBUTOS AVANZADOS ----------- */
+/* efecto con sombra y remarque de los enlaces del nav */
+a[href] {
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+/* efecto de sombra y blanco diferente*/
+footer a[href="#categorias"] {
+    color: rgba(231, 254, 254, 0.905);
+    font-size: 26px;
+    text-shadow: 6px 6px 10px rgb(0, 0, 0);
+}
+
+/* efecto dd sombra al nav del footer con color gris */
+.footer .section a[href] {
+    color: rgba(0, 0, 0, 0.937);
+    font-size: 24px;
+    text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.591);
+}
+
+/*--------------- ANIMACIONES ----------------*/
+/* animacion que hace desaparecer la sombra del texto y doble linea al llegar arriba */
+@keyframes aparecer_arriba {
+    0% {
+        top: 30px;
+        text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+        color: rgb(53, 49, 49);
+    }
+    100% {
+        top: 0px;
+        text-shadow: none;
+        color: rgb(0, 0, 0);
+    }
+}
+/* llamando a la animacion, dura 2 segundos y con una transicion suave de princio, rapido al medio, y lento al fin*/
+.card {
+    animation: aparecer_arriba 2s ease-in-out;
+}
+
+/* animacion dezplazando texto de dercha a izquierda*/
+@keyframes desplazar_texto_izquierda {
+    0% {
+        left: 100%;
+        color: rgb(255, 0, 0);
+    }
+
+    100% {
+        left: 0%;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* llamando a la animacion, dura 3 segundos y con una transicion rapida*/
+#sobre_nosotros footer p {
+    position: relative;  /* necesario para que pueda moverse respecto a su posicion */
+    animation-name: desplazar_texto_izquierda;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+/* -------- TRANSICIONES ----------- */
+/* cambio de borde, con corto tiempo y constante de los productos más vendidos*/
+.columnas_6 .article {
+    transition-property: border-style, border-width, border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+/* aplicacion de la transicion al ponerel mouse, cambio de color en el borde */
+.columnas_6 .article:hover {
+    border-style: outset;
+    border-width: 10px;
+    border-color: rgba(229, 19, 61, 0.945);
+}
+/* cambio de borde, con corto tiempo y constante de los productos de la sección de categorías*/
+.columnas_4 .article {
+    transition-property: border-radius, border-style, border-color, border-width;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+/* aplicacion de la transicion al poner el mouse, cambio de color y forma del borde */
+.columnas_4 .article:hover {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgba(255, 34, 0, 0.812);
+    border-width: 10px;
+}
+
+/* mantiene el nav y el header a pesar de seguir bajando */
+.class_header:has(h1) {
+    background-color: red;
+    position: sticky;
+    top:0;
+    z-index: 1; /* lo posiciona por encima de otros elementos */
 }
 
  /** NOTA ACTUAL : 14
