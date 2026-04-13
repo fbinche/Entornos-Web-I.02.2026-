@@ -489,7 +489,9 @@ a {
     transition: 0.2s;
 }
 
- /** NOTA ACTUAL : 15
+ /** NOTA ACTUAL :
+ CSS-> 15+2
+ BS -> 15
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
   #5 SELECTORES DE ETIQUETAS HTML 2.5
