@@ -189,8 +189,11 @@ ul:hover > li {
     from { transform: scale(1); }
     to { transform: scale(1.1); } 
 }
- /** NOTA ACTUAL : 12.5
-15 puntos SELECTORES
+ /** NOTA ACTUAL : 
+ CSS > 12.5 + 3 animaciones + 3 participacion
+ BS  > 15 
+ 
+ 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
   #5 SELECTORES DE ETIQUETAS HTML 2.5
   #5 SELECTORES DE CLASES 2.5
