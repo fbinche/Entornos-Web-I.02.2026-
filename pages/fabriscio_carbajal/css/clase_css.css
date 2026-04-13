@@ -484,13 +484,13 @@ footer p > a[href="#categorias"]:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
 }
-
+/* aliniacion de botones del formulario */
 .contenedor {
     display: flex;
     justify-content: center;
     gap: 40px;
 }
-
+/* css personalizddo de bootstrap, divisiones entre secciones */
 .division_principal {
     width: 100%;
     height: 5rem;
