@@ -305,8 +305,8 @@ footer p{
 /* estilos para la sección del footer que divide en dos columnas*/
 .footer > .section{
     padding-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+/*    display: grid;
+    grid-template-columns: repeat(2, 1fr);  */
 }
 
 /* estilos para bajar el nav del footer*/
@@ -323,6 +323,7 @@ legend {
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: snow;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .footer form {
@@ -487,7 +488,7 @@ footer p > a[href="#categorias"]:hover {
 /* aliniacion de botones del formulario */
 .contenedor {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 40px;
 }
 /* css personalizddo de bootstrap, divisiones entre secciones */

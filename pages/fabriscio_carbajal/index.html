@@ -86,7 +86,6 @@
                             todo el continente.
                         </p>
                     </article>
-
                 </card>
             </section>
             <br>
@@ -359,11 +358,11 @@
     <footer class="footer">
         <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
 
-        <section class="section">
-
-            <!-- Sección Navegación -->
-            <nav class="container">
-                <h3><b>Viva Mueble</b></h3>
+        <section class="section conteiner">
+            <div class="row">
+                <!-- Sección Navegación -->
+                <nav class="container col-12 col-md-3">
+                    <h3><b>Viva Mueble</b></h3>
                     <ul class="list-unstyled">
                         <li><a href="#sobre_nosotros"><i class="bi bi-building"></i>Sobre Nosotros</a></li>
                         <li><a href="#productos_populares"><i class="bi bi-star-fill"></i>Productos Populares</a></li>
@@ -376,61 +375,69 @@
                         <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a></li>
                         <li><a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a></li>
                     </ul>
-            </nav>
-            <!-- Sección mapa -->
-            <aside class="container">
-                <h3><b>Reciba las últimas novedades y promociones de Viva Mueble:</b></h3>
-                <form method="post">
-                    <fields1et class="raw">
-                        <legend>Rellene el formulario con sus datos</legend>
-                        <div class="campo mb-3">
-                            <label>Nombre:</label>
-                            <input type="text" class="form-control" name="Nombre"
-                                placeholder="Ingrese su nombre completo" required>
-                        </div>
-                        <div class="campo mb-3">
-                            <label>DNI:</label>
-                            <input type="text" class="form-control" minlength="8" maxlength="8" pattern="\d{8}"
-                                title="Ingrese un DNI válido de 8 dígitos" required>
-                        </div>
-                        <div class="campo mb-3 white">
-                            <label>Género:</label>
-                            <input class="col-1" type="radio" name="genero" value="F"> Femenino
-                            <input class="col-1" type="radio" name="genero" value="M"> Masculino
-                        </div>
-                        <div class="campo mb-3">
-                            <label>País:</label>
-                            <select name="pais">
-                                <option value="pe">Perú</option>
-                                <option value="co">Chile</option>
-                                <option value="ar">Paraguay</option>
-                            </select>
-                        </div>
-                        <div class="campo mb-3">
-                            <label>Ciudad:</label>
-                            <input list="ciudades" class="form-control form-control-sm col-4" name="ciudades">
-                            <datalist id="ciudades">
-                                <option value="Lima"></option>
-                                <option value="Cusco"></option>
-                                <option value="Arequipa"></option>
-                            </datalist>
-                        </div>
-                        <div class="campo mb-3">
-                            <label><i class="bi bi-telephone-inbound white"></i> Teléfono:</label>
-                            <input type="text" class="form-control mb-1" name="telefono" value="987654321"
-                                pattern="[0-9]{9}">
-                            <br>
-                            <label><i class="bi bi-envelope white"></i> Email:</label>
-                            <input type="email" class="form-control mb-3" name="email" placeholder="Correo electrónico"
-                                required>
-                        </div>
+                </nav>
+                <!-- Sección mapa -->
+                <aside class="container col-12 col-md-9">
+                    <h3><b>Reciba las últimas novedades y promociones de Viva Mueble:</b></h3>
+                    <form method="post">
+                        <fieldset class="form-row">
+                            <legend>Rellene el formulario con sus datos</legend>
+                            <div class="campo mb-3 form-group col-md-6">
+                                <label>Nombre:</label>
+                                <input type="text" class="form-control" name="Nombre"
+                                    placeholder="Ingrese su nombre completo" required>
+                            </div>
+                            <div class="campo mb-3 form-group col-md-6">
+                                <label>DNI:</label>
+                                <input type="text" class="form-control" minlength="8" maxlength="8" pattern="\d{8}"
+                                    title="Ingrese un DNI válido de 8 dígitos" required>
+                            </div>
+                            <div class="campo mb-3 form-group col-md-6 white">
+                                <label>Género:</label>
+                                <input class="col-1" type="radio" name="genero" value="F"> Femenino
+                                <input class="col-1" type="radio" name="genero" value="M"> Masculino
+                            </div>
+                            <div class="campo mb-3 form-group col-md-4"></div>
+                            <div class="campo mb-3 form-group col-md-2">
+                                <label>País:</label>
+                                <select name="pais">
+                                    <option value="pe">Perú</option>
+                                    <option value="co">Chile</option>
+                                    <option value="ar">Paraguay</option>
+                                </select>
+                            </div>
+                            <div class="campo form-group col-md-12 mb-3">
+                                <label>Ciudad:</label>
+                                <input list="ciudades" class="form-control form-control-sm" name="ciudades">
+                                <datalist id="ciudades">
+                                    <option value="Lima"></option>
+                                    <option value="Cusco"></option>
+                                    <option value="Arequipa"></option>
+                                </datalist>
+                            </div>
+                            <div class="campo mb-3 form-group col-md-5">
+                                <label><i class="bi bi-telephone-inbound white"></i> Teléfono:</label>
+                                <input type="text" class="form-control mb-1" name="telefono" value="987654321"
+                                    pattern="[0-9]{9}">
+                            </div>
+                            <div class="campo mb-3 form-group col-md-2"></div>
+                            <div class="campo mb-3 form-group col-md-5">
+                                <label><i class="bi bi-envelope white"></i> Email:</label>
+                                <input type="email" class="form-control mb-3" name="email" placeholder="Correo electrónico"
+                                    required>
+                            </div>
+                        </fieldset>
                         <div class="contenedor">
-                            <button type="submit" class="btn btn-secondary"><img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" width="30px" height="30px"> ENVIAR</button>
-                            <button type="reset" class="btn btn-secondary"><img src="https://cdn-icons-png.freepik.com/512/8428/8428112.png" width="30px" height="30px"> BORRAR DATOS</button>
+                            <button type="submit" class="btn btn-secondary"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/845/845646.png" width="30px" height="30px">
+                                ENVIAR</button>
+                            <button type="reset" class="btn btn-secondary"><img
+                                    src="https://cdn-icons-png.freepik.com/512/8428/8428112.png" width="30px" height="30px">
+                                BORRAR DATOS</button>
                         </div>
-                    </fields1et>
-                </form>
-            </aside>
+                    </form>
+                </aside>
+            </div>
         </section>
         <p>&copy; 2026 Viva Mueble. Todos los derechos reservados.</p>
     </footer>
