@@ -7,6 +7,8 @@
   <!--
         <link rel="stylesheet" href="/assets/css/styles_global.css">
 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/clase_css.css">
 
   <Style>
@@ -21,865 +23,887 @@
     h2 {
       color: red;
     }
-
   </Style>
-  
+
 </head>
 
 <body>
 
-  <header class="header">
-
-    <nav aria-label="Servicios principales">
-      <ul class="menu-servicios">
-        <li>
-          <a href="#seccion1">
-            <span class="icon" aria-hidden="true">🧾</span>
-            <span>Check-in</span>
-          </a>
-        </li>
-        <li>
-          <a href="#seccion2">
-            <span class="icon" aria-hidden="true">🧳</span>
-            <span>Sección 2</span>
-          </a>
-        </li>
-        <li>
-          <a href="#seccion3">
-            <span class="icon" aria-hidden="true">🧳</span>
-            <span>Sección 3</span>
-          </a>
-        </li>
-        <li>
-          <a href="#seccion4">
-            <span class="icon" aria-hidden="true">🧳</span>
-            <span>Sección 4</span>
-          </a>
-        </li>
-        <li>
-          <a href="#footer">
-            <span class="icon" aria-hidden="true">⬇️</span>
-            <span>Ir al Footer</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+  <!-- Header principal -->
+  <header class="bg-primary text-white text-center py-4">
+    <h1 class="display-4 text-uppercase fw-bold">SKY Airlines</h1>
   </header>
+
+  <!-- Navbar de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Servicios principales">
+    <div class="container-fluid">
+      <!-- Botón hamburguesa para móviles -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuServicios"
+        aria-controls="menuServicios" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse justify-content-center" id="menuServicios">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion1">🧾 Check-in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion2">🧳 Sección 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion3">🧳 Sección 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion4">🧳 Sección 4</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">⬇️ Ir al Footer</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <main class="main">
 
-    <section id="seccion1" class="section hero first-section">
+    <section id="seccion1" class="py-5 bg-light">
+      <div class="container text-center">
+        <!-- Encabezado -->
+        <header class="mb-4">
+          <h2 class="fw-bold">Explora las alturas con SKY</h2>
+          <p class="lead">Más que vuelos, experiencias que elevan tu viaje</p>
+        </header>
 
-      <!-- CARRUSEL -->
-      <header>
-        <h2>Explora las alturas con SKY</h2>
-        <p>Más que vuelos, experiencias que elevan tu viaje</p>
-      </header>
-      <section class="section columnas_3">
+        <!-- Carrusel con Bootstrap -->
+        <div id="promoCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Promociones/Promocion1.jpg" class="d-block w-100" alt="Imagen 1 del carrusel">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Promoción 1</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/Promociones/promocion2.jpg" class="d-block w-100" alt="Imagen 2 del carrusel">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Promoción 2</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/Promociones/promocion3.jpg" class="d-block w-100" alt="Imagen 3 del carrusel">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Promoción 3</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
 
-        <figure>
-          <img src="img/Promociones/Promocion1.jpg" alt="Imagen 1 del carrusel" width="400">
-          <figcaption>Promoción 1</figcaption>
-        </figure>
-
-        <figure>
-          <img src="img/Promociones/promocion2.jpg" alt="Imagen 2 del carrusel" width="400">
-          <figcaption>Promoción 2</figcaption>
-        </figure>
-
-        <figure>
-          <img src="img/Promociones/promocion3.jpg" alt="Imagen 3 del carrusel" width="400">
-          <figcaption>Promoción 3</figcaption>
-        </figure>
-
-      </section>
-      </header>
-
-      <footer>
-        <button>VER PROMOCIONES</button>
-      </footer>
-
+        <!-- Botón -->
+        <footer>
+          <button class="btn btn-primary btn-lg">VER PROMOCIONES</button>
+        </footer>
+      </div>
     </section>
 
     <section id="seccion2" class="section second-section ">
 
-      <header>
-
-        <h2>El Cielo a Tu Medida</h2>
-        <p>Explorando la tecnología y el confort detrás de cada una de nuestras aeronaves.</p>
-
+      <header class="text-center mb-4">
+        <h2 class="fw-bold">El Cielo a Tu Medida</h2>
+        <p class="lead">Explorando la tecnología y el confort detrás de cada una de nuestras aeronaves.</p>
       </header>
-      <section class="section columnas_3">
-        <!--Avion 1-->
-        <article class="card">
-          <figure>
-            <img src="img/Aviones/Avion1.jpg" alt="Airbus A320">
-          </figure>
-          <header>
-            <h2>Airbus A320 <span class="badge badge-turista">Turista / Business</span></h2>
-          </header>
-          <section>
-            <p>Conecta con tu próximo destino de forma rápida y segura. El A320 combina puntualidad y confort para
-              vuelos cortos y medianos.</p>
 
-            <!-- Bloque expandible -->
-            <details>
-              <summary>Ver más</summary>
-              <dl>
-                <dt>Capacidad</dt>
-                <dd>Hasta 180 pasajeros.</dd>
-
-                <dt>Alcance</dt>
-                <dd>6,100 km para vuelos regionales.</dd>
-
-                <dt>Servicios</dt>
-                <dd>Cabina Turista y Business, entretenimiento a bordo.</dd>
-              </dl>
-            </details>
-          </section>
-
-        </article>
-
-
-        <!--Avion 2-->
-        <article class="card">
-          <figure>
-            <img src="img/Aviones/avion2.jpg" alt="Boeing 747">
-          </figure>
-          <header>
-            <h2>Boeing 747 <span class="badge badge-longhaul">Long Haul / Luxury</span></h2>
-          </header>
-          <section>
-            <p>El icónico Jumbo Jet: cuatro motores, doble cubierta y capacidad para largas distancias. Reconocido por
-              su confort y por conectar continentes durante décadas.</p>
-
-            <!-- Bloque expandible -->
-            <details>
-              <summary>Ver más</summary>
-              <dl>
-                <dt>Capacidad</dt>
-                <dd>Hasta 416 pasajeros en configuración típica.</dd>
-
-                <dt>Alcance</dt>
-                <dd>13,450 km para vuelos intercontinentales.</dd>
-
-                <dt>Servicios</dt>
-                <dd>Cabina Turista, Business y Primera Clase, con lujosos servicios a bordo.</dd>
-              </dl>
-            </details>
-          </section>
-
-        </article>
-
-        <!--Avion 3-->
-        <article class="card">
-          <figure>
-            <img src="img/aviones/Avion3.jpg" alt="National Jet Express">
-          </figure>
-          <header>
-            <h2>National Jet Express <span class="badge badge-regional">Regional / Ejecutiva</span></h2>
-          </header>
-          <section>
-            <p>Ágil y confiable en rutas regionales: ideal para conexiones rápidas y servicios ejecutivos con comodidad
-              y eficiencia.</p>
-
-            <!-- Bloque expandible -->
-            <details>
-              <summary>Ver más</summary>
-              <dl>
-                <dt>Capacidad</dt>
-                <dd>Entre 80 y 100 pasajeros, según configuración.</dd>
-
-                <dt>Alcance</dt>
-                <dd>2,500 km, ideal para vuelos regionales.</dd>
-
-                <dt>Servicios</dt>
-                <dd>Cabina Ejecutiva con asientos cómodos, catering ligero y puntualidad en rutas cortas.</dd>
-              </dl>
-            </details>
-          </section>
-
-        </article>
-
-        <!--Avion 4-->
-        <article class="card">
-          <figure>
-            <img src="img/aviones/Avion4.jpg" alt="Gulfstream G650ER">
-          </figure>
-          <header>
-            <h2>Gulfstream G650ER <span class="badge badge-private">Private Jet / Luxury</span></h2>
-          </header>
-          <section>
-            <p>El máximo referente en aviación privada: velocidad, alcance intercontinental y lujo incomparable para
-              viajes exclusivos.</p>
-
-            <!-- Bloque expandible -->
-            <details>
-              <summary>Ver más</summary>
-              <dl>
-                <dt>Capacidad</dt>
-                <dd>Hasta 19 pasajeros en configuración privada.</dd>
-
-                <dt>Alcance</dt>
-                <dd>13,890 km, ideal para vuelos intercontinentales sin escalas.</dd>
-
-                <dt>Servicios</dt>
-                <dd>Cabina de lujo con suites privadas, catering gourmet y conectividad avanzada.</dd>
-              </dl>
-            </details>
-          </section>
-
-        </article>
-
-        <!--Avion 5-->
-        <article class="card">
-          <figure>
-            <img src="img/aviones/Avion5.jpg" alt="Airbus Beluga">
-          </figure>
-          <header>
-            <h2>Airbus Beluga <span class="badge badge-cargo">Cargo / Industrial</span></h2>
-          </header>
-          <section>
-            <p>Especializado en cargas sobredimensionadas: soluciones logísticas para piezas industriales de gran
-              tamaño.</p>
-
-            <!-- Bloque expandible -->
-            <details>
-              <summary>Ver más</summary>
-              <dl>
-                <dt>Capacidad de carga</dt>
-                <dd>Hasta 47 toneladas de carga útil.</dd>
-
-                <dt>Dimensiones</dt>
-                <dd>Fuselaje sobredimensionado para piezas industriales y aeronáuticas.</dd>
-
-                <dt>Servicios</dt>
-                <dd>Transporte especializado de componentes de aviones y cargas voluminosas.</dd>
-              </dl>
-            </details>
-          </section>
-
-        </article>
-
-        <!--Avion 5-->
-        <article class="card">
-          <figure>
-            <img src="img/Aviones/Avion6.jpg" alt="Embraer E190 de KLM Cityhopper">
-          </figure>
-          <header>
-            <h2>Embraer E190 <span class="badge badge-turista">Turista / Business</span></h2>
-          </header>
-          <section>
-            <p>El Embraer E190 es un jet regional moderno, eficiente y cómodo, ideal para vuelos cortos y medianos en
-              Europa y América.</p>
-
-            <!-- Bloque expandible -->
-            <details>
-              <summary>Ver más</summary>
-              <dl>
-                <dt>Capacidad</dt>
-                <dd>Hasta 114 pasajeros.</dd>
-
-                <dt>Alcance</dt>
-                <dd>4,500 km, perfecto para rutas regionales.</dd>
-
-                <dt>Servicios</dt>
-                <dd>Cabina Turista y Business, entretenimiento a bordo, diseño silencioso y eficiente.</dd>
-              </dl>
-            </details>
-          </section>
-        </article>
-
-
-        <a href="https://open.spotify.com/intl-es/album/6T6i4ZLAwRHVOxRaQnC5js?si=1WAf89cCQtiH9E5IwDZGuQ"
-          target="_blank">
-          <button>Escuche su música preferida en sus vuelos en spotify</button>
-        </a>
-
-
-        </footer>
-
-      </section>
-
-
-      <section class="section third-section " id="seccion3">
-
-        <header>
-          <h2>Descubre tu proximo viaje ¡No te lo pierdas!</h2>
-          <p>Vuelos desde Lima</p>
-
-        </header>
-        <section class="section columnas_4">
-          <!--VIAJE A AREQUIPA-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos nacionales/Arequipa.jpg" alt="Arequipa, la ciudad blanca">
+              <img src="img/Aviones/Avion1.jpg" class="card-img-top" alt="Airbus A320">
             </figure>
-            <header>
-              <h2>Arequipa <span>/ Solo ida</span></h2>
-            </header>
-            <section>
-              <p>USD 52 PEN 175</p>
-            </section>
-            <section>
-              <p>Descubre la ciudad blanca y maravíllate con su arquitectura colonial, volcanes imponentes y tradición
-                única.</p>
-
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Airbus A320
+                <span class="badge bg-info text-dark">Turista / Business</span>
+              </h5>
+              <p class="card-text">
+                Conecta con tu próximo destino de forma rápida y segura. El A320 combina puntualidad y confort para
+                vuelos cortos y medianos.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
-                  <dt>Vuelos disponibles</dt>
-                  <dd>3 vuelos diarios desde Lima.</dd>
-
-                  <dt>Duración</dt>
-                  <dd>1 hora 30 minutos aproximadamente.</dd>
-
-                  <dt>Promoción</dt>
-                  <dd>Reserva ida y vuelta y obtén 10% de descuento.</dd>
+                  <dt>Capacidad</dt>
+                  <dd>Hasta 180 pasajeros.</dd>
+                  <dt>Alcance</dt>
+                  <dd>6,100 km para vuelos regionales.</dd>
+                  <dt>Servicios</dt>
+                  <dd>Cabina Turista y Business, entretenimiento a bordo.</dd>
                 </dl>
               </details>
-            </section>
-
+            </div>
           </article>
-          <!--VIAJE A CHICLAYO-->
-          <article class="card">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!--Avion 2-->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos nacionales/Chiclayo.jpg" alt="Chicalyo, la capital de la amistad">
+              <img src="img/Aviones/avion2.jpg" class="card-img-top" alt="Boeing 747">
             </figure>
-            <header>
-              <h2>Chiclayo <span> / Solo ida</span></h2>
-            </header>
-            <section>
-              <p>USD 43 PEN 155</p>
-            </section>
-            <section>
-              <p>Descubre la capital de la amistad y conecta con su calidez, gastronomía norteña y legado cultural
-                ancestral.</p>
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Boeing 747
+                <span class="badge bg-primary">Long Haul / Luxury</span>
+              </h5>
+              <p class="card-text">
+                El icónico Jumbo Jet: cuatro motores, doble cubierta y capacidad para largas distancias. Reconocido por
+                su confort y por conectar continentes durante décadas.
+              </p>
+              <details>
+                <summary>Ver más</summary>
+                <dl>
+                  <dt>Capacidad</dt>
+                  <dd>Hasta 416 pasajeros en configuración típica.</dd>
+                  <dt>Alcance</dt>
+                  <dd>13,450 km para vuelos intercontinentales.</dd>
+                  <dt>Servicios</dt>
+                  <dd>Cabina Turista, Business y Primera Clase, con lujosos servicios a bordo.</dd>
+                </dl>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Avión 3 -->
+          <article class="card h-100 shadow-sm">
+            <figure>
+              <img src="img/aviones/Avion3.jpg" class="card-img-top" alt="National Jet Express">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">
+                National Jet Express
+                <span class="badge bg-warning text-dark">Regional / Ejecutiva</span>
+              </h5>
+              <p class="card-text">
+                Ágil y confiable en rutas regionales: ideal para conexiones rápidas y servicios ejecutivos con comodidad
+                y eficiencia.
+              </p>
+              <details>
+                <summary>Ver más</summary>
+                <dl>
+                  <dt>Capacidad</dt>
+                  <dd>Entre 80 y 100 pasajeros, según configuración.</dd>
+                  <dt>Alcance</dt>
+                  <dd>2,500 km, ideal para vuelos regionales.</dd>
+                  <dt>Servicios</dt>
+                  <dd>Cabina Ejecutiva con asientos cómodos, catering ligero y puntualidad en rutas cortas.</dd>
+                </dl>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Avión 4 -->
+          <article class="card h-100 shadow-sm">
+            <figure>
+              <img src="img/aviones/Avion4.jpg" class="card-img-top" alt="Gulfstream G650ER">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">
+                Gulfstream G650ER
+                <span class="badge bg-dark">Private Jet / Luxury</span>
+              </h5>
+              <p class="card-text">
+                El máximo referente en aviación privada: velocidad, alcance intercontinental y lujo incomparable para
+                viajes exclusivos.
+              </p>
+              <details>
+                <summary>Ver más</summary>
+                <dl>
+                  <dt>Capacidad</dt>
+                  <dd>Hasta 19 pasajeros en configuración privada.</dd>
+                  <dt>Alcance</dt>
+                  <dd>13,890 km, ideal para vuelos intercontinentales sin escalas.</dd>
+                  <dt>Servicios</dt>
+                  <dd>Cabina de lujo con suites privadas, catering gourmet y conectividad avanzada.</dd>
+                </dl>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Avión 5 -->
+          <article class="card h-100 shadow-sm">
+            <figure>
+              <img src="img/aviones/Avion5.jpg" class="card-img-top" alt="Airbus Beluga">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">
+                Airbus Beluga
+                <span class="badge bg-secondary">Cargo / Industrial</span>
+              </h5>
+              <p class="card-text">
+                Especializado en cargas sobredimensionadas: soluciones logísticas para piezas industriales de gran
+                tamaño.
+              </p>
+              <details>
+                <summary>Ver más</summary>
+                <dl>
+                  <dt>Capacidad de carga</dt>
+                  <dd>Hasta 47 toneladas de carga útil.</dd>
+                  <dt>Dimensiones</dt>
+                  <dd>Fuselaje sobredimensionado para piezas industriales y aeronáuticas.</dd>
+                  <dt>Servicios</dt>
+                  <dd>Transporte especializado de componentes de aviones y cargas voluminosas.</dd>
+                </dl>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Avión 6 -->
+          <article class="card h-100 shadow-sm">
+            <figure>
+              <img src="img/Aviones/Avion6.jpg" class="card-img-top" alt="Embraer E190 de KLM Cityhopper">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">
+                Embraer E190
+                <span class="badge bg-info text-dark">Turista / Business</span>
+              </h5>
+              <p class="card-text">
+                El Embraer E190 es un jet regional moderno, eficiente y cómodo, ideal para vuelos cortos y medianos en
+                Europa y América.
+              </p>
+              <details>
+                <summary>Ver más</summary>
+                <dl>
+                  <dt>Capacidad</dt>
+                  <dd>Hasta 114 pasajeros.</dd>
+                  <dt>Alcance</dt>
+                  <dd>4,500 km, perfecto para rutas regionales.</dd>
+                  <dt>Servicios</dt>
+                  <dd>Cabina Turista y Business, entretenimiento a bordo, diseño silencioso y eficiente.</dd>
+                </dl>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <footer class="text-center py-4 bg-dark">
+        <a href="https://open.spotify.com/intl-es/album/6T6i4ZLAwRHVOxRaQnC5js?si=1WAf89cCQtiH9E5IwDZGuQ"
+          target="_blank" class="btn btn-success btn-lg">
+          🎵 Escuche su música en Spotify
+        </a>
+      </footer>
+
+      <section class="section third-section" id="seccion3">
+        <header class="text-center mb-4">
+          <h2 class="fw-bold">Descubre tu próximo viaje ¡No te lo pierdas!</h2>
+          <p class="lead">Vuelos desde Lima</p>
+        </header>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <!-- Destino: Arequipa -->
+            <article class="card h-100 shadow-sm">
+              <figure>
+                <img src="img/Destinos nacionales/Arequipa.jpg" class="card-img-top" alt="Arequipa, la ciudad blanca">
+              </figure>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Arequipa <span class="badge bg-info text-dark">Solo ida</span>
+                </h5>
+                <p class="card-text fw-bold">USD 52 / PEN 175</p>
+                <p class="card-text">
+                  Descubre la ciudad blanca y maravíllate con su arquitectura colonial, volcanes imponentes y tradición
+                  única.
+                </p>
+                <details>
+                  <summary>Ver más</summary>
+                  <dl>
+                    <dt>Vuelos disponibles</dt>
+                    <dd>3 vuelos diarios desde Lima.</dd>
+                    <dt>Duración</dt>
+                    <dd>1 hora 30 minutos aproximadamente.</dd>
+                    <dt>Promoción</dt>
+                    <dd>Reserva ida y vuelta y obtén 10% de descuento.</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Destino: Chiclayo -->
+          <article class="card h-100 shadow-sm">
+            <figure>
+              <img src="img/Destinos nacionales/Chiclayo.jpg" class="card-img-top"
+                alt="Chiclayo, la capital de la amistad">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">
+                Chiclayo <span class="badge bg-success">Solo ida</span>
+              </h5>
+              <p class="card-text fw-bold">USD 43 / PEN 155</p>
+              <p class="card-text">
+                Descubre la capital de la amistad y conecta con su calidez, gastronomía norteña y legado cultural
+                ancestral.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Vuelos disponibles</dt>
                   <dd>2 vuelos diarios desde Lima.</dd>
-
                   <dt>Duración</dt>
                   <dd>1 hora 20 minutos aproximadamente.</dd>
-
                   <dt>Promoción</dt>
                   <dd>Reserva ida y vuelta y obtén 15% de descuento en gastronomía local.</dd>
                 </dl>
               </details>
-            </section>
+            </div>
           </article>
+        </div>
+      </div>
 
-          <!--VIAJE A CUSCO-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Destino: Cusco -->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos nacionales/Cusco.jpg" alt="Cusco, la ciudad imperial">
+              <img src="img/Destinos nacionales/Cusco.jpg" class="card-img-top" alt="Cusco, la ciudad imperial">
             </figure>
-            <header>
-              <h2>Cusco <span>/ Solo ida</span></h2>
-            </header>
-            <section>
-              <p>USD 60 PEN 200</p>
-            </section>
-            <section>
-              <p>Descubre la ciudad imperial y conecta con la historia viva del Perú. Cusco te espera con cultura,
-                tradición y paisajes únicos.</p>
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Cusco <span class="badge bg-danger">Solo ida</span>
+              </h5>
+              <p class="card-text fw-bold">USD 60 / PEN 200</p>
+              <p class="card-text">
+                Descubre la ciudad imperial y conecta con la historia viva del Perú. Cusco te espera con cultura,
+                tradición y paisajes únicos.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Vuelos disponibles</dt>
                   <dd>5 vuelos diarios desde Lima.</dd>
-
                   <dt>Duración</dt>
                   <dd>1 hora 15 minutos aproximadamente.</dd>
-
                   <dt>Promoción</dt>
                   <dd>Reserva ida y vuelta y obtén 20% de descuento en tours locales.</dd>
                 </dl>
               </details>
-            </section>
+            </div>
           </article>
+        </div>
+      </div>
 
-          <!--VIAJE A PIURA-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Destino: Piura -->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos nacionales/Piura.jpg" alt="Piura, la ciudad del eterno sol">
+              <img src="img/Destinos nacionales/Piura.jpg" class="card-img-top" alt="Piura, la ciudad del eterno sol">
             </figure>
-            <header>
-              <h2>Piura <span>/ Solo ida</span></h2>
-            </header>
-            <section>
-              <p>USD 48 PEN 165</p>
-            </section>
-            <section>
-              <p>Descubre la ciudad del eterno sol y disfruta de sus playas, su gastronomía norteña y la calidez de su
-                gente.</p>
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Piura <span class="badge bg-warning text-dark">Solo ida</span>
+              </h5>
+              <p class="card-text fw-bold">USD 48 / PEN 165</p>
+              <p class="card-text">
+                Descubre la ciudad del eterno sol y disfruta de sus playas, su gastronomía norteña y la calidez de su
+                gente.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Vuelos disponibles</dt>
                   <dd>3 vuelos diarios desde Lima.</dd>
-
                   <dt>Duración</dt>
                   <dd>1 hora 40 minutos aproximadamente.</dd>
-
                   <dt>Promoción</dt>
                   <dd>Reserva ida y vuelta y obtén 10% de descuento en paquetes turísticos a Máncora.</dd>
                 </dl>
               </details>
-            </section>
+            </div>
           </article>
+        </div>
+      </div>
 
-          <!--VIAJE A TARAPOTO-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Destino: Tarapoto -->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos nacionales/Tarapoto.jpg" alt="Tarapoto, la ciudad de las palmeras">
+              <img src="img/Destinos nacionales/Tarapoto.jpg" class="card-img-top"
+                alt="Tarapoto, la ciudad de las palmeras">
             </figure>
-            <header>
-              <h2>Tarapoto <span>/ Solo ida</span></h2>
-            </header>
-            <section>
-              <p>USD 50 PEN 170</p>
-            </section>
-            <section>
-              <p>Descubre la ciudad de las palmeras y disfruta de su naturaleza amazónica, cascadas impresionantes y
-                clima
-                cálido todo el año.</p>
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Tarapoto <span class="badge bg-success">Solo ida</span>
+              </h5>
+              <p class="card-text fw-bold">USD 50 / PEN 170</p>
+              <p class="card-text">
+                Descubre la ciudad de las palmeras y disfruta de su naturaleza amazónica, cascadas impresionantes y
+                clima cálido todo el año.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Vuelos disponibles</dt>
                   <dd>4 vuelos diarios desde Lima.</dd>
-
                   <dt>Duración</dt>
                   <dd>1 hora 25 minutos aproximadamente.</dd>
-
                   <dt>Promoción</dt>
                   <dd>Reserva ida y vuelta y obtén 12% de descuento en tours a las cataratas de Ahuashiyacu.</dd>
                 </dl>
               </details>
-            </section>
+            </div>
           </article>
+        </div>
+      </div>
 
-          <!--VIAJE A TRUJILLO-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Destino: Trujillo -->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos nacionales/Trujillo.jpg" alt="Trujillo, la ciudad de la eterna primavera">
+              <img src="img/Destinos nacionales/Trujillo.jpg" class="card-img-top"
+                alt="Trujillo, la ciudad de la eterna primavera">
             </figure>
-            <header>
-              <h2>Trujillo <span>/ Solo ida</span></h2>
-            </header>
-            <section>
-              <p>USD 47 PEN 160</p>
-            </section>
-            <section>
-              <p>Descubre la ciudad de la eterna primavera y disfruta de sus playas, su historia colonial y la alegría
-                de
-                sus festivales.</p>
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Trujillo <span class="badge bg-primary">Solo ida</span>
+              </h5>
+              <p class="card-text fw-bold">USD 47 / PEN 160</p>
+              <p class="card-text">
+                Descubre la ciudad de la eterna primavera y disfruta de sus playas, su historia colonial y la alegría de
+                sus festivales.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Vuelos disponibles</dt>
                   <dd>3 vuelos diarios desde Lima.</dd>
-
                   <dt>Duración</dt>
                   <dd>1 hora 10 minutos aproximadamente.</dd>
-
                   <dt>Promoción</dt>
                   <dd>Reserva ida y vuelta y obtén 10% de descuento en visitas guiadas a Chan Chan.</dd>
                 </dl>
               </details>
-            </section>
-
+            </div>
           </article>
+        </div>
+      </div>
 
-          <!--VIAJE A AREQUIPA PROMO-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Destino: Arequipa Promo -->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos nacionales/Arequipa2.jpg" alt="Arequipa, la ciudad blanca">
+              <img src="img/Destinos nacionales/Arequipa2.jpg" class="card-img-top" alt="Arequipa, la ciudad blanca">
             </figure>
-            <header>
-              <h2>Arequipa <span>/ Ida y vuelta</span></h2>
-            </header>
-            <section>
-              <p>USD 95 PEN 320</p>
-            </section>
-            <section>
-              <p>Descubre la ciudad blanca y disfruta de su historia, volcanes y gastronomía única.</p>
-            </section>
-            <section>
-              <p>✨ Promo especial: tarifas ida y vuelta con impuestos incluidos.</p>
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Arequipa <span class="badge bg-secondary">Ida y vuelta</span>
+              </h5>
+              <p class="card-text fw-bold">USD 95 / PEN 320</p>
+              <p class="card-text">
+                Descubre la ciudad blanca y disfruta de su historia, volcanes y gastronomía única.
+              </p>
+              <p class="card-text text-success">
+                ✨ Promo especial: tarifas ida y vuelta con impuestos incluidos.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Vuelos disponibles</dt>
                   <dd>Salidas diarias desde Lima.</dd>
-
                   <dt>Duración</dt>
                   <dd>1 hora 30 minutos aproximadamente, vuelo directo.</dd>
-
                   <dt>Promoción</dt>
                   <dd>Tarifas ida y vuelta con impuestos incluidos.</dd>
-
                   <dt>Opciones adicionales</dt>
                   <dd>City tour por el centro histórico, visita al Mirador de Yanahuara y excursión al Cañón del Colca.
                   </dd>
                 </dl>
               </details>
-            </section>
+            </div>
           </article>
+        </div>
+      </div>
 
-          <!--VIAJE A MADRID-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Destino: Madrid -->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos internacionales/Madrid.jpg" alt="Madrid, la capital de España">
+              <img src="img/Destinos internacionales/Madrid.jpg" class="card-img-top"
+                alt="Madrid, la capital de España">
             </figure>
-            <header>
-              <h2>Madrid <span>/ Ida y vuelta</span></h2>
-            </header>
-            <section>
-              <p>USD 850 PEN 3,000</p>
-            </section>
-            <section>
-              <p>Descubre la vibrante capital española con su historia, cultura y vida nocturna. Madrid te espera con
-                experiencias únicas en cada rincón.</p>
-            </section>
-            <section>
-              <p>✨ Promo especial: incluye equipaje y selección de asiento en clase turista.</p>
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Madrid <span class="badge bg-danger">Ida y vuelta</span>
+              </h5>
+              <p class="card-text fw-bold">USD 850 / PEN 3,000</p>
+              <p class="card-text">
+                Descubre la vibrante capital española con su historia, cultura y vida nocturna. Madrid te espera con
+                experiencias únicas en cada rincón.
+              </p>
+              <p class="card-text text-success">
+                ✨ Promo especial: incluye equipaje y selección de asiento en clase turista.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Vuelos disponibles</dt>
                   <dd>3 vuelos semanales desde Lima.</dd>
-
                   <dt>Duración</dt>
                   <dd>12 horas aproximadamente, vuelo directo.</dd>
-
                   <dt>Promoción</dt>
                   <dd>Incluye equipaje y selección de asiento en clase turista.</dd>
-
                   <dt>Opciones adicionales</dt>
                   <dd>Tour por el Palacio Real, visita al Museo del Prado y excursión a Toledo.</dd>
                 </dl>
               </details>
-            </section>
+            </div>
           </article>
+        </div>
+      </div>
 
-          <!--VIAJE A MIAMI-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Destino: Miami -->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos internacionales/Miami.jpg" alt="Miami, la ciudad del sol">
+              <img src="img/Destinos internacionales/Miami.jpg" class="card-img-top" alt="Miami, la ciudad del sol">
             </figure>
-            <header>
-              <h2>Miami <span>/ Ida y vuelta</span></h2>
-            </header>
-            <section>
-              <p>USD 720 PEN 2,550</p>
-            </section>
-            <section>
-              <p>Descubre la ciudad del sol y disfruta de sus playas, su ambiente multicultural y la energía vibrante de
-                la vida nocturna.</p>
-
-            </section>
-            <section>
-              <p>✨ Oferta especial: incluye equipaje y traslado al hotel en paquetes seleccionados.</p>
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Miami <span class="badge bg-warning text-dark">Ida y vuelta</span>
+              </h5>
+              <p class="card-text fw-bold">USD 720 / PEN 2,550</p>
+              <p class="card-text">
+                Descubre la ciudad del sol y disfruta de sus playas, su ambiente multicultural y la energía vibrante de
+                la vida nocturna.
+              </p>
+              <p class="card-text text-success">
+                ✨ Oferta especial: incluye equipaje y traslado al hotel en paquetes seleccionados.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Vuelos disponibles</dt>
                   <dd>4 vuelos semanales desde Lima.</dd>
-
                   <dt>Duración</dt>
                   <dd>6 horas aproximadamente, vuelo directo.</dd>
-
                   <dt>Promoción</dt>
                   <dd>Incluye equipaje y traslado al hotel en paquetes seleccionados.</dd>
                 </dl>
               </details>
-            </section>
-
+            </div>
           </article>
+        </div>
+      </div>
 
-          <!--VIAJE A PUNTA CANA-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Destino: Punta Cana -->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos internacionales/Punta Cana.jpg" alt="Punta Cana, el paraíso caribeño">
+              <img src="img/Destinos internacionales/Punta Cana.jpg" class="card-img-top"
+                alt="Punta Cana, el paraíso caribeño">
             </figure>
-            <header>
-              <h2>Punta Cana <span>/ Ida y vuelta</span></h2>
-            </header>
-            <section>
-              <p>USD 680 PEN 2,400</p>
-            </section>
-            <section>
-              <p>Descubre el paraíso caribeño y relájate en playas de arena blanca, aguas turquesa y resorts todo
-                incluido.</p>
-            </section>
-            <section>
-              <p>✨ Oferta especial: paquetes con alojamiento y traslados incluidos.</p>
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Punta Cana <span class="badge bg-info text-dark">Ida y vuelta</span>
+              </h5>
+              <p class="card-text fw-bold">USD 680 / PEN 2,400</p>
+              <p class="card-text">
+                Descubre el paraíso caribeño y relájate en playas de arena blanca, aguas turquesa y resorts todo
+                incluido.
+              </p>
+              <p class="card-text text-success">
+                ✨ Oferta especial: paquetes con alojamiento y traslados incluidos.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Vuelos disponibles</dt>
                   <dd>3 vuelos semanales desde Lima.</dd>
-
                   <dt>Duración</dt>
                   <dd>7 horas aproximadamente, vuelo directo.</dd>
-
                   <dt>Promoción</dt>
                   <dd>Paquetes con alojamiento y traslados incluidos.</dd>
                 </dl>
               </details>
-            </section>
-
+            </div>
           </article>
+        </div>
+      </div>
 
-          <!--PAQUETE BUENOS AIRES-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Paquete: Buenos Aires -->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos internacionales/Buenos Aires.jpg" alt="Buenos Aires, la ciudad del tango">
+              <img src="img/Destinos internacionales/Buenos Aires.jpg" class="card-img-top"
+                alt="Buenos Aires, la ciudad del tango">
             </figure>
-            <header>
-              <h2>Buenos Aires <span>/ Paquete completo</span></h2>
-            </header>
-            <section>
-              <p>USD 950 PEN 3,350</p>
-            </section>
-            <!--LAS LISTAS MEJORADAS-->
-            <section>
-              <p>Descubre la ciudad del tango y disfruta de su arquitectura europea, gastronomía única y vida cultural
-                vibrante.</p>
-            </section>
-            <section>
-              <p>✨ Incluye vuelos ida y vuelta, 4 noches de alojamiento y traslados al hotel.</p>
-            </section>
-            <section>
-              <p>Opciones adicionales: excursión a Tigre, city tour por barrios históricos y cena-show de tango.</p>
-              <!-- Bloque expandible -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Buenos Aires <span class="badge bg-secondary">Paquete completo</span>
+              </h5>
+              <p class="card-text fw-bold">USD 950 / PEN 3,350</p>
+              <p class="card-text">
+                Descubre la ciudad del tango y disfruta de su arquitectura europea, gastronomía única y vida cultural
+                vibrante.
+              </p>
+              <p class="card-text text-success">
+                ✨ Incluye vuelos ida y vuelta, 4 noches de alojamiento y traslados al hotel.
+              </p>
+              <p class="card-text">
+                Opciones adicionales: excursión a Tigre, city tour por barrios históricos y cena-show de tango.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Incluye</dt>
                   <dd>Vuelos ida y vuelta, 4 noches de alojamiento y traslados al hotel.</dd>
-
                   <dt>Opciones adicionales</dt>
                   <dd>Excursión a Tigre, city tour por barrios históricos y cena-show de tango.</dd>
-
                   <dt>Duración del paquete</dt>
                   <dd>5 días / 4 noches.</dd>
-
                   <dt>Promo especial</dt>
                   <dd>Tarifas con impuestos incluidos y descuentos en tours locales.</dd>
                 </dl>
               </details>
-            </section>
+            </div>
           </article>
+        </div>
+      </div>
 
-          <!--PAQUETE SANTIAGO DE CHILE-->
-          <article class="card">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Paquete: Santiago de Chile -->
+          <article class="card h-100 shadow-sm">
             <figure>
-              <img src="img/Destinos internacionales/Santiago.jpg" alt="Santiago de Chile, ciudad entre montañas">
+              <img src="img/Destinos internacionales/Santiago.jpg" class="card-img-top"
+                alt="Santiago de Chile, ciudad entre montañas">
             </figure>
-            <header>
-              <h2>Santiago de Chile <span>/ Paquete completo</span></h2>
-            </header>
-            <section>
-              <p>USD 720 PEN 2,550</p>
-            </section>
-            <section>
-              <p>Explora la capital chilena, rodeada de la majestuosa cordillera de los Andes y con una vida cultural
-                vibrante.</p>
-            </section>
-            <section>
-              <p>✨ Promo especial: incluye vuelos ida y vuelta, 3 noches de alojamiento y desayuno diario.</p>
-            </section>
-            <section>
-              <p>Opciones adicionales: visita a Viña del Mar y Valparaíso, tour por viñedos y excursión a la cordillera.
+            <div class="card-body">
+              <h5 class="card-title">
+                Santiago de Chile <span class="badge bg-secondary">Paquete completo</span>
+              </h5>
+              <p class="card-text fw-bold">USD 720 / PEN 2,550</p>
+              <p class="card-text">
+                Explora la capital chilena, rodeada de la majestuosa cordillera de los Andes y con una vida cultural
+                vibrante.
               </p>
-              <!-- Bloque expandible -->
+              <p class="card-text text-success">
+                ✨ Promo especial: incluye vuelos ida y vuelta, 3 noches de alojamiento y desayuno diario.
+              </p>
+              <p class="card-text">
+                Opciones adicionales: visita a Viña del Mar y Valparaíso, tour por viñedos y excursión a la cordillera.
+              </p>
               <details>
                 <summary>Ver más</summary>
                 <dl>
                   <dt>Vuelos disponibles</dt>
                   <dd>5 vuelos semanales desde Lima.</dd>
-
                   <dt>Duración</dt>
                   <dd>3 horas 30 minutos aproximadamente, vuelo directo.</dd>
-
                   <dt>Promoción</dt>
                   <dd>Incluye vuelos ida y vuelta, 3 noches de alojamiento y desayuno diario.</dd>
-
                   <dt>Opciones adicionales</dt>
                   <dd>Visita a Viña del Mar y Valparaíso, tour por viñedos y excursión a la cordillera.</dd>
                 </dl>
               </details>
-            </section>
-
+            </div>
           </article>
+        </div>
+      </div>
+      </article>
 
 
-        </section>
-        <footer>
-
-          <p> Nuestra flota de aviones está diseñada para ofrecer una experiencia de viaje excepcional
-
-          </p>
-          <button>Terminos y condiciones generales</button>
-
-        </footer>
-
-
-      </section>
+    </section>
+    <footer class="bg-dark text-light text-center py-4 mt-5">
+      <p class="mb-3">
+        Nuestra flota de aviones está diseñada para ofrecer una experiencia de viaje excepcional
+      </p>
+      <a href="#" class="btn btn-outline-light btn-lg">
+        Términos y condiciones generales
+      </a>
+    </footer>
+    </section>
 
 
-      <section id="seccion4" class="section fourth-section">
-        <h2>Reserva tu viaje</h2>
-        <form action="#" method="post">
+    <section id="seccion4" class="section fourth-section">
+      <h2 class="text-center mb-4">Reserva tu viaje</h2>
+      <form action="#" method="post" class="container">
 
-          <label for="nombre">Nombre completo:</label>
-          <input type="text" id="nombre" name="nombre" required>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" required>
+        </div>
 
-          <label for="edad">Edad:</label>
-          <input type="number" id="edad" name="edad" min="0" required>
+        <div class="mb-3">
+          <label for="edad" class="form-label">Edad:</label>
+          <input type="number" id="edad" name="edad" class="form-control" min="0" required>
+        </div>
 
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
 
-          <label for="dni">DNI:</label>
-          <input type="text" id="dni" name="dni" maxlength="8" required>
+        <div class="mb-3">
+          <label for="dni" class="form-label">DNI:</label>
+          <input type="text" id="dni" name="dni" class="form-control" maxlength="8" required>
+        </div>
 
-
-          <label for="destino">Destino:</label>
-          <select id="destino" name="destino" required>
+        <div class="mb-3">
+          <label for="destino" class="form-label">Destino:</label>
+          <select id="destino" name="destino" class="form-select" required>
             <option value="">Seleccione una opción</option>
             <option value="nacional">Nacional</option>
             <option value="internacional">Internacional</option>
           </select>
+        </div>
 
-          <label for="cabina">Cabina:</label>
-          <select id="cabina" name="cabina" required>
+        <div class="mb-3">
+          <label for="cabina" class="form-label">Cabina:</label>
+          <select id="cabina" name="cabina" class="form-select" required>
             <option value="">Seleccione una opción</option>
             <option value="economy">Economy</option>
             <option value="premium-economy">Premium Economy</option>
             <option value="premium-business">Premium Business</option>
           </select>
+        </div>
 
-          <label for="genero">Género:</label>
-          <select id="genero" name="genero" required>
+        <div class="mb-3">
+          <label for="genero" class="form-label">Género:</label>
+          <select id="genero" name="genero" class="form-select" required>
             <option value="">Seleccione una opción</option>
             <option value="masculino">Masculino</option>
             <option value="femenino">Femenino</option>
             <option value="especial">Marxista</option>
-            <option value="raro">therian</option>
+            <option value="raro">Therian</option>
           </select>
+        </div>
 
-          <button type="submit">Reservar</button>
-        </form>
-
-      </section>
-
+        <button type="submit" class="btn btn-primary w-100">Reservar</button>
+      </form>
+    </section>
 
   </main>
 
-  <footer id="footer">
+  <footer id="footer" class="bg-dark text-light pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Primera sección -->
+        <div class="col-md-4 mb-3">
+          <h3 class="h5">SKY Airlines</h3>
+          <p>Todo sobre la aerolínea y servicios</p>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Inicio</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Acerca de SKY</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Experiencia SKY</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Prepara tu viaje</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Mis viajes</a></li>
+          </ul>
+        </div>
 
-    <section class="card columnas_4">
+        <!-- Segunda sección -->
+        <div class="col-md-4 mb-3">
+          <h3 class="h5">Información legal</h3>
+          <p class="text-muted">Documentos y políticas que te protegen</p>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Términos y condiciones</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contrato de transporte</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Política de privacidad</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Plan de accesibilidad</a></li>
+          </ul>
+        </div>
 
-      <!--primera SECCION-->
-      <section>
-        <h3>SKY Airlines</h3>
-        <p>Todo sobre la aerolínea y servicios</p>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de SKY</a></li>
-          <li><a href="#">Experiencia SKY</a></li>
-          <li><a href="#">Prepara tu viaje</a></li>
-          <li><a href="#">Mis viajes</a></li>
+        <!-- Tercera sección -->
+        <div class="col-md-4 mb-3">
+          <h3 class="h5">Portales y servicios</h3>
+          <p class="text-muted">Servicios asociados y soluciones corporativas</p>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">SKY Cargo</a></li>
+            <li><a href="#" class="text-light text-decoration-none">SKY Courier</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Convenciones</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Programa corporativo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cuarta sección (contacto, certificaciones y apps) -->
+      <div class="col-md-3 mb-3">
+        <h3 class="h5">Contacta con nosotros</h3>
+        <p class="text-muted">Síguenos en redes</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#"><img src="img/Logos/facebook.png" alt="Facebook" class="icon"></a>
+          </li>
+          <li class="list-inline-item"><a href="#"><img src="img/Logos/instagram.png" alt="Instagram" class="icon"></a>
+          </li>
+          <li class="list-inline-item"><a href="#"><img src="img/Logos/Tiktok.png" alt="TikTok" class="icon"></a></li>
+          <li class="list-inline-item"><a href="#"><img src="img/Logos/X.png" alt="X" class="icon"></a></li>
         </ul>
-      </section>
-      <!--Segunda SECCION-->
-      <section class="col" aria-labelledby="col-legal">
-        <h3 id="col-legal">Información legal</h3>
-        <p class="muted">Documentos y políticas que te protegen</p>
-        <ul>
-          <li><a href="#">Términos y condiciones</a></li>
-          <li><a href="#">Contrato de transporte</a></li>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Plan de accesibilidad</a></li>
+
+        <h4 class="h6 mt-3">Certificaciones</h4>
+        <ul class="list-inline">
+          <li class="list-inline-item"><img src="img/APEX.png" alt="APEX" class="icon"></li>
+          <li class="list-inline-item"><img src="img/Logos/Onboard.png" alt="Onboard" class="icon"></li>
+          <li class="list-inline-item"><img src="img/Logos/Skytrax.png" alt="Skytrax" class="icon"></li>
         </ul>
-      </section>
-      <!--tercera SECCION-->
-      <section class="col" aria-labelledby="col-servicios">
-        <h3 id="col-servicios">Portales y servicios</h3>
-        <p class="muted">Servicios asociados y soluciones corporativas</p>
-        <ul>
-          <li><a href="#">SKY Cargo</a></li>
-          <li><a href="#">SKY Courier</a></li>
-          <li><a href="#">Convenciones</a></li>
-          <li><a href="#">Programa corporativo</a></li>
+
+        <h4 class="h6 mt-3">Nuestra app en tu teléfono</h4>
+        <p class="text-muted">Descárgala y gestiona tu viaje</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#"><img src="img/Logos/GooglePlay.png" alt="Google Play"
+                class="icon"></a></li>
+          <li class="list-inline-item"><a href="#"><img src="img/Logos/AppStore.png" alt="App Store" class="icon"></a>
+          </li>
         </ul>
-      </section>
+      </div>
+    </div>
 
-
-      <section>
-
-        <!--PRIMERA SUB SECCION-->
-        <nav class="section" aria-label="Enlaces del pie de página">
-          <aside class="col contact" aria-labelledby="col-contacto">
-            <h3 id="col-contacto">Contacta con nosotros</h3>
-            <p class="muted">Síguenos en redes</p>
-            <ul>
-              <li><a href="#" aria-label="Facebook"><img src="img/Logos/facebook.png" alt="Facebook" class="icon"></a>
-              </li>
-              <li><a href="#" aria-label="Instagram"><img src="img/Logos/instagram.png" alt="Instagram"
-                    class="icon"></a>
-              </li>
-              <li><a href="#" aria-label="TikTok"><img src="img/Logos/Tiktok.png" alt="TikTok" class="icon"></a></li>
-              <li><a href="#" aria-label="X"><img src="img/Logos/X.png" alt="X" class="icon"></a></li>
-            </ul>
-          </aside>
-        </nav>
-
-        <!--SEGUNDA SUB SECCION-->
-        <nav class="section" aria-label="Certificaciones">
-          <section aria-labelledby="certs-title">
-            <h4 id="certs-title">Certificaciones</h4>
-            <ul role="list">
-              <li><img src="img/APEX.png" alt="APEX" class="icon"></li>
-              <li><img src="img/Logos/Onboard.png" alt="Onboard" class="icon"></li>
-              <li><img src="img/Logos/Skytrax.png" alt="Skytrax" class="icon"></li>
-            </ul>
-          </section>
-        </nav>
-
-        <!--TERCERA SUB SECCION-->
-        <nav class="section" aria-label="Aplicaciones móviles">
-          <section class="apps" aria-labelledby="apps-title">
-            <h4 id="apps-title">Nuestra app en tu teléfono</h4>
-            <p class="muted">Descárgala y gestiona tu viaje</p>
-            <ul class="app-list" role="list">
-              <li><a href="#"><img src="img/Logos/GooglePlay.png" alt="Google Play" class="icon"></a></li>
-              <li><a href="#"><img src="img/Logos/AppStore.png" alt="App Store" class="icon"></a></li>
-            </ul>
-          </section>
-        </nav>
-      </section>
-
-
-    </section>
-
+    <!-- Línea inferior -->
+    <div class="text-center mt-4">
+      <small class="text-muted">© 2026 SKY Airlines - Todos los derechos reservados</small>
+    </div>
+    </div>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
