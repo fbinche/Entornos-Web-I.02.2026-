@@ -305,8 +305,8 @@ footer p{
 /* estilos para la sección del footer que divide en dos columnas*/
 .footer > .section{
     padding-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+/*    display: grid;
+    grid-template-columns: repeat(2, 1fr);  */
 }
 
 /* estilos para bajar el nav del footer*/
