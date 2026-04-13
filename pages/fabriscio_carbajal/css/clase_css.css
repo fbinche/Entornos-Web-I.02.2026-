@@ -41,6 +41,7 @@ body {
 nav ul:first-child{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     list-style: none;
     background-color: rgb(255, 0, 0);
 }
@@ -473,7 +474,10 @@ footer p > a[href="#categorias"]:hover {
     position: sticky;
     top:0;
     z-index: 1; /* lo posiciona por encima de otros elementos */
+    border: 5px solid black;
 }
+
+
 /* color blanco */
 .white {
     color: rgb(255, 255, 255);
@@ -481,11 +485,20 @@ footer p > a[href="#categorias"]:hover {
     font-size: medium;
 }
 
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
 
-
-
-
-
+.division_principal {
+    width: 100%;
+    height: 5rem;
+    background-color: #b6113a77;
+    border: solid rgba(63, 63, 63, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em #412e3e1a, inset 0 0.125em 0.5em #1c1a1a26;
+}
  /** NOTA ACTUAL : 14
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
