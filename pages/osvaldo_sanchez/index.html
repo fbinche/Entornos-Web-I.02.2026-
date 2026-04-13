@@ -13,7 +13,131 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-
+ <style>
+        :root {
+            --primary-f1: #FF1D27;
+            --secondary-f1: #1E3A8A;
+            --accent-f1: #FFD700;
+            --dark-f1: #0F1419;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0C0C0C 0%, #1A1A2E 50%, #16213E 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1.5" fill="white" opacity="0.05"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .f1-title {
+            font-family: 'Orbitron', monospace;
+            background: linear-gradient(45deg, var(--primary-f1), var(--accent-f1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 29, 39, 0.5);
+        }
+        
+        .card-f1 {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .card-f1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-f1), var(--accent-f1));
+        }
+        
+        .card-f1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 29, 39, 0.3);
+            border-color: var(--primary-f1);
+        }
+        
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .card-f1:hover .card-img-top {
+            transform: scale(1.05);
+        }
+        
+        .btn-f1 {
+            background: linear-gradient(45deg, var(--primary-f1), var(--accent-f1));
+            border: none;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-f1:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 29, 39, 0.4);
+            color: #fff !important;
+        }
+        
+        .navbar-f1 {
+            background: rgba(15, 20, 25, 0.95) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .section-title {
+            font-family: 'Orbitron', monospace;
+            background: linear-gradient(45deg, #fff, var(--accent-f1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-f1), var(--accent-f1));
+            border-radius: 2px;
+        }
+        
+        .form-f1 {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+        }
+        
+        .news-card {
+            background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+        }
+    </style>
    
     <!-- Bootstrap -->
     
@@ -22,7 +146,6 @@
 
 
 <body>
-<<<<<<< HEAD
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold fs-3" href="#">Formula F1 SG</a>
@@ -57,48 +180,6 @@
     </nav>
 
     <main class="container my-4">
-=======
-    <header class="header">
-
-        <h1>formula f1 SG</h1>
-
-        <nav aria-label="Servicios principales">
-
-            <ul class="menu-servicios">
-
-                <li>
-                    <a href="#seccion1">
-                        <span class="icon" aria-hidden="true">🧾</span>
-                        <span>Pilotos Profesionales PERU</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#seccion2">
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Seccion 2</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#noticias_actuales">
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Noticias</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#seccion4">
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Seccion 4</span>
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-    </header>
-
-    <main class="main">
->>>>>>> b5c7b1e4feaaa30889289ffddf417d98b0f84686
 
         <!--PILOTOS PROFESIONALES-->
         <section id="seccion1" class="section hero first-section">
