@@ -257,38 +257,7 @@
 
             </tr>
 
-            <tr>
-
-                <td>
-                    <img src="https://images.unsplash.com/photo-1520256862855-398228c41684" width="200">
-                    <br><b>Zapatillas Fitness Max</b>
-                    <br>Precio: S/188
-                    <button class="btn btn-success">Añadir al carrito</button>
-                </td>
-
-                <td>
-                    <img src="https://i.pinimg.com/1200x/8d/a2/7b/8da27b4064007f2a40cddffad7e2f09e.jpg" width="200">
-                    <br><b>Zapatillas Sport Flex</b>
-                    <br>Precio: S/167
-                    <button class="btn btn-success">Añadir al carrito</button>
-                </td>
-
-                <td>
-                    <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842" width="200">
-                    <br><b>Zapatillas Max Pro</b>
-                    <br>Precio: S/215
-                    <button class="btn btn-success">Añadir al carrito</button>
-                </td>
-
-                <td>
-                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3" width="200">
-                    <br><b>Zapatillas Casual Sport</b>
-                    <br>Precio: S/158
-                    <button class="btn btn-success">Añadir al carrito</button>
-                </td>
-
-            </tr>
-
+            
         </table>
 
     </section>
@@ -329,122 +298,83 @@
 
     <hr>
 
-    <section id="formulario">
+   <section id="formulario" class="container my-5">
 
-        <h2>Registro de Usuario</h2>
+    <h2 class="text-center mb-4">Registro de Usuario</h2>
 
-        <form>
+    <form class="p-4 border rounded shadow bg-light">
 
-            <fieldset>
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control">
+        </div>
 
-                <legend>Crear Cuenta</legend>
+        <div class="mb-3">
+            <label class="form-label">Apellido</label>
+            <input type="text" class="form-control">
+        </div>
 
-                <label>Nombre</label><br>
-                <input type="text"><br><br>
+        <div class="mb-3">
+            <label class="form-label">Correo</label>
+            <input type="email" class="form-control">
+        </div>
 
-                <label>Apellido</label><br>
-                <input type="text"><br><br>
+        <div class="mb-3">
+            <label class="form-label">Contraseña</label>
+            <input type="password" class="form-control">
+        </div>
 
-                <label>Correo</label><br>
-                <input type="email"><br><br>
+        <div class="mb-3">
+            <label class="form-label">Teléfono</label>
+            <input type="tel" class="form-control">
+        </div>
 
-                <label>Contraseña</label><br>
-                <input type="password"><br><br>
+        <div class="mb-3">
+            <label class="form-label">Fecha de nacimiento</label>
+            <input type="date" class="form-control">
+        </div>
 
-                <label>Teléfono</label><br>
-                <input type="tel"><br><br>
+        <div class="mb-3">
+            <label class="form-label">Ciudad</label>
+            <select class="form-select">
+                <option>Lima</option>
+                <option>Arequipa</option>
+                <option>Trujillo</option>
+                <option>Otro</option>
+            </select>
+        </div>
 
-                <label>Fecha de nacimiento</label><br>
-                <input type="date"><br><br>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">
+                Acepto los términos
+            </label>
+        </div>
 
-                <label>Ciudad</label><br>
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+        <button type="reset" class="btn btn-secondary">Limpiar</button>
 
-                <select>
-                    <option>Lima</option>
-                    <option>Arequipa</option>
-                    <option>Trujillo</option>
-                    <option>Otro</option>
-                </select>
+    </form>
 
-                <br><br>
-
-                <label>
-                    <input type="checkbox">
-                    Acepto los términos
-                </label>
-
-                <br><br>
-
-                <input type="submit" value="Registrarse">
-                <input type="reset" value="Limpiar">
-
-            </fieldset>
-
-        </form>
-
-    </section>
-
-    <hr>
-
-    <section id="contacto">
-
-        <h2>Contacto</h2>
-
-        <form>
-
-            <fieldset>
-
-                <legend>Envíanos un mensaje</legend>
-
-                <label>Nombre</label><br>
-                <input type="text"><br><br>
-
-                <label>Correo</label><br>
-                <input type="email"><br><br>
-
-                <label>Mensaje</label><br>
-                <textarea rows="4"></textarea><br><br>
-
-                <input type="submit" value="Enviar">
-
-            </fieldset>
-
-        </form>
-
-        <p>
-            Síguenos en redes sociales:
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">TikTok</a>
-        </p>
-
-    </section>
+</section>
 
     <hr>
 
-    <footer>
+   <footer class="bg-dark text-white text-center p-4 mt-5">
 
-        <h3>MAVI SHOES</h3>
+    <h4>MAVI SHOES</h4>
 
-        <p>
-            © 2026 – Mavi Shoes
-            Todos los derechos reservados
-        </p>
+    <p>© 2026 – Mavi Shoes | Todos los derechos reservados</p>
 
-        <nav>
-            <a href="#inicio">Inicio</a> |
-            <a href="#productos">Productos</a> |
-            <a href="#categorias">Categorías</a> |
-            <a href="#contacto">Contacto</a>
-        </nav>
+    <div>
+        <a href="#inicio" class="text-white me-3">Inicio</a>
+        <a href="#productos" class="text-white me-3">Productos</a>
+        <a href="#categorias" class="text-white me-3">Categorías</a>
+        <a href="#contacto" class="text-white">Contacto</a>
+    </div>
 
-    </footer>
+</footer>
 
 </body>
 
 </html>
-<!--NOTA TENTATIVA HTML  : 16
- +1 ADICIONAR MAS ELEMENTOS AL FORMULARIO
- +1 ADICIONAR NAVEGACION DE LOS ENLACES
- +2 MEJORAR SECCIONES , TOMAR COMO REFERENCIA LA SECCION 3 Y 4 
- -->
