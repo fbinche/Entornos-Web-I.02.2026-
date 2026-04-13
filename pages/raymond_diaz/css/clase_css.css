@@ -565,3 +565,26 @@ hr { border-color: var(--gw-border); opacity: 1; }
 .card, .gw-card { border-radius: .75rem !important; box-shadow: 0 .5rem 1rem rgba(0,0,0,.12); }
 .btn, .form-control, .form-select { border-radius: .5rem !important; }
 .navbar, .gw-jumbotron, .gw-form-card { border-radius: .75rem; }
+
+
+
+/** NOTA ACTUAL : }
+CSS->15+1
+BS ->15
+15 puntos SELECTORES
+  #1 SELECTOR UNIVERSAL 0.5
+  #5 SELECTORES DE ETIQUETAS HTML 2.5
+  #5 SELECTORES DE CLASES 2.5
+  #3 SELECTORES DE IDENTIFICADORES 1.5
+  #2 SELECTORES COMBINADORES 1
+  #2 SELECTORES LOGICOS MODERNOS 1
+  #2 SELECTORES PSEUDO CLASES 1
+  #2 SELECTORES PSEUDO ELEMENTOS 1
+  #2 SELECTORES ATRIBUTOS AVANZADOS 1
+  #6 SELECTORES COMBINADOS 3
+3 puntos ANIMACIONES 1
+2 puntos SUSTENTACION/PARTICIPACION EN CLASE
+NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+RECOMENDACION: Seria bueno comentar cada punto y tomar en cuenta la 3 propiedades por cada selector
+
+**/

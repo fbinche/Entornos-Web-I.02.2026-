@@ -20,50 +20,50 @@
 
 <body data-bs-theme="dark" id="body">>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow">
-  <div class="container-fluid">
+        <div class="container-fluid">
 
-    <!-- LOGO / TÍTULO -->
-    <a class="navbar-brand fw-bold" href="#">⚽ Champions</a>
+            <!-- LOGO / TÍTULO -->
+            <a class="navbar-brand fw-bold" href="#">⚽ Champions</a>
 
-    <!-- BOTÓN RESPONSIVE -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <!-- BOTÓN RESPONSIVE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- MENÚ -->
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
 
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Inicio</a>
-        </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Partidos</a>
-        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partidos</a>
+                    </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Resultados</a>
-        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resultados</a>
+                    </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Noticias</a>
-        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Formulario</a>
-        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Formulario</a>
+                    </li>
 
-      </ul>
+                </ul>
 
-      <!-- BOTÓN MODO OSCURO -->
-      <button class="btn btn-outline-light ms-3" onclick="cambiarTema()">
-        🌙 / ☀️
-      </button>
+                <!-- BOTÓN MODO OSCURO -->
+                <button class="btn btn-outline-light ms-3" onclick="cambiarTema()">
+                    🌙 / ☀️
+                </button>
 
-    </div>
-  </div>
-</nav>
+            </div>
+        </div>
+    </nav>
 
 
 
@@ -996,18 +996,18 @@
                                     </script>
                                     <script
                                         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-function cambiarTema() {
-    let body = document.getElementById("body");
-    let tema = body.getAttribute("data-bs-theme");
+                                    <script>
+                                        function cambiarTema() {
+                                            let body = document.getElementById("body");
+                                            let tema = body.getAttribute("data-bs-theme");
 
-    if (tema === "dark") {
-        body.setAttribute("data-bs-theme", "light");
-    } else {
-        body.setAttribute("data-bs-theme", "dark");
-    }
-}
-</script>
+                                            if (tema === "dark") {
+                                                body.setAttribute("data-bs-theme", "light");
+                                            } else {
+                                                body.setAttribute("data-bs-theme", "dark");
+                                            }
+                                        }
+                                    </script>
 
 </body>
 
