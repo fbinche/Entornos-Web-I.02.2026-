@@ -41,6 +41,7 @@ body {
 nav ul:first-child{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     list-style: none;
     background-color: rgb(255, 0, 0);
 }
@@ -125,7 +126,7 @@ figcaption {
 .article img{
     width: 100%;
     height: 250px;
-    object-fit: cover;
+
 }
 /* ---SECCION 2 --- */
 
@@ -136,7 +137,7 @@ figcaption {
     padding: 2px;
 }
 /* estilos para la sección de 4 columnas*/
-.columnas_4 {
+.section .columnas_4:not(.carousel-inner) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -169,7 +170,7 @@ figcaption {
 
 /* ---SECCION 3 --- */
 /* estilos para el subtitulo de la sección de categorías populares*/
-h3 b {
+:is(h3, h5) b {
     font-size: 30px;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -210,12 +211,13 @@ h3 b {
     background-color: rgb(183, 14, 124);
     color:rgb(255, 250, 250);
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
 .boton_comprar:active {
     background-color: rgb(139, 17, 96);
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .ver_productos {
@@ -229,6 +231,7 @@ h3 b {
     color:rgb(255, 250, 250);
     cursor: pointer;
     border-radius: 15px;
+    transition: 0.5s;
 }
 
 .ver_productos:active {
@@ -266,7 +269,7 @@ footer p{
 .precio {
     font-weight: bold;
     font-family: 'Gill Sans';
-    font-size: 15px;
+    font-size: 18px;
 }
 
 /* ---SECCION 4--- */
@@ -313,19 +316,7 @@ footer p{
 }
 
 /*estilos para el formulario del footer, centrado los elementos, con color azul, y haciendolo flexible*/
-.footer form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(18, 39, 227);
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgba(149, 0, 255, 0.785);
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
+
 /* estilos de fuente para el legend del formulario del footer*/
 legend {
     font-size: 30px;
@@ -333,17 +324,27 @@ legend {
     color: snow;
     margin-bottom: 25px;
 }
+
+.footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(43, 38, 38, 0.523);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(0, 0, 0, 0.785);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* estilos de fuente para las etiquetas del formulario del footer*/
 .footer form label {
     font-size: 20px;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: snow;
     margin-bottom: 10px;
-}
-/*  estilos provisionales para los campos del formulario hasta encontrar un mejor diseño :(*/
-.footer .campo {
-    display: flex;
-    flex-direction: column;
 }
 
 /* estilos para el footer final con texto de sombra*/
@@ -374,14 +375,25 @@ a[href] {
     font-weight: bold;
     font-size: 30px;
     text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    text-decoration: none;
 }
 /* efecto de sombra y blanco diferente*/
-footer a[href="#categorias"] {
+footer p a[href="#categorias"] {
     color: rgba(231, 254, 254, 0.905);
     font-size: 26px;
     text-shadow: 6px 6px 10px rgb(0, 0, 0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    margin-left: 20px;
+    display: inline-block; /* permite que los elementos se posicionen horizontalmente uno allado de otro y editar ancho y alto */
 }
 
+/* trancición a las palabras "ver mas categorias" para agrandarlo al pasar el ratón */
+footer p > a[href="#categorias"]:hover {
+    text-decoration: none;
+    transform: scale(1.15);
+
+}
 /* efecto dd sombra al nav del footer con color gris */
 .footer .section a[href] {
     color: rgba(0, 0, 0, 0.937);
@@ -462,8 +474,31 @@ footer a[href="#categorias"] {
     position: sticky;
     top:0;
     z-index: 1; /* lo posiciona por encima de otros elementos */
+    border: 5px solid black;
 }
 
+
+/* color blanco */
+.white {
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+/* aliniacion de botones del formulario */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+/* css personalizddo de bootstrap, divisiones entre secciones */
+.division_principal {
+    width: 100%;
+    height: 5rem;
+    background-color: #b6113a77;
+    border: solid rgba(63, 63, 63, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em #412e3e1a, inset 0 0.125em 0.5em #1c1a1a26;
+}
  /** NOTA ACTUAL : 14
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
