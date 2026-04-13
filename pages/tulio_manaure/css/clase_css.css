@@ -227,3 +227,31 @@ img {
     height: 500px; 
     object-fit: cover;
 }
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2 {
+    animation: slideDown 1s ease-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#inicio, #productos, #formulario, #categorias {
+    animation: fadeIn 1s ease-in-out;
+}
