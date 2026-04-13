@@ -170,8 +170,25 @@ ul:hover > li {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/*animacion*/
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
 
+.card:hover {
+    transform: translateY(-10px); /* Se eleva 10 píxeles */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Sombra más fuerte */
+}
+/*animacion*/
+.carousel-item.active img {
+    animation: zoomInfinito 10s linear infinite;
+}
 
+@keyframes zoomInfinito {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); } 
+}
  /** NOTA ACTUAL : 12.5
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
