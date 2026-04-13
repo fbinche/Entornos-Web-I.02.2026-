@@ -10,59 +10,50 @@
 <link rel="stylesheet" href="css/styles.css">
 -->
 <link rel="stylesheet" href="css/clase_css.css">
-
-<title>MAVI SHOES</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
 
-<<<<<<< HEAD
 <header class="video-header">
 
-    <video autoplay muted loop class="video-bg">
+    <video autoplay muted loop playsinline preload="metadata" class="video-bg">
         <source src="video/Nike Air Force One - Spec Spot - by Blackfox-Media (4k).mp4" type="video/mp4">
     </video>
 
     <div class="contenido">
         <h1>VENTA DE ZAPATILLAS – MAVI SHOES</h1>
-        <p>Las mejores zapatillas para hombre, mujer y niños</p>
+        <h2>Las mejores zapatillas para hombre, mujer y niños</h2>
     </div>
 
 </header>
-</header>
+
 <h1>VENTA DE ZAPATILLAS – MAVI SHOES</h1>
 <p>Las mejores zapatillas para hombre, mujer y niños</p>
 
 <audio controls loop>
     <source src="audio/[Non Copyrighted Music] @Hinkik - Skystrike [Electro House] (128).mp3" type="audio/mpeg">
 </audio>
-<nav>
-<ul>
-<li><a href="#inicio">Inicio</a></li>
-<li><a href="#productos">Productos</a></li>
-<li><a href="#categorias">Categorías</a></li>
-<li><a href="#formulario">Formulario</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+
+  <a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="https://cdn-icons-png.flaticon.com/512/2589/2589903.png" width="40" class="me-2">
+  MAVI SHOES
+</a>
+
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link" href="#inicio">Inicio</a>
+      <a class="nav-link" href="#productos">Productos</a>
+      <a class="nav-link" href="#categorias">Categorías</a>
+      <a class="nav-link" href="#formulario">Formulario</a>
+      <a class="nav-link" href="#contacto">Contacto</a>
+      
+    </div>
+
+  </div>
 </nav>
-=======
-    <header>
 
-        <h1>VENTA DE ZAPATILLAS – MAVI SHOES</h1>
-        <p>Las mejores zapatillas para hombre, mujer y niños</p>
-
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#categorias">Categorías</a></li>
-                <li><a href="#formulario">Formulario</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
->>>>>>> 4f8c88b69e4a93d3c4032c4e2814aa0a00b46c4f
-
-    </header>
+    
 
     <hr>
 
@@ -74,10 +65,14 @@
             Bienvenido a nuestra tienda online de zapatillas.
             Contamos con modelos modernos, cómodos y al mejor precio.
         </p>
+        
 
-        <img src="https://i.pinimg.com/1200x/e3/24/90/e324906d9c8a3b0439753b2fc958f83c.jpg" width="100%" height="400"
+        <img src="https://i.pinimg.com/1200x/31/d3/5d/31d35d37d25093a2209fa8c15962dc13.jpg" width="100%" height="400"
             alt="banner zapatillas">
-
+        
+        <div class="text-center mt-3">
+  <a href="#productos" class="btn btn-primary btn-lg">Ver productos </a>
+</div>
         <h3>Promociones</h3>
 
         <ul>
@@ -90,8 +85,14 @@
 
     <hr>
 
-    <section id="productos">
+<section id="productos">
 
+<div class="container mt-3">
+  <div class="card p-3 shadow">
+    <h5>Ofertas</h5>
+    <p>Aprovecha nuestras promociones exclusivas por tiempo limitado y llévate las mejores zapatillas al mejor precio. No dejes pasar estas ofertas únicas que tenemos para ti</p>
+  </div>
+</div>
         <h2>Productos</h2>
 
         <table border="1" width="100%">
@@ -102,28 +103,28 @@
                     <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" width="200">
                     <br><b>Zapatillas Running Pro</b>
                     <br>Precio: S/180
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/1200x/57/ca/93/57ca931ef166564b3e9f7a7c2def6aee.jpg" width="200">
                     <br><b>Zapatillas Urban Black</b>
                     <br>Precio: S/160
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" width="200">
                     <br><b>Zapatillas Deportivas Max</b>
                     <br>Precio: S/200
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772" width="200">
                     <br><b>Zapatillas Classic</b>
                     <br>Precio: S/150
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
             </tr>
@@ -134,28 +135,28 @@
                     <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980" width="200">
                     <br><b>Zapatillas Street</b>
                     <br>Precio: S/170
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/736x/c5/f6/86/c5f686d05ab76b71dabd592c0e105c02.jpg" width="200">
                     <br><b>Zapatillas Sport One</b>
                     <br>Precio: S/165
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/736x/c4/49/db/c449dbebcfd70740c2f97317bb197710.jpg" width="200">
                     <br><b>Zapatillas Runner X</b>
                     <br>Precio: S/190
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/1200x/af/d3/c3/afd3c3a18b4fa7bad99e456a5d586cfc.jpg" width="200">
                     <br><b>Zapatillas Urban White</b>
                     <br>Precio: S/175
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
             </tr>
@@ -166,28 +167,28 @@
                     <img src="https://images.unsplash.com/photo-1520256862855-398228c41684" width="200">
                     <br><b>Zapatillas Fitness</b>
                     <br>Precio: S/185
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/736x/35/52/17/355217f1972937f2bbbb2b7a05511f8d.jpg" width="200">
                     <br><b>Zapatillas Urban Sport</b>
                     <br>Precio: S/165
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842" width="200">
                     <br><b>Zapatillas Sport Max</b>
                     <br>Precio: S/220
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3" width="200">
                     <br><b>Zapatillas Casual Gray</b>
                     <br>Precio: S/155
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
             </tr>
@@ -198,28 +199,28 @@
                     <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782" width="200">
                     <br><b>Zapatillas Kids Pro</b>
                     <br>Precio: S/120
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86" width="200">
                     <br><b>Zapatillas Kids Color</b>
                     <br>Precio: S/110
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" width="200">
                     <br><b>Zapatillas Street Pro</b>
                     <br>Precio: S/195
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/1200x/ba/6e/8e/ba6e8edcaec46194279f7fff0a9dbca5.jpg" width="200">
                     <br><b>Zapatillas Runner Elite</b>
                     <br>Precio: S/205
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
             </tr>
@@ -230,28 +231,28 @@
                     <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980" width="200">
                     <br><b>Zapatillas Urban Flex</b>
                     <br>Precio: S/168
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/736x/15/70/d9/1570d9c1b27749a5d8ae3e588b5933f4.jpg" width="200">
                     <br><b>Zapatillas Sport Air</b>
                     <br>Precio: S/199
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772" width="200">
                     <br><b>Zapatillas Classic Pro</b>
                     <br>Precio: S/175
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" width="200">
                     <br><b>Zapatillas Urban Style</b>
                     <br>Precio: S/182
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
             </tr>
@@ -262,28 +263,28 @@
                     <img src="https://images.unsplash.com/photo-1520256862855-398228c41684" width="200">
                     <br><b>Zapatillas Fitness Max</b>
                     <br>Precio: S/188
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/1200x/8d/a2/7b/8da27b4064007f2a40cddffad7e2f09e.jpg" width="200">
                     <br><b>Zapatillas Sport Flex</b>
                     <br>Precio: S/167
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842" width="200">
                     <br><b>Zapatillas Max Pro</b>
                     <br>Precio: S/215
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3" width="200">
                     <br><b>Zapatillas Casual Sport</b>
                     <br>Precio: S/158
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
             </tr>
@@ -323,7 +324,7 @@
         </p>
 
     </section>
-    ```
+    
 
 
     <hr>
