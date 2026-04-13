@@ -306,7 +306,7 @@ footer p{
 .footer > .section{
     padding-top: 60px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
 }
 
 /* estilos para bajar el nav del footer*/
@@ -323,6 +323,7 @@ legend {
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: snow;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .footer form {
@@ -487,7 +488,7 @@ footer p > a[href="#categorias"]:hover {
 /* aliniacion de botones del formulario */
 .contenedor {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 40px;
 }
 /* css personalizddo de bootstrap, divisiones entre secciones */
@@ -499,6 +500,8 @@ footer p > a[href="#categorias"]:hover {
     border-width: 1px 0;
     box-shadow: inset 0 0.5em 1.5em #412e3e1a, inset 0 0.125em 0.5em #1c1a1a26;
 }
+
+
  /** NOTA ACTUAL : 14
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
