@@ -1,41 +1,199 @@
-/**EXTERNA**/
-p{
-  color:green !important
+
+/**UNIVERSAL**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-*{
-  background:rgb(136, 217, 249)
+/**ETIQUETAS HTML**/
+
+body {
+    font-family: Arial;
+    background-color: #fff8f5;
+    color: #333;
 }
-/*ETIQUETA HTML*/
 h1,h2{
-  background-color:rgb(255, 255, 255);
+  background-color:#e9dbd9;
   font-style: oblique;
-  color:palevioletred;
-}
-/**CLASE**/
-.servicio{
-  background-color: aquamarine;
-  color: cornflowerblue;
-  font-size: small;
-}
-/**SERVICIO EN PROMOCIÓN**/
-#servico-promoción{
-  background-color: palevioletred;
+  color:#e8a060;
 }
 
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
 
-/** NOTA ACTUAL : 1.0
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/**CLASES**/
+.header{
+  background-color: rgb(255, 255, 255);
+  color: palevioletred;
+  padding: 12px;
+  text-align: center;
+}
+
+.section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.article {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.precio {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/**IDENTIFICADORES**/
+#inicio {
+    background-color: #fdebd0;
+    padding: 20px;
+    text-align: center;
+}
+
+#productos {
+    border: 2px solid #f39c12;
+    padding: 10px;
+}
+
+#contacto {
+    background-color: #fef5e7;
+    padding: 20px;
+}
+
+/**COMBINADORES**/
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+}
+
+article > header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/**MODERNOS**/
+article:is(.article) {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+section:has(img) {
+    border: 2px dashed #f5b041;
+    padding: 10px;
+}
+
+/**PSEUDO CLASES**/
+article:hover {
+    transform: scale(1.05);
+    background-color: #fff0e6;
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/**PSEUDO ELEMENTOS**/
+h2::after {
+    content: " 🍰";
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+p::first-letter {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d35400;
+}
+
+/**ATRIBUTOS AVANZADOS**/
+img[alt*="pastel"] {
+    border: 3px solid #f39c12;
+    padding: 5px;
+}
+
+p[data-value^="$"] {
+    background-color: #eafaf1;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/**COMBINADOS**/
+section.section.second-section {
+    background-color: #fef9e7;
+    padding: 20px;
+}
+
+article.article:hover h3 {
+    color: #e74c3c;
+    transition: color 0.3s;
+}
+
+section.section .article img {
+    border: 2px solid #ddd;
+    padding: 3px;
+}
+
+#inicio.section.first-section {
+    border: 3px solid #e67e22;
+}
+
+section > .columnas_3 .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.article footer.precio {
+    text-align: center;
+    font-size: 20px;
+}
+
+/**ANIMACIONES**/
+.article {
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    animation: bounce 2s infinite;
+}
+
+.section:hover {
+    animation: colorChange 2s ease;
+}
+ /** NOTA ACTUAL : 12.5
 15 puntos SELECTORES
-  #1 SELECTOR UNIVERSAL
-  #5 SELECTORES DE ETIQUETAS HTML
-  #5 SELECTORES DE CLASES
-  #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES
-  #2 SELECTORES LOGICOS MODERNOS
-  #2 SELECTORES PSEUDO CLASES
-  #2 SELECTORES PSEUDO ELEMENTOS
-  #2 SELECTORES ATRIBUTOS AVANZADOS
-  #6 SELECTORES COMBINADOS
+  #1 SELECTOR UNIVERSAL 0.5
+  #5 SELECTORES DE ETIQUETAS HTML 2.0
+  #5 SELECTORES DE CLASES 2.5
+  #3 SELECTORES DE IDENTIFICADORES 1.0
+  #2 SELECTORES COMBINADORES 0.7
+  #2 SELECTORES LOGICOS MODERNOS 0.7
+  #2 SELECTORES PSEUDO CLASES 0.7
+  #2 SELECTORES PSEUDO ELEMENTOS 1
+  #2 SELECTORES ATRIBUTOS AVANZADOS 0.7
+  #6 SELECTORES COMBINADOS 2.5
 3 puntos ANIMACIONES
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector

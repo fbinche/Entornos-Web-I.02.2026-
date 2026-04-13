@@ -4,22 +4,15 @@
 * {
   background-color: rgb(183, 233, 4);
 }
-pf {
-    color: green;
-}
 
 p {
-    color: aqua;
+  color: aqua;
 }
 
 a {
-    color: green;
+  color: green;
 }
 
-h2 {
-    color: red;
-}
-/* Etiqueta HTML */
 h2 {
   background-color: aqua;
   font-style: oblique;
@@ -38,18 +31,127 @@ h2 {
   background-color: rgb(223, 223, 16);
 }
 
-/** NOTA ACTUAL : 1.0
+
+/* Selectores lógicos modernos */
+
+
+:is(h1, h2, h3) {
+  text-transform: uppercase;
+}
+
+
+:where(article p) {
+  line-height: 1.5;
+}
+
+
+a:not(.externo) {
+  text-decoration: underline;
+}
+
+/* Pseudo‑clases */
+a:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+
+p:first-child {
+  font-style: italic;
+}
+
+.servicio:hover {
+  background-color: lightblue;
+}
+
+/* Pseudo‑elementos */
+p::first-letter {
+  font-size: 2em;
+  color: crimson;
+}
+
+h2::before {
+  content: "👉 ";
+  color: darkblue;
+}
+
+h2::after {
+  content: " 👈";
+  color: darkblue;
+}
+
+a::after {
+  content: " 🔗";
+}
+
+/* Selectores de atributos avanzados */
+
+/* Todos los enlaces externos */
+a[href^="http"] {
+  color: orange;
+}
+
+/* Imágenes en formato JPG */
+img[src$=".jpg"] {
+  border: 3px solid red;
+}
+
+/* Inputs obligatorios */
+input[required] {
+  border: 2px solid crimson;
+}
+
+/* Elementos con atributo data-promocion */
+div[data-promocion] {
+  background-color: lightyellow;
+}
+
+/* Imagen normal */
+img {
+  transition: transform 0.5s ease; /* transición suave */
+}
+
+/* Al pasar el mouse */
+img:hover {
+  transform: scale(1.2); /* zoom */
+}
+
+article.card header h2 span.badge {
+  background-color: gold;
+  padding: 2px 5px;
+}
+
+article.card section details dl dt:first-child {
+  text-decoration: underline;
+}
+
+article.card section p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+article.card section details summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+article.card section dl dt + dd {
+  color: darkred;
+  font-weight: bold;
+}
+
+ /** NOTA ACTUAL : 10.5
 15 puntos SELECTORES
-  #1 SELECTOR UNIVERSAL
-  #5 SELECTORES DE ETIQUETAS HTML
-  #5 SELECTORES DE CLASES
-  #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES
-  #2 SELECTORES LOGICOS MODERNOS
-  #2 SELECTORES PSEUDO CLASES
-  #2 SELECTORES PSEUDO ELEMENTOS
-  #2 SELECTORES ATRIBUTOS AVANZADOS
-  #6 SELECTORES COMBINADOS
+  #1 SELECTOR UNIVERSAL 0.2
+  #5 SELECTORES DE ETIQUETAS HTML 1.5
+  #5 SELECTORES DE CLASES 1.5
+  #3 SELECTORES DE IDENTIFICADORES 0.5
+  #2 SELECTORES COMBINADORES 1
+  #2 SELECTORES LOGICOS MODERNOS 0.7
+  #2 SELECTORES PSEUDO CLASES 0.7
+  #2 SELECTORES PSEUDO ELEMENTOS 1
+  #2 SELECTORES ATRIBUTOS AVANZADOS 1
+  #6 SELECTORES COMBINADOS 2
 3 puntos ANIMACIONES
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector

@@ -17,19 +17,19 @@
 <body>
     <!-- Barra de navegación de la web-->
     <header class="class_header">
-    <h1>VIVAMUEBLE</h1>
-    <nav>
-        <ul>
-            <li><a href="#sobre_nosotros">SOBRE NOSOTROS</a></li>
-            <li><a href="#productos_populares">PRODUCTOS POPULARES</a></li>
-            <li><a href="#categorias">CATEGORIAS</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
-        </ul>
-    </nav>
+        <h1>VIVAMUEBLE</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre_nosotros">SOBRE NOSOTROS</a></li>
+                <li><a href="#productos_populares">PRODUCTOS POPULARES</a></li>
+                <li><a href="#categorias">CATEGORIAS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="main">
+    <main>
 
-        <section id="sobre_nosotros" class="section first-section">
+        <section id="sobre_nosotros" class="section">
             <header class="class_header">
                 <h2>Vendemos muebles en el Perú por más de 25 años</h2>
             </header>
@@ -92,13 +92,13 @@
             </section>
             <br>
             <!--Slogan de la empresa-->
-            <footer class="footer">
+            <footer>
                 <p>Más de 25 años ofreciendo calidad y confianza.</p>
             </footer>
         </section>
 
         <!-- productos populares tipo carrusel-->
-        <section>
+        <section id="productos_populares" class="section">
             <h3 id="mas_vendidos"><b>Productos más vendidos:</b></h3>
             <p>Hecha un vistazo a nuestros productos más vendidos: </p>
 
@@ -151,10 +151,10 @@
                     <p>Silla de madera con diseño elegante.</p>
                     <button class="boton_comprar">Comprar ahora</button>
                 </article>
-                <footer>
-                    <button>Ver más productos</button>
-                </footer>
             </section>
+            <footer>
+                <button class="ver_productos">Ver más productos</button>
+            </footer>
         </section>
 
         <!--categorias de los productos-->
@@ -162,7 +162,7 @@
             <h2><b>Categorias:</b></h2>
             <p id="categorias_populares">Estas son nuestras categorias más populares:</p>
 
-            <section class="section">
+            <section class="section ">
                 <!-- Categoría 1 -->
 
                 <header class="header">
@@ -335,7 +335,7 @@
     <footer class="footer">
         <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
 
-        <section class="columnas_2">
+        <section class="section">
 
             <!-- Sección Navegación -->
             <nav>
@@ -348,7 +348,7 @@
                     <li><a href="#contacto"><i class="bi bi-telephone"></i>Contacto</a></li>
                 </ul>
 
-                <h4>Nuestras redes sociales</h4>
+                <h5>Nuestras redes sociales</h5>
                 <ul>
                     <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i>Instagram</a></li>
                     <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a></li>
@@ -362,39 +362,44 @@
                 <form method="post" class="form">
                     <fieldset>
                         <legend>Rellene el formulario con sus datos</legend>
-                        <label>Nombre:</label>
-                        <input type="text" name="Nombre" placeholder="Ingrese su nombre completo" required>
-                        <br>
-                        <label>DNI:</label>
-                        <input type="text" minlength="8" maxlength="8" pattern="\d{8}"
-                            title="Ingrese un DNI válido de 8 dígitos" required>
-                        <br>
-                        <label>Género:</label>
-                        <input type="radio" name="genero" value="F"> Femenino
-                        <input type="radio" name="genero" value="M"> Masculino
-                        <br>
-                        <label>País:</label>
-                        <select name="pais">
-                            <option value="pe">Perú</option>
-                            <option value="co">Chile</option>
-                            <option value="ar">Paraguay</option>
-                        </select>
-                        <br>
-
-                        <label>Ciudad:</label>
-                        <input list="ciudades" name="ciudades">
-                        <datalist id="ciudades">
-                            <option value="Lima"></option>
-                            <option value="Cusco"></option>
-                            <option value="Arequipa"></option>
-                        </datalist>
-                        <br>
-                        <label>Teléfono:</label>
-                        <input type="text" name="telefono" value="987654321" pattern="[0-9]{9}">
-                        <br>
-                        <label><i class="bi bi-envelope"></i>Email:</label>
-                        <input type="email" name="email" placeholder="Correo electrónico" required>
-                        <br>
+                        <div class="campo">
+                            <label>Nombre:</label>
+                            <input type="text" name="Nombre" placeholder="Ingrese su nombre completo" required>
+                        </div>
+                        <div class="campo">
+                            <label>DNI:</label>
+                            <input type="text" minlength="8" maxlength="8" pattern="\d{8}"
+                                title="Ingrese un DNI válido de 8 dígitos" required>
+                        </div>
+                        <div class="campo">
+                            <label>Género:</label>
+                            <input type="radio" name="genero" value="F"> Femenino
+                            <input type="radio" name="genero" value="M"> Masculino
+                        </div>
+                        <div class="campo">
+                            <label>País:</label>
+                            <select name="pais">
+                                <option value="pe">Perú</option>
+                                <option value="co">Chile</option>
+                                <option value="ar">Paraguay</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label>Ciudad:</label>
+                            <input list="ciudades" name="ciudades">
+                            <datalist id="ciudades">
+                                <option value="Lima"></option>
+                                <option value="Cusco"></option>
+                                <option value="Arequipa"></option>
+                            </datalist>
+                        </div>
+                        <div class="campo">
+                            <label>Teléfono:</label>
+                            <input type="text" name="telefono" value="987654321" pattern="[0-9]{9}">
+                            <br>
+                            <label><i class="bi bi-envelope"></i>Email:</label>
+                            <input type="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
 
                         <button type="submit">ENVIAR</button>
                         <button type="reset">BORRAR DATOS</button>
@@ -404,9 +409,9 @@
         </section>
         <p>&copy; 2026 Viva Mueble. Todos los derechos reservados.</p>
     </footer>
-    </body>
+</body>
 
-    <!--NOTA TENTATIVA HTML  : 20
+<!--NOTA TENTATIVA HTML  : 20
  +2 (OK) ADICIONAR FORMULARIO
  +1 (OK) MEJORAR SEMANTICA DE LA PAGINA (TOMAR COMO REFERENCIA LA CATEGORIA 1 : SALA Y COMEDOR)
  -->

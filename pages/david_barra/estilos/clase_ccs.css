@@ -1,40 +1,269 @@
-.tituloheader{
-    background-color: blueviolet;
-    font-size: 55px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-.contenido{
-    background-color: blueviolet;
-}
-.lista{
-    list-style: none;
-    background-color: blueviolet;
-    font-size:20px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.precio{
-font-size: 40px;
-background-color: rgb(47, 3, 74);
+/* ===================== SELECTOR UNIVERSAL ===================== */
+* { /* selecciona TODOS los elementos de la página */
+  margin: 0; /* elimina los márgenes por defecto de todos los elementos */
+  padding: 0; /* elimina el relleno interno por defecto */
+  box-sizing: border-box; /* hace que el tamaño incluya padding y borde */
 }
 
-#linkwsp{
-    background-color: blueviolet;
+/* ===================== BODY ===================== */
+body { /* selecciona todo el contenido de la página */
+  font-family: Arial, sans-serif; /* define el tipo de letra */
+  background: #050816; /* color de fondo oscuro */
+  color: white; /* color del texto */
+  line-height: 1.6; /* espacio entre líneas de texto */
+  animation: aparecer 1s ease-in; /* aplica animación de entrada */
 }
 
-/** NOTA ACTUAL : 2.5
+/* ===================== HEADER ===================== */
+header { /* selecciona el encabezado */
+  background: #0a0f2c; /* fondo oscuro */
+  border-bottom: 2px solid #00eaff; /* línea inferior azul */
+  padding: 20px; /* espacio interno */
+}
+
+/* ===================== TITULOS ===================== */
+h1 { /* selecciona todos los h1 */
+  text-align: center; /* centra el texto */
+  font-size: 6rem; /* tamaño grande */
+  color: #00eaff; /* color azul eléctrico */
+  
+}
+
+h2 { /* selecciona todos los h2 */
+  text-align: center; /* centra */
+  font-size: 6rem; /* tamaño mediano */
+  color: #00eaff; /* color azul */
+}
+
+/* ===================== LISTAS ===================== */
+ul { /* selecciona listas */
+  list-style: none; /* elimina los puntos */
+  margin: 10px 0; /* espacio externo */
+  padding: 0; /* elimina relleno */
+}
+
+/* ===================== MENU ===================== */
+.menu { /* clase del menú */
+  display: flex; /* coloca los elementos en fila */
+  justify-content: center; /* centra horizontalmente */
+  gap: 20px; /* espacio entre elementos */
+}
+
+.menu li a { /* enlaces dentro del menú */
+  color: white; /* color blanco */
+  font-weight: bold; /* texto en negrita */
+  padding: 10px; /* espacio interno */
+  font-size: 80px;
+}
+
+/* ===================== COMBINADOR ===================== */
+header nav ul { /* selecciona ul hijo directo de nav */
+  display: flex; /* disposición horizontal */
+  justify-content: center; /* centra */
+  gap: 25px; /* espacio */
+}
+
+/* ===================== PLANES ===================== */
+#PLANES { /* sección planes */
+  padding: 40px; /* espacio interno */
+  background: #0b1c4d; /* fondo azul oscuro */
+  text-align: center; /* centra contenido */
+}
+
+.columnas_3 { /* contenedor de columnas */
+  display: flex; /* activa flexbox */
+  justify-content: center; /* centra */
+  gap: 25px; /* espacio entre columnas */
+}
+
+/* ===================== TARJETAS ===================== */
+.article { /* tarjetas */
+  background: #0f1a4d; /* fondo */
+  padding: 20px; /* espacio interno */
+  border-radius: 12px; /* bordes redondeados */
+  transition: 0.3s; /* animación suave */
+}
+
+.article img { /* imagen dentro de tarjeta */
+  width: 100%; /* ocupa todo el ancho */
+  border-radius: 10px; /* bordes redondeados */
+  margin-bottom: 10px; /* espacio abajo */
+}
+
+/* ===================== BENEFICIOS ===================== */
+#BENEFICIOS { /* sección beneficios */
+  padding: 40px; /* espacio */
+  background: #081233; /* fondo oscuro */
+  text-align: center; /* centra */
+}
+/*====================== ALERTA DE BOOSTRAP =====================*/
+.alert alert-info-text center{
+  font: size 30px;
+}
+/* ===================== FORMULARIO ===================== */
+#FORMULARIO { /* sección formulario */
+  padding: 40px; /* espacio */
+  background: #050816; /* fondo */
+}
+
+.formulario { /* contenedor del form */
+  max-width: 400px; /* ancho máximo */
+  margin: auto; /* centra */
+  display: flex; /* flexbox */
+  flex-direction: column; /* en columna */
+}
+
+/* ===================== INPUTS ===================== */
+input, select { /* inputs y selects */
+  width: 100%; /* ocupan todo */
+  padding: 10px; /* espacio interno */
+  margin: 10px 0; /* espacio externo */
+}
+
+/* ===================== ATRIBUTOS ===================== */
+input[type="text"] { /* input texto */
+  background: #0f1a4d; /* fondo oscuro */
+  color: white; /* texto */
+  border: 1px solid #00eaff; /* borde azul */
+}
+
+input[type="email"] { /* input email */
+  background: #0f1a4d; /* fondo */
+  color: white; /* texto */
+  border: 1px solid #00eaff; /* borde */
+}
+
+input[type="checkbox"] { /* checkbox */
+  accent-color: #00eaff; /* color del check */
+  width: 15px; /* ancho */
+  height: 15px; /* alto */
+}
+
+/* ===================== BOTONES ===================== */
+.btn-principal { /* botón */
+  background: #00eaff; /* fondo */
+  padding: 12px; /* espacio */
+  border-radius: 8px; /* bordes */
+  text-align: center; /* centra texto */
+  animation: glow 2s infinite; /* animación */
+}
+
+/* ===================== PSEUDO CLASES ===================== */
+a:hover { /* al pasar mouse */
+  color: #110546; /* cambia color */
+  transform: scale(1.05); /* agranda */
+  transition: 0.3s; /* animación */
+}
+
+input:focus { /* cuando escribes */
+  outline: none; /* quita borde */
+  border: 1px solid #00eaff; /* borde azul */
+  box-shadow: 0 0 8px #00eaff; /* brillo */
+}
+
+/* ===================== PSEUDO ELEMENTOS ===================== */
+h1::after { /* después del h1 */
+  content: " ⚡"; /* agrega símbolo */
+  color: #00eaff; /* color */
+  font-size: 20px; /* tamaño */
+}
+
+p::first-letter { /* primera letra */
+  font-size: 20px; /* tamaño */
+  color: #00eaff; /* color */
+  font-weight: bold; /* negrita */
+}
+
+/* ===================== SELECTORES LOGICOS ===================== */
+:is(h1, h2) { /* agrupa h1 y h2 */
+  letter-spacing: 1px; /* espacio letras */
+  text-transform: uppercase; /* mayúsculas */
+  font-weight: bold; /* negrita */
+}
+
+:where(.article, .formulario) { /* agrupa sin prioridad */
+  padding: 15px; /* espacio */
+  margin: 15px; /* separación */
+  box-shadow: 0 0 10px #00eaff; /* sombra */
+}
+
+/* ===================== SELECTORES COMBINADOS ===================== */
+.menu li:hover a {
+  color: #00eaff;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.article:hover img { /* hover imagen */
+  transform: scale(1.05); /* zoom */
+  transition: 0.3s; /* animación */
+  border-radius: 10px; /*borde redondeado*/
+}
+
+footer a:hover { /* hover footer */
+  color: #00eaff; /* cambia color */
+  transform: scale(1.05); /* efecto */
+}
+
+form input, form select { /* múltiples elementos */
+  display: block; /* en bloque */
+  margin: 10px 0; /* espacio */
+  width: 100%; /* ancho */
+}
+
+/* ===================== FOOTER ===================== */
+.footer { /* footer */
+  background: #081233; /* fondo */
+  padding: 60px; /* espacio */
+  display: flex; /* flex */
+  flex-wrap: wrap; /* adaptable */
+  font-size: 3rem;
+}
+
+.footer a { /* links */
+  color: #ccc; /* color */
+  text-decoration: none; /* sin subrayado */
+  transition: 0.3s; /* animación */
+  font-size: 2rem;
+}
+
+/* ===================== ANIMACIONES ===================== */
+@keyframes glow { /* animación brillo */
+  0% { box-shadow: 0 0 5px #00eaff; } /* inicio */
+  50% { box-shadow: 0 0 20px #00eaff; } /* medio */
+  100% { box-shadow: 0 0 5px #00eaff; } /* final */
+}
+
+@keyframes subir { /* animación subir */
+  from { transform: translateY(0); } /* inicio */
+  to { transform: translateY(-20px); } /* final */
+}
+
+@keyframes aparecer { /* animación aparecer */
+  from { opacity: 0; } /* invisible */
+  to { opacity: 1; } /* visible */
+}
+
+/* ===================== USO DE ANIMACIONES ===================== */
+.article:hover { /* hover tarjeta */
+  animation: subir 0.3s forwards; /* aplica animación */
+}
+
+ /** NOTA ACTUAL : 13
 15 puntos SELECTORES
-  #1 SELECTOR UNIVERSAL
-  #5 SELECTORES DE ETIQUETAS HTML
-  #5 SELECTORES DE CLASES
-  #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES
-  #2 SELECTORES LOGICOS MODERNOS
-  #2 SELECTORES PSEUDO CLASES
-  #2 SELECTORES PSEUDO ELEMENTOS
-  #2 SELECTORES ATRIBUTOS AVANZADOS
-  #6 SELECTORES COMBINADOS
+  #1 SELECTOR UNIVERSAL 0.2
+  #5 SELECTORES DE ETIQUETAS HTML 2.5
+  #5 SELECTORES DE CLASES 2.5
+  #3 SELECTORES DE IDENTIFICADORES 1
+  #2 SELECTORES COMBINADORES 0.5
+  #2 SELECTORES LOGICOS MODERNOS 1
+  #2 SELECTORES PSEUDO CLASES 1
+  #2 SELECTORES PSEUDO ELEMENTOS 0.5
+  #2 SELECTORES ATRIBUTOS AVANZADOS 1
+  #6 SELECTORES COMBINADOS 2.2
 3 puntos ANIMACIONES
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+RECOMENDACION: Seria bueno comentar cada punto y tomar en cuenta la 3 propiedades por cada selector
 **/
+

@@ -1,28 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css2/clase_css.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajo CSS</title>
+  <link rel="stylesheet" href="../jose_villanueva/CSS/clase_css.css">
 </head>
-<body>
-    <p class="ig_sistemas">Ig sistemas</p>
-    <h1>IDAT</h1>
-    <h2>Entornos Web</h2>
-    <p class="presentacion">Hola, soy José Villanueva</p>
-    <h2>Fundamentos de Programación</h2>
-    <p class="gustos">Me gusta programar</p>
 
-    <article class="notas" id="notas-finales">
-        <h2>Notas parciales</h2>
-        <p>Entornos Web: 18</p>
-        <p>Fundamentos de Programación: 20</p>
-    </article>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 id="titulo">Mi Página Web</h1>
+  </header>
+
+  <!-- Navegación -->
+  <nav id="menu">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li class="activo"><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <section class="contenedor caja destacado">
+      <h2>Contenido principal</h2>
+
+      <p class="texto">Este es un párrafo de ejemplo</p>
+      <p>Otro párrafo dentro del contenedor</p>
+
+      <a href="https://example.com" target="_blank">Ir a enlace</a>
+
+      <!-- Input para probar selector de atributo -->
+      <br><br>
+      <input type="text" placeholder="Escribe algo aquí">
+    </section>
+
+    <!-- Animaciones -->
+    <section>
+      <h2>Animaciones CSS</h2>
+
+      <div class="animacion"></div>
+      <div class="caja-rotar"></div>
+      <div class="color-animado"></div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>© 2026 - Mi Página Web</p>
+  </footer>
+
 </body>
-<article class="notas" id="notas-finales">
-    <h2>Notas finales</h2>
-    <p>Entornos Web: 18</p>
-    <p>Fundamentos de Programación: 20</p>
-</article>
 </html>

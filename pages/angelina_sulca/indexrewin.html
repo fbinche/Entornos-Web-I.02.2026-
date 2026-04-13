@@ -39,10 +39,10 @@
         </figure>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Temporadas</a></li>
-                <li><a href="#">Carrito 🛒</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#coleccion">Colección</a></li>
+                <li><a href="#destacados">Destacados</a></li>
+                <li><a href="#compra">Comprar</a></li>
             </ul>
         </nav>
     </header>
@@ -51,14 +51,17 @@
     <main class="main">
 
         <!-- 🔥 SECCIÓN PRINCIPAL (BLOQUE 1) -->
-        <section>
+        <section id="inicio">
+            <header>
+                <h2>Bienvenidos a Nova Market</h2>
+                <p>Tu destino de moda cómoda para cada etapa de la vida</p>
+            </header>
 
-            <h1>Bienvenidos a Nova Market</h1>
-            p
-            <p>Tu destino de moda cómoda para cada etapa de la vida</p>
-            <h2>COLECCIÓN VERANO 2026</h2>
-            <p>Descubre nuestras prendas 100% algodón premium</p>
-            <button>Ver colección</button>
+            <article>
+                <h3>Colección Verano 2026</h3>
+                <p>Descubre nuestras prendas 100% algodón premium</p>
+                <button>Ver colección</button>
+            </article>
         </section>
 
         <!-- 🔥 CATEGORÍAS PRINCIPALES (BLOQUE 2) -->
@@ -68,7 +71,7 @@
                  - EL CONTENIDO ESTE PUEDE ESTAR DENTRO DE UNA SECCION O TODO FUERA DEPENDIENDO DE LA CANTIDAD DE ELEMENTOS QUE TENGAS
                  - UN FOOTER CON INFORMACION ADICIONAL O UN LLAMADO A LA ACCION, SI NO TIENES NADA QUE PONER EN EL FOOTER MEJOR NO LO PONGAS
                 -->
-        <section>
+        <section id="coleccion">
 
             <header>
                 <h2>COLECCIÓN VERANO 2026</h2>
@@ -81,24 +84,25 @@
             </header>
 
             <!-- 🔥 COLECCIÓN (BLOQUE 4) -->
-            <section>
+            <section class="productos">
 
                 <!--RECOMENDACION: USAR COMENTARIOS PARA UBICAR CODIGO -->
                 <!--COLECCIÓN 1-->
-                <card class="card">
+                <article class="card">
                     <header>
                         <h2> Mujer</h2>
                         <p><mark>Descuento 20%</mark></p>
                     </header>
 
                     <figure>
-                        <img src="img/mujer.jpg" alt="Prenda para mujer" width="300">
+                        <img src="img/mujer.jpg" alt="Prenda para mujer" width="125">
                     </figure>
 
                     <footer>
                         <button>Agregar al carrito</button>
                     </footer>
-                </card>
+                </article>
+
                 <!--COLECCIÓN 2-->
                 <article class="card">
                     <header>
@@ -170,7 +174,8 @@
         </section>
 
         <!-- 🔥 PRENDAS (BLOQUE 4) -->
-        <section>
+         
+        <section id="destacados">
             <!--header-->
             <header>
                 <h2>Prendas Destacadas</h2>
@@ -181,14 +186,16 @@
             </header>
             <!--COLECCION MUJER-->
             <section class="section">
-                <header>
-                    <h2>Colleccion Mujer</h2>
-                    <p>Explora nuestra colección de moda femenina, diseñada para mujeres que buscan elegancia, comodidad 
-                        y estilo en su día a día. Desde conjuntos modernos hasta prendas versátiles de algodón premium, 
-                        cada pieza ha sido cuidadosamente creada para adaptarse a diferentes ocasiones y resaltar tu estilo 
-                        personal. Descubre nuestras propuestas de moda y encuentra el conjunto perfecto que combine comodidad, 
-                        calidad y tendencia.</p>
-                </header>
+
+                <card class="card">
+                    <header>
+                        <h2>Colleccion Mujer</h2>
+                        <p>Explora nuestra colección de moda femenina, diseñada para mujeres que buscan elegancia, comodidad 
+                            y estilo en su día a día. Desde conjuntos modernos hasta prendas versátiles de algodón premium, 
+                            cada pieza ha sido cuidadosamente creada para adaptarse a diferentes ocasiones y resaltar tu estilo 
+                            personal. Descubre nuestras propuestas de moda y encuentra el conjunto perfecto que combine comodidad, 
+                            calidad y tendencia.</p>
+                    </header>
 
                 <section class="section columnas_7">
                     <!--Colleccion MUJER  Producto 1-->
@@ -201,7 +208,7 @@
                             <img src="img/mujer2.jpg" alt="Prenda para mujer" width="300">
                             <figcaption>Prenda para mujer</figcaption>
                         </figure>
-                        <details open>
+                        <details>
                             <summary>Detalles del producto</summary>
                             <p><strong>Precio: <del> S/ 129.90</del></strong> S/ 89.90</p>
                             <p><strong>Material:</strong> Algodón 100% premium</p>
@@ -382,7 +389,7 @@
                             <img src="img/niños2.jpg" alt="Conjunto deportivo para niños" width="300">
                             <figcaption>Conjunto deportivo cómodo para niños</figcaption>
                         </figure>
-                        <details open>
+                        <details>
                             <summary>Detalles del producto</summary>
                             <p><strong>Precio: <del> S/ 79.90</del></strong> S/ 63.90</p>
                             <p><strong>Material:</strong> Algodón pima suave e hipoalergénico</p>
@@ -563,7 +570,7 @@
                             <img src="img/hombre2.jpg" alt="Conjunto urbano hombre" width="300">
                             <figcaption>Prenda para mujer</figcaption>
                         </figure>
-                        <details open>
+                        <details>
                             <summary>Detalles del producto</summary>
                             <p><strong>Precio: <del> S/ 129.90</del></strong> S/ 103.90</p>
                             <p><strong>Material:</strong> Algodón pima premium</p>
@@ -744,7 +751,7 @@
                             <img src="img/maternidad2.jpg" alt="Conjunto para maternidad" width="300">
                             <figcaption>Prenda para mujer</figcaption>
                         </figure>
-                        <details open>
+                        <details>
                             <summary>Detalles del producto</summary>
                             <p><strong>Precio: <del> S/ 139.90</del></strong> S/ 111.90</p>
                             <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
@@ -925,7 +932,7 @@
                             <img src="img/bebe2.jpg" alt="Conjunto bebé cómodo" width="300">
                             <figcaption>Prenda para mujer</figcaption>
                         </figure>
-                        <details open>
+                        <details>
                             <summary>Detalles del producto</summary>
                             <p><strong>Precio: <del> S/ 69.90</del></strong> S/ 55.90</p>
                             <p><strong>Material:</strong> Algodón pima hipoalergénico</p>
@@ -1213,16 +1220,7 @@
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
-            <nav>
-                <h3>Ingresar información</h3>
-
-                <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Productos Populares</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+>
             <section>
                 <header>
                     <h4>Titulo</h4>

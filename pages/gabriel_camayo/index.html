@@ -6,25 +6,13 @@
     <title>Maqueta Semántica</title>
     <!--<link rel="stylesheet" href="css/clase_css.css">-->    
     <link rel="stylesheet" href="css/clase_css.css">
-    <!--Forma Interna-->
-    <style>
-    p{
-        color:blue;
-    }
-    </style>
 </head>
 
-
 <body>
-<!--En Linea-->
-    <p style="color: blueviolet;">
-        p Blueviolet
-    </p>
-    <p style="color: rosybrown">
-        p rosybrown
-    </p>
 
+    <!-- SELECTOR DE ETIQUETA: header -->
     <header class="header">
+        <!-- SELECTOR DE ETIQUETA: h2 -->
         <h2 href="#seccion1">Go Phone</h2>
         <ul>
             <!--USAR FORMATO SNAKE CASE -->
@@ -36,7 +24,7 @@
 
     <main>
 
-        <section class="servicio">
+        <section>
             <section>
                 <!-- CARD 1 -->
                 <article>
@@ -46,12 +34,14 @@
                     </header>
 
                     <section>
+                        <!-- SELECTOR DE ETIQUETA: p -->
                         <p>
                             El celular que buscas con los accesorios que necesitas
                             en un solo lugar.
                         </p>
 
                         <figure>
+                            <!-- SELECTOR DE ETIQUETA: img -->
                             <img src="imagenes/img11.png" alt="Celular con accesorios">
                         </figure>
                     </section>
@@ -67,10 +57,10 @@
                         <figure>
                             <img src="imagenes/img10.png">
                         </figure>
+                        <!-- SELECTOR DE ETIQUETA: button -->
                         <button type="button">Ver Catalogo</button>
                     </card>
                 </section>
-
 
                 <section>
                     <!--CARD 3-->
@@ -85,13 +75,7 @@
             </section>
         </section>
 
-
-        <!--RECOMENDACION:A TODAS LAS SECCIONES,ASI COMO LO HACES CON LOS ARTICULOS AGREGAR 
-                 - UN HEADER QUE EXPLIQUE DE QUE SE TRATA LA SECCION
-                 - EL CONTENIDO ESTE PUEDE ESTAR DENTRO DE UNA SECCION O TODO FUERA DEPENDIENDO DE LA CANTIDAD DE ELEMENTOS QUE TENGAS
-                 - UN FOOTER CON INFORMACION ADICIONAL O UN LLAMADO A LA ACCION, SI NO TIENES NADA QUE PONER EN EL FOOTER MEJOR NO LO PONGAS
-                -->
-        <section class="servicio" id="productos_mas_vendidos">
+        <section id="productos_mas_vendidos">
             <section>
 
                 <section>
@@ -104,7 +88,6 @@
                         </p>
                         <p>¡Compra ahora y disfruta de la mejor tecnología al alcance de tu mano!</p>
 
-                        
                         <section>
                             <!--ARTICULO 1-->
                             <article>
@@ -127,11 +110,13 @@
                                 </figure>
 
                                 <br>
+                                <!-- SELECTOR DE ETIQUETA: footer -->
                                 <footer>
                                     <p><strong>Envío Gratis</strong></p>
                                     <button type="button">Comprar Ahora</button>
                                 </footer>
                             </article>
+
                             <!--ARTICULO 2-->
                             <article>
                                 <header>
@@ -159,8 +144,8 @@
                                 </footer>
 
                             </article>
-                            <!--ARTICULO 3-->
 
+                            <!--ARTICULO 3-->
                             <article>
                                 <header>
                                     <h2>Honor 400 Pro</h2>
@@ -261,6 +246,7 @@
                     </footer>
 
                 </card>
+
                 <!--CARD 2-->
                 <card>
                     <header>
@@ -289,10 +275,10 @@
 
                 </card>
             </section>
+
             <section>
                 <card>
                     <h2>Samsung A56</h2>
-                    </header>
 
                     <section>
                         <h3>Precio Online</h3>
@@ -314,9 +300,9 @@
                         <button type="button">Ver oferta</button>
                     </footer>
                 </card>
+
                 <card>
                     <h2>Samsung A17</h2>
-                    </header>
 
                     <section>
                         <h3>Precio Online</h3>
@@ -338,9 +324,9 @@
                         <button type="button">Ver oferta</button>
                     </footer>
                 </card>
+
                 <card>
                     <h2>Honor X8C 5G</h2>
-                    </header>
 
                     <section>
                         <h3>Precio Online</h3>
@@ -375,13 +361,12 @@
 
             <header>
                 <h2>Accesorios del Mes</h2>
-
                 <p>Descubre los mejores accesorios al mejor precio</p>
             </header>
+
             <section>
                 <!--ARTICULO 1-->
                 <article>
-
                     <figure>
                         <img src="imagenes/img16.png" alt="Cargador Samsung">
                         <figcaption>Cargador Samsung</figcaption>
@@ -399,11 +384,10 @@
                     <footer>
                         <button type="button">Comprar</button>
                     </footer>
-
                 </article>
+
                 <!--ARTICULO 2-->
                 <article>
-
                     <figure>
                         <img src="imagenes/img17.png" alt="Parlante Xiaomi">
                         <figcaption>Parlante Xiaomi</figcaption>
@@ -421,15 +405,15 @@
                     <footer>
                         <button type="button">Comprar</button>
                     </footer>
-
                 </article>
+
                 <!--ARTICULO 3-->
                 <article>
-                        <figure>
-                            <img src="imagenes/img18.png" alt="Audifonos Honor">
-                            <figcaption>Aud. Honor Choice X7Lite</figcaption>
-                        </figure>
-                        <p>
+                    <figure>
+                        <img src="imagenes/img18.png" alt="Audifonos Honor">
+                        <figcaption>Aud. Honor Choice X7Lite</figcaption>
+                    </figure>
+                    <p>
                         <del>S/139.00</del>
                         <ins>S/99.00</ins>
                     </p>
@@ -441,16 +425,15 @@
                     <footer>
                         <button type="button">Comprar</button>
                     </footer>
-                    </article>
-                
+                </article>
 
                 <!--ARTICULO 4-->
-                    <article>
-                        <figure>
-                            <img src="imagenes/img19.png" alt="Audifonos Redmi">
-                            <figcaption>Aud. Redmi Active</figcaption>
-                        </figure>
-                        <p>
+                <article>
+                    <figure>
+                        <img src="imagenes/img19.png" alt="Audifonos Redmi">
+                        <figcaption>Aud. Redmi Active</figcaption>
+                    </figure>
+                    <p>
                         <del>S/75.00</del>
                         <ins>S/56.00</ins>
                     </p>
@@ -462,15 +445,15 @@
                     <footer>
                         <button type="button">Comprar</button>
                     </footer>
-                    </article>
-                
+                </article>
+
                 <!--ARTICULO 5-->
-                    <article>
-                        <figure>
-                            <img src="imagenes/img20.png" alt="Cargador Portatil Xiaomi">
-                            <figcaption>Cargador Portatil Xiaomi</figcaption>
-                        </figure>
-                        <p>
+                <article>
+                    <figure>
+                        <img src="imagenes/img20.png" alt="Cargador Portatil Xiaomi">
+                        <figcaption>Cargador Portatil Xiaomi</figcaption>
+                    </figure>
+                    <p>
                         <del>S/149.00</del>
                         <ins>S/89.00</ins>
                     </p>
@@ -482,15 +465,15 @@
                     <footer>
                         <button type="button">Comprar</button>
                     </footer>
-                    </article>
-                
+                </article>
+
                 <!--ARTICULO 6-->
-                    <article>
-                        <figure>
-                            <img src="imagenes/img21.png" alt="Parlante JBL">
-                            <figcaption>Parlante JBL</figcaption>
-                        </figure>
-                        <p>
+                <article>
+                    <figure>
+                        <img src="imagenes/img21.png" alt="Parlante JBL">
+                        <figcaption>Parlante JBL</figcaption>
+                    </figure>
+                    <p>
                         <del>S/229.00</del>
                         <ins>S/149.00</ins>
                     </p>
@@ -502,59 +485,56 @@
                     <footer>
                         <button type="button">Comprar</button>
                     </footer>
-                    </article>
+                </article>
             </section>
+
             <footer>
                 <p>
                     Contamos con un catalogo completo de accesorios para complementar tu experiencia móvil, con envío
                     gratis y garantía de satisfacción.
-
                 </p>
                 <p>
                     ¡Compra ahora y disfruta de la mejor tecnología al alcance de tu mano! <a href="#seccion1">Ver
                         catalogo completo</a>
-
                 </p>
             </footer>
         </section>
 
         <section>
-            <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
             <section>
-        <h2>Datos del Pedido</h2>
-        <form class="FORMULARIO" id="formulario">
-            <ul>
-                <li>
-                    <label>Nombre completo:</label>
-                    <input type="text" id="nombre" name="user_name">
-                </li>
-                <li>
-                    <label>Modelo de celular:</label>
-                    <input type="text" id="modelo" name="phone_model">
-                </li>
-                <li>
-                    <label>Correo electrónico:</label>
-                    <input type="email" id="correo" name="user_email">
-                </li>
-                <li>
-                    <label>Comentarios:</label>
-                    <textarea id="mensaje" name="user_message"></textarea>
-                </li>
-                <li>
-                    <button type="button">Enviar Pedido</button>
-                </li>
-            </ul>
-        </form>
-    </section>
+                <h2>Datos del Pedido</h2>
+                <form id="formulario">
+                    <ul>
+                        <li>
+                            <label>Nombre completo:</label>
+                            <input type="text" id="nombre" name="user_name" placeholder="Ingrese su nombre completo">
+                        </li>
+                        <li>
+                            <label>Modelo de celular:</label>
+                            <input type="text" id="modelo" name="phone_model" placeholder="Ingrese el modelo de celular">
+                        </li>
+                        <li>
+                            <label>Correo electrónico:</label>
+                            <input type="email" id="correo" name="user_email" placeholder="Ingrese su correo electronico">
+                        </li>
+                        <li>
+                            <label>Comentarios:</label>
+                            <textarea id="mensaje" name="user_message"></textarea>
+                        </li>
+                        <li>
+                            <button type="button">Enviar Pedido</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
         </section>
 
     </main>
-    <footer> <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
 
+    <footer>
         <section>
             <nav>
                 <h3>Ingresar información</h3>
-
                 <ul>
                     <li><a href="#">Sobre Nosotros</a></li>
                     <li><a href="#">Productos Populares</a></li>
@@ -562,9 +542,9 @@
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
+
             <nav>
                 <h3>Ingresar información</h3>
-
                 <ul>
                     <li><a href="#">Sobre Nosotros</a></li>
                     <li><a href="#">Productos Populares</a></li>
@@ -572,6 +552,7 @@
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
+
             <section>
                 <div>
                     <h4>Titulo</h4>
@@ -584,14 +565,8 @@
                     <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a>
                 </div>
             </section>
-
+        </section>
     </footer>
 
 </body>
-<!--NOTA TENTATIVA HTML  : 19
- +2 ADICIONAR FORMULARIO (AGREGAR 5 ELEMENTOS HTML DIFERENTES MAS)
- +1 ADICIONAR CONTENIDO AL FOOTER (FALTA)
- +1(OK) ADICIONAR NAVEGACION DE LOS ENLACES
- +1(OK) MEJORAR LA SECCION ACCESORIOS DEL MES , REPLICA EL MISMO ESTILO DE LOS ARTICULOS 1 Y 2
- -->
 </html>

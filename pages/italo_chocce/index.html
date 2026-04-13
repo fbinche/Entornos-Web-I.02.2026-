@@ -9,38 +9,63 @@
     link rel="stylesheet" href="css/enblanco.css">
         -->
     <link rel="stylesheet" href="css/clase_css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <!--interna-->
-   <style>
-    p{      
-        color: blue;
-    }
-   </style>
 </head>
 
 <body>
-    <!--en linea-->
-    <p style="color:red">
-        
-    </p>    
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://tse1.mm.bing.net/th/id/OIP.6Xqkkk3vy4GzivqdRP7SFwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="imagen" height="100" ></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#quienes_somos">¿Quienes Somos?</a>
+        <a class="nav-link" href="#planes">Planes</a>
+      </div>
+    </div>
+  </div>
+</nav>
     <header class="header">
         <h1>INTERLUX </h1>
     </header>
     <section class="article">
         <nav>
             <ul>
-                <!--Usar el formato snakecase  daniel_inche  -->
+                <!--Usar el formato snakecase  daniel_inche  -->+
                 <li><a href="#convenios_de_pagos">Convenios de Pagos</a></li>
                 <li><a href="#beneficios">Por que elegirnos?</a></li>
                 <li><a href="#unetenos">Unetenos</a></li>
                 <li><a href="#soporte">soporte</a></li>
             </ul>
         </nav>
-        <section class="article">
-        <img src="https://th.bing.com/th/id/OIP.3RKGptYk4uYO6z6lLOr7GQHaFW?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="clave de wifi">
+       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.omvI8pRGzibDsXyOhKoROAHaFP?rs=1&pid=ImgDetMain&o=7&rm=3" class="d-block w-100" alt="señal"  height="300"    >
+    </div>
+    <div class="carousel-item">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.FzlT9XGSkfx8F19n1UXrqQHaD3?rs=1&pid=ImgDetMain&o=7&rm=3" class="d-block w-100" alt="roputer" height="300"   >
+    </div>
+    <div class="carousel-item">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.0h_TQyZDEC9F48ffhl2m0QHaHa?w=626&h=626&rs=1&pid=ImgDetMain&o=7&rm=3" class="d-block w-100" alt="wifi"  height="300"   >
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
         </section>
 
-        <section    class="article">
+        <section    class="article"   id="#quienes_somos">       >
         <h3>¿Quienes Somos?</h3>
         <p>
         Interlux es una empresa dedicada a brindar servicios de internet de alta calidad, enfocada en ofrecer conexiones rápidas, estables y 
@@ -63,7 +88,7 @@
     <!--RECOMENDACION: NO USAR ELEMENTOS DIV USAR SEMANTICA-->
     <main class="main">
         <!-- 23/02 Respetar las secciones , Planes e details info -->
-        <section class="section hero first-section">
+        <section class="section hero first-section" id="#planes">
 
 
             <section class="section columnas_2">
@@ -270,7 +295,7 @@
         <section class="section third-section" id="convenios_de_pagos">
             <header>
                 <h2>Convenios de Pagos</h2>
-                <p>
+                <p lang="textito">
                     En esta seccion de nuestra pagina y de nuestro Servicio de interned INTERLUX ha realizado
                     promociones en colaboración con el Banco de Crédito del Perú (BCP) y su plataforma de pagos Yape
                 </p>
@@ -289,7 +314,7 @@
                     </figure>
                 </section>
 
-                <section class="card">
+                <section class="card columnas_2">
                     <h3>Informacion sobre nuestros convenios</h3>
                     <dl>
                         <dt>Actualmente, Interlux mantiene una colaboración activa con el ecosistema digital del BCP
@@ -507,8 +532,6 @@
             <!-- botón reset -->
             <button type="reset">Limpiar</button>
 
-            <!-- botón normal -->
-            <button type="button">Acción Extra</button>
 
         </footer>
 
@@ -531,8 +554,9 @@
                 <h3>PREGUNTANOS</h3>
 
                 <ul>
-                    <li><a href="https://win.pe/contacto">Soporte tecnico</a></li>
                     <li><a href="#UNETENOS">Contactanos</a></li>
+                    <li><a href="https://win.pe/contacto">Soporte tecnico</a></li>
+                    
                 </ul>
             </nav>
             <nav>
@@ -563,13 +587,23 @@
 
                 <div>
                     <a href="https://www.instagram.com/v.itxlo"><i class="bi bi-instagram"></i>Instagram</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+
                     <a href="https://www.facebook.com/italo.mzx"><i class="bi bi-facebook"></i>Facebook</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>
                     <a href="https://www.tiktok.com/@italux96"><i class="bi bi-tiktok"></i>TikTok</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+</svg>
                 </div>
             </section>
 
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 <!--NOTA TENTATIVA HTML  : 16
  +2 ADICIONAR FORMULARIO (FALTA)

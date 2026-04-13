@@ -1,0 +1,250 @@
+/* 1. Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Selectores de etiquetas */
+body {
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  margin: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  background: #ddd;
+}
+
+a {
+  display: inline-block;
+  margin: 10px;
+  color: green;
+}
+
+/* 3. Selectores de clases (5) */
+.contenedor {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.texto {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.activo {
+  color: white;
+  background: green;
+  padding: 5px;
+}
+
+.destacado {
+  background: yellow;
+  color: black;
+  padding: 10px;
+}
+
+.caja {
+  border: 2px solid blue;
+  margin: 15px;
+  padding: 10px;
+}
+
+/* 4. Selectores ID (3) */
+#titulo {
+  font-size: 30px;
+  background: black;
+  color: white;
+}
+
+#menu {
+  background: gray;
+  padding: 10px;
+  color: white;
+}
+
+#footer {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+/* 5. Combinadores */
+div p {
+  color: purple;
+  margin: 5px;
+  font-style: italic;
+}
+
+div > p {
+  border: 1px solid black;
+  padding: 5px;
+  background: #fafafa;
+}
+
+/* 6. Lógicos modernos */
+:is(h1, h2) {
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+:where(p, li) {
+  line-height: 1.5;
+  font-size: 14px;
+  color: #444;
+}
+
+/* 7. Pseudo clases */
+a:hover {
+  color: red;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+li:nth-child(2) {
+  background: yellow;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* 8. Pseudo elementos */
+p::first-letter {
+  font-size: 30px;
+  color: blue;
+  font-weight: bold;
+}
+
+p::after {
+  content: " ✔";
+  color: green;
+}
+
+/* 9. Atributos avanzados */
+input[type="text"] {
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+a[target="_blank"] {
+  color: orange;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* 10. Selectores combinados (6) */
+div.contenedor {
+  border: 2px solid black;
+  margin: 20px;
+  padding: 15px;
+}
+
+ul li.activo {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+body .contenedor p {
+  background: #eee;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+div.contenedor > p.texto {
+  border: 2px dashed red;
+  padding: 10px;
+  background: #fff;
+}
+
+ul > li.activo {
+  border: 2px solid white;
+  padding: 5px;
+  background: green;
+}
+
+div.animacion {
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+/* 11. Animaciones (3) */
+
+/* Animación 1 */
+@keyframes mover {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+.animacion {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation: mover 2s infinite;
+}
+
+/* Animación 2 */
+@keyframes rotar {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+.caja-rotar {
+  width: 80px;
+  height: 80px;
+  background: blue;
+  animation: rotar 3s infinite linear;
+}
+
+/* Animación 3 */
+@keyframes cambiarColor {
+  0% { background: red; }
+  50% { background: yellow; }
+  100% { background: green; }
+}
+
+.color-animado {
+  width: 100px;
+  height: 100px;
+  animation: cambiarColor 4s infinite;
+}
+
+
+
+ /** NOTA ACTUAL : 15 - 5 (Usar pagina)
+15 puntos SELECTORES
+  #1 SELECTOR UNIVERSAL 0.5
+  #5 SELECTORES DE ETIQUETAS HTML 2.5
+  #5 SELECTORES DE CLASES 2.5
+  #3 SELECTORES DE IDENTIFICADORES 1.5
+  #2 SELECTORES COMBINADORES 1
+  #2 SELECTORES LOGICOS MODERNOS 1
+  #2 SELECTORES PSEUDO CLASES 1
+  #2 SELECTORES PSEUDO ELEMENTOS 1
+  #2 SELECTORES ATRIBUTOS AVANZADOS 1
+  #6 SELECTORES COMBINADOS 3
+3 puntos ANIMACIONES
+2 puntos SUSTENTACION/PARTICIPACION EN CLASE
+NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+RECOMENDACION: Aplicar a su pagina index , tiene que ser una replica de la pagina
+**/

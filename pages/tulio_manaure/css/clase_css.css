@@ -1,54 +1,199 @@
-*{
-
-}
-head {
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(92, 4, 65);
-    color: rgb(255, 255, 255);
+/* selector universal*/
+* {
     margin: 0;
-}
-p{
-    color: rgba(252, 169, 252, 0.699);
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(0, 0, 0) ;
-    font-family: 'Montserrat', sans-serif;
+/* selectores de etiquetas */
+body {
+    font-family: Arial;
+    background-color: #0d8009;
+    color: black;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px;
+    color: rgba(0,0,0,0.7);
+}
+
+header {
+    background-color: black;
     color: white;
-    margin: 0;
-
-}  
-h1{
-    color: rgba(235, 183, 235, 0.699);
-    font-size: 50px;
-   
     text-align: center;
 }
 
-h2{
-    color: rgba(219, 172, 219, 0.699);
-
-
-}
-h3{
-    color: rgba(219, 172, 219, 0.699);
-    font-size: 30px;
+footer {
+    background-color: black;
+    color: white;
     text-align: center;
+}
+
+/* selectores de clase */
+.video-header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+}
+
+.contenido {
+    text-align: center;
+    color: white;
+    position: relative;
+    animation: aparecer 2s;
+}
+
+/* selectores de id*/
+#inicio {
+    background-color: #b3dfab;
+    padding: 10px;
+    margin: 10px;
+}
+
+#productos {
+    background-color: #c8e6c9;
+    padding: 10px;
+    margin: 10px;
+}
+
+#formulario {
+    background-color: #dcedc8;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* combinadores */
+nav ul li {
+    display: inline;
+    margin: 10px;
+    list-style: none;
+}
+
+section p {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* selectores logicos */
+section:is(#inicio, #productos) {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #e8f5e9;
+}
+
+section:not(#contacto) {
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* pseudo clases */
+a:hover {
+    color: rgb(158, 209, 142);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+input:focus {
+    border: 2px solid green;
+    outline: none;
+    background-color: #f0fff0;
+}
+
+/* pseudo elementos */
+h2::after {
+    content: " *";
+    color: rgb(10, 0, 0);
+    font-size: 20px;
+}
+
+p::first-letter {
+    font-weight: bold;
+    font-size: 20px;
+    color: darkgreen;
+}
+
+/* selectores de atributos*/
+input[type="text"] {
+    background-color: #eaffea;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+input[type="email"] {
+    background-color: #eaffea;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/* imagenes */
+section img {
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+}
+
+/* inicio (banner grande) */
+#inicio img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* categorias (niños / niñas) */
+#categorias {
+    text-align: center;
+}
+
+#categorias img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+/* selectores combinados */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    background-color: black;
+    color: white;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+    cursor: pointer;
+}
+
+/* animacion */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 
 }
-/** NOTA ACTUAL : 2.0
-15 puntos SELECTORES
-  #1 SELECTOR UNIVERSAL
-  #5 SELECTORES DE ETIQUETAS HTML
-  #5 SELECTORES DE CLASES
-  #3 SELECTORES DE IDENTIFICADORES
-  #2 SELECTORES COMBINADORES
-  #2 SELECTORES LOGICOS MODERNOS
-  #2 SELECTORES PSEUDO CLASES
-  #2 SELECTORES PSEUDO ELEMENTOS
-  #2 SELECTORES ATRIBUTOS AVANZADOS
-  #6 SELECTORES COMBINADOS
-3 puntos ANIMACIONES
-2 puntos SUSTENTACION/PARTICIPACION EN CLASE
-NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
-**/
