@@ -85,7 +85,7 @@ div.card p {
 }
 
 nav ul li a {
-    color: pink;
+    color: rgb(235, 175, 185);
     text-decoration: none;
     text-shadow: 2px 2px 5px black;
     font-family: "Verdana", sans-serif;
