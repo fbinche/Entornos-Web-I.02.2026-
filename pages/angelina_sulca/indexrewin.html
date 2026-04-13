@@ -1521,163 +1521,167 @@
 
         <section class="container my-5">
 
-            <section id="compra" class="formulario">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
 
-                <header class="mb-4">
-                    <h2>Formulario de Compra</h2>
-                    <p>Complete los datos para procesar su pedido.</p>
-                </header>
+                        <section id="compra" class="formulario">
 
-                <form>
+                            <header class="mb-4">
+                                <h2>Formulario de Compra</h2>
+                                <p>Complete los datos para procesar su pedido.</p>
+                            </header>
 
-                    <!-- DATOS PERSONALES -->
-                    <fieldset class="mb-4">
-                        <legend>Datos personales</legend>
+                            <form>
 
-                        <section class="row">
+                                <!-- DATOS PERSONALES -->
+                                <fieldset class="mb-4">
+                                    <legend>Datos personales</legend>
 
-                            <section class="col-md-6">
-                                <label class="form-label">Nombre</label>
-                                <input type="text" class="form-control" required>
-                            </section>
+                                    <section class="row">
 
-                            <section class="col-md-6">
-                                <label class="form-label">Apellido</label>
-                                <input type="text" class="form-control" required>
-                            </section>
+                                        <section class="col-md-6">
+                                            <label class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" required>
+                                        </section>
+
+                                        <section class="col-md-6">
+                                            <label class="form-label">Apellido</label>
+                                            <input type="text" class="form-control" required>
+                                        </section>
+
+                                    </section>
+                                </fieldset>
+
+                                <!-- CONTACTO -->
+                                <fieldset class="mb-4">
+                                    <legend>Contacto</legend>
+
+                                    <section class="row">
+
+                                        <section class="col-md-6">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" required>
+                                        </section>
+
+                                        <section class="col-md-6">
+                                            <label class="form-label">Teléfono</label>
+                                            <input type="tel" class="form-control">
+                                        </section>
+
+                                    </section>
+                                </fieldset>
+
+                                <!-- DIRECCION -->
+                                <fieldset class="mb-4">
+                                    <legend>Dirección de facturación</legend>
+
+                                    <label class="form-label">Dirección</label>
+                                    <input type="text" class="form-control mb-2">
+
+                                    <section class="row">
+
+                                        <section class="col-md-6">
+                                            <label class="form-label">Ciudad</label>
+                                            <input type="text" class="form-control">
+                                        </section>
+
+                                        <section class="col-md-6">
+                                            <label class="form-label">Código Postal</label>
+                                            <input type="text" class="form-control" value="15491">
+                                        </section>
+
+                                    </section>
+                                </fieldset>
+
+                                <!-- ENVIO -->
+                                <fieldset class="mb-4">
+                                    <legend>Dirección de envío</legend>
+
+                                    <section class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">
+                                            La dirección es la misma que la de facturación
+                                        </label>
+                                    </section>
+
+                                    <label class="form-label">Dirección de envío</label>
+                                    <input type="text" class="form-control">
+
+                                </fieldset>
+
+                                <!-- REGALO -->
+                                <fieldset class="mb-4">
+                                    <legend>¿Es un regalo?</legend>
+
+                                    <section class="form-check">
+                                        <input class="form-check-input" type="radio" name="regalo">
+                                        <label class="form-check-label">Sí</label>
+                                    </section>
+
+                                    <section class="form-check">
+                                        <input class="form-check-input" type="radio" name="regalo">
+                                        <label class="form-check-label">No</label>
+                                    </section>
+
+                                </fieldset>
+
+                                <!-- BENEFICIARIO -->
+                                <fieldset class="mb-4">
+                                    <legend>Beneficiario</legend>
+
+                                    <label class="form-label">Nombre del beneficiario</label>
+                                    <input type="text" class="form-control mb-2">
+
+                                    <label class="form-label">Mensaje de regalo</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+
+                                </fieldset>
+
+                                <!-- INSTRUCCIONES -->
+                                <fieldset class="mb-4">
+                                    <legend>Instrucciones especiales</legend>
+
+                                    <textarea class="form-control" rows="4"></textarea>
+
+                                </fieldset>
+
+                                <!-- PAGO -->
+                                <fieldset class="mb-4">
+                                    <legend>Método de pago</legend>
+
+                                    <section class="form-check">
+                                        <input class="form-check-input" type="radio" name="pago">
+                                        <label class="form-check-label">Efectivo</label>
+                                    </section>
+
+                                    <section class="form-check">
+                                        <input class="form-check-input" type="radio" name="pago">
+                                        <label class="form-check-label">Tarjeta</label>
+                                    </section>
+
+                                    <section class="form-check">
+                                        <input class="form-check-input" type="radio" name="pago">
+                                        <label class="form-check-label">PayPal</label>
+                                    </section>
+
+                                    <section class="form-check">
+                                        <input class="form-check-input" type="radio" name="pago">
+                                        <label class="form-check-label">Yape</label>
+                                    </section>
+
+                                </fieldset>
+
+                                <!-- BOTONES -->
+                                <section class="d-flex gap-2">
+                                    <button type="submit" class="btn btn-primary">Confirmar compra</button>
+                                    <button type="reset" class="btn btn-secondary">Borrar formulario</button>
+                                </section>
+
+                            </form>
 
                         </section>
-                    </fieldset>
-
-                    <!-- CONTACTO -->
-                    <fieldset class="mb-4">
-                        <legend>Contacto</legend>
-
-                        <section class="row">
-
-                            <section class="col-md-6">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-control" required>
-                            </section>
-
-                            <section class="col-md-6">
-                                <label class="form-label">Teléfono</label>
-                                <input type="tel" class="form-control">
-                            </section>
-
-                        </section>
-                    </fieldset>
-
-                    <!-- DIRECCION -->
-                    <fieldset class="mb-4">
-                        <legend>Dirección de facturación</legend>
-
-                        <label class="form-label">Dirección</label>
-                        <input type="text" class="form-control mb-2">
-
-                        <section class="row">
-
-                            <section class="col-md-6">
-                                <label class="form-label">Ciudad</label>
-                                <input type="text" class="form-control">
-                            </section>
-
-                            <section class="col-md-6">
-                                <label class="form-label">Código Postal</label>
-                                <input type="text" class="form-control" value="15491">
-                            </section>
-
-                        </section>
-                    </fieldset>
-
-                    <!-- ENVIO -->
-                    <fieldset class="mb-4">
-                        <legend>Dirección de envío</legend>
-
-                        <section class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox">
-                            <label class="form-check-label">
-                                La dirección es la misma que la de facturación
-                            </label>
-                        </section>
-
-                        <label class="form-label">Dirección de envío</label>
-                        <input type="text" class="form-control">
-
-                    </fieldset>
-
-                    <!-- REGALO -->
-                    <fieldset class="mb-4">
-                        <legend>¿Es un regalo?</legend>
-
-                        <section class="form-check">
-                            <input class="form-check-input" type="radio" name="regalo">
-                            <label class="form-check-label">Sí</label>
-                        </section>
-
-                        <section class="form-check">
-                            <input class="form-check-input" type="radio" name="regalo">
-                            <label class="form-check-label">No</label>
-                        </section>
-
-                    </fieldset>
-
-                    <!-- BENEFICIARIO -->
-                    <fieldset class="mb-4">
-                        <legend>Beneficiario</legend>
-
-                        <label class="form-label">Nombre del beneficiario</label>
-                        <input type="text" class="form-control mb-2">
-
-                        <label class="form-label">Mensaje de regalo</label>
-                        <textarea class="form-control" rows="3"></textarea>
-
-                    </fieldset>
-
-                    <!-- INSTRUCCIONES -->
-                    <fieldset class="mb-4">
-                        <legend>Instrucciones especiales</legend>
-
-                        <textarea class="form-control" rows="4"></textarea>
-
-                    </fieldset>
-
-                    <!-- PAGO -->
-                    <fieldset class="mb-4">
-                        <legend>Método de pago</legend>
-
-                        <section class="form-check">
-                            <input class="form-check-input" type="radio" name="pago">
-                            <label class="form-check-label">Efectivo</label>
-                        </section>
-
-                        <section class="form-check">
-                            <input class="form-check-input" type="radio" name="pago">
-                            <label class="form-check-label">Tarjeta</label>
-                        </section>
-
-                        <section class="form-check">
-                            <input class="form-check-input" type="radio" name="pago">
-                            <label class="form-check-label">PayPal</label>
-                        </section>
-
-                        <section class="form-check">
-                            <input class="form-check-input" type="radio" name="pago">
-                            <label class="form-check-label">Yape</label>
-                        </section>
-
-                    </fieldset>
-
-                    <!-- BOTONES -->
-                    <section class="d-flex gap-2">
-                        <button type="submit" class="btn btn-primary">Confirmar compra</button>
-                        <button type="reset" class="btn btn-secondary">Borrar formulario</button>
-                    </section>
-
-                </form>
-
-            </section>
-
+                </div>        
+            </div>
         </section>
     </main>
 
@@ -1754,6 +1758,7 @@ if (temaGuardado) {
     <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 <!--NOTA TENTATIVA HTML  : 14
  +2 ADICIONAR FORMULARIO
