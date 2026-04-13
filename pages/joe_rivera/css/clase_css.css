@@ -690,8 +690,22 @@ body::before {
                                 /* MODO CLARO / OSCURO REAL */
 
 body {
-    background: var(--bs-body-bg);
+    margin: 0;
+    font-family: Arial, sans-serif;
     color: var(--bs-body-color);
+
+    /* 👇 TU FONDO SIEMPRE */
+    background: linear-gradient(135deg, #0a1f5c, #162b8a, #09143c) !important;
+
+    overflow-x: hidden;
+}
+
+body[data-bs-theme="dark"] {
+    background: linear-gradient(135deg, #0a1f5c, #162b8a, #09143c) !important;
+}
+
+body[data-bs-theme="light"] {
+    background: linear-gradient(135deg, #dbeafe, #93c5fd, #60a5fa) !important;
 }
 
 p, h1, h2, h3, span, label, legend, summary, aside, time {
