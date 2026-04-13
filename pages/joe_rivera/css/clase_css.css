@@ -694,7 +694,7 @@ body {
     font-family: Arial, sans-serif;
     color: var(--bs-body-color);
 
-    /* 👇 TU FONDO SIEMPRE */
+    /* TU FONDO SIEMPRE */
     background: linear-gradient(135deg, #0a1f5c, #162b8a, #09143c) !important;
 
     overflow-x: hidden;
