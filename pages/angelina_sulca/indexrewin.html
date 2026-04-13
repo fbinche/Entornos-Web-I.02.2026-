@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/assets/css/formulario.css">
     -->
     <link rel="stylesheet" href="css/clase_css.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
  
     <!--INTERNA-->
     <style>
@@ -28,7 +30,34 @@
     </p>
 
     <!--header-->
+
     <header class="header">
+
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand">Explorador</a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+
+        <nav class="navbar bg-primary" data-bs-theme="dark">
+          <!-- Navbar content -->
+        </nav>
+
+        <button class="btn btn-light" onclick="cambiarTema()">
+            🌙 / ☀️
+        </button>
+
+        <button class="btn btn-primary position-relative">
+            🛒 Carrito
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+            </span>
+        </button>
+
 
         <!--RECOMENDACION: AGREGAR UNA BARRA DE NAVEGACION INTERNA-->
 
@@ -61,6 +90,7 @@
                 <h3>Colección Verano 2026</h3>
                 <p>Descubre nuestras prendas 100% algodón premium</p>
                 <button>Ver colección</button>
+
             </article>
         </section>
 
@@ -84,87 +114,102 @@
             </header>
 
             <!-- 🔥 COLECCIÓN (BLOQUE 4) -->
-            <section class="productos">
+             
+            <section class="productos container">
+                <section class="row g-4">
 
-                <!--RECOMENDACION: USAR COMENTARIOS PARA UBICAR CODIGO -->
-                <!--COLECCIÓN 1-->
-                <article class="card">
-                    <header>
-                        <h2> Mujer</h2>
-                        <p><mark>Descuento 20%</mark></p>
-                    </header>
+                    <!-- COLECCIÓN 1 -->
+                    <section class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <article class="card h-100 text-center">
+                            <header class="card-body">
+                                <h5 class="card-title">Mujer</h5>
+                                <p><mark>Descuento 20%</mark></p>
+                            </header>
 
-                    <figure>
-                        <img src="img/mujer.jpg" alt="Prenda para mujer" width="125">
-                    </figure>
+                            <figure>
+                                <img src="img/mujer.jpg" class="card-img-top img-fluid">
+                            </figure>
 
-                    <footer>
-                        <button>Agregar al carrito</button>
-                    </footer>
-                </article>
+                            <footer class="card-body">
+                                <button class="btn btn-primary">Agregar</button>
+                            </footer>
+                        </article>
+                    </section>
 
-                <!--COLECCIÓN 2-->
-                <article class="card">
-                    <header>
-                        <h3>Maternidad</h3>
-                        <p><mark>-20% Oferta</mark></p>
-                    </header>
+                    <!-- COLECCIÓN 2 -->
+                    <section class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <article class="card h-100 text-center">
+                            <header class="card-body">
+                                <h5>Maternidad</h5>
+                                <p><mark>-20% Oferta</mark></p>
+                            </header>
 
-                    <figure>
-                        <img src="img/maternidad.jpg" alt="Producto de maternidad" width="125">
-                    </figure>
-                    
-                    <footer>
-                        <button>Agregar al carrito</button>
-                    </footer>
+                            <figure>
+                                <img src="img/maternidad.jpg" class="card-img-top img-fluid">
+                            </figure>
 
-                </article>
-                <!--COLECCIÓN 3-->
-                <article class="card">
-                    <header>
-                        <h3>Hombres</h3>
-                        <p><mark>-20% Oferta</mark></p>
-                    </header>
+                            <footer class="card-body">
+                                <button class="btn btn-primary">Agregar</button>
+                            </footer>
+                        </article>
+                    </section>
 
-                    <figure>
-                        <img src="img/hombre.jpg" alt="Prenda para hombres" width="125">
-                    </figure>
+                    <!-- COLECCIÓN 3 -->
+                    <section class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <article class="card h-100 text-center">
+                            <header class="card-body">
+                                <h5>Hombres</h5>
+                                <p><mark>-20% Oferta</mark></p>
+                            </header>
 
-                    <footer>
-                        <button>Agregar al carrito</button>
-                    </footer>
+                            <figure>
+                                <img src="img/hombre.jpg" class="card-img-top img-fluid">
+                            </figure>
 
-                </article>    
-                <!--COLECCIÓN 4-->
-                <article class="card">
-                    <header>
-                        <h3>Bebés</h3>
-                        <p><mark>-20% Oferta</mark></p>
-                    </header>
+                            <footer class="card-body">
+                                <button class="btn btn-primary">Agregar</button>
+                            </footer>
+                        </article>
+                    </section>
 
-                    <figure>
-                        <img src="img/bebe.jpg" alt="Prenda para bebés" width="125">
-                    </figure>
+                    <!-- COLECCIÓN 4 -->
+                    <section class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <article class="card h-100 text-center">
+                            <header class="card-body">
+                                <h5>Bebés</h5>
+                                <p><mark>-20% Oferta</mark></p>
+                            </header>
 
-                    <footer>
-                        <button>Agregar al carrito</button>
-                    </footer>
-                </article>
-                <!--COLECCIÓN 5-->
-                <article class="card">
-                    <header>
-                        <h3>Niños</h3>
-                        <p><mark>-20% Oferta</mark></p>
-                    </header>
+                            <figure>
+                                <img src="img/bebe.jpg" class="card-img-top img-fluid">
+                            </figure>
 
-                    <figure>
-                        <img src="img/niños.jpg" alt="Prenda para niños" width="125">
-                    </figure>
+                            <footer class="card-body">
+                                <button class="btn btn-primary">Agregar</button>
+                            </footer>
+                        </article>
+                    </section>
 
-                    <footer>
-                        <button>Agregar al carrito</button>
-                    </footer>
-                </article>
+                    <!-- COLECCIÓN 5 -->
+                    <section class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <article class="card h-100 text-center">
+                            <header class="card-body">
+                                <h5>Niños</h5>
+                                <p><mark>-20% Oferta</mark></p>
+                            </header>
+
+                            <figure>
+                                <img src="img/niños.jpg" class="card-img-top img-fluid">
+                            </figure>
+
+                            <footer class="card-body">
+                                <button class="btn btn-primary">Agregar</button>
+                            </footer>
+                        </article>
+                    </section>
+
+                </section>
+            </section>
 
 
             <footer>
@@ -197,169 +242,243 @@
                             calidad y tendencia.</p>
                     </header>
 
-                <section class="section columnas_7">
-                    <!--Colleccion MUJER  Producto 1-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Shannel</h3>
-                        </header>
+                <section class="container">
 
-                        <figure>
-                            <img src="img/mujer2.jpg" alt="Prenda para mujer" width="300">
-                            <figcaption>Prenda para mujer</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio: <del> S/ 129.90</del></strong> S/ 89.90</p>
-                            <p><strong>Material:</strong> Algodón 100% premium</p>
-                            <p><strong>Colores disponibles:</strong>
-                                <input type="color" name="colorFavorito1" value="#EBF5FB" readonly> <!-- morado -->
-                                <input type="color" name="colorFavorito2" value="#ff0000" readonly> <!-- rojo -->
-                                <input type="color" name="colorFavorito3" value="#0000ff" readonly> <!-- azul -->
+                    <section class="row g-4">
 
-                                Azul, Rosa, Blanco
-                            </p>
-                        </details>
+                        <!-- PRODUCTO 1 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 700</span>
+                                </button>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MUJER  Producto 2-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Elegance Pantalón</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <header class="card-body">
+                                    <h3 class="card-title">Conjunto Shannel</h3>
+                                </header>
 
-                        <figure>
-                            <img src="img/mujer2.jpg" alt="Conjunto pantalón elegante" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 119.90</del> S/ 95.90</p>
-                            <p><strong>Material:</strong> Algodón Pima premium hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong> Beige, Negro, Azul Marino</p>
-                        </details>
+                                <figure>
+                                    <img src="img/mujer2.jpg" class="card-img-top" alt="Prenda para mujer">
+                                    <figcaption class="text-center">Prenda para mujer</figcaption>
+                                </figure>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MUJER  Producto 3-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Blusa Aurora</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio: <del> S/ 129.90</del></strong> S/ 89.90</p>
+                                        <p><strong>Material:</strong> Algodón 100% premium</p>
+                                        <p><strong>Colores disponibles:</strong> Azul, Rosa, Blanco</p>
+                                    </details>
+                                </section>
 
-                        <figure>
-                            <img src="img/mujer2.jpg" alt="Conjunto blusa moderna" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 109.90</del> S/ 87.90</p>
-                            <p><strong>Material:</strong> Algodón orgánico suave</p>
-                            <p><strong>Colores disponibles:</strong> Blanco, Rosa Pastel, Celeste</p>
-                        </details>
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MUJER  Producto 4-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Escote Milano</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                            </section>
+                        </section>
 
-                        <figure>
-                            <img src="img/mujer2.jpg" alt="Conjunto escote elegante" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 139.90</del> S/ 111.90</p>
-                            <p><strong>Material:</strong> Algodón pima y tela hipoalergénica</p>
-                            <p><strong>Colores disponibles:</strong> Negro, Vino, Azul Oscuro</p>
-                        </details>
+                        <!-- PRODUCTO 2 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 202</span>
+                                </button>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MUJER  Producto 5-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Casual Primavera</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <header class="card-body">
+                                    <h3>Conjunto Elegance Pantalón</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
 
-                        <figure>
-                            <img src="img/mujer2.jpg" alt="Conjunto casual mujer" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 99.90</del> S/ 79.90</p>
-                            <p><strong>Material:</strong> Algodón suave transpirable</p>
-                            <p><strong>Colores disponibles:</strong> Amarillo, Blanco, Verde Menta</p>
-                        </details>
+                                <figure>
+                                    <img src="img/mujer2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MUJER  Producto 6-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Deportivo Comfort</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 119.90</del> S/ 95.90</p>
+                                        <p><strong>Material:</strong> Algodón Pima premium hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Beige, Negro, Azul Marino</p>
+                                    </details>
+                                </section>
 
-                        <figure>
-                            <img src="img/mujer2.jpg" alt="Conjunto deportivo mujer" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 129.90</del> S/ 103.90</p>
-                            <p><strong>Material:</strong> Algodón elástico hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong> Gris, Negro, Azul Claro</p>
-                        </details>
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MUJER  Producto 7-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Fashion Deluxe</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                            </section>
+                        </section>
 
-                        <figure>
-                            <img src="img/mujer2.jpg" alt="Conjunto fashion mujer" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 149.90</del> S/ 119.90</p>
-                            <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong> Rojo, Negro, Beige</p>
-                        </details>
+                        <!-- PRODUCTO 3 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 80</span>
+                                </button>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
+                                <header class="card-body">
+                                    <h3>Conjunto Blusa Aurora</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/mujer2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 109.90</del> S/ 87.90</p>
+                                        <p><strong>Material:</strong> Algodón orgánico suave</p>
+                                        <p><strong>Colores disponibles:</strong> Blanco, Rosa Pastel, Celeste</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 4 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 106</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Escote Milano</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/mujer2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 139.90</del> S/ 111.90</p>
+                                        <p><strong>Material:</strong> Algodón pima y tela hipoalergénica</p>
+                                        <p><strong>Colores disponibles:</strong> Negro, Vino, Azul Oscuro</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 5 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 121</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Casual Primavera</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/mujer2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 99.90</del> S/ 79.90</p>
+                                        <p><strong>Material:</strong> Algodón suave transpirable</p>
+                                        <p><strong>Colores disponibles:</strong> Amarillo, Blanco, Verde Menta</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 6 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 27</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Deportivo Comfort</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/mujer2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 129.90</del> S/ 103.90</p>
+                                        <p><strong>Material:</strong> Algodón elástico hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Gris, Negro, Azul Claro</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 7 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 45</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Fashion Deluxe</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/mujer2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 149.90</del> S/ 119.90</p>
+                                        <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Rojo, Negro, Beige</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                    </section>
+
                 </section>
-
-
 
                 <footer>
                     <p>¡Explora nuestra selección de prendas destacadas y encuentra tu nuevo favorito hoy mismo!</p>
@@ -378,168 +497,241 @@
                         de los más pequeños.</p>
                 </header>
 
-                <section class="section columnas_7">
-                    <!--Colleccion NIÑOS  Producto 1-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Kids Sport</h3>
-                        </header>
+                <section class="container">
+                    <section class="row g-4">
 
-                        <figure>
-                            <img src="img/niños2.jpg" alt="Conjunto deportivo para niños" width="300">
-                            <figcaption>Conjunto deportivo cómodo para niños</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio: <del> S/ 79.90</del></strong> S/ 63.90</p>
-                            <p><strong>Material:</strong> Algodón pima suave e hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong>
-                                <input type="color" name="colorFavorito1" value="#EBF5FB" readonly> <!-- morado -->
-                                <input type="color" name="colorFavorito2" value="#ff0000" readonly> <!-- rojo -->
-                                <input type="color" name="colorFavorito3" value="#0000ff" readonly> <!-- azul -->
+                        <!-- PRODUCTO 1 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 139</span>
+                                </button>
 
-                                Azul, Rojo, Gris
-                            </p>
-                        </details>
+                                <header class="card-body">
+                                    <h3 class="card-title">Conjunto Kids Sport</h3>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion NIÑOS  Producto 2-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Aventura Kids</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <figure>
+                                    <img src="img/niños2.jpg" class="card-img-top" alt="Conjunto deportivo para niños">
+                                    <figcaption class="text-center">Conjunto deportivo cómodo para niños</figcaption>
+                                </figure>
 
-                        <figure>
-                            <img src="img/niños2.jpg" alt="Conjunto aventura niños" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 74.90</del> S/ 59.90</p>
-                            <p><strong>Material:</strong> Algodón orgánico transpirable</p>
-                            <p><strong>Colores disponibles:</strong> Verde, Amarillo, Azul</p>
-                        </details>
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio: <del> S/ 79.90</del></strong> S/ 63.90</p>
+                                        <p><strong>Material:</strong> Algodón pima suave e hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Azul, Rojo, Gris</p>
+                                    </details>
+                                </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion NIÑOS  Producto 3-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Casual Junior</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
 
-                        <figure>
-                            <img src="img/niños2.jpg" alt="Conjunto casual niños" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 69.90</del> S/ 55.90</p>
-                            <p><strong>Material:</strong> Algodón pima premium</p>
-                            <p><strong>Colores disponibles:</strong> Celeste, Blanco, Azul Marino</p>
-                        </details>
+                            </section>
+                        </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion NIÑOS  Producto 4-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Play Time</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                        <!-- PRODUCTO 2 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 32</span>
+                                </button>
 
-                        <figure>
-                            <img src="img/niños2.jpg" alt="Conjunto juego niños" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 72.90</del> S/ 58.30</p>
-                            <p><strong>Material:</strong> Tela hipoalergénica de algodón suave</p>
-                            <p><strong>Colores disponibles:</strong> Naranja, Azul, Verde</p>
-                        </details>
+                                <header class="card-body">
+                                    <h3>Conjunto Aventura Kids</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion NIÑOS  Producto 5-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Mini Fashion</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <figure>
+                                    <img src="img/niños2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
 
-                        <figure>
-                            <img src="img/niños2.jpg" alt="Conjunto moderno niños" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 82.90</del> S/ 66.30</p>
-                            <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong> Rosa, Blanco, Negro</p>
-                        </details>
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 74.90</del> S/ 59.90</p>
+                                        <p><strong>Material:</strong> Algodón orgánico transpirable</p>
+                                        <p><strong>Colores disponibles:</strong> Verde, Amarillo, Azul</p>
+                                    </details>
+                                </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion NIÑOS  Producto 6-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Junior Comfort</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
 
-                        <figure>
-                            <img src="img/niños2.jpg" alt="Conjunto cómodo niños" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 76.90</del> S/ 61.50</p>
-                            <p><strong>Material:</strong> Algodón orgánico transpirable</p>
-                            <p><strong>Colores disponibles:</strong> Gris, Azul Claro, Amarillo</p>
-                        </details>
+                            </section>
+                        </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion NIÑOS  Producto 7-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Kids Adventure</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                        <!-- PRODUCTO 3 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 123</span>
+                                </button>
 
-                        <figure>
-                            <img src="img/niños2.jpg" alt="Conjunto aventura niños" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 84.90</del> S/ 67.90</p>
-                            <p><strong>Material:</strong> Algodón pima y tela hipoalergénica</p>
-                            <p><strong>Colores disponibles:</strong> Verde, Azul Marino, Rojo</p>
-                        </details>
+                                <header class="card-body">
+                                    <h3>Conjunto Casual Junior</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
+                                <figure>
+                                    <img src="img/niños2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 69.90</del> S/ 55.90</p>
+                                        <p><strong>Material:</strong> Algodón pima premium</p>
+                                        <p><strong>Colores disponibles:</strong> Celeste, Blanco, Azul Marino</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 4 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 53</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Play Time</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/niños2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 72.90</del> S/ 58.30</p>
+                                        <p><strong>Material:</strong> Tela hipoalergénica de algodón suave</p>
+                                        <p><strong>Colores disponibles:</strong> Naranja, Azul, Verde</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 5 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 32</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Mini Fashion</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/niños2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 82.90</del> S/ 66.30</p>
+                                        <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Rosa, Blanco, Negro</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 6 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 32</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Junior Comfort</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/niños2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 76.90</del> S/ 61.50</p>
+                                        <p><strong>Material:</strong> Algodón orgánico transpirable</p>
+                                        <p><strong>Colores disponibles:</strong> Gris, Azul Claro, Amarillo</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 7 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 432</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Kids Adventure</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/niños2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 84.90</del> S/ 67.90</p>
+                                        <p><strong>Material:</strong> Algodón pima y tela hipoalergénica</p>
+                                        <p><strong>Colores disponibles:</strong> Verde, Azul Marino, Rojo</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                    </section>
                 </section>
-
 
 
                 <footer>
@@ -559,166 +751,241 @@
                         conjunto ideal que complemente tu estilo con elegancia y comodidad.</p>
                 </header>
 
-                <section class="section columnas_7">
-                    <!--Colleccion HOMBRES  Producto 1-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Urbano Classic</h3>
-                        </header>
+                <section class="container">
+                    <section class="row g-4">
 
-                        <figure>
-                            <img src="img/hombre2.jpg" alt="Conjunto urbano hombre" width="300">
-                            <figcaption>Prenda para mujer</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio: <del> S/ 129.90</del></strong> S/ 103.90</p>
-                            <p><strong>Material:</strong> Algodón pima premium</p>
-                            <p><strong>Colores disponibles:</strong>
-                                <input type="color" name="colorFavorito1" value="#EBF5FB" readonly> <!-- morado -->
-                                <input type="color" name="colorFavorito2" value="#ff0000" readonly> <!-- rojo -->
-                                <input type="color" name="colorFavorito3" value="#0000ff" readonly> <!-- azul -->
+                        <!-- PRODUCTO 1 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 107</span>
+                                </button>
 
-                                Negro, Gris, Azul Marino
-                            </p>
-                        </details>
+                                <header class="card-body">
+                                    <h3 class="card-title">Conjunto Urbano Classic</h3>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion HOMBRES  Producto 2-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Ejecutivo Casual</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <figure>
+                                    <img src="img/hombre2.jpg" class="card-img-top" alt="Conjunto urbano hombre">
+                                    <figcaption class="text-center">Prenda para mujer</figcaption>
+                                </figure>
 
-                        <figure>
-                            <img src="img/hombre2.jpg" alt="Conjunto casual hombre" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 139.90</del> S/ 111.90</p>
-                            <p><strong>Material:</strong> Algodón pima suave e hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong> Azul, Blanco, Gris</p>
-                        </details>
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio: <del> S/ 129.90</del></strong> S/ 103.90</p>
+                                        <p><strong>Material:</strong> Algodón pima premium</p>
+                                        <p><strong>Colores disponibles:</strong> Negro, Gris, Azul Marino</p>
+                                    </details>
+                                </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion HOMBRES  Producto 3-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Sport Flex</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
 
-                        <figure>
-                            <img src="img/hombre2.jpg" alt="Conjunto deportivo hombre" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 119.90</del> S/ 95.90</p>
-                            <p><strong>Material:</strong> Algodón transpirable premium</p>
-                            <p><strong>Colores disponibles:</strong> Negro, Azul, Rojo</p>
-                        </details>
+                            </section>
+                        </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion HOMBRES  Producto 4-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Denim Street</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                        <!-- PRODUCTO 2 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 147</span>
+                                </button>
 
-                        <figure>
-                            <img src="img/hombre2.jpg" alt="Conjunto denim hombre" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 149.90</del> S/ 119.90</p>
-                            <p><strong>Material:</strong> Mezcla de algodón pima y denim</p>
-                            <p><strong>Colores disponibles:</strong> Azul Oscuro, Negro, Gris</p>
-                        </details>
+                                <header class="card-body">
+                                    <h3>Conjunto Ejecutivo Casual</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion HOMBRES  Producto 5-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Relax Weekend</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <figure>
+                                    <img src="img/hombre2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
 
-                        <figure>
-                            <img src="img/hombre2.jpg" alt="Conjunto relajado hombre" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 109.90</del> S/ 87.90</p>
-                            <p><strong>Material:</strong> Algodón pima premium</p>
-                            <p><strong>Colores disponibles:</strong> Verde Oliva, Beige, Gris</p>
-                        </details>
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 139.90</del> S/ 111.90</p>
+                                        <p><strong>Material:</strong> Algodón pima suave e hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Azul, Blanco, Gris</p>
+                                    </details>
+                                </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion HOMBRES  Producto 6-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Modern Fit</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
 
-                        <figure>
-                            <img src="img/hombre2.jpg" alt="Conjunto moderno hombre" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 159.90</del> S/ 127.90</p>
-                            <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong> Negro, Azul Marino, Blanco</p>
-                        </details>
+                            </section>
+                        </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion HOMBRES  Producto 7-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Premium Style</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                        <!-- PRODUCTO 3 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 89</span>
+                                </button>
 
-                        <figure>
-                            <img src="img/hombre2.jpg" alt="Conjunto premium hombre" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 169.90</del> S/ 135.90</p>
-                            <p><strong>Material:</strong> Algodón pima y fibras suaves hipoalergénicas</p>
-                            <p><strong>Colores disponibles:</strong> Azul Marino, Negro, Gris Oscuro</p>
-                        </details>
+                                <header class="card-body">
+                                    <h3>Conjunto Sport Flex</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
+                                <figure>
+                                    <img src="img/hombre2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 119.90</del> S/ 95.90</p>
+                                        <p><strong>Material:</strong> Algodón transpirable premium</p>
+                                        <p><strong>Colores disponibles:</strong> Negro, Azul, Rojo</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 4 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 147</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Denim Street</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/hombre2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 149.90</del> S/ 119.90</p>
+                                        <p><strong>Material:</strong> Mezcla de algodón pima y denim</p>
+                                        <p><strong>Colores disponibles:</strong> Azul Oscuro, Negro, Gris</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 5 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 89</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Relax Weekend</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/hombre2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 109.90</del> S/ 87.90</p>
+                                        <p><strong>Material:</strong> Algodón pima premium</p>
+                                        <p><strong>Colores disponibles:</strong> Verde Oliva, Beige, Gris</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 6 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 234</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Modern Fit</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/hombre2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 159.90</del> S/ 127.90</p>
+                                        <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Negro, Azul Marino, Blanco</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 7 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 24</span>
+                                </button>
+
+
+                                <header class="card-body">
+                                    <h3>Conjunto Premium Style</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/hombre2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 169.90</del> S/ 135.90</p>
+                                        <p><strong>Material:</strong> Algodón pima y fibras suaves hipoalergénicas</p>
+                                        <p><strong>Colores disponibles:</strong> Azul Marino, Negro, Gris Oscuro</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                    </section>
                 </section>
 
 
@@ -740,166 +1007,240 @@
                         estilo y libertad de movimiento en todo momento.</p>
                 </header>
 
-                <section class="section columnas_7">
-                    <!--Colleccion MATERNIDAD  Producto 1-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Maternal Comfort</h3>
-                        </header>
+                <section class="container">
+                    <section class="row g-4">
 
-                        <figure>
-                            <img src="img/maternidad2.jpg" alt="Conjunto para maternidad" width="300">
-                            <figcaption>Prenda para mujer</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio: <del> S/ 139.90</del></strong> S/ 111.90</p>
-                            <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong>
-                                <input type="color" name="colorFavorito1" value="#EBF5FB" readonly> <!-- morado -->
-                                <input type="color" name="colorFavorito2" value="#ff0000" readonly> <!-- rojo -->
-                                <input type="color" name="colorFavorito3" value="#0000ff" readonly> <!-- azul -->
+                        <!-- PRODUCTO 1 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 321</span>
+                                </button>
 
-                                Rosa pastel, Gris claro, Azul cielo
-                            </p>
-                        </details>
+                                <header class="card-body">
+                                    <h3 class="card-title">Conjunto Maternal Comfort</h3>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MATERNIDAD  Producto 2-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Maternal Elegance</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <figure>
+                                    <img src="img/maternidad2.jpg" class="card-img-top" alt="Conjunto para maternidad">
+                                    <figcaption class="text-center">Prenda para mujer</figcaption>
+                                </figure>
 
-                        <figure>
-                            <img src="img/maternidad2.jpg" alt="Conjunto maternidad elegante" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 149.90</del> S/ 119.90</p>
-                            <p><strong>Material:</strong> Algodón pima premium</p>
-                            <p><strong>Colores disponibles:</strong> Negro, Beige, Azul Marino</p>
-                        </details>
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio: <del> S/ 139.90</del></strong> S/ 111.90</p>
+                                        <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Rosa pastel, Gris claro, Azul cielo</p>
+                                    </details>
+                                </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MATERNIDAD  Producto 3-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Maternal Sport</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
 
-                        <figure>
-                            <img src="img/maternidad2.jpg" alt="Conjunto deportivo maternidad" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 134.90</del> S/ 107.90</p>
-                            <p><strong>Material:</strong> Algodón transpirable</p>
-                            <p><strong>Colores disponibles:</strong> Gris, Azul, Rosa</p>
-                        </details>
+                            </section>
+                        </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MATERNIDAD  Producto 4-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Maternal Casual</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                        <!-- PRODUCTO 2 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 82</span>
+                                </button>
 
-                        <figure>
-                            <img src="img/maternidad2.jpg" alt="Conjunto casual maternidad" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 129.90</del> S/ 103.90</p>
-                            <p><strong>Material:</strong> Algodón pima suave</p>
-                            <p><strong>Colores disponibles:</strong> Blanco, Rosa, Azul claro</p>
-                        </details>
+                                <header class="card-body">
+                                    <h3>Conjunto Maternal Elegance</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MATERNIDAD  Producto 5-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Maternal Verano</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <figure>
+                                    <img src="img/maternidad2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
 
-                        <figure>
-                            <img src="img/maternidad2.jpg" alt="Conjunto verano maternidad" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 119.90</del> S/ 95.90</p>
-                            <p><strong>Material:</strong> Algodón pima fresco</p>
-                            <p><strong>Colores disponibles:</strong> Amarillo, Rosa, Blanco</p>
-                        </details>
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 149.90</del> S/ 119.90</p>
+                                        <p><strong>Material:</strong> Algodón pima premium</p>
+                                        <p><strong>Colores disponibles:</strong> Negro, Beige, Azul Marino</p>
+                                    </details>
+                                </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MATERNIDAD  Producto 6-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Maternal Lactancia</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
 
-                        <figure>
-                            <img src="img/maternidad2.jpg" alt="Conjunto lactancia maternidad" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 159.90</del> S/ 127.90</p>
-                            <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong> Gris, Azul Marino, Beige</p>
-                        </details>
+                            </section>
+                        </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion MATERNIDAD  Producto 7-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Maternal Premium</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                        <!-- PRODUCTO 3 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 82</span>
+                                </button>
 
-                        <figure>
-                            <img src="img/maternidad2.jpg" alt="Conjunto premium maternidad" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 169.90</del> S/ 135.90</p>
-                            <p><strong>Material:</strong> Algodón 100% premium</p>
-                            <p><strong>Colores disponibles:</strong> Negro, Gris oscuro, Azul profundo</p>
-                        </details>
+                                <header class="card-body">
+                                    <h3>Conjunto Maternal Sport</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
+                                <figure>
+                                    <img src="img/maternidad2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 134.90</del> S/ 107.90</p>
+                                        <p><strong>Material:</strong> Algodón transpirable</p>
+                                        <p><strong>Colores disponibles:</strong> Gris, Azul, Rosa</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 4 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 209</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Maternal Casual</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/maternidad2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 129.90</del> S/ 103.90</p>
+                                        <p><strong>Material:</strong> Algodón pima suave</p>
+                                        <p><strong>Colores disponibles:</strong> Blanco, Rosa, Azul claro</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 5 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 200</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Maternal Verano</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/maternidad2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 119.90</del> S/ 95.90</p>
+                                        <p><strong>Material:</strong> Algodón pima fresco</p>
+                                        <p><strong>Colores disponibles:</strong> Amarillo, Rosa, Blanco</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 6 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 200</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Maternal Lactancia</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/maternidad2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 159.90</del> S/ 127.90</p>
+                                        <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Gris, Azul Marino, Beige</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 7 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 100</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Maternal Premium</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/maternidad2.jpg" class="card-img-top">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 169.90</del> S/ 135.90</p>
+                                        <p><strong>Material:</strong> Algodón 100% premium</p>
+                                        <p><strong>Colores disponibles:</strong> Negro, Gris oscuro, Azul profundo</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                    </section>
                 </section>
 
 
@@ -921,169 +1262,244 @@
                         momentos de vida con total comodidad.</p>
                 </header>
 
-                <section class="section columnas_7">
-                    <!--Colleccion BEBÉS  Producto 1-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Bebé Comfort</h3>
-                        </header>
+                <section class="container">
 
-                        <figure>
-                            <img src="img/bebe2.jpg" alt="Conjunto bebé cómodo" width="300">
-                            <figcaption>Prenda para mujer</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio: <del> S/ 69.90</del></strong> S/ 55.90</p>
-                            <p><strong>Material:</strong> Algodón pima hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong>
-                                <input type="color" name="colorFavorito1" value="#EBF5FB" readonly> <!-- morado -->
-                                <input type="color" name="colorFavorito2" value="#ff0000" readonly> <!-- rojo -->
-                                <input type="color" name="colorFavorito3" value="#0000ff" readonly> <!-- azul -->
+                    <section class="row g-4">
 
-                                Celeste, Rosa, Blanco
-                            </p>
-                        </details>
+                        <!-- PRODUCTO 1 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 321</span>
+                                </button>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion BEBÉS  Producto 2-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Bebé Dulce Sueño</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
 
-                        <figure>
-                            <img src="img/bebe2.jpg" alt="Pijama bebé algodón" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 64.90</del> S/ 51.90</p>
-                            <p><strong>Material:</strong> Algodón orgánico transpirable</p>
-                            <p><strong>Colores disponibles:</strong> Blanco, Amarillo, Celeste</p>
-                        </details>
+                                <header class="card-body">
+                                    <h3>Conjunto Bebé Comfort</h3>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion BEBÉS  Producto 3-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Bebé Primavera</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <figure>
+                                    <img src="img/bebe2.jpg" class="card-img-top" alt="Conjunto bebé cómodo">
+                                    <figcaption class="text-center">Prenda para mujer</figcaption>
+                                </figure>
 
-                        <figure>
-                            <img src="img/bebe2.jpg" alt="Conjunto primavera bebé" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 72.90</del> S/ 58.30</p>
-                            <p><strong>Material:</strong> Algodón pima suave</p>
-                            <p><strong>Colores disponibles:</strong> Verde menta, Blanco, Celeste</p>
-                        </details>
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio: <del> S/ 69.90</del></strong> S/ 55.90</p>
+                                        <p><strong>Material:</strong> Algodón pima hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Celeste, Rosa, Blanco</p>
+                                    </details>
+                                </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion BEBÉS  Producto 4-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Bebé Invierno</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
 
-                        <figure>
-                            <img src="img/bebe2.jpg" alt="Conjunto invierno bebé" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 79.90</del> S/ 63.90</p>
-                            <p><strong>Material:</strong> Algodón pima y tela suave térmica</p>
-                            <p><strong>Colores disponibles:</strong> Gris, Azul Marino, Rosa</p>
-                        </details>
+                            </section>
+                        </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion BEBÉS  Producto 5-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Bebé Mini Style</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                        <!-- PRODUCTO 2 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 82</span>
+                                </button>
 
-                        <figure>
-                            <img src="img/bebe2.jpg" alt="Conjunto moderno bebé" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 74.90</del> S/ 59.90</p>
-                            <p><strong>Material:</strong> Algodón orgánico hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong> Beige, Blanco, Azul claro</p>
-                        </details>
+                                <header class="card-body">
+                                    <h3>Conjunto Bebé Dulce Sueño</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion BEBÉS  Producto 6-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Bebé Aventurero</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <figure>
+                                    <img src="img/bebe2.jpg" class="card-img-top" alt="Pijama bebé algodón">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
 
-                        <figure>
-                            <img src="img/bebe2.jpg" alt="Conjunto bebé para jugar" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 69.90</del> S/ 55.90</p>
-                            <p><strong>Material:</strong> Algodón pima transpirable</p>
-                            <p><strong>Colores disponibles:</strong> Azul, Verde, Amarillo</p>
-                        </details>
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 64.90</del> S/ 51.90</p>
+                                        <p><strong>Material:</strong> Algodón orgánico transpirable</p>
+                                        <p><strong>Colores disponibles:</strong> Blanco, Amarillo, Celeste</p>
+                                    </details>
+                                </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
-                    <!--Colleccion BEBÉS  Producto 7-->
-                    <card class="card">
-                        <header>
-                            <h3>Conjunto Bebé Premium</h3>
-                            <p><mark>Descuento 20%</mark></p>
-                        </header>
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
 
-                        <figure>
-                            <img src="img/bebe2.jpg" alt="Conjunto premium bebé" width="300">
-                            <figcaption>Producto disponible</figcaption>
-                        </figure>
-                        <details>
-                            <summary>Detalles del producto</summary>
-                            <p><strong>Precio:</strong> <del>S/ 84.90</del> S/ 67.90</p>
-                            <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
-                            <p><strong>Colores disponibles:</strong> Blanco, Celeste, Rosa pastel</p>
-                        </details>
+                            </section>
+                        </section>
 
-                        <footer>
-                            <button>Comprar</button>
-                        </footer>
-                    </card>
+                        <!-- PRODUCTO 3 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 102</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Bebé Primavera</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/bebe2.jpg" class="card-img-top" alt="Conjunto primavera bebé">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 72.90</del> S/ 58.30</p>
+                                        <p><strong>Material:</strong> Algodón pima suave</p>
+                                        <p><strong>Colores disponibles:</strong> Verde menta, Blanco, Celeste</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 4 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 102</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Bebé Invierno</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/bebe2.jpg" class="card-img-top" alt="Conjunto invierno bebé">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 79.90</del> S/ 63.90</p>
+                                        <p><strong>Material:</strong> Algodón pima y tela suave térmica</p>
+                                        <p><strong>Colores disponibles:</strong> Gris, Azul Marino, Rosa</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 5 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 53</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Bebé Mini Style</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/bebe2.jpg" class="card-img-top" alt="Conjunto moderno bebé">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 74.90</del> S/ 59.90</p>
+                                        <p><strong>Material:</strong> Algodón orgánico hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Beige, Blanco, Azul claro</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 6 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 53</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Bebé Aventurero</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/bebe2.jpg" class="card-img-top" alt="Conjunto bebé para jugar">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 69.90</del> S/ 55.90</p>
+                                        <p><strong>Material:</strong> Algodón pima transpirable</p>
+                                        <p><strong>Colores disponibles:</strong> Azul, Verde, Amarillo</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                        <!-- PRODUCTO 7 -->
+                        <section class="col-md-6 col-lg-4 col-xl-3">
+                            <section class="card h-100">
+                                <button class="btn btn-outline-dark">
+                                    Favoritos <span class="badge bg-danger">❤ 53</span>
+                                </button>
+
+                                <header class="card-body">
+                                    <h3>Conjunto Bebé Premium</h3>
+                                    <p><mark>Descuento 20%</mark></p>
+                                </header>
+
+                                <figure>
+                                    <img src="img/bebe2.jpg" class="card-img-top" alt="Conjunto premium bebé">
+                                    <figcaption class="text-center">Producto disponible</figcaption>
+                                </figure>
+
+                                <section class="card-body">
+                                    <details>
+                                        <summary>Detalles del producto</summary>
+                                        <p><strong>Precio:</strong> <del>S/ 84.90</del> S/ 67.90</p>
+                                        <p><strong>Material:</strong> Algodón pima premium hipoalergénico</p>
+                                        <p><strong>Colores disponibles:</strong> Blanco, Celeste, Rosa pastel</p>
+                                    </details>
+                                </section>
+
+                                <footer class="card-body text-center">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </footer>
+
+                            </section>
+                        </section>
+
+                    </section>
+
                 </section>
-
-            </section>
 
             <!--footer-->
             <footer>
@@ -1103,107 +1519,165 @@
 
 
 
-        <section>
+        <section class="container my-5">
+
             <section id="compra" class="formulario">
 
-                <header>
+                <header class="mb-4">
                     <h2>Formulario de Compra</h2>
                     <p>Complete los datos para procesar su pedido.</p>
                 </header>
 
                 <form>
 
-                    <fieldset>
+                    <!-- DATOS PERSONALES -->
+                    <fieldset class="mb-4">
                         <legend>Datos personales</legend>
 
-                        <label>Nombre</label>
-                        <input type="text" required="">
+                        <section class="row">
 
-                        <label>Apellido</label>
-                        <input type="text" required="">
+                            <section class="col-md-6">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" class="form-control" required>
+                            </section>
 
+                            <section class="col-md-6">
+                                <label class="form-label">Apellido</label>
+                                <input type="text" class="form-control" required>
+                            </section>
+
+                        </section>
                     </fieldset>
 
-                    <fieldset>
+                    <!-- CONTACTO -->
+                    <fieldset class="mb-4">
                         <legend>Contacto</legend>
 
-                        <label>Email</label>
-                        <input type="email" required="">
+                        <section class="row">
 
-                        <label>Teléfono</label>
-                        <input type="tel">
+                            <section class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </section>
 
+                            <section class="col-md-6">
+                                <label class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control">
+                            </section>
+
+                        </section>
                     </fieldset>
 
-                    <fieldset>
+                    <!-- DIRECCION -->
+                    <fieldset class="mb-4">
                         <legend>Dirección de facturación</legend>
 
-                        <label>Dirección</label>
-                        <input type="text">
+                        <label class="form-label">Dirección</label>
+                        <input type="text" class="form-control mb-2">
 
-                        <label>Ciudad</label>
-                        <input type="text">
+                        <section class="row">
 
-                        <label>Código Postal</label>
-                        <input type="text" value="15491">
+                            <section class="col-md-6">
+                                <label class="form-label">Ciudad</label>
+                                <input type="text" class="form-control">
+                            </section>
 
+                            <section class="col-md-6">
+                                <label class="form-label">Código Postal</label>
+                                <input type="text" class="form-control" value="15491">
+                            </section>
+
+                        </section>
                     </fieldset>
 
-                    <fieldset>
+                    <!-- ENVIO -->
+                    <fieldset class="mb-4">
                         <legend>Dirección de envío</legend>
 
-                        <label>
-                            <input type="checkbox">
-                            La dirección es la misma que la de facturación
-                        </label>
+                        <section class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">
+                                La dirección es la misma que la de facturación
+                            </label>
+                        </section>
 
-                        <label>Dirección de envío</label>
-                        <input type="text">
+                        <label class="form-label">Dirección de envío</label>
+                        <input type="text" class="form-control">
 
                     </fieldset>
 
-                    <fieldset>
+                    <!-- REGALO -->
+                    <fieldset class="mb-4">
                         <legend>¿Es un regalo?</legend>
 
-                        <label><input type="radio" name="regalo">Sí</label>
-                        <label><input type="radio" name="regalo">No</label>
+                        <section class="form-check">
+                            <input class="form-check-input" type="radio" name="regalo">
+                            <label class="form-check-label">Sí</label>
+                        </section>
+
+                        <section class="form-check">
+                            <input class="form-check-input" type="radio" name="regalo">
+                            <label class="form-check-label">No</label>
+                        </section>
 
                     </fieldset>
 
-                    <fieldset>
+                    <!-- BENEFICIARIO -->
+                    <fieldset class="mb-4">
                         <legend>Beneficiario</legend>
 
-                        <label>Nombre del beneficiario</label>
-                        <input type="text">
+                        <label class="form-label">Nombre del beneficiario</label>
+                        <input type="text" class="form-control mb-2">
 
-                        <label>Mensaje de regalo</label>
-                        <textarea rows="3"></textarea>
+                        <label class="form-label">Mensaje de regalo</label>
+                        <textarea class="form-control" rows="3"></textarea>
 
                     </fieldset>
 
-                    <fieldset>
+                    <!-- INSTRUCCIONES -->
+                    <fieldset class="mb-4">
                         <legend>Instrucciones especiales</legend>
 
-                        <textarea rows="4"></textarea>
+                        <textarea class="form-control" rows="4"></textarea>
 
                     </fieldset>
 
-                    <fieldset>
+                    <!-- PAGO -->
+                    <fieldset class="mb-4">
                         <legend>Método de pago</legend>
 
-                        <label><input type="radio" name="pago">Efectivo</label>
-                        <label><input type="radio" name="pago">Tarjeta</label>
-                        <label><input type="radio" name="pago">PayPal</label>
-                        <label><input type="radio" name="pago">Yape</label>
+                        <section class="form-check">
+                            <input class="form-check-input" type="radio" name="pago">
+                            <label class="form-check-label">Efectivo</label>
+                        </section>
+
+                        <section class="form-check">
+                            <input class="form-check-input" type="radio" name="pago">
+                            <label class="form-check-label">Tarjeta</label>
+                        </section>
+
+                        <section class="form-check">
+                            <input class="form-check-input" type="radio" name="pago">
+                            <label class="form-check-label">PayPal</label>
+                        </section>
+
+                        <section class="form-check">
+                            <input class="form-check-input" type="radio" name="pago">
+                            <label class="form-check-label">Yape</label>
+                        </section>
 
                     </fieldset>
 
-                    <button type="submit">Confirmar compra</button>
-                    <button type="reset">Borrar formulario</button>
+                    <!-- BOTONES -->
+                    <section class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">Confirmar compra</button>
+                        <button type="reset" class="btn btn-secondary">Borrar formulario</button>
+                    </section>
 
                 </form>
 
             </section>
+
         </section>
     </main>
 
@@ -1238,6 +1712,47 @@
 
     </footer>
 
+
+    <footer>
+        <section class="container">
+            <section class="row">
+
+                <section class="col-md-3">Columna 1</section>
+                <section class="col-md-3">Columna 2</section>
+                <section class="col-md-3">Columna 3</section>
+                <section class="col-md-3">Columna 4</section>
+
+            </section>
+        </section>
+    </footer> 
+
+<script>
+function cambiarTema() {
+    const html = document.documentElement;
+    const btn = document.getElementById("btnTema");
+
+    if (html.getAttribute("data-bs-theme") === "dark") {
+        html.setAttribute("data-bs-theme", "light");
+        localStorage.setItem("tema", "light");
+        btn.textContent = "🌙";
+    } else {
+        html.setAttribute("data-bs-theme", "dark");
+        localStorage.setItem("tema", "dark");
+        btn.textContent = "☀️";
+    }
+}
+
+const temaGuardado = localStorage.getItem("tema");
+const btn = document.getElementById("btnTema");
+
+if (temaGuardado) {
+    document.documentElement.setAttribute("data-bs-theme", temaGuardado);
+    btn.textContent = temaGuardado === "dark" ? "☀️" : "🌙";
+}
+</script>
+    
+    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 <!--NOTA TENTATIVA HTML  : 14
