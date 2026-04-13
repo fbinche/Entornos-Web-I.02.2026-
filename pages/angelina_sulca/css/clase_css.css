@@ -299,7 +299,7 @@ section.productos article.card{
     border-radius: 5px;
 }
 
-.productos .card footer button{
+.card footer button{
     background: green;
 
     color: rgb(205, 87, 255);

@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>AuraNet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="estilos/clase_ccs.css">
 </head>
 
@@ -24,7 +26,29 @@
       </nav>
 
     </header>
-
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/banners/Banner_uno.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banners/Banner_dos.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/banners/Banner_tres.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <!-- ===== PLANES ===== -->
     <section id="PLANES">
 
@@ -35,7 +59,8 @@
         <!-- PLAN 1 -->
         <article class="article">
           <img src="img/velocidades/1000-Diamante-Elite.png" class="img-plan">
-          <h2>1000 Mbps</h2>
+          <!--badge BOOTSTRAP-->
+          <h2>1000 Mbps <span class="badge bg-info">TOP</span></h2>
 
           <ul>
             <li>GO Familia</li>
@@ -99,7 +124,6 @@
       <h2 class="titulo">BENEFICIOS</h2>
 
       <section class="columnas_3">
-
         <article class="article">
           <img src="img/beneficios/velocidad_simetricagold.png" class="img-beneficio">
           <strong>Velocidad simétrica</strong>
@@ -128,7 +152,10 @@
       </div>
 
     </section>
-
+    <!-- ALERTA BOOTSTRAP -->
+    <div class="alert alert-info text-center" role="alert">
+      Promoción activa: instalación gratis 🚀
+    </div>
     <!-- ===== FORMULARIO ===== -->
     <section id="FORMULARIO">
 
@@ -153,8 +180,8 @@
         <input type="text" maxlength="8">
 
         <label>
-            <input type="checkbox"> Acepto los términos y condiciones
-          </label>
+          <input type="checkbox"> Acepto los términos y condiciones
+        </label>
 
         <button type="submit" class="btn-principal">Contratar</button>
 
@@ -217,7 +244,9 @@
     </section>
 
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
