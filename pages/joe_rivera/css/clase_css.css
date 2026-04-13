@@ -1,4 +1,4 @@
-/* RESET UNIVERSAL PRO */
+/*  UNIVERSAL */
 *,
 *::before,
 *::after {
@@ -64,9 +64,9 @@ p{
 /**7TIMA ETIQUETA**/
 
 figcaption{
-    color: rgb(220, 230, 239);
+    color: rgb(248, 141, 0);
     font-style: italic;
-    font-size: larger;
+    font-size: 1.4rem;
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
 }
@@ -531,7 +531,7 @@ p:hover {
 
 /* TEXTO */
 .third-section figcaption {
-    font-size: 13px;
+    font-size: 22px;
 }
 
 /* NOMBRE */
@@ -687,6 +687,41 @@ body::before {
     scroll-snap-align: center;
 }
 
+                                /* MODO CLARO / OSCURO REAL */
+
+body {
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+p, h1, h2, h3, span, label, legend, summary, aside, time {
+    color: var(--bs-body-color);
+}
+
+.card, section {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+a {
+    color: var(--bs-link-color);
+}
+
+input, textarea, select {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    border: 1px solid var(--bs-border-color);
+}
+
+                    /**formulario centrado***/
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
 
  /** NOTA ACTUAL : 13
 15 puntos SELECTORES
