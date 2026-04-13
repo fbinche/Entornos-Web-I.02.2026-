@@ -487,6 +487,31 @@ form ul li {
   margin-bottom: 12px;
 }
 
+.zoom-infinito {
+    width: 300px; /* O el tamaño que prefieras */
+    height: 300px;
+    overflow: hidden; /* Corta lo que sobresalga al agrandarse */
+    position: relative;
+}
+
+.zoom-infinito img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Propiedad abreviada: nombre | duración | ritmo | repetición */
+    animation: infiniteZoom 5s linear infinite;
+}
+
+/* Definición del movimiento */
+@keyframes infiniteZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2); /* Se agranda al doble */
+    }
+}
+
  /** NOTA ACTUAL : 14.5
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
