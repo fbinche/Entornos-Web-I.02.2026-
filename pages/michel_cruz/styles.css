@@ -691,10 +691,66 @@ nav a {
   height: 70px;
 }
 
+/**  estilos para formulario  **/
+
+
+/* Personalización de Bootstrap con temática Rosas y Espinas */
+body {
+  background: #fdf6f6;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.formulario-rosas {
+  background: #fff;
+  border: 2px solid #d6336c;
+  border-radius: 12px;
+}
+
+.text-rose {
+  color: #d6336c;
+}
+
+.btn-rose {
+  background-color: #d6336c;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-rose:hover {
+  background-color: #a61c4d;
+  color: #fff;
+}
+
+legend {
+  color: #a61c4d;
+}
+
+progress {
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f8d7da;
+}
+
+progress::-webkit-progress-value {
+  background-color: #d6336c;
+}
+
+progress::-moz-progress-bar {
+  background-color: #d6336c;
+}
+
+aside {
+  font-style: italic;
+}
 
 
 
-/** NOTA ACTUAL : 13,5  -5
+/** NOTA ACTUAL : 17 
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL             x
   #5 SELECTORES DE ETIQUETAS HTML   x
