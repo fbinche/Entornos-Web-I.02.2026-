@@ -499,7 +499,9 @@ footer p > a[href="#categorias"]:hover {
     border-width: 1px 0;
     box-shadow: inset 0 0.5em 1.5em #412e3e1a, inset 0 0.125em 0.5em #1c1a1a26;
 }
- /** NOTA ACTUAL : 14
+ /** NOTA ACTUAL : 
+ CSS->17
+ BS ->15
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
   #5 SELECTORES DE ETIQUETAS HTML 2.5
