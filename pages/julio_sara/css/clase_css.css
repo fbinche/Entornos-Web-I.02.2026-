@@ -77,6 +77,7 @@ h2 ~ p {
     color: black;
 }
 
+
 /* combinados */
 div.card p {
     color: white;
@@ -85,6 +86,13 @@ div.card p {
 
 nav ul li a {
     color: pink;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
     text-decoration: none;
 }
 
@@ -99,10 +107,11 @@ nav ul {
     padding: 10px;
 }
 
+
 nav a {
     color: rgb(162, 1, 255);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 35px;
 }
 
 /* HEADER */
@@ -118,12 +127,18 @@ header {
 
 .article {
     background: #011938;
-    padding: 70px;
+    padding: 30px;
     text-align: center;
     transition: 0.5s;
-    width: 51%;
+    width: 800px;
+    margin: 15px;
     border-radius: 30px;
     margin-bottom: 40px;
+}
+.columnas_4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -137,6 +152,7 @@ header {
     font-size: 18px;
     color: black;
 }
+
 
 /* IDS */
 
@@ -173,7 +189,7 @@ img {
 a:hover {
     color: red;
     text-decoration: underline;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 li:first-child {
@@ -200,6 +216,8 @@ input[type="text"] {
 
 a[target="_blank"] {
     color: green;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
@@ -228,6 +246,57 @@ a[target="_blank"] {
     border: 1px solid #2bff00;
     box-shadow: 0 0 15px #1d0dff;
 }
+
+iframe {
+    width: 1905px;
+    height: 900px;
+    border: none;
+}
+
+.btn-precio {
+    background-color: rgb(238, 221, 144);
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.btn-precio:hover {
+    background-color: rgb(3, 101, 3);
+    color: white;
+    cursor: pointer;
+}
+
+.article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+/* FORMULARIO (ponlo abajo de todo) */
+
+fieldset {
+    background: #1b1b1b;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #9ae940;
+    width: 600px;
+}
+
+button {
+    background: #9ae940;
+    color: black;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #7ed321;
+    cursor: pointer;
+}
+
 /** NOTA ACTUAL : 2
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
