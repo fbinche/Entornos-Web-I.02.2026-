@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/styles_global.css">
 -->
     <link rel="stylesheet" href="css/clase_css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--INTERNA-->
     <style>
         p {
@@ -55,50 +56,47 @@
 
                                 <a href="#seccion3">
 >>>>>>> maycol_puchuri
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Productos del Mercado</span>
-                    </a>
-                        </li>
-                        <li>
-                            <a href="#formulario">
-                                <span class="icon" aria-hidden="true">🧳</span>
-                                <span>Registrate! Enlace Interno</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://aulavirtual.idat.edu.pe/pluginfile.php/1816553/mod_resource/content/1/T02_08_S04_Etiquetas%20b%C3%A1sicas%20en%20HTML%20encabezados%2C%20p%C3%A1rrafos%2C%20listas%2C%20enlaces%20internos%20y%20externos.pdf">
-                                <span class="icon" aria-hidden="true">🧳</span>
-                                <span>Registrate! Enlace Externo</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="paginas/formulario.html">
-                                <span class="icon" aria-hidden="true">🧳</span>
-                                <span>Registrate! Enlace a Sección</span>
-                            </a>
-                        </li>
-                        =======
-                        <li>
-                            <a href="#seccion2">
-                                <span class="icon" aria-hidden="true">🧳</span>
-                                <span>Seccion 2</span>
-                            </a>
-                        </li>
-                        <li>
+                       <nav class="card shadow-sm" style="max-width: 350px;">
+    <div class="card-header bg-primary text-white fw-bold">
+        Menú de Navegación
+    </div>
+    <ul class="list-group list-group-flush">
+        <!-- Enlace Interno -->
+        <li class="list-group-item list-group-item-action d-flex align-items-center">
+            <span class="me-2 text-primary" aria-hidden="true">🧳</span>
+            <a href="#formulario" class="text-decoration-none text-dark flex-grow-1">Registrate! Enlace Interno</a>
+        </li>
 
-                            <a href="#seccion3">
-                                <span class="icon" aria-hidden="true">🧳</span>
-                                <span>Seccion 3</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#seccion4">
-                                <span class="icon" aria-hidden="true">🧳</span>
-                                <span>Seccion 4</span>
-                            </a>
-                        </li>
-                        >>>>>>> maycol_puchuri
+        <!-- Enlace Externo -->
+        <li class="list-group-item list-group-item-action d-flex align-items-center">
+            <span class="me-2 text-primary" aria-hidden="true">🧳</span>
+            <a href="https://aulavirtual.idat.edu.pe/..." target="_blank" class="text-decoration-none text-dark flex-grow-1">
+                Registrate! Enlace Externo 
+                <span class="badge rounded-pill bg-secondary ms-2" style="font-size: 0.7em;">PDF</span>
+            </a>
+        </li>
 
+        <!-- Enlace a Sección -->
+        <li class="list-group-item list-group-item-action d-flex align-items-center">
+            <span class="me-2 text-primary" aria-hidden="true">🧳</span>
+            <a href="paginas/formulario.html" class="text-decoration-none text-dark flex-grow-1">Registrate! Enlace a Sección</a>
+        </li>
+
+        <!-- Secciones adicionales -->
+        <li class="list-group-item list-group-item-action d-flex align-items-center">
+            <span class="me-2 text-primary" aria-hidden="true">🧳</span>
+            <a href="#seccion2" class="text-decoration-none text-dark flex-grow-1">Sección 2</a>
+        </li>
+        <li class="list-group-item list-group-item-action d-flex align-items-center">
+            <span class="me-2 text-primary" aria-hidden="true">🧳</span>
+            <a href="#seccion3" class="text-decoration-none text-dark flex-grow-1">Sección 3</a>
+        </li>
+        <li class="list-group-item list-group-item-action d-flex align-items-center">
+            <span class="me-2 text-primary" aria-hidden="true">🧳</span>
+            <a href="#seccion4" class="text-decoration-none text-dark flex-grow-1">Sección 4</a>
+        </li>
+    </ul>
+</nav>
                 </ul>
 
             </nav>
@@ -111,168 +109,195 @@
                 <section class="section columnas_2">
 
 
-                    <!-- Venta Minorista -->
-                    <article class="card">
+                   <style>
+    /* Animación suave para las tarjetas */
+    .hover-animate {
+        transition: transform 0.3s ease, shadow 0.3s ease;
+    }
+    .hover-animate:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+    }
+</style>
 
-                        <header>
-                            <h2>Venta Minorista</h2>
-                            <p><strong>Tipo de comercio:</strong> B2C (Business to Consumer)</p>
-                        </header>
-
-                        <figure>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GeCyfFUs-GgY6MJBZ-ZBiDID32yDtTg4AA&s" alt="Venta minorista en tienda">
-                            <figcaption>Venta directa al consumidor final.</figcaption>
-                        </figure>
-
-                        <section>
-                            <br>
-                            <p>
-                                La venta minorista consiste en la comercialización de productos en pequeñas cantidades directamente al consumidor final. Es el modelo utilizado por tiendas, supermercados y comercios electrónicos que venden productos individuales.
-                            </p>
-
-                        </section>
-
-                        <br>
-                        <details open>
-                            <summary>Características principales</summary>
-                            <ul>
-                                <li>Venta en pequeñas cantidades</li>
-                                <li>Contacto directo con el consumidor</li>
-                                <li>Mayor diversidad de productos</li>
-                            </ul>
-                        </details>
-
-                        <footer>
-                            <p>
-                                Última actualización:
-                                <time datetime="2026-03-04">4 de marzo de 2026</time>
-                            </p>
-                            <a href="#">Más información</a>
-                        </footer>
-
-                    </article>
-
-
-                    <!-- Venta Mayorista -->
-                    <article class="card">
-
-                        <header>
-                            <h2>Venta Mayorista</h2>
-                            <p><strong>Tipo de comercio:</strong> B2B (Business to Business)</p>
-                        </header>
-
-                        <figure>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GeCyfFUs-GgY6MJBZ-ZBiDID32yDtTg4AA&s" alt="Venta mayorista en almacén">
-                            <figcaption>Distribución de productos en grandes cantidades.</figcaption>
-                        </figure>
-
-                        <section>
-                            <br>
-                            <p>
-                                La venta mayorista se basa en la comercialización de productos en grandes volúmenes a distribuidores, minoristas o empresas que posteriormente revenderán dichos productos.
-                            </p>
-
-                        </section>
-                        <br>
-                        <details open>
-                            <summary>Características principales</summary>
-                            <ul>
-                                <li>Venta en grandes cantidades</li>
-                                <li>Precios más bajos por volumen</li>
-                                <li>Clientes empresariales o distribuidores</li>
-                            </ul>
-                        </details>
-
-                        <footer>
-                            <p>
-                                Última actualización:
-                                <time datetime="2026-03-04">4 de marzo de 2026</time>
-                            </p>
-                            <a href="#">Más información</a>
-                        </footer>
-
-                    </article>
-
-                </section>
-            </section>
-
-
-            <!-- INICIO SECCION 2 -->
-            <section class="section second-section">
-                <section>
-                    <!--CABECERA-->
-                    <header>
-                        <h1>Centro Logístico y Áreas de Almacenamiento</h1>
-                        <p>
-                            Nuestro almacén cuenta con zonas especializadas para la recepción, organización y conservación de productos, garantizando una gestión eficiente del inventario y distribución.
-                        </p>
+<section class="container my-5">
+    <div class="row g-4">
+        
+        <!-- Venta Minorista -->
+        <div class="col-md-6">
+            <article class="card h-100 shadow-sm hover-animate">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GeCyfFUs-GgY6MJBZ-ZBiDID32yDtTg4AA&s" class="card-img-top" alt="Venta minorista en tienda" style="height: 200px; object-fit: cover;">
+                
+                <div class="card-body">
+                    <header class="mb-3">
+                        <h2 class="card-title h4 text-primary">Venta Minorista</h2>
+                        <p class="card-text"><strong>Tipo de comercio:</strong> <span class="badge bg-info text-dark">B2C</span></p>
                     </header>
 
-                    <!--CONTENIDO-->
-                    <section class="section columnas_4">
-                        <!--ARTICULO 1-->
-                        <article class="article">
-                            <!--header-->
-                            <header>
-                                <h4>Zona de Recepción y Muelles</h4>
-                            </header>
-                            <!--contenido-->
-                            <figure>
-                                <img src="https://mecaluxes.cdnwm.com/manual-almacen/img/muelles-carga-almacenaje.1.0.jpg">
+                    <p class="card-text text-secondary">
+                        La venta minorista consiste en la comercialización de productos en pequeñas cantidades directamente al consumidor final. Es el modelo utilizado por tiendas y supermercados.
+                    </p>
 
-                            </figure>
-                            <details open>
-                                <summary>Información</summary>
-                                <p>El punto de entrada. Es vital contar con plataformas niveladoras y espacio para que los camiones descarguen mercancía pesada rápidamente.</p>
-                            </details>
-                            <!--footer-->
-                            <footer>
-                                <button>Ver más detalles</button>
-                            </footer>
-                        </article>
-                        <!--ARTICULO 2-->
-                        <article class="article">
-                            <!--header-->
-                            <header>
+                    <details class="mt-3 p-2 bg-light rounded border" open>
+                        <summary class="fw-bold">Características principales</summary>
+                        <ul class="list-unstyled mt-2 ms-2">
+                            <li><i class="bi bi-check2-circle text-success"></i> Venta en pequeñas cantidades</li>
+                            <li><i class="bi bi-check2-circle text-success"></i> Contacto directo con el consumidor</li>
+                            <li><i class="bi bi-check2-circle text-success"></i> Mayor diversidad de productos</li>
+                        </ul>
+                    </details>
+                </div>
 
-                                <h2>Área de Almacenaje</h2>
-                            </header>
-                            <!--contenido-->
-                            <figure>
-                                <img src="https://cdn-klhpb.nitrocdn.com/KxJnNDQqyOnPILgwtAnoUAxrcOnueXFc/assets/images/optimized/rev-d043584/www.noegasystems.com/wp-content/uploads/Almacenamiento-de-productos-perecederos.jpg">
-                            </figure>
-                            <details open>
-                                <summary>Información</summary>
-                                <p>Área destinada a almacenar mercancía de forma eficiente, con sistemas de organización que permiten fácil acceso y control del inventario.</p>
-                            </details>
-                            <!--footer-->
-                            <footer>
-                                <button>Ver más detalles</button>
-                            </footer>
+                <footer class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                    <small class="text-muted">Actualizado: <time datetime="2026-03-04">4 mar 2026</time></small>
+                    <a href="#" class="btn btn-sm btn-primary">Más información</a>
+                </footer>
+            </article>
+        </div>
 
-                        </article>
-                        <!--ARTICULO 3-->
-                        <article class="article">
+        <!-- Venta Mayorista -->
+        <div class="col-md-6">
+            <article class="card h-100 shadow-sm hover-animate border-primary">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GeCyfFUs-GgY6MJBZ-ZBiDID32yDtTg4AA&s" class="card-img-top" alt="Venta mayorista en almacén" style="height: 200px; object-fit: cover;">
+                
+                <div class="card-body">
+                    <header class="mb-3">
+                        <h2 class="card-title h4 text-primary">Venta Mayorista</h2>
+                        <p class="card-text"><strong>Tipo de comercio:</strong> <span class="badge bg-primary">B2B</span></p>
+                    </header>
 
-                            <header>
-                                <h2>Almacenamiento en Racks (Altura)</h2>
-                            </header>
+                    <p class="card-text text-secondary">
+                        La venta mayorista se basa en la comercialización de productos en grandes volúmenes a distribuidores, minoristas o empresas que revenderán dichos productos.
+                    </p>
 
-                            <figure>
-                                <img src="https://mecaluxpe.cdnwm.com/casos-practicos/ejemplo-paletizacion-almacen-smu-chile/image-0.1.0.jpg?imwidth=1280&imdensity=1" alt="Almacenamiento en racks industriales">
-                            </figure>
+                    <details class="mt-3 p-2 bg-light rounded border" open>
+                        <summary class="fw-bold">Características principales</summary>
+                        <ul class="list-unstyled mt-2 ms-2">
+                            <li><i class="bi bi-box-seam text-primary"></i> Venta en grandes cantidades</li>
+                            <li><i class="bi bi-box-seam text-primary"></i> Precios más bajos por volumen</li>
+                            <li><i class="bi bi-box-seam text-primary"></i> Clientes empresariales</li>
+                        </ul>
+                    </details>
+                </div>
 
-                            <details open>
-                                <summary>Información</summary>
-                                <p>
-                                    Sistema de almacenamiento que utiliza estanterías industriales de gran altura para organizar mercancía en pallets.
-                                </p>
-                            </details>
+                <footer class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                    <small class="text-muted">Actualizado: <time datetime="2026-03-04">4 mar 2026</time></small>
+                    <a href="#" class="btn btn-sm btn-primary shadow-sm">Más información</a>
+                </footer>
+            </article>
+        </div>
 
-                            <footer>
-                                <button>Ver más detalles</button>
-                            </footer>
+    </div>
+</section>
 
+           <!-- Agregamos Animate.css para las animaciones de entrada -->
+<link rel="stylesheet" href="https://cloudflare.com"""/>>
+
+<style>
+    /* Efecto de Zoom en Imagen */
+    .img-zoom-container {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .img-zoom-container img {
+        transition: transform 0.5s ease;
+    }
+    .img-zoom-container:hover img {
+        transform: scale(1.1);
+    }
+    /* Animación de entrada para el texto al cargar */
+    .animate-text {
+        display: inline-block;
+        animation: fadeInUp 1s;
+    }
+</style>
+
+<section class="container my-5" id="centro-logistico">
+    <!-- CABECERA -->
+    <header class="text-center mb-5 animate__animated animate__fadeInDown">
+        <h1 class="display-5 fw-bold text-primary">Centro Logístico y Áreas de Almacenamiento</h1>
+        <p class="lead text-muted mx-auto" style="max-width: 800px;">
+            Nuestro almacén cuenta con zonas especializadas para la recepción, organización y conservación de productos.
+        </p>
+    </header>
+
+    <!-- CONTENIDO EN REJILLA -->
+    <div class="row g-4">
+        
+        <!-- ARTICULO 1: Recepción -->
+        <article class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+            <div class="card h-100 shadow-sm border-0">
+                <header class="card-header bg-white border-0 pt-3">
+                    <h4 class="h5 fw-bold text-dark">Zona de Recepción y Muelles</h4>
+                </header>
+                
+                <div class="img-zoom-container">
+                    <img src="https://mecaluxes.cdnwm.com/manual-almacen/img/muelles-carga-almacenaje.1.0.jpg" class="card-img-top" alt="Muelles de carga" style="height: 200px; object-fit: cover;">
+                </div>
+
+                <div class="card-body">
+                    <details class="p-2 border rounded bg-light" open>
+                        <summary class="fw-bold cursor-pointer">Información</summary>
+                        <p class="small mt-2 mb-0 text-secondary">El punto de entrada. Vital contar con plataformas niveladoras para camiones de mercancía pesada.</p>
+                    </details>
+                </div>
+
+                <footer class="card-footer bg-white border-0 pb-3">
+                    <button class="btn btn-primary w-100 shadow-sm">Ver más detalles</button>
+                </footer>
+            </div>
+        </article>
+
+        <!-- ARTICULO 2: Almacenaje -->
+        <article class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+            <div class="card h-100 shadow-sm border-0">
+                <header class="card-header bg-white border-0 pt-3">
+                    <h4 class="h5 fw-bold text-dark">Área de Almacenaje</h4>
+                </header>
+                
+                <div class="img-zoom-container">
+                    <img src="https://cdn-klhpb.nitrocdn.com/KxJnNDQqyOnPILgwtAnoUAxrcOnueXFc/assets/images/optimized/rev-d043584/www.noegasystems.com/wp-content/uploads/Almacenamiento-de-productos-perecederos.jpg" class="card-img-top" alt="Área de almacenaje" style="height: 200px; object-fit: cover;">
+                </div>
+
+                <div class="card-body">
+                    <details class="p-2 border rounded bg-light" open>
+                        <summary class="fw-bold">Información</summary>
+                        <p class="small mt-2 mb-0 text-secondary">Destinada a almacenar mercancía de forma eficiente, permitiendo fácil acceso y control de inventario.</p>
+                    </details>
+                </div>
+
+                <footer class="card-footer bg-white border-0 pb-3">
+                    <button class="btn btn-primary w-100 shadow-sm">Ver más detalles</button>
+                </footer>
+            </div>
+        </article>
+
+        <!-- ARTICULO 3: Racks -->
+        <article class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+            <div class="card h-100 shadow-sm border-0">
+                <header class="card-header bg-white border-0 pt-3">
+                    <h4 class="h5 fw-bold text-dark">Almacenamiento en Racks</h4>
+                </header>
+                
+                <div class="img-zoom-container">
+                    <img src="https://mecaluxpe.cdnwm.com/casos-practicos/ejemplo-paletizacion-almacen-smu-chile/image-0.1.0.jpg?imwidth=1280&imdensity=1" class="card-img-top" alt="Racks industriales" style="height: 200px; object-fit: cover;">
+                </div>
+
+                <div class="card-body">
+                    <details class="p-2 border rounded bg-light" open>
+                        <summary class="fw-bold">Información</summary>
+                        <p class="small mt-2 mb-0 text-secondary">Utiliza estanterías industriales de gran altura para organizar mercancía en pallets de forma vertical.</p>
+                    </details>
+                </div>
+
+                <footer class="card-footer bg-white border-0 pb-3">
+                    <button class="btn btn-primary w-100 shadow-sm">Ver más detalles</button>
+                </footer>
+            </div>
+        </article>
+
+    </div>
+</section>
                         </article>
                         <!--ARTICULO 4-->
                         <article class="article">
@@ -793,7 +818,7 @@
                         </p>
                     </footer>
 
-                    <<<<<<< HEAD </article>
+                     </article>
 
 
                         <!-- Venta Mayorista -->
@@ -1391,542 +1416,128 @@
                         </section>
                         =======
                     </section>
-                    >>>>>>> maycol_puchuri
+                    
 
                 </section>
 
 
-                <<<<<<< HEAD </section>
-                    =======
-                    <section class="section fourth-section" id="formulario">
-                        <h2>Formulario para realizar la compra</h2>
-                        >>>>>>> maycol_puchuri
-
-                        <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
-
-                            <!-- ═══════════════════════════════
-           SECCIÓN 1 — DATOS PERSONALES
-      ═══════════════════════════════ -->
-                            <section>
-                                <fieldset>
-                                    <legend>👤 Datos Personales</legend>
-                                    <div class="g2">
-
-                                        <!-- input text con valor por defecto -->
-                                        <div class="campo">
-                                            <label>Nombre <span class="req">*</span></label>
-                                            <input type="text" name="nombre" value="Bernabe Inche" required minlength="3" placeholder="Tu nombre completo">
-                                        </div>
-
-                                        <!-- DNI máximo 8 caracteres -->
-                                        <div class="1">
-                                            <label>DNI <span class="req">*</span></label>
-                                            <input type="text" name="dni" minlength="8" maxlength="8" pattern="\d{8}" title="Ingrese un DNI válido de 8 dígitos" required placeholder="12345678">
-                                        </div>
-
-                                        <!-- Campo solo lectura -->
-                                        <div class="2">
-                                            <label>Solo lectura</label>
-                                            <input type="text" value="VALOR NO EDITABLE" readonly>
-                                        </div>
-
-                                        <!-- Campo deshabilitado -->
-                                        <div class="3">
-                                            <label>Campo deshabilitado</label>
-                                            <input type="text" value="No disponible" disabled>
-                                        </div>
-
-                                        <!-- Mínimo 4 caracteres -->
-                                        <div class="4">
-                                            <label>Valor mínimo (4 caracteres)</label>
-                                            <input type="text" minlength="4" placeholder="Mínimo 4 caracteres">
-                                        </div>
-
-                                        <!-- readonly -->
-                                        <div class="5">
-                                            <label>Código de usuario</label>
-                                            <input type="text" name="codigo" value="fbinche" readonly required>
-                                        </div>
-
-                                        <!-- email -->
-                                        <div class="6">
-                                            <label>Email <span class="req">*</span></label>
-                                            <input type="email" name="email" required autocomplete="email" placeholder="correo@ejemplo.com">
-                                        </div>
-
-                                        <!-- tel -->
-                                        <div class="7">
-                                            <label>Teléfono <span class="req">*</span></label>
-                                            <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}" placeholder="987000000">
-                                        </div>
-
-                                        <!-- password -->
-                                        <div class="8">
-                                            <label>Contraseña <span class="req">*</span></label>
-                                            <input type="password" name="clave" placeholder="••••••" value="123456">
-                                        </div>
-
-                                        <!-- url -->
-                                        <div class="9">
-                                            <label>Sitio web</label>
-                                            <input type="url" name="web" value="https://www.idat.edu.pe">
-                                        </div>
-
-                                        <!-- number -->
-                                        <div class="10">
-                                            <label>Número de hijos</label>
-                                            <input type="number" name="hijos" min="0" max="10" value="1">
-                                        </div>
-
-                                        <!-- color -->
-                                        <div class="11">
-                                            <label>Color favorito de bolsa</label>
-                                            <div style="display:flex;align-items:center;gap:.75rem;margin-top:.2rem;">
-                                                <input type="color" name="colorFavorito" value="#2d6a2f" style="width:48px;height:38px;padding:2px;border-radius:8px;border:1.5px solid var(--borde);cursor:pointer;">
-                                                <span style="font-size:.82rem;color:var(--gris);">Elige el color de tu bolsa
-                                        ecológica</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- radio -->
-                                        <div class="12">
-                                            <label>Género</label>
-                                            <div class="check-group">
-                                                <label class="check-item">
-                                        <input type="radio" name="genero" value="F" checked> Femenino
-                                    </label>
-                                                <label class="check-item">
-                                        <input type="radio" name="genero" value="M"> Masculino
-                                    </label>
-                                                <label class="check-item">
-                                        <input type="radio" name="genero" value="O"> Otro
-                                    </label>
-                                            </div>
-                                        </div>
-
-                                        <!-- checkbox -->
-                                        <div class="13">
-                                            <label>¿Cómo nos conociste?</label>
-                                            <div class="check-group">
-                                                <label class="check-item">
-                                        <input type="checkbox" name="canal" value="html" checked> Facebook
-                                    </label>
-                                                <label class="check-item">
-                                        <input type="checkbox" name="canal" value="css"> Referido
-                                    </label>
-                                                <label class="check-item">
-                                        <input type="checkbox" name="canal" value="js"> Mercado
-                                    </label>
-                                            </div>
-                                        </div>
-
-                                        <!-- select -->
-                                        <div class="14">
-                                            <label>País</label>
-                                            <select name="pais">
-                                    <option value="">Seleccione País</option>
-                                    <option value="co">Colombia</option>
-                                    <option value="pe">Perú</option>
-                                    <option value="ar">Argentina</option>
-                                </select>
-                                        </div>
-
-                                        <!-- datalist -->
-                                        <div class="15">
-                                            <label>Ciudad</label>
-                                            <input list="ciudades" name="ciudad" value="Lima">
-                                            <datalist id="ciudades">
-                                    <option value="Lima">
-                                    <option value="Cusco">
-                                    <option value="Arequipa">
-                                    <option value="Trujillo">
-                                    <option value="Piura">
-                                </datalist>
-                                        </div>
-
-                                        <!-- select multiple -->
-                                        <div class="campo s2">
-                                            <label>Productos de interés <mark>Ctrl + clic para varios</mark></label>
-                                            <select name="tech" multiple style="height:100px;">
-                                    <option selected>Menestras</option>
-                                    <option>Verduras y Tubérculos</option>
-                                    <option>Granos y Cereales</option>
-                                    <option selected>Aceites y Condimentos</option>
-                                    <option>Lácteos</option>
-                                </select>
-                                        </div>
-
-                                        <!-- textarea -->
-                                        <div class="campo s2">
-                                            <label>Comentarios del pedido</label>
-                                            <textarea name="comentarios" rows="4" placeholder="Ej: Sin picante, preferir papa amarilla, entregar en portería...">Escribe aquí tu comentario...</textarea>
-                                        </div>
-
-                                    </div>
-                                </fieldset>
-                            </section>
-
-                            <!-- ═══════════════════════════════
-           SECCIÓN 2 — FECHAS Y HORARIOS
-      ═══════════════════════════════ -->
-                            <section>
-                                <fieldset>
-                                    <legend>📅 Fechas y Horarios</legend>
-                                    <div class="g3">
-
-                                        <!-- date -->
-                                        <div class="campo">
-                                            <label>Fecha de registro</label>
-                                            <input type="date" name="fechaRegistro" value="1995-08-15">
-                                        </div>
-
-                                        <!-- date con rango -->
-                                        <div class="campo">
-                                            <label>Fecha de nacimiento</label>
-                                            <input type="date" name="fechaNacimiento" value="2000-01-01" min="1960-01-01" max="2010-12-31">
-                                        </div>
-
-                                        <!-- month -->
-                                        <div class="campo">
-                                            <label>Mes inicio de suscripción <span class="req">*</span></label>
-                                            <input type="month" name="mesSuscripcion" value="2026-03" min="2026-01" max="2030-12" required>
-                                        </div>
-
-                                        <!-- week -->
-                                        <div class="campo">
-                                            <label>Semana de entrega</label>
-                                            <input type="week" name="semanaEntrega" value="2026-W10" min="2025-W01" max="2026-W52">
-                                        </div>
-
-                                        <!-- datetime-local -->
-                                        <div class="campo">
-                                            <label>Fecha y hora de reunión</label>
-                                            <input type="datetime-local" name="reunion" value="2026-03-04T10:30" min="2026-01-01T08:00" max="2026-12-31T18:00" step="900">
-                                        </div>
-
-                                        <!-- datetime-local readonly -->
-                                        <div class="campo">
-                                            <label>Límite de oferta actual</label>
-                                            <input type="datetime-local" name="limiteOferta" value="2026-03-20T23:59" readonly>
-                                        </div>
-
-                                        <!-- time atención -->
-                                        <div class="campo">
-                                            <label>Hora de atención <span class="req">*</span></label>
-                                            <input type="time" name="horaAtencion" value="09:00" min="08:00" max="18:00" step="300" required>
-                                        </div>
-
-                                        <!-- time entrada -->
-                                        <div class="campo">
-                                            <label>Hora de entrada repartidor</label>
-                                            <input type="time" name="horaInicio" value="08:15" min="08:00" max="08:30">
-                                        </div>
-
-                                        <!-- time salida -->
-                                        <div class="campo">
-                                            <label>Hora de salida repartidor</label>
-                                            <input type="time" name="horaFin" value="18:10" min="18:00" max="18:45">
-                                        </div>
-
-                                    </div>
-                                </fieldset>
-                            </section>
-
-                            <!-- ═══════════════════════════════
-           SECCIÓN 3 — UBICACIÓN
-      ═══════════════════════════════ -->
-                            <section>
-                                <fieldset>
-                                    <legend>📍 Ubicación y Envío</legend>
-                                    <div class="g2">
-
-                                        <!-- select con optgroup -->
-                                        <div class="campo">
-                                            <label>Seleccione País <span class="req">*</span></label>
-                                            <select name="paisEnvio" required>
-                                    <option value="">Seleccione</option>
-                                    <optgroup label="Sudamérica">
-                                        <option value="pe" selected>Perú</option>
-                                        <option value="ar">Argentina</option>
-                                        <option value="co">Colombia</option>
-                                        <option value="ec">Ecuador</option>
-                                    </optgroup>
-                                    <optgroup label="Europa">
-                                        <option value="de">Alemania</option>
-                                        <option value="es">España</option>
-                                    </optgroup>
-                                </select>
-                                        </div>
-
-                                        <!-- datalist distritos -->
-                                        <div class="campo">
-                                            <label>Distrito <span class="req">*</span></label>
-                                            <input list="distritos" name="distrito" placeholder="Escribe tu distrito">
-                                            <datalist id="distritos">
-                                    <option value="Miraflores">
-                                    <option value="San Isidro">
-                                    <option value="Surco">
-                                    <option value="La Molina">
-                                    <option value="Ate">
-                                    <option value="Chorrillos">
-                                    <option value="San Juan de Lurigancho">
-                                </datalist>
-                                        </div>
-
-                                        <fieldset style="grid-column:span 2;border:1.5px dashed var(--borde);background:#fdfaf4;">
-                                            <legend>Mi información de entrega</legend>
-                                            <div class="g2">
-                                                <div class="campo">
-                                                    <label>Nombre receptor <span class="req">*</span></label>
-                                                    <input type="text" name="nombreReceptor" placeholder="Ingrese su nombre" required minlength="3">
-                                                </div>
-                                                <div class="campo">
-                                                    <label>Dirección completa <span class="req">*</span></label>
-                                                    <input type="text" name="direccion" required minlength="10" placeholder="Av. Grau 456, Piso 2">
-                                                </div>
-                                            </div>
-                                        </fieldset>
-
-                                    </div>
-                                </fieldset>
-                            </section>
-
-                            <!-- ═══════════════════════════════
-           SECCIÓN 4 — INDICADORES
-      ═══════════════════════════════ -->
-                            <section>
-
-                                <!-- Medición con meter -->
-                                <fieldset>
-                                    <legend>📊 Indicadores de Calidad</legend>
-
-                                    <div class="meter-fila">
-                                        <label><mark>Frescura del producto</mark></label>
-                                        <meter value="0.95" min="0" max="1"></meter>
-                                        <span>95%</span>
-                                    </div>
-                                    <div class="meter-fila">
-                                        <label><mark>Nivel Orgánico</mark></label>
-                                        <meter value="0.80" min="0" max="1"></meter>
-                                        <span>80%</span>
-                                    </div>
-                                    <div class="meter-fila">
-                                        <label><mark>Stock disponible</mark></label>
-                                        <meter value="0.60" min="0" max="1"></meter>
-                                        <span style="color:var(--naranja);">60%</span>
-                                    </div>
-                                    <div class="meter-fila">
-                                        <label><mark>Satisfacción clientes</mark></label>
-                                        <meter value="1" min="0" max="1"></meter>
-                                        <span>100%</span>
-                                    </div>
-
-                                    <br>
-
-                                    <!-- range -->
-                                    <div class="campo" style="margin-bottom:1rem;">
-                                        <label>¿Cuánto valoras la frescura? (0–10)</label>
-                                        <div class="range-fila">
-                                            <input type="range" name="valorFrescura" id="rFrescura" min="0" max="10" value="9">
-                                            <span class="range-val" id="vFrescura">9</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="campo">
-                                        <label>Kilos totales estimados del pedido (0–100 kg)</label>
-                                        <div class="range-fila">
-                                            <input type="range" name="kgTotal" id="rKg" min="0" max="100" value="20">
-                                            <span class="range-val" id="vKg">20 kg</span>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                            </section>
-
-                            <!-- ═══════════════════════════════
-           SECCIÓN 5 — ARCHIVOS Y MULTIMEDIA
-      ═══════════════════════════════ -->
-                            <section>
-                                <fieldset>
-                                    <legend>📎 Adjuntar Archivos y Multimedia</legend>
-                                    <div class="g2">
-
-                                        <!-- file múltiple PDF -->
-                                        <div class="campo">
-                                            <label>Subir voucher de pago (PDF/DOC)</label>
-                                            <input type="file" name="voucher" accept=".pdf,.doc,.docx" multiple>
-                                        </div>
-
-                                        <!-- file múltiple imágenes -->
-                                        <div class="campo">
-                                            <label>Subir imágenes del pedido</label>
-                                            <input type="file" name="imagenes" multiple accept="image/*">
-                                        </div>
-
-                                        <!-- file captura cámara -->
-                                        <div class="campo s2">
-                                            <label>Foto de referencia del lugar de entrega (cámara)</label>
-                                            <input type="file" name="fotoLugar" accept="image/*" capture>
-                                        </div>
-
-                                        <!-- iframe video -->
-                                        <div class="campo s2">
-                                            <label>Video tutorial: cómo preparar tus menestras</label>
-                                            <div class="media-wrap">
-                                                <iframe src="https://www.youtube.com/embed/dD2EISBDjWM" title="Tutorial menestras" allowfullscreen>
-                                    </iframe>
-                                                <!-- audio -->
-                                                <audio controls>
-                                        <source src="instrucciones.mp3" type="audio/mpeg">
-                                        Tu navegador no soporta el elemento audio.
-                                    </audio>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </fieldset>
-                            </section>
-
-                            <!-- ═══════════════════════════════
-           SECCIÓN 6 — INFORMACIÓN ADICIONAL
-      ═══════════════════════════════ -->
-                            <section>
-                                <fieldset>
-                                    <legend>ℹ️ Información Adicional</legend>
-
-                                    <!-- details cerrado -->
-                                    <details>
-                                        <summary>🌿 Política de devoluciones</summary>
-                                        <p>Tienes 24 horas para reportar cualquier problema con tu pedido. Reembolsamos o reponemos el producto sin costo adicional si el error es nuestro.</p>
-                                    </details>
-
-                                    <!-- details abierto -->
-                                    <details open>
-                                        <summary>🚚 Zonas y horarios de reparto</summary>
-                                        <ul>
-                                            <li>Lima Centro: Cercado, Breña, La Victoria — Envío S/ 5</li>
-                                            <li>Lima Moderna: Miraflores, San Isidro, Surco — Envío S/ 8</li>
-                                            <li>Lima Este: Ate, Santa Anita, SJL — Envío S/ 10</li>
-                                            <li>Lima Sur: Villa El Salvador, Chorrillos — Envío S/ 10</li>
-                                        </ul>
-                                    </details>
-
-                                    <details>
-                                        <summary>♻️ Empaque ecológico</summary>
-                                        <p>Usamos bolsas biodegradables reutilizables. Devuelve tu bolsa en el próximo pedido y obtén S/ 0.50 de descuento.</p>
-                                    </details>
-
-                                </fieldset>
-                            </section>
-
-                            <!-- ═══════════════════════════════
-           TÉRMINOS Y BOTONES
-      ═══════════════════════════════ -->
-                            <section>
-
-                                <!-- checkbox términos -->
-                                <label class="check-item" style="font-size:.9rem;margin-bottom:1rem;display:flex;">
-                        <input type="checkbox" name="terminos" required
-                            style="width:16px;height:16px;accent-color:var(--verde);">
-                        Acepto los <a href="#" style="color:var(--verde);margin:0 .3rem;">Términos y Condiciones</a>
-                        y la <a href="#" style="color:var(--verde);margin-left:.3rem;">Política de Privacidad</a>
-                    </label>
-
-                                <!-- botones en menu -->
-                                <menu>
-                                    <!-- submit normal -->
-                                    <button type="submit" class="btn-submit">
-                            🛒 Confirmar Pedido
-                        </button>
-
-                                    <!-- submit con override (formaction + formmethod) -->
-                                    <button type="submit" formaction="/pedido-rapido" formmethod="get" class="btn-get">
-                            ⚡ Enviar vía GET
-                        </button>
-
-                                    <!-- reset -->
-                                    <button type="reset" class="btn-reset">
-                            🗑️ Limpiar
-                        </button>
-
-                                    <!-- button type=button -->
-                                    <button type="button" class="btn-extra" onclick="alert('💾 Pedido guardado como borrador')">
-                            💾 Guardar borrador
-                        </button>
-                                </menu>
-
-                            </section>
-
-                        </form>
-                    </section>
-        </main>
-
-        <!-- ══════════════════════════════════════
-     FOOTER
-══════════════════════════════════════ -->
-        <footer class="footer">
-            <section class="columnas_5">
-
-                <nav>
-                    <h3>Mercado Don Cholo</h3>
-                    <ul>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Nuestros Agricultores</a></li>
-                        <li><a href="#">Blog de Recetas</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </nav>
-
-                <nav>
-                    <h3>Productos Populares</h3>
-                    <ul>
-                        <li><a href="#">Menestras Frescas</a></li>
-                        <li><a href="#">Verduras y Tubérculos</a></li>
-                        <li><a href="#">Granos y Cereales</a></li>
-                        <li><a href="#">Ofertas del día</a></li>
-                    </ul>
-                </nav>
-
-                <nav>
-                    <h3>Nos Hacemos Cargo</h3>
-                    <ul>
-                        <li><a href="#">Atención de reclamos Lima</a></li>
-                        <li><a href="#">Consulta de reclamos Lima</a></li>
-                        <li><a href="#">Atención de reclamos Provincia</a></li>
-                        <li><a href="#">Consulta de reclamos Provincia</a></li>
-                    </ul>
-                </nav>
-
-                <nav>
-                    <h3>Más Información</h3>
-                    <ul>
-                        <li><a href="#">Seguir mi pedido</a></li>
-                        <li><a href="#">Zonas de cobertura</a></li>
-                        <li><a href="#">Suscripción semanal</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                    </ul>
-                </nav>
-
-                <section>
-                    <div>
-                        <h4>🌿 Don Cholo</h4>
-                        <p>&copy; 2026 Mercado Don Cholo.<br>Todos los derechos reservados.</p>
+                <<<<<<< HEAD <!-- FORMULARIO  -->
+<link rel="stylesheet" href="https://cloudflare.com""")/>>
+
+<style>
+    /* Efecto de suavizado y elevación para los inputs */
+    .form-control, .form-select {
+        transition: all 0.3s ease;
+    }
+    .form-control:focus, .form-select:focus {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(13, 110, 253, 0.15);
+    }
+    /* Animación secuencial para los fieldsets */
+    fieldset {
+        animation: fadeInRight 0.8s ease-out;
+    }
+    /* Hover en botones */
+    .btn-primary {
+        transition: transform 0.2s;
+    }
+    .btn-primary:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+<!-- Sección del Formulario-->
+<section class="container my-5 shadow p-4 rounded bg-white section fourth-section animate__animated animate__fadeInUp" id="formulario">
+    <h2 class="mb-4 text-primary border-bottom pb-2">Formulario para realizar la compra</h2>
+
+    <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on" class="needs-validation" novalidate>
+
+        <!-- SECCIÓN 1 — DATOS PERSONALES -->
+        <fieldset class="border p-4 rounded shadow-sm">
+            <legend class="float-none w-auto px-3 fw-bold text-secondary">👤 Datos Personales</legend>
+            
+            <div class="row g-3">
+                <!-- Nombre -->
+                <div class="col-md-6">
+                    <label class="form-label">Nombre <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="nombre" value="Bernabe Inche" required minlength="3" placeholder="Tu nombre completo">
+                </div>
+
+                <!-- DNI -->
+                <div class="col-md-3">
+                    <label class="form-label">DNI <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="dni" minlength="8" maxlength="8" pattern="\d{8}" title="Ingrese un DNI válido de 8 dígitos" required placeholder="12345678">
+                </div>
+
+                <!-- Campo solo lectura -->
+                <div class="col-md-3">
+                    <label class="form-label">Solo lectura</label>
+                    <input type="text" class="form-control bg-light" value="VALOR NO EDITABLE" readonly>
+                </div>
+
+                <!-- Los demás campos siguen igual... -->
+
+                <!-- Email -->
+                <div class="col-md-6">
+                    <label class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" name="email" required autocomplete="email" placeholder="correo@ejemplo.com">
+                </div>
+
+                <!-- Teléfono -->
+                <div class="col-md-3">
+                    <label class="form-label">Teléfono <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" name="telefono" value="987654321" pattern="[0-9]{9}" placeholder="987000000">
+                </div>
+
+                <!-- Password -->
+                <div class="col-md-3">
+                    <label class="form-label">Contraseña <span class="text-danger">*</span></label>
+                    <input type="password" class="form-control" name="clave" placeholder="••••••" value="123456">
+                </div>
+
+                <!-- Color Favorito -->
+                <div class="col-md-3">
+                    <label class="form-label">Color favorito</label>
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="color" class="form-control form-control-color" name="colorFavorito" value="#2d6a2f">
+                        <small class="text-muted" style="font-size: 0.75rem;">Ecológico</small>
                     </div>
-                    <br>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram">📸 Instagram</a>
-                        <a href="#" aria-label="Facebook">👤 Facebook</a>
-                        <a href="#" aria-label="TikTok">🎵 TikTok</a>
-                        <a href="#" aria-label="YouTube">▶️ YouTube</a>
+                </div>
+
+                <!-- Género -->
+                <div class="col-md-4">
+                    <label class="form-label d-block fw-bold">Género</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="genF" value="F" checked>
+                        <label class="form-check-label" for="genF">Femenino</label>
                     </div>
-                </section>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="genM" value="M">
+                        <label class="form-check-label" for="genM">Masculino</label>
+                    </div>
+                </div>
 
-            </section>
+                <!-- Selección de País -->
+                <div class="col-md-5">
+                    <label class="form-label">País</label>
+                    <select class="form-select" name="pais">
+                        <option value="pe" selected>Perú</option>
+                        <option value="co">Colombia</option>
+                        <option value="ar">Argentina</option>
+                    </select>
+                </div>
 
+            </div>
 
-        </footer>
+            <!-- Botones de acción -->
+            <div class="mt-4 pt-3 border-top text-end">
+                <button type="reset" class="btn btn-outline-secondary px-4 me-2">Limpiar</button>
+                <button type="submit" class="btn btn-primary px-5 shadow-sm">Procesar Compra</button>
+            </div>
 
-
+        </fieldset>
+    </form>
+</section>
         <!--NOTA TENTATIVA HTML  : 16
  +2 ADICIONAR FORMULARIO ok
  +1 ADICIONAR CONTENIDO AL FOOTER & ADICIONAR NAVEGACION DE LOS ENLACES ok
@@ -1934,4 +1545,4 @@
  +3 MEJORAR SECCION 3 PRODUCTOS DEL MERCADO ,TENER 15 ITEMS MINIMO ok
  -2 LA SEMANTICA DE LA PAGINA NO EXISTE
  -->
-    </body>
+ 
