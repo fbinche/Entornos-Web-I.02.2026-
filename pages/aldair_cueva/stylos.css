@@ -1,0 +1,359 @@
+/*
+
+ME FALTA MI BOOSTRAP, EN UN PAR DE HORAS LO SUBO, POR AHORA LO ANO ENTENDIENDO
+
+*/
+
+/* =========================================
+   1. SELECTOR UNIVERSAL 
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Evito que los elementos se sobredimensionen fuera del tamaño que establezco*/
+}
+
+/* =========================================
+   2. SELECTORES DE ETIQUETAS HTML 
+   ========================================= */
+body {
+    /*Agrego una fuente principal, color de fondo y color de texto y separacion de textos*/
+    font-family: 'Helvetica', sans-serif;
+    background-color: #dfdfdf;
+    color: #333333;
+    line-height: 1.5;
+}
+
+nav {
+    /*Doy características generales a mi nav, para poder crear mas a futuro y no tener inconvenientes*/
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+main {
+    /*maximiso el contenido de mi web, separo mi contenido de arriba y abajo, l doy espacio lateral y contengo mi contenido*/
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: block;
+}
+
+h3 {
+    /*doy color al texto, tamaño de fuente y una separacion interior*/
+    color: #007bff;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer {
+    /*Color de fondo, color de texto y espacio de relleno*/
+    background: #1a1a1a;
+    color: white;
+    padding: 30px 0;
+}
+
+/* =========================================
+   3. SELECTORES DE CLASES 
+   ========================================= */
+
+.navegador {
+    /*doy estetica a mi navegador sin afectar a mi etiqueta original*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #163a5f;
+    padding: 20px;
+}
+
+.lista {
+    /*Doy estetica a la lista de mis enlaces*/
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.fondo {
+    /*alineo textos, doy rellenos , margenes */
+    text-align: center;
+    padding: 80px;
+    margin: 0px;
+}
+
+.catalogo {
+    /*Bordeo mis productos, les doy un relleno y le doy un margen 0 debido a que ahora estan en un figcaption*/
+    display: flex;
+    border: 1px solid #808080;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    gap: 45px;
+
+}
+
+.btn {
+
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* =========================================
+   3. SELECTORES IDENTIFICADORES "ID" solo casos espesficos
+   ========================================= */
+#logo {
+    /*ediciones directa a mi texto logo de optimuebles*/
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+#fondo {
+    /*le aplico el fondo a mi fondo valga la redundancia*/
+    background: #163a5f;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#pie_pagina {
+    /*ediciones de mi pie de pagina */
+    text-align: center;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+/* =========================================
+   5. COMBINADORES, LOGICOS Y ETC
+   ========================================= */
+/*DECENDIENTES*/
+.lista a {
+    /*decoraciones a mis enlaces*/
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.producto img {
+    /*acomodos y efectos a mis img*/
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+    /*efectos de transicion y superposición al pasar el mouse*/
+    transform: scale(1.02);
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+/*HERMANOS*/
+
+h1+p {
+    /*decoraciones a mis textos que siguen a un h1*/
+    color: rgb(180, 250, 250);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+figcaption h3+p {
+    /*decoraciones a mis textos que siguen a un h3 dentro de un figcaption*/
+    color: #2c91f0;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+/*LOGICOS*/
+/*agrupo mis estilos*/
+:is(h1, .titulo) {
+    /*Aplico el mismo estilo a mi h1 como a lo que tengoa la clase .titulo*/
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 45px;
+    font-weight: 700;
+}
+
+/*pongo estilos bases que mas adelante puedo cambiar facilmente*/
+article :where(p) {
+    /*en este asco aplico estilos a mi p de mi article*/
+    color: #555555;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/*PSEUDO CLASES*/
+/* 2 psudo clases */
+.btn:hover {
+    /*efecto a mi boton al pasar el mouse*/
+    background: #0056b3;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.lista li:last-child {
+    /*resalto mi ultimo boton de mi lista*/
+    background: #6a6b6b;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/*PSEUDO ELEMENTOS*/
+.destacado_t::after {
+    /*hasta donde entendi es para poner decoraciones fantasmas ya que o es una etiqueta y mas que nada me sirve para dar informacion visual*/
+    content: " | Premium";
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#pie_pagina p::selection {
+    /*controla el como se ve el texto cuando se selecciona*/
+    background: #ffd700;
+    color: #000;
+    /*elimina la sombra del texto seleccionado por cualquier regla anterior*/
+    text-shadow: none;
+}
+
+/*ATRIBUTOS AVANZADOS*/
+/*ya no esta yuca ya lo entendi*/
+/* 2 atributos avanzados */
+a[data-link="inicio"] {
+    /*aplico estilos a mis enlaces que tengan el atributo data-link con el valor "inicio"*/
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 3px;
+}
+
+img[src*="productos"] {
+    /*solo aplico estilo al atributo que tenga la palabra "productos"*/
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================================
+   6. SELECTORES COMBINADOS 
+   ========================================= */
+
+header nav.navegador ul.lista li a:hover {
+    /*combino mis etiquetas para llevar a mi li y dale un efecto hover al pasar el mouse*/
+    color: #ffd700;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+section.catalogo article figure img {
+    /*doy estilos a las imagenes que se encuentren dentro de mi clase catalogo*/
+    border: 2px solid #ffffff;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+article figure:hover > figcaption h3 {
+    /*da estilo al h3 que esta en un figcaption y es hijo de un figure que este dentro de un article*/
+    color: #02701c; 
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+footer#pie_pagina p:first-of-type {
+    /*selecciono al primer parrafo dentro de mi footer*/
+    border-top: 1px solid #ffffff;
+    
+}
+footer#pie_pagina p:nth-of-type(2) {
+    /*selecciono al segundo o cualquiera que eliga*/
+    color: #91ff00;
+    border-top: 1px solid #91ff00;
+ 
+}
+/*no palica px que ya no tengo tercer parrafo */
+footer#pie_pagina p:last-of-type {
+    /*selecciono al ultimo parrafo dentro de mi footer*/
+    color: #00c3ff;
+    border-top: 1px solid #00c3ff;
+    
+}
+/* =========================================
+   7. ANIMACIONES 
+   ========================================= */
+   /*animacion 1*/
+
+  /*animacion de lado, para que las imagenes aparescan de al lado*/
+   @keyframes lado {  /*creo una palabra clave para la animacion*/
+    from {
+        /*inicia a un costado con su opacidad en 0*/
+        transform: translateX(-50px); 
+        opacity: 0;                  
+    }
+    to {
+        /*al llegar al final su opacidad en 1*/
+        transform: translateX(0);    
+        opacity: 1;                  
+    }
+}
+
+.catalogo { 
+    /* selecciono mi clase catalogo y le agrego mi animacion */
+    animation: lado 0.8s ease-out forwards; /*fow hace que la anmacion se quede en el estado final*/
+}
+
+/*animacion 2*/
+@keyframes caidanav { /*clave*/
+    from {
+        /* inicia de arriba afuera*/
+        transform: translateY(-100%); 
+        opacity: 0;
+    }
+    to {
+        /* cae en su posicion final */
+        transform: translateY(0);    
+        opacity: 1;
+    }
+}
+
+.navegador {
+    animation: caidanav 0.6s ease-out;
+}
+
+/*animacion 3*/
+@keyframes zoom { /*clave*/
+    from {
+        /* inicia en su tamaño original */
+        transform: scale(1);
+    }
+    to {
+        /* crece un 5% de forma lentamente */
+        transform: scale(1.05);
+    }
+}
+
+.fondo {
+    overflow: hidden; /* Importante para que el zoom no se salga de los bordes */
+    animation: zoom 10s linear infinite alternate; /*realiza el crecimiento en los 10 segundos*/
+}
+/*SECCION PARA BOOSTRAP*/
+.navbar {
+    background-color: #163a5f !important; /* Fuerza tu color de marca */
+}
+
+.nav-link:hover {
+    color: #ffd700 !important; /* Mantiene tu efecto dorado al pasar el mouse */
+}
+ /** NOTA ACTUAL : 14.5 - 5 (Usar pagina)
+15 puntos SELECTORES
+  #1 SELECTOR UNIVERSAL 0.2
+  #5 SELECTORES DE ETIQUETAS HTML 2.5
+  #5 SELECTORES DE CLASES 2.5
+  #3 SELECTORES DE IDENTIFICADORES 1.5
+  #2 SELECTORES COMBINADORES 1
+  #2 SELECTORES LOGICOS MODERNOS 1
+  #2 SELECTORES PSEUDO CLASES 1
+  #2 SELECTORES PSEUDO ELEMENTOS 1
+  #2 SELECTORES ATRIBUTOS AVANZADOS 1
+  #6 SELECTORES COMBINADOS 2.7
+3 puntos ANIMACIONES
+2 puntos SUSTENTACION/PARTICIPACION EN CLASE
+NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
+**/

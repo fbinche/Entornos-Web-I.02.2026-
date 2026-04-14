@@ -1,41 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style_index.css">
-    <title>WEB PRINCIPAL</title>
+    <!--uso un servidor externo que me entrega el archivo, para mas rapides. integriti para verificar si el archivo descargado no modifica maliciosamente
+     y crossorigin, verifica la integridad aun que el archivo venga de otro dominio-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!--Bootstrap icons para agregar iconos a mi pagina-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="stylos.css">
+    <title>Optimuebles</title>
 </head>
 
 <body>
     <!--CABECERA DE MI PAGINA-->
     <header>
-        <h1>WEB DE MIS APRENDISAJES</h1>
-        <p>Mis avances en aprendisajes</p>
+        <!--NAVEGADOR DE MI PAGINA-->
+        <nav class="navbar navbar-expand-md navegador"> <!--boostrap para dar estilo hamburgesa-->
+            <section class="container-fluid">
+            <!--Puede ir un logo o un texto a, voluntad-->
+            <p id="logo" class="navbar-brand mb-0">Optimuebles</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuprincipal" aria-controls="menuprincipal" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="menuprincipal">
+            <ul class="navbar-nav ms-auto lista gap-lg-4">
+                <li class="nav-item"><a class="nav-link text-white" href="#" data-link="inicio"> <i class="bi bi-house-door me-1"></i> Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#"><i class="bi bi-grid me-1"></i> Catálogo</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#"><i class="bi bi-chat-dots me-1"></i> Contacto</a></li>
+            </ul>
+            </section>
+            </section>
+        </nav>
     </header>
-    <!--NAVEGADOR DE MI PAGINA-->
-    <nav >
-        <ul class="navegador">
-            <li><a href="../aldair_cueva/Multipage/html_site.html"class="botones_nav">HTML</a></li>
-            <li><a href="../aldair_cueva/Multipage/css_site.html"class="botones_nav">CSS Y HTML</a></li>
-            <li><a href="#"class="botones_nav">PYTON</a></li>
-            <li><a href="#"class="botones_nav">PROYECTO PERSONAL</a></li>
-        </ul>
-    </nav>
- <!--CUERPO DE MI PAGINA-->
-    <main>
-        <!--MI AVANCE EN HTML -->
-        <section class="avances">
-            <h3>CONOCIMIENTOS EN HTML</h3>
-            <p>Conocimientos al 40%</p>
+    <!--CUERPO DE MI PAGINA PRINCIPAL-->
+    <main class="container">
+        <!--Seccion de imagen principal o banner de fondo-->
+        <section id="fondo" class="fondo "> <!--Boostrap agregado, para darle sombra-->
+            <h1>Muebles de Melamina</h1>
+            <p>Muebles resistentes, para tu hogar y oficina</p>
+            <button class="btn btn-primary px-4 "><i class="bi bi-eye me-2"></i>Ver modelos</button> <!--Boostrap agregado, para darle estilo al boton-->
         </section>
-        <!--MI AVANCE EN CSS-->
-        <section class="avances">
-            <h3>CONOCIMIENTOS EN CSS</h3>
-            <p>Conocimientosal 15%</p>
+        <!--SECCION DE PRODUCTOS-->
+        <section class="catalogo">
+            <!--subtitulo-->
+            
+            <!--Aqui falta un subtitulo si me da tiempo lo subo-->
+
+            <!--Producto 1-->
+            <article class="producto">
+                <figure>
+                    <img src="productos/1.png" alt="Escritorio Artist Pro">
+                    <figcaption><h3 class="destacado_t">Artist Pro</h3></figcaption>
+                </figure>
+                <p>Perfecto para tu espacio de trabajo</p>
+            </article>
+            <!--Producto 2-->
+            <article class="producto">
+                <figure>
+                    <img src="productos/2.png" alt="Escritorio Koda Desk">
+                    <figcaption><h3>Koda Desk</h3></figcaption>
+                </figure>
+                <p>Estructura limpia y moderna</p>
+            </article>
         </section>
     </main>
+    <!--PIE DE PAGINA-->
+<footer id="pie_pagina" class="py-4 border-top text-center fondo_footer">
+    <section class="container">
+        
+        <p class="texto_copyright text-white">
+            &copy; 2026 <strong>Optimuebles</strong>. Todos los derechos reservados.
+        </p>
+        
+        <nav class="iconos_sociales d-flex justify-content-center gap-3 my-2">
+            <a href="#" class="enlace_social text-white opacity-75"><i class="bi bi-facebook fs-4"></i></a>
+            <a href="#" class="enlace_social text-white opacity-75"><i class="bi bi-instagram fs-4"></i></a>
+            <a href="#" class="enlace_social text-white opacity-75"><i class="bi bi-whatsapp fs-4"></i></a>
+        </nav>
+        
+        <p class="texto_secundario small text-white-50">
+            EA CHINIGAMES | Una última y nos vamos
+        </p>
+        <p>La fe, lo mas lindo de la vida</p>
+
+    </section>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
