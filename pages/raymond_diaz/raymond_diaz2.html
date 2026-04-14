@@ -458,26 +458,26 @@
      ║  Bootstrap: form-control · select · check · range  ║
      ╚══════════════════════════════════════════════════════╝ -->
 <section id="registro" class="gw-section gw-bg-dark">
+<section id="registro" class="gw-section gw-bg-dark">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 col-xl-7">
+    <div class="row g-4">
+      <!-- Encabezado -->
+      <div class="col-12 text-center mb-4">
+        <p class="gw-subtitle small text-uppercase">▸ Gerand Universal Wiki ◂</p>
+        <h2 style="font-size:2.4rem;animation:gw-glow 3s ease-in-out infinite;">
+          Registro de Campo
+        </h2>
+        <p class="text-muted">// Completa el formulario para unirte a la base de datos //</p>
+      </div>
 
-        <!-- Encabezado -->
-        <div class="text-center mb-4">
-          <p class="gw-subtitle small text-uppercase">▸ Gerand Universal Wiki ◂</p>
-          <h2 style="font-size:2.4rem;animation:gw-glow 3s ease-in-out infinite;">
-            Registro de Campo
-          </h2>
-          <p class="text-muted">// Completa el formulario para unirte a la base de datos //</p>
-        </div>
-
-        <!-- Tarjeta del form -->
+      <!-- Tarjeta Izquierda -->
+      <div class="col-12 col-lg-6">
         <div class="gw-form-card p-4 p-md-5">
           <form action="#" method="post" novalidate>
             <div class="row g-3">
 
               <!-- Nombre -->
-              <div class="col-12 col-sm-6">
+              <div class="col-12">
                 <label for="f-nombre" class="form-label">
                   Nombre de comandante <span class="text-danger">*</span>
                 </label>
@@ -485,17 +485,8 @@
                        placeholder="Ej: KV-44" required>
               </div>
 
-              <!-- Email -->
-              <div class="col-12 col-sm-6">
-                <label for="f-email" class="form-label">
-                  Correo de contacto <span class="text-danger">*</span>
-                </label>
-                <input type="email" class="form-control" id="f-email" name="email"
-                       placeholder="correo@ejemplo.com" required>
-              </div>
-
               <!-- Select -->
-              <div class="col-12 col-sm-6">
+              <div class="col-12">
                 <label for="f-temporada" class="form-label">Temporada favorita</label>
                 <select class="form-select" id="f-temporada" name="temporada">
                   <option value="" disabled selected>Selecciona temporada</option>
@@ -508,21 +499,19 @@
                 </select>
               </div>
 
-              <!-- Number -->
-              <div class="col-12 col-sm-6">
+              <!-- Episodios vistos -->
+              <div class="col-12">
                 <label for="f-episodios" class="form-label">Episodios vistos</label>
                 <input type="number" class="form-control" id="f-episodios" name="episodios"
                        min="0" max="999" placeholder="0">
               </div>
-
-              <div class="col-12"><hr></div>
 
               <!-- Radio -->
               <div class="col-12">
                 <label class="form-label">
                   Bando preferido <span class="text-danger">*</span>
                 </label>
-                <div class="d-flex flex-wrap gap-3 mt-1">
+                <div class="d-flex flex-column gap-2 mt-2">
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="bando" id="b-sov" value="sovietico">
                     <label class="form-check-label" for="b-sov">🇷🇺 Unión Soviética</label>
@@ -542,10 +531,43 @@
                 </div>
               </div>
 
+            </div><!-- /row -->
+          </form>
+        </div>
+      </div>
+
+      <!-- Tarjeta Derecha -->
+      <div class="col-12 col-lg-6">
+        <div class="gw-form-card p-4 p-md-5">
+          <form action="#" method="post" novalidate>
+            <div class="row g-3">
+
+              <!-- Email -->
+              <div class="col-12">
+                <label for="f-email" class="form-label">
+                  Correo de contacto <span class="text-danger">*</span>
+                </label>
+                <input type="email" class="form-control" id="f-email" name="email"
+                       placeholder="correo@ejemplo.com" required>
+              </div>
+
+              <!-- Range -->
+              <div class="col-12">
+                <label for="f-conocimiento" class="form-label">
+                  Nivel de conocimiento del universo
+                </label>
+                <input type="range" class="form-range" id="f-conocimiento"
+                       name="conocimiento" min="1" max="5" value="3">
+                <div class="d-flex justify-content-between gw-range-labels mt-1">
+                  <span>Recluta</span><span>Soldado</span><span>Veterano</span>
+                  <span>Élite</span><span>Comandante</span>
+                </div>
+              </div>
+
               <!-- Checkboxes -->
               <div class="col-12">
                 <label class="form-label">Contenido de interés</label>
-                <div class="d-flex flex-wrap gap-3 mt-1">
+                <div class="d-flex flex-column gap-2 mt-2">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="c-hist" name="interes" value="historia">
                     <label class="form-check-label" for="c-hist">Historia / Lore</label>
@@ -569,18 +591,16 @@
                 </div>
               </div>
 
-              <!-- Range -->
-              <div class="col-12">
-                <label for="f-conocimiento" class="form-label">
-                  Nivel de conocimiento del universo
-                </label>
-                <input type="range" class="form-range" id="f-conocimiento"
-                       name="conocimiento" min="1" max="5" value="3">
-                <div class="d-flex justify-content-between gw-range-labels mt-1">
-                  <span>Recluta</span><span>Soldado</span><span>Veterano</span>
-                  <span>Élite</span><span>Comandante</span>
-                </div>
-              </div>
+            </div><!-- /row -->
+          </form>
+        </div>
+      </div>
+
+      <!-- Textarea y Submit (ancho completo) -->
+      <div class="col-12">
+        <div class="gw-form-card p-4 p-md-5">
+          <form action="#" method="post" novalidate>
+            <div class="row g-3">
 
               <!-- Textarea -->
               <div class="col-12">
@@ -598,16 +618,16 @@
                 </button>
               </div>
 
+              <p class="text-center mt-3 gw-form-note small col-12">
+                ▸ Proyecto de fans · No afiliado oficialmente con Gerand ◂
+              </p>
+
             </div><!-- /row -->
-
-            <p class="text-center mt-3 gw-form-note small">
-              ▸ Proyecto de fans · No afiliado oficialmente con Gerand ◂
-            </p>
           </form>
-        </div><!-- /gw-form-card -->
-
+        </div>
       </div>
-    </div>
+
+    </div><!-- /row principal -->
   </div>
 </section>
 
