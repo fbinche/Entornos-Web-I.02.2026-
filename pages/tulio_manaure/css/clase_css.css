@@ -254,4 +254,11 @@ h1, h2 {
 
 #inicio, #productos, #formulario, #categorias {
     animation: fadeIn 1s ease-in-out;
+
+    html {
+    scroll-behavior: smooth;
+    }}
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }

@@ -110,14 +110,14 @@ footer {
     letter-spacing: -1px;
     color: #fff;
 }
-
+/*
 #fondo {
-    /*le aplico el fondo a mi fondo valga la redundancia*/
+    /*le aplico el fondo a mi fondo valga la redundancia
     background: #163a5f;
     color: #fff;
     border-radius: 20px;
 }
-
+*/
 #pie_pagina {
     /*ediciones de mi pie de pagina */
     text-align: center;
@@ -152,9 +152,9 @@ footer {
 
 /*HERMANOS*/
 
-h1+p {
+.capa-contenido h1+p {
     /*decoraciones a mis textos que siguen a un h1*/
-    color: rgb(180, 250, 250);
+    color: rgb(2, 247, 247);
     font-size: 20px;
     margin-top: 10px;
 }
@@ -340,6 +340,48 @@ footer#pie_pagina p:last-of-type {
 
 .nav-link:hover {
     color: #ffd700 !important; /* Mantiene tu efecto dorado al pasar el mouse */
+}
+
+/*PARTE 2 DE BOOSTRAP*/
+/* Efectos para mi diseño de carrusel */
+#fondo {
+    padding: 0 !important;
+    height: 500px; /* Tamaño definido para mi banner*/
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    border-radius: 20px; 
+}
+
+/* fuerzo mis imagenes al contendeor, caso contrario las recorto si sobresalen de las dimensiones */
+#fondo .carousel-inner, 
+#fondo .carousel-item, 
+#fondo .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* oscuresco mi carrusel para resaltar mis datos impuestos en mi html */
+#fondo .carousel-item img {
+    filter: brightness(0.5);
+    animation: zoom 10s linear infinite alternate; /* añado mi animacion inicial */
+}
+
+/* fijacion de mi contenido */
+.capa-contenido {
+    z-index: 10;
+    pointer-events: none; 
+}
+
+/* reinicio*/
+.capa-contenido .btn {
+    pointer-events: auto;
+}
+/*DISEÑO DE BOTONES EN MI CARRUSEL*/
+.carousel-control-prev-icon,.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 50%;
+    padding: 1.5rem;
 }
  /** NOTA ACTUAL : 
  CSS -> 10 + 3 PARTIPACION +2 ANIMACIONES
