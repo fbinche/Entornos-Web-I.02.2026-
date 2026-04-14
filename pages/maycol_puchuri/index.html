@@ -419,461 +419,463 @@
             <!-- FIN SECCION 2 -->
 
 
-
             <!-- BLOQUE 3 -->
-            <section class="section third-section" id="producto_mercado">
+            <section class="section third-section container py-5" id="producto_mercado">
 
-                <section>
+                <header class="text-center mb-5 animate__animated animate__fadeIn">
+                    <h2 class="fw-bold">Productos del Mercado</h2>
+                    <p class="text-muted">
+                        Estos son algunos de los productos más vendidos tanto en venta minorista como mayorista. Si deseas conocer más productos disponibles puedes visitar nuestro catálogo completo en la tienda.
+                    </p>
+                </header>
 
-                    <header>
-                        <h2>Productos del Mercado</h2>
-                        <p>
-                            Estos son algunos de los productos más vendidos tanto en venta minorista como mayorista. Si deseas conocer más productos disponibles puedes visitar nuestro catálogo completo en la tienda.
-                        </p>
-                    </header>
+                <!-- Rejilla de Bootstrap -->
+                <section class="row g-4 justify-content-center">
 
-                    <section class="card columnas_5">
-
-                        <!-- ITEM 1 -->
-                        <article class="card">
-
+                    <!-- ITEM 1 -->
+                    <article class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <div class="card h-100 shadow-sm border-0 text-center p-3">
                             <header>
-                                <h3>Arroz Extra 5kg</h3>
+                                <h3 class="h5 fw-bold">Arroz Extra 5kg</h3>
                             </header>
 
-                            <figure>
-                                <img src="imagenes/productos/arroz 5kg.webp" alt="Arroz extra">
+                            <figure class="my-3 d-flex align-items-center justify-content-center" style="height: 180px;">
+                                <!-- img-fluid y object-fit protegen la imagen -->
+                                <img src="imagenes/productos/arroz 5kg.webp" class="img-fluid" alt="Arroz extra" style="max-height: 100%; width: auto; object-fit: contain;">
                             </figure>
 
-                            <p>
-                                <del>S/28.00</del>
-                                <ins>S/23.90</ins>
+                            <p class="mb-1">
+                                <del class="text-muted small">S/28.00</del>
+                                <ins class="text-danger fw-bold fs-4 text-decoration-none d-block">S/23.90</ins>
                             </p>
 
                             <p>
-                                <mark>Oferta -15%</mark>
+                                <mark class="bg-warning text-dark px-2 rounded">Oferta -15%</mark>
                             </p>
 
-                            <footer>
-                                <button type="button">Comprar</button>
+                            <footer class="mt-auto">
+                                <button type="button" class="btn btn-primary w-100 fw-bold shadow-sm">Comprar</button>
                             </footer>
-
-                        </article>
-
-                        <!-- ITEM 2 -->
-                        <article class="card">
-
-                            <header>
-                                <h3>Azúcar Rubia 5kg</h3>
-                            </header>
-
-                            <figure>
-                                <img src="imagenes/productos/azucar 5kg.webp" alt="Azúcar rubia">
-                            </figure>
-
-                            <p>
-                                <del>S/24.50</del>
-                                <ins>S/21.20</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -20%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-                        <!-- ITEM 3 -->
-                        <article class="card">
-
-                            <header>
-                                <h3>Aceite Vegetal 1L</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://vegaperu.vtexassets.com/arquivos/ids/163340/021203.jpg?v=638168209204070000S" alt="Aceite vegetal">
-                            </figure>
-
-                            <p>
-                                <del>S/14.00</del>
-                                <ins>S/11.90</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -15%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-                        <!-- ITEM 4 -->
-                        <article class="card">
-
-                            <header>
-                                <h3>Fideos Spaghetti 500g</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://miamarket.pe/assets/uploads/ac240ebaa06104f08f6112ad4b49f186.jpg" alt="Fideos spaghetti">
-                            </figure>
-
-                            <p>
-                                <del>S/4.80</del>
-                                <ins>S/3.90</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -18%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-                        <!-- ITEM 5 -->
-                        <article class="card">
-
-                            <header>
-                                <h3>Leche Evaporada</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://perupationline.com/wp-content/uploads/2018/07/LECHE-EVAPORADA-GLORIA-600x764.jpg" alt="Leche evaporada">
-                            </figure>
-
-                            <p>
-                                <del>S/5.50</del>
-                                <ins>S/4.50</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -18%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-                        <!-- ITEM 6 -->
-                        <article class="card">
-
-                            <header>
-                                <h3>Lentejas 1kg</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://plazavea.vteximg.com.br/arquivos/ids/30213008-512-512/20355792.jpg" alt="Lentejas">
-                            </figure>
-
-                            <p>
-                                <del>S/9.00</del>
-                                <ins>S/7.50</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -17%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-                        <!-- ITEM 7 -->
-                        <article class="card">
-
-                            <header>
-                                <h3>Harina de Trigo 1kg</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://plazavea.vteximg.com.br/arquivos/ids/28647015-450-450/20024793.jpg?v=638406432752430000" alt="Harina de trigo">
-                            </figure>
-
-                            <p>
-                                <del>S/6.00</del>
-                                <ins>S/4.90</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -18%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-
-                        <!-- ITEM 8 -->
-                        <article class="card">
-
-                            <header>
-                                <h3>Avena Integral 500g</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://plazavea.vteximg.com.br/arquivos/ids/16382327-450-450/20278482.jpg?v=637970171193070000" alt="Avena integral">
-                            </figure>
-
-                            <p>
-                                <del>S/5.80</del>
-                                <ins>S/4.60</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -20%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-
-                        <!-- ITEM 9 -->
-                        <article class="card">
-
-                            <header>
-                                <h3>Sal de Mesa 1kg</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://plazavea.vteximg.com.br/arquivos/ids/32481720-418-418/20130448.jpg" alt="Sal de mesa">
-                            </figure>
-
-                            <p>
-                                <del>S/3.50</del>
-                                <ins>S/2.80</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -20%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-
-                        <!-- ITEM 10 -->
-                        <article class="card">
-
-                            <header>
-                                <h3>Frijoles Negros 1kg</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://apimedias.treew.com/imgproducts/middle/6e6ca255-4272-4395-b417-d26b0ffd07ca.jpg" alt="Frijoles negros">
-                            </figure>
-
-                            <p>
-                                <del>S/10.00</del>
-                                <ins>S/8.20</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -18%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-
-                        <!-- ITEM 11 -->
-                        <article class="card">
-
-                            <header>
-                                <h3>Galletas Integrales</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://dojiw2m9tvv09.cloudfront.net/53648/product/qqqqqqqqqqqq5664.png" alt="Galletas integrales">
-                            </figure>
-
-                            <p>
-                                <del>S/7.00</del>
-                                <ins>S/5.50</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -21%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-                        <article class="card">
-
-                            <header>
-                                <h3>Café Molido 900g</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://plazavea.vteximg.com.br/arquivos/ids/550663-450-450/468.jpg?v=637425701164500000" alt="Café molido">
-                            </figure>
-
-                            <p>
-                                <del>S/15.00</del>
-                                <ins>S/11.50</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -19%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-                        <article class="card">
-
-                            <header>
-                                <h3>Azucar Rubia 1kg</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://metroio.vtexassets.com/arquivos/ids/290215-800-auto?v=638179316261570000&width=800&height=auto&aspect=true" alt="Azucar rubia">
-                            </figure>
-
-                            <p>
-                                <del>S/5.00</del>
-                                <ins>S/4.20</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -14%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-                        </article>
-
-                        <article class="card">
-
-                            <header>
-                                <h3>Granola 1kg</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://f.fcdn.app/imgs/99f63e/www.elclon.com.uy/clonuy/9c5c/original/catalogo/35021-1/1920-1200/cereal-granola-dukita-1k-cereal-granola-dukita-1k.jpg" alt="Granola">
-                            </figure>
-
-                            <p>
-                                <del>S/13.90</del>
-                                <ins>S/11.50</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -15%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-
-                        <article class="card">
-
-                            <header>
-                                <h3>papel paracas 12 rollos</h3>
-                            </header>
-
-                            <figure>
-                                <img src="https://plazavea.vteximg.com.br/arquivos/ids/30216155-450-450/20220602.jpg?v=638960733326200000" alt="papel higienico paracas ">
-                            </figure>
-
-                            <p>
-                                <del>S/7.90</del>
-                                <ins>S/6.30</ins>
-                            </p>
-
-                            <p>
-                                <mark>Oferta -19%</mark>
-                            </p>
-
-                            <footer>
-                                <button type="button">Comprar</button>
-                            </footer>
-
-                        </article>
-                    </section>
-
-                    <footer>
-                        <p>
-                            Puedes ver más productos en nuestra
-                            <a href="#">tienda online</a>
-                        </p>
-                    </footer>
-
+                        </div>
                     </article>
 
+                    <!-- ITEM 2 -->
+                    <article class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                        <div class="card h-100 shadow-sm border-0 text-center p-3">
+                            <header>
+                                <h3 class="h5 fw-bold">Azúcar Rubia 5kg</h3>
+                            </header>
 
-                    <!-- Venta Mayorista -->
-                    <article class="card">
+                            <figure class="my-3 d-flex align-items-center justify-content-center" style="height: 180px;">
+                                <img src="imagenes/productos/azucar 5kg.webp" class="img-fluid" alt="Azúcar rubia" style="max-height: 100%; width: auto; object-fit: contain;">
+                            </figure>
 
-                        <header>
-                            <h2>Venta Mayorista</h2>
-                            <p><strong>Tipo de comercio:</strong> B2B (Business to Business)</p>
-                        </header>
-
-                        <figure>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GeCyfFUs-GgY6MJBZ-ZBiDID32yDtTg4AA&s" alt="Venta mayorista en almacén">
-                            <figcaption>Distribución de productos en grandes cantidades.</figcaption>
-                        </figure>
-
-                        <section>
-                            <br>
-                            <p>
-                                La venta mayorista se basa en la comercialización de productos en grandes volúmenes a distribuidores, minoristas o empresas que posteriormente revenderán dichos productos.
+                            <p class="mb-1">
+                                <del class="text-muted small">S/24.50</del>
+                                <ins class="text-danger fw-bold fs-4 text-decoration-none d-block">S/21.20</ins>
                             </p>
 
-                        </section>
-                        <br>
-                        <details open>
-                            <summary>Características principales</summary>
-                            <ul>
-                                <li>Venta en grandes cantidades</li>
-                                <li>Precios más bajos por volumen</li>
-                                <li>Clientes empresariales o distribuidores</li>
-                            </ul>
-                        </details>
-
-                        <footer>
                             <p>
-                                Última actualización:
-                                <time datetime="2026-03-04">4 de marzo de 2026</time>
+                                <mark class="bg-warning text-dark px-2 rounded">Oferta -20%</mark>
                             </p>
-                            <a href="#">Más información</a>
-                        </footer>
 
+                            <footer class="mt-auto">
+                                <button type="button" class="btn btn-primary w-100 fw-bold shadow-sm">Comprar</button>
+                            </footer>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 3 -->
+                    <article class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                        <div class="card h-100 shadow-sm border-0 text-center p-3">
+                            <header>
+                                <h3 class="h5 fw-bold">Aceite Vegetal 1L</h3>
+                            </header>
+
+                            <figure class="my-3 d-flex align-items-center justify-content-center" style="height: 180px;">
+                                <img src="https://vegaperu.vtexassets.com/arquivos/ids/163340/021203.jpg?v=638168209204070000S" class="img-fluid" alt="Aceite vegetal" style="max-height: 100%; width: auto; object-fit: contain;">
+                            </figure>
+
+                            <p class="mb-1">
+                                <del class="text-muted small">S/14.00</del>
+                                <ins class="text-danger fw-bold fs-4 text-decoration-none d-block">S/11.90</ins>
+                            </p>
+
+                            <p>
+                                <mark class="bg-warning text-dark px-2 rounded">Oferta -15%</mark>
+                            </p>
+
+                            <footer class="mt-auto">
+                                <button type="button" class="btn btn-primary w-100 fw-bold shadow-sm">Comprar</button>
+                            </footer>
+                        </div>
                     </article>
 
                 </section>
+            </section>
+
+            <!-- ITEM 4 -->
+            <article class="card">
+
+                <header>
+                    <h3>Fideos Spaghetti 500g</h3>
+                </header>
+
+                <figure>
+                    <img src="https://miamarket.pe/assets/uploads/ac240ebaa06104f08f6112ad4b49f186.jpg" alt="Fideos spaghetti">
+                </figure>
+
+                <p>
+                    <del>S/4.80</del>
+                    <ins>S/3.90</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -18%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+
+            <!-- ITEM 5 -->
+            <article class="card">
+
+                <header>
+                    <h3>Leche Evaporada</h3>
+                </header>
+
+                <figure>
+                    <img src="https://perupationline.com/wp-content/uploads/2018/07/LECHE-EVAPORADA-GLORIA-600x764.jpg" alt="Leche evaporada">
+                </figure>
+
+                <p>
+                    <del>S/5.50</del>
+                    <ins>S/4.50</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -18%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+
+            <!-- ITEM 6 -->
+            <article class="card">
+
+                <header>
+                    <h3>Lentejas 1kg</h3>
+                </header>
+
+                <figure>
+                    <img src="https://plazavea.vteximg.com.br/arquivos/ids/30213008-512-512/20355792.jpg" alt="Lentejas">
+                </figure>
+
+                <p>
+                    <del>S/9.00</del>
+                    <ins>S/7.50</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -17%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+            <!-- ITEM 7 -->
+            <article class="card">
+
+                <header>
+                    <h3>Harina de Trigo 1kg</h3>
+                </header>
+
+                <figure>
+                    <img src="https://plazavea.vteximg.com.br/arquivos/ids/28647015-450-450/20024793.jpg?v=638406432752430000" alt="Harina de trigo">
+                </figure>
+
+                <p>
+                    <del>S/6.00</del>
+                    <ins>S/4.90</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -18%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+
+
+            <!-- ITEM 8 -->
+            <article class="card">
+
+                <header>
+                    <h3>Avena Integral 500g</h3>
+                </header>
+
+                <figure>
+                    <img src="https://plazavea.vteximg.com.br/arquivos/ids/16382327-450-450/20278482.jpg?v=637970171193070000" alt="Avena integral">
+                </figure>
+
+                <p>
+                    <del>S/5.80</del>
+                    <ins>S/4.60</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -20%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+
+
+            <!-- ITEM 9 -->
+            <article class="card">
+
+                <header>
+                    <h3>Sal de Mesa 1kg</h3>
+                </header>
+
+                <figure>
+                    <img src="https://plazavea.vteximg.com.br/arquivos/ids/32481720-418-418/20130448.jpg" alt="Sal de mesa">
+                </figure>
+
+                <p>
+                    <del>S/3.50</del>
+                    <ins>S/2.80</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -20%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+
+
+            <!-- ITEM 10 -->
+            <article class="card">
+
+                <header>
+                    <h3>Frijoles Negros 1kg</h3>
+                </header>
+
+                <figure>
+                    <img src="https://apimedias.treew.com/imgproducts/middle/6e6ca255-4272-4395-b417-d26b0ffd07ca.jpg" alt="Frijoles negros">
+                </figure>
+
+                <p>
+                    <del>S/10.00</del>
+                    <ins>S/8.20</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -18%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+
+
+            <!-- ITEM 11 -->
+            <article class="card">
+
+                <header>
+                    <h3>Galletas Integrales</h3>
+                </header>
+
+                <figure>
+                    <img src="https://dojiw2m9tvv09.cloudfront.net/53648/product/qqqqqqqqqqqq5664.png" alt="Galletas integrales">
+                </figure>
+
+                <p>
+                    <del>S/7.00</del>
+                    <ins>S/5.50</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -21%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+
+            <article class="card">
+
+                <header>
+                    <h3>Café Molido 900g</h3>
+                </header>
+
+                <figure>
+                    <img src="https://plazavea.vteximg.com.br/arquivos/ids/550663-450-450/468.jpg?v=637425701164500000" alt="Café molido">
+                </figure>
+
+                <p>
+                    <del>S/15.00</del>
+                    <ins>S/11.50</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -19%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+
+            <article class="card">
+
+                <header>
+                    <h3>Azucar Rubia 1kg</h3>
+                </header>
+
+                <figure>
+                    <img src="https://metroio.vtexassets.com/arquivos/ids/290215-800-auto?v=638179316261570000&width=800&height=auto&aspect=true" alt="Azucar rubia">
+                </figure>
+
+                <p>
+                    <del>S/5.00</del>
+                    <ins>S/4.20</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -14%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+            </article>
+
+            <article class="card">
+
+                <header>
+                    <h3>Granola 1kg</h3>
+                </header>
+
+                <figure>
+                    <img src="https://f.fcdn.app/imgs/99f63e/www.elclon.com.uy/clonuy/9c5c/original/catalogo/35021-1/1920-1200/cereal-granola-dukita-1k-cereal-granola-dukita-1k.jpg" alt="Granola">
+                </figure>
+
+                <p>
+                    <del>S/13.90</del>
+                    <ins>S/11.50</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -15%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+
+            <article class="card">
+
+                <header>
+                    <h3>papel paracas 12 rollos</h3>
+                </header>
+
+                <figure>
+                    <img src="https://plazavea.vteximg.com.br/arquivos/ids/30216155-450-450/20220602.jpg?v=638960733326200000" alt="papel higienico paracas ">
+                </figure>
+
+                <p>
+                    <del>S/7.90</del>
+                    <ins>S/6.30</ins>
+                </p>
+
+                <p>
+                    <mark>Oferta -19%</mark>
+                </p>
+
+                <footer>
+                    <button type="button">Comprar</button>
+                </footer>
+
+            </article>
+            </section>
+
+            <footer>
+                <p>
+                    Puedes ver más productos en nuestra
+                    <a href="#">tienda online</a>
+                </p>
+            </footer>
+
+            </article>
+
+
+            <!-- Venta Mayorista -->
+            <article class="card">
+
+                <header>
+                    <h2>Venta Mayorista</h2>
+                    <p><strong>Tipo de comercio:</strong> B2B (Business to Business)</p>
+                </header>
+
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GeCyfFUs-GgY6MJBZ-ZBiDID32yDtTg4AA&s" alt="Venta mayorista en almacén">
+                    <figcaption>Distribución de productos en grandes cantidades.</figcaption>
+                </figure>
+
+                <section>
+                    <br>
+                    <p>
+                        La venta mayorista se basa en la comercialización de productos en grandes volúmenes a distribuidores, minoristas o empresas que posteriormente revenderán dichos productos.
+                    </p>
+
+                </section>
+                <br>
+                <details open>
+                    <summary>Características principales</summary>
+                    <ul>
+                        <li>Venta en grandes cantidades</li>
+                        <li>Precios más bajos por volumen</li>
+                        <li>Clientes empresariales o distribuidores</li>
+                    </ul>
+                </details>
+
+                <footer>
+                    <p>
+                        Última actualización:
+                        <time datetime="2026-03-04">4 de marzo de 2026</time>
+                    </p>
+                    <a href="#">Más información</a>
+                </footer>
+
+            </article>
+
+            </section>
             </section>
 
 
