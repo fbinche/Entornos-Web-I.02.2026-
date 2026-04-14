@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <title>Maqueta Semántica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--
     <link rel="stylesheet" href="/assets/css/styles_glob
     <link rel="stylesheet" href="css/styles.css">
@@ -11,8 +13,8 @@
     <link rel="stylesheet" href="css/clase_css.css">
     <!--INTERNA-->
     <style>
-        p{
-            color:blue !important
+        p {
+            color: blue !important
         }
     </style>
 
@@ -21,23 +23,22 @@
 <body>
     <!--EN LINEA-->
     <p style="color: red;">
-         p ROJO
+        p ROJO
     </p>
     <p>
         p AZUL
     </p>
     <header class="header">
-        
-        <h1>LAS DELICIAS</h1>
-        <nav class="navegacion">
-            <ul>
-               
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#pagos">Pagos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
 
-            </ul>
+        <h1>LAS DELICIAS</h1>
+        <nav class="navbar navbar-expand-lg bg-body shadow-sm sticky-top"></nav>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pagos">Pagos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+
         </nav>
 
     </header>
@@ -46,7 +47,7 @@
         <!-- 23/02 Respetar las secciones , Planes e details info -->
 
         <section class="section hero first-section" id="inicio">
-           <section class="section columnas_3">
+            <section class="section columnas_3">
 
                 <section>
                     <article class="article">
@@ -68,179 +69,239 @@
 
         <section class="section second-section">
 
-            <section class="section">
+            <section class="card section">
                 <section id="inicio"></section>
 
                 <header>
                     <h2>ELIJE EL QUE MÁS TE GUSTE</h2>
                 </header>
-                <ul class="columnas_8">
+                <div class="row">
                     <!--TORTA1-->
-                    <article class="article">
+                    <article class="card col-sm-3">
 
-                        <header>
+                        <header class="card-header">
                             <h3>Pastel de maracuyá</h3>
                         </header>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <figure>
+                                    <img class="card-img-top" src="img/maracuya - copia.png" alt="Pastel de maracuyá">
+                                    <figcaption>Postre artesanal de maracuyá</figcaption>
+                                </figure>
+                            <li class="list-group-item">
+                                <details class="card-body">
+                                    <summary>Descripción</summary>
+                                    Delicioso pastel elaborado con pulpa natural de maracuyá,
+                                    con una textura suave y un equilibrio perfecto entre dulce y ácido.
+                                </details>
 
-                        <figure>
-                            <img src="img/maracuya - copia.png" alt="Pastel de maracuyá">
-                            <figcaption>Postre artesanal de maracuyá</figcaption>
-                        </figure>
-
-                        <details>
-                            <summary>Descripción</summary>
-                            Delicioso pastel elaborado con pulpa natural de maracuyá,
-                            con una textura suave y un equilibrio perfecto entre dulce y ácido.
-                        </details>
-
-                        <footer class="precio">
-                            <p>Precio: <data value="90.00">S/ 90.00</data></p>
-                        </footer>
-
-                    </article>
+                                <footer class="blockquote-footer">
+                                    <p>Precio: <data value="90.00">S/ 90.00</data></p>
+                                     </li>
+                                 </ul>
+                                </footer>
+                           </article>
                     <!--TORTA2-->
-                    <article class="article">
+                    <article class="card  col-sm-3">
 
-                        <header>
+                        <header class="card-header">
                             <h3>Pastel de chocolate</h3>
                         </header>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <figure>
+                                    <img class="card-img-top" src="img/torta de chocolate.webp"
+                                        alt="Pastel de chocolate">
+                                    <figcaption>Pastel de chocolate</figcaption>
 
-                        <figure>
-                            <img src="img/torta de chocolate.webp" alt="Pastel de chocolate">
-                            <figcaption>Postre artesanal de chocolate</figcaption>
-                        </figure>
+                                </figure>
+                            </li>
+                            <li class="list-group-item">
+                                <details class="card-body">
+                                    <summary>Descripcion</summary>
+                                    Deliciosa torta de chocolate elaborada con cacao de alta calidad,
+                                    de textura suave y sabor intenso, ideal para los amantes del chocolate.
+                                </details>
+                            </li>
+                        </ul>
 
-                        <details>
-                            <summary>Descripción</summary>
-                            Deliciosa torta de chocolate elaborada con cacao de alta calidad,
-                            de textura suave y sabor intenso, ideal para los amantes del chocolate.
-                        </details>
+                        <footer class="blockquote-footer">
 
-                        <footer class="precio">
-                            <p>Precio: <data value="85.00">S/ 85.00</data></p>
+                            <p>Precio:<data value="85.00">s/ 85.00</data></p>
+
                         </footer>
 
                     </article>
                     <!--TORTA 3-->
-                    <article class="article">
-
-                        <header>
+                    <article class="card  col-sm-3">
+                        <header class="card-header">
                             <h3>Pastel de selva negra</h3>
                         </header>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <figure>
+                                    <img class="card-img-top" src="img/selva negra - copia (2).png"
+                                        alt="Pastel de selva negra">
+                                    <figcaption>Pastel de selva negra</figcaption>
 
-                        <figure>
-                            <img src="img/selva negra - copia (2).png" alt="Pastel de selva negra">
-                            <figcaption>Pastel de selva negra</figcaption>
-                           
-                        </figure>
+                                </figure>
+                            </li>
+                            <li class="list-group-item">
+                                <details class="card-body">
+                                    <summary>Descripcion</summary>
+                                    Deliciosa torta de selva negra elaborada con esencia de cereza y
+                                    biscochuelo de chocolate de alta calidad.
+                                </details>
+                            </li>
+                        </ul>
 
-                        <details>
-                            <summary>Descripcion</summary>
-                            Deliciosa torta de selva negra elaborada con esencia de cereza y 
-                            biscochuelo de chocolate de alta calidad.
-                        </details>
-                        <footer class="precio">
-                             <p>Precio:<data value="90.00">s/ 90.00</data></p>
-                             </footer>
+                        <footer class="blockquote-footer">
+
+                            <p>Precio:<data value="90.00">s/ 90.00</data></p>
+
+                        </footer>
                     </article>
                     <!--TORTA 4-->
-                    <article class="article">
-                        <header>
+                    <article class="card  col-sm-3">
+                        <header class="card-header">
                             <h3>Pastel de tres leches</h3>
                         </header>
-                        <figure>
-                            <img src="img/torta-3-leches - copia.jpg" alt="Pastel de tres leches">
-                            <figcaption>Pastel de tres leches</figcaption>
-                            
-                        </figure>
-                        <details>
-                            <summary>Descripcion</summary>
-                            Deliciosa torta de tres leches bañada en leche con esencia de vainilla, manjar de 
-                            leche y un toque de canela. 
-                        </details>
-                        <footer class="precio">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <figure>
+                                    <img class="card-img-top" src="img/torta-3-leches - copia.jpg"
+                                        alt="Pastel de tres leches">
+                                    <figcaption>Pastel de tres leches</figcaption>
+
+                                </figure>
+                            </li>
+                            <li class="list-group-item">
+                                <details class="card-body">
+                                    <summary>Descripcion</summary>
+                                    Deliciosa torta de tres leches bañada en leche con esencia de vainilla, manjar de
+                                    leche y un toque de canela.
+                                </details>
+                            </li>
+                        </ul>
+
+                        <footer class="blockquote-footer">
+
                             <p>Precio:<data value="85.00">s/ 85.00</data></p>
+
                         </footer>
                     </article>
+
+                
+
+                <div class="row">
                     <!--TORTA 5-->
-                    <article class="article">
-                        <header>
+                    <article class="article col-sm-3">
+                        <header class="card-header">
                             <h3>Pastel helada</h3>
                         </header>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
                         <figure>
-                            <img src="img/helada - copia.jpg" alt="Pastel helada">
+                            <img class="card-img-top" src="img/helada - copia.jpg"
+                                     alt="Pastel helada">
                             <figcaption>Pastel helada</figcaption>
-                            
                         </figure>
-                        <details>
+                         </li>
+                            <li class="list-group-item">
+                        <details class="card-body">
                             <summary>Descripcion</summary>
-                            Deliciosa torta helada con sabores a fresa, piña, 
+                             Deliciosa torta helada con sabores a fresa, piña,
                              naranja y un biscochuelo sabor a vainilla
                         </details>
-                        <footer class="precio">
-                            <p>Precio:<data value="80.00">s/ 80.00</data> </p>
+                         </li>
+                        </ul>
 
+                        <footer class="blockquote-footer">
+                            <p>Precio: <data value="80.00">s/ 80.00</data></p>
                         </footer>
                     </article>
+                
+                   
                     <!--TORTA 6-->
-                    <article class="article">
-                        <header>
+                    <article class="article col-sm-3">
+                        <header class="card-header">
                             <h3>Pastel de cafe con chocolate</h3>
                         </header>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
                         <figure>
-                            <img src="img/26_02.avif" alt="Pastel de cafe con chocolate">
+                            <img class="card-img-top" src="img/26_02.avif"
+                             alt="Pastel de cafe con chocolate">
                             <figcaption>Pastel de cafe con chocolate</figcaption>
-                           
-
                         </figure>
-                         <details>
+                         </li>
+                            <li class="list-group-item">
+                        <details class="card-body">
                             <summary>Descripcion</summary>
-                            Deliciosa torta de cafe y chocolate de alta calidad, bañada en leche 
+                            Deliciosa torta de cafe y chocolate de alta calidad, bañada en leche
                             con ambas combinaciones.
                         </details>
-                        <footer>
+                         </li>
+                        </ul>
+
+                        <footer class="blockquote-footer">
                             <p>Precio: <data value="100.00">s/ 100.00</data></p>
                         </footer>
                     </article>
+                
+
+                
                     <!--TORTA 7-->
-                    <article class="article">
-                        <header>
+                    <article class="article col-sm-3">
+                        <header class="card-header">
                             <h3>Pastel de ARANDANO</h3>
                         </header>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
                         <figure>
-                            <img src="img/productos/ARANDANO.jpg" alt="Pastel de ARANDANO">
+                            <img class="card-img-top" src="img/productos/ARANDANO.jpg" 
+                            alt="Pastel de ARANDANO">
                             <figcaption>Pastel de ARANDANO</figcaption>
-                           
+
                         </figure>
-                        <details>
+                        <details class="card-body">
                             <summary>Descripcion</summary>
                             Deliciosa torta de arandanos elaborada con queso crema, jalea de
-                             arandanos y galleta vainilla
+                            arandanos y galleta vainilla
                         </details>
-                        <footer>
+                         </li>
+                        </ul>
+                        <footer class="blockquote-footer">
                             <p>Precio: <data value="150.00">s/150.00</data></p>
                         </footer>
                     </article>
+                     
+
+                
                     <!--TORTA 8-->
-                    <article class="article">
-                        <header>
+                    <article class="article col-sm-3">
+                        <header class="card-header">
                             <h3>Pastel de coco</h3>
                         </header>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
                         <figure>
-                            <img src="img/productos/coco.webp" alt="Pastel de coco">
+                            <img class="card-img-top" src="img/productos/coco.webp" alt="Pastel de coco">
                             <figcaption>Pastel de coco</figcaption>
-                            
                         </figure>
-                        ><details>
+                        <details class="card-body">
                             <summary>Descripcion</summary>
-                            Deliciosa torta de coco bañada en leche 
+                            Deliciosa torta de coco bañada en leche
                             de coco, con relleno de trozos de piña y cereza.
                         </details>
-                        ><footer>
+                         </li>
+                        </ul>
+                        <footer class="blockquote-footer">
                             <p>Precio: <data value="130.00">s/130.00</data></p>
                         </footer>
                     </article>
-                </ul>
+                   
+                
                 <br>
                 <footer>
 
@@ -254,7 +315,7 @@
             <section id="pagos"></section>
             <section>
                 <header>
-                    <h2>METODOS DE PAGO</h2> 
+                    <h2>METODOS DE PAGO</h2>
                     <p> Contamos con diversos métodos de pago para brindarte comodidad y seguridad en tus compras. Elige
                         la
                         opción que mejor se adapte a tus necesidades y disfruta de una experiencia de compra sin
@@ -413,14 +474,14 @@
 
                         </article>
 
-                         <footer>
+                        <footer>
                             <time datetime="2026-03-15">Oferta válida hasta 15 de marzo</time>
                             <br>
                             <button type="button">Aprovechar oferta</button>
                         </footer>
 
                     </section>
-                     <!--OFERTA 4-->
+                    <!--OFERTA 4-->
                     <section class="card">
 
                         <header>
@@ -433,7 +494,7 @@
                             <figcaption>Cheesecake de frambuesa </figcaption>
                         </figure>
 
-                         <article>
+                        <article>
 
                             <p>
                                 <del><data value="180.00">S/ 180.00</data></del>
@@ -446,7 +507,7 @@
 
                         </article>
 
-                         <footer>
+                        <footer>
                             <time datetime="2026-03-15">Oferta válida hasta 15 de marzo</time>
                             <br>
                             <button type="button">Aprovechar oferta</button>
@@ -467,7 +528,7 @@
                             <figcaption>babaroa de guindon</figcaption>
                         </figure>
 
-                         <article>
+                        <article>
 
                             <p>
                                 <del><data value="130.00">S/ 130.00</data></del>
@@ -480,7 +541,7 @@
 
                         </article>
 
-                         <footer>
+                        <footer>
                             <time datetime="2026-03-15">Oferta válida hasta 15 de marzo</time>
                             <br>
                             <button type="button">Aprovechar oferta</button>
@@ -512,7 +573,7 @@
 
                         </article>
 
-                         <footer>
+                        <footer>
                             <time datetime="2026-03-15">Oferta válida hasta 15 de marzo</time>
                             <br>
                             <button type="button">Aprovechar oferta</button>
@@ -521,7 +582,7 @@
                     <!--OFERTA 7 -->
                     <section class="card">
 
-                         <header>
+                        <header>
                             <h2>Oferta especial</h2>
                             <p class="etiqueta">Descuento por tiempo limitado</p>
                         </header>
@@ -531,7 +592,7 @@
                             <figcaption>Crema volteada</figcaption>
                         </figure>
 
-                         <article>
+                        <article>
 
                             <p>
                                 <del><data value="120.00">S/ 120.00</data></del>
@@ -544,7 +605,7 @@
 
                         </article>
 
-                         <footer>
+                        <footer>
                             <time datetime="2026-03-15">Oferta válida hasta 15 de marzo</time>
                             <br>
                             <button type="button">Aprovechar oferta</button>
@@ -563,7 +624,7 @@
                             <figcaption>soufflé de durazno</figcaption>
                         </figure>
 
-                         <article>
+                        <article>
 
                             <p>
                                 <del><data value="120.00">S/ 120.00</data></del>
@@ -576,7 +637,7 @@
 
                         </article>
 
-                         <footer>
+                        <footer>
                             <time datetime="2026-03-15">Oferta válida hasta 15 de marzo</time>
                             <br>
                             <button type="button">Aprovechar oferta</button>
@@ -614,7 +675,10 @@
                 <!--TORTA1-->
                 <section class="card">
                     <figure>
-                        <img src="img/torta+2+pisos+fresas - copia (2).webp" alt="Pastel de fresa y cereza">
+                        <img 
+                        
+                        
+                        src="img/torta+2+pisos+fresas - copia (2).webp" alt="Pastel de fresa y cereza">
                         <figcaption>Pastel coquett de fresa</figcaption>
                         <figcaption> s/ 380.00</figcaption>
                     </figure>
@@ -705,61 +769,10 @@
 
         <!--FORMULARIO-->
         <section class="formulario">
-        <section id="contacto"></section>
-            <form action="#" method="post">
-
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br><br>
-
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="telefono">Telefono</label><br>
-                <input type="tel" id="telefono" name="telefono" required><br><br>
-
-                <label for="fecha">Fecha de nacimiento:</label><br>
-                <input type="date" id="fecha" name="fecha"><br><br>
-
-                <label>Género:</label><br>
-                <input type="radio" id="masculino" name="genero" value="Masculino">
-                <label for="masculino">Masculino</label><br>
-  
-                <input type="radio" id="femenino" name="genero" value="Femenino">
-                <label for="femenino">Femenino</label><br>
-  
-                <input type="radio" id="otro" name="genero" value="Otro">
-                <label for="otro">Otro</label><br><br>
-
-                <label for="distrito">Distrito:</label><br>
-                <select id="distrito" name="distrito">
-                <option value="">Seleccione</option>
-                <option value="Lima">Lima</option>
-                <option value="Miraflores">Miraflores</option>
-                <option value="San Isidro">San Isidro</option>
-                <option value="Surco">Surco</option>
-                </select><br><br>
-
-                <label for="hijos">¿Cuántos hijos tiene?</label><br>
-                <input type="number" id="hijos" name="hijos" min="0"><br><br>
-
-                <label for="pisos">¿Cuántos pisos de pastel desea?</label><br>
-                <input type="number" id="pisos" name="pisos" min="1"><br><br>
-
-                <label for="tematica">Temática del pastel:</label><br>
-                <input type="text" id="tematica" name="tematica" placeholder="Ej: Princesas, Spiderman, Futbol"><br><br>
+            <section id="contacto"></section>
+            <form class="form" action="#" method="post">
 
 
-                <label for="color">Elegir color:</label><br>
-                <input type="color" id="color" name="color"><br><br>
-
-
-                <label for="asunto">Asunto:</label><br>
-                <input type="text" id="asunto" name="asunto" required><br><br>
-
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea><br><br>
-
-                <button type="submit">Enviar</button>
 
             </form>
 
@@ -778,6 +791,114 @@
 
             <section>
 
+                <section class="formulario container py-5">
+                    <section id="contacto"></section>
+
+                    <form class="p-4 border rounded shadow-sm bg-body">
+
+                        <!-- NOMBRE -->
+                        <div class="mb-3">
+                            <label class="form-label" for="nombre">Nombre:</label>
+                            <input class="form-control" type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Correo electrónico:</label>
+                            <input class="form-control" type="email" id="email" name="email" required>
+                        </div>
+
+                        <!-- TELÉFONO -->
+                        <div class="mb-3">
+                            <label class="form-label" for="telefono">Teléfono:</label>
+                            <input class="form-control" type="tel" id="telefono" name="telefono" required>
+                        </div>
+
+                        <!-- FECHA -->
+                        <div class="mb-3">
+                            <label class="form-label" for="fecha">Fecha de nacimiento:</label>
+                            <input class="form-control" type="date" id="fecha" name="fecha">
+                        </div>
+
+                        <!-- GÉNERO -->
+                        <div class="mb-3">
+                            <label class="form-label d-block">Género:</label>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="masculino" name="genero"
+                                    value="Masculino">
+                                <label class="form-check-label" for="masculino">Masculino</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="femenino" name="genero"
+                                    value="Femenino">
+                                <label class="form-check-label" for="femenino">Femenino</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="otro" name="genero" value="Otro">
+                                <label class="form-check-label" for="otro">Otro</label>
+                            </div>
+                        </div>
+
+                        <!-- DISTRITO -->
+                        <div class="mb-3">
+                            <label class="form-label" for="distrito">Distrito:</label>
+                            <select class="form-select" id="distrito" name="distrito">
+                                <option value="">Seleccione</option>
+                                <option value="Lima">Lima</option>
+                                <option value="Miraflores">Miraflores</option>
+                                <option value="San Isidro">San Isidro</option>
+                                <option value="Surco">Surco</option>
+                            </select>
+                        </div>
+
+                        <!-- HIJOS -->
+                        <div class="mb-3">
+                            <label class="form-label" for="hijos">¿Cuántos hijos tiene?</label>
+                            <input class="form-control" type="number" id="hijos" name="hijos" min="0">
+                        </div>
+
+                        <!-- PISOS -->
+                        <div class="mb-3">
+                            <label class="form-label" for="pisos">¿Cuántos pisos de pastel desea?</label>
+                            <input class="form-control" type="number" id="pisos" name="pisos" min="1">
+                        </div>
+
+                        <!-- TEMÁTICA -->
+                        <div class="mb-3">
+                            <label class="form-label" for="tematica">Temática del pastel:</label>
+                            <input class="form-control" type="text" id="tematica" name="tematica"
+                                placeholder="Ej: Princesas, Spiderman, Futbol">
+                        </div>
+
+                        <!-- COLOR -->
+                        <div class="mb-3">
+                            <label class="form-label" for="color">Elegir color:</label>
+                            <input class="form-control form-control-color" type="color" id="color" name="color">
+                        </div>
+
+                        <!-- ASUNTO -->
+                        <div class="mb-3">
+                            <label class="form-label" for="asunto">Asunto:</label>
+                            <input class="form-control" type="text" id="asunto" name="asunto" required>
+                        </div>
+
+                        <!-- MENSAJE -->
+                        <div class="mb-3">
+                            <label class="form-label" for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+
+                        <!-- BOTÓN -->
+                        <button type="submit" class="btn btn-primary w-100">
+                            📩 Enviar
+                        </button>
+
+                    </form>
+                </section>
+
                 <h3>Contáctanos</h3>
                 <section>
                     <address>
@@ -792,7 +913,6 @@
 
             </section>
 
-            <!--RECOMENDACION: USAR COMENTARIOS PARA UBICAR CODIGO -->
             <!-- Navegación de redes sociales -->
             <section>
                 <nav>
@@ -835,6 +955,9 @@
             </small>
 
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 </body>
 
 
