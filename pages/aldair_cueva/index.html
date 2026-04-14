@@ -4,38 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style_index.css">
-    <title>WEB PRINCIPAL</title>
+    <link rel="stylesheet" href="stylos.css">
+    <title>Optimuebles</title>
 </head>
 
 <body>
     <!--CABECERA DE MI PAGINA-->
     <header>
-        <h1>WEB DE MIS APRENDISAJES</h1>
-        <p>Mis avances en aprendisajes</p>
+        <!--NAVEGADOR DE MI PAGINA-->
+        <nav class="navegador">
+            <!--Puede ir un logo o un texto a, voluntad-->
+            <p id="logo">Optimuebles</p>
+            <ul class="lista">
+                <li><a href="#" data-link="inicio">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <!--NAVEGADOR DE MI PAGINA-->
-    <nav >
-        <ul class="navegador">
-            <li><a href="../aldair_cueva/Multipage/html_site.html"class="botones_nav">HTML</a></li>
-            <li><a href="../aldair_cueva/Multipage/css_site.html"class="botones_nav">CSS Y HTML</a></li>
-            <li><a href="#"class="botones_nav">PYTON</a></li>
-            <li><a href="#"class="botones_nav">PROYECTO PERSONAL</a></li>
-        </ul>
-    </nav>
- <!--CUERPO DE MI PAGINA-->
+    <!--CUERPO DE MI PAGINA PRINCIPAL-->
     <main>
-        <!--MI AVANCE EN HTML -->
-        <section class="avances">
-            <h3>CONOCIMIENTOS EN HTML</h3>
-            <p>Conocimientos al 40%</p>
+        <!--Seccion de imagen principal o banner de fondo-->
+        <section id="fondo" class="fondo">
+            <h1>Muebles de Melamina</h1>
+            <p>Muebles resistentes, para tu hogar y oficina</p>
+            <button class="btn">Ver modelos</button>
         </section>
-        <!--MI AVANCE EN CSS-->
-        <section class="avances">
-            <h3>CONOCIMIENTOS EN CSS</h3>
-            <p>Conocimientosal 15%</p>
+        <!--SECCION DE PRODUCTOS-->
+        <section class="catalogo">
+            <!--subtitulo-->
+            
+
+            <!--Producto 1-->
+            <article class="producto">
+                <figure>
+                    <img src="productos/1.png" alt="Escritorio Artist Pro">
+                    <figcaption><h3 class="destacado_t">Artist Pro</h3></figcaption>
+                </figure>
+                <p>Perfecto para tu espacio de trabajo</p>
+            </article>
+            <!--Producto 2-->
+            <article class="producto">
+                <figure>
+                    <img src="productos/2.png" alt="Escritorio Koda Desk">
+                    <figcaption><h3>Koda Desk</h3></figcaption>
+                </figure>
+                <p>Estructura limpia y moderna</p>
+            </article>
         </section>
     </main>
+    <!--PIE DE PAGINA-->
+    <footer id="pie_pagina">
+        <p>&copy; 2026 Optimuebles. Todos los derechos reservados.</p>
+        <p>EA CHINIGAMES</p>
+        <p>Una ultima y nos vamos</p>
+    </footer>
 </body>
 
 </html>
