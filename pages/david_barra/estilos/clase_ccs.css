@@ -260,6 +260,25 @@ footer a:hover {
 .article:hover { /* hover tarjeta */
   animation: subir 0.3s forwards; /* aplica animación */
 }
+/* ==============LE DAMOS EL EFECTO DIAGONAL============= */
+/*primera columna*/
+.col-md-4:nth-child(1) .card {
+    /*card 30px hacia ARRIBA*/
+    transform: translateY(-40px);
+}
+
+
+/*segunda columna*/
+.col-md-4:nth-child(2) .card {
+    /*card en su posición original*/
+    transform: translateY(0);
+}
+
+/*tercera columna*/
+.col-md-4:nth-child(3) .card {
+    /*card 30px hacia ABAJO*/
+    transform: translateY(40px);
+}
 
  /** NOTA ACTUAL : 
  CSS-> 13 +2ANIMACIONES + 3 PATICIPACION = 18
