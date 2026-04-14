@@ -752,160 +752,146 @@
 
                                     <!---------------------------------formulario------------------------------------------------->
 
-                                    <section class="card">
-                                        <header>
-                                            <h1><b>SUSCRÍBETE PARA NO PERDERTE NOVEDADES</b></h1>
-                                            <b>Edición Champions League</b>
+                                    <section class="card shadow">
+                                        <header class="card-header bg-white text-center py-3">
+                                            <h1 class="h3"><b>SUSCRÍBETE PARA NO PERDERTE NOVEDADES</b></h1>
+                                            <span class="badge bg-primary">Edición Champions League</span>
                                         </header>
 
-                                        <progress value="70" max="100" class="w-100"></progress>
+                                        <progress value="70" max="100" class="w-100"
+                                            style="height: 8px; border-radius: 0;"></progress>
 
                                         <form id="formCompleto" action="/procesar" method="post"
-                                            enctype="multipart/form-data" autocomplete="on" class="p-3">
+                                            enctype="multipart/form-data" autocomplete="on" class="card-body p-4">
 
-                                            <!-- DATOS -->
-                                            <section>
-                                                <fieldset>
-                                                    <legend>Datos del Hincha</legend>
-
+                                            <div class="row mb-4">
+                                                <div class="col-md-4">
                                                     <label class="form-label">Nombre:</label>
-                                                    <input type="text" class="form-control mb-3" name="nombre"
+                                                    <input type="text" class="form-control" name="nombre"
                                                         placeholder="Tu nombre" required minlength="3">
-
+                                                </div>
+                                                <div class="col-md-4">
                                                     <label class="form-label">Tipo de Suscripción:</label>
-                                                    <input type="text" class="form-control mb-3" name="tipo"
+                                                    <input type="text" class="form-control bg-light" name="tipo"
                                                         value="Premium Fan" readonly>
-
+                                                </div>
+                                                <div class="col-md-4">
                                                     <label class="form-label">Email:</label>
-                                                    <input type="email" class="form-control mb-3" name="email"
+                                                    <input type="email" class="form-control" name="email"
                                                         placeholder="tu@correo.com" required>
+                                                </div>
+                                            </div>
 
-                                                    <label class="form-label">Género del Suscriptor:</label>
+                                            <div class="row mb-4">
+                                                <div class="col-12">
+                                                    <fieldset class="border p-3 rounded">
+                                                        <legend class="float-none w-auto px-2 small fw-bold">Datos del
+                                                            Hincha</legend>
+                                                        <label class="form-label d-block">Género del Suscriptor:</label>
+                                                        <div class="d-flex gap-3 mb-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="genero" value="F" id="genF">
+                                                                <label class="form-check-label"
+                                                                    for="genF">Femenino</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="genero" value="M" checked id="genM">
+                                                                <label class="form-check-label"
+                                                                    for="genM">Masculino</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                name="terminos" required id="term">
+                                                            <label class="form-check-label" for="term">Acepto recibir
+                                                                alertas de goles y noticias</label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
 
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="genero"
-                                                            value="F">
-                                                        <label class="form-check-label">Femenino</label>
-                                                    </div>
-
-                                                    <div class="form-check mb-3">
-                                                        <input class="form-check-input" type="radio" name="genero"
-                                                            value="M" checked>
-                                                        <label class="form-check-label">Masculino</label>
-                                                    </div>
-
-                                                    <div class="form-check mb-3">
-                                                        <input class="form-check-input" type="checkbox" name="terminos"
-                                                            required>
-                                                        <label class="form-check-label">
-                                                            Acepto recibir alertas de goles y noticias
-                                                        </label>
-                                                    </div>
-
-                                                </fieldset>
-                                            </section>
-
-                                            <!-- SELECT -->
-                                            <section>
-                                                <fieldset>
-                                                    <legend>Ubicación y Equipo</legend>
-
+                                            <div class="row mb-4 align-items-end">
+                                                <div class="col-md-4">
                                                     <label class="form-label">Seleccione su Equipo Favorito:</label>
                                                     <select name="equipo" class="form-select">
-
                                                         <option value="">Seleccione</option>
-
                                                         <optgroup label="España">
                                                             <option value="rm">Real Madrid</option>
                                                             <option value="fcb">FC Barcelona</option>
                                                             <option value="atm">Atlético de Madrid</option>
                                                         </optgroup>
-
                                                         <optgroup label="Inglaterra">
                                                             <option value="mc">Manchester City</option>
                                                             <option value="liv">Liverpool</option>
                                                             <option value="ars">Arsenal</option>
                                                         </optgroup>
-
                                                     </select>
-
-                                                </fieldset>
-                                            </section>
-
-                                            <!-- MEDICIONES -->
-                                            <section>
-                                                <fieldset>
-                                                    <legend>Nivel de Fanatismo</legend>
-
+                                                </div>
+                                                <div class="col-md-4">
                                                     <label class="form-label">Pasión por la Champions:</label>
                                                     <meter value="0.90" min="0" max="1" class="w-100"></meter>
-
-                                                    <label class="form-label mt-3">¿Cuántas finales has visto?:</label>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="form-label">¿Cuántas finales has visto?:</label>
                                                     <input type="range" class="form-range" name="finales" min="0"
                                                         max="20" value="10">
+                                                </div>
+                                            </div>
 
-                                                </fieldset>
-                                            </section>
+                                            <div class="row mb-4">
+                                                <div class="col-12">
+                                                    <fieldset class="border p-3 rounded">
+                                                        <legend class="float-none w-auto px-2 small fw-bold">Tu Galería
+                                                            de Hincha</legend>
+                                                        <div class="row">
+                                                            <div class="col-12 mb-3">
+                                                                <label class="form-label">Sube tus fotos
+                                                                    (Galería):</label>
+                                                                <input type="file" class="form-control"
+                                                                    name="fotos_estadio" accept="image/*" multiple>
+                                                            </div>
+                                                            <div class="col-md-6 mb-3">
+                                                                <label class="form-label">Foto con camiseta:</label>
+                                                                <input type="file" class="form-control"
+                                                                    name="foto_perfil" accept="image/*" capture>
+                                                            </div>
+                                                            <div class="col-md-6 mb-3">
+                                                                <label class="form-label">Ciudad:</label>
+                                                                <input list="ciudades" name="ciudad"
+                                                                    class="form-control">
+                                                                <datalist id="ciudades">
+                                                                    <option value="Londres">
+                                                                    <option value="Madrid">
+                                                                    <option value="París">
+                                                                    <option value="Múnich">
+                                                                </datalist>
+                                                            </div>
+                                                        </div>
+                                                        <details class="mt-2 bg-light p-2 rounded">
+                                                            <summary style="cursor: pointer;">Ver beneficios</summary>
+                                                            <p class="mb-0 small">Contenido exclusivo, sorteos y
+                                                                noticias de último minuto.</p>
+                                                        </details>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
 
-                                            <!-- ARCHIVOS -->
-                                            <section>
-                                                <fieldset>
-                                                    <legend>Tu Galería de Hincha</legend>
-
-                                                    <label class="form-label">Sube tus fotos:</label>
-                                                    <input type="file" class="form-control mb-3" name="fotos_estadio"
-                                                        accept="image/*" multiple>
-
-                                                    <label class="form-label">Foto con camiseta:</label>
-                                                    <input type="file" class="form-control" name="foto_perfil"
-                                                        accept="image/*" capture>
-
-                                                </fieldset>
-                                            </section>
-
-                                            <!-- EXTRA -->
-                                            <section>
-                                                <fieldset>
-                                                    <legend>Más Detalles</legend>
-
-                                                    <label class="form-label">Ciudad:</label>
-                                                    <input list="ciudades" name="ciudad" class="form-control mb-3">
-
-                                                    <datalist id="ciudades">
-                                                        <option value="Londres">
-                                                        <option value="Madrid">
-                                                        <option value="París">
-                                                        <option value="Múnich">
-                                                    </datalist>
-
-                                                    <details class="mt-3">
-                                                        <summary>Ver beneficios</summary>
-                                                        <p>Contenido exclusivo, sorteos y más.</p>
-                                                    </details>
-
-                                                </fieldset>
-                                            </section>
-
-                                            <!-- BOTONES -->
-                                            <footer class="mt-3 d-flex gap-2 flex-wrap">
-
-                                                <button type="submit" class="btn btn-primary">Suscribirme</button>
-
+                                            <footer
+                                                class="mt-3 d-flex gap-2 flex-wrap justify-content-center border-top pt-4">
+                                                <button type="submit" class="btn btn-primary px-4">Suscribirme</button>
                                                 <button type="submit" formaction="/urgente" formmethod="get"
-                                                    class="btn btn-warning">
-                                                    Noticias Urgentes
-                                                </button>
-
+                                                    class="btn btn-warning">Noticias Urgentes</button>
                                                 <button type="reset" class="btn btn-danger">Limpiar</button>
-
                                                 <button type="button" class="btn btn-secondary">Ver Tabla</button>
-
                                             </footer>
 
                                         </form>
 
-                                        <aside>
-                                            <b>Formulario oficial para fans de la UEFA Champions League.</b>
+                                        <aside class="card-footer text-muted text-center border-0 bg-transparent pb-3">
+                                            <small><b>Formulario oficial para fans de la UEFA Champions
+                                                    League.</b></small>
                                         </aside>
                                     </section>
                                     <!--PIE DE PAGINA-->
