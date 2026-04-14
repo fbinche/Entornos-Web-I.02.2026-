@@ -477,11 +477,7 @@ card:hover {
   margin-bottom: 20px;
 }
 
-#accesorios_del_mes > section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-}
+
 
 form ul li {
   margin-bottom: 12px;
@@ -512,7 +508,8 @@ form ul li {
     }
 }
 
- /** NOTA ACTUAL : 14.5
+/* 
+NOTA ACTUAL: 14.5 puntos
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
   #5 SELECTORES DE ETIQUETAS HTML 2.5
@@ -527,4 +524,4 @@ form ul li {
 3 puntos ANIMACIONES
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
-**/
+*/
