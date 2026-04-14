@@ -115,7 +115,7 @@ output{
 
 
 summary{
-    color:aliceblue;
+    color:rgb(75, 123, 165);
     font-style: oblique;
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
@@ -232,7 +232,7 @@ h2 ~ p {
 
 
 :is(h3, h4, h5) {
-    color: rgb(156, 26, 28);
+    color: rgb(70, 28, 29);
     background-color: rgb(211, 229, 229);
     padding: 8px;
     margin-bottom: 10px;
