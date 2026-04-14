@@ -53,6 +53,7 @@ legend {
    padding: 0 10px;
 }
 
+
 /*======LABEL====== */
 label {
     display: block;
@@ -400,6 +401,9 @@ header h1::after {
 form {
     animation: brillo 3s infinite;
 }
+
+
+
 
  /** NOTA ACTUAL : 15 - 2 (Verificar su codigo)
 15 puntos SELECTORES
