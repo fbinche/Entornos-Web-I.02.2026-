@@ -95,7 +95,7 @@ footer {
 
 .btn {
 
-    color: rgb(63, 63, 63);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     transition: all 0.3s ease;
 }
@@ -268,6 +268,7 @@ footer#pie_pagina p:nth-of-type(2) {
     border-top: 1px solid #91ff00;
  
 }
+/*no palica px que ya no tengo tercer parrafo */
 footer#pie_pagina p:last-of-type {
     /*selecciono al ultimo parrafo dentro de mi footer*/
     color: #00c3ff;
@@ -331,6 +332,14 @@ footer#pie_pagina p:last-of-type {
 .fondo {
     overflow: hidden; /* Importante para que el zoom no se salga de los bordes */
     animation: zoom 10s linear infinite alternate; /*realiza el crecimiento en los 10 segundos*/
+}
+/*SECCION PARA BOOSTRAP*/
+.navbar {
+    background-color: #163a5f !important; /* Fuerza tu color de marca */
+}
+
+.nav-link:hover {
+    color: #ffd700 !important; /* Mantiene tu efecto dorado al pasar el mouse */
 }
  /** NOTA ACTUAL : 14.5 - 5 (Usar pagina)
 15 puntos SELECTORES
