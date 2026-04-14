@@ -12,20 +12,45 @@
 <body>
 
   <main>
-
+<!-- ============= BOOSTRAP ============= -->
     <!-- ===== HEADER ===== -->
-    <header class="hero" id="INICIO">
+    <header id="INICIO">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-auranet">
 
-      <nav class="lista_menu">
-        <ul class="menu">
-          <li><a href="#PLANES">Planes</a></li>
-          <li><a href="#BENEFICIOS">Beneficios</a></li>
-          <li><a href="#FORMULARIO">Contratar</a></li>
+    <div class="container">
+
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#">AuraNet</a>
+
+      <!-- BOTÓN RESPONSIVE -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuAura">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- MENÚ -->
+      <div class="collapse navbar-collapse" id="menuAura">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#PLANES">Planes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#BENEFICIOS">Beneficios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#FORMULARIO">Contratar</a>
+          </li>
+
         </ul>
+      </div>
 
-      </nav>
+    </div>
 
-    </header>
+  </nav>
+</header>
+    <!-- ============= BOOSTRAP ============= -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -59,7 +84,7 @@
         <!-- PLAN 1 -->
         <article class="article">
           <img src="img/velocidades/1000-Diamante-Elite.png" class="img-plan">
-          <!--badge BOOTSTRAP-->
+          <!--badge BOOTSTRAP--><!-- ============= BOOSTRAP ============= -->
           <h2>1000 Mbps <span class="badge bg-info">TOP</span></h2>
 
           <ul>
@@ -69,7 +94,7 @@
           </ul>
 
           <p class="precio"><strong>S/104.90</strong></p>
-
+          
           <a href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji" class="btn-principal" target="_blank">
             QUIERO ESTE PLAN
           </a>
@@ -128,7 +153,7 @@
           <img src="img/beneficios/velocidad_simetricagold.png" class="img-beneficio">
           <strong>Velocidad simétrica</strong>
           <p>Misma velocidad de subida y bajada</p>
-          <i class="bi bi-modem"></i>
+          <i class="bi bi-modem"></i><!-- ============= BOOSTRAP ============= -->
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-modem"
             viewBox="0 0 16 16">
             <path
@@ -142,7 +167,7 @@
           <img src="img/beneficios/descargas_ilimitadasgold.png" class="img-beneficio">
           <strong>Descargas ilimitadas</strong>
           <p>Sin límites ni cortes</p>
-          <i class="bi bi-wifi"></i>
+          <i class="bi bi-wifi"></i><!-- ============= BOOSTRAP ============= -->
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi"
             viewBox="0 0 16 16">
             <path
@@ -156,7 +181,7 @@
           <img src="img/beneficios/multiples_conexionesgold.png" class="img-beneficio">
           <strong>Múltiples dispositivos</strong>
           <p>Conecta todo en casa</p>
-          <i class="bi bi-router-fill"></i>
+          <i class="bi bi-router-fill"></i><!-- ============= BOOSTRAP ============= -->
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-router-fill"
             viewBox="0 0 16 16">
             <path
@@ -178,7 +203,7 @@
       </div>
 
     </section>
-    <!-- ALERTA BOOTSTRAP -->
+    <!-- ALERTA BOOTSTRAP --><!-- ============= BOOSTRAP ============= -->
     <div class="alert alert-info text-center" role="alert">
       Promoción activa: instalación gratis 🚀
     </div>
@@ -217,59 +242,75 @@
 
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <!-- ================= EMPRESA ================= -->
-    <section class="footer-empresa">
-      <h2>AuraNet</h2>
-      <small>AuraNet © 2026</small>
-    </section>
+  <!-- ===== FOOTER ===== --><!-- ============= BOOSTRAP ============= -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
 
-    <!-- ================= NAVEGACION SERVICIOS ================= -->
-    <nav class="footer-servicios">
-      <h4>Servicios</h4>
+  <!-- REDES -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    
+    <div class="d-none d-lg-block">
+      <span>Conéctate con AuraNet:</span>
+    </div>
 
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Planes de datos</a></li>
-        <li><a href="#">Beneficios</a></li>
-      </ul>
+    <div>
+      <a href="#" class="me-4 text-reset">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="bi bi-tiktok"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
 
-    </nav>
+  </section>
 
-    <!-- ================= NOSOTROS ================= -->
-    <nav class="footer-nosotros">
+  <!-- CONTENIDO -->
+  <section>
+    <div class="container text-center text-md-start mt-4">
+      <div class="row">
 
-      <h4>Nosotros</h4>
+        <!-- EMPRESA -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-3">
+            <i class="bi bi-wifi me-2"></i>AuraNet
+          </h6>
+          <p>
+            Internet de alta velocidad con fibra óptica, planes accesibles y conexión estable para tu hogar.
+          </p>
+        </div>
 
-      <ul>
-        <li><a href="#">Nuestra empresa</a></li>
-        <li><a href="#">Política de privacidad</a></li>
-      </ul>
+        <!-- SERVICIOS -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-3">Servicios</h6>
+          <p><a href="#PLANES" class="text-reset">Planes</a></p>
+          <p><a href="#BENEFICIOS" class="text-reset">Beneficios</a></p>
+          <p><a href="#FORMULARIO" class="text-reset">Contratar</a></p>
+        </div>
 
-    </nav>
+        <!-- NOSOTROS -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-3">Nosotros</h6>
+          <p><a href="#" class="text-reset">Nuestra empresa</a></p>
+          <p><a href="#" class="text-reset">Política de privacidad</a></p>
+        </div>
 
-    <!-- ================= AYUDA Y REDES ================= -->
-    <section class="footer-ayuda">
+        <!-- CONTACTO -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-3">Contacto</h6>
+          <p><i class="bi bi-geo-alt me-2"></i> Ate, Lima - Perú</p>
+          <p><i class="bi bi-envelope me-2"></i> contacto@auranet.com</p>
+          <p><i class="bi bi-whatsapp me-2"></i> +51 997 568 990</p>
+        </div>
 
-      <h4>Ayuda</h4>
-
-      <ul>
-        <li><a href="#">Cómo funciona la fibra óptica</a></li>
-        <li><a href="#">Atención al cliente</a></li>
-      </ul>
-
-      <h4>Redes sociales</h4>
-
-      <ul class="redes-sociales">
-        <li><a href="https://chat.whatsapp.com/FyHNxJ40Fbg0NvvdBJCEji?mode=gi_t">WhatsApp</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">TikTok</a></li>
-      </ul>
-
-    </section>
-
-  </footer>
+      </div>
+    </div>
+  </section>
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
