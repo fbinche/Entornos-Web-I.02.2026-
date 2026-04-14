@@ -97,8 +97,8 @@ header nav ul { /* selecciona ul hijo directo de nav */
   text-align: center; /* centra */
 }
 /*====================== ALERTA DE BOOSTRAP =====================*/
-.alert alert-info-text center{
-  font: size 30px;
+.alert center{
+  font-size:  30px;
 }
 /* ===================== FORMULARIO ===================== */
 #FORMULARIO { /* sección formulario */
@@ -200,31 +200,31 @@ p::first-letter { /* primera letra */
   border-radius: 10px; /*borde redondeado*/
 }
 
-footer a:hover { /* hover footer */
-  color: #00eaff; /* cambia color */
-  transform: scale(1.05); /* efecto */
-}
-
 form input, form select { /* múltiples elementos */
   display: block; /* en bloque */
   margin: 10px 0; /* espacio */
   width: 100%; /* ancho */
 }
 
-/* ===================== FOOTER ===================== */
-.footer { /* footer */
-  background: #081233; /* fondo */
-  padding: 60px; /* espacio */
-  display: flex; /* flex */
-  flex-wrap: wrap; /* adaptable */
-  font-size: 3rem;
+/* ===================== FOOTER BOOTSTRAP===================== */
+/* Cambiar fondo del footer Bootstrap */
+.bg-body-tertiary {
+  background-color: #081233 !important; /* tu azul AuraNet */
 }
 
-.footer a { /* links */
-  color: #ccc; /* color */
-  text-decoration: none; /* sin subrayado */
-  transition: 0.3s; /* animación */
-  font-size: 2rem;
+/* Cambiar color del texto */
+.text-muted {
+  color: white !important;
+}
+
+/* Cambiar enlaces */
+footer a {
+  color: #00eaff !important;
+}
+
+/* Hover */
+footer a:hover {
+  color: white !important;
 }
 
 /* ===================== ANIMACIONES ===================== */
