@@ -39,12 +39,38 @@
     </header>
     <!--CUERPO DE MI PAGINA PRINCIPAL-->
     <main class="container">
-        <!--Seccion de imagen principal o banner de fondo-->
-        <section id="fondo" class="fondo "> <!--Boostrap agregado, para darle sombra-->
-            <h1>Muebles de Melamina</h1>
-            <p>Muebles resistentes, para tu hogar y oficina</p>
-            <button class="btn btn-primary px-4 "><i class="bi bi-eye me-2"></i>Ver modelos</button> <!--Boostrap agregado, para darle estilo al boton-->
-        </section>
+        <!--Seccion de imagen principal o banner de fondo APLICADO A CARRUSEL DEL BOSSTRAP-->
+        <section id="fondo" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
+    
+    <section class="carousel-inner">
+        <article class="carousel-item active">
+            <img src="banners/1.webp" class="d-block w-100" alt="banner 1 impuesto">
+        </article>
+        <article class="carousel-item">
+            <img src="banners/2.webp" class="d-block w-100" alt="banner 2 impuesto">
+        </article>
+        <article class="carousel-item">
+            <img src="banners/3.jpg" class="d-block w-100" alt="banner 3 impuesto">
+        </article>
+    </section>
+<!--SECCION DE MI CONTENIDO TEXTUAL-->
+    <section class="capa-contenido position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-center">
+        <h1>Muebles de Melamina</h1>
+        <p>Muebles resistentes, para tu hogar y oficina</p>
+        <button class="btn btn-primary px-4"><i class="bi bi-eye me-2"></i>Ver modelos</button> <!--Boostrap agregado, para darle estilo al boton-->
+    </section>
+   <!--BOTONES PARA EL CARRUSEL-->
+    <button class="carousel-control-prev" type="button" data-bs-target="#fondo" data-bs-slide="prev" style="z-index: 20;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">antes</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#fondo" data-bs-slide="next" style="z-index: 20;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">despues</span>
+    </button>
+
+</section>
+
         <!--SECCION DE PRODUCTOS-->
         <section class="catalogo">
             <!--subtitulo-->
@@ -69,6 +95,52 @@
             </article>
         </section>
     </main>
+    <!--SECCION PARA MI FORMULARIO APLICANDO ELEMENTOS DE BOOTSTRAP-->
+
+     <section class="container my-5 shadow p-4 rounded bg-white">
+    <h2 class="text-center mb-4">Consige una oferta, envianos tus datos personales</h2>
+    
+    <form class="row g-4">
+        <!--PARTE 1 DE MI FORMULARIO-->
+        <article class="col-md-4">
+            <label for="nombre" class="form-label h6">Apellidos y Nombres</label>
+            <input type="text" class="form-control" id="nombre" placeholder="neim:mani manito" required>
+            
+            <label for="email" class="form-label h6 mt-3">Correo</label>
+            <input type="email" class="form-control" id="email" placeholder="yajale@hotmail.com">
+        </article>
+        <!--PARTE 2 DE MI FORMULARIO, MODELOS Y COLORES A ELEGUIR-->
+        <article class="col-md-4">
+            <label for="mueble" class="form-label h6">Que producto te interesa</label>
+            <select id="mueble" class="form-select">
+                <option selected disabled>Modelos a elegir...</option>
+                <option>Artist Pro</option>
+                <option>Koda Desk</option>
+                <option>Desk Link</option>
+            </select>
+        <!--PARTE 3 DE MI FORMULARIO, DETALLES ADICIONALES-->
+            <label for="color" class="form-label h6 mt-3">Color de Melamina</label>
+            <select id="color" class="form-select">
+                <option>Blanco Minimalista</option>
+                <option>Roble Estoico</option>
+                <option>Negro Matizado</option>
+            </select>
+        </article>
+        <!--PARTE 4 DE MI FORMULARIO Y ENVIO DE MENSAJE-->
+        <article class="col-md-4 d-flex flex-column justify-content-between">
+            <section class="w-100">
+                <label for="mensaje" class="form-label h6">Detalles adicionales</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Enpaques medidas etc y lo que gustes..."></textarea>
+            </section>
+            <!--Diseño base para mi button-->
+            <button type="button" class="btn btn-primary w-100 py-2 mt-3">
+                <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+            </button>
+        </article>
+
+    </form>
+</section>
+
     <!--PIE DE PAGINA-->
 <footer id="pie_pagina" class="py-4 border-top text-center fondo_footer">
     <section class="container">
@@ -88,7 +160,13 @@
         </p>
         <p>La fe, lo mas lindo de la vida</p>
 
+
+        <!--GRID X 4, FORMULARIO Y CARRUSEL-->
+
     </section>
+
+    <!--CARRUSEL-->
+    <!--GRID X3 FORM-->
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
