@@ -341,7 +341,8 @@ footer#pie_pagina p:last-of-type {
 .nav-link:hover {
     color: #ffd700 !important; /* Mantiene tu efecto dorado al pasar el mouse */
 }
- /** NOTA ACTUAL : 14.5 - 5 (Usar pagina)
+ /** NOTA ACTUAL : 
+ CSS -> 10 + 3 PARTIPACION +2 ANIMACIONES
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.2
   #5 SELECTORES DE ETIQUETAS HTML 2.5
