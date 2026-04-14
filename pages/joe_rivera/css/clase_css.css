@@ -1,4 +1,4 @@
-/* RESET UNIVERSAL PRO */
+/*  UNIVERSAL */
 *,
 *::before,
 *::after {
@@ -64,9 +64,9 @@ p{
 /**7TIMA ETIQUETA**/
 
 figcaption{
-    color: rgb(220, 230, 239);
+    color: rgb(248, 141, 0);
     font-style: italic;
-    font-size: larger;
+    font-size: 1.4rem;
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
 }
@@ -531,7 +531,7 @@ p:hover {
 
 /* TEXTO */
 .third-section figcaption {
-    font-size: 13px;
+    font-size: 22px;
 }
 
 /* NOMBRE */
@@ -687,6 +687,55 @@ body::before {
     scroll-snap-align: center;
 }
 
+                                /* MODO CLARO / OSCURO REAL */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--bs-body-color);
+
+    /* TU FONDO SIEMPRE */
+    background: linear-gradient(135deg, #0a1f5c, #162b8a, #09143c) !important;
+
+    overflow-x: hidden;
+}
+
+body[data-bs-theme="dark"] {
+    background: linear-gradient(135deg, #0a1f5c, #162b8a, #09143c) !important;
+}
+
+body[data-bs-theme="light"] {
+    background: linear-gradient(135deg, #dbeafe, #93c5fd, #60a5fa) !important;
+}
+
+p, h1, h2, h3, span, label, legend, summary, aside, time {
+    color: var(--bs-body-color);
+}
+
+.card, section {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+a {
+    color: var(--bs-link-color);
+}
+
+input, textarea, select {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    border: 1px solid var(--bs-border-color);
+}
+
+                    /**formulario centrado***/
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
 
  /** NOTA ACTUAL : 13
 15 puntos SELECTORES

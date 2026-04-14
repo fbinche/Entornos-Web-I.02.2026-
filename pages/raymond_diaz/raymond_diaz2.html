@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerand Universal Wiki — Raymond Diaz</title>
+
+  <!-- 1. Bootstrap CSS local (de tu carpeta css/) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- 2. Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- 3. CSS propio (clase_css.css) -->
+  <link rel="stylesheet" href="css/clase_css.css">
+</head>
+
+<body>
+
+<!-- ╔══════════════════════════════════════════════════╗
+     ║  NAVBAR  —  sticky · responsivo · dropdown      ║
+     ╚══════════════════════════════════════════════════╝ -->
+<nav id="gw-navbar" class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+
+    <!-- Marca -->
+    <a class="navbar-brand gw-brand" href="#">
+      <i class="bi bi-tank2-fill me-2"></i>Gerand Wiki
+    </a>
+
+    <!-- Botón hamburguesa (móvil) -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#gwNav"
+            aria-controls="gwNav" aria-expanded="false" aria-label="Menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="gwNav">
+      <ul class="navbar-nav ms-auto gap-1 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#inicio">
+            <i class="bi bi-house-fill me-1"></i>Inicio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#trama">
+            <i class="bi bi-book-fill me-1"></i>Trama
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gw-personajes">
+            <i class="bi bi-lightning-fill me-1"></i>Acotecimientos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#registro">
+            <i class="bi bi-card-text me-1"></i>Registro
+          </a>
+        </li>
+        <!-- Dropdown temporadas -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-collection-play me-1"></i>Temporadas
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-1-circle me-2"></i>Temporada 1</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-2-circle me-2"></i>Temporada 2</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-3-circle me-2"></i>Temporada 3</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-4-circle me-2"></i>Temporada 4</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-5-circle me-2"></i>Temporada 5</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-warning fw-bold" href="#">
+              <i class="bi bi-star-fill me-2"></i>Temporada 12 (actual)
+            </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- ╔══════════════════════════════════════════════════╗
+     ║  HERO HEADER                                    ║
+     ╚══════════════════════════════════════════════════╝ -->
+<header id="inicio" class="gw-hero">
+  <div class="container text-center py-5 position-relative">
+    <p class="gw-subtitle small mb-2 text-uppercase">▸ Wiki Oficial de Fans ◂</p>
+    <h1 class="mb-3">Gerand Universal Wiki</h1>
+    <p class="gw-subtitle lead mb-4">Historia · Tanques · Naciones · Temporadas</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="#trama" class="btn btn-gw-outline px-4">
+        <i class="bi bi-arrow-down-circle me-1"></i>Explorar
+      </a>
+      <a href="https://www.youtube.com/@Gerand/videos" target="_blank" class="btn btn-gw-rust px-4">
+        <i class="bi bi-youtube me-1"></i>Ver episodios
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+
+<!-- ╔══════════════════════════════════════════════════════╗
+     ║  SECCIÓN 1 — Presentación                          ║
+     ║  Bootstrap: container · row · col · card           ║
+     ╚══════════════════════════════════════════════════════╝ -->
+<section class="gw-section gw-bg-green">
+  <div class="container">
+
+    <!-- Jumbotron -->
+    <div class="gw-jumbotron p-4 p-md-5 mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <h2>¿Qué es la Gerand Wiki?</h2>
+          <p class="lead">
+            Esta wiki contiene información detallada sobre el universo de Gerand:
+            su historia, los tanques, las naciones y todo lo que ocurre en cada temporada.
+          </p>
+          <p>
+            Aquí encontrarás datos de cada personaje, teorías de fans,
+            curiosidades y mucho más contenido relacionado a la serie.
+          </p>
+          <a href="#trama" class="btn btn-gw-outline mt-2 px-4">
+            <i class="bi bi-arrow-right me-1"></i>Ver más
+          </a>
+        </div>
+        <div class="col-12 col-lg-5 text-center">
+          <img src="https://i.namu.wiki/i/P3fdsKL9d6CRcsW5UU3TmsKni1uA-poRUuyzyhFt08vRaaP3QnsTifqbDQEfWWsmldc3oJs5FCnUK02FH0IzDA.gif"
+               height="190" alt="Gerand animado" class="gw-gif">
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards responsivas -->
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card gw-card h-100">
+          <img src="https://i.ytimg.com/vi/cwBZRL3njWQ/hq720.jpg"
+               class="card-img-top gw-card-img-top" alt="Historia Gerand">
+          <div class="card-body">
+            <h3 class="card-title">Historia Principal</h3>
+            <p class="card-text">
+              La historia del KV-44 y su lucha contra Leviathan a lo largo de
+              múltiples temporadas llenas de acción y lore profundo.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-2">
+            <span class="badge bg-warning text-dark">Historia</span>
+            <span class="badge bg-secondary">12 temporadas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 — List group -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card gw-card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-3">Temporadas</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="bi bi-caret-right-fill me-2 text-warning"></i>Temporada 1</li>
+              <li class="list-group-item"><i class="bi bi-caret-right-fill me-2 text-warning"></i>Temporada 2</li>
+              <li class="list-group-item"><i class="bi bi-caret-right-fill me-2 text-warning"></i>Temporada 3</li>
+              <li class="list-group-item"><i class="bi bi-caret-right-fill me-2 text-warning"></i>Temporada 4</li>
+              <li class="list-group-item"><i class="bi bi-caret-right-fill me-2 text-warning"></i>Temporada 5</li>
+              <li class="list-group-item text-warning fw-bold">
+                <i class="bi bi-star-fill me-2"></i>Temporada 12 (actual)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 — Info -->
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="card gw-card h-100">
+          <div class="card-body d-flex flex-column justify-content-center">
+            <h3 class="card-title"><i class="bi bi-globe2 me-2 text-warning"></i>Naciones</h3>
+            <p class="card-text">
+              Cada nación tiene sus propias estrategias, tecnologías y colosos
+              que determinan el curso de la guerra en el universo de Gerand.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge bg-danger px-3 py-2">🇷🇺 URSS</span>
+              <span class="badge bg-secondary px-3 py-2">🇩🇪 Alemania</span>
+              <span class="badge bg-primary px-3 py-2">🇺🇸 EE.UU.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+
+    <!-- Footer de sección -->
+    <footer class="mt-5 py-3 px-4 rounded text-center"
+            style="background:rgba(200,168,75,.05);border:1px solid var(--gw-border);">
+      <p class="mb-0 small" style="font-family:var(--gw-font-mono);color:var(--gw-muted);">
+        <i class="bi bi-info-circle me-1"></i>
+        Esta wiki es un proyecto de fans · No afiliada oficialmente con Gerand
+      </p>
+    </footer>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗
+     ║  SECCIÓN 2 — Trama                                 ║
+     ║  Bootstrap: tabs · accordion · ratio (video)       ║
+     ╚══════════════════════════════════════════════════════╝ -->
+<section id="trama" class="gw-section gw-bg-dark">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="display-5">Trama y Datos de la Serie</h2>
+      <div class="gw-divider"></div>
+    </div>
+
+    <!-- Tabs Bootstrap -->
+    <ul class="nav gw-tabs mb-4" id="gwTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#t-temp12" type="button">
+          <i class="bi bi-calendar-event me-1"></i>Temporada 12
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#t-enfrent" type="button">
+          <i class="bi bi-crosshair me-1"></i>Enfrentamientos
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#t-video" type="button">
+          <i class="bi bi-play-circle me-1"></i>Video
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="gwTabsContent">
+
+      <!-- TAB 1 — Temporada 12 -->
+      <div class="tab-pane fade show active" id="t-temp12" role="tabpanel">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-7">
+            <h3>Temporada actual: 12</h3>
+            <p>En esta temporada se centra el regreso del KV-44 a la Unión Soviética después de varios años.</p>
+            <p>También continúa la trama de la guerra, junto con sucesos anteriores y parte de la historia antigua.</p>
+            <p>Durante los primeros episodios se observa la difícil situación de los Estados Unidos,
+               además de nuevos acotecimientos y menciones de distintos personajes.</p>
+            <div class="alert alert-gw mt-3" role="alert">
+              <i class="bi bi-star-fill me-2 text-warning"></i>
+              La temporada 12 de Gerand ha sido muy esperada por los fans.
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <img src="https://i.ytimg.com/vi/1evRXJdVlQw/hq720.jpg"
+                 class="img-fluid gw-img" alt="Escena Temporada 12">
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2 — Enfrentamientos -->
+      <div class="tab-pane fade" id="t-enfrent" role="tabpanel">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-5">
+            <img src="https://yt3.googleusercontent.com/iwjBA4x7PtZ8xA7SXb6D0Gf1l_DBJjv8-WlSwHnrjcGCAmvogIFXGKIn0hbEOaZZpi-KVyzw=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                 class="img-fluid gw-img" alt="Logo Gerand">
+          </div>
+          <div class="col-12 col-lg-7">
+            <h3>Enfrentamientos en el universo de Gerand</h3>
+            <p>Los colosos y "soldados" desatan enfrentamientos brutales en distintos escenarios
+               ambientados en la Segunda Guerra Mundial.</p>
+            <!-- Accordion Bootstrap -->
+            <div class="accordion mt-3" id="gwAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#acc-1">
+                    <i class="bi bi-crosshair me-2"></i>Karl-44 vs Perfect Ratte
+                  </button>
+                </h2>
+                <div id="acc-1" class="accordion-collapse collapse show"
+                     data-bs-parent="#gwAccordion">
+                  <div class="accordion-body">
+                    Dos colosos usan su artillería pesada desatando una batalla épica.
+                    Es el enfrentamiento entre el Karl-44 soviético y el Perfect Ratte.
+                    <br><br>
+                    <a href="https://www.youtube.com/@Gerand/videos" target="_blank"
+                       class="btn btn-sm btn-gw-outline">
+                      <i class="bi bi-youtube me-1"></i>Ver episodios
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#acc-2">
+                    <i class="bi bi-shield-exclamation me-2"></i>KV-44 vs Leviathan
+                  </button>
+                </h2>
+                <div id="acc-2" class="accordion-collapse collapse"
+                     data-bs-parent="#gwAccordion">
+                  <div class="accordion-body">
+                    El enfrentamiento definitivo del protagonista contra el antagonista principal.
+                    Leviathan usa magia demoníaca para superar sus propios límites.
+                  </div>
+                </div>
+              </div>
+            </div><!-- /accordion -->
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3 — Video ratio Bootstrap -->
+      <div class="tab-pane fade" id="t-video" role="tabpanel">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 text-center">
+            <h3 class="mb-3">Episodio destacado</h3>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/NIP45tFYnOI"
+                      title="Karl-44 vs Perfect Ratte" allowfullscreen></iframe>
+            </div>
+            <p class="mt-3 small text-muted">Karl-44 Soviético vs Perfect Ratte · Gerand</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tab-content -->
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗
+     ║  SECCIÓN 3 — Acotecimientos + Personajes           ║
+     ║  Bootstrap: row g-3 · progress · badge             ║
+     ╚══════════════════════════════════════════════════════╝ -->
+<section class="gw-section gw-bg-red">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="display-5">Acotecimientos de la Trama</h2>
+      <div class="gw-divider"></div>
+    </div>
+
+    <!-- 5 tarjetas de servicios -->
+    <div class="row g-3 gw-row-serv mb-5">
+      <div class="col-6 col-md-4 col-lg-fifth col-gw-fifth">
+        <div class="card gw-card text-center h-100 p-3">
+          <img src="https://i.namu.wiki/i/acsZWfYcN3JWpU49cN8hvDYwiqwVjpT9Onylvgn0ZzIaCS-qLjV8ogcR9YR2xwSAshMKTCxlCQTbD8uXfFDbGw.gif"
+               height="100" alt="Acotecimiento" class="mx-auto">
+          <p class="small mt-2 mb-0">Eventos de acción y drama</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-fifth col-gw-fifth">
+        <div class="card gw-card text-center h-100 p-3 d-flex flex-column justify-content-center">
+          <i class="bi bi-broadcast display-3 text-warning"></i>
+          <p class="small mt-2 mb-0">Conectan al lore principal</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-fifth col-gw-fifth">
+        <div class="card gw-card text-center h-100 p-3">
+          <img src="https://i.ytimg.com/vi/iYKA9jE5DY0/hq720.jpg"
+               class="img-fluid mx-auto mb-2"
+               style="height:100px;object-fit:cover;border-radius:.3rem;" alt="Acotecimiento">
+          <p class="small mb-0">Desafían a los protagonistas</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-fifth col-gw-fifth">
+        <div class="card gw-card text-center h-100 p-3 d-flex flex-column justify-content-center">
+          <i class="bi bi-shield-fill-exclamation display-3 text-danger"></i>
+          <p class="small mt-2 mb-0">Situaciones de tensión</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-fifth col-gw-fifth">
+        <div class="card gw-card text-center h-100 p-3">
+          <img src="https://i.makeagif.com/media/10-09-2023/f_B3yf.gif"
+               height="100" alt="Acotecimiento" class="mx-auto">
+          <p class="small mt-2 mb-0">Historia diferente por temporada</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personajes — id para selector de ID -->
+    <div id="gw-personajes" class="row g-4">
+
+      <!-- KV-44 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card gw-card h-100">
+          <div class="card-header gw-card-h-gold">
+            <i class="bi bi-star-fill text-warning me-2"></i>Protagonista principal
+          </div>
+          <div class="card-body">
+            <h4>KV-44</h4>
+            <p>El protagonista principal. Su objetivo es destruir a Leviathan, pero durante este proceso
+               vive múltiples aventuras que ponen a prueba su determinación y humanidad.</p>
+            <p class="mb-1 small text-muted">Poder</p>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-warning fw-bold" style="width:90%">90%</div>
+            </div>
+            <p class="mb-1 small text-muted">Humanidad</p>
+            <div class="progress">
+              <div class="progress-bar bg-success fw-bold" style="width:75%">75%</div>
+            </div>
+          </div>
+          <div class="card-footer d-flex gap-2">
+            <span class="badge bg-warning text-dark">Unión Soviética</span>
+            <span class="badge bg-secondary">Protagonista</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leviathan -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card gw-card h-100">
+          <div class="card-header gw-card-h-rust">
+            <i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>Antagonista principal
+          </div>
+          <div class="card-body">
+            <h4>Leviathan</h4>
+            <p>Su mayor deseo es conquistar la Tierra y convertir al KV-44 en su secuaz. Posee magia
+               demoníaca y es extremadamente poderoso, aunque pierde lo que más aprecia.</p>
+            <p class="mb-1 small text-muted">Poder</p>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-danger fw-bold" style="width:98%">98%</div>
+            </div>
+            <p class="mb-1 small text-muted">Humanidad</p>
+            <div class="progress">
+              <div class="progress-bar bg-secondary fw-bold" style="width:15%">15%</div>
+            </div>
+          </div>
+          <div class="card-footer d-flex gap-2">
+            <span class="badge bg-danger">Antagonista</span>
+            <span class="badge bg-dark border">Magia Demoníaca</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen -->
+      <div class="col-12 col-lg-4 d-flex align-items-center">
+        <img src="https://i.ytimg.com/vi/Rbxhmlp-XzQ/hq720.jpg"
+             class="img-fluid gw-img w-100" alt="KV-44 vs Leviathan">
+      </div>
+
+    </div><!-- /#gw-personajes -->
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗
+     ║  SECCIÓN 4 — Formulario                            ║
+     ║  Bootstrap: form-control · select · check · range  ║
+     ╚══════════════════════════════════════════════════════╝ -->
+<section id="registro" class="gw-section gw-bg-dark">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 col-xl-7">
+
+        <!-- Encabezado -->
+        <div class="text-center mb-4">
+          <p class="gw-subtitle small text-uppercase">▸ Gerand Universal Wiki ◂</p>
+          <h2 style="font-size:2.4rem;animation:gw-glow 3s ease-in-out infinite;">
+            Registro de Campo
+          </h2>
+          <p class="text-muted">// Completa el formulario para unirte a la base de datos //</p>
+        </div>
+
+        <!-- Tarjeta del form -->
+        <div class="gw-form-card p-4 p-md-5">
+          <form action="#" method="post" novalidate>
+            <div class="row g-3">
+
+              <!-- Nombre -->
+              <div class="col-12 col-sm-6">
+                <label for="f-nombre" class="form-label">
+                  Nombre de comandante <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" id="f-nombre" name="nombre"
+                       placeholder="Ej: KV-44" required>
+              </div>
+
+              <!-- Email -->
+              <div class="col-12 col-sm-6">
+                <label for="f-email" class="form-label">
+                  Correo de contacto <span class="text-danger">*</span>
+                </label>
+                <input type="email" class="form-control" id="f-email" name="email"
+                       placeholder="correo@ejemplo.com" required>
+              </div>
+
+              <!-- Select -->
+              <div class="col-12 col-sm-6">
+                <label for="f-temporada" class="form-label">Temporada favorita</label>
+                <select class="form-select" id="f-temporada" name="temporada">
+                  <option value="" disabled selected>Selecciona temporada</option>
+                  <option value="1">Temporada 1</option>
+                  <option value="2">Temporada 2</option>
+                  <option value="3">Temporada 3</option>
+                  <option value="4">Temporada 4</option>
+                  <option value="5">Temporada 5</option>
+                  <option value="12">Temporada 12 (actual)</option>
+                </select>
+              </div>
+
+              <!-- Number -->
+              <div class="col-12 col-sm-6">
+                <label for="f-episodios" class="form-label">Episodios vistos</label>
+                <input type="number" class="form-control" id="f-episodios" name="episodios"
+                       min="0" max="999" placeholder="0">
+              </div>
+
+              <div class="col-12"><hr></div>
+
+              <!-- Radio -->
+              <div class="col-12">
+                <label class="form-label">
+                  Bando preferido <span class="text-danger">*</span>
+                </label>
+                <div class="d-flex flex-wrap gap-3 mt-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="bando" id="b-sov" value="sovietico">
+                    <label class="form-check-label" for="b-sov">🇷🇺 Unión Soviética</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="bando" id="b-ale" value="alemania">
+                    <label class="form-check-label" for="b-ale">🇩🇪 Alemania</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="bando" id="b-us" value="eeuu">
+                    <label class="form-check-label" for="b-us">🇺🇸 Estados Unidos</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="bando" id="b-neu" value="neutro">
+                    <label class="form-check-label" for="b-neu">⚪ Neutral</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Checkboxes -->
+              <div class="col-12">
+                <label class="form-label">Contenido de interés</label>
+                <div class="d-flex flex-wrap gap-3 mt-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="c-hist" name="interes" value="historia">
+                    <label class="form-check-label" for="c-hist">Historia / Lore</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="c-pers" name="interes" value="personajes">
+                    <label class="form-check-label" for="c-pers">Personajes</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="c-tank" name="interes" value="tanques">
+                    <label class="form-check-label" for="c-tank">Tanques / Colosos</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="c-teor" name="interes" value="teorias">
+                    <label class="form-check-label" for="c-teor">Teorías de fans</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="c-bat" name="interes" value="batallas">
+                    <label class="form-check-label" for="c-bat">Batallas épicas</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Range -->
+              <div class="col-12">
+                <label for="f-conocimiento" class="form-label">
+                  Nivel de conocimiento del universo
+                </label>
+                <input type="range" class="form-range" id="f-conocimiento"
+                       name="conocimiento" min="1" max="5" value="3">
+                <div class="d-flex justify-content-between gw-range-labels mt-1">
+                  <span>Recluta</span><span>Soldado</span><span>Veterano</span>
+                  <span>Élite</span><span>Comandante</span>
+                </div>
+              </div>
+
+              <!-- Textarea -->
+              <div class="col-12">
+                <label for="f-aporte" class="form-label">
+                  Aporte o comentario para la wiki
+                </label>
+                <textarea class="form-control" id="f-aporte" name="aporte" rows="4"
+                          placeholder="Comparte datos, correcciones, teorías o curiosidades sobre el universo de Gerand…"></textarea>
+              </div>
+
+              <!-- Submit -->
+              <div class="col-12 mt-2">
+                <button type="submit" class="btn btn-gw w-100">
+                  <span>⬡ Enviar informe de campo ⬡</span>
+                </button>
+              </div>
+
+            </div><!-- /row -->
+
+            <p class="text-center mt-3 gw-form-note small">
+              ▸ Proyecto de fans · No afiliado oficialmente con Gerand ◂
+            </p>
+          </form>
+        </div><!-- /gw-form-card -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</main><!-- /main -->
+
+
+<!-- ╔══════════════════════════════════════════════════╗
+     ║  FOOTER Bootstrap                               ║
+     ╚══════════════════════════════════════════════════╝ -->
+<footer id="gw-footer" class="gw-footer py-5">
+  <div class="container text-center">
+
+    <p class="lead mb-2">
+      Si deseas ver más contenido de <strong class="text-warning">Gerand</strong>,
+      visita el canal oficial en YouTube.
+    </p>
+    <a href="https://www.youtube.com/@Gerand/videos" target="_blank" rel="noopener"
+       class="btn btn-outline-danger btn-sm px-4">
+      <i class="bi bi-youtube me-2"></i>Canal oficial de Gerand
+    </a>
+
+    <hr class="my-4" style="border-color:var(--gw-border);">
+
+    <div class="row justify-content-center g-2">
+      <div class="col-auto">
+        <span class="badge bg-warning text-dark px-3 py-2">Bootstrap 5.3.8</span>
+      </div>
+      <div class="col-auto">
+        <span class="badge" style="background:var(--gw-steel);border:1px solid var(--gw-border);color:var(--gw-gold);padding:.5rem 1rem;">
+          Raymond Diaz
+        </span>
+      </div>
+      <div class="col-auto">
+        <span class="badge bg-secondary px-3 py-2">Proyecto de fans</span>
+      </div>
+    </div>
+
+    <p class="mt-3 mb-0 small text-muted" style="font-family:var(--gw-font-mono);">
+      Gerand Universal Wiki · No afiliada oficialmente con Gerand
+    </p>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS local -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

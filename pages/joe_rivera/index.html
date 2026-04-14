@@ -9,6 +9,7 @@
     <Link rel="styLesheet" href="css/styles.css">
     -->
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/clase_css.css">
 
 
@@ -17,7 +18,52 @@
 </style>
 </head>
 
-<body>
+<body data-bs-theme="dark" id="body">>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow">
+        <div class="container-fluid">
+
+            <!-- LOGO / TÍTULO -->
+            <a class="navbar-brand fw-bold" href="#">⚽ Champions</a>
+
+            <!-- BOTÓN RESPONSIVE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partidos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resultados</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Formulario</a>
+                    </li>
+
+                </ul>
+
+                <!-- BOTÓN MODO OSCURO -->
+                <button class="btn btn-outline-light ms-3" onclick="cambiarTema()">
+                    🌙 / ☀️
+                </button>
+
+            </div>
+        </div>
+    </nav>
 
 
 
@@ -25,15 +71,7 @@
         <figure id="logoChampions">
             <img src="img/UEFA_Champions_League_logo.png" alt="Logo Champions League" width="80">
         </figure>
-        <h1><i>LIGA DE CAMPEONES DE LA UEFA </i></h1>
-        <nav id="menuPrincipal" class="nav">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#Noticias_destacadas">Noticias destacadas</a></li>
-                <li><a href="#Ver_próximos_partidos">Ver próximos partidos</a></li>
-                <li><a href="#momentos__destacados">Momentos Destacados</a></li>
-            </ul>
-        </nav>
+        <h1><i>LIGA DE CAMPEONES DE LA UEFA</i></h1>
     </header>
 
 
@@ -51,18 +89,6 @@
                 La UEFA Champions League es la competición de clubes más prestigiosa del fútbol europeo.
             </p>
 
-            <nav>
-                <a href="#">Partidos</a> |
-                <a href="#">Clasificación</a> |
-                <a href="#">UEFA.tv</a> |
-                <a href="#">Sorteos</a> |
-                <a href="#">Gaming</a> |
-                <a href="#">Datos</a> |
-                <a href="#">Equipos</a> |
-                <a href="#">Noticias</a> |
-                <a href="#">Entradas</a> |
-                <a href="#">Más</a>
-            </nav>
 
         </header>
 
@@ -421,7 +447,7 @@
                             <b>Últimas novedades de la UEFA Champions League</b>
                         </header>
 
-                        
+
                         <section class="slider-noticias">
 
                             <!-- NOTICIA 1 -->
@@ -736,72 +762,62 @@
                                             <b>Edición Champions League</b>
                                         </header>
 
-
-                                        <progress value="70" max="100"></progress> <!-- Barra de progreso general -->
-                                        <!-- Representa avance del proceso -->
+                                        <progress value="70" max="100" class="w-100"></progress>
 
                                         <form id="formCompleto" action="/procesar" method="post"
-                                            enctype="multipart/form-data" autocomplete="on">
+                                            enctype="multipart/form-data" autocomplete="on" class="p-3">
 
-                                            <!-- ====================== DATOS PERSONALES ====================== -->
-
+                                            <!-- DATOS -->
                                             <section>
                                                 <fieldset>
                                                     <legend>Datos del Hincha</legend>
-                                                    <!-- input text con valor por defecto -->
 
+                                                    <label class="form-label">Nombre:</label>
+                                                    <input type="text" class="form-control mb-3" name="nombre"
+                                                        placeholder="Tu nombre" required minlength="3">
 
-                                                    <label>Nombre:</label>
-                                                    <input type="text" name="nombre" placeholder="Tu nombre" required
-                                                        minlength="3">
-                                                    <br><br>
+                                                    <label class="form-label">Tipo de Suscripción:</label>
+                                                    <input type="text" class="form-control mb-3" name="tipo"
+                                                        value="Premium Fan" readonly>
 
-                                                    <!-- readonly -->
+                                                    <label class="form-label">Email:</label>
+                                                    <input type="email" class="form-control mb-3" name="email"
+                                                        placeholder="tu@correo.com" required>
 
+                                                    <label class="form-label">Género del Suscriptor:</label>
 
-                                                    <label>Tipo de Suscripción:</label>
-                                                    <input type="text" name="tipo" value="Premium Fan" readonly>
-                                                    <br><br>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="genero"
+                                                            value="F">
+                                                        <label class="form-check-label">Femenino</label>
+                                                    </div>
 
-                                                    <!-- email con valor inicial -->
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="radio" name="genero"
+                                                            value="M" checked>
+                                                        <label class="form-check-label">Masculino</label>
+                                                    </div>
 
-
-                                                    <label>Email:</label>
-                                                    <input type="email" name="email" placeholder="tu@correo.com"
-                                                        required>
-                                                    <br><br>
-
-                                                    <!--Género-->
-
-                                                    <label>Género del Suscriptor:</label>
-                                                    <input type="radio" name="genero" value="F"> Femenino
-                                                    <input type="radio" name="genero" value="M" checked> Masculino
-                                                    <br><br>
-
-                                                    <!-- checkbox marcado por defecto -->
-
-
-                                                    <label>
-                                                        <input type="checkbox" name="terminos" required>
-                                                        Acepto recibir alertas de goles y noticias
-                                                    </label>
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" name="terminos"
+                                                            required>
+                                                        <label class="form-check-label">
+                                                            Acepto recibir alertas de goles y noticias
+                                                        </label>
+                                                    </div>
 
                                                 </fieldset>
                                             </section>
 
-                                            <!-- ====================== SELECT CON OPTGROUP ====================== -->
-
-
+                                            <!-- SELECT -->
                                             <section>
                                                 <fieldset>
                                                     <legend>Ubicación y Equipo</legend>
 
-                                                    <label>Seleccione su Equipo Favorito:</label>
-                                                    <select name="equipo">
+                                                    <label class="form-label">Seleccione su Equipo Favorito:</label>
+                                                    <select name="equipo" class="form-select">
+
                                                         <option value="">Seleccione</option>
-
-                                                        <!-- optgroup agrupa opciones -->
-
 
                                                         <optgroup label="España">
                                                             <option value="rm">Real Madrid</option>
@@ -820,122 +836,82 @@
                                                 </fieldset>
                                             </section>
 
-                                            <!-- ====================== MEDICIONES ====================== -->
-
-
+                                            <!-- MEDICIONES -->
                                             <section>
                                                 <fieldset>
                                                     <legend>Nivel de Fanatismo</legend>
 
-                                                    <label>Pasión por la Champions:</label>
-                                                    <meter value="0.90" min="0" max="1"></meter>
-                                                    <br><br>
+                                                    <label class="form-label">Pasión por la Champions:</label>
+                                                    <meter value="0.90" min="0" max="1" class="w-100"></meter>
 
-                                                    <label>¿Cuántas finales has visto?:</label>
-                                                    <input type="range" name="finales" min="0" max="20" value="10">
-                                                    <output>20</output> <output>finales</output>
+                                                    <label class="form-label mt-3">¿Cuántas finales has visto?:</label>
+                                                    <input type="range" class="form-range" name="finales" min="0"
+                                                        max="20" value="10">
 
                                                 </fieldset>
                                             </section>
 
-                                            <!-- ====================== ARCHIVOS Y MULTIMEDIA ====================== -->
-
-
+                                            <!-- ARCHIVOS -->
                                             <section>
                                                 <fieldset>
                                                     <legend>Tu Galería de Hincha</legend>
 
-                                                    <!-- file múltiple -->
+                                                    <label class="form-label">Sube tus fotos:</label>
+                                                    <input type="file" class="form-control mb-3" name="fotos_estadio"
+                                                        accept="image/*" multiple>
 
-
-                                                    <label>Sube tus fotos en el estadio:</label>
-                                                    <input type="file" name="fotos_estadio" accept="image/*" multiple>
-                                                    <br><br>
-
-                                                    <!-- captura desde cámara -->
-
-
-                                                    <label>Foto con tu camiseta (cámara):</label>
-                                                    <input type="file" name="foto_perfil" accept="image/*" capture>
-                                                    <br><br>
+                                                    <label class="form-label">Foto con camiseta:</label>
+                                                    <input type="file" class="form-control" name="foto_perfil"
+                                                        accept="image/*" capture>
 
                                                 </fieldset>
                                             </section>
 
-
-                                            <!-- ====================== ELEMENTOS INTERACTIVOS ====================== -->
-
+                                            <!-- EXTRA -->
                                             <section>
                                                 <fieldset>
                                                     <legend>Más Detalles</legend>
 
-                                                    <!-- datalist para sugerencias -->
+                                                    <label class="form-label">Ciudad:</label>
+                                                    <input list="ciudades" name="ciudad" class="form-control mb-3">
 
-
-                                                    <label>Ciudad donde verás la final:</label>
-                                                    <input list="ciudades" name="ciudad">
                                                     <datalist id="ciudades">
                                                         <option value="Londres">
                                                         <option value="Madrid">
                                                         <option value="París">
                                                         <option value="Múnich">
                                                     </datalist>
-                                                    <br><br>
 
-                                                    <!-- details desplegable -->
-
-
-                                                    <details>
-                                                        <summary>Ver beneficios de suscripción</summary>
-                                                        <p>1.- Recibirás videos exclusivos de los goles 1 minuto después
-                                                            de anotados.
-                                                        </p>
-                                                        <p>2.- Acceso a entrevistas con jugadores y entrenadores.</p>
-                                                        <p>3.- Descuentos en merchandising oficial de la UEFA.</p>
-                                                        <p>4.- Participación en sorteos para asistir a la final en vivo.
-                                                        </p>
-                                                        <p>5.- Acceso a contenido exclusivo detrás de cámaras.</p>
-                                                        <p>6.- Alertas personalizadas de tus equipos favoritos.</p>
-                                                        <p>7.- Acceso a análisis tácticos y resúmenes de partidos.</p>
+                                                    <details class="mt-3">
+                                                        <summary>Ver beneficios</summary>
+                                                        <p>Contenido exclusivo, sorteos y más.</p>
                                                     </details>
 
                                                 </fieldset>
                                             </section>
 
-                                            <!-- ====================== BOTONES ====================== -->
+                                            <!-- BOTONES -->
+                                            <footer class="mt-3 d-flex gap-2 flex-wrap">
 
-                                            <footer>
+                                                <button type="submit" class="btn btn-primary">Suscribirme</button>
 
-                                                <!-- botón submit normal -->
+                                                <button type="submit" formaction="/urgente" formmethod="get"
+                                                    class="btn btn-warning">
+                                                    Noticias Urgentes
+                                                </button>
 
+                                                <button type="reset" class="btn btn-danger">Limpiar</button>
 
-                                                <button type="sbutubmit">Suscribirme Ahora</button>
+                                                <button type="button" class="btn btn-secondary">Ver Tabla</button>
 
-                                                <!-- botón submit con override -->
-                                                <button type="submit" formaction="/urgente" formmethod="get">Noticias
-                                                    Urgentes</button>
-
-                                                <!-- botón reset -->
-                                                <button type="reset">Limpiar Formulario</button>
-
-                                                <!-- botón normal -->
-
-                                                <button type="button">Ver Tabla de Posiciones</button>
                                             </footer>
 
                                         </form>
 
-                                        <!-- aside = contenido complementario -->
-
                                         <aside>
                                             <b>Formulario oficial para fans de la UEFA Champions League.</b>
                                         </aside>
-
-
                                     </section>
-
-
-
                                     <!--PIE DE PAGINA-->
 
                                     <footer class="footer">
@@ -976,13 +952,50 @@
 
                                         <small>© UEFA Champions League</small>
                                     </footer>
+                                    <script>
+                                        function cambiarTema() {
+                                            const body = document.body;
+                                            let tema = body.getAttribute("data-bs-theme");
+
+                                            if (tema === "dark") {
+                                                body.setAttribute("data-bs-theme", "light");
+                                                localStorage.setItem("tema", "light");
+                                            } else {
+                                                body.setAttribute("data-bs-theme", "dark");
+                                                localStorage.setItem("tema", "dark");
+                                            }
+                                        }
+
+                                        // CARGAR TEMA GUARDADO
+                                        window.onload = function () {
+                                            let temaGuardado = localStorage.getItem("tema");
+                                            if (temaGuardado) {
+                                                document.body.setAttribute("data-bs-theme", temaGuardado);
+                                            }
+                                        }
+                                    </script>
+                                    <script
+                                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                                    <script>
+                                        function cambiarTema() {
+                                            let body = document.getElementById("body");
+                                            let tema = body.getAttribute("data-bs-theme");
+
+                                            if (tema === "dark") {
+                                                body.setAttribute("data-bs-theme", "light");
+                                            } else {
+                                                body.setAttribute("data-bs-theme", "dark");
+                                            }
+                                        }
+                                    </script>
 
 </body>
+
+</html>
+
 <!--NOTA TENTATIVA HTML  : 19
  +2 (OK)ADICIONAR FORMULARIO 
  +1 ADICIONAR NAVEGACION DE LOS ENLACES (FALTA)
  +1 (OK)MEJORAR LA SECCION DE NOTICIAS DESTACADAS , TOMAR COMO REFERENCIA LA NOTICIA 1 Y 2
  +1 (OK)MEJORAR LA SECCION DE MOMENTOS DESTACADOS , TOMAR COMO REFERENCIA LOS MOMENTOS DESTACADOS 1,2,3,4
  -->
-
-</html>

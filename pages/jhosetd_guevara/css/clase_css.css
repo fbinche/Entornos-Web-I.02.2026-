@@ -141,7 +141,11 @@ article.card section dl dt + dd {
 }
 
  /** NOTA ACTUAL : 10.5
-15 puntos SELECTORES
+
+CSS
+BS->15
+
+ 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.2
   #5 SELECTORES DE ETIQUETAS HTML 1.5
   #5 SELECTORES DE CLASES 1.5

@@ -1,13 +1,19 @@
-*{
-
+:root {
+    --f1-red: #FF1D27;
+    --f1-gold: #FFD700;
+    --glass: rgba(255, 255, 255, 0.05);
 }
+
+* {}
+
 /*====== ESTILO GENERAL ====== */
 body {
     margin: 8px;
     padding: 8px;
-    font-family: tahoma, sans-serif;
-    background: linear-gradient(135deg, #000000, #141414, #2a2a2a);
     color: #f5f5f5;
+    background: linear-gradient(135deg, #ef7777 0%, #1a1a2e 50%, #16213e 100%);
+    font-family: 'Exo 2', sans-serif;
+    overflow-x: hidden;
 }
 
 /*======HEADER======*/
@@ -22,7 +28,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
-headerp {
+header p {
     color: #ff9999;
 }
 
@@ -47,10 +53,10 @@ fieldset {
 }
 
 legend {
-   font-weight: bold;
-   color: #ff4d4d;
-   text-shadow: 0 0 4px #ff0000;
-   padding: 0 10px;
+    font-weight: bold;
+    color: #ff4d4d;
+    text-shadow: 0 0 4px #ff0000;
+    padding: 0 10px;
 }
 
 
@@ -390,9 +396,11 @@ header h1::after {
     0% {
         box-shadow: 0 0 5px red;
     }
+
     50% {
         box-shadow: 0 0 20px red;
     }
+
     100% {
         box-shadow: 0 0 5px red;
     }
@@ -402,10 +410,109 @@ form {
     animation: brillo 3s infinite;
 }
 
+<<<<<<< HEAD
 
 
 
  /** NOTA ACTUAL : 15 - 2 (Verificar su codigo)
+=======
+/****/
+
+
+.navbar {
+    background: rgba(15, 20, 25, 0.95) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 900;
+    font-size: 2rem !important;
+    background: linear-gradient(45deg, var(--f1-red), var(--f1-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 10px rgba(255, 29, 39, 0.5));
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: all 0.3s;
+    border-radius: 25px;
+}
+
+.nav-link:hover {
+    background: rgba(255, 29, 39, 0.2);
+    color: var(--f1-gold) !important;
+    transform: translateY(-2px);
+}
+
+h1,
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(45deg, #fff, var(--f1-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    background: var(--glass) !important;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--f1-red), var(--f1-gold));
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(255, 29, 39, 0.4);
+    border-color: var(--f1-red);
+}
+
+.btn {
+    background: linear-gradient(45deg, var(--f1-red), var(--f1-gold)) !important;
+    border: none !important;
+    border-radius: 50px !important;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(255, 29, 39, 0.5) !important;
+    color: #000 !important;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+    color: #fff !important;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem !important;
+    }
+}
+
+/** NOTA ACTUAL : 15 
+>>>>>>> 941ae0a7c199ba43eb981bb18652762dd962452d
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
   #5 SELECTORES DE ETIQUETAS HTML 2.5

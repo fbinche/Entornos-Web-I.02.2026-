@@ -1,984 +1,576 @@
 /* ============================================================
-   GERAND UNIVERSAL WIKI — CSS COMPLETO
+   GERAND UNIVERSAL WIKI — clase_css.css (Bootstrap style)
    Alumno: Raymond Diaz
    ============================================================ */
 
-/* ── FUENTES PERSONALIZADAS ── */
+/* ── FUENTES ── */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@300;400;600;700&family=Share+Tech+Mono&display=swap');
 
-/* ── VARIABLES CSS ── */
+/* ── VARIABLES ── */
 :root {
-  --dark: #0d0f14;
-  --steel: #1a1f2e;
-  --gold: #c8a84b;
-  --gold-lt: #e8c96a;
-  --rust: #c0392b;
-  --green: #2e7d32;
-  --cream: #f0e6cc;
-  --muted: #7a8099;
-  --border: rgba(200, 168, 75, 0.3);
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  --font-title: 'Bebas Neue', sans-serif;
-  --font-mono: 'Share Tech Mono', monospace;
-  --font-body: 'Exo 2', sans-serif;
+  --bs-body-bg:         #0d0f14;
+  --bs-body-color:      #f0e6cc;
+  --gw-dark:            #212529;
+  --gw-steel:           #2b3035;
+  --gw-panel:           #343a40;
+  --gw-gold:            #eec40b;
+  --gw-gold-lt:         #6ea8fe;
+  --gw-rust:            #dc3545;
+  --gw-green:           #198754;
+  --gw-cream:           #f8f9fa;
+  --gw-muted:           #adb5bd;
+  --gw-border:          rgba(13,110,253,0.28);
+  --gw-font-title:      'Bebas Neue', sans-serif;
+  --gw-font-mono:       'Share Tech Mono', monospace;
+  --gw-font-body:       'Exo 2', sans-serif;
 }
-
 
 /* ============================================================
-   ANIMACIONES CSS (5 animaciones)
+   ANIMACIONES (5 — requeridas por rúbrica)
    ============================================================ */
 
-/* ANIMACION 1 — Entrada desde arriba */
-@keyframes fadeSlideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* ANIMACION 1 */
+@keyframes gw-slideDown {
+  from { opacity:0; transform:translateY(-28px); }
+  to   { opacity:1; transform:translateY(0);     }
 }
-
-/* ANIMACION 2 — Brillo pulsante en titulos */
-@keyframes glowPulse {
-
-  0%,
-  100% {
-    text-shadow: 0 0 8px rgba(200, 168, 75, 0.4);
-  }
-
-  50% {
-    text-shadow: 0 0 24px rgba(200, 168, 75, 0.9), 0 0 50px rgba(200, 168, 75, 0.3);
-  }
+/* ANIMACION 2 */
+@keyframes gw-glow {
+  0%,100% { text-shadow: 0 0 8px rgba(200,168,75,.4); }
+  50%     { text-shadow: 0 0 22px rgba(200,168,75,.9), 0 0 45px rgba(200,168,75,.25); }
 }
-
-/* ANIMACION 3 — Flotacion suave en imagenes */
-@keyframes tankFloat {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-8px);
-  }
+/* ANIMACION 3 */
+@keyframes gw-float {
+  0%,100% { transform:translateY(0); }
+  50%     { transform:translateY(-8px); }
 }
-
-/* ANIMACION 4 — Shimmer que cruza el header */
-@keyframes shimmerBar {
-  0% {
-    background-position: -200% center;
-  }
-
-  100% {
-    background-position: 200% center;
-  }
+/* ANIMACION 4 */
+@keyframes gw-shimmer {
+  0%   { background-position:-200% center; }
+  100% { background-position: 200% center; }
 }
-
-/* ANIMACION 5 — Borde que cambia de color */
-@keyframes borderMarch {
-  0% {
-    border-color: var(--gold);
-  }
-
-  33% {
-    border-color: var(--rust);
-  }
-
-  66% {
-    border-color: var(--green);
-  }
-
-  100% {
-    border-color: var(--gold);
-  }
+/* ANIMACION 5 */
+@keyframes gw-border {
+  0%  { border-color:var(--gw-gold); }
+  33% { border-color:var(--gw-rust); }
+  66% { border-color:var(--gw-green);}
+  100%{ border-color:var(--gw-gold); }
 }
-
 
 /* ============================================================
    1. SELECTOR UNIVERSAL
    ============================================================ */
-* {
+*, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
-
 /* ============================================================
-   2. SELECTORES DE ETIQUETAS HTML (5)
+   2. ETIQUETAS HTML (5)
    ============================================================ */
-
-/* ETIQUETA 1 — body */
 body {
-  font-family: var(--font-body);
-  background: var(--dark);
-  color: var(--cream);
-  border: 4px solid var(--gold);
+  background-color: var(--gw-dark);
+  color: var(--gw-cream);
   min-height: 100vh;
+  background-image: repeating-linear-gradient(
+    0deg, transparent, transparent 40px,
+    rgba(200,168,75,.03) 40px, rgba(200,168,75,.03) 41px
+  );
 }
-
-/* ETIQUETA 2 — nav */
 nav {
-  background: var(--steel);
-  border-bottom: 2px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  background-color: var(--gw-steel) !important;
+  border-bottom: 2px solid var(--gw-border);
 }
-
-/* ETIQUETA 3 — a */
 a {
-  color: var(--gold);
+  color: var(--gw-gold);
   text-decoration: none;
-  font-family: var(--font-mono);
-  transition: color 0.3s ease;
+  transition: color .3s, letter-spacing .2s;
 }
-
-/* ETIQUETA 4 — p */
 p {
-  color: var(--cream) !important;
-  line-height: 1.7;
-  font-size: 0.95rem;
+  color: var(--gw-cream) !important;
+  line-height: 1.8;
+  font-size: .95rem;
 }
-
-/* ETIQUETA 5 — h1, h2, h3 */
-h1,
-h2,
-h3 {
-  font-family: var(--font-title);
-  color: var(--gold);
-  letter-spacing: 4px;
-  text-transform: uppercase;
+h1,h2,h3,h4,h5,h6 {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  color: var(--gw-cream);
+  letter-spacing: .5px;
+  text-transform: none;
+  font-weight: 700;
 }
-
 
 /* ============================================================
-   3. SELECTORES DE CLASES (5)
+   3. CLASES PROPIAS (5)
    ============================================================ */
-
-/* CLASE 1 — .header */
-.header {
-  background: linear-gradient(135deg, var(--steel) 0%, #111827 100%);
-  border: 2px solid var(--gold);
-  height: 90px;
+.gw-hero {
+  background: linear-gradient(135deg, #212529 0%, #2b3035 60%, #343a40 100%);
+  border-bottom: 1px solid var(--gw-border);
+  min-height: 280px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: var(--font-title);
-  color: var(--gold);
-  letter-spacing: 6px;
-  font-size: 2rem;
   position: relative;
   overflow: hidden;
-  animation: fadeSlideDown 0.7s ease both;
+  animation: gw-slideDown .7s ease both;
 }
-
-/* CLASE 2 — .section */
-.section {
-  background: var(--steel);
-  border: 2px solid var(--border);
-  min-height: 20vh;
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  animation: borderMarch 6s linear infinite;
+.gw-section {
+  background-color: var(--gw-steel);
+  border-top: 1px solid var(--gw-border);
+  border-bottom: 1px solid var(--gw-border);
+  animation: gw-border 7s linear infinite;
 }
-
-/* CLASE 3 — .article */
-.article {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 120px;
-  flex-direction: column;
-  padding: 16px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+.gw-card {
+  background-color: rgba(255,255,255,.04) !important;
+  border: 1px solid var(--gw-border) !important;
+  color: var(--gw-cream);
+  transition: transform .3s, box-shadow .3s, border-color .3s;
 }
-
-/* CLASE 4 — .card */
-.card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background: var(--steel);
-  border: 2px solid var(--border);
-  align-items: center;
-  padding: 28px;
-  gap: 12px;
+.gw-footer {
+  background: linear-gradient(135deg, var(--gw-dark), var(--gw-steel));
+  border-top: 3px solid var(--gw-gold);
+  font-family: var(--gw-font-mono);
 }
-
-/* CLASE 5 — .aside */
-.aside {
-  background: rgba(200, 168, 75, 0.05);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
+.gw-brand {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  color: var(--gw-cream) !important;
+  font-size: 1.35rem;
+  letter-spacing: .5px;
+  text-transform: none;
+  font-weight: 700;
 }
-
 
 /* ============================================================
-   4. SELECTORES DE IDENTIFICADORES (3)
+   4. IDENTIFICADORES (3)
    ============================================================ */
-
-/* ID 1 — ya existe en el HTML: id="acontecimientos_trama" */
-#acontecimientos_trama {
-  background: linear-gradient(160deg, #1a0d0d, #2a1010);
-  border: 3px solid var(--rust);
-  border-radius: 6px;
-  padding: 32px;
+#gw-navbar {
+  background-color: var(--gw-dark) !important;
+  border-bottom: 3px solid var(--gw-gold);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
-
-/* ID 2 — agrega id="wiki-nav" al <nav> en el HTML */
-#wiki-nav {
-  background: var(--dark);
-  border-bottom: 3px solid var(--gold);
-  padding: 6px 0;
-  text-align: center;
+#gw-personajes {
+  background: linear-gradient(160deg,#1a0d0d,#2a1010);
+  border: 2px solid var(--gw-rust);
+  border-radius: .5rem;
+  padding: 2rem;
 }
-
-/* ID 3 — agrega id="wiki-footer" al <footer class="card"> en el HTML */
-#wiki-footer {
-  background: linear-gradient(135deg, var(--dark), var(--steel));
-  border-top: 3px solid var(--gold);
-  color: var(--muted);
-  padding: 32px;
-  font-size: 0.85rem;
+#gw-footer {
+  background: linear-gradient(135deg, var(--gw-dark), var(--gw-steel));
+  border-top: 3px solid var(--gw-gold);
 }
-
 
 /* ============================================================
-   5. SELECTORES COMBINADORES (2)
+   5. COMBINADORES (2)
    ============================================================ */
-
-/* COMBINADOR 1 — Descendiente: <a> dentro de <nav> */
 nav ul li {
   list-style: none;
-  display: inline-block;
-  border-right: 1px solid var(--border);
-  font-family: var(--font-mono);
+  font-family: var(--gw-font-mono);
 }
-
-/* COMBINADOR 2 — Hijo directo: <p> hijo directo de .section */
-.section>p {
-  color: var(--cream) !important;
-  font-size: 1rem;
-  border-left: 3px solid var(--gold);
+.gw-section > .container > p {
+  border-left: 3px solid var(--gw-gold);
   padding-left: 12px;
+  color: var(--gw-cream) !important;
 }
-
 
 /* ============================================================
-   6. SELECTORES LOGICOS MODERNOS (2)
+   6. LÓGICOS MODERNOS (2)
    ============================================================ */
-
-/* LOGICO 1 — :is() agrupa selectores de secciones */
-:is(.first-section, .second-section, .third-section, .fourth-section) {
-  padding: 32px;
-  border-radius: 2px;
-  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.3);
+:is(.gw-bg-green, .gw-bg-red, .gw-bg-dark) {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  box-shadow: inset 0 0 60px rgba(0,0,0,.35);
 }
-
-/* LOGICO 2 — :not() aplica estilo a articulos que no son el ultimo */
-.article:not(:last-child) {
-  border-bottom: 1px solid rgba(200, 168, 75, 0.1);
-  margin-bottom: 4px;
+.gw-card:not(:last-child) {
+  margin-bottom: 2px;
   position: relative;
 }
 
-
 /* ============================================================
-   7. SELECTORES PSEUDO CLASES (2)
+   7. PSEUDO CLASES (2)
    ============================================================ */
-
-/* PSEUDO CLASE 1 — :hover en .article (elevacion al pasar el cursor) */
-.article:hover {
+.gw-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--gold);
-  border-color: var(--gold);
+  box-shadow: 0 14px 36px rgba(0,0,0,.55), 0 0 0 1px var(--gw-gold) !important;
+  border-color: var(--gw-gold) !important;
 }
-
-/* PSEUDO CLASE 2 — :nth-child en filas de tabla */
-.table tbody tr:nth-child(even) td {
-  background: rgba(200, 168, 75, 0.06);
-  color: var(--gold-lt);
-  font-style: italic;
+.table > tbody > tr:nth-child(even) > td {
+  background-color: rgba(200,168,75,.06);
+  color: var(--gw-gold-lt);
 }
-
 
 /* ============================================================
-   8. SELECTORES PSEUDO ELEMENTOS (2)
+   8. PSEUDO ELEMENTOS (2)
    ============================================================ */
-
-/* PSEUDO ELEMENTO 1 — ::before en .header (efecto shimmer) */
-.header::before {
+.gw-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, transparent 0%, rgba(200, 168, 75, 0.15) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(200,168,75,.12) 50%, transparent 100%);
   background-size: 200% 100%;
-  animation: shimmerBar 3s linear infinite;
+  animation: gw-shimmer 3.5s linear infinite;
   pointer-events: none;
 }
-
-/* PSEUDO ELEMENTO 2 — ::after en nav li a (subrayado deslizante) */
-nav ul li a::after {
+.navbar-nav .nav-link::after {
   content: '';
   display: block;
   height: 2px;
-  width: 0%;
-  background: var(--gold);
-  transition: width 0.3s ease;
+  width: 0;
+  background: var(--gw-gold);
+  transition: width .3s;
   margin: 0 auto;
 }
 
-
 /* ============================================================
-   9. SELECTORES DE ATRIBUTOS AVANZADOS (2)
+   9. ATRIBUTOS AVANZADOS (2)
    ============================================================ */
-
-/* ATRIBUTO 1 — [type^="t"] inputs cuyo type empieza con "t" (text) */
 input[type^="t"] {
-  border-left: 3px solid var(--gold);
-  background: rgba(200, 168, 75, 0.05);
-  color: var(--cream);
-  padding: 0.65rem 0.85rem;
+  border-left: 3px solid var(--gw-gold) !important;
+  background-color: rgba(200,168,75,.05) !important;
+  color: var(--gw-cream) !important;
 }
-
-/* ATRIBUTO 2 — [href*="youtube"] links que contienen youtube en su href */
 a[href*="youtube"] {
-  color: var(--rust);
-  font-weight: bold;
+  color: #ff4455 !important;
+  font-weight: 700;
   text-decoration: underline dotted;
-  letter-spacing: 1px;
 }
-
 
 /* ============================================================
-   10. SELECTORES COMBINADOS (6)
+   10. COMBINADOS (6)
    ============================================================ */
-
-/* COMBINADO 1 — clase + pseudo elemento: titulo h1 dentro de .header con glowPulse */
-.header h1 {
-  font-family: var(--font-title);
-  color: var(--gold);
-  animation: glowPulse 3s ease-in-out infinite;
-  letter-spacing: 8px;
+.gw-hero h1 {
+  font-family: var(--gw-font-title);
+  color: var(--gw-gold);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: .5px;
+  animation: none;
+  position: relative;
 }
-
-/* COMBINADO 2 — tag + clase + pseudo clase: hover en <a> dentro del nav */
 nav ul li a:hover {
-  color: var(--gold);
-  background: rgba(200, 168, 75, 0.08);
+  color: var(--gw-gold) !important;
+  background-color: rgba(200,168,75,.08);
   letter-spacing: 3px;
+  text-decoration: none;
 }
-
-/* COMBINADO 3 — clase + pseudo clase + pseudo elemento: subrayado activo en hover del nav */
 nav ul li a:hover::after {
   width: 80%;
-  background-color: var(--gold);
-  height: 2px;
+  background-color: var(--gw-gold);
 }
-
-/* COMBINADO 4 — tag + atributo + pseudo clase: :focus en inputs de texto y email */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(200, 168, 75, 0.15);
+  border-color: var(--gw-gold) !important;
+  box-shadow: 0 0 0 3px rgba(200,168,75,.15) !important;
   outline: none;
 }
-
-/* COMBINADO 5 — clase + pseudo clase nth-child: flotacion solo en articulos impares de .services */
-.services .article:nth-child(odd) {
-  animation: tankFloat 4s ease-in-out infinite;
-  border-color: rgba(200, 168, 75, 0.5);
-  background: rgba(200, 168, 75, 0.04);
+.gw-row-serv .gw-card:nth-child(odd) {
+  animation: gw-float 4.5s ease-in-out infinite;
+  border-color: rgba(200,168,75,.5) !important;
 }
-
-/* COMBINADO 6 — id + clase: .section dentro de #acontecimientos_trama */
-#acontecimientos_trama .section {
-  background: rgba(192, 57, 43, 0.08);
-  border-left: 4px solid var(--rust);
-  padding-left: 20px;
-  border-radius: 0 4px 4px 0;
+#gw-personajes .gw-card {
+  border-left: 4px solid var(--gw-rust) !important;
+  border-radius: 0 .4rem .4rem 0 !important;
+  background-color: rgba(192,57,43,.06) !important;
 }
-
 
 /* ============================================================
-   ESTILOS COMPLEMENTARIOS
+   SECCIONES — fondos
+   ============================================================ */
+.gw-bg-green { background: linear-gradient(160deg,#0d1f12,#1a3320); }
+.gw-bg-red   { background: linear-gradient(160deg,#1a0d0d,#2a1010); }
+.gw-bg-dark  { background: linear-gradient(160deg,var(--gw-dark),var(--gw-steel)); }
+
+/* ============================================================
+   NAVBAR overrides Bootstrap
+   ============================================================ */
+.navbar-nav .nav-link {
+  font-family: var(--gw-font-mono);
+  font-size: .78rem;
+  letter-spacing: 2px;
+  text-transform: none;
+  color: var(--gw-muted) !important;
+  padding: 12px 18px !important;
+  transition: color .3s, letter-spacing .2s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active { color: var(--gw-gold) !important; }
+
+.navbar-toggler { border-color: var(--gw-gold); }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28200,168,75,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.dropdown-menu {
+  background-color: var(--gw-steel);
+  border: 1px solid var(--gw-border);
+}
+.dropdown-item {
+  font-family: var(--gw-font-mono);
+  font-size: .8rem;
+  color: var(--gw-cream);
+  transition: background .2s, color .2s;
+}
+.dropdown-item:hover { background-color: rgba(200,168,75,.1); color: var(--gw-gold); }
+.dropdown-divider { border-color: var(--gw-border); }
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.gw-card .card-footer {
+  background-color: rgba(255,255,255,.02) !important;
+  border-top: 1px solid var(--gw-border) !important;
+}
+.gw-card-img-top { height: 190px; object-fit: cover; }
+.gw-card-h-gold {
+  background-color: rgba(200,168,75,.1);
+  border-bottom: 1px solid var(--gw-border);
+  color: var(--gw-gold);
+  font-family: var(--gw-font-mono);
+  font-size: .73rem;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+.gw-card-h-rust {
+  background-color: rgba(192,57,43,.18);
+  border-bottom: 1px solid rgba(192,57,43,.4);
+  color: #e74c3c;
+  font-family: var(--gw-font-mono);
+  font-size: .73rem;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+/* ============================================================
+   COMPONENTES BOOTSTRAP overrides
    ============================================================ */
 
-.main {
-  background: transparent;
-}
-
-.first-section {
-  background: linear-gradient(160deg, #0d1f12, #1a3320);
-  border-color: rgba(46, 125, 50, .5);
-}
-
-.second-section {
-  background: linear-gradient(160deg, #141a0d, #1e2f14);
-  border-color: rgba(67, 160, 71, .4);
-}
-
-.third-section {
-  background: linear-gradient(160deg, #1a0d0d, #2a1010);
-  border-color: rgba(192, 57, 43, .4);
-}
-
-.fourth-section {
-  background: linear-gradient(160deg, var(--dark), var(--steel));
-  animation: none;
-}
-
-.article img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  animation: tankFloat 5s ease-in-out infinite;
-  transition: transform 0.3s ease;
-}
-
-.article img:hover {
-  animation-play-state: paused;
-  transform: scale(1.04);
-}
-
-/* GRIDS */
-.stats,
-.stats2,
-.clients,
-.columnas_2,
-.columnas_3,
-.columnas_4,
-.columnas_5,
-.columnas_6,
-.columnas_7,
-.columnas_8,
-.columnas_10,
-.services {
-  display: grid;
-  gap: 20px;
-}
-
-.stats {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.stats2 {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.clients {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.columnas_2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.columnas_3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.columnas_4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.columnas_5 {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.columnas_6 {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.columnas_7 {
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.columnas_8 {
-  grid-template-columns: repeat(8, 1fr);
-}
-
-.columnas_10 {
-  grid-template-columns: repeat(10, 1fr);
-}
-
-.services {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.two-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.two-columns .section:nth-of-type(1) {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.two-columns .section:nth-of-type(2) {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.two-columns .section:nth-of-type(3) {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-.two-columns .form {
-  grid-column: 2;
-  grid-row: 1/span 3;
-}
-
-/* FORMULARIO */
-.form-wrapper {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-.form-header {
-  text-align: center;
-  margin-bottom: 2rem;
-  animation: fadeSlideDown 0.8s ease both;
-}
-
-.form-header::before,
-.form-header::after {
-  content: '';
-  display: block;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  margin: 0.5rem 0;
-}
-
-.form-header .label {
-  font-family: var(--font-mono);
-  font-size: .75rem;
-  color: var(--rust);
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-.form-header h2 {
-  font-family: var(--font-title);
-  font-size: 2.8rem;
-  letter-spacing: 6px;
-  color: var(--gold);
-  line-height: 1;
-  animation: glowPulse 3s ease-in-out infinite;
-}
-
-.form-header p {
+/* List group */
+.list-group-item {
+  background-color: rgba(255,255,255,.03) !important;
+  border-color: var(--gw-border) !important;
+  color: var(--gw-cream);
+  font-family: var(--gw-font-mono);
   font-size: .85rem;
-  color: var(--muted) !important;
-  font-family: var(--font-mono);
+  transition: background .2s;
 }
+.list-group-item:hover { background-color: rgba(200,168,75,.08) !important; color: var(--gw-gold); }
 
-.form-card {
-  background: var(--steel);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  padding: 2.4rem;
-  position: relative;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, .04) inset, var(--shadow);
-}
-
-.form-card::before,
-.form-card::after {
-  content: '';
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-color: var(--gold);
-  border-style: solid;
-  opacity: .6;
-}
-
-.form-card::before {
-  top: 8px;
-  left: 8px;
-  border-width: 2px 0 0 2px;
-}
-
-.form-card::after {
-  bottom: 8px;
-  right: 8px;
-  border-width: 0 2px 2px 0;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: .4rem;
-}
-
-.form-group.full {
-  grid-column: 1/-1;
-}
-
-label {
-  font-family: var(--font-mono);
-  font-size: .72rem;
+/* Nav tabs */
+.gw-tabs { border-bottom: 2px solid var(--gw-border); }
+.gw-tabs .nav-link {
+  background: transparent;
+  border: none;
+  color: var(--gw-muted);
+  font-family: var(--gw-font-mono);
+  font-size: .78rem;
   letter-spacing: 2px;
-  color: var(--gold);
-  text-transform: uppercase;
+  text-transform: none;
+  padding: 10px 22px;
+  transition: color .25s;
+}
+.gw-tabs .nav-link:hover { color: var(--gw-gold); }
+.gw-tabs .nav-link.active {
+  background: transparent !important;
+  color: var(--gw-gold) !important;
+  border-bottom: 2px solid var(--gw-gold) !important;
 }
 
-label span.required {
-  color: var(--rust);
-  margin-left: 2px;
+/* Accordion */
+.accordion-item {
+  background-color: var(--gw-panel);
+  border: 1px solid var(--gw-border);
+  margin-bottom: 4px;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-textarea {
-  background: rgba(0, 0, 0, .35);
-  border: 1px solid rgba(200, 168, 75, .2);
-  border-radius: 2px;
-  color: var(--cream);
-  font-family: var(--font-body);
-  font-size: .9rem;
-  padding: .65rem .85rem;
-  width: 100%;
-  transition: border-color .25s, box-shadow .25s;
-  outline: none;
-}
-
-select {
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c8a84b' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right .9rem center;
-  cursor: pointer;
-}
-
-select option {
-  background: var(--steel);
-}
-
-textarea {
-  resize: vertical;
-  min-height: 110px;
-}
-
-.checkbox-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .6rem 1.2rem;
-  margin-top: .2rem;
-}
-
-.checkbox-item {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  cursor: pointer;
+.accordion-button {
+  background-color: rgba(200,168,75,.07) !important;
+  color: var(--gw-gold) !important;
+  font-family: var(--gw-font-mono);
   font-size: .85rem;
-  color: var(--cream);
+  letter-spacing: 1px;
+  box-shadow: none !important;
 }
+.accordion-button:not(.collapsed) { background-color: rgba(200,168,75,.15) !important; }
+.accordion-button::after { filter: invert(1) sepia(1) saturate(3) hue-rotate(10deg); }
+.accordion-body { background-color: var(--gw-panel); color: var(--gw-cream); font-size: .9rem; }
 
-.checkbox-item input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  accent-color: var(--gold);
-  cursor: pointer;
-}
-
-.radio-group {
-  display: flex;
-  gap: 1.4rem;
-  flex-wrap: wrap;
-  margin-top: .2rem;
-}
-
-.radio-item {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  cursor: pointer;
+/* Alert */
+.alert-gw {
+  background-color: rgba(200,168,75,.1);
+  border: 1px solid var(--gw-border);
+  color: var(--gw-cream);
+  font-family: var(--gw-font-mono);
   font-size: .85rem;
-  color: var(--cream);
 }
 
-.radio-item input[type="radio"] {
-  accent-color: var(--rust);
+/* Progress */
+.progress {
+  background-color: rgba(255,255,255,.07);
+  height: 8px;
 }
 
-input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 4px;
-  background: rgba(200, 168, 75, .2);
-  border-radius: 2px;
-  outline: none;
-  border: none;
-  padding: 0;
-  margin-top: .4rem;
-}
+/* Ratio video */
+.ratio { border: 2px solid var(--gw-border); border-radius: .4rem; }
 
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--gold);
-  cursor: pointer;
-  box-shadow: 0 0 6px rgba(200, 168, 75, .5);
-  transition: transform .2s;
-}
+/* Badge overrides */
+.badge { font-family: var(--gw-font-mono); letter-spacing: 1px; }
 
-input[type="range"]::-webkit-slider-thumb:hover {
-  transform: scale(1.3);
-}
+/* HR */
+hr { border-color: var(--gw-border); opacity: 1; }
 
-.range-labels {
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--font-mono);
-  font-size: .68rem;
-  color: var(--muted);
-  margin-top: .3rem;
+/* Divisor decorativo */
+.gw-divider {
+  width: 80px; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gw-gold), transparent);
+  margin: 12px auto 0;
 }
-
-.divider {
-  border: none;
-  border-top: 1px solid rgba(200, 168, 75, .15);
-  margin: 1.6rem 0;
-  position: relative;
-}
-
-.divider span {
-  position: absolute;
-  top: -.6rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--steel);
-  padding: 0 .6rem;
-  font-family: var(--font-mono);
-  font-size: .65rem;
-  color: var(--rust);
+.gw-subtitle {
+  font-family: var(--gw-font-mono);
+  color: var(--gw-muted) !important;
   letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
-.btn-submit {
-  display: block;
-  width: 100%;
-  padding: .9rem;
-  margin-top: 1.8rem;
+/* Jumbotron propio */
+.gw-jumbotron {
+  background-color: rgba(200,168,75,.06);
+  border: 1px solid var(--gw-border);
+  border-radius: .5rem;
+}
+
+/* Imágenes */
+.gw-img {
+  border: 1px solid var(--gw-border);
+  border-radius: .4rem;
+  transition: transform .3s, box-shadow .3s;
+}
+.gw-img:hover { transform: scale(1.03); box-shadow: 0 10px 30px rgba(0,0,0,.55); }
+.gw-gif { animation: gw-float 4.5s ease-in-out infinite; border-radius: .3rem; }
+
+/* col-1/5 responsive */
+.col-gw-fifth { flex: 0 0 auto; width: 20%; }
+@media (max-width: 991.98px) { .col-gw-fifth { width: 50%; } }
+@media (max-width: 575.98px)  { .col-gw-fifth { width: 100%; } }
+
+/* ============================================================
+   BOTONES
+   ============================================================ */
+.btn-gw {
   background: transparent;
-  border: 2px solid var(--gold);
-  color: var(--gold);
-  font-family: var(--font-title);
-  font-size: 1.3rem;
+  border: 2px solid var(--gw-gold);
+  color: var(--gw-gold);
+  font-family: var(--gw-font-title);
+  font-size: 1.15rem;
   letter-spacing: 5px;
-  text-transform: uppercase;
-  cursor: pointer;
+  text-transform: none;
   position: relative;
   overflow: hidden;
   transition: color .3s;
 }
-
-.btn-submit::before {
+.btn-gw::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--gold);
+  background: var(--gw-gold);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform .35s ease;
   z-index: 0;
 }
+.btn-gw:hover          { color: var(--gw-dark); }
+.btn-gw:hover::before  { transform: scaleX(1); }
+.btn-gw > span         { position: relative; z-index: 1; }
 
-.btn-submit:hover {
-  color: var(--dark);
-}
-
-.btn-submit:hover::before {
-  transform: scaleX(1);
-}
-
-.btn-submit span {
-  position: relative;
-  z-index: 1;
-}
-
-.form-note {
-  text-align: center;
-  margin-top: 1rem;
-  font-family: var(--font-mono);
-  font-size: .68rem;
-  color: var(--muted) !important;
-}
-
-/* TABLA */
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  background: var(--steel);
-  border: 2px solid var(--border);
-}
-
-.table thead tr {
-  background: rgba(200, 168, 75, .15);
-}
-
-.table th {
-  background: rgba(200, 168, 75, .2);
-  border: 1px solid var(--border);
-  padding: 16px;
-  text-align: center;
-  font-family: var(--font-mono);
-  color: var(--gold);
+.btn-gw-outline {
+  border: 1px solid var(--gw-gold);
+  color: var(--gw-gold);
+  font-family: var(--gw-font-mono);
+  font-size: .8rem;
   letter-spacing: 2px;
-  font-size: .75rem;
+  transition: background .3s, color .3s;
+}
+.btn-gw-outline:hover { background-color: var(--gw-gold); color: var(--gw-dark); }
+
+.btn-gw-rust {
+  background-color: var(--gw-rust);
+  border: 1px solid var(--gw-rust);
+  color: #fff;
+  font-family: var(--gw-font-mono);
+  font-size: .8rem;
+  letter-spacing: 2px;
+  transition: background .3s;
+}
+.btn-gw-rust:hover { background-color: #a93226; color: #fff; }
+
+/* ============================================================
+   FORMULARIO overrides Bootstrap
+   ============================================================ */
+.form-label {
+  font-family: var(--gw-font-mono);
+  font-size: .72rem;
+  letter-spacing: 2px;
+  color: var(--gw-gold);
   text-transform: uppercase;
 }
-
-.table tbody tr {
-  transition: background .2s;
+.form-control,
+.form-select {
+  background-color: rgba(0,0,0,.38) !important;
+  border: 1px solid rgba(200,168,75,.22) !important;
+  color: var(--gw-cream) !important;
+  border-radius: 2px;
+  transition: border-color .25s, box-shadow .25s;
 }
-
-.table tbody tr:hover {
-  background: rgba(200, 168, 75, .08);
+.form-control::placeholder { color: var(--gw-muted) !important; }
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--gw-gold) !important;
+  box-shadow: 0 0 0 3px rgba(200,168,75,.14) !important;
 }
+.form-select option { background-color: var(--gw-steel); }
+.form-check-input  { accent-color: var(--gw-gold); }
+.form-check-label  { color: var(--gw-cream); font-size: .87rem; }
+.form-range        { accent-color: var(--gw-gold); }
 
-.table td {
-  border: 1px solid rgba(200, 168, 75, .1);
-  padding: 14px;
-  text-align: center;
-  color: var(--cream);
+.gw-range-labels {
+  font-family: var(--gw-font-mono);
+  font-size: .68rem;
+  color: var(--gw-muted) !important;
+  margin-top: 4px;
 }
-
-/* MISCE */
-.picture {
-  display: block;
-  width: 100%;
+.gw-form-card {
+  background-color: var(--gw-steel);
+  border: 1px solid var(--gw-border);
+  border-radius: .4rem;
+  box-shadow: 0 24px 64px rgba(0,0,0,.6);
+  position: relative;
 }
-
-.picture img {
-  width: 100%;
-  height: auto;
-  display: block;
+.gw-form-card::before,
+.gw-form-card::after {
+  content: '';
+  position: absolute;
+  width: 18px; height: 18px;
+  border-color: var(--gw-gold); border-style: solid; opacity: .55;
 }
+.gw-form-card::before { top:8px;    left:8px;  border-width:2px 0 0 2px; }
+.gw-form-card::after  { bottom:8px; right:8px; border-width:0 2px 2px 0; }
 
-.card figure {
-  margin: 0;
-}
+.gw-form-note { color: var(--gw-muted) !important; font-family: var(--gw-font-mono); }
 
-.card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.sin_espacio {
-  display: flex !important;
-}
-
-.button {
-  background: transparent;
-  border: 2px solid var(--gold);
-  color: var(--gold);
-  font-family: var(--font-title);
-  font-size: 1.1rem;
-  letter-spacing: 4px;
-  height: 60px;
-  width: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background .3s, color .3s, transform .2s;
-}
-
-.button:hover {
-  background: var(--gold);
-  color: var(--dark);
-  transform: scale(1.04);
-}
-
-figure {
-  margin: 0;
-}
-
-#id444 {
-  background-color: var(--dark);
-}
-
-/* RESPONSIVE */
+/* ============================================================
+   RESPONSIVE EXTRA
+   ============================================================ */
 @media (max-width: 768px) {
-
-  .columnas_2,
-  .stats,
-  .two-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .two-columns .form {
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-  }
-
-  nav ul li a {
-    padding: 10px 14px;
-    font-size: .7rem;
-  }
-
-  .header {
-    font-size: 1.4rem;
-    height: 70px;
-  }
-
-  .services {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .gw-hero { min-height: 220px; }
+  .gw-hero h1 { font-size: 2rem; letter-spacing: 4px; }
+  .gw-subtitle { font-size: .82rem; }
 }
 
-@media (max-width: 520px) {
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
 
-  .form-group.full {
-    grid-column: 1;
-  }
-}
+/* Ajuste extra: apariencia más Bootstrap */
+.card, .gw-card { border-radius: .75rem !important; box-shadow: 0 .5rem 1rem rgba(0,0,0,.12); }
+.btn, .form-control, .form-select { border-radius: .5rem !important; }
+.navbar, .gw-jumbotron, .gw-form-card { border-radius: .75rem; }
 
-/** NOTA ACTUAL : 15
+
+
+/** NOTA ACTUAL : }
+CSS->15+1
+BS ->15
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
   #5 SELECTORES DE ETIQUETAS HTML 2.5
@@ -990,7 +582,7 @@ figure {
   #2 SELECTORES PSEUDO ELEMENTOS 1
   #2 SELECTORES ATRIBUTOS AVANZADOS 1
   #6 SELECTORES COMBINADOS 3
-3 puntos ANIMACIONES
+3 puntos ANIMACIONES 1
 2 puntos SUSTENTACION/PARTICIPACION EN CLASE
 NOTA : Pueden usar cualquier propiedad un minimo de 3 por selector
 RECOMENDACION: Seria bueno comentar cada punto y tomar en cuenta la 3 propiedades por cada selector

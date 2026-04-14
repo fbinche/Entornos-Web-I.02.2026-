@@ -15,9 +15,9 @@
    SELECTORES DE ETIQUETA (5)
 ===================================== */
 body{
-    background: #f4f4f4;
+    background: hsl(54, 100%, 82%);
 
-    color: #222;
+    color: #ffdfb4;
 
     line-height: 1.6;
 
@@ -39,7 +39,7 @@ p{
 
     margin-bottom: 10px;
 
-    color: #333;
+    color: #000000;
 }
 
 section{
@@ -70,7 +70,7 @@ button{
 .header{
     background: #0b4f8a;
 
-    color: white;
+    color: rgb(0, 0, 0);
 
     padding: 20px;
 
@@ -86,11 +86,11 @@ button{
 }
 
 .card{
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
 
     padding: 10px;
 
-    background: #fff;
+    background: #000000;
 
     transition: 0.3s;
 }
@@ -119,7 +119,7 @@ button{
    SELECTORES ID (3)
 ===================================== */
 #inicio{
-    background: #eaf6ff;
+    background: #90cfff;
 
     border-radius: 10px;
 
@@ -129,7 +129,7 @@ button{
 }
 
 #coleccion{
-    background: #fff3e6;
+    background: #90cfff;
 
     border-radius: 10px;
 
@@ -137,7 +137,7 @@ button{
 }
 
 #destacados{
-    background: #f0fff0;
+    background: #90cfff;
 
     border-radius: 10px;
 
@@ -300,9 +300,9 @@ section.productos article.card{
 }
 
 .card footer button{
-    background: green;
+    background: rgb(31, 161, 248);
 
-    color: rgb(205, 87, 255);
+    color: rgb(244, 243, 245);
 
     padding: 6px;
 
@@ -363,7 +363,7 @@ section#destacados .card h3{
 
         opacity: 1;
 
-        background-color: cyan;
+        background-color: rgb(173, 239, 248);
     }
 }
 
@@ -412,7 +412,86 @@ button:hover{
     border-radius: 5px;
 }
 
- /** NOTA ACTUAL : 15
+/* 🌞 MODO CLARO */
+:root {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #000000;
+
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+
+    --bs-card-bg: #ffffff;
+    --bs-card-color: #000000;
+}
+
+/* 🌙 MODO OSCURO */
+[data-bs-theme="dark"] {
+    --bs-body-bg: #121212;
+    --bs-body-color: #f1f1f1;
+
+    --bs-primary: #4dabf7;
+    --bs-secondary: #adb5bd;
+
+    --bs-card-bg: #1e1e1e;
+    --bs-card-color: #ffffff;
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    transition: all 0.3s;
+}
+
+/* Cards */
+.card {
+    background-color: var(--bs-card-bg);
+    color: var(--bs-card-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border: none;
+}
+
+/* Links */
+a {
+    color: var(--bs-primary);
+}
+
+.boton-tema {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    z-index: 999;
+
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.boton-tema:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+ /** NOTA ACTUAL :
+ CSS-> 17 + 2PARTICIPACION
+ BS -> 15
 15 puntos SELECTORES
   #1 SELECTOR UNIVERSAL 0.5
   #5 SELECTORES DE ETIQUETAS HTML 2.5

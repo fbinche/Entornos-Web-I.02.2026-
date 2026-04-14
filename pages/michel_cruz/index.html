@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <title>Maqueta Semántica</title>
   
- <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="styles.css">
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
     
 
@@ -15,114 +18,446 @@
 
 <body>
 
-    <p>p1</p>
-    <p style="color: aqua;" >p2</p>
-    <p style="color: brown;">p3</p>
+
+ 
+  
+  <section class="navbar navbar-expand-lg navbar-rosas">
+    <section class="container-fluid">
+      
+      
+      <a class="navbar-brand nombre-sitio" href="#">Rosas & Espinas</a>
+
+      
+      <section class="d-flex align-items-center ms-auto">
+        <!-- Carrito como imagen -->
+        <a href="#" class="nav-link">
+          <img src="img/carrito.png" alt="Carrito" class="icono-carrito">
+        </a>
+        
+       
+        <a href="#" class="nav-link">
+          <img src="img/elegante.jpg" alt="Usuario" class="usuario-img rounded-circle">
+        </a>
+      </section>
+    </section>
+  </section>
 
 
-    <header class="header">
-        <h1>Rosas y Espinas</h1> <img src="img/elegante.jpg" alt="avatar perfil" class="avatar">
 
-        <nav aria-label="Servicios principales">
 
-            <ul>
 
-                <li>
-                    <a href="#inicio">
-                        <span class="icon" aria-hidden="true">🧾</span>
-                        <span>Inicio</span>
-                    </a>
-                </li>
-                <!--Poner la descripcion de tu enlace , pero si esta correcto-->
-                <li>
-                    <a href="#productos_destacados">
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Productos destacados</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#productos_premium">
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Productos Premium</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#productos_top">
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Productos Top</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#formulario">
-                        <span class="icon" aria-hidden="true">🧳</span>
-                        <span>Formulario</span>
-                    </a>
-                </li>
 
+   <header>
+  <nav class="navbar navbar-expand-lg navbar-rosas">
+    <section class="container-fluid">
+      <!-- Nombre del sitio -->
+    
+      <!-- Botón responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuRosas" aria-controls="menuRosas" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú principal -->
+      <section class="collapse navbar-collapse" id="menuRosas">
+        <ul class="navbar-nav ms-auto">
+
+          <!-- Inicio -->
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+
+          <!-- Quiénes somos -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#quienes_somos" role="button" data-bs-toggle="dropdown">Quiénes Somos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#productos_destacados">Historia</a></li>
+              <li><a class="dropdown-item" href="#productos_destacados">Misión</a></li>
+              <li><a class="dropdown-item" href="#productos_destacados">Visión</a></li>
             </ul>
+          </li>
 
-        </nav>
-    </header>
+          <!-- Productos -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#productos_destacados" role="button" data-bs-toggle="dropdown">Productos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#productos_destacados">Suspiro Carmesí</a></li>
+              <li><a class="dropdown-item" href="#productos_destacados">Pasión Eterna</a></li>
+              <li><a class="dropdown-item" href="#productos_destacados">Corazón Escarlata</a></li>
+            </ul>
+          </li>
 
-    <main class="main">
+          <!-- Productos Premium -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#productos_premium" role="button" data-bs-toggle="dropdown">Productos Premium</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#productos_destacados">Suspiro Carmesí</a></li>
+              <li><a class="dropdown-item" href="#productos_destacados">Pasión Eterna</a></li>
+              <li><a class="dropdown-item" href="#productos_destacados">Corazón Escarlata</a></li>
+            </ul>
+          </li>
 
-        <!-- BLOQUE 1 -->
-        <section class="section hero first-section" id="inicio">
+          <!-- Productos Top -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#productos_top" role="button" data-bs-toggle="dropdown">Productos Top</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#productos_destacados">Suspiro Carmesí</a></li>
+              <li><a class="dropdown-item" href="#productos_destacados">Pasión Eterna</a></li>
+              <li><a class="dropdown-item" href="#productos_destacados">Corazón Escarlata</a></li>
+            </ul>
+          </li>
+
+          <!-- Formulario -->
+          <li class="nav-item">
+            <a class="nav-link" href="#formulario">Formulario</a>
+          </li>
+
+        </ul>
+      </section>
+    </section>
+  </nav>
+</header>
 
 
-            <section class="columnas_3">
-                <!-- 1er Articulo  -->
-                <article class="article1">
 
-                    <header clases="secion_a1">
 
-                    </header>
 
-                    <figure>
-                        <picture class="picture">
-                            <source media="(min-width: 1024px)"
-                                srcset="https://w0.peakpx.com/wallpaper/526/1005/HD-wallpaper-afrodita-de-piscis-caballeros-del-zodiaco-saint-seiya.jpg">
 
-                            <img src="https://i.pinimg.com/736x/ee/9d/c7/ee9dc7216cfeb1b59e02405a6457f607.jpg"
-                                alt="Rosas frescas de alta calidad">
-                        </picture>
 
-                </article>
-                <!-- 2do Articulo  -->
-                <article class="article2">
 
-                    <header>
 
-                        <h1>Rosas y Espinaz </h1>
-                        <p> Las rosas no son flores… son revelaciones.cada pétalo habita el silencio del universo.
-                            En cada espina, la lección que pocos comprenden.
 
-                            No las vendo.
-                            Las entrego a quienes están listos para sostener su verdad.
 
-                            Rosas i Espina.</p>
 
-                        <p class="precio">S/ 45 <span>/ramo</span></p>
-                    </header>
-                    <aside>
-                        <p>Promoción válida por San Valentín y fechas especiales.</p>
-                    </aside>
-                    <footer>
-                        <button>Comprar ahora</button>
-                        <br>
-                        <small>Delivery gratuito en compras mayores a S/ 100</small>
-                    </footer>
 
-                </article>
 
-                <!-- 3er Articulo  -->
-                <article class="article"><img
-                        src="https://i.pinimg.com/736x/ee/9d/c7/ee9dc7216cfeb1b59e02405a6457f607.jpg"
-                        alt="Imagen de Rosas">
-                </article>
-            </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="section hero first-section container my-5">
+  <section class="row text-center">
+
+    <!-- 1er Artículo -->
+    <article class="col-md-4">
+      <figure>
+        <picture>
+          <source media="(min-width: 1024px)" srcset="https://w0.peakpx.com/wallpaper/526/1005/HD-wallpaper-afrodita-de-piscis-caballeros-del-zodiaco-saint-seiya.jpg">
+          <img src="https://i.pinimg.com/736x/ee/9d/c7/ee9dc7216cfeb1b59e02405a6457f607.jpg"
+               class="img-fluid rounded shadow hero-img"
+               alt="Rosas frescas de alta calidad">
+        </picture>
+      </figure>
+    </article>
+
+    <!-- 2do Artículo -->
+    <article class="col-md-4 p-3">
+      <header>
+        <h1 class="titulo-rosas">Rosas y Espinaz</h1>
+        <p class="descripcion-rosas">
+          Las rosas no son flores… son revelaciones.  
+          Cada pétalo habita el silencio del universo.  
+          En cada espina, la lección que pocos comprenden.  
+          No las vendo.  
+          Las entrego a quienes están listos para sostener su verdad.
+        </p>
+        <p class="precio">S/ 45 <span>/ramo</span></p>
+      </header>
+      <aside>
+        <p class="promo">Promoción válida por San Valentín y fechas especiales.</p>
+      </aside>
+      <footer>
+        <button class="btn btn-rosas">Comprar ahora</button>
+        <br>
+        <small>Delivery gratuito en compras mayores a S/ 100</small>
+      </footer>
+    </article>
+
+    <!-- 3er Artículo -->
+    <article class="col-md-4">
+      <img src="https://i.pinimg.com/736x/ee/9d/c7/ee9dc7216cfeb1b59e02405a6457f607.jpg"
+           class="img-fluid rounded shadow hero-img"
+           alt="Imagen de Rosas">
+    </article>
+
+  </section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container my-5">
+    <section class="alerta-rosas alert shadow-lg p-4 rounded">
+      <header class="mb-3 text-center">
+        <h2 class="titulo-alerta">✨ Productos de Gama Alta ✨</h2>
+      </header>
+      <p class="mensaje-alerta">
+        Descubre nuestra nueva colección exclusiva de <strong>rosas premium</strong> con acabados de lujo y detalles únicos.  
+        ¡Disponibles por tiempo limitado!
+      </p>
+      <menu class="d-flex justify-content-center gap-3 mt-3">
+        <button class="btn btn-alerta">Ver Catálogo</button>
+        <button class="btn btn-secondary">Cerrar</button>
+      </menu>
+    </section>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container my-5">
+  <section class="row text-center">
+    
+    <!-- Producto 1 -->
+    <section class="col">
+      <section class="card producto-card shadow-sm">
+        <img src="img/kanekiazull.png" class="card-img-top" alt="Rosa 1">
+        <section class="card-body">
+          <h5 class="card-title">Rosa Premium</h5>
+          <p class="card-text">Hermosa rosa de tallo largo.</p>
+          <p class="precio">Precio: S/ 25.00</p>
+          <a href="#" class="btn btn-comprar">Comprar</a>
         </section>
+      </section>
+    </section>
+
+    <!-- Producto 2 -->
+    <section class="col">
+      <section class="card producto-card shadow-sm">
+        <img src="img/kanekimoraa.png" class="card-img-top" alt="Rosa 2">
+        <section class="card-body">
+          <h5 class="card-title">Rosa Roja</h5>
+          <p class="card-text">Clásica rosa roja para enamorar.</p>
+          <p class="precio">Precio: S/ 20.00</p>
+          <a href="#" class="btn btn-comprar">Comprar</a>
+        </section>
+      </section>
+    </section>
+
+    <!-- Producto 3 -->
+    <section class="col">
+      <section class="card producto-card shadow-sm">
+        <img src="img/kanekirojo.png" class="card-img-top" alt="Rosa 3">
+        <section class="card-body">
+          <h5 class="card-title">Rosa Blanca</h5>
+          <p class="card-text">Símbolo de pureza y paz.</p>
+          <p class="precio">Precio: S/ 22.00</p>
+          <a href="#" class="btn btn-comprar">Comprar</a>
+        </section>
+      </section>
+    </section>
+
+    <!-- Producto 4 -->
+    <section class="col">
+      <section class="card producto-card shadow-sm">
+        <img src="img/kanekirojoiblamcoo.png" class="card-img-top" alt="Rosa 4">
+        <section class="card-body">
+          <h5 class="card-title">Rosa Azul</h5>
+          <p class="card-text">Exótica y misteriosa a ese ser querido.</p>
+          <p class="precio">Precio: S/ 30.00</p>
+          <a href="#" class="btn btn-comprar">Comprar</a>
+        </section>
+      </section>
+    </section>
+
+    <!-- Producto 5 -->
+    <section class="col">
+      <section class="card producto-card shadow-sm">
+        <img src="img/kanekiverde.png" class="card-img-top" alt="Rosa 5">
+        <section class="card-body">
+          <h5 class="card-title">Rosa Violeta</h5>
+          <p class="card-text">Ideal para un regalo único.</p>
+          <p class="precio">Precio: S/ 28.00</p>
+          <a href="#" class="btn btn-comprar">Comprar</a>
+        </section>
+      </section>
+    </section>
+
+  </section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- BLOQUE 2 -->
         <section class="section second-section" id="productos_destacados">
@@ -224,51 +559,7 @@
 
                     </article>
 
-                    <!--PRODUCTO 3-->
-                    <article class="card">
-
-                        <header>
-                            <h3>Bouquet Mixto</h3>
-
-                            <p>
-                                <del>S/130.00</del>
-                                <ins>S/94.90</ins>
-                            </p>
-                        </header>
-
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
-                                alt="Bouquet mixto colorido">
-                            <figcaption>Bouquet Mixto</figcaption>
-                        </figure>
-
-                        <section>
-
-                            <p>
-                                Bouquet mixto compuesto por una selección de flores frescas y coloridas,
-                                ideal para regalar en cumpleaños, celebraciones especiales o para alegrar
-                                cualquier espacio con un toque natural.
-                            </p>
-
-                            <p>
-                                <strong>Disponibilidad:</strong> <small>En stock</small>
-                            </p>
-
-                        </section>
-
-                        <footer>
-
-                            <p>
-                                <mark>Oferta especial -27%</mark>
-                            </p>
-
-                            <nav>
-                                <button type="button">Agregar al carrito</button>
-                            </nav>
-
-                        </footer>
-
-                    </article>
+                    
 
 
                     <!--PRODUCTO 4-->
@@ -414,36 +705,7 @@
 
                         </footer>
                     </article>
-                    <!--PRODUCTO 7-->
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155614-800-800?v=638846473989200000&width=800&height=800&aspect=true"
-                                alt="Ramo de rosas rojas premium">
-                            <figcaption>Rosas Rojas Premium</figcaption>
-                        </figure>
-                    </article>
-                    <!--PRODUCTO 8-->
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
-                                alt="Arreglo floral elegante">
-                            <figcaption>Arreglo Elegante</figcaption>
-                        </figure>
-                    </article>
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
-                                alt="Bouquet mixto colorido">
-                            <figcaption>Bouquet Mixto</figcaption>
-                        </figure>
-                    </article>
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
-                                alt="Bouquet mixto colorido">
-                            <figcaption>Bouquet Mixto</figcaption>
-                        </figure>
-                    </article>
+                    
 
                 </section>
 
@@ -579,6 +841,13 @@
 
                 </section>
 
+
+
+
+
+
+                
+
                 <footer>
                     <p> Puedes ver más productos en nuestra <a href="#">tienda online</a>
                     </p>
@@ -587,395 +856,98 @@
         </section>
 
         <!-- BLOQUE 3 -->
-        <section class="section third-section " id="productos_top">
-
-            <section>
-                <header>
-                    <h2>Productos mas vendidos</h2>
-                    <p> Estos son los productos mas vendidos de nuestra tienda, si quieres ver mas productos
-                        puedes
-                        visitar nuestra tienda online haciendo click en el enlace que se encuentra al final de
-                        esta
-                        seccion.
-
-                    </p>
-                </header>
-
-                <section class="card columnas_4">
-                    <!--ITEM 1-->
-                    <article class="card">
-
-                        <header>
-                            <h3>Rosas Rojas Premium</h3>
-                        </header>
-
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155614-800-800?v=638846473989200000&width=800&height=800&aspect=true"
-                                alt="Ramo de rosas rojas premium">
-                        </figure>
-
-                        <p>
-                            <del>S/120.00</del>
-                            <ins>S/89.90</ins>
-                        </p>
-
-                        <p>
-                            <mark>Oferta -25%</mark>
-                        </p>
-
-                        <footer>
-                            <button type="button">Comprar</button>
-                        </footer>
-
-                    </article>
-                    <!--ITEM 2-->
-                    <article class="card">
-
-                        <header>
-                            <h3>Arreglo Floral Elegante</h3>
-                        </header>
-
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
-                                alt="Arreglo floral elegante">
-                        </figure>
-
-                        <p>
-                            <del>S/140.00</del>
-                            <ins>S/99.90</ins>
-                        </p>
-
-                        <p>
-                            <mark>Oferta -29%</mark>
-                        </p>
-
-                        <footer>
-                            <button type="button">Comprar</button>
-                        </footer>
-
-                    </article>
-                    <!--ITEM 3-->
-                    <article class="card">
-
-                        <header>
-                            <h3>Bouquet Mixto</h3>
-                        </header>
-
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
-                                alt="Bouquet mixto colorido">
-                        </figure>
-
-                        <p>
-                            <del>S/130.00</del>
-                            <ins>S/94.90</ins>
-                        </p>
-
-                        <p>
-                            <mark>Oferta -27%</mark>
-                        </p>
-
-                        <footer>
-                            <button type="button">Comprar</button>
-                        </footer>
-
-                    </article>
-                    <!--ITEM 4-->
-                    <article class="card">
-
-                        <header>
-                            <h3>Arreglo Elegante</h3>
-                        </header>
-
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
-                                alt="Arreglo floral elegante">
-                        </figure>
-
-                        <p>
-                            <del>S/140.00</del>
-                            <ins>S/99.90</ins>
-                        </p>
-
-                        <p>
-                            <mark>Oferta -29%</mark>
-                        </p>
-
-                        <footer>
-                            <button type="button">Comprar</button>
-                        </footer>
-
-                    </article>
-                    <!--ITEM 5-->
-                    <article class="article">
-
-                        <header>
-                            <h3>Rosas Rojas Premium</h3>
-                        </header>
-
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155614-800-800?v=638846473989200000&width=800&height=800&aspect=true"
-                                alt="Rosas Rojas Premium">
-                        </figure>
-
-                        <p>
-                            <del>S/40.00</del>
-                            <ins>S/29.90</ins>
-                        </p>
-
-                        <p>
-                            <mark>Oferta -25%</mark>
-                        </p>
-
-                        <footer>
-                            <button type="button">Comprar</button>
-                        </footer>
-                    </article>
-                    <!--ITEM 6-->
-                    <article class="article">
-
-                        <header>
-                            <h3>Ramo de rosas rojas premium</h3>
-                        </header>
-
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155614-800-800?v=638846473989200000&width=800&height=800&aspect=true"
-                                alt="Ramo de rosas rojas premium">
-                        </figure>
-
-                        <p>
-                            <del>S/40.00</del>
-                            <ins>S/19.90</ins>
-                        </p>
-
-                        <p>
-                            <mark>Oferta -50%</mark>
-                        </p>
-
-                        <footer>
-                            <button type="button">Comprar</button>
-                        </footer>
-                    </article>
-                    <!--ITEM 7-->
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
-                                alt="Arreglo floral elegante">
-                            <figcaption>Arreglo Elegante</figcaption>
-                        </figure>
-                    </article>
-                    <!--ITEM 8-->
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
-                                alt="Bouquet mixto colorido">
-                            <figcaption>Bouquet Mixto</figcaption>
-                        </figure>
-                    </article>
-                    <!--ITEM 9-->
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155614-800-800?v=638846473989200000&width=800&height=800&aspect=true"
-                                alt="Ramo de rosas rojas premium">
-                            <figcaption>Rosas Rojas Premium</figcaption>
-                        </figure>
-                    </article>
-                    <!--ITEM 10-->
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
-                                alt="Arreglo floral elegante">
-                            <figcaption>Arreglo Elegante</figcaption>
-                        </figure>
-                    </article>
-
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
-                                alt="Bouquet mixto colorido">
-                            <figcaption>Bouquet Mixto</figcaption>
-                        </figure>
-                    </article>
-
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155614-800-800?v=638846473989200000&width=800&height=800&aspect=true"
-                                alt="Ramo de rosas rojas premium">
-                            <figcaption>Rosas Rojas Premium</figcaption>
-                        </figure>
-                    </article>
-
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/155825-800-800?v=638847378489930000&width=800&height=800&aspect=true"
-                                alt="Arreglo floral elegante">
-                            <figcaption>Arreglo Elegante</figcaption>
-                        </figure>
-                    </article>
-
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
-                                alt="Bouquet mixto colorido">
-                            <figcaption>Bouquet Mixto</figcaption>
-                        </figure>
-                    </article>
-
-                    <article class="article">
-                        <figure>
-                            <img src="https://rosatelpe.vtexassets.com/arquivos/ids/159703-800-800?v=638972565654070000&width=800&height=800&aspect=true"
-                                alt="Bouquet mixto colorido">
-                            <figcaption>Bouquet Mixto</figcaption>
-                        </figure>
-                    </article>
-
-                </section>
-
-                <footer>
-                    <p> Puedes ver más productos en nuestra <a href="#">tienda online</a>
-                    </p>
-                </footer>
-            </section>
-        </section>
-
-        <!-- BLOQUE 4 -->
-        <section class="section fourth-section" id="formulario">
-            <!--RECOMENDACION: AGREGAR FORMULARIO(MINIMO 8 COMPONENTES HTML DIFERENTES)-->
-
-            <header>
-                <h1>Formulario De Registro</h1>
-                <p>todos sus datos no seran vendidos</p>
-            </header>
-
-
-            <a href="formulario/formulario_envios.html"> Formulario de Envios</a>
-
-            <!-- Barra de progreso general -->
-            <!-- Representa avance del proceso -->
-            <progress value="70" max="100"></progress>
-
-            <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
-
-                <!-- ====================== DATOS PERSONALES ====================== -->
-
-                <fieldset>
-                    <legend>Datos Personales</legend>
-                    <br><br>
-
-                    <!-- input text con valor por defecto -->
-                    <label for="nombre">Nombre:</label>
-                    <input id="nombre" type="text" name="nombre" required minlength="3" placeholder="MICHEL ROBERT">
-                    <br><br>
-
-                    <!-- Maximo 8  caracteres -->
-                    <label for="dni">DNI:</label>
-                    <input id="dni" type="text" minlength="8" maxlength="8" pattern="\d{8}"
-                        title="Ingrese un DNI válido de 8 dígitos" required placeholder="73933331">
-
-                    <br><br>
-
-                    <!-- Mínimo 4 caracteres -->
-                    <label for="edad">EDAD</label>
-                    <input id="edad" type="number" minlength="4" placeholder="20">
-                    <br><br>
-
-
-                    <!-- email con valor inicial -->
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" name="email" required autocomplete="email"
-                        placeholder="at73933331@idat.pe">
-                    <br><br>
-
-
-                    <!-- radio con checked por defecto -->
-                    <label>Género:</label>
-                    <input type="radio" name="genero" value="F" checked> Femenino
-                    <input type="radio" name="genero" value="M"> Masculino
-                    <br><br>
-
-                    <!-- Permite seleccionar varias opciones -->
-                    <label> Preferncias de Rosas </label>
-                    <br>
-                    <input class="carrito_input" id="ross1" type="checkbox" name="habilidad" value="Petalos carmesis"
-                        checked> intensas
-                    <br>
-                    <input type="checkbox" name="habilidad" value="jazmin"> suaves
-                    <br>
-                    <input type="checkbox" name="habilidad" value="Sylverosa"> exoticas
-                    <br>
-                    <input type="checkbox" name="habilidad" value="Jisora"> otros
-                    <br> <br>
-
-
-
-                    <!-- Selección desde lista -->
-                    <label>País:</label>
-
-                    <select name="pais">
-                        <option value="pe" selected>Perú</option>
-                        <option value="co">Colombia</option>
-                        <option value="ar">Argentina</option>
-                    </select>
-                    <br><br>
-
-
-                    <!-- Lista de sugerencias -->
-                    <label for="ciudad">Ciudad:</label>
-
-                    <select name="ciudad">
-                        <option value="pe" selected>tokio</option>
-                        <option value="co">berlin</option>
-                        <option value="ar">ancora</option>
-                    </select>
-                    <br><br>
-
-
-
-
-
-                    <!-- ====================== TIME ====================== -->
-                    <!-- Permite seleccionar solo hora -->
-                    <label>Hora de atención:</label>
-                    <input type="time" value="09:00" min="08:00" max="18:00" step="300" required>
-                    <br><br>
-
-                    <!-- Selector de hora con límite mínimo -->
-                    <label>Hora de entrada:</label>
-                    <input type="time" name="horaInicio" value="08:15" min="08:00" max="8:30">
-                    <br><br>
-
-                    <label>Hora de salida :</label>
-                    <input type="time" name="horaFin" value="18:10" min="18:00" max="18:45">
-                    <br><br>
-                    <!-- Permite seleccionar un color desde el selector del navegador -->
-
-
-                    <label>Teléfono:</label>
-                    <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}">
-                    <br><br>
-
-                    <!-- Campo para contraseñas, oculta los caracteres -->
-                    <label>Contraseña:</label>
-                    <input type="password" name="clave" value="123456">
-                    <br><br>
-
-
-
-                    <menu>
-                        <button type="submit">Guardar</button>
-                        <button type="reset">Cancelar</button>
-                    </menu>
-
-                </fieldset>
-                <!-- ====================== SELECT CON OPTGROUP ====================== -->
-
-                <!-- aside = contenido complementario -->
-                <aside>
-                    <p>Formulario con todos los componentes relevantes de HTML5.</p>
-                </aside>
-            </form>
-
-        </section>
+
+
+
+        
+
+       <section class="container my-5 p-4 rounded shadow formulario-rosas">
+    <header class="text-center mb-4">
+      <h1 class="text-rose">Formulario de Registro</h1>
+      <p class="text-muted">Tus datos estarán protegidos, nunca vendidos.</p>
+    </header>
+
+    <!-- Barra de progreso -->
+    <section class="mb-4">
+      <label class="form-label">Progreso</label>
+      <progress class="w-100" value="70" max="100"></progress>
+    </section>
+
+    <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
+
+      <!-- Datos Personales -->
+      <fieldset class="border p-3 rounded mb-4">
+        <legend class="fw-bold text-rose">Datos Personales</legend>
+
+        <label for="nombre" class="form-label">Nombre</label>
+        <input id="nombre" type="text" class="form-control mb-3" name="nombre" required minlength="3" placeholder="MICHEL ROBERT">
+
+        <label for="dni" class="form-label">DNI</label>
+        <input id="dni" type="text" class="form-control mb-3" minlength="8" maxlength="8" pattern="\d{8}" title="Ingrese un DNI válido de 8 dígitos" required placeholder="73933331">
+
+        <label for="edad" class="form-label">Edad</label>
+        <input id="edad" type="number" class="form-control mb-3" placeholder="20">
+
+        <label for="email" class="form-label">Email</label>
+        <input id="email" type="email" class="form-control mb-3" name="email" required autocomplete="email" placeholder="at73933331@idat.pe">
+
+        <label class="form-label">Género</label><br>
+        <input type="radio" name="genero" value="F" checked> Femenino
+        <input type="radio" name="genero" value="M"> Masculino
+        <br><br>
+
+        <label class="form-label">Preferencias de Rosas</label><br>
+        <input type="checkbox" value="Petalos carmesis" checked> Intensas <br>
+        <input type="checkbox" value="jazmin"> Suaves <br>
+        <input type="checkbox" value="Sylverosa"> Exóticas <br>
+        <input type="checkbox" value="Jisora"> Otros <br><br>
+
+        <label class="form-label">País</label>
+        <select class="form-select mb-3" name="pais">
+          <option value="pe" selected>Perú</option>
+          <option value="co">Colombia</option>
+          <option value="ar">Argentina</option>
+        </select>
+
+        <label class="form-label">Ciudad</label>
+        <select class="form-select mb-3" name="ciudad">
+          <option value="tokio" selected>Tokio</option>
+          <option value="berlin">Berlín</option>
+          <option value="ancora">Áncora</option>
+        </select>
+
+        <label class="form-label">Hora de atención</label>
+        <input type="time" class="form-control mb-3" value="09:00" min="08:00" max="18:00" step="300" required>
+
+        <label class="form-label">Hora de entrada</label>
+        <input type="time" class="form-control mb-3" name="horaInicio" value="08:15" min="08:00" max="08:30">
+
+        <label class="form-label">Hora de salida</label>
+        <input type="time" class="form-control mb-3" name="horaFin" value="18:10" min="18:00" max="18:45">
+
+        <label class="form-label">Teléfono</label>
+        <input type="tel" class="form-control mb-3" name="telefono" value="987654321" pattern="[0-9]{9}">
+
+        <label class="form-label">Contraseña</label>
+        <input type="password" class="form-control mb-3" name="clave" value="123456">
+
+        <menu class="d-flex justify-content-between">
+          <button type="submit" class="btn btn-rose">Guardar</button>
+          <button type="reset" class="btn btn-secondary">Cancelar</button>
+        </menu>
+      </fieldset>
+    </form>
+
+    <aside class="mt-4 text-center text-muted">
+      <p> Formulario con todos los componentes relevantes de HTML5.</p>
+    </aside>
+  </section>
+
+
+
+
+
+
 
     </main>
     <footer class="footer-redes">
@@ -1015,7 +987,10 @@
 
         </section>
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+     crossorigin="anonymous">
+</script>
 </body>
 <!--NOTA TENTATIVA HTML  : 13
  +2 (OK)ADICIONAR FORMULARIO
