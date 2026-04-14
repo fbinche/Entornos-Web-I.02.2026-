@@ -4,41 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Maqueta Semántica</title>
-<!--
+    <!--
     <link rel="stylesheet" href="/assets/css/styles_global.css">
     <link rel="stylesheet" href="/assets/css/formulario.css"> -->
     <link rel="stylesheet" href="css/clase_css.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <style>
-        p{
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
-    <!--EN LINEA-->
-    <p style="color: blue">
-    </p>
-    <p>
-     
-    </p>
 
-    <header class="header">
-        <h1>
-            Elite Graphics Shop
-        </h1>
-        <!--RECOMENDACION: AGREGAR UNA BARRA DE NAVEGACION INTERNA-->
-        <nav>
-            <ul>
-                <li><a href="#nvidia__gtx">sobre nvidia</a></li>
-                <li><a href="#sesiones__destacadas">Destacadas</a></li>
-                <li><a href="#tarjetas__graficas">Tarjetas Graficas</a></li>
-                <li><a href="#datos__personales">Ordenar</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Elite Graphics Shop</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#nvidia__gtx">Sobre Nvidia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sesiones__destacadas">Destacadas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tarjetas__graficas">Tarjetas Gráficas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#datos__personales">Ordenar</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
     <main class="main">
         <!--SECCION 1-->
@@ -60,12 +62,15 @@
                     title="GeForce RTX 50 Series" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
                 <figure class="card">
-                        <img src="https://s.yimg.com/ny/api/res/1.2/oADWhKjhFkJZFcGgQYuqZg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MQ--/https://media.zenfs.com/es/benzinga_espana_latam_149/dc3a80ca114d730c8eba76fe0d29ea2f"
-                            alt="Tarjeta gráfica NVIDIA GeForce RTX Serie 30" width="400" height="300">
-                        <figcaption>NVIDIA es una empresa tecnológica líder a nivel mundial especializada en el desarrollo de tarjetas gráficas, inteligencia artificial y computación de alto rendimiento. Fundada en 1993, la compañía es conocida por sus potentes GPU GeForce, utilizadas principalmente en videojuegos, creación de contenido y aplicaciones profesionales.</figcaption>
-                    </figure>
-                
-                
+                    <img src="https://s.yimg.com/ny/api/res/1.2/oADWhKjhFkJZFcGgQYuqZg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MQ--/https://media.zenfs.com/es/benzinga_espana_latam_149/dc3a80ca114d730c8eba76fe0d29ea2f"
+                        alt="Tarjeta gráfica NVIDIA GeForce RTX Serie 30" width="400" height="300">
+                    <figcaption>NVIDIA es una empresa tecnológica líder a nivel mundial especializada en el desarrollo
+                        de tarjetas gráficas, inteligencia artificial y computación de alto rendimiento. Fundada en
+                        1993, la compañía es conocida por sus potentes GPU GeForce, utilizadas principalmente en
+                        videojuegos, creación de contenido y aplicaciones profesionales.</figcaption>
+                </figure>
+
+
             </section>
 
             <footer>
@@ -103,19 +108,26 @@
                     </header>
 
                     <figure>
-                        <img src="https://culturageek.com.ar/wp-content/uploads/2025/01/NVIDIA-AI-agents-2025.webp" alt="Sesión sobre modelos de inteligencia artificial">
+                        <img src="https://culturageek.com.ar/wp-content/uploads/2025/01/NVIDIA-AI-agents-2025.webp"
+                            alt="Sesión sobre modelos de inteligencia artificial">
                         <figcaption>Avances en modelos de IA para entornos reales.</figcaption>
                     </figure>
                     <details>
                         <summary>Detalles</summary>
 
-                    <p>
-                        Los recientes avances en IA generativa aportan un nuevo nivel de versatilidad y conocimientos a la empresa. Ahora, la plataforma de IA más avanzada del mundo, NVIDIA AI, pone los últimos avances al alcance de todas las organizaciones. Las posibilidades son infinitas gracias a la innovación en todos los niveles: el superordenador de IA, el software de la plataforma de IA y los modelos y servicios de IA. Puede utilizar la plataforma en cualquier capa y en cualquier lugar, en nubes públicas y privadas. Comience ahora su viaje hacia la IA.
-                    </p>
+                        <p>
+                            Los recientes avances en IA generativa aportan un nuevo nivel de versatilidad y
+                            conocimientos a la empresa. Ahora, la plataforma de IA más avanzada del mundo, NVIDIA AI,
+                            pone los últimos avances al alcance de todas las organizaciones. Las posibilidades son
+                            infinitas gracias a la innovación en todos los niveles: el superordenador de IA, el software
+                            de la plataforma de IA y los modelos y servicios de IA. Puede utilizar la plataforma en
+                            cualquier capa y en cualquier lugar, en nubes públicas y privadas. Comience ahora su viaje
+                            hacia la IA.
+                        </p>
 
-                    <footer>
-                        <a href="#">Ver detalles de la sesión</a>
-                    </footer>
+                        <footer>
+                            <a href="#">Ver detalles de la sesión</a>
+                        </footer>
 
                 </article>
 
@@ -130,19 +142,24 @@
                     </header>
 
                     <figure>
-                        <img src="https://i.ytimg.com/vi/eV7I44UR6Mg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBbkrbX5igfFq8J0o8xbrIyyl7byQ" alt="Taller de desarrollo de inteligencia artificial">
-                        <figcaption>NVIDIA permite mejorar los gráficos y el rendimiento en videojuegos modernos</figcaption>
+                        <img src="https://i.ytimg.com/vi/eV7I44UR6Mg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBbkrbX5igfFq8J0o8xbrIyyl7byQ"
+                            alt="Taller de desarrollo de inteligencia artificial">
+                        <figcaption>NVIDIA permite mejorar los gráficos y el rendimiento en videojuegos modernos
+                        </figcaption>
                     </figure>
                     <details>
                         <summary>Detalles</summary>
 
-                    <p>
-                        Las tarjetas gráficas NVIDIA, especialmente la serie RTX, transforman los juegos mediante IA, Ray Tracing (trazado de rayos) y DLSS para ofrecer gráficos ultrarrealistas, iluminación avanzada y altas tasas de FPS. Además, mejoran la capacidad de respuesta y reducen la latencia en juegos competitivos usando NVIDIA Reflex.
-                    </p>
+                        <p>
+                            Las tarjetas gráficas NVIDIA, especialmente la serie RTX, transforman los juegos mediante
+                            IA, Ray Tracing (trazado de rayos) y DLSS para ofrecer gráficos ultrarrealistas, iluminación
+                            avanzada y altas tasas de FPS. Además, mejoran la capacidad de respuesta y reducen la
+                            latencia en juegos competitivos usando NVIDIA Reflex.
+                        </p>
 
-                    <footer>
-                        <a href="#">Ver detalles de la sesión</a>
-                    </footer>
+                        <footer>
+                            <a href="#">Ver detalles de la sesión</a>
+                        </footer>
 
                 </article>
 
@@ -157,19 +174,22 @@
                     </header>
 
                     <figure>
-                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/studio-home/nvidia-studio-broadcasting-fg-i3of6-d.jpg" alt="Panel sobre infraestructura de inteligencia artificial">
+                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/studio-home/nvidia-studio-broadcasting-fg-i3of6-d.jpg"
+                            alt="Panel sobre infraestructura de inteligencia artificial">
                         <figcaption>Con la IA avanzada de nvidia es mas facil editar.</figcaption>
                     </figure>
                     <details>
                         <summary>Detalles</summary>
 
-                    <p>
-                        NVIDIA Studio combina el rendimiento de la GPU RTX y la aceleración de IA para una edición de video más rápida, un renderizado 3D más fluido, transmisiones en vivo sin interrupciones y mucho más. Sin límites. Sin retrasos. Solo tú y la libertad de crear
-                    </p>
+                        <p>
+                            NVIDIA Studio combina el rendimiento de la GPU RTX y la aceleración de IA para una edición
+                            de video más rápida, un renderizado 3D más fluido, transmisiones en vivo sin interrupciones
+                            y mucho más. Sin límites. Sin retrasos. Solo tú y la libertad de crear
+                        </p>
 
-                    <footer>
-                        <a href="#">Ver detalles de la sesión</a>
-                    </footer>
+                        <footer>
+                            <a href="#">Ver detalles de la sesión</a>
+                        </footer>
 
                 </article>
                 <!-- SESIÓN 4 -->
@@ -182,19 +202,26 @@
                     </header>
 
                     <figure>
-                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/gtcf22/l40/proviz-L40-delivered-data-center-3c33-p@2x.jpg" alt="Conferencia principal sobre inteligencia artificial">
-                        <figcaption>la solución de computación acelerada más adoptada del mundo, implementada por los mayores centros de supercomputación y empresas.</figcaption>
+                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/gtcf22/l40/proviz-L40-delivered-data-center-3c33-p@2x.jpg"
+                            alt="Conferencia principal sobre inteligencia artificial">
+                        <figcaption>la solución de computación acelerada más adoptada del mundo, implementada por los
+                            mayores centros de supercomputación y empresas.</figcaption>
                     </figure>
                     <details>
                         <summary>Detalles</summary>
 
-                    <p>
-                        Los data centers son esenciales para resolver algunos de los desafíos más importantes del mundo, desde la IA y el análisis de datos hasta la computación de alto rendimiento (HPC) y la renderización. La plataforma completa de computación acelerada de NVIDIA, integrada en el hardware y el software, les brinda a las empresas el plano para crear una infraestructura sólida y segura que admita procesos desde el desarrollo hasta la implementación en todos los workloads modernos.
-                    </p>
+                        <p>
+                            Los data centers son esenciales para resolver algunos de los desafíos más importantes del
+                            mundo, desde la IA y el análisis de datos hasta la computación de alto rendimiento (HPC) y
+                            la renderización. La plataforma completa de computación acelerada de NVIDIA, integrada en el
+                            hardware y el software, les brinda a las empresas el plano para crear una infraestructura
+                            sólida y segura que admita procesos desde el desarrollo hasta la implementación en todos los
+                            workloads modernos.
+                        </p>
 
-                    <footer>
-                        <a href="#">Ver detalles de la sesión</a>
-                    </footer>
+                        <footer>
+                            <a href="#">Ver detalles de la sesión</a>
+                        </footer>
 
                 </article>
                 <!-- SESIÓN 5 -->
@@ -207,22 +234,29 @@
                     </header>
 
                     <figure>
-                        <img src="https://i.blogs.es/juegos/9974/nvidia/fotos/noticias/nvidia-3267625.jpg" alt="Conferencia principal sobre inteligencia artificial">
-                        <figcaption>Las GPUs GeForce RTX ofrecen compatibilidad inmediata con los principales headsets de realidad virtual.</figcaption>
+                        <img src="https://i.blogs.es/juegos/9974/nvidia/fotos/noticias/nvidia-3267625.jpg"
+                            alt="Conferencia principal sobre inteligencia artificial">
+                        <figcaption>Las GPUs GeForce RTX ofrecen compatibilidad inmediata con los principales headsets
+                            de realidad virtual.</figcaption>
                     </figure>
                     <details>
                         <summary>Detalles</summary>
 
-                    <p>
-                        La realidad virtual ofrece algunas de las experiencias más cautivantes en los juegos de PC. Sin embargo, es difícil lograr el mejor rendimiento de VR. Con resoluciones de pantalla reales de 4K y en aumento, las tasas de actualización mínimas de 90 Hz y tolerancias de latencia mínimas, la VR es una de las aplicaciones de PC más exigentes del mundo, por lo que requiere las GPU más potentes del mundo.
+                        <p>
+                            La realidad virtual ofrece algunas de las experiencias más cautivantes en los juegos de PC.
+                            Sin embargo, es difícil lograr el mejor rendimiento de VR. Con resoluciones de pantalla
+                            reales de 4K y en aumento, las tasas de actualización mínimas de 90 Hz y tolerancias de
+                            latencia mínimas, la VR es una de las aplicaciones de PC más exigentes del mundo, por lo que
+                            requiere las GPU más potentes del mundo.
 
-Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfrutar los mejores títulos con los headsets de realidad virtual más recientes.
-                    </p>
+                            Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfrutar los
+                            mejores títulos con los headsets de realidad virtual más recientes.
+                        </p>
 
-                    <footer>
-                        <a href="#">Ver detalles de la sesión</a>
-                    </footer>
-                    
+                        <footer>
+                            <a href="#">Ver detalles de la sesión</a>
+                        </footer>
+
                     </details>
 
                 </article>
@@ -236,19 +270,25 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
                     </header>
 
                     <figure>
-                        <img src="https://resources.nvidia.com/_pfcdn/assets/10412/contents/537734/thumbnails/600x/maxresdefault.jpg" alt="Conferencia principal sobre inteligencia artificial">
-                        <figcaption>NVIDIA se usa en sectores como medicina, investigación científica y desarrollo tecnológico.</figcaption>
+                        <img src="https://resources.nvidia.com/_pfcdn/assets/10412/contents/537734/thumbnails/600x/maxresdefault.jpg"
+                            alt="Conferencia principal sobre inteligencia artificial">
+                        <figcaption>NVIDIA se usa en sectores como medicina, investigación científica y desarrollo
+                            tecnológico.</figcaption>
                     </figure>
                     <details>
                         <summary>Detalles</summary>
 
-                    <p>
-                        En esta sesión se explicará cómo la tecnología de NVIDIA se utiliza en diferentes industrias. Sus tarjetas gráficas y sistemas de inteligencia artificial ayudan a mejorar procesos en áreas como medicina, investigación científica, transporte y desarrollo tecnológico. Gracias a estas herramientas, muchas empresas pueden analizar datos más rápido y crear nuevas soluciones innovadoras.
-                    </p>
+                        <p>
+                            En esta sesión se explicará cómo la tecnología de NVIDIA se utiliza en diferentes
+                            industrias. Sus tarjetas gráficas y sistemas de inteligencia artificial ayudan a mejorar
+                            procesos en áreas como medicina, investigación científica, transporte y desarrollo
+                            tecnológico. Gracias a estas herramientas, muchas empresas pueden analizar datos más rápido
+                            y crear nuevas soluciones innovadoras.
+                        </p>
 
-                    <footer>
-                        <a href="#">Ver detalles de la sesión</a>
-                    </footer>
+                        <footer>
+                            <a href="#">Ver detalles de la sesión</a>
+                        </footer>
 
                 </article>
                 <!-- SESIÓN 7 -->
@@ -257,23 +297,28 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
                     <header>
                         <p><mark></mark> <small></small></p>
                         <h3>NVIDIA en el diseño gráfico</h3>
-                        <time datetime="2026-03-20T14:00">NVIDIA GeForce RTX brindan a los creadores el poder de abarcar todos los flujos de trabajo.</time>
+                        <time datetime="2026-03-20T14:00">NVIDIA GeForce RTX brindan a los creadores el poder de abarcar
+                            todos los flujos de trabajo.</time>
                     </header>
 
                     <figure>
-                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/solutions/rendering/nvidia-rtx-rendering-sol-desktop-2c50-d@2x.jpg" alt="Conferencia principal sobre inteligencia artificial">
+                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/solutions/rendering/nvidia-rtx-rendering-sol-desktop-2c50-d@2x.jpg"
+                            alt="Conferencia principal sobre inteligencia artificial">
                         <figcaption>renderizado 3D más fluido, transmisiones en vivo sin interrupciones.</figcaption>
                     </figure>
                     <details>
                         <summary>Detalles</summary>
 
-                    <p>
-                        En esta sesión se explicará cómo las tarjetas gráficas de NVIDIA ayudan a mejorar el trabajo de diseñadores gráficos y artistas digitales. Gracias a su alto rendimiento, permiten crear imágenes, animaciones y modelos en 3D con mayor rapidez y mejor calidad en programas de diseño y edición.
-                    </p>
+                        <p>
+                            En esta sesión se explicará cómo las tarjetas gráficas de NVIDIA ayudan a mejorar el trabajo
+                            de diseñadores gráficos y artistas digitales. Gracias a su alto rendimiento, permiten crear
+                            imágenes, animaciones y modelos en 3D con mayor rapidez y mejor calidad en programas de
+                            diseño y edición.
+                        </p>
 
-                    <footer>
-                        <a href="#">Ver detalles de la sesión</a>
-                    </footer>
+                        <footer>
+                            <a href="#">Ver detalles de la sesión</a>
+                        </footer>
 
                 </article>
                 <!-- SESIÓN 8 -->
@@ -286,20 +331,24 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
                     </header>
 
                     <figure>
-                        <img src="https://i.blogs.es/aa2900/original/500_333.jpeg" alt="Conferencia principal sobre inteligencia artificial">
+                        <img src="https://i.blogs.es/aa2900/original/500_333.jpeg"
+                            alt="Conferencia principal sobre inteligencia artificial">
                         <figcaption>Nvidia lidera el crecimiento industrial en centros de datos.</figcaption>
                     </figure>
 
                     <details>
                         <summary>Detalles</summary>
 
-                    <p>
-                        Está consolidándose como el motor central de la infraestructura de IA global, pasando de ser un fabricante de chips a un ecosistema de computación acelerada, robótica y software. Con inversiones masivas en I+D, incluyendo el próximo GPU "Robin" 10 veces más rápido que Blackwell.
-                    </p>
+                        <p>
+                            Está consolidándose como el motor central de la infraestructura de IA global, pasando de ser
+                            un fabricante de chips a un ecosistema de computación acelerada, robótica y software. Con
+                            inversiones masivas en I+D, incluyendo el próximo GPU "Robin" 10 veces más rápido que
+                            Blackwell.
+                        </p>
 
-                    <footer>
-                        <a href="#">Ver detalles de la sesión</a>
-                    </footer>
+                        <footer>
+                            <a href="#">Ver detalles de la sesión</a>
+                        </footer>
 
                 </article>
 
@@ -345,6 +394,7 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
                     </figure>
 
                     <details>
+                        <summary>Mas Detalles</summary>
                         <p>
                             Experimenta gráficos de última generación con la arquitectura más reciente
                             de NVIDIA. Diseñada para gamers, creadores de contenido y aplicaciones de
@@ -379,6 +429,7 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
 
 
                     <details>
+                        <summary>Mas Detalles</summary>
                         <p>
                             Las GPU GeForce RTX Serie 40 ofrecen rendimiento avanzado para gaming,
                             creación de contenido y aplicaciones de inteligencia artificial.
@@ -393,7 +444,7 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
                         <a href="#" aria-label="Ver más sobre GeForce RTX Serie 40">
                             Conocer más
                         </a>
-                        
+
                     </footer>
 
                 </article>
@@ -414,8 +465,11 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
 
 
                     <details>
+                        <summary>Mas Detalles</summary>
                         <p>
-                            La NVIDIA GeForce RTX 3050 es una tarjeta gráfica de NVIDIA diseñada para gaming y creación de contenido en 1080p. Pertenece a la serie RTX 30 y utiliza la arquitectura Ampere, que mejora el rendimiento y agrega tecnologías modernas para juegos.
+                            La NVIDIA GeForce RTX 3050 es una tarjeta gráfica de NVIDIA diseñada para gaming y creación
+                            de contenido en 1080p. Pertenece a la serie RTX 30 y utiliza la arquitectura Ampere, que
+                            mejora el rendimiento y agrega tecnologías modernas para juegos.
                         </p>
                     </details>
                     <button class="btn-precio">
@@ -425,7 +479,7 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
                         <a href="#" aria-label="Ver más sobre GeForce RTX Serie 40">
                             Conocer más
                         </a>
-                        
+
                     </footer>
                 </article>
                 <!--ARTICULO 4-->
@@ -444,6 +498,7 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
 
 
                     <details>
+                        <summary>Mas Detalles</summary>
                         <p>
                             Las GPU GeForce RTX Serie 20 ofrecen rendimiento avanzado para gaming,
                             creación de contenido y aplicaciones de inteligencia artificial.
@@ -458,7 +513,7 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
                         <a href="#" aria-label="Ver más sobre GeForce RTX Serie 40">
                             Conocer más
                         </a>
-                        
+
                     </footer>
 
                 </article>
@@ -471,57 +526,59 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
 
         </section>
         <!--SECCION 4-->
+                             
+                           <!-- datos personales -->
 
-        <section class="section fourth-section" id="datos__personales">
-            <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
+        <form>
+            <div class="form-group">
+               <legend>Datos Personales</legend>
+            </div>
 
-                <!-- ====================== DATOS PERSONALES ====================== -->
-                <section>
-                    <fieldset>
-                        <legend>Datos Personales</legend>
-
-                        <!-- input text con valor por defecto -->
-                        <label>Nombre:</label>
-                        <input type="text" name="nombre"required minlength="3">
-                        <br><br>
-                        
-
-
-
-                        <!-- Maximo 8  caracteres -->
-                        <label>DNI:</label>
+               <div class="form-group">
+               <label>DNI:</label>
                         <input type="number" minlength="8" maxlength="8" pattern="\d{8}"
                             title="Ingrese un DNI válido de 8 dígitos" required>
+            </div>
+               <div class="form-group">
+                <label>Nombre comleto:</label>
+                        <input type="text">
+               
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">contraseña:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            </div>
 
-                        <br><br>
-
-                        <!-- readonly -->
-                        <label>Código Usuario:</label>
-                        <input type="text" name="codigo" readonly required>
-                        <br><br>
-
-                        <!-- email con valor inicial -->
-                        <label>Email:</label>
+               <div class="form-group">
+                <label>Email:</label>
                         <input type="email" name="email" required autocomplete="email">
-                        <br><br>
 
-                        <!-- radio con checked por defecto -->
-                        <label>Género:</label>
+            </div>
+
+               <div class="form-group">
+                <label>Género:</label>
                         <input type="radio" name="genero" value="F" checked> Femenino
                         <input type="radio" name="genero" value="M"> Masculino
-                        <br><br>
 
-                        <!-- Selección desde lista -->
-                        <label>País:</label>
+            </div>
+
+               <div class="form-group">
+                <label>País:</label>
 
                         <select name="pais">
                             <option value="pe" selected>Perú</option>
                             <option value="co">Colombia</option>
                             <option value="ar">Argentina</option>
                         </select>
-                        <br><br>
-                        <!-- Lista de sugerencias -->
-                        <label>Ciudad:</label>
+            </div>
+
+               <div class="form-group">
+                <label>Ciudad:</label>
 
                         <input list="ciudades" value="Lima">
 
@@ -530,9 +587,11 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
                             <option value="Cusco">
                             <option value="Arequipa">
                         </datalist>
-                        <br><br>
-                        <!-- Permite seleccionar varias opciones -->
-                        <label>Productos:</label>
+            
+            </div>
+
+               <div class="form-group">
+                <label>Productos:</label>
 
                         <select name="pais">
                             <option value="pe" selected>RTX serie 50</option>
@@ -546,107 +605,101 @@ Las GPUs GeForce RTX™ de NVIDIA te brindan el rendimiento necesario para disfr
                             <option value="ar">GTX GeForce 1660 super</option>
                             <option value="ar">GTX GeForce 1060</option>
                         </select>
-                        <br> <br>
-                        <!-- Permite seleccionar una fecha desde un calendario -->
+            
+            </div>
 
-                        <label>Fecha de nacimiento:</label>
+               <div class="form-group">
+                <label>Fecha de nacimiento:</label>
                         <input type="date" name="fechaNacimiento" value="2000-01-01" min="1960-01-01" max="2010-12-31">
-                        <br><br>
 
-                        <!-- Campo para ingresar números telefónicos -->
-                        <label>Teléfono:</label>
+            </div>
+
+               <div class="form-group">
+                <label>Teléfono:</label>
                         <input type="number" name="telefono" pattern="[0-9]{9}">
-                        <br><br>
 
-                        <!-- Campo para contraseñas, oculta los caracteres -->
-                        <label>Contraseña:</label>
-                        <input type="password" name="clave" required minlength="8" title="La contraseña debe tener al menos 8 digitos">
-                        <br><br>
+            </div>
 
-                        <!-- Campo para escribir textos largos -->
-                        <label>Comentarios:</label>
+               <div class="form-group">
+                <label>Comentarios:</label>
                         <br>
                         <textarea name="comentarios" rows="4" cols="40">Escribe aquí tu comentario...</textarea>
-                        <br><br>
-           
-                        <!-- checkbox marcado por defecto -->
-                        <label>
+                
+            </div>
+
+               <div class="form-group">
+                <label>
                             <input type="checkbox" name="terminos" unchecked required>
                             Acepto términos y condiciones
                         </label>
 
-                        <menu>
+            </div>
+
+               <div class="form-group">
+                <menu>
                             <button type="submit">Guardar</button>
                             <button type="reset">Cancelar</button>
                         </menu>
 
-                    </fieldset>
-                </section>
+            </div>
 
+               <div class="form-group">
+            <button type="submit">Enviar</button>
+        </form>
 
-                <!-- ====================== BOTONES ====================== -->
-                <footer>
-
-                    <!-- botón submit normal -->
-                    <button type="submit">Enviar</button>
-
-                </footer>
-
-            </form>
-        </section>
 
     </main>
+                                <!---------------      FOOTER      ---------->
 
-    <footer class="footer"> <!--RECOMENDACION: SECCION CON CLASS COLUMNAS TE PERMITE DIVIDIR EL FORMULARIO-->
+    <footer class="bg-light text-dark pt-5 pb-4">
+     <div class="container">
+        <div class="row">
 
-        <section class="columnas_4">
-
-            <!-- Sección Navegación -->
-            <nav>
-                <h3>Ingresar información</h3>
-
-                <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Productos Populares</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Contacto</a></li>
+            <!-- Columna 1 -->
+            <div class="col-6 col-md-3 mb-4">
+                <h5>Ingresar información</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-dark">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-dark">Productos Populares</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-dark">Categorías</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-dark">Contacto</a></li>
                 </ul>
-            </nav>
-            <nav>
-                <h3>Ingresar información</h3>
+            </div>
 
-                <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Productos Populares</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Contacto</a></li>
+            <!-- Columna 2 -->
+            <div class="col-6 col-md-3 mb-4">
+                <h5>Ingresar información</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-dark">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-dark">Productos Populares</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-dark">Categorías</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-0 text-dark">Contacto</a></li>
                 </ul>
-            </nav>
-            <nav>
-                <h3>Ingresar información</h3>
+            </div>
 
-                <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Productos Populares</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+            <!-- Columna texto , redes -->
+            <div class="col-md-3 mb-4">
+                <h5>Título</h5>
+                <p> 2026 Elite Graphics Shop. La mejor tecnologia en tus manos. </p>
 
-            <section>
-                <div>
-                    <h4>Titulo</h4>
-                    <p>&copy; 2026 Viva Mueble. Todos los derechos reservados.</p>
+                <div class="d-flex flex-column">
+                    <a href="#" class="text-dark mb-1"><i class="bi bi-instagram"></i> Instagram</a>
+                    <a href="#" class="text-dark mb-1"><i class="bi bi-facebook"></i> Facebook</a>
+                    <a href="#" class="text-dark"><i class="bi bi-tiktok"></i> TikTok</a>
                 </div>
+            </div>
 
-                <div>
-                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i>Instagram</a>
-                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i>Facebook</a>
-                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i>TikTok</a>
-                </div>
-            </section>
+        </div>
 
+        <!-- Línea inferior -->
+        <div class="text-center border-top pt-3 mt-3">
+            <p class="mb-0">© 2026 Elite Graphics Shop</p>
+        </div>
+     </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 <!--NOTA TENTATIVA HTML  : 10
