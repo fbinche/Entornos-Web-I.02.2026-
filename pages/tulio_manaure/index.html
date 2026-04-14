@@ -2,67 +2,59 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- CSS 
+    <!-- CSS 
 <link rel="stylesheet" href="../tulio_manaure/css/styles.css">
 <link rel="stylesheet" href="css/styles.css">
 -->
-<link rel="stylesheet" href="css/clase_css.css">
-
-<title>MAVI SHOES</title>
+    <link rel="stylesheet" href="css/clase_css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-<<<<<<< HEAD
-<header class="video-header">
+    <header class="video-header">
 
-    <video autoplay muted loop class="video-bg">
-        <source src="video/Nike Air Force One - Spec Spot - by Blackfox-Media (4k).mp4" type="video/mp4">
-    </video>
+        <video autoplay muted loop playsinline preload="metadata" class="video-bg">
+            <source src="video/Nike Air Force One - Spec Spot - by Blackfox-Media (4k).mp4" type="video/mp4">
+        </video>
 
-    <div class="contenido">
-        <h1>VENTA DE ZAPATILLAS – MAVI SHOES</h1>
-        <p>Las mejores zapatillas para hombre, mujer y niños</p>
-    </div>
-
-</header>
-</header>
-<h1>VENTA DE ZAPATILLAS – MAVI SHOES</h1>
-<p>Las mejores zapatillas para hombre, mujer y niños</p>
-
-<audio controls loop>
-    <source src="audio/[Non Copyrighted Music] @Hinkik - Skystrike [Electro House] (128).mp3" type="audio/mpeg">
-</audio>
-<nav>
-<ul>
-<li><a href="#inicio">Inicio</a></li>
-<li><a href="#productos">Productos</a></li>
-<li><a href="#categorias">Categorías</a></li>
-<li><a href="#formulario">Formulario</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul>
-</nav>
-=======
-    <header>
-
-        <h1>VENTA DE ZAPATILLAS – MAVI SHOES</h1>
-        <p>Las mejores zapatillas para hombre, mujer y niños</p>
-
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#categorias">Categorías</a></li>
-                <li><a href="#formulario">Formulario</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
->>>>>>> 4f8c88b69e4a93d3c4032c4e2814aa0a00b46c4f
+        <div class="contenido">
+            <h1>VENTA DE ZAPATILLAS – MAVI SHOES</h1>
+            <h2>Las mejores zapatillas para hombre, mujer y niños</h2>
+        </div>
 
     </header>
+
+    <h1>VENTA DE ZAPATILLAS – MAVI SHOES</h1>
+    <p>Las mejores zapatillas para hombre, mujer y niños</p>
+
+    <audio controls loop>
+        <source src="audio/[Non Copyrighted Music] @Hinkik - Skystrike [Electro House] (128).mp3" type="audio/mpeg">
+    </audio>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/2589/2589903.png" width="40" class="me-2">
+                MAVI SHOES
+            </a>
+
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#productos">Productos</a>
+                <a class="nav-link" href="#categorias">Categorías</a>
+                <a class="nav-link" href="#formulario">Formulario</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
+
+            </div>
+
+        </div>
+    </nav>
+
+
 
     <hr>
 
@@ -75,9 +67,13 @@
             Contamos con modelos modernos, cómodos y al mejor precio.
         </p>
 
-        <img src="https://i.pinimg.com/1200x/e3/24/90/e324906d9c8a3b0439753b2fc958f83c.jpg" width="100%" height="400"
+
+        <img src="https://i.pinimg.com/1200x/31/d3/5d/31d35d37d25093a2209fa8c15962dc13.jpg" width="100%" height="400"
             alt="banner zapatillas">
 
+        <div class="text-center mt-3">
+            <a href="#productos" class="btn btn-primary btn-lg">Ver productos </a>
+        </div>
         <h3>Promociones</h3>
 
         <ul>
@@ -92,6 +88,13 @@
 
     <section id="productos">
 
+        <div class="container mt-3">
+            <div class="card p-3 shadow">
+                <h5>Ofertas</h5>
+                <p>Aprovecha nuestras promociones exclusivas por tiempo limitado y llévate las mejores zapatillas al
+                    mejor precio. No dejes pasar estas ofertas únicas que tenemos para ti</p>
+            </div>
+        </div>
         <h2>Productos</h2>
 
         <table border="1" width="100%">
@@ -102,28 +105,28 @@
                     <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" width="200">
                     <br><b>Zapatillas Running Pro</b>
                     <br>Precio: S/180
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/1200x/57/ca/93/57ca931ef166564b3e9f7a7c2def6aee.jpg" width="200">
                     <br><b>Zapatillas Urban Black</b>
                     <br>Precio: S/160
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" width="200">
                     <br><b>Zapatillas Deportivas Max</b>
                     <br>Precio: S/200
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772" width="200">
                     <br><b>Zapatillas Classic</b>
                     <br>Precio: S/150
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
             </tr>
@@ -134,28 +137,28 @@
                     <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980" width="200">
                     <br><b>Zapatillas Street</b>
                     <br>Precio: S/170
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/736x/c5/f6/86/c5f686d05ab76b71dabd592c0e105c02.jpg" width="200">
                     <br><b>Zapatillas Sport One</b>
                     <br>Precio: S/165
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/736x/c4/49/db/c449dbebcfd70740c2f97317bb197710.jpg" width="200">
                     <br><b>Zapatillas Runner X</b>
                     <br>Precio: S/190
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/1200x/af/d3/c3/afd3c3a18b4fa7bad99e456a5d586cfc.jpg" width="200">
                     <br><b>Zapatillas Urban White</b>
                     <br>Precio: S/175
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
             </tr>
@@ -166,28 +169,28 @@
                     <img src="https://images.unsplash.com/photo-1520256862855-398228c41684" width="200">
                     <br><b>Zapatillas Fitness</b>
                     <br>Precio: S/185
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/736x/35/52/17/355217f1972937f2bbbb2b7a05511f8d.jpg" width="200">
                     <br><b>Zapatillas Urban Sport</b>
                     <br>Precio: S/165
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842" width="200">
                     <br><b>Zapatillas Sport Max</b>
                     <br>Precio: S/220
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3" width="200">
                     <br><b>Zapatillas Casual Gray</b>
                     <br>Precio: S/155
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
             </tr>
@@ -198,95 +201,34 @@
                     <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782" width="200">
                     <br><b>Zapatillas Kids Pro</b>
                     <br>Precio: S/120
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86" width="200">
                     <br><b>Zapatillas Kids Color</b>
                     <br>Precio: S/110
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" width="200">
                     <br><b>Zapatillas Street Pro</b>
                     <br>Precio: S/195
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
                 <td>
                     <img src="https://i.pinimg.com/1200x/ba/6e/8e/ba6e8edcaec46194279f7fff0a9dbca5.jpg" width="200">
                     <br><b>Zapatillas Runner Elite</b>
                     <br>Precio: S/205
-                    <br><button>Añadir al carrito</button>
+                    <button class="btn btn-success">Añadir al carrito</button>
                 </td>
 
             </tr>
 
-            <tr>
+           
 
-                <td>
-                    <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980" width="200">
-                    <br><b>Zapatillas Urban Flex</b>
-                    <br>Precio: S/168
-                    <br><button>Añadir al carrito</button>
-                </td>
-
-                <td>
-                    <img src="https://i.pinimg.com/736x/15/70/d9/1570d9c1b27749a5d8ae3e588b5933f4.jpg" width="200">
-                    <br><b>Zapatillas Sport Air</b>
-                    <br>Precio: S/199
-                    <br><button>Añadir al carrito</button>
-                </td>
-
-                <td>
-                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772" width="200">
-                    <br><b>Zapatillas Classic Pro</b>
-                    <br>Precio: S/175
-                    <br><button>Añadir al carrito</button>
-                </td>
-
-                <td>
-                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" width="200">
-                    <br><b>Zapatillas Urban Style</b>
-                    <br>Precio: S/182
-                    <br><button>Añadir al carrito</button>
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td>
-                    <img src="https://images.unsplash.com/photo-1520256862855-398228c41684" width="200">
-                    <br><b>Zapatillas Fitness Max</b>
-                    <br>Precio: S/188
-                    <br><button>Añadir al carrito</button>
-                </td>
-
-                <td>
-                    <img src="https://i.pinimg.com/1200x/8d/a2/7b/8da27b4064007f2a40cddffad7e2f09e.jpg" width="200">
-                    <br><b>Zapatillas Sport Flex</b>
-                    <br>Precio: S/167
-                    <br><button>Añadir al carrito</button>
-                </td>
-
-                <td>
-                    <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842" width="200">
-                    <br><b>Zapatillas Max Pro</b>
-                    <br>Precio: S/215
-                    <br><button>Añadir al carrito</button>
-                </td>
-
-                <td>
-                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3" width="200">
-                    <br><b>Zapatillas Casual Sport</b>
-                    <br>Precio: S/158
-                    <br><button>Añadir al carrito</button>
-                </td>
-
-            </tr>
 
         </table>
 
@@ -295,89 +237,108 @@
     <hr>
 
 
-    <section id="categorias">
+    <section id="categorias" class="container mt-5">
 
-        <h2>Categorías</h2>
+    <h2 class="text-center mb-4">Categorías</h2>
 
-        <h3>Zapatillas para Niños</h3>
+    <div class="row">
 
-        <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782" width="220">
-        <img src="https://i.pinimg.com/1200x/82/b6/d9/82b6d9758dd2e01e3138f9fddfb99562.jpg" width="220">
-        <img src="https://i.pinimg.com/736x/53/97/9f/53979f71affc3910264d1ffc779e9a28.jpg" width="220">
-        <img src="https://i.pinimg.com/1200x/b5/79/8d/b5798dc778e804e72d51c5e6dc8f2a6e.jpg" width="220">
-        <img src="https://i.pinimg.com/1200x/6c/0d/f4/6c0df4452280d2af640a0d1e2599f4d6.jpg" width="220">
+        <!-- card 1 -->
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://m.media-amazon.com/images/I/61JrG44TpfL._AC_SL1500_.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Zapatillas para Niños</h5>
+                    <p>Comodidad y diversión para los más pequeños.</p>
+                </div>
+            </div>
+        </div>
 
-        <br><br>
+        <!-- card 2 -->
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.MU9ynel1RmP0B03u8-wWEwHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Zapatillas para Niñas</h5>
+                    <p>Diseños modernos y coloridos.</p>
+                </div>
+            </div>
+        </div>
 
-        <h3>Zapatillas para Niñas</h3>
+        <!-- card 3 -->
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.rGxQRYYCYaqmT9s8wbVnugHaGH?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Zapatillas para Adultos</h5>
+                    <p>Estilo urbano y deportivo.</p>
+                </div>
+            </div>
+        </div>
 
-        <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86" width="220">
-        <img src="https://i.pinimg.com/1200x/86/da/98/86da984439d14e9977d1e9a6e8af535e.jpg" width="220">
-        <img src="https://i.pinimg.com/736x/45/c1/a5/45c1a574f04c7672b18a4801c8ebf5b7.jpg" width="220">
-        <img src="https://i.pinimg.com/736x/97/e0/f5/97e0f5990b9e8e038febfe078a302568.jpg" width="220">
-        <img src="https://i.pinimg.com/1200x/59/78/d3/5978d3a9727e89038a73a49b2be12d12.jpg" width="220">
+    </div>
 
-        <p>
-            Explora nuestras diferentes categorías de zapatillas para toda la familia.
-            Tenemos modelos deportivos, urbanos y casuales.
-        </p>
+</section>
 
-    </section>
-    ```
 
 
     <hr>
 
-    <section id="formulario">
+    <section id="formulario" class="container my-5">
 
-        <h2>Registro de Usuario</h2>
+        <h2 class="text-center mb-4">Registro de Usuario</h2>
 
-        <form>
+        <form class="p-4 border rounded shadow bg-light">
 
-            <fieldset>
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control">
+            </div>
 
-                <legend>Crear Cuenta</legend>
+            <div class="mb-3">
+                <label class="form-label">Apellido</label>
+                <input type="text" class="form-control">
+            </div>
 
-                <label>Nombre</label><br>
-                <input type="text"><br><br>
+            <div class="mb-3">
+                <label class="form-label">Correo</label>
+                <input type="email" class="form-control">
+            </div>
 
-                <label>Apellido</label><br>
-                <input type="text"><br><br>
+            <div class="mb-3">
+                <label class="form-label">Contraseña</label>
+                <input type="password" class="form-control">
+            </div>
 
-                <label>Correo</label><br>
-                <input type="email"><br><br>
+            <div class="mb-3">
+                <label class="form-label">Teléfono</label>
+                <input type="tel" class="form-control">
+            </div>
 
-                <label>Contraseña</label><br>
-                <input type="password"><br><br>
+            <div class="mb-3">
+                <label class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-control">
+            </div>
 
-                <label>Teléfono</label><br>
-                <input type="tel"><br><br>
-
-                <label>Fecha de nacimiento</label><br>
-                <input type="date"><br><br>
-
-                <label>Ciudad</label><br>
-
-                <select>
+            <div class="mb-3">
+                <label class="form-label">Ciudad</label>
+                <select class="form-select">
                     <option>Lima</option>
                     <option>Arequipa</option>
                     <option>Trujillo</option>
                     <option>Otro</option>
                 </select>
+            </div>
 
-                <br><br>
-
-                <label>
-                    <input type="checkbox">
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label">
                     Acepto los términos
                 </label>
+            </div>
 
-                <br><br>
-
-                <input type="submit" value="Registrarse">
-                <input type="reset" value="Limpiar">
-
-            </fieldset>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+            <button type="reset" class="btn btn-secondary">Limpiar</button>
 
         </form>
 
@@ -385,64 +346,30 @@
 
     <hr>
 
-    <section id="contacto">
+    <footer class="bg-dark text-white text-center p-4 mt-5">
 
-        <h2>Contacto</h2>
+        <h4>MAVI SHOES</h4>
 
-        <form>
+        <p>© 2026 – Mavi Shoes | Todos los derechos reservados</p>
 
-            <fieldset>
-
-                <legend>Envíanos un mensaje</legend>
-
-                <label>Nombre</label><br>
-                <input type="text"><br><br>
-
-                <label>Correo</label><br>
-                <input type="email"><br><br>
-
-                <label>Mensaje</label><br>
-                <textarea rows="4"></textarea><br><br>
-
-                <input type="submit" value="Enviar">
-
-            </fieldset>
-
-        </form>
-
-        <p>
-            Síguenos en redes sociales:
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">TikTok</a>
-        </p>
-
-    </section>
-
-    <hr>
-
-    <footer>
-
-        <h3>MAVI SHOES</h3>
-
-        <p>
-            © 2026 – Mavi Shoes
-            Todos los derechos reservados
-        </p>
-
-        <nav>
-            <a href="#inicio">Inicio</a> |
-            <a href="#productos">Productos</a> |
-            <a href="#categorias">Categorías</a> |
-            <a href="#contacto">Contacto</a>
-        </nav>
+        <div>
+            <a href="#inicio" class="text-white me-3">Inicio</a>
+            <a href="#productos" class="text-white me-3">Productos</a>
+            <a href="#categorias" class="text-white me-3">Categorías</a>
+            <a href="#contacto" class="text-white">Contacto</a>
+        </div>
 
     </footer>
 
 </body>
 
 </html>
-<!--NOTA TENTATIVA HTML  : 16
+
+
+<!--NOTA TENTATIVA HTML  : 
+ HTML -> 15
+ CSS -> 13
+ BS -> 10
  +1 ADICIONAR MAS ELEMENTOS AL FORMULARIO
  +1 ADICIONAR NAVEGACION DE LOS ENLACES
  +2 MEJORAR SECCIONES , TOMAR COMO REFERENCIA LA SECCION 3 Y 4 
