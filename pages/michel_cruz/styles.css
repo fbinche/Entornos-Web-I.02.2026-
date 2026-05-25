@@ -1,5 +1,59 @@
 
 
+.carrusel {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.carrusel-contenedor {
+  display: flex;
+  width: 50%;
+  animation: deslizar 12s infinite;
+}
+
+.carrusel-item {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carrusel-item img {
+  width: 100%;
+  display: block;
+}
+
+@keyframes deslizar {
+  0%   { transform: translateX(0%); }
+  20%  { transform: translateX(0%); }
+  25%  { transform: translateX(-100%); }
+  45%  { transform: translateX(-100%); }
+  50%  { transform: translateX(-200%); }
+  70%  { transform: translateX(-200%); }
+  75%  { transform: translateX(-300%); }
+  95%  { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
+
+
+
+
+
+/* eso de ariva es el carrusel de protipo */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
